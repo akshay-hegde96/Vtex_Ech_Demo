@@ -1,16 +1,12 @@
 {
   "store.home": {
     "blocks": [
-      "slider-layout#slides",
-      "flex-layout.row#demo",
+      "slider-layout#slides", //caraousal
+      "flex-layout.row#demo", //
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-      "info-card#shelf",
-      "flex-layout.row#shelf",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "info-card#shelf" // view all collections
     ]
   },
 
@@ -57,7 +53,7 @@
       "blockClass": "info-card-slide"
     }
   },
-  //------------------category---------------------------------------------------
+  //------------------category--------------------------------------------------------
 
   "flex-layout.row#demo": {
     "children": ["flex-layout.col#left", "flex-layout.col#right"]
@@ -66,6 +62,8 @@
   "flex-layout.col#left": {
     "children": ["stack-layout#cta-clothing", "stack-layout#cta-sale"]
   },
+
+  //-----------------category 1-------------------------------------------
 
   "stack-layout#cta-clothing": {
     "props": {
@@ -83,6 +81,7 @@
 
   "link#cta-clothing": {
     "props": {
+      "blockClass": "cta-button",
       "displayMode": "button",
       "buttonProps": {
         "variant": "secondary",
@@ -90,8 +89,15 @@
       },
       "href": "#",
       "label": "Clothing"
+    },
+    "children": ["icon-caret#right"]
+  },
+  "icon-caret#right": {
+    "props": {
+      "orientation": "right"
     }
   },
+  //--------------------------category 2--------------------------------------------
 
   "stack-layout#cta-sale": {
     "props": {
@@ -109,6 +115,7 @@
   },
   "link#cta-sale": {
     "props": {
+      "blockClass": "cta-button",
       "displayMode": "button",
       "buttonProps": {
         "variant": "secondary",
@@ -116,12 +123,15 @@
       },
       "href": "#",
       "label": "Sale upto 60% off"
-    }
+    },
+    "children": ["icon-caret#right"]
   },
 
   "flex-layout.col#right": {
     "children": ["stack-layout#cta-shoes", "stack-layout#cta-racing"]
   },
+
+  //-----------------category 3-------------------------------------------
 
   "stack-layout#cta-shoes": {
     "props": {
@@ -139,6 +149,7 @@
 
   "link#cta-shoes": {
     "props": {
+      "blockClass": "cta-button",
       "displayMode": "button",
       "buttonProps": {
         "variant": "secondary",
@@ -146,8 +157,11 @@
       },
       "href": "#",
       "label": "Shoes & Accessories"
-    }
+    },
+    "children": ["icon-caret#right"]
   },
+
+  //-----------------category 4-------------------------------------------
 
   "stack-layout#cta-racing": {
     "props": {
@@ -165,6 +179,7 @@
   },
   "link#cta-racing": {
     "props": {
+      "blockClass": "cta-button",
       "displayMode": "button",
       "buttonProps": {
         "variant": "secondary",
@@ -172,39 +187,11 @@
       },
       "href": "#",
       "label": "Racing"
-    }
+    },
+    "children": ["icon-caret#right"]
   },
 
-  // "list-context.image-list#demo": {
-  //   "children": ["slider-layout#demo-images"],
-  //   "props": {
-  //     "height": 720,
-  //     "images": [
-  //       {
-  //         "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-  //         "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg",
-  //         "description": "GGGGKGKLH"
-  //       },
-  //       {
-  //         "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-  //         "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg",
-  //         "description": "GGGGKGKLH"
-  //       }
-  //     ]
-  //   }
-  // },
-  // "slider-layout#demo-images": {
-  //   "props": {
-  //     "itemsPerPage": {
-  //       "desktop": 1,
-  //       "tablet": 1,
-  //       "phone": 1
-  //     },
-  //     "infinite": true,
-  //     "showNavigationArrows": "desktopOnly",
-  //     "blockClass": "carousel"
-  //   }
-  // },
+  //--------------------------------View All Collections---------------------------
 
   "info-card#shelf": {
     "props": {
@@ -216,43 +203,6 @@
       "callToActionUrl": "#",
       "blockClass": "shelfTitle",
       "textAlignment": "center"
-    }
-  },
-
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
-  },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
-  },
-  "slider-layout#demo-products": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
-    }
-  },
-
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
     }
   }
 }

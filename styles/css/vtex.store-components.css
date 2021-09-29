@@ -7,10 +7,16 @@
 }
 
 .infoCardContainer--info-card-slide {
+  object-fit: cover;
   width: 100%;
-  height: 100%;
-  margin: 5rem auto;
+  height: 50vh;
+  margin: auto;
 }
+
+/* .infoCardCallActionContainer--info-card-slide {
+  background-color: transparent;
+  color: black;
+} */
 
 .newsletter {
   background-color: #03054e;

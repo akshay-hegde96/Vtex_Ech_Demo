@@ -8,7 +8,7 @@
       "menu-item#category-men",
       "menu-item#category-accessories",
       "menu-item#category-home",
-      "menu-item#sale"
+      "menu-item#sales"
     ]
   },
   "menu-item#category-women": {
@@ -335,7 +335,7 @@
     }
   },
 
-  "menu-item#sale": {
+  "menu-item#sales": {
     "props": {
       "id": "menu-item-custom-sale",
       "type": "custom",

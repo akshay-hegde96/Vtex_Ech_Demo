@@ -1,3 +1,5 @@
+// header containing Main Menu
+
 {
   "header": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
@@ -52,6 +54,7 @@
     "children": ["menu#drawer"]
   },
 
+  //-------header blocks in main menu (refer category-menu for definition of each block with sub-menu)-----------------------------
   "menu#drawer": {
     "children": [
       "menu-item#category-women",

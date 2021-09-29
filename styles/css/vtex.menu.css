@@ -1,11 +1,17 @@
 .styledLinkContent--sub-header {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  width: 100%;
+  padding: 2px 12px;
 }
 
-.styledLinkContent--sub-header:active,
-.menuItem--sub-header:hover,
-.menuItem--sub-header:active,
+.styledLinkContainer--sub-header {
+  width: 100%;
+  margin: 0;
+}
+
+.styledLinkContainer--sub-header:hover,
 .menuItem--sub-header--isOpen:hover,
 .menuItem--sub-header--isOpen:active,
 .styledLinkContent--sub-header:hover {
