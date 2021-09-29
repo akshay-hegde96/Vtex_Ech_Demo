@@ -92,3 +92,7 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+.flexRow--minicart-footer {
+  box-shadow: none;
+}

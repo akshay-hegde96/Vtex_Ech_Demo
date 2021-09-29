@@ -1,0 +1,34 @@
+.productName {
+    font-size: 15px;
+    overflow: hidden;
+    line-height: 1.2;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.productBrandName {
+    display: none;
+}
+.removeButtonContainer {
+    display: none;
+}
+.productVariationsContainer {
+    line-height: 1.2;
+}
+.productImageContainer {
+    max-height: 120px;
+}
+.unitPriceContainer {
+    display: none;
+}
+.productImageContainer {
+    text-align: center;
+}
+.productImage {
+    height: 96px;
+    width: auto;
+}
+.productPriceCurrency {
+    display: none;
+}
