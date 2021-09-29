@@ -11,12 +11,13 @@
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
-      "newsletter"
+      "newsletter"                          // NewsLetter in footer section
     ]
   },
-
   "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+    "children": [
+      "slider-layout#demo-images"
+    ],
     "props": {
       "height": 720,
       "images": [
@@ -43,7 +44,6 @@
       "blockClass": "carousel"
     }
   },
-
   "rich-text#shelf-title": {
     "props": {
       "text": "## Summer",
@@ -51,11 +51,17 @@
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": [
+      "list-context.product-list#demo1"
+    ]
   },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }
@@ -72,7 +78,6 @@
       "blockClass": "shelf"
     }
   },
-
   "info-card#home": {
     "props": {
       "id": "info-card-home",
@@ -86,17 +91,22 @@
       "textAlignment": "center"
     }
   },
-
   "rich-text#question": {
     "props": {
       "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
       "blockClass": "question"
     }
   },
-
   "rich-text#link": {
     "props": {
       "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "blockClass": "link"
+    }
+  },
+  "newsletter": {
+    "props": {
+      "label": "Newsletter Subscription",
+      "placeholder": "Enter Your Email",
       "blockClass": "link"
     }
   }

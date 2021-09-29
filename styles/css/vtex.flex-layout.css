@@ -1,28 +1,26 @@
-.flexRowContent--menu-link,
-.flexRowContent--main-header {
+.flexRowContent--menu-link, .flexRowContent--main-header {
   padding: 0 0.5rem;
 }
 
 @media screen and (min-width: 40em) {
-  .flexRowContent--menu-link,
-  .flexRowContent--main-header {
+  .flexRowContent--menu-link, .flexRowContent--main-header {
     padding: 0 1rem;
   }
 }
+
 @media screen and (min-width: 80rem) {
-  .flexRowContent--menu-link,
-  .flexRowContent--main-header {
+  .flexRowContent--menu-link, .flexRowContent--main-header {
     padding: 0 0.25rem;
   }
 }
 
 .flexRowContent--menu-link {
-  background-color: #03044e;
-  color: #fff;
+  background-color: white;
+  color: darkolivegreen;
 }
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  background-color: white;
 }
 
 .flexRowContent--main-header-mobile {
@@ -37,9 +35,10 @@
 }
 
 .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
-  color: #727273;
+  color: white;
   font-size: 14px;
 }
+
 .flexRow--deals {
   background-color: #a7afbd;
   padding: 14px 0px;
@@ -91,4 +90,10 @@
 
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+
+.flexRow--menu-row, .flexRow--credits, .flexRow--payment-methods {
+  background: darkolivegreen;
+  display: flex;
+  justify-content: center;
 }
