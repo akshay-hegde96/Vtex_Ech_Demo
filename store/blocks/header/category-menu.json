@@ -4,89 +4,105 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#category-account"
     ]
   },
-  "menu-item#category-apparel": {
+  "menu-item#category-account": {
     "props": {
-      "id": "menu-item-category-apparel",
+      "id": "menu-item-category-account",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/my---account/",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "tagTitle": "My Account",
+        "text": "My Account"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
+      "vtex.menu@2.x:submenu#category-account"
     ]
   },
-  "vtex.menu@2.x:submenu#category-apparel": {
+  "vtex.menu@2.x:submenu#category-account": {
     "props": {
       "width": "auto"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-apparel"
+      "vtex.menu@2.x:menu#category-account"
     ]
   },
-  "vtex.menu@2.x:menu#category-apparel": {
+  "vtex.menu@2.x:menu#category-account": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
+      "menu-item#category-account-my-account",
+      "menu-item#category-account-my-wishlist",
+      "menu-item#category-account-my-cart",
+      "menu-item#category-account-checkout",
+      "menu-item#category-account-register",
+      "menu-item#category-account-login"
     ]
   },
-  "menu-item#category-apparel-clothing": {
+  "menu-item#category-account-my-account": {
     "props": {
-      "id": "menu-item-category-apparel-clothing",
+      "id": "menu-item-category-account-my-account",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/clothing/",
+        "href": "/my---account/my-account/",
         "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "My Account",
+        "text": "My Account"
       }
     }
   },
-  "menu-item#category-apparel-accessories": {
+  "menu-item#category-account-my-wishlist": {
     "props": {
-      "id": "menu-item-category-apparel-accessories",
+      "id": "menu-item-category-account-my-wishlist",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/accessories/",
+        "href": "/my---account/my-wishlist/",
         "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
+        "tagTitle": "My Wishlist",
+        "text": "My Wishlist"
       }
     }
   },
-  "menu-item#category-apparel-eyeglasses": {
+  "menu-item#category-account-my-cart": {
     "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
+      "id": "menu-item-category-account-my-cart",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/eyeglasses/",
+        "href": "/my---account/my-cart/",
         "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
+        "tagTitle": "My Cart",
+        "text": "My Cart"
+      }
+    }
+  },
+  "menu-item#category-account-checkout": {
+    "props": {
+      "id": "menu-item-category-account-checkout",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my---account/checkout/",
+        "noFollow": false,
+        "tagTitle": "Checkout",
+        "text": "Checkout"
       }
     }
   },
@@ -102,6 +118,36 @@
         "noFollow": false,
         "tagTitle": "Home & Decor",
         "text": "Home & Decor"
+      }
+    }
+  },
+  "menu-item#category-account-register": {
+    "props": {
+      "id": "menu-item-category-account-register",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my---account/register/",
+        "noFollow": false,
+        "tagTitle": "Register",
+        "text": "Register"
+      }
+    }
+  },
+  "menu-item#category-account-login": {
+    "props": {
+      "id": "menu-item-category-account-login",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my---account/login/",
+        "noFollow": false,
+        "tagTitle": "Login",
+        "text": "Login"
       }
     }
   },
