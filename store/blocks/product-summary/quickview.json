@@ -2,7 +2,9 @@
   "modal-trigger#quickview": {
     "children": [
       "icon-expand",
-      "modal-layout#quickview"
+      "modal-layout#quickview",
+      "add-to-list-btn",
+      "viewdetails-button"
     ],
     "props": {
       "blockClass": "quickview"
@@ -34,6 +36,7 @@
       "blockClass": "quickviewContent"
     }
   },
+
   "flex-layout.col#quickviewPrice": {
     "children": [
       "flex-layout.row#list-price-savings",

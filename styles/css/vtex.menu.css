@@ -19,3 +19,18 @@
 
   background-color: rgb(177, 180, 179);
 }
+.styledLinkContent {
+    font-weight: 700;
+    font-size: small;
+    color: lightgray;
+}
+
+.styledLinkContent:active, .styledLinkContent:hover {
+    font-weight: 800;
+    color: darkolivegreen;
+}
+
+.styledLinkContent--shop, .styledLinkContent--my-account, .styledLinkContent--contact, .styledLinkContent--about {
+    font-size: large;
+    padding-bottom: 5px;
+}

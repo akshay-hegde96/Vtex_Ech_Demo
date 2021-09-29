@@ -19,46 +19,60 @@
 } */
 
 .newsletter {
-  background-color: #03054e;
   max-width: 1528px;
   margin: 0 auto;
 }
 
 .newsletter .container {
-  padding: 60px 10px;
+  background: darkolivegreen;
 }
 
 .label {
+  display: flex;
   color: #fff;
-  font-size: 26px;
+  font-size: 6px;
+  justify-content: center;
+  align-items: center;
 }
 
 .inputGroup {
-  padding-bottom: 4px;
   display: flex;
   color: #fff;
+  min-width: 400px;
+  margin-left: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
   background-color: transparent;
   color: #fff;
   border: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
   color: #fff;
   font-size: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 .inputGroup :global(.vtex-button) {
   background-color: transparent;
   color: #fff;
   border: none;
-  margin-right: -24px;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttonContainer {
-  padding-top: 0px;
+  display: flex;
+  color: #fff;
+  font-size: 6px;
+  justify-content: center;
+  align-items: center;
 }
 
 .imageElement--storePrint {
@@ -71,22 +85,26 @@
 }
 
 @media only screen and (min-width: 640px) {
+  .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 800px;
+    font-size: 30px;
+  }
   .newsletter .container {
-    padding: 140px;
+    padding: 10px 10px;
   }
-
-  .label {
-    font-size: 40px;
+  .label--link {
+    font-size: 25px;
   }
-
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
   }
-
   .infoCardContainer--info-card-home .infoCardImageContainer {
     width: 70%;
   }
-
   .imageElement--storePrint {
     margin-bottom: 0px;
     max-height: 600px;
@@ -115,4 +133,22 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 30px;
+}
+
+.searchBarContainer {
+  background-color: lightgray;
+}
+
+.autoCompleteOuterContainer, .suffixWrapper, .searchBarInnerContainer {
+  visibility: hidden;
+}
+
+.searchIcon {
+  background-color: lightgray;
+  visibility: visible;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }

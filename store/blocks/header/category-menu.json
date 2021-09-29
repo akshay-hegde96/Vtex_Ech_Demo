@@ -54,8 +54,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "My Account",
+        "text": "My Account"
       }
     }
   },
@@ -70,8 +70,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
+        "tagTitle": "My Wishlist",
+        "text": "My Wishlist"
       }
     }
   },
@@ -86,8 +86,23 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
+        "tagTitle": "My Cart",
+        "text": "My Cart"
+      }
+    }
+  },
+  "menu-item#category-account-checkout": {
+    "props": {
+      "id": "menu-item-category-account-checkout",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my---account/checkout/",
+        "noFollow": false,
+        "tagTitle": "Checkout",
+        "text": "Checkout"
       }
     }
   },

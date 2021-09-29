@@ -1,0 +1,8 @@
+{
+  "name": "vtex-io-store-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/deepi1997/vtex-io-store-theme.git",
+  "author": "deepi1997 <dreadeepika0@gmail.com>",
+  "license": "MIT"
+}

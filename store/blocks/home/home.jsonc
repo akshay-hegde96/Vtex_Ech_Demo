@@ -204,5 +204,12 @@
       "blockClass": "shelfTitle",
       "textAlignment": "center"
     }
+  },
+  "newsletter": {
+    "props": {
+      "label": "Newsletter Subscription",
+      "placeholder": "Enter Your Email",
+      "blockClass": "link"
+    }
   }
 }

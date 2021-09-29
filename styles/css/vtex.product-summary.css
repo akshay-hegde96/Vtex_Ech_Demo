@@ -41,3 +41,24 @@
 .image {
   border-radius: 0.25rem;
 }
+
+
+.imageContainer:hover {
+ opacity: 0.6;
+ position: relative;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ height: 100%;
+ width: 100%;
+ transition: .5s ease;
+ background-color: #2E2E2E;
+}
+
+
+
+
+
+
+
