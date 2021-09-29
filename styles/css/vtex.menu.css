@@ -1,0 +1,15 @@
+.styledLinkContent--sub-header {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.styledLinkContent--sub-header:active,
+.menuItem--sub-header:hover,
+.menuItem--sub-header:active,
+.menuItem--sub-header--isOpen:hover,
+.menuItem--sub-header--isOpen:active,
+.styledLinkContent--sub-header:hover {
+  color: white;
+
+  background-color: rgb(177, 180, 179);
+}

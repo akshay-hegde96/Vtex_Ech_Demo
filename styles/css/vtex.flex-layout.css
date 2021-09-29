@@ -1,6 +1,14 @@
 .flexRowContent--menu-link,
 .flexRowContent--main-header {
-  padding: 0 0.5rem;
+  padding: 0 0.3rem;
+  box-sizing: border-box;
+  border-bottom: 2px solid rgb(167, 165, 165);
+  margin-bottom: 10px;
+}
+.flexRowContent--menu-link,
+.flexRowContent--main-header :hover,
+:active {
+  color: rgb(126, 123, 123);
 }
 
 @media screen and (min-width: 40em) {
@@ -22,13 +30,13 @@
 }
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  background-color: white;
 }
 
 .flexRowContent--main-header-mobile {
   align-items: center;
   padding: 0.625rem 0.5rem;
-  background-color: #f0f0f0;
+  background-color: white;
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
@@ -37,11 +45,12 @@
 }
 
 .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
-  color: #727273;
-  font-size: 14px;
+  font-size: 20px;
+  color: rgb(11, 112, 50);
+  font-weight: 600;
 }
 .flexRow--deals {
-  background-color: #a7afbd;
+  background-color: #a7aabd;
   padding: 14px 0px;
 }
 

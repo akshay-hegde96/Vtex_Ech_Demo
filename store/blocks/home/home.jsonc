@@ -1,37 +1,22 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      "slider-layout#slides",
+      "flex-layout.row#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
+      "info-card#shelf",
       "flex-layout.row#shelf",
-      "info-card#home",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
     ]
   },
 
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
-    "props": {
-      "height": 720,
-      "images": [
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
-        },
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
-        }
-      ]
-    }
-  },
-  "slider-layout#demo-images": {
+  //-----------------------------caraousal------------------------------------------
+
+  "slider-layout#slides": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -40,16 +25,200 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "blockClass": "carousel",
+      "fullWidth": true
+    },
+    "children": ["info-card#slide1", "info-card#slide2"]
+  },
+
+  "info-card#slide1": {
+    "props": {
+      "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "isFullModeStyle": true,
+      "headline": "Design Your attitude",
+      "callToActionMode": "button",
+      "callToActionText": "See Collection",
+      "callToActionUrl": "#",
+      "textPosition": "center",
+      "blockClass": "info-card-slide"
     }
   },
 
-  "rich-text#shelf-title": {
+  "info-card#slide2": {
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+
+      "isFullModeStyle": true,
+      //"headline": "Black Friday",
+      "callToActionMode": "button",
+      "callToActionText": "Subscribe",
+      "callToActionUrl": "#",
+      "textPosition": "center",
+      "blockClass": "info-card-slide"
     }
   },
+  //------------------category---------------------------------------------------
+
+  "flex-layout.row#demo": {
+    "children": ["flex-layout.col#left", "flex-layout.col#right"]
+  },
+
+  "flex-layout.col#left": {
+    "children": ["stack-layout#cta-clothing", "stack-layout#cta-sale"]
+  },
+
+  "stack-layout#cta-clothing": {
+    "props": {
+      "blockClass": "category"
+    },
+    "children": ["image#clothing", "link#cta-clothing"]
+  },
+  "image#clothing": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",
+      "width": "100%",
+      "height": "220px"
+    }
+  },
+
+  "link#cta-clothing": {
+    "props": {
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary",
+        "size": "medium"
+      },
+      "href": "#",
+      "label": "Clothing"
+    }
+  },
+
+  "stack-layout#cta-sale": {
+    "props": {
+      "blockClass": "category"
+    },
+    "children": ["image#sale", "link#cta-sale"]
+  },
+
+  "image#sale": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
+      "width": "100%",
+      "height": "350px"
+    }
+  },
+  "link#cta-sale": {
+    "props": {
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary",
+        "size": "medium"
+      },
+      "href": "#",
+      "label": "Sale upto 60% off"
+    }
+  },
+
+  "flex-layout.col#right": {
+    "children": ["stack-layout#cta-shoes", "stack-layout#cta-racing"]
+  },
+
+  "stack-layout#cta-shoes": {
+    "props": {
+      "blockClass": "category"
+    },
+    "children": ["image#shoes", "link#cta-shoes"]
+  },
+  "image#shoes": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",
+      "width": "100%",
+      "height": "350px"
+    }
+  },
+
+  "link#cta-shoes": {
+    "props": {
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary",
+        "size": "medium"
+      },
+      "href": "#",
+      "label": "Shoes & Accessories"
+    }
+  },
+
+  "stack-layout#cta-racing": {
+    "props": {
+      "blockClass": "category"
+    },
+    "children": ["image#racing", "link#cta-racing"]
+  },
+
+  "image#racing": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
+      "width": "100%",
+      "height": "220px"
+    }
+  },
+  "link#cta-racing": {
+    "props": {
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary",
+        "size": "medium"
+      },
+      "href": "#",
+      "label": "Racing"
+    }
+  },
+
+  // "list-context.image-list#demo": {
+  //   "children": ["slider-layout#demo-images"],
+  //   "props": {
+  //     "height": 720,
+  //     "images": [
+  //       {
+  //         "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+  //         "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg",
+  //         "description": "GGGGKGKLH"
+  //       },
+  //       {
+  //         "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+  //         "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg",
+  //         "description": "GGGGKGKLH"
+  //       }
+  //     ]
+  //   }
+  // },
+  // "slider-layout#demo-images": {
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "desktop": 1,
+  //       "tablet": 1,
+  //       "phone": 1
+  //     },
+  //     "infinite": true,
+  //     "showNavigationArrows": "desktopOnly",
+  //     "blockClass": "carousel"
+  //   }
+  // },
+
+  "info-card#shelf": {
+    "props": {
+      "id": "info-card-shelf",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "headline": "New Arrivals",
+      "callToActionText": "View All",
+      "callToActionUrl": "#",
+      "blockClass": "shelfTitle",
+      "textAlignment": "center"
+    }
+  },
+
   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
   },
@@ -70,20 +239,6 @@
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf"
-    }
-  },
-
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
     }
   },
 
