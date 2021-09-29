@@ -24,8 +24,8 @@
   "sticky-layout#4-desktop": {
     "props": {
       "blockClass": "sticky-header"
-    },
-    "children": ["flex-layout.row#4-desktop"]
+    }
+   //"children": ["flex-layout.row#4-desktop"]
   },
   // "flex-layout.row#1-desktop" -- Start
   "flex-layout.row#1-desktop": {
@@ -149,12 +149,12 @@
   //-------header blocks in main menu (refer category-menu for definition of each block with sub-menu)-----------------------------
   "menu#drawer": {
     "children": [
-      "menu-item#category-account",
+     // "menu-item#category-account",
       "menu-item#category-women",
       "menu-item#category-men",
       "menu-item#category-accessories",
-      "menu-item#category-home",
-      "menu-item#sale"
+      "menu-item#category-home"
+      //"menu-item#sale"
     ],
     "props": {
       "orientation": "vertical"
