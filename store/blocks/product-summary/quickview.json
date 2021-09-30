@@ -3,8 +3,7 @@
     "children": [
       "icon-expand",
       "modal-layout#quickview",
-      "add-to-list-btn",
-      "viewdetails-button"
+      "viewdetails-button#pdp-page"
     ],
     "props": {
       "blockClass": "quickview"
@@ -34,6 +33,12 @@
     ],
     "props": {
       "blockClass": "quickviewContent"
+    }
+  },
+
+  "viewdetails-button#pdp-page":{
+    "props":{
+      "AddListenBtn":"add-to-list-btn"
     }
   },
 
