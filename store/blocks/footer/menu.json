@@ -316,14 +316,10 @@
         "text": "Clothing"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#clothing"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
   },
   "vtex.menu@2.x:submenu.accordion#clothing": {
-    "children": [
-      "vtex.menu@2.x:menu#clothing-accordion"
-    ]
+    "children": ["vtex.menu@2.x:menu#clothing-accordion"]
   },
   "vtex.menu@2.x:menu#clothing-accordion": {
     "props": {
@@ -344,14 +340,10 @@
         "text": "Decoration"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#decoration"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
   },
   "vtex.menu@2.x:submenu.accordion#decoration": {
-    "children": [
-      "vtex.menu@2.x:menu#footer-customer-service-mobile"
-    ]
+    "children": ["vtex.menu@2.x:menu#footer-customer-service-mobile"]
   },
   "vtex.menu@2.x:menu#footer-customer-service-mobile": {
     "props": {
@@ -372,14 +364,10 @@
         "text": "Sale"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#sale"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
   },
   "vtex.menu@2.x:submenu.accordion#sale": {
-    "children": [
-      "vtex.menu@2.x:menu#footer-sale-mobile"
-    ]
+    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
   },
   "vtex.menu@2.x:menu#footer-sale-mobile": {
     "props": {

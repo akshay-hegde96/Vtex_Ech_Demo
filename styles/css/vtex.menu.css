@@ -1,15 +1,32 @@
-.styledLinkContent {
-    font-weight: 700;
-    font-size: small;
-    color: lightgray;
+.styledLinkContent--sub-header {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  width: 100%;
+  padding: 2px 12px;
 }
 
-.styledLinkContent:active, .styledLinkContent:hover {
-    font-weight: 800;
-    color: darkolivegreen;
+.styledLinkContainer--sub-header {
+  width: 100%;
+  margin: 0;
 }
 
-.styledLinkContent--shop, .styledLinkContent--my-account, .styledLinkContent--contact, .styledLinkContent--about {
-    font-size: large;
-    padding-bottom: 5px;
+.styledLinkContainer--sub-header:hover,
+.menuItem--sub-header--isOpen:hover,
+.menuItem--sub-header--isOpen:active,
+.styledLinkContent--sub-header:hover {
+  color: white;
+
+  background-color: rgb(177, 180, 179);
+}
+
+/* ------------------------------------------------------------ */
+
+.styledLinkContent--shop,
+.styledLinkContent--my-account,
+.styledLinkContent--contact,
+.styledLinkContent--about {
+  font-size: large;
+  padding-bottom: 5px;
+  color: white;
 }
