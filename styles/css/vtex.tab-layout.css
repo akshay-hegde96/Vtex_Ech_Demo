@@ -1,0 +1,36 @@
+.listContainer--product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.listItem--details, .listItem--info, .listItem--reviews {
+    background: white;
+    font-size: larger;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    border: 2px solid lightgray;
+}
+
+.listItemActive--details, .listItemActive--info, .listItemActive--reviews {
+    background: darkblue;
+    font-size: larger;
+}
+
+.contentContainer--product {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.contentItem--details, .contentItem--info, .contentItem--reviews {
+    justify-content: center;
+    border: 2px solid lightgray;
+    padding: 10px 30px;
+    max-width: 900px;
+    min-height: 300px;
+    margin: 30px 30px;
+}

@@ -28,14 +28,25 @@
 }
 
 .label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.label--newsletter {
   display: flex;
   color: #fff;
-  font-size: 6px;
+  font-size: 26px;
   justify-content: center;
   align-items: center;
 }
 
 .inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+}
+
+.inputGroup--newsletter {
   display: flex;
   color: #fff;
   min-width: 400px;
@@ -48,26 +59,25 @@
   background-color: transparent;
   color: #fff;
   border: none;
-  justify-content: center;
-  align-items: center;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
   color: #fff;
   font-size: 16px;
-  justify-content: center;
-  align-items: center;
 }
 
 .inputGroup :global(.vtex-button) {
   background-color: transparent;
   color: #fff;
   border: none;
-  justify-content: center;
-  align-items: center;
+  margin-right: -24px;
 }
 
 .buttonContainer {
+  padding-top: 0px;
+}
+
+.buttonContainer--newsletter {
   display: flex;
   color: #fff;
   font-size: 6px;
@@ -85,7 +95,7 @@
 }
 
 @media only screen and (min-width: 640px) {
-  .form {
+  .form--newsletter {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -94,6 +104,9 @@
     font-size: 30px;
   }
   .newsletter .container {
+    padding: 140px;
+  }
+  .newsletter .container--newsletter {
     padding: 10px 10px;
   }
   .label--link {
@@ -139,9 +152,7 @@
   background-color: lightgray;
 }
 
-.autoCompleteOuterContainer,
-.suffixWrapper,
-.searchBarInnerContainer {
+.autoCompleteOuterContainer, .suffixWrapper, .searchBarInnerContainer {
   visibility: hidden;
 }
 
@@ -153,4 +164,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
+}
+
+.productBrand--quickview {
+  font-size: 30px;
+}
+
+.productDescriptionContainer--product {
+  color: gray;
+}
+
+.productDescriptionTitle--product {
+  font-weight: bold;
 }

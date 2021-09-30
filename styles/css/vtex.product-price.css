@@ -35,7 +35,6 @@
   border-radius: 1000px;
   align-items: center;
   display: flex;
-
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   font-size: 0.875rem;
@@ -76,4 +75,14 @@
   vertical-align: baseline;
   color: #ffffff;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+.currencyContainer {
+  display: flex;
+}
+
+.currencyCode, .currencyInteger, .currencyFraction, .currencyDecimal, .currencyGroup {
+  font-size: 20px;
+  padding: 0px 0px;
+  margin: 0px 0px;
 }

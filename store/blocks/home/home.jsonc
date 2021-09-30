@@ -48,7 +48,7 @@
 
       "isFullModeStyle": true,
       //"headline": "Black Friday",
-      "callToActionMode": "button",
+      "callToActionMode": "buftton",
       "callToActionText": "Subscribe",
       "callToActionUrl": "#",
       "textPosition": "center",
@@ -235,7 +235,7 @@
     "props": {
       "label": "Newsletter Subscription",
       "placeholder": "Enter Your Email",
-      "blockClass": "link"
+      "blockClass": "newsletter"
     }
   }
 }
