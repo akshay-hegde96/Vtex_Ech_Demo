@@ -3,6 +3,7 @@
   "name": "store-theme",
   "version": "4.4.2",
   "builders": {
+    "assets": "0.x",
     "styles": "2.x",
     "store": "0.x",
     "sitemap": "0.x",
