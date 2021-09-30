@@ -2,11 +2,12 @@
   "store.home": {
     "blocks": [
       "slider-layout#slides", //caraousal
-      "flex-layout.row#demo", //
+      "flex-layout.row#demo", // categories
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-      "info-card#shelf" // view all collections
+      "info-card#shelf", // view all collections
+      "flex-layout.row#shelf" // view all shelf
     ]
   },
 
@@ -205,6 +206,30 @@
       "textAlignment": "center"
     }
   },
+
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
   "newsletter": {
     "props": {
       "label": "Newsletter Subscription",

@@ -3,88 +3,82 @@
     "props": {
       "experimentalOptimizeRendering": true
     },
-    "children": [
-      "menu-item#category-women",
-      "menu-item#category-men",
-      "menu-item#category-accessories",
-      "menu-item#category-home",
-      "menu-item#sales"
-    ]
+    "children": ["menu-item#category-account"]
   },
-  "menu-item#category-women": {
+  "menu-item#category-account": {
     "props": {
-      "id": "menu-item-category-women",
+      "id": "menu-item-category-account",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/my---account/",
         "noFollow": false,
-        "tagTitle": "Women",
-        "text": "Women"
+        "tagTitle": "My Account",
+        "text": "My Account"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu#category-women"]
+    "blocks": ["vtex.menu@2.x:submenu#category-account"]
   },
-  "vtex.menu@2.x:submenu#category-women": {
+  "vtex.menu@2.x:submenu#category-account": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#category-women"]
+    "children": ["vtex.menu@2.x:menu#category-account"]
   },
-  "vtex.menu@2.x:menu#category-women": {
+  "vtex.menu@2.x:menu#category-account": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-women-clothing",
-      "menu-item#category-women-accessories",
-      "menu-item#category-women-eyeglasses"
+      "menu-item#category-account-my-account",
+      "menu-item#category-account-my-wishlist",
+      "menu-item#category-account-my-cart",
+      "menu-item#category-account-checkout",
+      "menu-item#category-account-register",
+      "menu-item#category-account-login"
     ]
   },
-  "menu-item#category-women-clothing": {
+  "menu-item#category-account-my-account": {
     "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-women-clothing",
+      "id": "menu-item-category-account-my-account",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/my---account/my-account/",
         "noFollow": false,
         "tagTitle": "My Account",
         "text": "My Account"
       }
     }
   },
-  "menu-item#category-women-accessories": {
+  "menu-item#category-account-my-wishlist": {
     "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-women-accessories",
+      "id": "menu-item-category-account-my-wishlist",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/my---account/my-wishlist/",
         "noFollow": false,
         "tagTitle": "My Wishlist",
         "text": "My Wishlist"
       }
     }
   },
-  "menu-item#category-women-eyeglasses": {
+  "menu-item#category-account-my-cart": {
     "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-women-eyeglasses",
+      "id": "menu-item-category-account-my-cart",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/my---account/my-cart/",
         "noFollow": false,
         "tagTitle": "My Cart",
         "text": "My Cart"
@@ -106,169 +100,6 @@
       }
     }
   },
-
-  "menu-item#category-men": {
-    "props": {
-      "id": "menu-item-category-men",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Men",
-        "text": "Men"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#category-men"]
-  },
-  "vtex.menu@2.x:submenu#category-men": {
-    "props": {
-      "width": "auto"
-    },
-    "children": ["vtex.menu@2.x:menu#category-men"]
-  },
-  "vtex.menu@2.x:menu#category-men": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#category-men-clothing",
-      "menu-item#category-men-accessories",
-      "menu-item#category-men-eyeglasses"
-    ]
-  },
-  "menu-item#category-men-clothing": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-men-clothing",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
-    }
-  },
-  "menu-item#category-men-accessories": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-men-accessories",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
-      }
-    }
-  },
-  "menu-item#category-men-eyeglasses": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-men-eyeglasses",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
-      }
-    }
-  },
-
-  "menu-item#category-accessories": {
-    "props": {
-      "id": "menu-item-category-accessories",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#category-accessories"]
-  },
-  "vtex.menu@2.x:submenu#category-accessories": {
-    "props": {
-      "width": "auto"
-    },
-    "children": ["vtex.menu@2.x:menu#category-accessories"]
-  },
-  "vtex.menu@2.x:menu#category-accessories": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#category-accessories-watch",
-      "menu-item#category-accessories-shoes",
-      "menu-item#category-accessories-eyeglasses"
-    ]
-  },
-  "menu-item#category-accessories-watch": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-accessories-watch",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Watch",
-        "text": "Watch"
-      }
-    }
-  },
-  "menu-item#category-accessories-shoes": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-accessories-shoes",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Shoes",
-        "text": "Shoes"
-      }
-    }
-  },
-  "menu-item#category-accessories-eyeglasses": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-accessories-eyeglasses",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
-      }
-    }
-  },
-
   "menu-item#category-home": {
     "props": {
       "id": "menu-item-category-home",
@@ -277,98 +108,41 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/home---decor/",
         "noFollow": false,
         "tagTitle": "Home & Decor",
         "text": "Home & Decor"
       }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#category-home"]
+    }
   },
-  "vtex.menu@2.x:submenu#category-home": {
+  "menu-item#category-account-register": {
     "props": {
-      "width": "auto"
-    },
-    "children": ["vtex.menu@2.x:menu#category-home"]
-  },
-  "vtex.menu@2.x:menu#category-home": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#category-home-furniture",
-      "menu-item#category-home-artifacts",
-      "menu-item#category-home-appliances"
-    ]
-  },
-  "menu-item#category-home-furniture": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-home-furniture",
+      "id": "menu-item-category-account-register",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/my---account/register/",
         "noFollow": false,
-        "tagTitle": "Furniture",
-        "text": "Furniture"
+        "tagTitle": "Register",
+        "text": "Register"
       }
     }
   },
-  "menu-item#category-home-artifacts": {
+  "menu-item#category-account-login": {
     "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-home-artifacts",
+      "id": "menu-item-category-account-login",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/my---account/login/",
         "noFollow": false,
-        "tagTitle": "Artifacts",
-        "text": "Artifacts"
+        "tagTitle": "Login",
+        "text": "Login"
       }
-    }
-  },
-  "menu-item#category-home-appliances": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-home-appliances",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Appliances",
-        "text": "Appliances"
-      }
-    }
-  },
-
-  "menu-item#sales": {
-    "props": {
-      "id": "menu-item-custom-sale",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "Sale",
-        "text": "Sale"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#sale"]
-  },
-  "vtex.menu@2.x:submenu#sale": {
-    "props": {
-      "width": "auto"
     }
   }
 }

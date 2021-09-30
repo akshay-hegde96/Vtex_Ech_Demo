@@ -1,36 +1,26 @@
 .flexRowContent--menu-link,
 .flexRowContent--main-header {
-  padding: 0 0.3rem;
-  box-sizing: border-box;
-
-  border-bottom: 2px solid rgb(167, 165, 165);
-  margin-bottom: 10px;
-}
-.flexRowContent--menu-link,
-.flexRowContent--main-header :hover,
-:active {
-  color: rgb(126, 123, 123);
-}
-.flexRowContent--menu-link, .flexRowContent--main-header {
   padding: 0 0.5rem;
 }
 
 @media screen and (min-width: 40em) {
-  .flexRowContent--menu-link, .flexRowContent--main-header {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
     padding: 0 1rem;
   }
 }
 
 @media screen and (min-width: 80rem) {
-  .flexRowContent--menu-link, .flexRowContent--main-header {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
     padding: 0 0.25rem;
   }
 }
 
-.flexRowContent--menu-link {
+/* .flexRowContent--menu-link {
   background-color: white;
   color: darkolivegreen;
-}
+} */
 
 .flexRowContent--main-header {
   background-color: white;
@@ -39,22 +29,22 @@
 .flexRowContent--main-header-mobile {
   align-items: center;
   padding: 0.625rem 0.5rem;
-  background-color: white;
-}
-
-.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
-  color: #ffffff;
-  font-size: 14px;
+  background-color: #f0f0f0;
 }
 
 .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  color: lightgray;
+}
+
+.flexRowContent--main-header :hover,
+.flexRowContent--main-header :active {
   color: rgb(11, 112, 50);
-  font-weight: 600;
 }
 
 .flexRow--deals {
-  background-color: #a7aabd;
+  background-color: #a7afbd;
   padding: 14px 0px;
 }
 
@@ -106,12 +96,37 @@
   padding-bottom: 1rem;
 }
 
-.flexRow--menu-row, .flexRow--credits, .flexRow--payment-methods {
+.flexRow--menu-row,
+.flexRow--credits,
+.flexRow--payment-methods {
   background: darkolivegreen;
   display: flex;
   justify-content: center;
 }
 
+.flexRowContent--menu-row :global(.vtex-menu-2-x-styledLink) {
+  color: white;
+}
+
 .flexRow--minicart-footer {
   box-shadow: none;
+}
+
+/* specific styling main header */
+
+.flexRowContent--main-menu {
+  padding: 0 0.3rem;
+  box-sizing: border-box;
+  border-bottom: 2px solid rgb(167, 165, 165);
+}
+
+.flexRowContent--main-menu :hover,
+:active {
+  color: rgb(126, 123, 123);
+}
+
+.flexRowContent--main-menu :global(.vtex-menu-2-x-styledLink) {
+  font-size: 20px;
+  color: rgb(11, 112, 50);
+  font-weight: 600;
 }
