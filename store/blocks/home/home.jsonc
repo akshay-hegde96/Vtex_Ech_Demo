@@ -48,7 +48,7 @@
 
       "isFullModeStyle": true,
       //"headline": "Black Friday",
-      "callToActionMode": "buftton",
+      "callToActionMode": "button",
       "callToActionText": "Subscribe",
       "callToActionUrl": "#",
       "textPosition": "center",
