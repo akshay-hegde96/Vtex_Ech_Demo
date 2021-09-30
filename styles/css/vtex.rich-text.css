@@ -72,18 +72,15 @@
     font-size: 40px;
     line-height: 3rem;
   }
-
   .container--about {
     max-width: 85%;
   }
-
   .container--title {
     color: #03034E;
     font-size: 40px;
     font-weight: 700;
     max-width: 60%;
   }
-
   .container--title .paragraph {
     line-height: 1.3em;
   }
@@ -94,5 +91,8 @@
     font-size: x-large;
     font-family: ui-sans-serif;
     margin-top: -68px;
+  }
+  .paragraph--footer {
+    color: white;
   }
 }
