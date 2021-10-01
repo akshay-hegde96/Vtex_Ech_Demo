@@ -9,7 +9,8 @@
   "minicart.v2": {
     "props": {
       "customPixelEventId": "add-to-cart-button",
-      "variation": "popup"
+      "variation": "popup",
+      "blockClass": "minicart"
     },
     "children": ["minicart-base-content"]
   },
