@@ -235,7 +235,7 @@
     "props": {
       "label": "Newsletter Subscription",
       "placeholder": "Enter Your Email",
-      "blockClass": "link"
+      "blockClass": "newsletter"
     }
   }
 }
