@@ -1,0 +1,15 @@
+.summaryItemContainer {
+    justify-content: flex-end;
+}
+.summarySmallDisclaimer {
+    display: none;
+}
+.summaryItemLabel,
+.summaryItemPrice {
+    font-weight: 600;
+}
+.summaryItemPrice {
+    flex: initial;
+    margin-left: 10px;
+    color: #4c804c;
+}

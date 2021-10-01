@@ -1,0 +1,15 @@
+.popper--custom-search-overlay {
+    width: 100%;
+    background-color: #d1d5c7;
+}
+
+.container--custom-search-overlay {
+    padding: 0;
+}
+
+.trigger--custom-search-overlay-trigger {
+    max-width: 60px;
+    max-height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+}

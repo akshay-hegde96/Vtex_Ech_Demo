@@ -1,0 +1,40 @@
+.styledLinkContent--sub-header {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  width: 100%;
+  padding: 2px 12px;
+  color: green;
+}
+
+.styledLinkContent--sub-header:hover, .styledLinkContent--sub-header:active {
+  color: white;
+}
+
+.styledLinkContainer--sub-header {
+  width: 100%;
+  margin: 0;
+}
+
+.styledLinkContainer--sub-header:hover, .menuItem--sub-header--isOpen:hover, .menuItem--sub-header--isOpen:active, .styledLinkContent--sub-header:hover {
+  color: white;
+  background-color: rgb(177, 180, 179);
+}
+
+/* ------------------------------------------------------------ */
+
+.styledLinkContent--shop, .styledLinkContent--my-account, .styledLinkContent--customer-service, .styledLinkContent--about {
+  font-size: 20px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.styledLinkContent--megaMenu-header {
+  font-size: 22px;
+  color: green;
+}
+
+.styledLinkContent--men, .styledLinkContent--women, .styledLinkContent--shoes, .styledLinkContent--accessories, .styledLinkContent--new, .styledLinkContent--my-profile, .styledLinkContent--quick-orders, .styledLinkContent--my-orders, .styledLinkContent--returns, .styledLinkContent--gift-credit, .styledLinkContent--contact, .styledLinkContent--help, .styledLinkContent--shipping-policy, .styledLinkContent--privacy-policy, .styledLinkContent--term-of-use, .styledLinkContent--careers, .styledLinkContent--corporate-blog, .styledLinkContent--store-features, .styledLinkContent--upcoming-features {
+  font-size: 15px;
+  color: white;
+}

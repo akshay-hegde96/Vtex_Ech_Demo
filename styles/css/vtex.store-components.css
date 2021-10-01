@@ -6,21 +6,25 @@
   text-decoration: underline;
 }
 
-.infoCardContainer--info-card-home {
-  max-width: 1520px;
-  margin: 0 auto;
-  background-color: #e6f1e6;
-  padding: 0px;
+.infoCardContainer--info-card-slide {
+  object-fit: cover;
+  width: 100%;
+  height: 50vh;
+  margin: auto 10px;
 }
 
+/* .infoCardCallActionContainer--info-card-slide {
+  background-color: transparent;
+  color: black;
+} */
+
 .newsletter {
-  background-color: #03054e;
   max-width: 1528px;
   margin: 0 auto;
 }
 
 .newsletter .container {
-  padding: 60px 10px;
+  background: darkolivegreen;
 }
 
 .label {
@@ -28,10 +32,27 @@
   font-size: 26px;
 }
 
+.label--newsletter {
+  display: flex;
+  color: #fff;
+  font-size: 26px;
+  justify-content: center;
+  align-items: center;
+}
+
 .inputGroup {
   padding-bottom: 4px;
   display: flex;
   color: #fff;
+}
+
+.inputGroup--newsletter {
+  display: flex;
+  color: #fff;
+  min-width: 400px;
+  margin-left: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
@@ -56,6 +77,14 @@
   padding-top: 0px;
 }
 
+.buttonContainer--newsletter {
+  display: flex;
+  color: #fff;
+  font-size: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
 .imageElement--storePrint {
   max-height: 300px;
   margin-bottom: 20px;
@@ -66,22 +95,29 @@
 }
 
 @media only screen and (min-width: 640px) {
-  .newsletter .container {
+  .form--newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 800px;
+    font-size: 30px;
+  }
+  /* .newsletter .container {
     padding: 140px;
+  } */
+  .newsletter .container--newsletter {
+    padding: 10px 10px;
   }
-
-  .label {
-    font-size: 40px;
+  .label--link {
+    font-size: 25px;
   }
-
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
   }
-
   .infoCardContainer--info-card-home .infoCardImageContainer {
     width: 70%;
   }
-
   .imageElement--storePrint {
     margin-bottom: 0px;
     max-height: 600px;
@@ -110,4 +146,25 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 30px;
+}
+
+.searchBarContainer {
+  background-color: #d1d5c7;
+  padding: .75em 3em;
+}
+
+.productBrand--quickview {
+  font-size: 30px;
+}
+
+.productDescriptionContainer--product {
+  color: gray;
+}
+
+.productDescriptionTitle--product {
+  font-weight: bold;
+}
+
+.container--menu-row {
+  min-width: 1000px;
 }
