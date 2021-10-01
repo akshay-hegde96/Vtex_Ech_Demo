@@ -153,9 +153,7 @@
   padding: .75em 3em;
 }
 
-.autoCompleteOuterContainer,
-.suffixWrapper,
-.searchBarInnerContainer {
+.autoCompleteOuterContainer, .suffixWrapper, .searchBarInnerContainer {
   visibility: hidden;
 }
 
@@ -179,4 +177,8 @@
 
 .productDescriptionTitle--product {
   font-weight: bold;
+}
+
+.container--menu-row {
+  min-width: 1000px;
 }
