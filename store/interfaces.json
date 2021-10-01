@@ -1,5 +1,8 @@
 {
     "search-icon-button": {
         "component": "SearchButton"
+    },
+    "viewdetails-button":{
+        "component":"ViewdetailButtonWrapper"
     }
 }

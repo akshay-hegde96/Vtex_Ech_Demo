@@ -1,41 +1,30 @@
 {
   "header": {
-    "blocks": [
-      "header-layout.desktop",
-      "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header.full": {
-    "blocks": [
-      "header-layout.desktop",
-      "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop",  // Telemarketing
-      "sticky-layout#2-desktop",    // Launguage selector, My account, Logo, Search bar, Minicart.
-      "flex-layout.row#3-desktop"   // Main menu
+      //"flex-layout.row#1-desktop", // Telemarketing-- definition removed
+
+      "sticky-layout#2-desktop", // Launguage selector, My account, Logo, Search bar, Minicart.
+
+      //"flex-layout.row#3-desktop", // Main menu shop and about us-- definition removed
+
+      //-----------------//main header menu-------------------------------------------------
+
+      "flex-layout.row#4-desktop"
     ]
   },
-  // "flex-layout.row#1-desktop" -- Start
-  "flex-layout.row#1-desktop": {
-    "children": [
-      "telemarketing"
-    ],
-    "props": {
-      "fullWidth": true
-    }
-  },
-  // "flex-layout.row#1-desktop" -- End
   // "sticky-layout#2-desktop" -- Start
+
   "sticky-layout#2-desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": [
-      "flex-layout.row#2-desktop"
-    ]
+    "children": ["flex-layout.row#2-desktop"]
   },
   "flex-layout.row#2-desktop": {
     "props": {
@@ -62,17 +51,14 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": [
-      "logo#desktop"
-    ]
+    "children": ["logo#desktop"]
   },
+
   "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": [
-      "vtex.menu@2.x:menu#category-menu"
-    ]
+    "children": ["vtex.menu@2.x:menu#category-menu"]
   },
   "logo#desktop": {
     "props": {
@@ -103,17 +89,15 @@
       "width": "grow"
     }
   },
-  // "flex-layout.row#3-desktop" -- End
+  //"sticky-layout#2-desktop" -- End
+
   // "header-layout.mobile" -- Start
+
   "header-layout.mobile": {
-    "children": [
-      "sticky-layout#1-mobile"
-    ]
+    "children": ["sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
-    "children": [
-      "flex-layout.row#1-mobile"
-    ]
+    "children": ["flex-layout.row#1-mobile"]
   },
   "flex-layout.row#1-mobile": {
     "children": [
@@ -131,13 +115,17 @@
     }
   },
   "drawer": {
-    "children": [
-      "menu#drawer"
-    ]
+    "children": ["menu#drawer"]
   },
   "menu#drawer": {
     "children": [
-      "menu-item#category-account"
+      "menu-item#category-account",
+
+      "menu-item#category-women",
+      "menu-item#category-men",
+      "menu-item#category-accessories",
+      "menu-item#category-home-decor",
+      "menu-item#sales"
     ],
     "props": {
       "orientation": "vertical"
@@ -151,6 +139,29 @@
       "width": "70"
     }
   },
+
+  // "header-layout.mobile" -- End
+
+  //----------------------main-header-menu----------------------------------------------------------
+
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-menu",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#main-menu"]
+  },
+  "flex-layout.col#main-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#main-menu"]
+  },
+
   "overlay-trigger#search-icon": {
     "children": [
       "search-icon-button",

@@ -1,9 +1,6 @@
 {
   "vtex.menu@2.x:menu#websites": {
-    "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
-    ]
+    "children": ["menu-item#shop"]
   },
   "menu-item#shop": {
     "props": {
@@ -21,9 +18,7 @@
     }
   },
   "vtex.menu@2.x:menu#institutional": {
-    "children": [
-      "menu-item#vtex-website"
-    ]
+    "children": ["menu-item#vtex-website"]
   },
   "menu-item#vtex-website": {
     "props": {

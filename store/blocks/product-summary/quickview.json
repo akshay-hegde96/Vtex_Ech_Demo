@@ -2,7 +2,8 @@
   "modal-trigger#quickview": {
     "children": [
       "icon-expand",
-      "modal-layout#quickview"
+      "modal-layout#quickview",
+      "viewdetails-button#pdp-page"
     ],
     "props": {
       "blockClass": "quickview"
@@ -34,6 +35,13 @@
       "blockClass": "quickviewContent"
     }
   },
+
+  "viewdetails-button#pdp-page":{
+    "props":{
+      "AddListenBtn":"add-to-list-btn"
+    }
+  },
+
   "flex-layout.col#quickviewPrice": {
     "children": [
       "flex-layout.row#list-price-savings",

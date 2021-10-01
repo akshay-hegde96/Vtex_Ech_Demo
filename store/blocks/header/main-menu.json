@@ -1,0 +1,364 @@
+{
+  "vtex.menu@2.x:menu#main-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#category-women",
+      "menu-item#category-men",
+      "menu-item#category-accessories",
+      "menu-item#category-home-decor",
+      "menu-item#sales"
+    ]
+  },
+  "menu-item#category-women": {
+    "props": {
+      "id": "menu-item-category-women",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Women",
+        "text": "Women"
+      },
+      "blockClass": "megaMenu-header"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-women"]
+  },
+  "vtex.menu@2.x:submenu#category-women": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-women"]
+  },
+  "vtex.menu@2.x:menu#category-women": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-women-clothing",
+      "menu-item#category-women-accessories",
+      "menu-item#category-women-eyeglasses"
+    ]
+  },
+  "menu-item#category-women-clothing": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-women-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
+      }
+    }
+  },
+  "menu-item#category-women-accessories": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-women-accessories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Accessories",
+        "text": "Accessories"
+      }
+    }
+  },
+  "menu-item#category-women-eyeglasses": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-women-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Eyeglasses",
+        "text": "Eyeglasses"
+      }
+    }
+  },
+
+  "menu-item#category-men": {
+    "props": {
+      "id": "menu-item-category-men",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Men",
+        "text": "Men"
+      },
+      "blockClass": "megaMenu-header"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-men"]
+  },
+  "vtex.menu@2.x:submenu#category-men": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-men"]
+  },
+  "vtex.menu@2.x:menu#category-men": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-men-clothing",
+      "menu-item#category-men-accessories",
+      "menu-item#category-men-eyeglasses"
+    ]
+  },
+  "menu-item#category-men-clothing": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-men-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
+      }
+    }
+  },
+  "menu-item#category-men-accessories": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-men-accessories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Accessories",
+        "text": "Accessories"
+      }
+    }
+  },
+  "menu-item#category-men-eyeglasses": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-men-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Eyeglasses",
+        "text": "Eyeglasses"
+      }
+    }
+  },
+
+  "menu-item#category-accessories": {
+    "props": {
+      "id": "menu-item-category-accessories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Accessories",
+        "text": "Accessories"
+      },
+      "blockClass": "megaMenu-header"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-accessories"]
+  },
+  "vtex.menu@2.x:submenu#category-accessories": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-accessories"]
+  },
+  "vtex.menu@2.x:menu#category-accessories": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-accessories-watch",
+      "menu-item#category-accessories-shoes",
+      "menu-item#category-accessories-eyeglasses"
+    ]
+  },
+  "menu-item#category-accessories-watch": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-accessories-watch",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Watch",
+        "text": "Watch"
+      }
+    }
+  },
+  "menu-item#category-accessories-shoes": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-accessories-shoes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shoes",
+        "text": "Shoes"
+      }
+    }
+  },
+  "menu-item#category-accessories-eyeglasses": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-accessories-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Eyeglasses",
+        "text": "Eyeglasses"
+      }
+    }
+  },
+
+  "menu-item#category-home-decor": {
+    "props": {
+      "id": "menu-item-category-home-decor",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Home & Decor",
+        "text": "Home & Decor"
+      },
+      "blockClass": "megaMenu-header"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-home-decor"]
+  },
+  "vtex.menu@2.x:submenu#category-home-decor": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-home-decor"]
+  },
+  "vtex.menu@2.x:menu#category-home-decor": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-home-furniture",
+      "menu-item#category-home-artifacts",
+      "menu-item#category-home-appliances"
+    ]
+  },
+  "menu-item#category-home-furniture": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-home-furniture",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Furniture",
+        "text": "Furniture"
+      }
+    }
+  },
+  "menu-item#category-home-artifacts": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-home-artifacts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Artifacts",
+        "text": "Artifacts"
+      }
+    }
+  },
+  "menu-item#category-home-appliances": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-home-appliances",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Appliances",
+        "text": "Appliances"
+      }
+    }
+  },
+
+  "menu-item#sales": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      },
+      "blockClass": "megaMenu-header"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#sale"]
+  },
+  "vtex.menu@2.x:submenu#sale": {
+    "props": {
+      "width": "auto"
+    }
+  }
+}

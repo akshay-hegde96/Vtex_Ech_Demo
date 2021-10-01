@@ -1,38 +1,20 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      "slider-layout#slides", //caraousal
+      "flex-layout.row#demo", // categories
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
+      "info-card#shelf", // view all collections
       "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"                          // NewsLetter in footer section
+      "newsletter" // view all shelf
     ]
   },
-  "list-context.image-list#demo": {
-    "children": [
-      "slider-layout#demo-images"
-    ],
-    "props": {
-      "height": 720,
-      "images": [
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
-        },
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
-        }
-      ]
-    }
-  },
-  "slider-layout#demo-images": {
+
+  //-----------------------------caraousal------------------------------------------
+
+  "slider-layout#slides": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -41,27 +23,197 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
-    }
+      "blockClass": "carousel",
+      "fullWidth": true
+    },
+    "children": ["info-card#slide1", "info-card#slide2"]
   },
-  "rich-text#shelf-title": {
+
+  "info-card#slide1": {
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "isFullModeStyle": true,
+      "headline": "Design Your attitude",
+      "callToActionMode": "button",
+      "callToActionText": "See Collection",
+      "callToActionUrl": "#",
+      "textPosition": "center",
+      "blockClass": "info-card-slide"
     }
   },
+
+  "info-card#slide2": {
+    "props": {
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+
+      "isFullModeStyle": true,
+      //"headline": "Black Friday",
+      "callToActionMode": "button",
+      "callToActionText": "Subscribe",
+      "callToActionUrl": "#",
+      "textPosition": "center",
+      "blockClass": "info-card-slide"
+    }
+  },
+  //------------------category--------------------------------------------------------
+
+  "flex-layout.row#demo": {
+    "children": ["flex-layout.col#left", "flex-layout.col#right"]
+  },
+
+  "flex-layout.col#left": {
+    "children": ["stack-layout#cta-clothing", "stack-layout#cta-sale"]
+  },
+
+  //-----------------category 1-------------------------------------------
+
+  "stack-layout#cta-clothing": {
+    "props": {
+      "blockClass": "category"
+    },
+    "children": ["image#clothing", "link#cta-clothing"]
+  },
+  "image#clothing": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",
+      "width": "100%",
+      "height": "220px"
+    }
+  },
+
+  "link#cta-clothing": {
+    "props": {
+      "blockClass": "cta-button",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary",
+        "size": "medium"
+      },
+      "href": "#",
+      "label": "Clothing"
+    },
+    "children": ["icon-caret#right"]
+  },
+  "icon-caret#right": {
+    "props": {
+      "orientation": "right"
+    }
+  },
+  //--------------------------category 2--------------------------------------------
+
+  "stack-layout#cta-sale": {
+    "props": {
+      "blockClass": "category"
+    },
+    "children": ["image#sale", "link#cta-sale"]
+  },
+
+  "image#sale": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
+      "width": "100%",
+      "height": "350px"
+    }
+  },
+  "link#cta-sale": {
+    "props": {
+      "blockClass": "cta-button",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary",
+        "size": "medium"
+      },
+      "href": "#",
+      "label": "Sale upto 60% off"
+    },
+    "children": ["icon-caret#right"]
+  },
+
+  "flex-layout.col#right": {
+    "children": ["stack-layout#cta-shoes", "stack-layout#cta-racing"]
+  },
+
+  //-----------------category 3-------------------------------------------
+
+  "stack-layout#cta-shoes": {
+    "props": {
+      "blockClass": "category"
+    },
+    "children": ["image#shoes", "link#cta-shoes"]
+  },
+  "image#shoes": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",
+      "width": "100%",
+      "height": "350px"
+    }
+  },
+
+  "link#cta-shoes": {
+    "props": {
+      "blockClass": "cta-button",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary",
+        "size": "medium"
+      },
+      "href": "#",
+      "label": "Shoes & Accessories"
+    },
+    "children": ["icon-caret#right"]
+  },
+
+  //-----------------category 4-------------------------------------------
+
+  "stack-layout#cta-racing": {
+    "props": {
+      "blockClass": "category"
+    },
+    "children": ["image#racing", "link#cta-racing"]
+  },
+
+  "image#racing": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
+      "width": "100%",
+      "height": "220px"
+    }
+  },
+  "link#cta-racing": {
+    "props": {
+      "blockClass": "cta-button",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary",
+        "size": "medium"
+      },
+      "href": "#",
+      "label": "Racing"
+    },
+    "children": ["icon-caret#right"]
+  },
+
+  //--------------------------------View All Collections---------------------------
+
+  "info-card#shelf": {
+    "props": {
+      "id": "info-card-shelf",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "headline": "New Arrivals",
+      "callToActionText": "View All",
+      "callToActionUrl": "#",
+      "blockClass": "shelfTitle",
+      "textAlignment": "center"
+    }
+  },
+
   "flex-layout.row#shelf": {
-    "children": [
-      "list-context.product-list#demo1"
-    ]
+    "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
-    "blocks": [
-      "product-summary.shelf"
-    ],
-    "children": [
-      "slider-layout#demo-products"
-    ],
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }
@@ -78,36 +230,12 @@
       "blockClass": "shelf"
     }
   },
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
-    }
-  },
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
-    }
-  },
+
   "newsletter": {
     "props": {
       "label": "Newsletter Subscription",
       "placeholder": "Enter Your Email",
-      "blockClass": "link"
+      "blockClass": "newsletter"
     }
   }
 }
