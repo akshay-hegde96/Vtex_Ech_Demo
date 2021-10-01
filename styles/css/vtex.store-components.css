@@ -149,7 +149,8 @@
 }
 
 .searchBarContainer {
-  background-color: lightgray;
+  background-color: #d1d5c7;
+  padding: .75em 3em;
 }
 
 .autoCompleteOuterContainer,
