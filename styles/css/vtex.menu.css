@@ -3,6 +3,7 @@
   font-weight: 600;
   letter-spacing: 0.04rem;
   width: 100%;
+  height: 100%;
   padding: 2px 12px;
   color: green;
 }
@@ -15,6 +16,7 @@
 .styledLinkContainer--sub-header {
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 .styledLinkContainer--sub-header:hover,
@@ -40,4 +42,10 @@
 .styledLinkContent--megaMenu-header {
   font-size: 22px;
   color: green;
+}
+
+.styledLinkContent--megaMenu-header:hover,
+.styledLinkContent--megaMenu-header:active {
+  font-size: 22px;
+  color: rgb(96, 167, 96);
 }
