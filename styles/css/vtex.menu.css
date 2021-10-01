@@ -4,6 +4,12 @@
   letter-spacing: 0.04rem;
   width: 100%;
   padding: 2px 12px;
+  color: green;
+}
+
+.styledLinkContent--sub-header:hover,
+.styledLinkContent--sub-header:active {
+  color: white;
 }
 
 .styledLinkContainer--sub-header {
@@ -31,7 +37,7 @@
   color: white;
 }
 
-.styledLinkContent--megaMenu-header{
+.styledLinkContent--megaMenu-header {
   font-size: 22px;
   color: green;
 }

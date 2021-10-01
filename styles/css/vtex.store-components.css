@@ -103,9 +103,9 @@
     min-width: 800px;
     font-size: 30px;
   }
-  .newsletter .container {
+  /* .newsletter .container {
     padding: 140px;
-  }
+  } */
   .newsletter .container--newsletter {
     padding: 10px 10px;
   }
@@ -152,7 +152,9 @@
   background-color: lightgray;
 }
 
-.autoCompleteOuterContainer, .suffixWrapper, .searchBarInnerContainer {
+.autoCompleteOuterContainer,
+.suffixWrapper,
+.searchBarInnerContainer {
   visibility: hidden;
 }
 
