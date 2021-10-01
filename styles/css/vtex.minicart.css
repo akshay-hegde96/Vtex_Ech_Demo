@@ -1,11 +1,9 @@
-
 .minicartWrapperContainer {
     background: darkolivegreen;
 }
 
 @media screen and (min-width: 1026px) {
-    .minicartSummary,
-    .minicartCheckoutButton {
+    .minicartSummary, .minicartCheckoutButton {
         padding: 0;
     }
     .minicartTitle {
@@ -14,6 +12,7 @@
         font-size: 15px;
     }
 }
+
 @media screen and (max-width: 1025px) {
     .minicartContentContainer {
         justify-content: unset;
@@ -26,10 +25,22 @@
     border-bottom: 1px solid #cecece;
     max-height: 350px;
 }
+
 .popupChildrenContainer {
     padding: 0 10px;
     margin: 0;
 }
+
 .arrowUp {
     display: none;
+}
+
+.minicartWrapperContainer--minicart {
+    max-width: 60px;
+    max-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 20px;
+    margin-top: 10px;
 }
