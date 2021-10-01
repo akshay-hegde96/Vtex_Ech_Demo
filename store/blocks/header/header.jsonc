@@ -53,7 +53,8 @@
       "flex-layout.col#spacer",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      "search-bar",
+      "overlay-trigger#search-icon",
+      /* "search-bar", */
       "minicart.v2"
     ]
   },
@@ -81,15 +82,7 @@
       "width": "180"
     }
   },
-  "search-bar": {
-    "blocks": [
-      "autocomplete-result-list.v2"
-    ],
-    "props": {
-      "placeholder": "Enter Your Keyword",
-      "displayMode": "search-and-clear-buttons"
-    }
-  },
+  
   // "sticky-layout#2-desktop" -- End
   // "flex-layout.row#3-desktop" -- Start
   "flex-layout.row#3-desktop": {
@@ -156,6 +149,33 @@
       "href": "/",
       "url": "../image/logo.png",
       "width": "70"
+    }
+  },
+  "overlay-trigger#search-icon": {
+    "children": [
+      "search-icon-button",
+      "overlay-layout#search-bar"    
+    ]
+  },
+  "overlay-layout#search-bar": {
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "custom-search-overlay"
+    }
+  },
+  "search-bar": {
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
+    "props": {
+      "placeholder": "Enter Your Keyword",
+      "displayMode": "search-and-clear-buttons",
+      "autocompleteFullWidth": true,
+      "containerMode": "container",
+      "maxWidth": "100%",
+      "blockClass": "custom-overlay-search-bar"
     }
   }
 }
