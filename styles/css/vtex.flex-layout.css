@@ -92,3 +92,13 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+.flexColChild .flexColChild--productCountCol {
+ align-items: center;
+ display: flex;
+ width:100%;
+}
+
+/*.flexCol*  {
+  display:none;
+}*/

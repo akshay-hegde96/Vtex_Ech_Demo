@@ -1,5 +1,14 @@
 {
     "viewdetails-button":{
         "component":"ViewdetailButtonWrapper"
+    },
+
+    "dropdown-button":{
+        "component":"DropdownButtonWrapper"
     }
 }
+
+ 
+
+
+

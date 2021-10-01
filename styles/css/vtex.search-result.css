@@ -28,3 +28,13 @@
     top: 1px;
     position: relative;
 }
+
+.orderByButton{
+  right: 180px;
+  top: -30px;
+}
+
+.buttonShowMore--layout{
+  display: none;
+}
+
