@@ -23,7 +23,8 @@
         "noFollow": false,
         "tagTitle": "Women",
         "text": "Women"
-      }
+      },
+      "blockClass": "megaMenu-header"
     },
     "blocks": ["vtex.menu@2.x:submenu#category-women"]
   },
@@ -104,7 +105,8 @@
         "noFollow": false,
         "tagTitle": "Men",
         "text": "Men"
-      }
+      },
+      "blockClass": "megaMenu-header"
     },
     "blocks": ["vtex.menu@2.x:submenu#category-men"]
   },
@@ -185,7 +187,8 @@
         "noFollow": false,
         "tagTitle": "Accessories",
         "text": "Accessories"
-      }
+      },
+      "blockClass": "megaMenu-header"
     },
     "blocks": ["vtex.menu@2.x:submenu#category-accessories"]
   },
@@ -266,7 +269,8 @@
         "noFollow": false,
         "tagTitle": "Home & Decor",
         "text": "Home & Decor"
-      }
+      },
+      "blockClass": "megaMenu-header"
     },
     "blocks": ["vtex.menu@2.x:submenu#category-home-decor"]
   },
@@ -347,7 +351,8 @@
         "noFollow": true,
         "tagTitle": "Sale",
         "text": "Sale"
-      }
+      },
+      "blockClass": "megaMenu-header"
     },
     "blocks": ["vtex.menu@2.x:submenu#sale"]
   },

@@ -30,3 +30,8 @@
   padding-bottom: 5px;
   color: white;
 }
+
+.styledLinkContent--megaMenu-header{
+  font-size: 22px;
+  color: green;
+}
