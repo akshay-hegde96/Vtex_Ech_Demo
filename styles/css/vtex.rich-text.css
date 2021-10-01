@@ -84,15 +84,9 @@
   .container--title .paragraph {
     line-height: 1.3em;
   }
-
-  .wrapper{
-    /* margin-left: 232px; */
-    text-align:center;
-    font-size: x-large;
-    font-family: ui-sans-serif;
-    margin-top: -68px;
-  }
-  .paragraph--footer {
+  .paragraph--credits {
+    display: flex;
+    font-size: smaller;
     color: white;
   }
 }

@@ -24,7 +24,6 @@
 .menuItem--sub-header--isOpen:active,
 .styledLinkContent--sub-header:hover {
   color: white;
-
   background-color: rgb(177, 180, 179);
 }
 
@@ -32,9 +31,9 @@
 
 .styledLinkContent--shop,
 .styledLinkContent--my-account,
-.styledLinkContent--contact,
+.styledLinkContent--customer-service,
 .styledLinkContent--about {
-  font-size: large;
+  font-size: 20px;
   padding-bottom: 5px;
   color: white;
 }
@@ -48,4 +47,26 @@
 .styledLinkContent--megaMenu-header:active {
   font-size: 22px;
   color: rgb(96, 167, 96);
+}
+.styledLinkContent--men,
+.styledLinkContent--women,
+.styledLinkContent--shoes,
+.styledLinkContent--accessories,
+.styledLinkContent--new,
+.styledLinkContent--my-profile,
+.styledLinkContent--quick-orders,
+.styledLinkContent--my-orders,
+.styledLinkContent--returns,
+.styledLinkContent--gift-credit,
+.styledLinkContent--contact,
+.styledLinkContent--help,
+.styledLinkContent--shipping-policy,
+.styledLinkContent--privacy-policy,
+.styledLinkContent--term-of-use,
+.styledLinkContent--careers,
+.styledLinkContent--corporate-blog,
+.styledLinkContent--store-features,
+.styledLinkContent--upcoming-features {
+  font-size: 15px;
+  color: white;
 }
