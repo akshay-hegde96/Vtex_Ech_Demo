@@ -8,6 +8,7 @@
       }
     }
   },
+  
 
   "store.search#brand": {
     "blocks": ["search-result-layout"],
@@ -57,11 +58,13 @@
       "search-result-layout.desktop",
       "search-result-layout.mobile",
       "search-not-found-layout"
+      
     ]
   },
 
   "search-result-layout.desktop": {
     "children": [
+      "image#landingbanner",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result"
@@ -72,6 +75,14 @@
       "defaultGalleryLayout": "grid"
     }
   },
+
+  "image#landingbanner":{
+    "props": {
+      "src": "assets/camera.jpg",
+      "minWidth": "100%"
+  }
+  },
+  
   "flex-layout.row#searchbread": {
     "children": ["breadcrumb.search"],
     "props": {
@@ -82,6 +93,7 @@
   "flex-layout.row#searchtitle": {
     "children": ["search-title.v2"]
   },
+  
   "flex-layout.row#result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
     "props": {
@@ -108,19 +120,9 @@
     }
   },
   "flex-layout.row#searchinfo": {
-    "children": ["flex-layout.col#productCount","flex-layout.col#showText", "flex-layout.row#orderByAndSwitcher"]
+    "children": ["flex-layout.row#productCount","flex-layout.row#dropdown", "flex-layout.row#orderByAndSwitcher"]
   },
 
-  "flex-layout.col#showText":{
-    "children":["rich-text#dropdown"]
-  },
-
-  "rich-text#dropdown": {
-    "props": {
-      "text":"show"
-    }
-  },
-  
   "flex-layout.row#orderByAndSwitcher": {
     "children": ["order-by.v2", "gallery-layout-switcher"],
     "props": {
@@ -130,12 +132,40 @@
       "colGap": 3
     }
   },
-  "flex-layout.col#productCount": {
+  "flex-layout.row#productCount": {
     "children": ["total-products.v2"],
     "props": {
+      "horizontalAlign": "left",
       "blockClass": "productCountCol"
     }
   },
+
+  "flex-layout.row#dropdown":{
+    "children":["dropdown-button"],
+    "props":{
+      "horizontalAlign": "center"
+    }
+  },
+
+  /*"disclosure-layout#simple":{
+    "children": ["disclosure-trigger#simple", "disclosure-content#simple"]
+  },
+  "disclosure-trigger#simple": {
+    "children": ["rich-text#question"]
+  },
+  "disclosure-content#simple": {
+    "children": ["rich-text#answer"]
+  },
+  "rich-text#question": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234"
+    }
+  },*/
   
   "flex-layout.row#fetchprevious": {
     "props": {
@@ -164,6 +194,7 @@
       "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore"
+    
     ],
     "props": {
       "pagination": "show-more",
@@ -288,6 +319,7 @@
       "responsive-layout.desktop#textOptionList"
     ]
   },
+  
   "responsive-layout.desktop#textOptionGrid": {
     "children": [
       "rich-text#option-grid"
@@ -311,12 +343,5 @@
       "textColor": "c-auto",
       "blockClass": "layout-option"
     }
-  },
-  "image#camera-banner":{
-    "title":"Banner",
-    "props":{
-        "src":"assets/camera.jpg",
-        "max-width":"100%"
-    }
-}
+  }
 }

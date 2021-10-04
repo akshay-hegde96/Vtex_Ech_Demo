@@ -153,20 +153,6 @@
   padding: .75em 3em;
 }
 
-.autoCompleteOuterContainer, .suffixWrapper, .searchBarInnerContainer {
-  visibility: hidden;
-}
-
-.searchIcon {
-  background-color: lightgray;
-  visibility: visible;
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
 .productBrand--quickview {
   font-size: 30px;
 }

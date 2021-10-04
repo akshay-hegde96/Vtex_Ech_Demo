@@ -1,15 +1,9 @@
 {
   "header": {
-    "blocks": [
-      "header-layout.desktop",
-      "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header.full": {
-    "blocks": [
-      "header-layout.desktop",
-      "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
     "children": [
@@ -25,9 +19,7 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": [
-      "flex-layout.row#2-desktop"
-    ]
+    "children": ["flex-layout.row#2-desktop"]
   },
   "flex-layout.row#2-desktop": {
     "props": {
@@ -54,17 +46,13 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": [
-      "logo#desktop"
-    ]
+    "children": ["logo#desktop"]
   },
   "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": [
-      "vtex.menu@2.x:menu#category-menu"
-    ]
+    "children": ["vtex.menu@2.x:menu#category-menu"]
   },
   "logo#desktop": {
     "props": {
@@ -84,10 +72,7 @@
       "preventVerticalStretch": true,
       "fullWidth": true
     },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer"
-    ]
+    "children": ["vtex.menu@2.x:menu#websites", "flex-layout.col#spacer"]
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -97,14 +82,10 @@
   //"sticky-layout#2-desktop" -- End
   // "header-layout.mobile" -- Start
   "header-layout.mobile": {
-    "children": [
-      "sticky-layout#1-mobile"
-    ]
+    "children": ["sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
-    "children": [
-      "flex-layout.row#1-mobile"
-    ]
+    "children": ["flex-layout.row#1-mobile"]
   },
   "flex-layout.row#1-mobile": {
     "children": [
@@ -122,9 +103,7 @@
     }
   },
   "drawer": {
-    "children": [
-      "menu#drawer"
-    ]
+    "children": ["menu#drawer"]
   },
   "menu#drawer": {
     "children": [
@@ -158,39 +137,28 @@
       "preventVerticalStretch": true,
       "fullWidth": true
     },
-    "children": [
-      "flex-layout.col#main-menu"
-    ]
+    "children": ["flex-layout.col#main-menu"]
   },
   "flex-layout.col#main-menu": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": [
-      "vtex.menu@2.x:menu#main-menu"
-    ]
+    "children": ["vtex.menu@2.x:menu#main-menu"]
   },
   "overlay-trigger#search-icon": {
     "props": {
       "blockClass": "custom-search-overlay-trigger"
     },
-    "children": [
-      "search-icon-button",
-      "overlay-layout#search-bar"
-    ]
+    "children": ["search-icon-button", "overlay-layout#search-bar"]
   },
   "overlay-layout#search-bar": {
-    "children": [
-      "search-bar"
-    ],
+    "children": ["search-bar"],
     "props": {
       "blockClass": "custom-search-overlay"
     }
   },
   "search-bar": {
-    "blocks": [
-      "autocomplete-result-list.v2"
-    ],
+    "blocks": ["autocomplete-result-list.v2"],
     "props": {
       "placeholder": "Enter Your Keyword",
       "displayMode": "search-and-clear-buttons",
@@ -198,11 +166,6 @@
       "containerMode": "container",
       "maxWidth": "100%",
       "blockClass": "custom-overlay-search-bar"
-    }
-  },
-  "minicart.v2": {
-    "props": {
-      "blockClass": "minicart"
     }
   }
 }
