@@ -167,10 +167,5 @@
       "maxWidth": "100%",
       "blockClass": "custom-overlay-search-bar"
     }
-  },
-  "minicart.v2": {
-    "props": {
-      "blockClass": "minicart"
-    }
   }
 }
