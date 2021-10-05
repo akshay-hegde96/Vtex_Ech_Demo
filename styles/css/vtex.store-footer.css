@@ -10,10 +10,17 @@
   padding-top: 16px;
 }
 
-.socialNetworksContainer {
+.socialNetworksContainer--social-networks {
   display: flex;
   padding-top: 16px;
   padding-bottom: 16px;
   min-width: 800px;
   justify-content: center;
+}
+
+.socialNetworksContainer--social-networks-pdp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
 }
