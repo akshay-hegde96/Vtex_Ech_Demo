@@ -3,27 +3,35 @@
   font-weight: 600;
   letter-spacing: 0.04rem;
   width: 100%;
-  padding: 2px 12px;
-  color: green;
+  height: 100%;
+  padding: 4px 12px;
 }
 
-.styledLinkContent--sub-header:hover, .styledLinkContent--sub-header:active {
+.styledLinkContent--sub-header:hover,
+.styledLinkContent--sub-header:active {
   color: white;
 }
 
 .styledLinkContainer--sub-header {
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 
-.styledLinkContainer--sub-header:hover, .menuItem--sub-header--isOpen:hover, .menuItem--sub-header--isOpen:active, .styledLinkContent--sub-header:hover {
+.styledLinkContainer--sub-header:hover,
+.menuItem--sub-header--isOpen:hover,
+.menuItem--sub-header--isOpen:active,
+.styledLinkContent--sub-header:hover {
   color: white;
-  background-color: rgb(177, 180, 179);
+  background-color: rgb(65, 153, 65);
 }
 
 /* ------------------------------------------------------------ */
 
-.styledLinkContent--shop, .styledLinkContent--my-account, .styledLinkContent--customer-service, .styledLinkContent--about {
+.styledLinkContent--shop,
+.styledLinkContent--my-account,
+.styledLinkContent--customer-service,
+.styledLinkContent--about {
   font-size: 20px;
   padding-bottom: 5px;
   color: white;
@@ -34,7 +42,30 @@
   color: green;
 }
 
-.styledLinkContent--men, .styledLinkContent--women, .styledLinkContent--shoes, .styledLinkContent--accessories, .styledLinkContent--new, .styledLinkContent--my-profile, .styledLinkContent--quick-orders, .styledLinkContent--my-orders, .styledLinkContent--returns, .styledLinkContent--gift-credit, .styledLinkContent--contact, .styledLinkContent--help, .styledLinkContent--shipping-policy, .styledLinkContent--privacy-policy, .styledLinkContent--term-of-use, .styledLinkContent--careers, .styledLinkContent--corporate-blog, .styledLinkContent--store-features, .styledLinkContent--upcoming-features {
+.styledLinkContent--megaMenu-header:hover,
+.styledLinkContent--megaMenu-header:active {
+  font-size: 22px;
+  color: rgb(96, 167, 96);
+}
+.styledLinkContent--men,
+.styledLinkContent--women,
+.styledLinkContent--shoes,
+.styledLinkContent--accessories,
+.styledLinkContent--new,
+.styledLinkContent--my-profile,
+.styledLinkContent--quick-orders,
+.styledLinkContent--my-orders,
+.styledLinkContent--returns,
+.styledLinkContent--gift-credit,
+.styledLinkContent--contact,
+.styledLinkContent--help,
+.styledLinkContent--shipping-policy,
+.styledLinkContent--privacy-policy,
+.styledLinkContent--term-of-use,
+.styledLinkContent--careers,
+.styledLinkContent--corporate-blog,
+.styledLinkContent--store-features,
+.styledLinkContent--upcoming-features {
   font-size: 15px;
   color: white;
 }

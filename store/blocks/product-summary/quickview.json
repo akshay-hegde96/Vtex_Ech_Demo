@@ -38,7 +38,8 @@
 
   "viewdetails-button#pdp-page":{
     "props":{
-      "AddListenBtn":"add-to-list-btn"
+      "AddListenBtn":"add-to-list-btn",
+      "blockClasss":"viewDetails"
     }
   },
 
