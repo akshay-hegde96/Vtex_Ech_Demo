@@ -1,0 +1,40 @@
+.menu {
+  background-color: rgb(241, 241, 241);
+  color: black;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+/* .userInfo {
+  display: none;
+} */
+
+.dataEntryLabel {
+  color: rgb(7, 100, 7);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.dataEntryChildren {
+  padding: 14px 10px;
+  margin: 5px;
+  font-size: 0.9rem;
+  background-color: rgb(241, 241, 241);
+  color: rgba(15, 15, 15, 0.986);
+  line-height: 1rem;
+}
+.profile {
+  margin-bottom: 0;
+}
+
+.newsletterContainerTitle {
+  color: rgb(27, 27, 27);
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.newsletterContainerMessage {
+  font-size: 0.9rem;
+}
+.passwordBox {
+  font-size: 0.9rem;
+}
