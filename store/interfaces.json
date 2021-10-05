@@ -2,16 +2,13 @@
     "search-icon-button": {
         "component": "SearchButton"
     },
-    "viewdetails-button":{
-        "component":"ViewdetailButtonWrapper"
+    "viewdetails-button": {
+        "component": "ViewdetailButtonWrapper"
     },
-
-    "dropdown-button":{
-        "component":"DropdownButtonWrapper"
+    "dropdown-button": {
+        "component": "DropdownButtonWrapper"
+    },
+    "myaccount-menu": {
+        "component": "Myaccount"
     }
 }
-
- 
-
-
-

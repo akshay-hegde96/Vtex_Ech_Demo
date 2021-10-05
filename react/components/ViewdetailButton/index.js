@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'vtex.styleguide'
 //import { useCssHandles } from "vtex.css-handles"
-//import "./index.css" 
+import styles from './index.css';
 
 
 
@@ -11,8 +11,8 @@ const ViewdetailButton=({ AddListenBtn }) => {
     const initialState = { isLoading1: true, isLoading2: true, isLoading3: true  };
     return (
        
-        <div>
-          <div className="mb4" >
+        <div className={styles.mt4}>
+          <div className="mt4" >
             <Button 
              variation="primary" size="small"
             //   onClick={() => setState({ isLoading2: !state.isLoading2 })}
