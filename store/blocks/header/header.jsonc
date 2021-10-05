@@ -52,7 +52,7 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
+    "children": ["myaccount-menu"]
   },
   "logo#desktop": {
     "props": {
