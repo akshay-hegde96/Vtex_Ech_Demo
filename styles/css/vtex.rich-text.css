@@ -89,4 +89,8 @@
     font-size: smaller;
     color: white;
   }
+
+  .paragraph .paragraph--layout-option {
+    margin-top: -5px;
+}
 }

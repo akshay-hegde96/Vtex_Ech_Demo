@@ -27,14 +27,27 @@
     font-family: sans-serif;
     top: 1px;
     position: relative;
+    padding-top: 6px;
 }
 
 .orderByButton{
   right: 180px;
   top: -30px;
+  padding-top: 2px;
 }
 
 .buttonShowMore--layout{
   display: none;
 }
 
+.totalProducts--layout{
+ padding-top: 2px;
+}
+
+.filterIcon{
+  display: none;
+}
+
+.filterTitle {
+  
+}
