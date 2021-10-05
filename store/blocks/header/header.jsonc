@@ -38,7 +38,6 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "overlay-trigger#search-icon",
-      /* "search-bar", */
       "minicart.v2"
     ]
   },
@@ -92,7 +91,7 @@
       "drawer",
       "logo#mobile",
       "flex-layout.col#spacer",
-      "login",
+      "overlay-trigger#search-icon",
       "minicart.v2"
     ],
     "props": {
