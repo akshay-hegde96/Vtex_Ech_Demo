@@ -112,7 +112,7 @@
    "filter-navigator.v3": {
         "blocks": ["sidebar-close-button"],
          "props": {
-          "blockClass":"brand-search",
+
              "truncateFilters": true,
              "showClearByFilter": true,
              "fullWidthOnMobile": true,
@@ -315,12 +315,12 @@
        * For accessbility to work properly,
        * It's important to define the options in the same order as the layouts
        */
-     // "gallery-layout-option#grid",
-      //"gallery-layout-option#list"
-      "rich-text#viewText"  //view-richtext
+      "gallery-layout-option#grid",
+      "gallery-layout-option#list"
+      //"rich-text#viewText"  //view-richtext
     ]
   },
-  /*"gallery-layout-option#grid": {
+  "gallery-layout-option#grid": {
     "props": {
       "name": "grid"
     },
@@ -328,8 +328,8 @@
       "icon-grid",
       "responsive-layout.desktop#textOptionGrid"
     ]
-  },*/
-  /*"gallery-layout-option#list": {
+  },
+  "gallery-layout-option#list": {
     "props": {
       "name": "list"
     },
@@ -337,15 +337,14 @@
       "icon-inline-grid",
       "responsive-layout.desktop#textOptionList"
     ]
-  },*/
-
-  "rich-text#viewText" : {
+  },
+ /* "rich-text#viewText" : {
     "props": {
       "text": "View",
       "textColor": "c-auto",
       "blockClass": "layout-option"
     }
-  },
+  },*/
   
   "responsive-layout.desktop#textOptionGrid": {
     "children": [

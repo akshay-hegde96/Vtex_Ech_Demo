@@ -12,9 +12,9 @@ const ViewdetailButton=({ AddListenBtn }) => {
     return (
        
         <div>
-          <div className="mt4" >
+          <div className="mb4" >
             <Button 
-              variation="default"
+             variation="primary" size="small"
             //   onClick={() => setState({ isLoading2: !state.isLoading2 })}
             //   isLoading={state.isLoading2}
             >

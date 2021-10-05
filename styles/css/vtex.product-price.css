@@ -55,6 +55,7 @@
 .listPrice--summary {
   margin-bottom: 0.25rem;
   font-size: 0.875rem;
+  display: none;
 }
 
 .installments--summary {
