@@ -47,4 +47,6 @@
   width: 200px;
   border: 1px solid grey;
   height: 209px;
+  position: relative;
+  top: -26px;
 }

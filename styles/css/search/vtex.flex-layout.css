@@ -43,6 +43,8 @@
   padding-bottom: 21px;
   margin-left: -24px;
   line-height: 21px;
+  position: relative;
+  top: -26px;
  }
 
  .flexRowContent{
