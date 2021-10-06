@@ -1,36 +1,66 @@
-.listContainer--product {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+@media only screen and (min-width: 640px) {
+    .listContainer--product {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .listItem--details, .listItem--info, .listItem--reviews {
+        background: white;
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        border: 1px solid #ad2697;
+        max-width: 25%;
+        flex-grow: 1;
+    }
+    .listItemActive--details, .listItemActive--info, .listItemActive--reviews {
+        background: #ad2697;
+        font-size: larger;
+    }
+    .contentContainer--product {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+    }
+    .contentItem--details, .contentItem--info, .contentItem--reviews {
+        justify-content: center;
+        padding: 10px 30px;
+        max-width: 75%;
+        min-height: 300px;
+        margin: 30px 30px;
+    }
 }
 
-.listItem--details, .listItem--info, .listItem--reviews {
-    background: white;
-    font-size: larger;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-    padding: 0px 0px;
-    margin: 0px 0px;
-    border: 2px solid lightgray;
-}
-
-.listItemActive--details, .listItemActive--info, .listItemActive--reviews {
-    background: darkblue;
-    font-size: larger;
-}
-
-.contentContainer--product {
-    display: flex;
-    justify-content: center;
-    align-items: top;
-}
-
-.contentItem--details, .contentItem--info, .contentItem--reviews {
-    justify-content: center;
-    border: 2px solid lightgray;
-    padding: 10px 30px;
-    max-width: 900px;
-    min-height: 300px;
-    margin: 30px 30px;
+@media only screen and (max-width: 640px) {
+    .listContainer--product {
+        display: flex;
+    }
+    .listItem--details, .listItem--info, .listItem--reviews {
+        background: white;
+        font-size: medium;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        border: 1px solid #ad2697;
+        width: 30%;
+        position: relative;
+    }
+    .listItemActive--details, .listItemActive--info, .listItemActive--reviews {
+        background: #ad2697;
+    }
+    .contentContainer--product {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+    }
+    .contentItem--details, .contentItem--info, .contentItem--reviews {
+        justify-content: center;
+        max-width: 90%;
+        min-height: 100px;
+        margin: 25px 25px;
+        margin-top: 10px;
+    }
 }
