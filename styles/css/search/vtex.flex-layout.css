@@ -44,12 +44,13 @@
   margin-left: -24px;
   line-height: 21px;
   position: relative;
-  top: -26px;
+  /*top: -26px;*/
+  top:5px;
  }
 
  .flexRowContent{
-  padding: 25px;
-  font-size: large;
+  /*padding: 25px;
+  font-size: large;*/
  }
 
  
