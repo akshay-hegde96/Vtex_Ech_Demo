@@ -152,4 +152,16 @@
   justify-content: left;
   align-items: center;
 }
-
+.flexRow--customSearchTitle {
+  position: relative;
+}
+.flexRowContent--customSearchTitle {
+  position: absolute;
+  top: -47px;
+  left: 0;
+  background-color: #fff;
+  width: auto;
+  min-width: 230px;
+  border-bottom: 1px solid #d1d5c7;
+  border-radius: 5px 5px 0 0;
+}
