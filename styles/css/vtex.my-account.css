@@ -3,13 +3,15 @@
   color: black;
   font-weight: bold;
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-/* .userInfo {
-  display: none;
-} */
+.userInfo {
+  /* display: none; */
+  padding-top: 15px;
+}
 
 .dataEntryLabel {
-  color: rgb(7, 100, 7);
+  color: rgb(6, 92, 6);
   font-weight: bold;
   font-size: 1rem;
 }
@@ -37,4 +39,31 @@
 }
 .passwordBox {
   font-size: 0.9rem;
+}
+
+.menuLinks a,
+.menuLink {
+  font-size: 1rem;
+  color: rgb(118, 119, 119);
+  padding: 6px auto;
+  border: none;
+}
+
+.menuLinks a:hover,
+.menuLinks a:active,
+.menuLink:hover {
+  color: rgb(6, 92, 6);
+}
+
+.addressBox .boxContainer {
+  color: black;
+  background-color: rgb(241, 241, 241);
+}
+
+.boxContainerFooter {
+  background-color: white;
+}
+
+div.address-summary {
+  color: black;
 }
