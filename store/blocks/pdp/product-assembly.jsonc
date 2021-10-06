@@ -5,6 +5,14 @@
     },
     "children": ["flex-layout.row#buy-button"]
   },
+  "flex-layout.row#buy-button": {
+    "props": {
+      "marginTop": 8,
+      "marginBottom": 4
+    },
+    "children": ["add-to-cart-button"]
+  },
+
   "product-assembly-options": {
     "children": [
       "flex-layout.row#product-assembly-options",

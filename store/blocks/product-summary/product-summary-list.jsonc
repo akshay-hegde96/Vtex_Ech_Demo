@@ -101,7 +101,7 @@
       "colGap": 5
     },
     "children": [
-      //"add-to-cart-button",
+     "add-to-cart-button",
       "flex-layout.row#buyNowButton"
     ]
   },

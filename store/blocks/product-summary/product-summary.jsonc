@@ -11,12 +11,12 @@
       // "add-to-cart-button"
     ]
   },
-  // "flex-layout.col#productRating": {
-  //   "props": {
-  //     "blockClass": "productRating"
-  //   },
-  //   "children": ["product-rating-inline"]
-  // },
+  /* "flex-layout.col#productRating": {
+     "props": {
+       "blockClass": "productRating"
+     },
+     "children": ["product-rating-inline"]
+   },*/
 
   "stack-layout#prodsum": {
     "children": [
@@ -83,6 +83,26 @@
     "props": {
       "markers": ["discount"],
       "blockClass": "summary"
+    }
+  },
+  "product-summary-sku-selector":{
+    "props":{
+      "visibility": ["always"],
+      "blockClass": "customSkuSelector"
+    }
+  },
+  "add-to-cart-button":{
+    "props": {
+      "text": "ADD TO CART",
+      "large":"True",
+      //"colSizing": "auto",
+      "colGap": 5,
+      "paddingLeft":0,
+      "paddingright":0,
+      "paddingTop":10,
+      "isOneClickBuy": true,
+      "onClickEventPropagation": "enabled",
+      "blockClass": "buttonDataContainer"
     }
   }
 }
