@@ -1,0 +1,80 @@
+.menu {
+  box-sizing: border-box;
+  box-shadow: 10px solid rgb(230, 126, 126);
+  background-color: rgb(241, 241, 241);
+  color: black;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.userInfo {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.userImage {
+  display: none;
+}
+
+.userGreeting {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  color: grey;
+}
+
+.dataEntryLabel {
+  color: rgb(6, 92, 6);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.dataEntryChildren {
+  padding: 14px 10px;
+  margin: 5px;
+  font-size: 0.9rem;
+  background-color: rgb(241, 241, 241);
+  color: rgba(15, 15, 15, 0.986);
+  line-height: 1rem;
+}
+.profile {
+  margin-bottom: 0;
+}
+
+.newsletterContainerTitle {
+  color: rgb(27, 27, 27);
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.newsletterContainerMessage {
+  font-size: 0.9rem;
+}
+.passwordBox {
+  font-size: 0.9rem;
+}
+
+.menuLinks a,
+.menuLink {
+  font-size: 1rem;
+  color: rgb(118, 119, 119);
+  padding: 7px auto;
+  border: none;
+}
+
+.menuLinks a:hover,
+.menuLinks a:active,
+.menuLink:hover {
+  color: rgb(6, 92, 6);
+}
+
+.addressBox .boxContainer {
+  color: black;
+  background-color: rgb(241, 241, 241);
+}
+
+.boxContainerFooter {
+  background-color: white;
+}
+
+div.address-summary {
+  color: black;
+}
