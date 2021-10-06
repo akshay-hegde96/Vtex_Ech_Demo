@@ -38,3 +38,36 @@
   display: none;
 }
 
+.galleryTitle--layout {
+  font-size: 1.5em;
+  margin: 10px;
+  color: #d1d5c7;
+  font-weight: 700;
+}
+.filtersWrapper {
+  padding: 10px;
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 15%);
+  border: solid 1px rgba(255,255,255,.15);
+  border-radius: 0 0 5px 5px;
+}
+.filterAvailable {
+  padding: .75em 0;
+}
+.filterMessage {
+  color: #d1d5c7;
+  font-weight: 600;
+}
+.filterTitle {
+  font-size: .95em;
+  font-weight: 600;
+}
+.filterContent {
+  font-size: .95em;
+}
+.filterContainer--priceRange {
+  border: none;
+}
+.filterIcon {
+  color: darkolivegreen
+}
+

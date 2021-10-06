@@ -150,7 +150,16 @@
 
 .searchBarContainer {
   background-color: #d1d5c7;
-  padding: .75em 3em;
+}
+@media screen and (min-width: 1025px) {
+  .searchBarContainer {
+    padding: .75em 3em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .searchBarContainer {
+    padding: .4em;
+  }
 }
 
 .productBrand--quickview {
