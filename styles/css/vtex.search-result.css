@@ -27,11 +27,13 @@
     font-family: sans-serif;
     top: 1px;
     position: relative;
+    padding-top: 6px;
 }
 
 .orderByButton{
   right: 180px;
   top: -30px;
+  padding-top: 2px;
 }
 
 .buttonShowMore--layout{
@@ -71,3 +73,12 @@
   color: darkolivegreen
 }
 
+.totalProducts--layout{
+  padding-top: 12px;
+  font-size: large;
+}
+
+.filterPopupTitle{
+  font-size: initial;
+  padding-top: 0px;
+}

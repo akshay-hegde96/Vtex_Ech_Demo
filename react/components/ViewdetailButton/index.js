@@ -14,7 +14,7 @@ const ViewdetailButton=({ AddListenBtn }) => {
         <div className={styles.mt4}>
           <div className="mt4" >
             <Button 
-              variation="default"
+             variation="primary" size="small"
             //   onClick={() => setState({ isLoading2: !state.isLoading2 })}
             //   isLoading={state.isLoading2}
             >

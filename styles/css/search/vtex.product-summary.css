@@ -29,3 +29,24 @@
   min-width: 140px;
   height: inherit !important;
 }
+
+
+.nameContainer  :global(.vtex-product-summary-2-x-brandName ){
+  font-weight: 600;
+  font-size: 18px;
+  color: #2e2e2e;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  min-height: 33px;
+}
+
+
+.SKUSelectorContainer {
+  width: 200px;
+  border: 1px solid grey;
+  height: 209px;
+  position: relative;
+  top: -26px;
+}

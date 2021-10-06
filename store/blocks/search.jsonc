@@ -111,7 +111,25 @@
       "blockClass": "filterCol"
     }
   },
-  "flex-layout.col#content": {
+  
+  
+   "filter-navigator.v3": {
+        "blocks": ["sidebar-close-button"],
+         "props": {
+
+             "truncateFilters": true,
+             "showClearByFilter": true,
+             "fullWidthOnMobile": true,
+             "navigationTypeOnMobile": "collapsible",
+             "appliedFiltersOverview": "show",
+             "totalProductsOnMobile": "show",
+             "updateOnFilterSelectionOnMobile": true,
+             "priceRangeLayout": "inputAndSlider"
+         }
+     },
+     
+    
+  "flex-layout.col#content": { 
     "children": [
       "flex-layout.row#searchinfo",
       "flex-layout.row#fetchprevious",
@@ -304,6 +322,7 @@
        */
       "gallery-layout-option#grid",
       "gallery-layout-option#list"
+      //"rich-text#viewText"  //view-richtext
     ]
   },
   "gallery-layout-option#grid": {
@@ -324,6 +343,13 @@
       "responsive-layout.desktop#textOptionList"
     ]
   },
+ /* "rich-text#viewText" : {
+    "props": {
+      "text": "View",
+      "textColor": "c-auto",
+      "blockClass": "layout-option"
+    }
+  },*/
   
   "responsive-layout.desktop#textOptionGrid": {
     "children": [
