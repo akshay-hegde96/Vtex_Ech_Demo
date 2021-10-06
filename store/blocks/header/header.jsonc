@@ -16,9 +16,6 @@
   },
   // "sticky-layout#2-desktop" -- Start
   "sticky-layout#2-desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
     "children": ["flex-layout.row#2-desktop"]
   },
   "flex-layout.row#2-desktop": {
@@ -92,7 +89,8 @@
       "drawer",
       "logo#mobile",
       "flex-layout.col#spacer",
-      "login",
+      "overlay-trigger#search-icon",
+      // "login",
       "minicart.v2"
     ],
     "props": {

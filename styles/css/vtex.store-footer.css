@@ -14,6 +14,21 @@
   display: flex;
   padding-top: 16px;
   padding-bottom: 16px;
-  min-width: 800px;
+  /* min-width: 800px; */
   justify-content: center;
+}
+
+
+/* =========== Tablet ================*/
+@media only screen and (min-width:481px) and (max-width:1026px){
+  .acceptedPaymentMethodContainer{
+    justify-content: center;
+  }
+}
+
+/*============ Mobile ============== */
+@media only screen and (max-width:480px){
+  .acceptedPaymentMethodContainer{
+    justify-content: center;
+  }
 }

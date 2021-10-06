@@ -341,14 +341,14 @@
       "id": "menu-item-category-clothing",
       "type": "custom",
       "iconId": null,
-      "highlight": false,
+      "highlight": true,
+      "blockClass":"clothing",
       "itemProps": {
         "type": "internal",
         "href": "/clothing/d",
         "noFollow": true,
         "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
+        "text": "Clothing"}
     },
     "blocks": [
       "vtex.menu@2.x:submenu.accordion#clothing"
@@ -373,6 +373,7 @@
   },
   "menu-item#decoration-mobile": {
     "props": {
+      "blockClass":"decoration",
       "itemProps": {
         "tagTitle": "Decoration",
         "text": "Decoration"
@@ -401,6 +402,7 @@
   },
   "menu-item#sale-mobile": {
     "props": {
+      "blockClass":"sale",
       "itemProps": {
         "tagTitle": "Sale",
         "text": "Sale"
