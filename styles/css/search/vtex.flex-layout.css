@@ -41,4 +41,15 @@
 
  .flexRowContent :global(.vtex-flex-layout-0-x-flexRowContent){
   padding-bottom: 21px;
+  margin-left: -24px;
+  line-height: 21px;
  }
+
+ .flexRowContent{
+  padding: 25px;
+  font-size: large;
+ }
+
+ 
+
+ 
