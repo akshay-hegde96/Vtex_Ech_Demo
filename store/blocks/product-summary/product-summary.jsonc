@@ -85,5 +85,11 @@
       "markers": ["discount"],
       "blockClass": "summary"
     }
+  },
+  "product-summary-sku-selector":{
+    "props":{
+      "visibility": ["always"],
+      "blockClass": "customSkuSelector"
+    }
   }
 }

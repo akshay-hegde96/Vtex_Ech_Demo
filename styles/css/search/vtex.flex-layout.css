@@ -39,4 +39,6 @@
   width:100%;
  }
 
- 
+ .flexRowContent :global(.vtex-flex-layout-0-x-flexRowContent){
+  padding-bottom: 21px;
+ }
