@@ -8,15 +8,16 @@
   "store.custom#contact-us": {
     "path": "/contact-us"
   },
-  "store.custom#sample-shipping":{
-    "path":"/sample-shipping"
+  "store.custom#shipping-policy":{
+    "path":"/shipping-policy"
   },
   "store.custom#sample-privacy":{
     "path":"/sample-privacy"
   },
   "store.custom#sample-terms":{
-    "path":"/sample-terms"},
-    
+    "path":"/sample-terms"
+  },
+
   "store.custom#store-features": {
     "path": "/store-features"
   },
