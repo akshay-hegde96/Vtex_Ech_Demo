@@ -1,0 +1,14 @@
+{
+    "store.custom#store-features": {
+        "blocks": [ 
+            "rich-text#store-features" 
+        ]
+     },
+     "rich-text#store-features": {
+        "props": {
+          "text": "## Store Features",
+          "textPosition":"CENTER",
+          "textAlignment":"CENTER"
+        }
+      }
+   }

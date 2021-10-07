@@ -289,7 +289,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/about-company/store-features",
+        "href": "/store-features",
         "noFollow": true,
         "tagTitle": "Store Features",
         "text": "Store Features"
@@ -305,7 +305,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/about-company/upcoming-features",
+        "href": "/upcoming-features",
         "noFollow": true,
         "tagTitle": "Upcoming Features",
         "text": "Upcoming Features"

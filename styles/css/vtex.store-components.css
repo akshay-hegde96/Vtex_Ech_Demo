@@ -83,6 +83,9 @@
   font-size: 6px;
   justify-content: center;
   align-items: center;
+  background-color: #ad2697;
+  padding-right: 25px;
+  margin-left: 2px;
 }
 
 .imageElement--storePrint {
@@ -211,6 +214,7 @@
   }
   .buttonContainer--newsletter {
     font-size:2px !important;
+    margin-top: 10px;
   }
   .newsletter {
     padding-left: 0.5rem;

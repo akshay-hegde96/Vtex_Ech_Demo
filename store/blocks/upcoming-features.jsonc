@@ -1,0 +1,15 @@
+{
+    "store.custom#upcoming-features": {
+        "blocks": [ 
+            "rich-text#upcoming-features"  
+        ]
+     },
+     "rich-text#upcoming-features": {
+        "props": {
+          "text": "## Upcoming Features",
+          "textPosition":"CENTER",
+          "textAlignment":"CENTER"
+
+        }
+      }
+   }
