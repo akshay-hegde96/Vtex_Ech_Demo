@@ -1,16 +1,145 @@
 {
   "store.product": {
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.phone",
+      "responsive-layout.tablet"
+    ]
+  },
+  "responsive-layout.tablet": {
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       "tab-layout#product"
-      //"flex-layout.row#description",
-      //"flex-layout.row#specifications-title",
-      //"product-specification-group#table",
-      //"shelf.relatedProducts",
-      //"product-reviews",
-      //"add-to-list-btn",
-      //"product-questions-and-answers"
+    ]
+  },
+  "responsive-layout.phone": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "condition-layout.product#availability",
+      "disclosure-layout-group#tablayout"
+    ]
+  },
+  "disclosure-layout-group#tablayout": {
+    "children": [
+      "disclosure-layout#details",
+      "disclosure-layout#additionalInfo",
+      "disclosure-layout#reviews"
+    ]
+  },
+  "disclosure-state-indicator": {
+    "props": {
+      "Show": "icon-caret#down",
+      "Hide": "icon-caret#up"
+    }
+  },
+  "icon-caret#down": {
+    "props": {
+      "orientation": "down",
+      "blockClass": "disclosure-pdp"
+    }
+  },
+  "icon-caret#up": {
+    "props": {
+      "orientation": "up",
+      "blockClass": "disclosure-pdp"
+    }
+  },
+  "disclosure-layout#details": {
+    "children": [
+      "disclosure-trigger#details",
+      "disclosure-content#details"
+    ]
+  },
+  "disclosure-trigger#details": {
+    "children": [
+      "rich-text#details",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": "details",
+      "as": "div"
+    }
+  },
+  "disclosure-content#details": {
+    "children": [
+      "product-description#tab"
+    ],
+    "props": {
+      "blockClass": "details",
+      "as": "div"
+    }
+  },
+  "rich-text#details": {
+    "props": {
+      "text": "Details"
+    }
+  },
+  "disclosure-layout#additionalInfo": {
+    "children": [
+      "disclosure-trigger#additionalInfo",
+      "disclosure-content#additionalInfo"
+    ]
+  },
+  "disclosure-trigger#additionalInfo": {
+    "children": [
+      "rich-text#additionalInfo",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": "additionalInfo",
+      "as": "div"
+    }
+  },
+  "disclosure-content#additionalInfo": {
+    "children": [
+      "product-specifications"
+    ],
+    "props": {
+      "blockClass": "additionalInfo",
+      "as": "div"
+    }
+  },
+  "rich-text#additionalInfo": {
+    "props": {
+      "text": "Additional Info"
+    }
+  },
+  "disclosure-layout#reviews": {
+    "children": [
+      "disclosure-trigger#reviews",
+      "disclosure-content#reviews"
+    ]
+  },
+  "disclosure-trigger#reviews": {
+    "children": [
+      "rich-text#reviews",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": "reviews",
+      "as": "div"
+    }
+  },
+  "disclosure-content#reviews": {
+    "children": [
+      "product-reviews"
+    ],
+    "props": {
+      "blockClass": "reviews",
+      "as": "div"
+    }
+  },
+  "rich-text#reviews": {
+    "props": {
+      "text": "Reviews"
+    }
+  },
+  "responsive-layout.desktop": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "condition-layout.product#availability",
+      "tab-layout#product"
     ]
   },
   "tab-layout#product": {
@@ -168,6 +297,7 @@
   },
   "flex-layout.col#right-col": {
     "props": {
+      "blockClass":"product-name",
       "preventVerticalStretch": true,
       "rowGap": 0
     },
@@ -185,9 +315,7 @@
       "product-quantity",
       "product-assembly-options",
       //"product-gifts",
-
       "flex-layout.row#buy-wish-button",
-
       //"availability-subscriber",
       //"shipping-simulator",
       "flex-layout.row#social-networks-pdp"
@@ -213,7 +341,6 @@
       "showValueNameForImageVariation": true
     }
   },
-
   "flex-layout.row#buy-wish-button": {
     "props": {
       "marginTop": 4,
@@ -227,7 +354,6 @@
   "flex-layout.col#wish-button": {
     "children": ["add-to-list-btn"]
   },
-
   "flex-layout.row#product-availability": {
     "props": {
       "colGap": 7,

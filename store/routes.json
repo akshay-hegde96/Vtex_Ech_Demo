@@ -15,6 +15,12 @@
     "path":"/sample-privacy"
   },
   "store.custom#sample-terms":{
-    "path":"/sample-terms"
+    "path":"/sample-terms"},
+    
+  "store.custom#store-features": {
+    "path": "/store-features"
+  },
+  "store.custom#upcoming-features": {
+    "path": "/upcoming-features"
   }
 }

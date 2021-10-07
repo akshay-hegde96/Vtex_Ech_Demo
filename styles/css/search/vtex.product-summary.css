@@ -45,8 +45,9 @@
 
 .SKUSelectorContainer {
   width: 200px;
-  border: 1px solid grey;
+  border: none;
   height: 209px;
   position: relative;
   top: -26px;
+  /*display: none;*/
 }
