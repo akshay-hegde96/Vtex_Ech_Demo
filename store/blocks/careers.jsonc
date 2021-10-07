@@ -1,0 +1,14 @@
+{
+    "store.custom#careers": {
+        "blocks": [
+            "rich-text#careers"
+        ]
+    },
+    "rich-text#careers": {
+        "props": {
+            "text": "## Careers",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    }
+}

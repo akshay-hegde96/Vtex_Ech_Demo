@@ -257,7 +257,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/about-company/careers",
+        "href": "/careers",
         "noFollow": true,
         "tagTitle": "Careers",
         "text": "Careers"
@@ -273,7 +273,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/about-company/corporate-blog",
+        "href": "/corporate-blog",
         "noFollow": true,
         "tagTitle": "Corporate Blog",
         "text": "Corporate Blog"
