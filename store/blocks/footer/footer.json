@@ -7,6 +7,7 @@
   },
   "footer-layout.desktop": {
     "children": [
+      "newsletter",
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop",
       "flex-layout.row#footer-3-desktop"
@@ -23,6 +24,13 @@
       "blockClass": "footer-link",
       "paddingTop": 6,
       "paddingBottom": 3
+    }
+  },
+  "newsletter": {
+    "props": {
+      "label": "Newsletter Subscription",
+      "placeholder": "Enter Your Email",
+      "blockClass": "newsletter"
     }
   },
   "social-networks": {
@@ -75,12 +83,13 @@
   },
   "rich-text#credits": {
     "props": {
-      "text": "© Echidnainc, All rights reserved. Site build with VETX. SSL CERTIFIED SECURE SITE.",
+      "text": "© Echidnainc, All rights reserved. Site build with VTEX. SSL CERTIFIED SECURE SITE.",
       "blockClass": "credits"
     }
   },
   "footer-layout.mobile": {
     "children": [
+      "newsletter",
       "flex-layout.row#1-footer-mobile",
       "flex-layout.row#2-footer-mobile"
     ]
@@ -111,7 +120,8 @@
   "flex-layout.row#1-footer-mobile": {
     "props": {
       "paddingTop": 4,
-      "paddingBottom": 4
+      "paddingBottom": 4,
+      "blockClass":"accordion"
     },
     "children": [
       "vtex.menu@2.x:menu#footer-mobile"
@@ -119,8 +129,8 @@
   },
   "rich-text#footer-mobile": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
+      "text": "© Echidnainc, All rights reserved. Site build with VTEX. SSL CERTIFIED SECURE SITE.",
+      "blockClass": "credits"
     }
   }
 }

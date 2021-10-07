@@ -178,3 +178,46 @@
 .container--menu-row {
   min-width: 1000px;
 }
+
+/* ===============Tablet================== */
+@media only screen and (min-width:481px) and (max-width:1025px){
+  .inputGroup--newsletter {
+    min-width: auto;
+  }
+  .label--newsletter {
+    font-size: 18px;
+  }
+  .newsletter {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(255, 255, 255) !important;
+  }
+  .form--newsletter {
+    min-width: auto !important;
+      }
+}
+
+/* ================= Mobile ====================== */
+@media only screen and (max-width:480px){
+  .inputGroup--newsletter {
+    min-width: auto;
+    margin-left:0px;
+    display:block;
+    justify-content: center;
+    align-items: center;
+  }
+  .label--newsletter {
+    font-size: 15px;
+  }
+  .buttonContainer--newsletter {
+    font-size:2px !important;
+  }
+  .newsletter {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgb(255, 255, 255) !important;
+  }
+  .newsletter .container--newsletter {
+    padding: 10px 10px;
+  }
+}

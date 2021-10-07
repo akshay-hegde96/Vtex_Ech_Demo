@@ -342,6 +342,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass":"clothing",
       "itemProps": {
         "type": "internal",
         "href": "/clothing/d",
@@ -373,6 +374,7 @@
   },
   "menu-item#decoration-mobile": {
     "props": {
+      "blockClass":"decoration",
       "itemProps": {
         "tagTitle": "Decoration",
         "text": "Decoration"
@@ -401,6 +403,7 @@
   },
   "menu-item#sale-mobile": {
     "props": {
+      "blockClass":"sale",
       "itemProps": {
         "tagTitle": "Sale",
         "text": "Sale"
