@@ -148,7 +148,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/customer-service/contact",
+        "href": "/contact-us",
         "noFollow": true,
         "tagTitle": "Contact",
         "text": "Contact"
@@ -164,7 +164,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/customer-service/help",
+        "href": "/faq",
         "noFollow": true,
         "tagTitle": "Help/FAQ's",
         "text": "Help/FAQ's"
@@ -180,7 +180,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/customer-service/shipping-policy",
+        "href": "/sample-shipping",
         "noFollow": true,
         "tagTitle": "Shipping Policy",
         "text": "Shipping Policy"
@@ -196,7 +196,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/customer-service/privacy-policy",
+        "href": "/sample-privacy",
         "noFollow": true,
         "tagTitle": "Privacy Policy",
         "text": "Privacy Policy"
@@ -212,7 +212,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/customer-service/term-of-use",
+        "href": "/sample-terms",
         "noFollow": true,
         "tagTitle": "Term of use",
         "text": "Term of use"
