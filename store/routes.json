@@ -14,6 +14,15 @@
   "store.custom#corporate-blog": {
     "path": "/corporate-blog"
   },
+  "store.custom#sample-shipping": {
+    "path":"/sample-shipping"
+  },
+  "store.custom#sample-privacy": {
+    "path":"/sample-privacy"
+  },
+  "store.custom#sample-terms":{
+    "path":"/sample-terms"},
+  },
   "store.custom#store-features": {
     "path": "/store-features"
   },

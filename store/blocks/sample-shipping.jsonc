@@ -1,0 +1,21 @@
+{
+    "store.custom#sample-shipping":{
+       "blocks":[
+           "flex-layout.row#header"
+       ]
+    },
+    "flex-layout.row#header":{
+        "children":[
+            "rich-text#title"
+        ]
+    },
+    "rich-text#title": {
+        "props": {
+          "text": "Thanks for reaching out Shipping policy!",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      }
+
+
+}

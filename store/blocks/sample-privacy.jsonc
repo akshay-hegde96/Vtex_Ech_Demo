@@ -1,0 +1,21 @@
+{
+    "store.custom#sample-privacy":{
+       "blocks":[
+           "flex-layout.row#header"
+       ]
+    },
+    "flex-layout.row#header":{
+        "children":[
+            "rich-text#title"
+        ]
+    },
+    "rich-text#title": {
+        "props": {
+          "text": "Thanks for reaching out privacy policy!",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      }
+
+
+}
