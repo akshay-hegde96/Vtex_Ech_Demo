@@ -1,0 +1,11 @@
+.trigger--details, .trigger--additionalInfo, .trigger--reviews {
+    display: flex;
+    max-width: 90%;
+    margin-left: 10px;
+}
+
+.content--details, .content--additionalInfo, .content--reviews {
+    max-width: 90%;
+    min-height: 50px;
+    margin-left: 10px;
+}

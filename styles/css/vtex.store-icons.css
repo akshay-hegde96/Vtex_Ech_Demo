@@ -2,12 +2,8 @@
   color: #727273;
   display: none;
 }
-/*.caretIcon {
-  background-color: green;
-  color: white;
-  padding: 10px 7px;
-}*/
 
-
-
-
+.caretIcon--disclosure-pdp {
+  margin-left: 10px;
+  margin-top: 18px;
+}
