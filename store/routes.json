@@ -13,5 +13,11 @@
   },
   "store.custom#corporate-blog": {
     "path": "/corporate-blog"
+  },
+  "store.custom#store-features": {
+    "path": "/store-features"
+  },
+  "store.custom#upcoming-features": {
+    "path": "/upcoming-features"
   }
 }

@@ -297,6 +297,7 @@
   },
   "flex-layout.col#right-col": {
     "props": {
+      "blockClass":"product-name",
       "preventVerticalStretch": true,
       "rowGap": 0
     },

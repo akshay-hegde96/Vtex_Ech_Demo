@@ -289,7 +289,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/about-company/store-features",
+        "href": "/store-features",
         "noFollow": true,
         "tagTitle": "Store Features",
         "text": "Store Features"
@@ -305,7 +305,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/about-company/upcoming-features",
+        "href": "/upcoming-features",
         "noFollow": true,
         "tagTitle": "Upcoming Features",
         "text": "Upcoming Features"
@@ -342,6 +342,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass":"clothing",
       "itemProps": {
         "type": "internal",
         "href": "/clothing/d",
@@ -373,6 +374,7 @@
   },
   "menu-item#decoration-mobile": {
     "props": {
+      "blockClass":"decoration",
       "itemProps": {
         "tagTitle": "Decoration",
         "text": "Decoration"
@@ -401,6 +403,7 @@
   },
   "menu-item#sale-mobile": {
     "props": {
+      "blockClass":"sale",
       "itemProps": {
         "tagTitle": "Sale",
         "text": "Sale"

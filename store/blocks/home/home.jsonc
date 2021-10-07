@@ -7,8 +7,8 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "info-card#shelf", // view all collections
-      "flex-layout.row#shelf",
-      "newsletter" // view all shelf
+      "flex-layout.row#shelf"
+      // "newsletter" // view all shelf
     ]
   },
 
@@ -228,14 +228,6 @@
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf"
-    }
-  },
-
-  "newsletter": {
-    "props": {
-      "label": "Newsletter Subscription",
-      "placeholder": "Enter Your Email",
-      "blockClass": "newsletter"
     }
   }
 }
