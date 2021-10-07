@@ -94,3 +94,24 @@
     margin-top: -5px;
 }
 }
+
+/* =========== Tablet ================*/
+@media only screen and (min-width:481px) and (max-width:1026px){
+  .container--credits{
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+  }
+}
+/*============ Mobile ============== */
+@media only screen and (max-width:480px){
+  .container--credits{
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+  }
+}
