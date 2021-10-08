@@ -85,7 +85,7 @@
   align-items: center;
   background-color: #ad2697;
   padding-right: 25px;
-  margin-left: 2px;
+  margin-left: 10px;
 }
 
 .imageElement--storePrint {
@@ -180,6 +180,15 @@
 
 .container--menu-row {
   min-width: 1000px;
+}
+/* =========Store Features========= */
+.imageElement--store-features-img{
+  border-radius: 80px;
+ padding:30px 0px;
+}
+/* ============Corporate blog =========== */
+.imageElement--corporate-blog-image{
+  padding-bottom: 20px;
 }
 
 /* ===============Tablet================== */
