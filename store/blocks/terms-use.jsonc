@@ -1,21 +1,37 @@
 {
     "store.custom#sample-terms":{
        "blocks":[
-           "flex-layout.row#header"
+        "rich-text#terms-use",
+        "modal-trigger#example"
        ]
     },
-    "flex-layout.row#header":{
-        "children":[
-            "rich-text#title"
-        ]
-    },
-    "rich-text#title": {
+    "rich-text#terms-use": {
         "props": {
           "text": "Kindly go through Terms and Use!",
           "textAlignment": "CENTER",
           "textPosition": "CENTER"
         }
+      },
+      "modal-trigger#example": {
+        "children": [
+          "rich-text#example",
+          "modal-layout#example"
+        ]
+      },
+      "rich-text#example": {
+        "props": {
+          "text": "Ask Us!"
+        }
+      },
+      "modal-layout#example": {
+        "children": [
+          "rich-text#modal-content"
+        ]
+      },
+      "rich-text#modal-content": {
+        "props": {
+          "text": "Thankyou for reaching us! we will get back you soon"
+        }
       }
-
 
 }
