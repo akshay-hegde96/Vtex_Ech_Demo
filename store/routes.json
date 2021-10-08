@@ -11,7 +11,16 @@
   "store.custom#shipping-policy":{
     "path":"/shipping-policy"
   },
-  "store.custom#sample-privacy":{
+  "store.custom#careers": {
+    "path": "/careers"
+  },
+  "store.custom#corporate-blog": {
+    "path": "/corporate-blog"
+  },
+  "store.custom#sample-shipping": {
+    "path":"/sample-shipping"
+  },
+  "store.custom#sample-privacy": {
     "path":"/sample-privacy"
   },
   "store.custom#sample-terms":{
