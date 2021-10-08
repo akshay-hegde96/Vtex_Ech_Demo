@@ -17,9 +17,6 @@
   "store.custom#corporate-blog": {
     "path": "/corporate-blog"
   },
-  "store.custom#sample-shipping": {
-    "path":"/sample-shipping"
-  },
   "store.custom#sample-privacy": {
     "path":"/sample-privacy"
   },
