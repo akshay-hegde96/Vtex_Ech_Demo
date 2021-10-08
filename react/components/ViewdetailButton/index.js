@@ -19,8 +19,9 @@ const ViewdetailButton=({ AddListenBtn }) => {
             //   isLoading={state.isLoading2}
             >
               View Details
+              </Button>
              <AddListenBtn/>
-            </Button>
+            
           </div>
         </div>
     )
