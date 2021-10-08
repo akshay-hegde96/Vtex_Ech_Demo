@@ -241,7 +241,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/about-company/about",
+        "href": "/about-us",
         "noFollow": true,
         "tagTitle": "About",
         "text": "About"
@@ -439,7 +439,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/my-account/d",
+        "href": "/account",
         "noFollow": true,
         "tagTitle": "My Account",
         "text": "My Account"
@@ -455,7 +455,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/my-account/my-profile",
+        "href": "/account#/profile",
         "noFollow": false,
         "tagTitle": "My Profile",
         "text": "My Profile"
@@ -487,7 +487,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/my-account/my-orders",
+        "href": "/account#/orders",
         "noFollow": false,
         "tagTitle": "My Orders",
         "text": "My Orders"

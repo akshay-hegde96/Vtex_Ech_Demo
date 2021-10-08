@@ -46,6 +46,10 @@
           "url": "https://www.instagram.com/vtextruecloud/"
         },
         {
+          "name": "pinterest",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
           "name": "Twitter",
           "url": "https://twitter.com/vtexonline"
         },
@@ -66,6 +70,7 @@
   },
   "accepted-payment-methods": {
     "props": {
+      "showInColor": true,
       "paymentMethods": [
         "MasterCard",
         "Visa",
@@ -83,7 +88,7 @@
   },
   "rich-text#credits": {
     "props": {
-      "text": "© Echidnainc, All rights reserved. Site build with VTEX. SSL CERTIFIED SECURE SITE.",
+      "text": "© Echidnainc, All rights reserved. Site built with VTEX. SSL CERTIFIED SECURE SITE.",
       "blockClass": "credits"
     }
   },
@@ -129,7 +134,7 @@
   },
   "rich-text#footer-mobile": {
     "props": {
-      "text": "© Echidnainc, All rights reserved. Site build with VTEX. SSL CERTIFIED SECURE SITE.",
+      "text": "© Echidnainc, All rights reserved. Site built with VTEX. SSL CERTIFIED SECURE SITE.",
       "blockClass": "credits"
     }
   }
