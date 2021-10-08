@@ -1,0 +1,14 @@
+{
+    "store.custom#corporate-blog": {
+        "blocks": [
+            "rich-text#corporate-blog"
+        ]
+    },
+    "rich-text#corporate-blog": {
+        "props": {
+            "text": "## Corporate-blog",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    }
+}
