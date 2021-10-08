@@ -17,12 +17,25 @@
   "flex-layout.col#faq": {
     "children": [
       "rich-text#faq",
+      "rich-text#faqIntro",
+      "rich-text#faqExtra",
       "disclosure-layout-group#group"
     ]
   },
   "rich-text#faq": {
     "props": {
       "text": "## FAQ"
+    }
+  },
+
+  "rich-text#faqIntro":{
+    "props": {
+      "text": "If you already understood what VTEX IO is, you may you want to know more and discover how it can be used, who can use it, how much it costs, how VTEX IO Store Framework works, what restrictions may be applied and so on."
+    }
+  },
+  "rich-text#faqExtra":{
+    "props": {
+      "text": "If you've met all the necessary conditions to be part of the small group of VTEX IO developers regarding Admin, back-end, pixel and mobile apps, fill in and submit the Application form with your project's details to let us know about your interest in order to understand your scenario and provide all the necessary permissions."
     }
   },
 
@@ -117,12 +130,12 @@
   },
   "rich-text#question3": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "How much does it cost?"
     }
   },
   "rich-text#answer3": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234."
+      "text": "The Store Framework solution is already included by default in VTEX contracts, without any additional cost for clients.."
     }
   },
 
@@ -148,15 +161,14 @@
   },
   "rich-text#question4": {
     "props": {
-      "text": "How can I track my order?"
+      "text": "Who can use Store Framework?"
     }
   },
   "rich-text#answer4": {
     "props": {
-      "text": "After logging into your account, you can find this info at the link Orders."
+      "text": "Any VTEX store can start using Store Framework since it is an open beta. But bear in mind that due to that status, you can expect a constant state of accelerated evolution."
     }
   },
-
 
   "disclosure-state-indicator": {
     "props": {

@@ -29,5 +29,9 @@
   },
   "store.custom#upcoming-features": {
     "path": "/upcoming-features"
+  },
+  "store.custom#sample-contact": {
+    "path": "/sample-contact"
   }
+ 
 }

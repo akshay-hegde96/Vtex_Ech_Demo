@@ -105,6 +105,9 @@
     justify-content: center;
   }
 }
+
+
+ 
 /*============ Mobile ============== */
 @media only screen and (max-width:480px){
   .container--credits{

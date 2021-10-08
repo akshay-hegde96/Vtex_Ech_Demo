@@ -132,7 +132,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/customer-service/customer-service",
+        "href": "/sample-service",
         "noFollow": true,
         "tagTitle": "Customer Service",
         "text": "Customer Service"
@@ -148,7 +148,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/contact-us",
+        "href": "/sample-contact",
         "noFollow": true,
         "tagTitle": "Contact",
         "text": "Contact"
