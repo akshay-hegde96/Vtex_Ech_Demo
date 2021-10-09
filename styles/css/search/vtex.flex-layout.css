@@ -39,20 +39,22 @@
   width:100%;
  }
 
- .flexRowContent :global(.vtex-flex-layout-0-x-flexRowContent){
+ .flexRowContent--plpToolBar {
+   align-items: center;
+   padding: 6px 0;
+ }
+ .flexRowContent--plpToolBarMobile {
+   align-items: center;
+ }
+
+ /* .flexRowContent :global(.vtex-flex-layout-0-x-flexRowContent){
   padding-bottom: 21px;
-  /*margin-left: -24px;*/
+  margin-left: -24px;
   line-height: 21px;
   position: relative;
-  /*top: -26px;*/
+  top: -26px;
   top:5px;
- }
-
- .flexRowContent{
-  /*padding: 25px;
-  font-size: large;*/
- }
-
+ } */
  
 
  
