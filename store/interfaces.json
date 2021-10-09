@@ -10,5 +10,8 @@
     },
     "myaccount-menu": {
         "component": "Myaccount"
+    },
+    "women-menu": {
+        "component": "Womenmenu"
     }
 }

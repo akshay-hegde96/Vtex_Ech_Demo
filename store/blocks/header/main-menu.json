@@ -39,9 +39,7 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-women-clothing",
-      "menu-item#category-women-accessories",
-      "menu-item#category-women-eyeglasses"
+      "women-menu"
     ]
   },
   "menu-item#category-women-clothing": {
