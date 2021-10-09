@@ -1,17 +1,156 @@
 {
     "store.custom#sample-privacy":{
        "blocks":[
-        "rich-text#privacy-policy"
+        "rich-text#privacy-policy",
+        "flex-layout.row#intro",
+        "flex-layout.row#details"
        ]
     },
    
     "rich-text#privacy-policy": {
         "props": {
-          "text": "Thanks for reaching out privacy policy!",
+          "text": "****Privacy policy****",
           "textAlignment": "CENTER",
           "textPosition": "CENTER"
         }
-      }
+      },
 
+      "flex-layout.row#intro":{
+        "children":[
+          "rich-text#intro"
+        ]
+      },
+      
+      "rich-text#intro":{
+        "props": {
+          "text": "****Here you will find our policies. Get access as VTEX is committed to all of them.****",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      },
+
+      "flex-layout.row#details":{
+        "children":[
+          // "rich-text#policy1","rich-text#policy2","rich-text#answer3","rich-text#answer4"
+          "flex-layout.col#privacy-subtitles"
+        ]
+      },
+
+      "flex-layout.col#privacy-subtitles":{
+        "children":[
+          "modal-trigger#privacy1","modal-trigger#privacy2","modal-trigger#privacy3","modal-trigger#privacy4"
+        ]
+      },
+         
+      "modal-trigger#privacy1": {
+        "children": [
+          "rich-text#privacy1",
+          "modal-layout#popup1"
+        ]
+      },
+      "rich-text#privacy1": {
+        "props": {
+          "text": "1.Privacy Policy - [USA]",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      },
+      "modal-layout#popup1": {
+        "props":{
+          "scroll":"content"
+        },
+        "children": [
+          "rich-text#modal-popup1"
+        ]
+      },
+      "rich-text#modal-popup1": {
+        "props": {
+          "text": "Generally, the law gives individuals the right to: Know why an organization collects, uses or discloses their personal information. Expect an organization to collect, use or disclose their personal information appropriately, and not use the information for any purpose other than that to which they have consented."
+        }
+      },
+
+
+      "modal-trigger#privacy2": {
+        "children": [
+          "rich-text#privacy2",
+          "modal-layout#popup2"
+        ]
+      },
+      "rich-text#privacy2": {
+        "props": {
+          "text": "2.Privacy Policy - [BRACIL]",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      },
+      "modal-layout#popup2": {
+        "props":{
+          "scroll":"content"
+        },
+        "children": [
+          "rich-text#modal-popup2"
+        ]
+      },
+      "rich-text#modal-popup2": {
+        "props": {
+          "text": "Users should be aware that their personal information is being collected, what kind of information is being collected, and how will that collected information be used (what for)."
+        }
+      },
+
+      
+      "modal-trigger#privacy3": {
+        "children": [
+          "rich-text#privacy3",
+          "modal-layout#popup3"
+        ]
+      },
+      "rich-text#privacy3": {
+        "props": {
+          "text": "3.Privacy Policy - [ITALIA]",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      },
+      "modal-layout#popup3": {
+        "props":{
+          "scroll":"content"
+        },
+        "children": [
+          "rich-text#modal-popup3"
+        ]
+      },
+      "rich-text#modal-popup3": {
+        "props": {
+          "text": "Users should have some ability to control how their personal information is being used and should have an option to tracking."
+        }
+      },
+
+
+      "modal-trigger#privacy4": {
+        "children": [
+          "rich-text#privacy4",
+          "modal-layout#popup4"
+        ]
+      },
+      "rich-text#privacy4": {
+        "props": {
+          "text": "4.Privacy Policy - [ARKANSA]",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      },
+      "modal-layout#popup4": {
+        "props":{
+          "scroll":"content"
+        },
+        "children": [
+          "rich-text#modal-popup4"
+        ]
+      },
+      "rich-text#modal-popup4": {
+        "props": {
+          "text": "Website and/or mobile apps developers should take reasonable security measures. Greater security is needed as more sensitive information is collected."
+        }
+      }
 
 }
