@@ -62,7 +62,7 @@
       "preventVerticalStretch": true
     },
     "children": [
-      "vtex.store-components:product-brand#summaryListDesktop",
+      // "vtex.store-components:product-brand#summaryListDesktop",
       "product-summary-name#summaryListDesktop",
       "product-summary-sku-selector",
      // "flex-layout.col#productRating",
@@ -102,8 +102,8 @@
       "colGap": 5
     },
     "children": [
-     "add-to-cart-button",
-      "flex-layout.row#buyNowButton"
+     "add-to-cart-button"
+      //"flex-layout.row#buyNowButton"
     ]
   },
   "flex-layout.row#buyNowButton": {
@@ -188,7 +188,7 @@
       "blockClass": "summaryUpDetailsListMobile"
     },
     "children": [
-      "vtex.store-components:product-brand#summaryListMobile",
+      //"vtex.store-components:product-brand#summaryListMobile",
       "product-summary-name#summaryListMobile",
       "product-rating-inline"
     ]
@@ -198,7 +198,8 @@
       "preventVerticalStretch": true
     },
     "children": [
-      "product-selling-price#summary"
+      "product-selling-price#summary",
+      "add-to-cart-button"
      // "product-installments#summary"
     ]
   },

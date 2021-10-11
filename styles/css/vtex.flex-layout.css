@@ -166,6 +166,11 @@
   border-radius: 5px 5px 0 0;
 }
 
+/*.flexColChild:global(.vtex-flex-layout-0-x-flexRow){
+  text-align: center;
+  display: flex;
+}*/
+
 /* =========== Tablet ================*/
 @media only screen and (min-width: 481px) and (max-width: 1026px) {
   .flexRowContent--payment-methods {
@@ -187,4 +192,10 @@
   .flexColChild--product-name{
     padding-left:25px;
   }
+}
+
+.flexRowContent--productListPricing {
+  top: 0 !important;
+  padding-bottom: 0 !important;
+  min-height: 21px;
 }

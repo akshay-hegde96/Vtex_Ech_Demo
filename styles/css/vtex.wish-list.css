@@ -5,3 +5,15 @@
     bottom: 2px;
     position: static
 }
+.wishlistIconContainer--customWishlistBtn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec94;
+}
+.wishlistIcon--customWishlistBtn {
+    height: 40px;
+    width: 40px;
+}

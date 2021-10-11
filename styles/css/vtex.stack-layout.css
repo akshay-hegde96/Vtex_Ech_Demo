@@ -5,7 +5,8 @@
 .stackItem--quickview {
   right: 0;
   top: 0;
-  left: auto;
+  left: 0;
+  bottom: 0;
 }
 .stackItem--category {
   display: flex;

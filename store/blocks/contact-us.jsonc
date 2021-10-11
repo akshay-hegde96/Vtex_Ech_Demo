@@ -29,7 +29,7 @@
       "props": {
         "text":
         "# The new face of enterprise digital commerce",
-        "blockClass": "title"
+        "blockClass": "title-contact"
       }
     },
   
@@ -44,20 +44,20 @@
     "rich-text#about-vtex": {
       "props": {
         "text": "****VTEX is the Enterprise Digital Commerce Platform that enables brands and retailers to achieve faster time to market, reach their customers across any channel, and uncover new growth areas.**",
-        "blockClass": "about"
+        "blockClass": "about-contact"
       }
     },
     "rich-text#contact-numb":{
         "props": {
             "text": "**VTEX solution architects work hand-in-hand with you to design and build the best solution for your business.**",
-            "blockClass": "about"
+            "blockClass": "about-contact"
           }
     },
 
     "rich-text#contact-live":{
         "props": {
             "text": "**Work with your VTEX Customer Success Manager to grow, optimize, and continually improve your business.**",
-            "blockClass": "about"
+            "blockClass": "about-contact"
           }
     }
   }
