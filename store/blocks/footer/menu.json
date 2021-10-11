@@ -22,7 +22,6 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
         "noFollow": false,
         "tagTitle": "Shop",
         "text": "Shop"
@@ -132,7 +131,6 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/sample-service",
         "noFollow": true,
         "tagTitle": "Customer Service",
         "text": "Customer Service"
@@ -226,6 +224,7 @@
     },
     "children": [
       "menu-item#about",
+      "menu-item#about-us",
       "menu-item#careers",
       "menu-item#corporate-blog",
       "menu-item#store-features",
@@ -241,10 +240,25 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/about-us",
         "noFollow": true,
         "tagTitle": "About",
         "text": "About"
+      }
+    }
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "blockClass": "about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "About Us",
+        "text": "About Us"
       }
     }
   },
@@ -345,7 +359,6 @@
       "blockClass":"my-account-mobile",
       "itemProps": {
         "type": "internal",
-        "href": "/account",
         "noFollow": true,
         "tagTitle": "My Account",
         "text": "My Account"
@@ -394,6 +407,7 @@
       "orientation": "vertical"
     },
     "children": [
+      "menu-item#about-us",
       "menu-item#careers",
       "menu-item#corporate-blog",
       "menu-item#store-features",
@@ -438,7 +452,6 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/account",
         "noFollow": true,
         "tagTitle": "My Account",
         "text": "My Account"

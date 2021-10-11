@@ -34,7 +34,9 @@
 .styledLinkContent--about {
   font-size: 20px;
   padding-bottom: 5px;
-  color: white;
+  color: rgb(255, 255, 255);
+  cursor: default;
+  font-weight: bold;
 }
 
 .styledLinkContent--megaMenu-header {
@@ -65,26 +67,25 @@
 .styledLinkContent--careers,
 .styledLinkContent--corporate-blog,
 .styledLinkContent--store-features,
-.styledLinkContent--upcoming-features {
+.styledLinkContent--upcoming-features,
+.styledLinkContent--about-us {
   font-size: 15px;
   color: white;
 }
 
 /* =========== Tablet ================*/
-@media only screen and (min-width:481px) and (max-width:1026px){
+@media only screen and (min-width: 481px) and (max-width: 1026px) {
   .styledLinkContent--my-account-mobile,
   .styledLinkContent--about-mobile,
-  .styledLinkContent--customer-service-mobile
-  {
+  .styledLinkContent--customer-service-mobile {
     color: white !important;
   }
 }
 /*============ Mobile ============== */
-@media only screen and (max-width:480px){
+@media only screen and (max-width: 480px) {
   .styledLinkContent--my-account-mobile,
   .styledLinkContent--about-mobile,
-  .styledLinkContent--customer-service-mobile
-  {
+  .styledLinkContent--customer-service-mobile {
     color: white !important;
   }
 }
