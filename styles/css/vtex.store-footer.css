@@ -31,3 +31,13 @@
     justify-content: center;
   }
 }
+
+/* @media only screen and (max-width:480px){
+  .socialNetworksContainer--social-networks{
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    min-width: 0 !important;
+    justify-content: center !important;
+  }
+} */

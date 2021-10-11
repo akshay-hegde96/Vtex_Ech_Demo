@@ -224,6 +224,7 @@
   .buttonContainer--newsletter {
     font-size:2px !important;
     margin-top: 10px;
+    margin-left: 0px !important;
   }
   .newsletter {
     padding-left: 0.5rem;
