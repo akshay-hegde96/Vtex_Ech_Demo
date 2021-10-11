@@ -142,22 +142,32 @@
     }
   },
   "flex-layout.row#searchinfo": {
-    "children": ["flex-layout.row#productCount","flex-layout.row#dropdown", "flex-layout.row#orderByAndSwitcher"]
+    "children": [
+      "flex-layout.row#productCount",
+      "flex-layout.row#dropdown", 
+      "flex-layout.row#orderBy", 
+      "flex-layout.row#Switcher"
+    ],
+    "props": {
+      "blockClass": "plpToolBar"
+    }
   },
 
-  "flex-layout.row#orderByAndSwitcher": {
-    "children": ["order-by.v2", "gallery-layout-switcher"],
+  "flex-layout.row#orderBy": {
+    "children": ["order-by.v2"],
     "props": {
-      "horizontalAlign": "right",
-      "preventHorizontalStretch": true,
-      "blockClass": "orderByAndSwitcher",
-      "colGap": 3
+      "blockClass": "orderBy"
+    }
+  },
+  "flex-layout.row#Switcher": {
+    "children": ["gallery-layout-switcher"],
+    "props": {
+      "blockClass": "switcher"
     }
   },
   "flex-layout.row#productCount": {
     "children": ["total-products.v2"],
     "props": {
-      "horizontalAlign": "left",
       "blockClass": "productCountCol"
     }
   },
@@ -165,7 +175,7 @@
   "flex-layout.row#dropdown":{
     "children":["dropdown-button"],
     "props":{
-      "horizontalAlign": "center"
+      "blockClass": "productPerPage"
     }
   },
 
@@ -238,13 +248,13 @@
   "flex-layout.row#searchinfomobile": {
     "children": [
       "flex-layout.col#orderByMobile",
-      "flex-layout.col#filterMobile",
-      "flex-layout.col#switcherMobile"
+      "flex-layout.col#filterMobile"
+      // "flex-layout.col#switcherMobile"
     ],
     "props": {
       "preserveLayoutOnMobile": true,
       "colSizing": "auto",
-      "colJustify": "around"
+      "blockClass": "plpToolBarMobile"
     }
   },
 
@@ -298,10 +308,10 @@
           "name": "grid",
           "component": "GridSummary",
           "itemsPerRow": {
-            "(min-width:1300px)": 4,
+            "(min-width:1400px)": 4,
             "desktop": 3,
-            "tablet": 3,
-            "phone": 2
+            "tablet": 2,
+            "phone": 1
           }
         },
         {

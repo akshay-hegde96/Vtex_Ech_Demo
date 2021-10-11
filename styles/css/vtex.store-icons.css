@@ -1,9 +1,7 @@
-.expandIcon {
-  color: #727273;
-  display: none;
-}
-
 .caretIcon--disclosure-pdp {
   margin-left: 10px;
   margin-top: 18px;
+}
+.caretIcon--caretPlpIcon {
+  margin: 0 10px;
 }

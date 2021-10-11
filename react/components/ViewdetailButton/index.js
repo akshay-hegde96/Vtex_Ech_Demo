@@ -11,17 +11,13 @@ const ViewdetailButton=({ AddListenBtn }) => {
     const initialState = { isLoading1: true, isLoading2: true, isLoading3: true  };
     return (
        
-        <div className={styles.mt4}>
+        <div className={styles.imageOverPosition}>
           <div className="mt4" >
             <Button 
              variation="primary" size="small"
-            //   onClick={() => setState({ isLoading2: !state.isLoading2 })}
-            //   isLoading={state.isLoading2}
             >
               View Details
-              </Button>
-             <AddListenBtn/>
-            
+            </Button>
           </div>
         </div>
     )

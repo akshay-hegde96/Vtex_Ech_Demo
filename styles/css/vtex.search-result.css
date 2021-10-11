@@ -18,22 +18,20 @@
 }
 
 .galleryItem--list {
-  border-bottom: 1px #E7E9EE solid;
+  border-bottom: none;
 }
 
 .totalProductsMessage--layout{
   font-size: large;
-    font-weight: bold;
-    font-family: sans-serif;
-    top: 1px;
-    position: relative;
-    padding-top: 6px;
+  font-weight: bold;
+  font-family: sans-serif;
+  top: 1px;
+  position: relative;
+  padding-top: 6px;
 }
 
 .orderByButton{
-  right: 180px;
-  top: -30px;
-  padding-top: 2px;
+  padding: 0;
 }
 
 .buttonShowMore--layout{
@@ -72,13 +70,16 @@
 .filterIcon {
   color: darkolivegreen
 }
-
-.totalProducts--layout{
-  padding-top: 12px;
-  font-size: large;
+.filterPopupArrowIcon {
+  padding: 0 0.5rem;
 }
-
-.filterPopupTitle{
-  font-size: initial;
-  padding-top: 0px;
+.filterPopupTitle {
+  text-transform: capitalize;
+}
+.orderByButton {
+  justify-content: center;
+}
+.totalProducts--layout{
+  padding: 0;
+  text-transform: capitalize;
 }

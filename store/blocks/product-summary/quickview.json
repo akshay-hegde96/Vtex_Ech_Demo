@@ -1,9 +1,9 @@
 {
   "modal-trigger#quickview": {
     "children": [
-      "icon-expand",
+      "add-to-list-btn#plp-btn",
       "modal-layout#quickview",
-      "viewdetails-button#pdp-page"
+      "viewdetails-button"
     ],
     "props": {
       "blockClass": "quickview"
@@ -33,13 +33,6 @@
     ],
     "props": {
       "blockClass": "quickviewContent"
-    }
-  },
-
-  "viewdetails-button#pdp-page":{
-    "props":{
-      "AddListenBtn":"add-to-list-btn",
-      "blockClasss":"viewDetails"
     }
   },
 
@@ -147,6 +140,11 @@
     "props": {
       "blockClass": "quickview",
       "showNavigationArrows": true
+    }
+  },
+  "add-to-list-btn#plp-btn": {
+    "props": {
+      "blockClass": "customWishlistBtn"
     }
   }
 }
