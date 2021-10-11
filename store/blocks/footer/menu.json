@@ -331,36 +331,36 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#clothing-mobile",
-      "menu-item#decoration-mobile",
-      "menu-item#sale-mobile"
+      "menu-item#account-mobile",
+      "menu-item#about-mobile",
+      "menu-item#customer-service-mobile"
     ]
   },
-  "menu-item#clothing-mobile": {
+  "menu-item#account-mobile": {
     "props": {
-      "id": "menu-item-category-clothing",
+      "id": "menu-item-category-account",
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass":"clothing",
+      "blockClass":"my-account-mobile",
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/d",
+        "href": "/account",
         "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "My Account",
+        "text": "My Account"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#clothing"
+      "vtex.menu@2.x:submenu.accordion#account"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#clothing": {
+  "vtex.menu@2.x:submenu.accordion#account": {
     "children": [
-      "vtex.menu@2.x:menu#clothing-accordion"
+      "vtex.menu@2.x:menu#account-accordion"
     ]
   },
-  "vtex.menu@2.x:menu#clothing-accordion": {
+  "vtex.menu@2.x:menu#account-accordion": {
     "props": {
       "orientation": "vertical"
     },
@@ -372,53 +372,52 @@
       "menu-item#gift-credit"
     ]
   },
-  "menu-item#decoration-mobile": {
+  "menu-item#about-mobile": {
     "props": {
-      "blockClass":"decoration",
+      "blockClass":"about-mobile",
       "itemProps": {
-        "tagTitle": "Decoration",
-        "text": "Decoration"
+        "tagTitle": "About",
+        "text": "About"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#decoration"
+      "vtex.menu@2.x:submenu.accordion#about"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#decoration": {
+  "vtex.menu@2.x:submenu.accordion#about": {
+    "children": [
+      "vtex.menu@2.x:menu#about-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#about-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#careers",
+      "menu-item#corporate-blog",
+      "menu-item#store-features",
+      "menu-item#upcoming-features"
+    ]
+  },
+  "menu-item#customer-service-mobile": {
+    "props": {
+      "blockClass":"customer-service-mobile",
+      "itemProps": {
+        "tagTitle": "Customer Service",
+        "text": "Customer Service"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#customer-service-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#customer-service-mobile": {
     "children": [
       "vtex.menu@2.x:menu#footer-customer-service-mobile"
     ]
   },
   "vtex.menu@2.x:menu#footer-customer-service-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#contact",
-      "menu-item#help",
-      "menu-item#shipping-policy",
-      "menu-item#privacy-policy",
-      "menu-item#term-of-use"
-    ]
-  },
-  "menu-item#sale-mobile": {
-    "props": {
-      "blockClass":"sale",
-      "itemProps": {
-        "tagTitle": "Sale",
-        "text": "Sale"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#sale"
-    ]
-  },
-  "vtex.menu@2.x:submenu.accordion#sale": {
-    "children": [
-      "vtex.menu@2.x:menu#footer-sale-mobile"
-    ]
-  },
-  "vtex.menu@2.x:menu#footer-sale-mobile": {
     "props": {
       "orientation": "vertical"
     },

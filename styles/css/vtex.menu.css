@@ -72,18 +72,18 @@
 
 /* =========== Tablet ================*/
 @media only screen and (min-width:481px) and (max-width:1026px){
-  .styledLinkContent--clothing,
-  .styledLinkContent--decoration,
-  .styledLinkContent--sale
+  .styledLinkContent--my-account-mobile,
+  .styledLinkContent--about-mobile,
+  .styledLinkContent--customer-service-mobile
   {
     color: white !important;
   }
 }
 /*============ Mobile ============== */
 @media only screen and (max-width:480px){
-  .styledLinkContent--clothing,
-  .styledLinkContent--decoration,
-  .styledLinkContent--sale
+  .styledLinkContent--my-account-mobile,
+  .styledLinkContent--about-mobile,
+  .styledLinkContent--customer-service-mobile
   {
     color: white !important;
   }
