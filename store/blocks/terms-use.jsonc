@@ -10,7 +10,8 @@
         "props": {
           "text": "**Kindly go through Terms and Use!**",
           "textAlignment": "CENTER",
-          "textPosition": "CENTER"
+          "textPosition": "CENTER",
+          "blockClass":"term-handle"
         }
       },
 
@@ -26,7 +27,8 @@
           "text": "**Acceptable Use**",
           "textAlignment": "LEFT",
           "textPosition": "LEFT",
-          "href":"#"
+          "href":"#",
+          "blockClass":"term-handle"
         }
       },
       "rich-text#termsIntro1":{
@@ -34,7 +36,7 @@
           "text": "1.You may not break the law using the forum.",
           "textAlignment": "LEFT",
           "textPosition": "LEFT",
-          "href":"#"
+          "blockClass":"term-points"
         }
       },
       "rich-text#termsIntro2":{
@@ -42,7 +44,7 @@
           "text": "2.You may not use or try to use another’s account on the forum without their specific permission.",
           "textAlignment": "LEFT",
           "textPosition": "LEFT",
-          "href":"#"
+          "blockClass":"term-points"
         }
       },
       "rich-text#termsIntro3":{
@@ -50,7 +52,7 @@
           "text": "3.You may not buy, sell, or otherwise trade in user names or other unique identifiers on the forum.",
           "textAlignment": "LEFT",
           "textPosition": "LEFT",
-          "href":"#"
+          "blockClass":"term-points"
         }
       },
       "rich-text#termsIntro4":{
@@ -58,7 +60,7 @@
           "text": "4.You may not automate access to the forum, or monitor the forum, such as with a web crawler, browser plug-in or add-on, or other computer program that is not a web browser. You may crawl the forum to index it for a publicly available search engine, if you run one.",
           "textAlignment": "LEFT",
           "textPosition": "LEFT",
-          "href":"#"
+          "blockClass":"term-points"
         }
       },
       "rich-text#termsIntro5":{
@@ -66,7 +68,7 @@
           "text": "5.You may not use the forum to send e-mail to distribution lists, newsgroups, or group mail aliases.",
           "textAlignment": "LEFT",
           "textPosition": "LEFT",
-          "href":"#"
+          "blockClass":"term-points"
         }
       },
 
@@ -75,12 +77,14 @@
           "rich-text#example",
           "modal-layout#example"
         ]
+        
       },
       "rich-text#example": {
         "props": {
-          "text": "**Ask Us!**",
+          "text": "**Click me!**",
           "textAlignment":"CENTER",
-          "textPosition":"CENTER"
+          "textPosition":"CENTER",
+          "blockClass":"term-askUs"
         }
       },
       "modal-layout#example": {
@@ -90,7 +94,11 @@
       },
       "rich-text#modal-content": {
         "props": {
-          "text": "Thankyou for reaching us! we will get back you soon"
+          "text": "Thankyou for reaching us! we will get back you soon",
+          "buttonProps": {
+            "variant": "secondary",
+            "size": "medium"
+          }
         }
       }
 

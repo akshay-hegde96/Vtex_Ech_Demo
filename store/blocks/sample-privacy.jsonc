@@ -11,7 +11,8 @@
         "props": {
           "text": "****Privacy policy****",
           "textAlignment": "CENTER",
-          "textPosition": "CENTER"
+          "textPosition": "CENTER",
+          "blockClass":"privacy-title"
         }
       },
 
@@ -25,7 +26,8 @@
         "props": {
           "text": "****Here you will find our policies. Get access as VTEX is committed to all of them.****",
           "textAlignment": "CENTER",
-          "textPosition": "CENTER"
+          "textPosition": "CENTER",
+          "blockClass":"privacy-title"
         }
       },
 
@@ -34,6 +36,7 @@
           // "rich-text#policy1","rich-text#policy2","rich-text#answer3","rich-text#answer4"
           "flex-layout.col#privacy-subtitles"
         ]
+       
       },
 
       "flex-layout.col#privacy-subtitles":{
@@ -52,12 +55,14 @@
         "props": {
           "text": "1.Privacy Policy - [USA]",
           "textAlignment": "CENTER",
-          "textPosition": "CENTER"
+          "textPosition": "CENTER",
+          "blockClass":"anchor-link"
+          
         }
       },
       "modal-layout#popup1": {
         "props":{
-          "scroll":"content"
+         "blockClass":"modal-md"
         },
         "children": [
           "rich-text#modal-popup1"
@@ -66,6 +71,7 @@
       "rich-text#modal-popup1": {
         "props": {
           "text": "Generally, the law gives individuals the right to: Know why an organization collects, uses or discloses their personal information. Expect an organization to collect, use or disclose their personal information appropriately, and not use the information for any purpose other than that to which they have consented."
+         
         }
       },
 
@@ -80,7 +86,8 @@
         "props": {
           "text": "2.Privacy Policy - [BRACIL]",
           "textAlignment": "CENTER",
-          "textPosition": "CENTER"
+          "textPosition": "CENTER",
+          "blockClass":"anchor-link"
         }
       },
       "modal-layout#popup2": {
@@ -108,7 +115,8 @@
         "props": {
           "text": "3.Privacy Policy - [ITALIA]",
           "textAlignment": "CENTER",
-          "textPosition": "CENTER"
+          "textPosition": "CENTER",
+          "blockClass":"anchor-link"
         }
       },
       "modal-layout#popup3": {
@@ -136,7 +144,8 @@
         "props": {
           "text": "4.Privacy Policy - [ARKANSA]",
           "textAlignment": "CENTER",
-          "textPosition": "CENTER"
+          "textPosition": "CENTER",
+          "blockClass":"anchor-link"
         }
       },
       "modal-layout#popup4": {

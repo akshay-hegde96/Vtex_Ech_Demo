@@ -24,18 +24,21 @@
   },
   "rich-text#faq": {
     "props": {
-      "text": "## FAQ"
+      "text": "## FAQ",
+      "blockClass": "faq-Extra"
     }
   },
 
   "rich-text#faqIntro":{
     "props": {
-      "text": "If you already understood what VTEX IO is, you may you want to know more and discover how it can be used, who can use it, how much it costs, how VTEX IO Store Framework works, what restrictions may be applied and so on."
+      "text": "If you already understood what VTEX IO is, you may you want to know more and discover how it can be used, who can use it, how much it costs, how VTEX IO Store Framework works, what restrictions may be applied and so on.",
+      "blockClass":"faq-Heading"
     }
   },
   "rich-text#faqExtra":{
     "props": {
-      "text": "If you've met all the necessary conditions to be part of the small group of VTEX IO developers regarding Admin, back-end, pixel and mobile apps, fill in and submit the Application form with your project's details to let us know about your interest in order to understand your scenario and provide all the necessary permissions."
+      "text": "If you've met all the necessary conditions to be part of the small group of VTEX IO developers regarding Admin, back-end, pixel and mobile apps, fill in and submit the Application form with your project's details to let us know about your interest in order to understand your scenario and provide all the necessary permissions.",
+      "blockClass":"faq-Heading"
     }
   },
 
@@ -43,8 +46,8 @@
     "children": [
       "disclosure-layout#first",
       "disclosure-layout#second",
-      "disclosure-layout#third",
-      "disclosure-layout#fourth"
+      "disclosure-layout#second",
+      "disclosure-layout#second"
     ]
   },
 
@@ -69,12 +72,14 @@
   },
   "rich-text#question1": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "How can I change my shipping address?",
+      "blockClass":"disclosure-1"
     }
   },
   "rich-text#answer1": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234."
+      "text": "Call us at the number (212) 1234-1234.",
+      "blockClass":"disclosure-1"
     }
   },
 
@@ -99,74 +104,14 @@
   },
   "rich-text#question2": {
     "props": {
-      "text": "How can I track my order?"
+      "text": "How can I track my order?",
+      "blockClass":"disclosure-1"
     }
   },
   "rich-text#answer2": {
     "props": {
-      "text": "After logging into your account, you can find this info at the link Orders."
-    }
-  },
-
-
-  "disclosure-layout#third": {
-    "props": {
-      "animated": true
-    },
-    "children": ["disclosure-trigger#third", "disclosure-content#third"]
-  },
-  "disclosure-trigger#third": {
-    "props": {
-      "blockClass": "question",
-      "as": "div"
-    },
-    "children": ["disclosure-state-indicator", "rich-text#question3"]
-  },
-  "disclosure-content#third": {
-    "props": {
-      "blockClass": "answer"
-    },
-    "children": ["rich-text#answer3"]
-  },
-  "rich-text#question3": {
-    "props": {
-      "text": "How much does it cost?"
-    }
-  },
-  "rich-text#answer3": {
-    "props": {
-      "text": "The Store Framework solution is already included by default in VTEX contracts, without any additional cost for clients.."
-    }
-  },
-
-
-  "disclosure-layout#fourth": {
-    "props": {
-      "animated": true
-    },
-    "children": ["disclosure-trigger#fourth", "disclosure-content#fourth"]
-  },
-  "disclosure-trigger#fourth": {
-    "props": {
-      "blockClass": "question",
-      "as": "div"
-    },
-    "children": ["disclosure-state-indicator", "rich-text#question4"]
-  },
-  "disclosure-content#fourth": {
-    "props": {
-      "blockClass": "answer"
-    },
-    "children": ["rich-text#answer2"]
-  },
-  "rich-text#question4": {
-    "props": {
-      "text": "Who can use Store Framework?"
-    }
-  },
-  "rich-text#answer4": {
-    "props": {
-      "text": "Any VTEX store can start using Store Framework since it is an open beta. But bear in mind that due to that status, you can expect a constant state of accelerated evolution."
+      "text": "After logging into your account, you can find this info at the link Orders.",
+      "blockClass":"disclosure-1"
     }
   },
 
