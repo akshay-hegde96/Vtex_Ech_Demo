@@ -1,169 +1,171 @@
+
+
 {
-    "store.custom#shipping-policy":{
-       "blocks":[
-        "rich-text#shipping-policy",
-        "flex-layout.row#shiiping-query",
-        "flex-layout.row#shiiping-answer",
-        "flex-layout.row#editing-query",
-        "flex-layout.row#editing-answer",
-        "flex-layout.row#deleting-query",
-        "flex-layout.row#deleting-answer",
-        "disclosure-layout-group#group"
-       ]
-    },
-    "rich-text#shipping-policy": {
-        "props": {
-          "text": "**Thanks for reaching out Shipping Policy!**",
-          "textAlignment": "CENTER",
-          "textPosition": "CENTER",
-          "blockClass":"shipping-title"
-        }
-      },
-      "flex-layout.row#shiiping-query":{
-        "children":[
-          "rich-text#shipping-query1"
-        ]
-      },
-      "rich-text#shipping-query1":{
-        "props": {
-          "text": "****1.Adding a shipping policy****",
-          "textAlignment": "LEFT",
-          "textPosition": "LEFT",
-          "blockClass":"shipping-query1"
-        }
-      },
-      "flex-layout.row#shiiping-answer":{
-        "children":["rich-text#shipping-query2"]
-      },
-      "rich-text#shipping-query2":{
-        "props": {
-          "text": "Access the Inventory & shipping module and select the Shipping strategy tab then Select the Shipping strategy tab later Click on the Create shipping policy button and finally fill in the fields on the screen and click on Save changes.",
-          "textAlignment": "LEFT",
-          "textPosition": "LEFT",
-          "blockClass":"shipping-ans1"
-        }
-      },
-      "flex-layout.row#editing-query":{
-        "children":[
-          "rich-text#editing-question"
-        ]
-      },
-
-      "rich-text#editing-question":{
-        "props": {
-          "text": "****2.Editing a shipping policy****",
-          "textAlignment": "LEFT",
-          "textPosition": "LEFT",
-          "blockClass":"shipping-query1"
-        }
-      },
-
-      "flex-layout.row#editing-answer":{
-        "children":[
-          "rich-text#editing-answer"
-        ]
-      },
-
-      "rich-text#editing-answer":{
-        "props": {
-          "text": "Access the Inventory & shipping module,then select the Shipping strategy tab and click on the shipping policy you want to edit finally edit the content you want to change (the fields are described in Adding a shipping policy) and save.",
-          "textAlignment": "LEFT",
-          "blockClass":"shipping-ans1",
-          "textPosition": "LEFT"
-        }
-      },
-      "flex-layout.row#deleting-query":{
-        "children":[
-          "rich-text#deletng-query1"
-        ]
-      },
-      "rich-text#deletng-query1":{
-        "props": {
-          "text": "****3.Deleting a shipping policy****",
-          "textAlignment": "LEFT",
-          "textPosition": "LEFT",
-          "blockClass":"shipping-query1"
-        }
-      },
-      "flex-layout.row#deleting-answer":{
-        "children":["rich-text#deleting-query2"]
-      },
-      "rich-text#deleting-query2":{
-        "props": {
-          "text": "Access the Inventory & shipping module and select the Shipping strategy tab then Hover the mouse pointer over the shipping policy you want to delete then Click on the trash can icon and choose Delete button",
-          "textAlignment": "LEFT",
-          "textPosition": "LEFT",
-          "blockClass":"shipping-ans1"
-        }
-      },
-      "disclosure-layout-group#group": {
-        "children": ["disclosure-layout#first", "disclosure-layout#second"]
-      },
-    
-      "disclosure-layout#first": {
-        "props": {
-            "animated": true
-          },
-        "children": ["disclosure-trigger#first", "disclosure-content#first"]
-      },
-      "disclosure-trigger#first": {
-        "props": {
-            "blockClass": "question",
-            "as": "div"
-          },
-        "children": ["rich-text#question1","disclosure-state-indicator"]
-      },
-      "disclosure-content#first": {
-        "props": {
-            "blockClass": "answer"
-          },
-        "children": ["rich-text#answer1"]
-      },
-      "rich-text#question1": {
-        "props": {
-          "text": "What are the delivery charges?"
-        }
-      },
-      "rich-text#answer1": {
-        "props": {
-          "text": "Delivery charge varies with each Seller."
-        }
-      },
-    
-      "disclosure-layout#second": {
-        "props": {
-            "animated": true
-          },
-        "children": ["disclosure-trigger#second", "disclosure-content#second"]
-      },
-      "disclosure-trigger#second": {
-        "props": {
-            "blockClass": "question",
-            "as": "div"
-          },
-        "children": ["rich-text#question2","disclosure-state-indicator"]
-      },
-      "disclosure-content#second": {
-        "props": {
-            "blockClass": "answer"
-          },
-        "children": ["rich-text#answer2"]
-      },
-      "rich-text#question2": {
-        "props": {
-          "text": "What is the estimated delivery time?"
-        }
-      },
-      "rich-text#answer2": {
-        "props": {
-          "text": "Sellers generally procure and ship the items within the time specified on the product page. Business days exclude public holidays and Sundays"
-        }
-      },
-      "disclosure-state-indicator": {
-        "props": {
-          "Show": "icon-angle--down",
-          "Hide": "icon-angle--up"
-        }
+  "store.custom#shipping-policy":{
+     "blocks":[
+      "rich-text#shipping-policy",
+      "flex-layout.row#shiiping-query",
+      "flex-layout.row#shiiping-answer",
+      "flex-layout.row#editing-query",
+      "flex-layout.row#editing-answer",
+      "flex-layout.row#deleting-query",
+      "flex-layout.row#deleting-answer",
+      "disclosure-layout-group#group"
+     ]
+  },
+  "rich-text#shipping-policy": {
+      "props": {
+        "text": "**Thanks for reaching out Shipping Policy!**",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "blockClass":"shipping-title"
       }
-      
+    },
+    "flex-layout.row#shiiping-query":{
+      "children":[
+        "rich-text#shipping-query1"
+      ]
+    },
+    "rich-text#shipping-query1":{
+      "props": {
+        "text": "**Adding a shipping policy**",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"shipping-query1"
+      }
+    },
+    "flex-layout.row#shiiping-answer":{
+      "children":["rich-text#shipping-query2"]
+    },
+    "rich-text#shipping-query2":{
+      "props": {
+        "text": "Access the Inventory & shipping module and select the Shipping strategy tab then Select the Shipping strategy tab later Click on the Create shipping policy button and finally fill in the fields on the screen and click on Save changes.",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"shipping-ans1"
+      }
+    },
+    "flex-layout.row#editing-query":{
+      "children":[
+        "rich-text#editing-question"
+      ]
+    },
+
+    "rich-text#editing-question":{
+      "props": {
+        "text": "**Editing a shipping policy**",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"shipping-query1"
+      }
+    },
+
+    "flex-layout.row#editing-answer":{
+      "children":[
+        "rich-text#editing-answer"
+      ]
+    },
+
+    "rich-text#editing-answer":{
+      "props": {
+        "text": "Access the Inventory & shipping module,then select the Shipping strategy tab and click on the shipping policy you want to edit finally edit the content you want to change (the fields are described in Adding a shipping policy) and save.",
+        "textAlignment": "LEFT",
+        "blockClass":"shipping-ans1",
+        "textPosition": "LEFT"
+      }
+    },
+    "flex-layout.row#deleting-query":{
+      "children":[
+        "rich-text#deletng-query1"
+      ]
+    },
+    "rich-text#deletng-query1":{
+      "props": {
+        "text": "**Deleting a shipping policy**",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"shipping-query1"
+      }
+    },
+    "flex-layout.row#deleting-answer":{
+      "children":["rich-text#deleting-query2"]
+    },
+    "rich-text#deleting-query2":{
+      "props": {
+        "text": "Access the Inventory & shipping module and select the Shipping strategy tab then Hover the mouse pointer over the shipping policy you want to delete then Click on the trash can icon and choose Delete button",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"shipping-ans1"
+      }
+    },
+    "disclosure-layout-group#group": {
+      "children": ["disclosure-layout#first", "disclosure-layout#second"]
+    },
+  
+    "disclosure-layout#first": {
+      "props": {
+          "animated": true
+        },
+      "children": ["disclosure-trigger#first", "disclosure-content#first"]
+    },
+    "disclosure-trigger#first": {
+      "props": {
+          "blockClass": "question",
+          "as": "div"
+        },
+      "children": ["rich-text#question1","disclosure-state-indicator"]
+    },
+    "disclosure-content#first": {
+      "props": {
+          "blockClass": "answer"
+        },
+      "children": ["rich-text#answer1"]
+    },
+    "rich-text#question1": {
+      "props": {
+        "text": "What are the delivery charges?"
+      }
+    },
+    "rich-text#answer1": {
+      "props": {
+        "text": "Delivery charge varies with each Seller."
+      }
+    },
+  
+    "disclosure-layout#second": {
+      "props": {
+          "animated": true
+        },
+      "children": ["disclosure-trigger#second", "disclosure-content#second"]
+    },
+    "disclosure-trigger#second": {
+      "props": {
+          "blockClass": "question",
+          "as": "div"
+        },
+      "children": ["rich-text#question2","disclosure-state-indicator"]
+    },
+    "disclosure-content#second": {
+      "props": {
+          "blockClass": "answer"
+        },
+      "children": ["rich-text#answer2"]
+    },
+    "rich-text#question2": {
+      "props": {
+        "text": "What is the estimated delivery time?"
+      }
+    },
+    "rich-text#answer2": {
+      "props": {
+        "text": "Sellers generally procure and ship the items within the time specified on the product page. Business days exclude public holidays and Sundays"
+      }
+    },
+    "disclosure-state-indicator": {
+      "props": {
+        "Show": "icon-angle--down",
+        "Hide": "icon-angle--up"
+      }
+    }
+    
 }

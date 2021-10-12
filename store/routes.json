@@ -1,3 +1,6 @@
+
+
+
 {
   "store.custom#about-us": {
     "path": "/about-us"
@@ -17,11 +20,11 @@
   "store.custom#corporate-blog": {
     "path": "/corporate-blog"
   },
-  "store.custom#sample-privacy": {
-    "path":"/sample-privacy"
+  "store.custom#privacy-policy": {
+    "path":"/privacy-policy"
   },
   "store.custom#sample-terms":{
-    "path":"/sample-terms"
+    "path":"/use-terms"
   },
 
   "store.custom#store-features": {
@@ -30,8 +33,8 @@
   "store.custom#upcoming-features": {
     "path": "/upcoming-features"
   },
-  "store.custom#sample-contact": {
-    "path": "/sample-contact"
+  "store.custom#technology-contact": {
+    "path": "/technology-contact"
   }
  
 }

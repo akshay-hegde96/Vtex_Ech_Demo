@@ -1,3 +1,6 @@
+
+
+
 {
   "vtex.menu@2.x:menu#shops": {
     "props": {
@@ -148,7 +151,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/sample-contact",
+        "href": "/technology-contact",
         "noFollow": true,
         "tagTitle": "Contact",
         "text": "Contact"
@@ -196,7 +199,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/sample-privacy",
+        "href": "/privacy-policy",
         "noFollow": true,
         "tagTitle": "Privacy Policy",
         "text": "Privacy Policy"
@@ -212,7 +215,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/sample-terms",
+        "href": "/use-terms",
         "noFollow": true,
         "tagTitle": "Term of use",
         "text": "Term of use"

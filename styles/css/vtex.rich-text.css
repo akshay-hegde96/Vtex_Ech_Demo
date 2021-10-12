@@ -1,3 +1,7 @@
+
+
+
+
 .container--deals {
   color: #ffffff;
   text-align: center;
@@ -123,23 +127,23 @@
 
 .paragraph--faq-Heading{
   color: grey;
-  font-family: cursive;
+  font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
   font-size: larger;
 }
 
 .heading--faq-Extra {
   color:green;
-  font-family: cursive;
+  font-family: cursSan Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serifive;
 }
 
 .container--shipping-query1{
   color:green;
-  font-family: cursive;
+  font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
   font-size: large;
 }
 .wrapper--shipping-ans1{
   color: grey;
-  font-family: cursive;
+  font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
   font-size: large;
 }
 
@@ -162,31 +166,31 @@
 .container--shipping-title{
   color:green;
   font-size: x-large;
-  font-family: cursive;
+  font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
 }
 
-.strong--privacy-title  .container--term-handle{
+.strong--privacy-title{
   color: green;
     font-size: large;
-    font-family: cursive;
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
 }
 
 .container--term-handle{
   color: green;
     font-size: large;
-    font-family: cursive;
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
 }
 
 .container--term-points{
   color: grey;
     font-size: large;
-    font-family: cursive;
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
 }
 
 .wrapper--term-askUs {
   color: green;
     font-size: x-large;
-    font-family: cursive;
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
     
 }
 :global(.vtex-modal-layout-0-x-triggerContainer){
@@ -196,16 +200,16 @@
 .container--privacy-title{
   color: green;
     font-size: large;
-    font-family: cursive
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif
 }
 
 .wrapper--title-contact{
   color: green;
     font-size: large;
-    font-family: cursive
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif
 }
 .wrapper--about-contact{
   color: grey;
   font-size: medium;
-  font-family: cursive;
+  font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
 }

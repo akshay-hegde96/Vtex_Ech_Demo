@@ -1,20 +1,20 @@
 {
-    "store.custom#sample-contact": {
+  "store.custom#technology-contact": {
       "blocks": [
-        "flex-layout.row#about-us"
+        "flex-layout.row#contact-row"
       ]
     },
   
-    "flex-layout.row#about-us": {
+    "flex-layout.row#contact-row": {
       "children": [
-        "image#mobile-phone",
-        "flex-layout.col#text-about-us"
+        "image#technology",
+        "flex-layout.col#text-technology"
       ]
     },
   
-    "flex-layout.col#text-about-us": {
+    "flex-layout.col#text-technology": {
       "children": [
-        "rich-text#title-about-us",
+        "rich-text#title-technology",
         "rich-text#about-vtex",
         "rich-text#contact-numb",
         "rich-text#contact-live"
@@ -25,7 +25,7 @@
       }
     },
   
-    "rich-text#title-about-us": {
+    "rich-text#title-technology": {
       "props": {
         "text":
         "# The new face of enterprise digital commerce",
@@ -33,11 +33,11 @@
       }
     },
   
-    "image#mobile-phone": {
+    "image#technology": {
       "props": {
         "src": "assets/contact.jpg",
         "maxHeight": "100",
-        "blockClass": "storePrint"
+        "blockClass": "technology-img"
       }
     },
     

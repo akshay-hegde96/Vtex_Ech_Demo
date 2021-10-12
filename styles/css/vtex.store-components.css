@@ -1,3 +1,7 @@
+
+
+
+
 .notificationBarContainer {
   background-color: #e6f1e6;
   color: #03034e;
@@ -38,6 +42,7 @@
   font-size: 26px;
   justify-content: center;
   align-items: center;
+  padding-top: 8px;
 }
 
 .inputGroup {
@@ -256,4 +261,9 @@
 }
 .galleryItem--list {
   border: none;
+}
+
+.imageElement--technology-img{
+  padding: 26px 55px;
+  border-radius: 96px 96px 102px 113px;
 }

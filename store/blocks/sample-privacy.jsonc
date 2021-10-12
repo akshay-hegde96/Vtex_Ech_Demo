@@ -1,5 +1,8 @@
+
+
+
 {
-    "store.custom#sample-privacy":{
+  "store.custom#privacy-policy":{
        "blocks":[
         "rich-text#privacy-policy",
         "flex-layout.row#intro",
