@@ -53,13 +53,16 @@
 }
 .skuSelectorItem {
   height: 20px;
-  width: 20px;
+  width: auto;
+  min-width: 20px;
+  margin: .30rem;
 }
 .skuSelectorInternalBox {
   border: none;
 }
 .skuSelectorItemTextValue {
-  padding: 0;
+  padding: 2px 5px;
+  font-size: 15px;
 }
 .containerNormal {
   box-shadow: 0 0 8px 0 rgb(0 0 0 / 15%);

@@ -241,9 +241,6 @@
 .skuSelectorTextContainer {
   margin: 0;
 }
-.skuSelectorTextContainer {
-  min-width: 40px;
-}
 .skuSelectorNameContainer {
   display: flex;
   flex-direction: row;

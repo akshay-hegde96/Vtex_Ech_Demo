@@ -20,6 +20,9 @@
 .galleryItem--list {
   border-bottom: none;
 }
+.galleryItem--grid {
+  padding: .75rem 0;
+}
 
 .totalProductsMessage--layout{
   font-size: large;
@@ -35,9 +38,14 @@
 }
 
 .buttonShowMore--layout{
-  display: none;
+  padding: 1rem 0;
 }
-
+.buttonShowMore {
+  height: 40px;
+}
+.gallery--grid {
+  padding-left: 1rem;
+}
 .galleryTitle--layout {
   font-size: 1.5em;
   margin: 10px;
