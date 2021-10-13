@@ -1,0 +1,88 @@
+/*{
+    "store.custom#form-fill": {
+      "children": [
+        "flex-layout.row#contact-form"
+      ]
+    },
+  
+    "flex-layout.row#contact-form": {
+      "props": {
+        "blockClass": "contact-fill"
+      },
+      "children": [
+        "flex-layout.col#contact-details"
+      ]
+    },
+  
+    "flex-layout.col#contact-details": {
+      "children": [
+        "rich-text#contact-title",
+        "form#contact-file"
+      ]
+    },
+    "rich-text#contact-title": {
+      "props": {
+        "text": "## Contact Us"
+      }
+    },
+  
+    "form#contact-file": {
+      "props": {
+        "entity": "clients",
+        "schema": "person"
+      },
+      "blocks": [
+        "form-success#success"
+      ],
+      "children": [
+        "form-success#success",
+        "form-input.text#firstName",
+        "form-input.text#lastName",
+        "form-field-group#address",
+        "form-input.checkbox#agreement",
+        "form-submit"
+      ]
+    },
+  
+    "form-success#success": {
+      "children": [
+        "rich-text#success-submit"
+      ]
+    },
+    "rich-text#success-submit": {
+      "props": {
+        "text": "Thanks for reaching out! We will come back shortly.",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+  
+    "form-input.text#firstName": {
+        "props": {
+          "pointer": "#/properties/firstName"
+        }
+      },
+      "form-input.text#lastName": {
+        "props": {
+          "pointer": "#/properties/lastName"
+        }
+      },
+      "form-input.checkbox#agreement": {
+        "props": {
+          "pointer": "#/properties/agreement",
+          "label": "Do you agree that this is the best form component in the whole wide world?"
+        }
+      },
+      "form-field-group#address": {
+        "props": {
+          "pointer": "#/properties/address"
+        }
+      },
+      "form-submit": {
+        "props": {
+          "label": "Submit"
+        }
+      }
+  }*/
+  
+  
