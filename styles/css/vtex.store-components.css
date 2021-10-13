@@ -255,3 +255,6 @@
 .galleryItem--list {
   border: none;
 }
+.skuSelectorOptionsList {
+  margin-left: 10px;
+}
