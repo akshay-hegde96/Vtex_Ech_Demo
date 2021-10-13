@@ -18,7 +18,7 @@ img {
 .header-secure {
     font-size: large;
     margin-left: 4px;
-    font-family: emoji;
+    /* font-family: emoji; */
 }
 
 .header-container{
@@ -38,7 +38,7 @@ h1{
 
 .table.cart-items tbody tr td.product-name .seller{
     display: block;
-    font-family: ui-monospace;
+    /* font-family: ui-monospace; */
 }
 
 

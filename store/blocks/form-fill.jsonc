@@ -1,4 +1,4 @@
-/*{
+{
     "store.custom#form-fill": {
       "children": [
         "flex-layout.row#contact-form"
@@ -83,6 +83,6 @@
           "label": "Submit"
         }
       }
-  }*/
-  
+  }
+
   

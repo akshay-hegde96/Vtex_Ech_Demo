@@ -32,5 +32,8 @@
   },
   "store.custom#technology-contact": {
     "path": "/technology-contact"
+  },
+  "store.custom#form-fill": {
+    "path": "/contact-form"
   }
 }
