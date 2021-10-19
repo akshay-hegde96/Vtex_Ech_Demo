@@ -317,7 +317,8 @@
   "sku-selector": {
     "props": {
       "variationsSpacing": 3,
-      "showValueNameForImageVariation": true
+      "showValueNameForImageVariation": true,
+      "hideImpossibleCombinations": false
     }
   },
   "flex-layout.row#buy-wish-button": {

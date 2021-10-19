@@ -224,6 +224,7 @@
   .buttonContainer--newsletter {
     font-size:2px !important;
     margin-top: 10px;
+    margin-left: 0px !important;
   }
   .newsletter {
     padding-left: 0.5rem;
@@ -240,9 +241,6 @@
 .skuSelectorTextContainer {
   margin: 0;
 }
-.skuSelectorTextContainer {
-  min-width: 40px;
-}
 .skuSelectorNameContainer {
   display: flex;
   flex-direction: row;
@@ -256,4 +254,7 @@
 }
 .galleryItem--list {
   border: none;
+}
+.skuSelectorOptionsList {
+  margin-left: 10px;
 }
