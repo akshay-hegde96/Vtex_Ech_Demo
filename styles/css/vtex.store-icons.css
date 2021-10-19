@@ -5,3 +5,9 @@
 .caretIcon--caretPlpIcon {
   margin: 0 10px;
 }
+
+.caretIcon--caret-home {
+  background-color: green;
+  color: white;
+  padding: 10px 7px;
+}
