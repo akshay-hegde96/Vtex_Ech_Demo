@@ -81,6 +81,10 @@ div.address-summary {
   color: black;
 }
 
+.mb8 {
+  margin-bottom: 3px;
+}
+
 .firstNameSubContainer.mb8 {
   margin-bottom: 3px;
   background-color: green;
