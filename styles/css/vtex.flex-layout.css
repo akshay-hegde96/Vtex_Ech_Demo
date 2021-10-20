@@ -189,8 +189,8 @@
   .flexRowContent--accordion {
     background-color: darkolivegreen;
   }
-  .flexColChild--product-name{
-    padding-left:25px;
+  .flexColChild--product-name {
+    padding-left: 25px;
   }
 }
 
@@ -204,4 +204,8 @@
 
 .flexCol--filterCol {
   min-width: 280px;
+}
+
+.flexColChild--titleWishlist {
+  margin-left: 3rem;
 }

@@ -96,7 +96,8 @@
   },
   "icon-caret#right": {
     "props": {
-      "orientation": "right"
+      "orientation": "right",
+      "blockClass": "caret-home"
     }
   },
   //--------------------------category 2--------------------------------------------

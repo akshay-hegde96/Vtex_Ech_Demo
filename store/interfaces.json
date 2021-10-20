@@ -1,17 +1,29 @@
 {
-    "search-icon-button": {
-        "component": "SearchButton"
-    },
-    "viewdetails-button": {
-        "component": "ViewdetailButtonWrapper"
-    },
-    "dropdown-button": {
-        "component": "DropdownButtonWrapper"
-    },
-    "myaccount-menu": {
-        "component": "Myaccount"
-    },
-    "women-menu": {
-        "component": "Womenmenu"
-    }
+  "search-icon-button": {
+    "component": "SearchButton"
+  },
+  "viewdetails-button": {
+    "component": "ViewdetailButtonWrapper"
+  },
+  "dropdown-button": {
+    "component": "DropdownButtonWrapper"
+  },
+  "myaccount-menu": {
+    "component": "Myaccount"
+  },
+  "women-menu": {
+    "component": "Womenmenu"
+  },
+  "my-account-page.test-page": {
+    "component": "MyAppPage"
+  },
+  "my-account-link.test-link": {
+    "component": "MyAppLink"
+  },
+  "profile-display.test-display": {
+    "component": "BeautyDataWrapper"
+  },
+  "profile-input.test-input": {
+    "component": "FavColorWrapper"
+  }
 }
