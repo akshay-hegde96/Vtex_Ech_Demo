@@ -8,7 +8,6 @@
       }
     }
   },
-  
 
   "store.search#brand": {
     "blocks": ["search-result-layout"],
@@ -58,14 +57,14 @@
       "search-result-layout.desktop",
       "search-result-layout.mobile",
       "search-not-found-layout"
-      
     ]
   },
 
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#searchbread",
-      "image#landingbanner",
+      // "image#landingbanner",
+      "flex-layout.row#banner-one",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result"
     ],
@@ -75,13 +74,27 @@
     }
   },
 
-  "image#landingbanner":{
+  // "image#landingbanner":{
+  //   "props": {
+  //     "src": "assets/camera.jpg",
+  //     "minWidth": "100%"
+  // }
+  // },
+
+  "search-banner#one": {
     "props": {
-      "src": "assets/camera.jpg",
-      "minWidth": "100%"
-  }
+      "area": "one",
+      "blockClass": "myBanner",
+      "horizontalAlignment": "center"
+    }
   },
-  
+  "flex-layout.row#banner-one": {
+    "children": ["search-banner#one"],
+    "props": {
+      "blockClass": "banner-image"
+    }
+  },
+
   "flex-layout.row#searchbread": {
     "children": ["breadcrumb.search"],
     "props": {
@@ -95,8 +108,7 @@
       "blockClass": "customSearchTitle"
     }
   },
-  
-  
+
   "flex-layout.row#result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
     "props": {
@@ -110,26 +122,24 @@
       "blockClass": "filterCol"
     }
   },
-  
-  
-   "filter-navigator.v3": {
-        "blocks": ["sidebar-close-button"],
-         "props": {
-            "truncateFilters": true,
-            "showClearByFilter": true,
-            "fullWidthOnMobile": true,
-            "navigationTypeOnMobile": "collapsible",
-            "appliedFiltersOverview": "show",
-            "totalProductsOnMobile": "show",
-            "updateOnFilterSelectionOnMobile": true,
-            "priceRangeLayout": "inputAndSlider",
-            "initiallyCollapsed": true,
-            "openFiltersMode": "one"
-         }
-     },
-     
-    
-  "flex-layout.col#content": { 
+
+  "filter-navigator.v3": {
+    "blocks": ["sidebar-close-button"],
+    "props": {
+      "truncateFilters": true,
+      "showClearByFilter": true,
+      "fullWidthOnMobile": true,
+      "navigationTypeOnMobile": "collapsible",
+      "appliedFiltersOverview": "show",
+      "totalProductsOnMobile": "show",
+      "updateOnFilterSelectionOnMobile": true,
+      "priceRangeLayout": "inputAndSlider",
+      "initiallyCollapsed": true,
+      "openFiltersMode": "one"
+    }
+  },
+
+  "flex-layout.col#content": {
     "children": [
       "flex-layout.row#searchinfo",
       "flex-layout.row#fetchprevious",
@@ -144,8 +154,8 @@
   "flex-layout.row#searchinfo": {
     "children": [
       "flex-layout.row#productCount",
-      // "flex-layout.row#dropdown", 
-      "flex-layout.row#orderBy", 
+      // "flex-layout.row#dropdown",
+      "flex-layout.row#orderBy",
       "flex-layout.row#Switcher"
     ],
     "props": {
@@ -172,9 +182,9 @@
     }
   },
 
-  "flex-layout.row#dropdown":{
-    "children":["dropdown-button"],
-    "props":{
+  "flex-layout.row#dropdown": {
+    "children": ["dropdown-button"],
+    "props": {
       "blockClass": "productPerPage"
     }
   },
@@ -198,7 +208,7 @@
       "text": "Call us at the number (212) 1234-1234"
     }
   },*/
-  
+
   "flex-layout.row#fetchprevious": {
     "props": {
       "marginBottom": 3
@@ -220,14 +230,14 @@
 
   "search-result-layout.mobile": {
     "children": [
-      "image#landingbanner",
+      // "image#landingbanner",
+      "flex-layout.row#banner-one",
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#searchbread",
       "flex-layout.row#productCountMobile",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore"
-    
     ],
     "props": {
       "pagination": "show-more",
@@ -339,37 +349,27 @@
     "props": {
       "name": "grid"
     },
-    "children": [
-      "icon-grid",
-      "responsive-layout.desktop#textOptionGrid"
-    ]
+    "children": ["icon-grid", "responsive-layout.desktop#textOptionGrid"]
   },
   "gallery-layout-option#list": {
     "props": {
       "name": "list"
     },
-    "children": [
-      "icon-inline-grid",
-      "responsive-layout.desktop#textOptionList"
-    ]
+    "children": ["icon-inline-grid", "responsive-layout.desktop#textOptionList"]
   },
- /* "rich-text#viewText" : {
+  /* "rich-text#viewText" : {
     "props": {
       "text": "View",
       "textColor": "c-auto",
       "blockClass": "layout-option"
     }
   },*/
-  
+
   "responsive-layout.desktop#textOptionGrid": {
-    "children": [
-      "rich-text#option-grid"
-    ]
+    "children": ["rich-text#option-grid"]
   },
   "responsive-layout.desktop#textOptionList": {
-    "children": [
-      "rich-text#option-list"
-    ]
+    "children": ["rich-text#option-list"]
   },
   "rich-text#option-grid": {
     "props": {
