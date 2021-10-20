@@ -1,12 +1,16 @@
 import styles from "./BeautyData.css";
 
-const BeautyData = ({ render }) => {
+const BeautyData = () => {
   return (
-    <div className={styles.title}>
-      {render([
-        { label: "Hair color", value: "Black" },
-        { label: "Skin color", value: "Dusky" },
-      ])}
+    <div className={styles.BeautyDataContainer}>
+      <div className={styles.fieldContainer}>
+        <h4>Hair Color</h4>
+        <p>Black</p>
+      </div>
+      <div className={styles.fieldContainer}>
+        <h4>Eye Color</h4>
+        <p>Brown</p>
+      </div>
     </div>
   );
 };
