@@ -1,7 +1,44 @@
 .formTitle {
   color: rgb(20, 104, 20);
   font-weight: 600;
+  font-variant-caps: small-caps;
 }
-.accessCodeOptionBtn {
-  font-size: small;
+
+.optionsList {
+  background-color: rgb(216, 216, 216);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 0;
+}
+
+.loginOptionsContainer {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.emailAndPasswordForm {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.dontHaveAccount,
+.forgotPasswordLink {
+  color: rgb(20, 104, 20);
+}
+
+.oauthLabel {
+  color: #0f3e99;
+}
+
+@media (max-width: 560px) {
+  .optionsList {
+    padding-top: 0.5;
+    padding-bottom: 0.5;
+    padding-right: 0.5;
+    padding-left: 0.5;
+  }
 }
