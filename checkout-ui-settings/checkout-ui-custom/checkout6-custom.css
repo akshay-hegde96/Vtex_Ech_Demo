@@ -1,24 +1,43 @@
+.checkout-header {
+    background: #fff;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 15%);
+}
+.checkout.container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+}
 .header-logo{
     height: 73px;
     max-width: 100%;
     margin-left: 2px;
 }
+.third-space {
+   min-width: 200px
+}
 
 img {
-    height: 73px;
+    height: 60px;
     max-width: 100%;
     vertical-align: middle;
     border: 0;
 }
 
 .table.cart-items tbody tr td.product-price .best-price{
-    font-weight: 400;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .header-secure {
     font-size: large;
     margin-left: 4px;
-    /* font-family: emoji; */
+    font-family: emoji;
+   flex-grow: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+ font-family: "Roboto", sans-serif;
+    color: #69843B;
 }
 
 .header-container{
@@ -29,7 +48,21 @@ img {
 }
 
 .cart-template-holder{
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
+}
+
+.coupon.summary-coupon:before {
+    content: "Discount Codes";
+    position: relative;
+    /* left: -83px; */
+    bottom: 8px;
+    right: 77px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: larger;
+    padding-bottom: -16px;
+    /* margin-top: 13px; */
+    padding-top: -18px;
 }
 
 h1{
@@ -39,6 +72,29 @@ h1{
 .table.cart-items tbody tr td.product-name .seller{
     display: block;
     /* font-family: ui-monospace; */
+    /* margin-bottom: -6px; */
+    position: relative;
+    bottom: -16px;
+    /* left: -1px; */
+    font-size: smaller;
+    font-style: normal;
+}
+
+.table.cart-items td.quantity {
+    margin: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-radius: 5px;
+    /* border: 2px solid #cbcbcb; */
+    float: left;
+    /* border-style: none; */
+    border: 2px solid #e1e8e3;
+    border-style: outset;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    box-shadow: 1px 1px grey;
 }
 
 
@@ -53,7 +109,7 @@ h1{
 
 .table.cart-items tbody tr td.product-image {
     order: 1;
-    border-style: groove;
+    /* border-style: groove; */
 }
 
 .table.cart-items tbody tr:last-child {
@@ -72,7 +128,7 @@ h1{
 .cart-template-holder .cart {
     /* background-color: ghostwhite; */
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 .table.cart-items td.product-image a, .table.cart-items td.product-image img {
     width: 100px;
@@ -84,9 +140,10 @@ h1{
 
 body.v-custom-loaded .cart-template.full-cart>* {
     opacity: initial;
-    /* background-color: whitesmoke; */
-    border-style: groove;
-    border: 2px solid #9fa1a6;
+     background-color: lightgray;
+    /* border-style: groove; */
+    /* border: 2px solid #9fa1a6; */
+    margin-left: 10px;
 }
 .summary-template-holder tbody {
     /* border-top: 1px solid #cbcbcb; */
@@ -105,19 +162,53 @@ body.v-custom-loaded .cart-template.full-cart>* {
     font-style: oblique;
 }
 
+.table.cart-items thead {
+    /* width: 105%; */
+    display: block;
+}
+
 .table.cart-items thead tr {
     display: flex;
     align-items: center;
     /* border-style: solid; */
     /* border: 2px solid #c2c2c2; */
+    padding: 3px;
     font-style: normal;
+    background-color: lightgrey;
+
+}
+
+
+#cart-coupon{
+    background-color: #f4f5f2;
+}
+.cart-more-options, .cart-template-holder .cart {
+    padding: 0px 0px 10px 0px;
+    background: #fff;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.table.cart-items tbody tr .v-custom-product-item-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
 }
 
 .table.cart-items td.product-name a, .table.cart-items td.product-name a:hover {
-    /* color: #333; */
-    font-weight: 500;
-    text-decoration: none;
-    font-style: normal;
+    /* color: #333;  */
+    font-weight: bold;
+    /* line-height: 6px; */
+    /* padding-top: 13px; */
+    position: absolute;
+    top: 10px;
+    font-style: initial;
+    /* bottom: 26px; */
+    font-size: small;
+    max-width: 150px;
+
 }
 
 .full-cart .summary-totalizers .info {
@@ -136,4 +227,7 @@ body.v-custom-loaded .cart-template.full-cart>* {
     margin: 20px;
     width: 100%;
     font-style: initial;
+}
+.container-order-form {
+    margin-top: 30px;
 }
