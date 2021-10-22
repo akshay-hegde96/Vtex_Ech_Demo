@@ -28,7 +28,7 @@
     "children": ["product-rating-inline"]
   },
 
- /* "experimental__visibility-layout#productsummary":{
+  /* "experimental__visibility-layout#productsummary":{
     "title":"Product Summary Banner",
     "children":[
       "stack-layout#prodsum"
@@ -44,7 +44,7 @@
 
   "product-summary-image#shelf": {
     "props": {
-      "showBadge": false,
+      "showBadge": true,
       "aspectRatio": "1:1",
       "maxHeight": 300
     }
@@ -82,8 +82,8 @@
       "blockClass": "productListPricing"
     },
     "children": [
-     // "experimental__visibility-layout#summary"
-     "product-selling-price#summary",
+      // "experimental__visibility-layout#summary"
+      "product-selling-price#summary",
       "product-price-savings#summary"
     ]
   },
@@ -106,11 +106,8 @@
   },
   "product-price-savings#summary": {
     "props": {
-      "markers": [
-        "discount"
-      ],
+      "markers": ["discount"],
       "blockClass": "summary"
     }
   }
 }
-

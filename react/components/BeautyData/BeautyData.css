@@ -1,0 +1,26 @@
+.fieldContainer {
+  display: block;
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-basis: 1;
+  flex-shrink: 1;
+}
+
+.fieldContainer h4 {
+  color: rgb(6, 92, 6);
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.fieldContainer p {
+  color: rgba(15, 15, 15, 0.986);
+  background-color: rgb(241, 241, 241);
+  padding: 14px 10px;
+  margin: 5px;
+  font-size: 0.9rem;
+}
+
+.BeautyDataContainer {
+  display: flex;
+  justify-content: space-between;
+}

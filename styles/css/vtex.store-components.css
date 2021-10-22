@@ -98,8 +98,8 @@
   margin-bottom: 20px;
 }
 
-.skuSelectorContainer :global(.vtex-product-summary-2-x-SKUSelectorContainer){
-  margin: 1rem 0; 
+.skuSelectorContainer :global(.vtex-product-summary-2-x-SKUSelectorContainer) {
+  margin: 1rem 0;
   padding-top: 26px;
 }
 
@@ -162,12 +162,12 @@
 }
 @media screen and (min-width: 1025px) {
   .searchBarContainer {
-    padding: .75em 3em;
+    padding: 0.75em 3em;
   }
 }
 @media screen and (max-width: 1024px) {
   .searchBarContainer {
-    padding: .4em;
+    padding: 0.4em;
   }
 }
 
@@ -187,17 +187,17 @@
   min-width: 1000px;
 }
 /* =========Store Features========= */
-.imageElement--store-features-img{
+.imageElement--store-features-img {
   border-radius: 80px;
- padding:30px 0px;
+  padding: 30px 0px;
 }
 /* ============Corporate blog =========== */
-.imageElement--corporate-blog-image{
+.imageElement--corporate-blog-image {
   padding-bottom: 20px;
 }
 
 /* ===============Tablet================== */
-@media only screen and (min-width:481px) and (max-width:1025px){
+@media only screen and (min-width: 481px) and (max-width: 1025px) {
   .inputGroup--newsletter {
     min-width: auto;
   }
@@ -211,15 +211,15 @@
   }
   .form--newsletter {
     min-width: auto !important;
-      }
+  }
 }
 
 /* ================= Mobile ====================== */
-@media only screen and (max-width:480px){
+@media only screen and (max-width: 480px) {
   .inputGroup--newsletter {
     min-width: auto;
-    margin-left:0px;
-    display:block;
+    margin-left: 0px;
+    display: block;
     justify-content: center;
     align-items: center;
   }
@@ -227,8 +227,9 @@
     font-size: 15px;
   }
   .buttonContainer--newsletter {
-    font-size:2px !important;
+    font-size: 2px !important;
     margin-top: 10px;
+    margin-left: 0px !important;
   }
   .newsletter {
     padding-left: 0.5rem;
@@ -240,13 +241,10 @@
   }
 }
 
-.skuSelectorSubcontainer, 
+.skuSelectorSubcontainer,
 .skuSelectorNameContainer,
 .skuSelectorTextContainer {
   margin: 0;
-}
-.skuSelectorTextContainer {
-  min-width: 40px;
 }
 .skuSelectorNameContainer {
   display: flex;
@@ -262,8 +260,19 @@
 .galleryItem--list {
   border: none;
 }
+<<<<<<< HEAD
 
 .imageElement--technology-img{
   padding: 26px 55px;
   border-radius: 96px 96px 102px 113px;
+}
+
+.skuSelectorOptionsList {
+  margin-left: 10px;
+}
+
+.discountInsideContainer {
+  border-radius: 50%;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }

@@ -54,9 +54,11 @@
 
 .menuLinks a,
 .menuLink {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: rgb(118, 119, 119);
-  padding: 7px auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 550;
   border: none;
 }
 
@@ -77,4 +79,18 @@
 
 div.address-summary {
   color: black;
+}
+
+.mb8 {
+  margin-bottom: 3px;
+}
+
+.firstNameSubContainer.mb8 {
+  margin-bottom: 3px;
+  background-color: green;
+}
+
+.lastNameSubContainer.mb8 {
+  margin-bottom: 3px;
+  background-color: green;
 }

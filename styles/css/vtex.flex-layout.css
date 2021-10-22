@@ -161,7 +161,7 @@
   left: 0;
   background-color: #fff;
   width: auto;
-  min-width: 230px;
+  min-width: 280px;
   border-bottom: 1px solid #d1d5c7;
   border-radius: 5px 5px 0 0;
 }
@@ -189,8 +189,8 @@
   .flexRowContent--accordion {
     background-color: darkolivegreen;
   }
-  .flexColChild--product-name{
-    padding-left:25px;
+  .flexColChild--product-name {
+    padding-left: 25px;
   }
 }
 
@@ -198,4 +198,14 @@
   top: 0 !important;
   padding-bottom: 0 !important;
   min-height: 21px;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.flexCol--filterCol {
+  min-width: 280px;
+}
+
+.flexColChild--titleWishlist {
+  margin-left: 3rem;
 }

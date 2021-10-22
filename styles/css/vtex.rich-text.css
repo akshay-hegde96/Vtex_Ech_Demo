@@ -35,7 +35,7 @@
   max-width: 540px;
   margin: 0 16px;
   padding-top: 120px;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--question .strong {
@@ -49,7 +49,7 @@
   max-width: 540px;
   padding-top: 36px;
   padding-bottom: 84px;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--link .strong {
@@ -62,11 +62,11 @@
   text-decoration: none;
   font-size: 36px;
   font-weight: 300;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--title {
-  color: #03034E;
+  color: #03034e;
   font-size: 28px;
   font-weight: 700;
 }
@@ -80,7 +80,7 @@
     max-width: 85%;
   }
   .container--title {
-    color: #03034E;
+    color: #03034e;
     font-size: 40px;
     font-weight: 700;
     max-width: 60%;
@@ -96,12 +96,12 @@
 
   .paragraph .paragraph--layout-option {
     margin-top: -5px;
-}
+  }
 }
 
 /* =========== Tablet ================*/
-@media only screen and (min-width:481px) and (max-width:1026px){
-  .container--credits{
+@media only screen and (min-width: 481px) and (max-width: 1026px) {
+  .container--credits {
     color: white;
     text-align: center;
     font-size: smaller;
@@ -110,11 +110,9 @@
   }
 }
 
-
- 
 /*============ Mobile ============== */
-@media only screen and (max-width:480px){
-  .container--credits{
+@media only screen and (max-width: 480px) {
+  .container--credits {
     color: white;
     text-align: center;
     font-size: smaller;
@@ -123,9 +121,7 @@
   }
 }
 
-
-
-.paragraph--faq-Heading{
+.paragraph--faq-Heading {
   color: grey;
   /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
   font-size: larger;
@@ -136,35 +132,37 @@
   /* font-family: cursSan Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serifive; */
 }
 
-.container--shipping-query1{
-  color:green;
-  /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
+
+
+.container--shipping-query1 {
+  color: green;
+  /* font-family: cursive; */
   font-size: large;
 }
-.wrapper--shipping-ans1{
+.wrapper--shipping-ans1 {
   color: grey;
   /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
   font-size: large;
 }
 
-:global(.vtex-modal-layout-0-x-paper--modal-md){
+:global(.vtex-modal-layout-0-x-paper--modal-md) {
   width: 36%;
   padding: 23px;
   border: 1px solid black;
   line-break: auto;
 }
 
-.paragraph--anchor-link{
+.paragraph--anchor-link {
   text-decoration: underline;
-  color:#d61c79;
+  color: #d61c79;
   cursor: pointer;
   justify-content: center;
   display: flex;
   align-items: center;
   font-family: cursive;
 }
-.container--shipping-title{
-  color:green;
+.container--shipping-title {
+  color: green;
   font-size: x-large;
   /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
 }
@@ -174,42 +172,52 @@
     font-size: large;
     /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
 }
-
-.container--term-handle{
+.strong--privacy-title .container--term-handle {
   color: green;
-    font-size: large;
-    /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
+  font-size: large;
+ 
 }
 
-.container--term-points{
+.container--term-handle {
+  color: green;
+    font-size: large;
+   
+}
+
+.container--term-points {
   color: grey;
     font-size: large;
-    /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
+   
 }
 
 .wrapper--term-askUs {
   color: green;
     font-size: x-large;
-    /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
-    
+   
 }
-:global(.vtex-modal-layout-0-x-triggerContainer){
+:global(.vtex-modal-layout-0-x-triggerContainer) {
   display: flow-root;
 }
 
-.container--privacy-title{
+.container--privacy-title {
   color: green;
     font-size: large;
-    /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif */
+  
 }
 
-.wrapper--title-contact{
+.wrapper--title-contact {
   color: green;
     font-size: large;
-    /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif */
+   
 }
-.wrapper--about-contact{
+.wrapper--about-contact {
   color: grey;
   font-size: medium;
   /* font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
+}
+
+.container--Wishtitle {
+  color: #3f3f40;
+  padding-top: 0;
+  padding-bottom: 1rem;
 }
