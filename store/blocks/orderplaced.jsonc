@@ -5,7 +5,7 @@
   "op-header": {
     "children": [
       "op-section#confirmation",
-      "op-section#notices",
+      // "op-section#notices",
       "op-summary-section",
       "op-bank-invoice-section"
     ]
@@ -17,11 +17,29 @@
       "borderless": true
     },
     "children": [
+      "rich-text#awesome",
       "op-confirmation-icon",
-      "op-confirmation-title",
+      "rich-text#orderplaced",
+      // "op-confirmation-title",
       "op-confirmation-message",
       "flex-layout.row#confirmation-buttons"
     ]
+  },
+  "rich-text#awesome": {
+    "props": {
+      "text": "## Awesome!",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "awesome"
+    }
+  },
+  "rich-text#orderplaced": {
+    "props": {
+      "text": "### Your order has been placed. \n #### Thank you for your purchase!",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "order-placed-text"
+    }
   },
   "flex-layout.row#confirmation-buttons": {
     "props": {
@@ -37,14 +55,14 @@
   "flex-layout.col#confirmation-buttons": {
     "children": ["op-print-button"]
   },
-  "op-section#notices": {
-    "props": {
-      "name": "notices",
-      "marginBottom": 9,
-      "borderless": true
-    },
-    "children": ["op-notices"]
-  },
+  // "op-section#notices": {
+  //   "props": {
+  //     "name": "notices",
+  //     "marginBottom": 9,
+  //     "borderless": true
+  //   },
+  //   "children": ["op-notices"]
+  // },
   // each order section
   "op-order": {
     "children": [
