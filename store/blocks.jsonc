@@ -25,9 +25,15 @@
 
   "login-content#default": {
     "props": {
+      "blockClass": "login-page",
       "isInitialScreenOptionOnly": false,
       "defaultOption": 1,
-      "showPasswordVerificationIntoTooltip": true
+      "showPasswordVerificationIntoTooltip": true,
+      "optionsTitle": "Choose a Login Option",
+      "emailAndPasswordTitle": "Login with Email & Password",
+      "emailPlaceholder": "example@mail.com",
+      "passwordPlaceholder": "Enter your password",
+      "accessCodeTitle": "Enter your Email"
     }
   },
 
