@@ -296,7 +296,7 @@
       //"product-gifts",
       "flex-layout.row#buy-wish-button",
       //"availability-subscriber",
-      //"shipping-simulator",
+      "shipping-simulator",
       "flex-layout.row#social-networks-pdp"
     ]
   },
