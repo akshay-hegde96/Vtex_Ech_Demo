@@ -264,3 +264,8 @@
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
+.shippingContainer,
+.shippingTable {
+  margin-bottom: 20px;
+}
