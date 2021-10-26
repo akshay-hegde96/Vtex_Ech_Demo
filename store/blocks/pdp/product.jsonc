@@ -118,7 +118,8 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "tab-layout#product"
+      "tab-layout#product",
+      "shelf#related"
     ]
   },
   "tab-layout#product": {
@@ -296,7 +297,7 @@
       //"product-gifts",
       "flex-layout.row#buy-wish-button",
       //"availability-subscriber",
-      //"shipping-simulator",
+      "shipping-simulator",
       "flex-layout.row#social-networks-pdp"
     ]
   },
@@ -379,4 +380,20 @@
   //     "collapseContent": false
   //   }
   // }
+  ,
+  "shelf#related": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "recomendation": "editor.relatedProducts.view",
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1.5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "More options for this style"
+      }
+    }
+  }
 }

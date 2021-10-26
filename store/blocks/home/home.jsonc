@@ -36,7 +36,7 @@
       "headline": "Design Your attitude",
       "callToActionMode": "button",
       "callToActionText": "See Collection",
-      "callToActionUrl": "#",
+      "callToActionUrl": "/see collections",
       "textPosition": "center",
       "blockClass": "info-card-slide"
     }
@@ -89,7 +89,7 @@
         "variant": "secondary",
         "size": "medium"
       },
-      "href": "#",
+      "href": "/electronics",
       "label": "Clothing"
     },
     "children": ["icon-caret#right"]
@@ -124,7 +124,7 @@
         "variant": "secondary",
         "size": "medium"
       },
-      "href": "#",
+      "href": "/major-appliances",
       "label": "Sale upto 60% off"
     },
     "children": ["icon-caret#right"]
@@ -158,7 +158,7 @@
         "variant": "secondary",
         "size": "medium"
       },
-      "href": "#",
+      "href": "/electronics",
       "label": "Shoes & Accessories"
     },
     "children": ["icon-caret#right"]
@@ -188,7 +188,7 @@
         "variant": "secondary",
         "size": "medium"
       },
-      "href": "#",
+      "href": "/small-appliances",
       "label": "Racing"
     },
     "children": ["icon-caret#right"]
@@ -203,7 +203,7 @@
       "textPosition": "center",
       "headline": "New Arrivals",
       "callToActionText": "View All",
-      "callToActionUrl": "#",
+      "callToActionUrl": "/view all",
       "blockClass": "shelfTitle",
       "textAlignment": "center"
     }

@@ -221,3 +221,15 @@
   padding-top: 0;
   padding-bottom: 1rem;
 }
+
+/* ---------- */
+.heading--awesome{
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.heading--order-placed-text{
+  margin-top: 10px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
