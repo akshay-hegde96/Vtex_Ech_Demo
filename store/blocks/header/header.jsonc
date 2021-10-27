@@ -166,5 +166,12 @@
       "maxWidth": "100%",
       "blockClass": "custom-overlay-search-bar"
     }
+  },
+
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary"],
+    "props": {
+      "maxTopSearches": 5
+    }
   }
 }
