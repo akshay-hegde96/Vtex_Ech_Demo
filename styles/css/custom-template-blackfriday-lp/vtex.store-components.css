@@ -1,0 +1,136 @@
+/* custom blackfriday  */
+
+.infoCardContainer {
+  border: none;
+}
+
+.infoCardImageLinkWrapper--home-banner-cat {
+  border: 1px solid #ccc;
+  margin: 0 0.5rem;
+}
+
+.infoCardTextContainer--home-banner-cat {
+  width: 100%;
+  align-items: center;
+  color: #000;
+}
+
+.infoCardContainer--home-banner-cat {
+  object-fit: contain;
+}
+
+.infoCardImageContainer--home-banner-cat {
+  background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .infoCardImageLinkWrapper--home-banner-cat {
+    margin-bottom: 2rem;
+  }
+
+  .infoCardTextContainer--home-banner-cat {
+    margin-top: 15rem;
+  }
+}
+
+.infoCardHeadline--home-banner-cat {
+  font-size: 1rem;
+  color: black;
+  margin: 0;
+}
+
+.infoCardCallActionContainer--home-banner-cat {
+  margin: 1rem 0 0;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.infoCardCallActionText--home-banner-cat {
+  margin: 0;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.infoCardCallActionContainer--home-banner-cat:hover {
+  opacity: 0.8;
+}
+
+.imageElement--wide-banner {
+  margin: 2rem 0;
+}
+
+.infoCardContainer--new-release {
+  flex-direction: column-reverse;
+}
+
+@media screen and (max-width: 640px) {
+  .infoCardContainer--new-release {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  .infoCardImageContainer--new-release {
+    order: 1;
+  }
+}
+
+.infoCardTextContainer--new-release {
+  padding: 0;
+  text-align: center;
+}
+
+.infoCardCallActionContainer--new-release {
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 1rem auto 0;
+  text-decoration: none;
+}
+
+.infoCardCallActionText--new-release {
+  color: #000;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+.infoCardContainer--home-banner-cat {
+  background-position: top center;
+  height: 250px;
+}
+
+.infoCardImageContainer--home-banner-cat {
+  background-size: contain;
+}
+
+.infoCardSubhead--home-banner-cat {
+  margin-top: 0.5rem;
+  color: #000;
+}
+
+.infoCardImageContainer--new-release {
+  width: 100%;
+  text-align: center;
+}
+
+.imageElement--hero-carousel {
+  min-height: 100px;
+}
+
+@media screen and (min-width: 640px) {
+  .imageElement--hero-carousel {
+    min-height: 300px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .infoCardContainer--new-release {
+    margin-bottom: 3em;
+  }
+}
+
+.imageElement--category-box {
+  height: 190px;
+  width: 100%;
+}

@@ -8,8 +8,8 @@
   "store.custom#contact-us": {
     "path": "/contact-us"
   },
-  "store.custom#shipping-policy":{
-    "path":"/shipping-policy"
+  "store.custom#shipping-policy": {
+    "path": "/shipping-policy"
   },
   "store.custom#careers": {
     "path": "/careers"
@@ -18,10 +18,10 @@
     "path": "/corporate-blog"
   },
   "store.custom#sample-privacy": {
-    "path":"/sample-privacy"
+    "path": "/sample-privacy"
   },
-  "store.custom#sample-terms":{
-    "path":"/sample-terms"
+  "store.custom#sample-terms": {
+    "path": "/sample-terms"
   },
 
   "store.custom#store-features": {
@@ -32,6 +32,8 @@
   },
   "store.custom#sample-contact": {
     "path": "/sample-contact"
+  },
+  "store.custom#blackfriday-lp": {
+    "path": "/sales"
   }
- 
 }
