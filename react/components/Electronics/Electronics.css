@@ -1,0 +1,35 @@
+.textAlignment{
+    text-align: center;
+    color: #1f830b;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.imgSize{
+    width: 200px;
+    height: 170px;
+    border: 3px solid darkolivegreen;
+    border-radius: 20px;
+}
+.imgPadding{
+    padding: 0px 20px;
+}
+a{
+    text-decoration: none;
+}
+.breadcrumbIcon{
+    width: 30px;
+    padding: 10px;
+    opacity: 0.6;
+}
+/* ================= Mobile ====================== */
+@media only screen and (max-width: 480px) {
+    .imgSize{
+        height: 100px;
+    }
+    .imgPadding{
+        padding: 10px;
+    }
+}

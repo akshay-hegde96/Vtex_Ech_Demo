@@ -1,0 +1,7 @@
+{
+    "store.custom#major-appliances": {
+        "blocks": [
+            "major-appliances"
+        ]
+    }
+}

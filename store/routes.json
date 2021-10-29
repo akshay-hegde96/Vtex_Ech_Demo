@@ -32,6 +32,15 @@
   },
   "store.custom#sample-contact": {
     "path": "/sample-contact"
+  },
+  "store.custom#electronics": {
+    "path": "/electronics"
+  },
+  "store.custom#small-appliances": {
+    "path": "/small-appliances"
+  },
+  "store.custom#major-appliances": {
+    "path": "/major-appliances"
   }
  
 }
