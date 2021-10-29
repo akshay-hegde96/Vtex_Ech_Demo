@@ -1,0 +1,12 @@
+.link--link-category {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(31, 30, 30);
+  margin: 10px auto;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.link--link-category:hover {
+  color: rgb(58, 58, 58);
+}

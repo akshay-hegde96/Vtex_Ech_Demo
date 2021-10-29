@@ -38,9 +38,7 @@
     "props": {
       "orientation": "vertical"
     },
-    "children": [
-      "women-menu"
-    ]
+    "children": ["women-menu"]
   },
   "menu-item#category-women-clothing": {
     "props": {
@@ -345,7 +343,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/sales",
         "noFollow": true,
         "tagTitle": "Sale",
         "text": "Sale"

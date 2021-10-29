@@ -1,0 +1,76 @@
+/* custom blackfriday  */
+
+.flexRow--hero-banner {
+  margin-bottom: 3rem;
+  background: #101723;
+}
+
+.flexRow--categories-list {
+  margin-bottom: 3rem;
+}
+
+.flexRowContent--categories-list {
+  justify-content: center;
+}
+
+.flexRow--customer-service {
+  margin: 1rem 0;
+}
+
+.flexRow--new-releases {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 640px) {
+  .flexRow--hero-banner {
+    margin-bottom: 2rem;
+  }
+
+  .flexRow--new-releases {
+    margin-bottom: 0;
+  }
+
+  .flexRow--customer-service {
+    margin: 0;
+  }
+
+  .flexCol--customer-service {
+    margin: 0 0 1rem;
+  }
+}
+
+/* horizontal scrolling boxes */
+.flexRow--categories-box :global(.vtex-store-components-3-x-container) {
+  height: 200px;
+  width: 100%;
+  overflow-x: scroll;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.flexRowContent--categories-box {
+  height: 250px;
+  width: max-content;
+  margin-bottom: 1rem;
+}
+
+.flexRowContent--categories-box .stretchChildrenWidth {
+  float: left;
+  margin: 0 36px 0 0;
+  box-shadow: 0 2px 3px rgb(15 17 17 / 15%);
+  overflow: hidden;
+  background-color: #f8f9f9;
+  padding: 2px;
+  height: max-content;
+}
+
+@media screen and (min-width: 640px) {
+  .flexRow--categories-box :global(.vtex-store-components-3-x-container) {
+    overflow: unset;
+  }
+  .flexRowContent--categories-box {
+    padding-right: 1rem;
+    margin: 0 auto;
+  }
+}
