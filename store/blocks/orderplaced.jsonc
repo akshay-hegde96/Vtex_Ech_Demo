@@ -27,7 +27,7 @@
   },
   "rich-text#awesome": {
     "props": {
-      "text": "## Awesome!",
+      "text": "## F!",
       "textPosition": "CENTER",
       "textAlignment": "CENTER",
       "blockClass": "awesome"

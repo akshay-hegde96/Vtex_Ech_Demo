@@ -26,7 +26,7 @@
       "blockClass": "carousel",
       "fullWidth": true
     },
-    "children": ["info-card#slide1", "info-card#slide2"]
+    "children": ["info-card#slide1", "info-card#slide2","video#banner-homepage"]
   },
 
   "info-card#slide1": {
@@ -53,6 +53,14 @@
       "callToActionUrl": "#",
       "textPosition": "center",
       "blockClass": "info-card-slide"
+    }
+  },
+  "video#banner-homepage": {
+    "props": {
+      "src": "https://www.youtube.com/watch?v=8-KpLN57wOc",
+      "width": "100%",
+      "blockClass":"slider-videoContainer"
+      
     }
   },
   //------------------category--------------------------------------------------------
