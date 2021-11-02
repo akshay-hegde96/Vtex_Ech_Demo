@@ -11,3 +11,10 @@
     margin-left: 10px;
     
 }
+.trigger--searchBarIcon {
+    padding: 20px;
+    border: none;
+    background-color: #d1d5c7;
+    color: #fff;
+    overflow: visible;
+}
