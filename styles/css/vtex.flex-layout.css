@@ -209,3 +209,12 @@
 .flexColChild--titleWishlist {
   margin-left: 3rem;
 }
+
+.flexRowContent--contact-us-form {
+  padding: 2rem;
+}
+.flexRow--contact-us-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

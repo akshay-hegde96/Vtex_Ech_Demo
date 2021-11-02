@@ -212,13 +212,25 @@
 }
 
 /* ---------- */
-.heading--awesome{
+.heading--awesome {
   color: #ffffff;
   margin-bottom: 10px;
 }
 
-.heading--order-placed-text{
+.heading--order-placed-text {
   margin-top: 10px;
   color: #ffffff;
   margin-bottom: 0px;
+}
+
+.container--contact-us {
+  font-weight: bold;
+  font-size: 1.4rem;
+  font-variant-caps: petite-caps;
+  color: #3f3f40;
+}
+
+.container--contact-us-submit {
+  font-size: 1.3rem;
+  color: #424244;
 }
