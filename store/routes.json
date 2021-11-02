@@ -30,6 +30,15 @@
   "store.custom#upcoming-features": {
     "path": "/upcoming-features"
   },
+  "store.custom#electronics": {
+    "path": "/electronics"
+  },
+  "store.custom#small-appliances": {
+    "path": "/small-appliances"
+  },
+  "store.custom#major-appliances": {
+    "path": "/major-appliances"
+  },
   "store.custom#blackfriday-lp": {
     "path": "/sales"
   }

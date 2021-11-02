@@ -25,5 +25,14 @@
   },
   "profile-input.test-input": {
     "component": "FavColorWrapper"
+  },
+  "electronics": {
+    "component": "Electronics"
+  },
+  "small-appliances": {
+    "component": "Small Appliances"
+  },
+  "major-appliances": {
+    "component": "Major Appliances"
   }
 }

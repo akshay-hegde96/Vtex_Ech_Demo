@@ -90,7 +90,7 @@
         "size": "medium"
       },
       "href": "/electronics",
-      "label": "Clothing"
+      "label": "ELECTRONICS"
     },
     "children": ["icon-caret#right"]
   },
@@ -125,7 +125,7 @@
         "size": "medium"
       },
       "href": "/major-appliances",
-      "label": "Sale upto 60% off"
+      "label": "MAJOR APPLIANCES"
     },
     "children": ["icon-caret#right"]
   },
@@ -158,8 +158,8 @@
         "variant": "secondary",
         "size": "medium"
       },
-      "href": "/electronics",
-      "label": "Shoes & Accessories"
+      "href": "/small-appliances",
+      "label": "SMALL APPLIANCES"
     },
     "children": ["icon-caret#right"]
   },
@@ -188,8 +188,8 @@
         "variant": "secondary",
         "size": "medium"
       },
-      "href": "/small-appliances",
-      "label": "Racing"
+      "href": "#",
+      "label": "TEST"
     },
     "children": ["icon-caret#right"]
   },
