@@ -1,0 +1,64 @@
+.orderCard {
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+.orderHeader {
+  background-color: rgb(64, 94, 28);
+  box-sizing: border-box;
+}
+
+.orderBody {
+  background-color: rgb(235, 229, 229);
+}
+
+.orderHeaderLabel,
+.orderHeaderValue,
+.orderId {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.orderHeaderValue {
+  color: white;
+  font-weight: normal;
+}
+
+.orderProductName {
+  font-size: 1rem;
+  font-variant: small-caps;
+  font-weight: bold;
+  color: black;
+}
+
+.detailsBtn {
+  font-variant-caps: petite-caps;
+  background-color: darkblue;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-size: 1rem;
+  color: white;
+}
+
+.productTable {
+  background-color: rgb(243, 242, 242);
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px 3px;
+}
+
+.productName {
+  color: rgb(64, 94, 28);
+  font-variant: small-caps;
+  text-decoration: none;
+}
+
+.summaryProductName {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.optionHeading {
+  font-size: 1rem;
+}

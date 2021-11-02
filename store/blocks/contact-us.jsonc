@@ -1,64 +1,126 @@
 {
-    "store.custom#sample-contact": {
-      "blocks": [
-        "flex-layout.row#about-us"
-      ]
-    },
-  
-    "flex-layout.row#about-us": {
-      "children": [
-        "image#mobile-phone",
-        "flex-layout.col#text-about-us"
-      ]
-    },
-  
-    "flex-layout.col#text-about-us": {
-      "children": [
-        "rich-text#title-about-us",
-        "rich-text#about-vtex",
-        "rich-text#contact-numb",
-        "rich-text#contact-live"
-      ],
-      "props": {
-        "blockclass": "textColumn",
-        "preventVerticalStretch": true
-      }
-    },
-  
-    "rich-text#title-about-us": {
-      "props": {
-        "text":
-        "# The new face of enterprise digital commerce",
-        "blockClass": "title-contact"
-      }
-    },
-  
-    "image#mobile-phone": {
-      "props": {
-        "src": "assets/contact.jpg",
-        "maxHeight": "100",
-        "blockClass": "storePrint"
-      }
-    },
-    
-    "rich-text#about-vtex": {
-      "props": {
-        "text": "****VTEX is the Enterprise Digital Commerce Platform that enables brands and retailers to achieve faster time to market, reach their customers across any channel, and uncover new growth areas.**",
-        "blockClass": "about-contact"
-      }
-    },
-    "rich-text#contact-numb":{
-        "props": {
-            "text": "**VTEX solution architects work hand-in-hand with you to design and build the best solution for your business.**",
-            "blockClass": "about-contact"
-          }
-    },
+  "store.custom#sample-contact": {
+    "blocks": ["flex-layout.row#about-us", "flex-layout.row#form"]
+  },
 
-    "rich-text#contact-live":{
-        "props": {
-            "text": "**Work with your VTEX Customer Success Manager to grow, optimize, and continually improve your business.**",
-            "blockClass": "about-contact"
-          }
+  "flex-layout.row#about-us": {
+    "children": ["image#mobile-phone", "flex-layout.col#text-about-us"]
+  },
+
+  "flex-layout.col#text-about-us": {
+    "children": [
+      "rich-text#title-about-us",
+      "rich-text#about-vtex",
+      "rich-text#contact-numb",
+      "rich-text#contact-live"
+    ],
+    "props": {
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-about-us": {
+    "props": {
+      "text": "# The new face of enterprise digital commerce",
+      "blockClass": "title-contact"
+    }
+  },
+
+  "image#mobile-phone": {
+    "props": {
+      "src": "assets/contact.jpg",
+      "maxHeight": "100",
+      "blockClass": "storePrint"
+    }
+  },
+
+  "rich-text#about-vtex": {
+    "props": {
+      "text": "****VTEX is the Enterprise Digital Commerce Platform that enables brands and retailers to achieve faster time to market, reach their customers across any channel, and uncover new growth areas.**",
+      "blockClass": "about-contact"
+    }
+  },
+  "rich-text#contact-numb": {
+    "props": {
+      "text": "**VTEX solution architects work hand-in-hand with you to design and build the best solution for your business.**",
+      "blockClass": "about-contact"
+    }
+  },
+
+  "rich-text#contact-live": {
+    "props": {
+      "text": "**Work with your VTEX Customer Success Manager to grow, optimize, and continually improve your business.**",
+      "blockClass": "about-contact"
+    }
+  },
+
+  "flex-layout.row#form": {
+    "children": ["flex-layout.col#form"]
+  },
+  "flex-layout.col#form": {
+    "children": ["form"]
+  },
+  "form": {
+    "props": {
+      "entity": "clients",
+      "schema": "person"
+    },
+    "children": [
+      "rich-text#formTitle",
+      "form-input.text#firstName",
+      "form-input.text#lastName",
+      "form-field-group#address",
+      "form-input.checkbox#agreement",
+      "form-submit"
+    ],
+    "blocks": ["form-success"]
+  },
+  "form-success": {
+    "children": ["rich-text#successSubmit"]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Succesfully submitted the data!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#formTitle": {
+    "props": {
+      "text": "Contact Form",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "form-input.text#firstName": {
+    "props": {
+      "pointer": "#/properties/firstName",
+      "label": "FName"
+    }
+  },
+  "form-input.text#lastName": {
+    "props": {
+      "pointer": "#/properties/lastName",
+      "label": "LName"
+    }
+  },
+  "form-input.checkbox#agreement": {
+    "props": {
+      "pointer": "#/properties/agreement",
+      "label": "Do you agree that this is the best form component in the whole wide world?"
+    }
+  },
+  "form-field-group#address": {
+    "props": {
+      "pointer": "#/properties/address",
+      "label": "address"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "Submit"
     }
   }
-  
+}
