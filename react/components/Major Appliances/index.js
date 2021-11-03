@@ -2,7 +2,7 @@ import React from "react";
 import { majorAppliances } from "../Electronics/data";
 import styles from "../Electronics/Electronics.css";
 import homeIcon from "../../../assets/breadcrumb.png";
-import { storeURL } from "../../Conflicts/url";
+import { storeURL } from "../../Config/url";
 
 const MajorAppliances = () => {
   return (
