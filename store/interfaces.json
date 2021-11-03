@@ -2,6 +2,9 @@
   "search-icon-button": {
     "component": "SearchButton"
   },
+  "remove-icon-button": {
+    "component": "RemoveButton"
+  },
   "viewdetails-button": {
     "component": "ViewdetailButtonWrapper"
   },

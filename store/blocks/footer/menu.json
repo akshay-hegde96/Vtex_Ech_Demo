@@ -115,7 +115,7 @@
     },
     "children": [
       "menu-item#customer-service",
-      "menu-item#contact",
+      "menu-item#contact-us",
       "menu-item#help",
       "menu-item#shipping-policy",
       "menu-item#privacy-policy",
@@ -137,7 +137,7 @@
       }
     }
   },
-  "menu-item#contact": {
+  "menu-item#contact-us": {
     "props": {
       "id": "menu-item-contact",
       "blockClass": "contact",
@@ -146,10 +146,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/sample-contact",
+        "href": "/contact-us",
         "noFollow": true,
-        "tagTitle": "Contact",
-        "text": "Contact"
+        "tagTitle": "Contact Us",
+        "text": "Contact Us"
       }
     }
   },
@@ -356,7 +356,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass":"my-account-mobile",
+      "blockClass": "my-account-mobile",
       "itemProps": {
         "type": "internal",
         "noFollow": true,
@@ -364,14 +364,10 @@
         "text": "My Account"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#account"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#account"]
   },
   "vtex.menu@2.x:submenu.accordion#account": {
-    "children": [
-      "vtex.menu@2.x:menu#account-accordion"
-    ]
+    "children": ["vtex.menu@2.x:menu#account-accordion"]
   },
   "vtex.menu@2.x:menu#account-accordion": {
     "props": {
@@ -387,20 +383,16 @@
   },
   "menu-item#about-mobile": {
     "props": {
-      "blockClass":"about-mobile",
+      "blockClass": "about-mobile",
       "itemProps": {
         "tagTitle": "About",
         "text": "About"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#about"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#about"]
   },
   "vtex.menu@2.x:submenu.accordion#about": {
-    "children": [
-      "vtex.menu@2.x:menu#about-mobile"
-    ]
+    "children": ["vtex.menu@2.x:menu#about-mobile"]
   },
   "vtex.menu@2.x:menu#about-mobile": {
     "props": {
@@ -416,27 +408,23 @@
   },
   "menu-item#customer-service-mobile": {
     "props": {
-      "blockClass":"customer-service-mobile",
+      "blockClass": "customer-service-mobile",
       "itemProps": {
         "tagTitle": "Customer Service",
         "text": "Customer Service"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#customer-service-mobile"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#customer-service-mobile"]
   },
   "vtex.menu@2.x:submenu.accordion#customer-service-mobile": {
-    "children": [
-      "vtex.menu@2.x:menu#footer-customer-service-mobile"
-    ]
+    "children": ["vtex.menu@2.x:menu#footer-customer-service-mobile"]
   },
   "vtex.menu@2.x:menu#footer-customer-service-mobile": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#contact",
+      "menu-item#contact-us",
       "menu-item#help",
       "menu-item#shipping-policy",
       "menu-item#privacy-policy",

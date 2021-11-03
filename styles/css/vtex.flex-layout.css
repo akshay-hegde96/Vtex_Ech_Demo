@@ -28,7 +28,7 @@
 
 .flexRowContent--main-header-mobile {
   align-items: center;
-  padding: 0.625rem 0.5rem;
+  padding: 0;
   background-color: #f0f0f0;
 }
 
@@ -204,8 +204,18 @@
 
 .flexCol--filterCol {
   min-width: 280px;
+  max-width: 350px;
 }
 
 .flexColChild--titleWishlist {
   margin-left: 3rem;
+}
+
+.flexRowContent--contact-us-form {
+  padding: 2rem;
+}
+.flexRow--contact-us-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
