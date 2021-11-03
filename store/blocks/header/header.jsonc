@@ -182,6 +182,7 @@
     "props": {
       "placeholder": "Enter Your Keyword",
       "displayMode": "search-and-clear-buttons",
+      "openAutocompleteOnFocus": true,
       "autocompleteFullWidth": true,
       "containerMode": "container",
       "maxWidth": "100%",
@@ -192,6 +193,7 @@
   "autocomplete-result-list.v2": {
     "blocks": ["product-summary"],
     "props": {
+      "data": {"One": "1", "Two":"2", "Three": "3"},
       "maxTopSearches": 5
     }
   }
