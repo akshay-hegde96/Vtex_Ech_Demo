@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "../Electronics/Electronics.css";
 import homeIcon from "../../../assets/breadcrumb.png";
-import { storeURL, deparmentURL } from "../../Conflicts/url";
+import { storeURL, deparmentURL } from "../../Config/url";
 import { makeAPICall } from "../../utills/httpCall"
 
 const SmallAppliances = () => {

@@ -1,5 +1,5 @@
 
-import { storeURL } from "../../Conflicts/url"
+import { storeURL } from "../../Config/url"
 
 // const storeURL = window.location.href;
 // const storeURL = window.location.hostname;
