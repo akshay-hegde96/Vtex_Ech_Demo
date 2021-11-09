@@ -2,7 +2,8 @@
   "store.custom#about-us": {
     "blocks": [
       "flex-layout.row#about-us",
-      "video#about-us"
+      "video#about-us",
+      "back-to-top-button"
     ]
   },
 
