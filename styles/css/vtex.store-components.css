@@ -273,3 +273,23 @@
 .shippingTable {
   margin-bottom: 20px;
 }
+
+.backToTopButtonContainer {
+  bottom: 70px;
+}
+
+/* modal-infocard */
+.infoCardContainer--info-card-sale {
+  padding: 0px;
+  background-color: #fdd601;
+}
+.infoCardHeadline--info-card-sale {
+  color: #731a8e;
+  font-weight: bolder;
+  font-variant: petite-caps;
+}
+.infoCardSubhead--info-card-sale {
+  color: #e8031f;
+  font-weight: bolder;
+  font-variant: petite-caps;
+}

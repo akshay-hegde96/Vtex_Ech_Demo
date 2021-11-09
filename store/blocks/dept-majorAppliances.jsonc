@@ -1,7 +1,8 @@
 {
     "store.custom#major-appliances": {
         "blocks": [
-            "major-appliances"
+            "major-appliances",
+            "back-to-top-button"
         ]
     }
 }

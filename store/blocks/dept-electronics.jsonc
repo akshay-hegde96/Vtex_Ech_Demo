@@ -1,7 +1,8 @@
 {
     "store.custom#electronics": {
         "blocks": [
-        "electronics"
+        "electronics",
+        "back-to-top-button"
         ]
     }
 

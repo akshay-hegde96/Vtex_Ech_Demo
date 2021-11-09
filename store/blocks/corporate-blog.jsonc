@@ -5,7 +5,8 @@
             "flex-layout.row#corporate-blog1",
             "flex-layout.row#corporate-blog2",
             "flex-layout.row#corporate-blog3",
-            "flex-layout.row#corporate-blog4"
+            "flex-layout.row#corporate-blog4",
+            "back-to-top-button"
         ] 
     },
     "rich-text#heading-blog": {
