@@ -15,6 +15,15 @@ const tiles = [
 ];
 
 export class Womenmenu extends Component {
+
+    componentDidMount() {
+        const findElem = document.querySelector('.vtex-store-drawer-0-x-drawerContent');
+        findElem && findElem.setAttribute('style', 'overflow-y:scroll; height:-webkit-fill-available;');
+        const menuExp = document.querySelectorAll('.vtex-menu-2-x-accordionIcon--megaMenu-header');
+        menuExp.forEach(item =>
+            item.setAttribute('style', 'color:darkgreen')
+        )
+    }
     render() {
         return (
             <div className={styles.responsiveGrid}>
