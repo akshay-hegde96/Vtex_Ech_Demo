@@ -1,0 +1,5 @@
+{
+  "store.custom#contact-form-data": {
+    "blocks": ["ContactFormData"]
+  }
+}

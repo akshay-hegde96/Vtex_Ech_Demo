@@ -1,7 +1,8 @@
 {
     "store.custom#small-appliances": {
         "blocks": [
-            "small-appliances"
+            "small-appliances",
+            "back-to-top-button"
         ]
     }
 }

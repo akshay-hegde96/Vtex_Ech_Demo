@@ -1,9 +1,15 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
@@ -19,7 +25,9 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#2-desktop"]
+    "children": [
+      "flex-layout.row#2-desktop"
+    ]
   },
   "flex-layout.row#2-desktop": {
     "props": {
@@ -46,7 +54,9 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo#desktop"]
+    "children": [
+      "logo#desktop"
+    ]
   },
   "flex-layout.col#category-menu": {
     "props": {
@@ -86,7 +96,10 @@
       "preventVerticalStretch": true,
       "fullWidth": true
     },
-    "children": ["vtex.menu@2.x:menu#websites", "flex-layout.col#spacer"]
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#spacer"
+    ]
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -96,10 +109,14 @@
   //"sticky-layout#2-desktop" -- End
   // "header-layout.mobile" -- Start
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": [
+      "sticky-layout#1-mobile"
+    ]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+    "children": [
+      "flex-layout.row#1-mobile"
+    ]
   },
   "flex-layout.row#1-mobile": {
     "children": [
@@ -118,17 +135,177 @@
     }
   },
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": [
+      "menu#drawer"
+    ]
   },
   "menu#drawer": {
     "children": [
       "menu-item#category-account",
-      "menu-item#category-women",
-      "menu-item#category-men",
-      "menu-item#category-accessories",
-      "menu-item#category-home-decor",
-      "menu-item#sales"
+      "menu-item#category-women-mobile",
+      "menu-item#category-men-mobile",
+      "menu-item#category-accessories-mobile",
+      "menu-item#category-home-decor-mobile",
+      "menu-item#sales-mobile"
     ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#category-women-mobile": {
+    "props": {
+      "id": "menu-item-category-women-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "megaMenu-header",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Women",
+        "text": "Women"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#category-women-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#category-women-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#category-women-mobile-accordion"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-women-mobile-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "women-menu"
+    ]
+  },
+  "menu-item#category-men-mobile": {
+    "props": {
+      "id": "menu-item-category-men-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "megaMenu-header",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Men",
+        "text": "Men"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#category-men-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#category-men-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#category-men-mobile-accordion"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-men-mobile-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-men-clothing",
+      "menu-item#category-men-accessories",
+      "menu-item#category-men-eyeglasses"
+    ]
+  },
+  "menu-item#category-accessories-mobile": {
+    "props": {
+      "id": "menu-item-category-accessories-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "megaMenu-header",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Accessories",
+        "text": "Accessories"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#category-accessories-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#category-accessories-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#category-accessories-mobile-accordion"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-accessories-mobile-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-accessories-watch",
+      "menu-item#category-accessories-shoes",
+      "menu-item#category-accessories-eyeglasses"
+    ]
+  },
+  "menu-item#category-home-decor-mobile": {
+    "props": {
+      "id": "menu-item-category-home-decor-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "megaMenu-header",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Home & Decor",
+        "text": "Home & Decor"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#category-home-decor-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#category-home-decor-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#category-home-decor-mobile-accordion"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-home-decor-mobile-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-home-furniture",
+      "menu-item#category-home-artifacts",
+      "menu-item#category-home-appliances"
+    ]
+  },
+  "menu-item#sales-mobile": {
+    "props": {
+      "id": "menu-item-category-sales-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "megaMenu-header",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#category-sales-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#category-sales-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#category-sales-mobile-accordion"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-sales-mobile-accordion": {
     "props": {
       "orientation": "vertical"
     }
@@ -152,38 +329,53 @@
       "preventVerticalStretch": true,
       "fullWidth": true
     },
-    "children": ["flex-layout.col#main-menu"]
+    "children": [
+      "flex-layout.col#main-menu"
+    ]
   },
   "flex-layout.col#main-menu": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["vtex.menu@2.x:menu#main-menu"]
+    "children": [
+      "vtex.menu@2.x:menu#main-menu"
+    ]
   },
   "overlay-trigger#search-icon": {
     "props": {
       "blockClass": "custom-search-overlay-trigger"
     },
-    "children": ["search-icon-button", "overlay-layout#search-bar"]
+    "children": [
+      "search-icon-button",
+      "overlay-layout#search-bar"
+    ]
   },
   "overlay-layout#search-bar": {
-    "children": ["search-bar"],
+    "children": [
+      "search-bar"
+    ],
     "props": {
       "blockClass": "custom-search-overlay"
     }
   },
-
   "disclosure-layout#header-search": {
-    "children": ["disclosure-trigger#header-trigger", "disclosure-content#header-content"]
+    "children": [
+      "disclosure-trigger#header-trigger",
+      "disclosure-content#header-content"
+    ]
   },
   "disclosure-trigger#header-trigger": {
     "props": {
       "blockClass": "searchBarIcon"
     },
-    "children": ["disclosure-state-indicator#header-icons"]
+    "children": [
+      "disclosure-state-indicator#header-icons"
+    ]
   },
   "disclosure-content#header-content": {
-    "children": ["search-bar"]
+    "children": [
+      "search-bar"
+    ]
   },
   "disclosure-state-indicator#header-icons": {
     "props": {
@@ -192,7 +384,9 @@
     }
   },
   "search-bar": {
-    "blocks": ["autocomplete-result-list.v2"],
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
     "props": {
       "placeholder": "Enter Your Keyword",
       "displayMode": "search-and-clear-buttons",
@@ -203,11 +397,16 @@
       "blockClass": "custom-overlay-search-bar"
     }
   },
-
   "autocomplete-result-list.v2": {
-    "blocks": ["product-summary"],
+    "blocks": [
+      "product-summary"
+    ],
     "props": {
-      "data": {"One": "1", "Two":"2", "Three": "3"},
+      "data": {
+        "One": "1",
+        "Two": "2",
+        "Three": "3"
+      },
       "maxTopSearches": 5
     }
   }

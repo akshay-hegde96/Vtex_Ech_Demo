@@ -30,7 +30,8 @@
 
       "rich-text#customer-service-title" /* title */,
       "flex-layout.row#customer-service-01" /* bottom banners first row */,
-      "flex-layout.row#customer-service-02" /* bottom banners second row */
+      "flex-layout.row#customer-service-02" ,/* bottom banners second row */
+      "back-to-top-button"
     ]
   },
 
@@ -535,4 +536,5 @@
       "maxWidth": "100%"
     }
   }
+
 }

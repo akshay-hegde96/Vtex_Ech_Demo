@@ -1,6 +1,6 @@
 {
   "store.custom#contact-us": {
-    "blocks": ["flex-layout.row#form"]
+    "blocks": ["ContactUsHistory", "flex-layout.row#form"]
   },
   "flex-layout.row#form": {
     "children": ["flex-layout.col#form"],
@@ -31,7 +31,7 @@
     "blocks": ["form-success"]
   },
   "form-success": {
-    "children": ["rich-text#successSubmit"]
+    "children": ["rich-text#successSubmit", "flex-layout.row#ContactUsData"]
   },
   "rich-text#successSubmit": {
     "props": {
@@ -39,6 +39,13 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": "contact-us-submit"
+    }
+  },
+
+  "flex-layout.row#ContactUsData": {
+    "children": ["ContactUsData"],
+    "props": {
+      "blockClass": "contact-us-data"
     }
   },
   "rich-text#formTitle": {

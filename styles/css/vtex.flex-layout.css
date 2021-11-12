@@ -212,10 +212,16 @@
 }
 
 .flexRowContent--contact-us-form {
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 .flexRow--contact-us-form {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.flexRowContent--testIconsRow{
+  justify-content: center;
+    margin: 20px 0px;
+;
 }

@@ -1,14 +1,17 @@
 {
   "store.home": {
     "blocks": [
+      "notification.bar",
       "slider-layout#slides", //caraousal
       "flex-layout.row#demo", // categories
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "info-card#shelf", // view all collections
-      "flex-layout.row#shelf"
+      "flex-layout.row#shelf",
       // "newsletter" // view all shelf
+      "back-to-top-button",
+      "modal-trigger#sale"
     ],
     "parent": {
       "challenge": "challenge.trade-policy-condition"
@@ -18,6 +21,13 @@
     "props": {
       "redirectPath": "/login",
       "defaultContentVisibility": "hidden"
+    }
+  },
+
+  // Notification-bar
+  "notification.bar": {
+    "props": {
+      "content": "FREE SHIPPING: Applies to USA orders over $2000+ | excluding HI, PR, AK, and CAN"
     }
   },
 
@@ -35,7 +45,11 @@
       "blockClass": "carousel",
       "fullWidth": true
     },
-    "children": ["info-card#slide1", "info-card#slide2","video#banner-homepage"]
+    "children": [
+      "info-card#slide1",
+      "info-card#slide2",
+      "video#banner-homepage"
+    ]
   },
 
   "info-card#slide1": {
@@ -68,8 +82,7 @@
     "props": {
       "src": "https://www.youtube.com/watch?v=8-KpLN57wOc",
       "width": "100%",
-      "blockClass":"slider-videoContainer"
-      
+      "blockClass": "slider-videoContainer"
     }
   },
   //------------------category--------------------------------------------------------
@@ -246,6 +259,44 @@
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf"
+    }
+  },
+  // back to top button
+  "back-to-top-button": {
+    "props": {
+      "displayThreshold": 100,
+      "display": "caret-icon"
+    }
+  },
+  // modal
+  "modal-trigger#sale": {
+    "children": ["modal-layout#sale"],
+    "props": {
+      "trigger": "load-session"
+    }
+  },
+
+  "modal-layout#sale": {
+    "children": ["modal-header#sale", "info-card#modal-content"]
+  },
+  "modal-header#sale": {
+    "props": {
+      "showCloseButton": true,
+      "iconCloseSize": 20
+    }
+  },
+  "info-card#modal-content": {
+    "props": {
+      "id": "info-card-sale",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://img.freepik.com/free-vector/diwali-sale-banner-poster-design-festival-season_1017-15257.jpg?size=338&ext=jpg",
+      "headline": "Festival Offers",
+      "subhead": "HURRY! Limited time only",
+      "callToActionText": "SHOP NOW",
+      "callToActionUrl": "/sales",
+      "blockClass": "info-card-sale",
+      "textAlignment": "center"
     }
   }
 }

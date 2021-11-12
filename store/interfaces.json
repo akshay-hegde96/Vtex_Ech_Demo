@@ -37,5 +37,14 @@
   },
   "major-appliances": {
     "component": "Major Appliances"
+  },
+  "ContactUsData": {
+    "component": "ContactUsDataWrapper"
+  },
+  "ContactFormData": {
+    "component": "ContactFormDataWrapper"
+  },
+  "ContactUsHistory": {
+    "component": "ContactUsHistory"
   }
 }
