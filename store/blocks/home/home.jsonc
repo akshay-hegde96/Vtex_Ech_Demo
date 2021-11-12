@@ -12,7 +12,16 @@
       // "newsletter" // view all shelf
       "back-to-top-button",
       "modal-trigger#sale"
-    ]
+    ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
+  },
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/login",
+      "defaultContentVisibility": "hidden"
+    }
   },
 
   // Notification-bar

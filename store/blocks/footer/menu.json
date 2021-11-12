@@ -6,11 +6,9 @@
     },
     "children": [
       "menu-item#Shop",
-      "menu-item#men",
-      "menu-item#women",
-      "menu-item#shoes",
-      "menu-item#accessories",
-      "menu-item#new"
+      "menu-item#electronics",
+      "menu-item#majorAppliances",
+      "menu-item#smallAppliances"
     ]
   },
   "menu-item#Shop": {
@@ -28,83 +26,51 @@
       }
     }
   },
-  "menu-item#men": {
+  "menu-item#electronics": {
     "props": {
-      "id": "menu-item-men",
-      "blockClass": "men",
+      "id": "menu-item-electronics",
+      "blockClass": "electronics",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/electronics",
         "noFollow": false,
-        "tagTitle": "Men",
-        "text": "Men"
+        "tagTitle": "Electronics",
+        "text": "Electronics"
       }
     }
   },
-  "menu-item#women": {
+  "menu-item#majorAppliances": {
     "props": {
-      "id": "menu-item-women",
-      "blockClass": "women",
+      "id": "menu-item-majorAppliances",
+      "blockClass": "majorAppliances",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/major-appliances",
         "noFollow": false,
-        "tagTitle": "Women",
-        "text": "Women"
+        "tagTitle": "MajorAppliances",
+        "text": "MajorAppliances"
       }
     }
   },
-  "menu-item#shoes": {
+  "menu-item#smallAppliances": {
     "props": {
-      "id": "menu-item-shoes",
-      "blockClass": "shoes",
+      "id": "menu-item-smallAppliances",
+      "blockClass": "smallAppliances",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/small-appliances",
         "noFollow": false,
-        "tagTitle": "Shoes",
-        "text": "Shoes"
-      }
-    }
-  },
-  "menu-item#accessories": {
-    "props": {
-      "id": "menu-item-accessories",
-      "blockClass": "accessories",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
-      }
-    }
-  },
-  "menu-item#new": {
-    "props": {
-      "id": "menu-item-new",
-      "blockClass": "new",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "New",
-        "text": "New"
+        "tagTitle": "SmallAppliances",
+        "text": "SmallAppliances"
       }
     }
   },
@@ -471,7 +437,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/my-account/quick-orders",
+        "href": "/quickorder",
         "noFollow": false,
         "tagTitle": "Quick Orders",
         "text": "Quick Orders"
