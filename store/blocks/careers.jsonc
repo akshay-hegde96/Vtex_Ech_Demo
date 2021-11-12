@@ -1,14 +1,90 @@
 {
-    "store.custom#careers": {
-        "blocks": [
-            "rich-text#careers"
+  "store.custom#careers": {
+    "blocks": ["rich-text#careers",
+        "flex-layout.row#test-icons"
+
         ]
-    },
-    "rich-text#careers": {
-        "props": {
-            "text": "## Careers",
-            "textPosition": "CENTER",
-            "textAlignment": "CENTER"
-        }
+  },
+  "rich-text#careers": {
+    "props": {
+      "text": "## Careers",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
     }
+  },
+
+// =============== Custom Icons test ============================
+"flex-layout.row#test-icons": {
+    "children": ["image#test1","image#test2","image#test3","image#test4","image#test5"],
+ "props":{
+    "preventHorizontalStretch":true,
+    "blockClass":"testIconsRow"
+ }
+},
+
+"image#test1":{
+    "props":{
+        "src":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png",
+        "maxHeight":34,
+        "blockClass":"testIcons",
+        "link": {
+            "attributeNofollow": false,
+            "attributeTitle": "",
+            "newTab": true,
+            "url": "https://www.instagram.com/"
+          }
+    }
+},
+"image#test2":{
+    "props":{
+        "src":"https://www.freepnglogos.com/uploads/whatsapp-png-image-9.png",
+        "maxHeight":34,
+        "blockClass":"testIcons",
+        "link": {
+            "attributeNofollow": false,
+            "attributeTitle": "",
+            "newTab": true,
+            "url": "https://web.whatsapp.com/"
+          }
+    }
+},
+"image#test3":{
+    "props":{
+        "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO5vk27Q6MBdkKPDfLZebs00yM-5Re-Ja16RojHCG3IIGKjH-57XtkRg-RetuXkRsxmgw&usqp=CAU",
+        "maxHeight":34,
+        "blockClass":"testIcons",
+        "link": {
+            "attributeNofollow": false,
+            "attributeTitle": "",
+            "newTab": true,
+            "url": "https://paytm.com/"
+          }
+    }
+},
+"image#test4":{
+    "props":{
+        "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8PNzXt6lcCKUt2dbvpNRwBCbf98hritsc0uvtiHyCjEDOu0QlF_BO0Tg_P3a1OhtNyI&usqp=CAU",
+        "maxHeight":34,
+        "blockClass":"testIcons",
+        "link": {
+            "attributeNofollow": false,
+            "attributeTitle": "",
+            "newTab": true,
+            "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user"
+          }
+    }
+},
+"image#test5":{
+    "props":{
+        "src":"data:image/png;base64,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",
+        "maxHeight":34,
+        "blockClass":"testIcons",
+        "link": {
+            "attributeNofollow": false,
+            "attributeTitle": "",
+            "newTab": true,
+            "url": "https://echidna.co/"
+          }
+    }
+}
 }

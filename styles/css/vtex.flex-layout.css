@@ -219,3 +219,9 @@
   justify-content: center;
   align-items: center;
 }
+
+.flexRowContent--testIconsRow{
+  justify-content: center;
+    margin: 20px 0px;
+;
+}

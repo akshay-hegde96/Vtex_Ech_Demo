@@ -295,11 +295,12 @@
       "sku-selector",
       "product-quantity",
       "product-assembly-options",
-      // "product-gifts",
+      
       "flex-layout.row#buy-wish-button",
       // "availability-subscriber",
-      "shipping-simulator",
-      "flex-layout.row#social-networks-pdp"
+      "shipping-simulator",     
+      "flex-layout.row#social-networks-pdp",
+      "product-gifts"
     ]
   },
   "flex-layout.row#product-name": {
