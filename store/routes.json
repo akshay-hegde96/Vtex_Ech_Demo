@@ -41,5 +41,8 @@
   },
   "store.custom#blackfriday-lp": {
     "path": "/sales"
+  },
+  "store.custom#contact-form-data": {
+    "path": "/form-data"
   }
 }

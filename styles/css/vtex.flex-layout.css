@@ -212,7 +212,7 @@
 }
 
 .flexRowContent--contact-us-form {
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 .flexRow--contact-us-form {
   display: flex;
