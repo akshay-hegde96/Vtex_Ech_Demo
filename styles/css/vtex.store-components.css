@@ -293,3 +293,7 @@
   font-weight: bolder;
   font-variant: petite-caps;
 }
+
+.imageElement--testIcons{
+  padding: 0px 5px;
+}

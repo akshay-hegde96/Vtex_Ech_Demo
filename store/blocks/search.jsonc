@@ -23,7 +23,7 @@
   },
 
   "store.search#department": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout","back-to-top-button"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -33,7 +33,7 @@
   },
 
   "store.search#category": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout","back-to-top-button"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -43,7 +43,7 @@
   },
 
   "store.search#subcategory": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout","back-to-top-button"],
     "props": {
       "context": {
         "skusFilter": "ALL",
