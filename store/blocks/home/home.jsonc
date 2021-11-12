@@ -9,7 +9,16 @@
       "info-card#shelf", // view all collections
       "flex-layout.row#shelf"
       // "newsletter" // view all shelf
-    ]
+    ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
+  },
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/login",
+      "defaultContentVisibility": "hidden"
+    }
   },
 
   //-----------------------------caraousal------------------------------------------

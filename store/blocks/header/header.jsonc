@@ -52,7 +52,21 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["myaccount-menu"]
+    "children": ["myaccount-menu"],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
+  },
+  "myaccount-menu": {
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
+  },
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/login",
+      "defaultContentVisibility": "hidden"
+    }
   },
   "logo#desktop": {
     "props": {
