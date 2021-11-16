@@ -17,6 +17,15 @@
   "women-menu": {
     "component": "Womenmenu"
   },
+  "electronics-menu":{
+    "component": "ElectronicsMenu"
+  },
+  "smallApp-menu":{
+    "component": "SmallAppMenu"
+  },
+  "majorApp-menu":{
+    "component": "MajorAppMenu"
+  },
   "my-account-page.test-page": {
     "component": "MyAppPage"
   },

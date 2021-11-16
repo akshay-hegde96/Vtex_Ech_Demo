@@ -100,21 +100,6 @@
       }
     }
   },
-  "menu-item#category-home": {
-    "props": {
-      "id": "menu-item-category-home",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/home---decor/",
-        "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
-      }
-    }
-  },
   "menu-item#category-account-register": {
     "props": {
       "id": "menu-item-category-account-register",
