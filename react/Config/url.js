@@ -7,3 +7,11 @@ export const deparmentURL = "api/catalog_system/pub/category/tree/10";
 
 export const contactUsURL =
   "api/dataentities/client/search?_fields=_all&_schema=person";
+
+  //Menu Item API with schema approach
+// export const menuItemURL =
+// "api/dataentities/MenuItems/search?_schema=menuItem&_fields=title,menuId";
+
+//Sub Item API with schema approach
+// export const subItemURL =
+// "api/dataentities/subItem/search?_schema=subItems&_fields=item,menuId";
