@@ -5,10 +5,11 @@ export const storeURL = "https://development--echidna.myvtex.com";
 // category tree API
 export const deparmentURL = "api/catalog_system/pub/category/tree/10";
 
+// contact Us form data API
 export const contactUsURL =
   "api/dataentities/client/search?_fields=_all&_schema=person";
 
-  //Menu Item API with schema approach
+//Menu Item API with schema approach
 // export const menuItemURL =
 // "api/dataentities/MenuItems/search?_schema=menuItem&_fields=title,menuId";
 

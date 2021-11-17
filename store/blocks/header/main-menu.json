@@ -19,7 +19,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/electronics",
         "noFollow": false,
         "tagTitle": "Electronics",
         "text": "Electronics"
@@ -49,7 +49,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/major-appliances",
         "noFollow": false,
         "tagTitle": "Major Appliances",
         "text": "Major Appliances"
@@ -62,9 +62,7 @@
     "props": {
       "width": "auto"
     },
-    "children": [
-      "majorApp-menu"
-    ]
+    "children": ["majorApp-menu"]
   },
 
   "menu-item#category-small-appliances": {
@@ -75,7 +73,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/small-appliances",
         "noFollow": false,
         "tagTitle": "Small-Appliances",
         "text": "Small-Appliances"
@@ -94,9 +92,7 @@
     "props": {
       "orientation": "vertical"
     },
-    "children": [
-      "smallApp-menu"
-    ]
+    "children": ["smallApp-menu"]
   },
 
   "menu-item#category-test": {
