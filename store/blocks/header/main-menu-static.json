@@ -1,0 +1,325 @@
+{
+  "vtex.menu@2.x:menu#main-menu-static": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#static-category-electronics",
+      "menu-item#static-category-major-appliances",
+      "menu-item#static-category-small-appliances",
+      "menu-item#static-category-test",
+      "menu-item#sales"
+    ]
+  },
+  "menu-item#static-category-electronics": {
+    "props": {
+      "id": "menu-item-category-electronics",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/electronics",
+        "noFollow": false,
+        "tagTitle": "Electronics",
+        "text": "Electronics"
+      },
+      "blockClass": "megaMenu-header"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#static-category-electronics"]
+  },
+  "vtex.menu@2.x:submenu#static-category-electronics": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#static-category-electronics"]
+  },
+  "vtex.menu@2.x:menu#static-category-electronics": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "submenu-container"
+    },
+    "children": [
+      "menu-item#category-electronics-tvs",
+      "menu-item#category-electronics-laptops",
+      "menu-item#category-electronics-cameras",
+      "menu-item#category-electronics-ele",
+      "menu-item#category-electronics-ele"
+    ]
+  },
+  "menu-item#category-electronics-tvs": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-electronics-tvs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/electronics/tvs",
+        "noFollow": false,
+        "tagTitle": "TVs",
+        "text": "TVs"
+      }
+    }
+  },
+  "menu-item#category-electronics-laptops": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-electronics-laptops",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/electronics/laptops",
+        "noFollow": false,
+        "tagTitle": "Laptops",
+        "text": "Laptops"
+      }
+    }
+  },
+  "menu-item#category-electronics-cameras": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-electronics-cameras",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/electronics/cameras",
+        "noFollow": false,
+        "tagTitle": "Cameras",
+        "text": "Cameras"
+      }
+    }
+  },
+  "menu-item#category-electronics-ele": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-electronics-ele",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/electronics/ele",
+        "noFollow": false,
+        "tagTitle": "Ele",
+        "text": "Ele"
+      }
+    }
+  },
+
+  "menu-item#static-category-major-appliances": {
+    "props": {
+      "id": "menu-item-category-major-appliances",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/major-appliances",
+        "noFollow": false,
+        "tagTitle": "Major Appliances",
+        "text": "Major Appliances"
+      },
+      "blockClass": "megaMenu-header"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#static-category-major-appliances"]
+  },
+  "vtex.menu@2.x:submenu#static-category-major-appliances": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#static-category-major-appliances"]
+  },
+  "vtex.menu@2.x:menu#static-category-major-appliances": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-major-appliances-refrigerators",
+      "menu-item#category-major-appliances-ranges-ovens",
+      "menu-item#category-major-appliances-washers-dryers"
+    ]
+  },
+  "menu-item#category-major-appliances-refrigerators": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-major-appliances-refrigerators",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/major-appliances/refrigerators",
+        "noFollow": false,
+        "tagTitle": "Refrigerators",
+        "text": "Refrigerators"
+      }
+    }
+  },
+  "menu-item#category-major-appliances-ranges-ovens": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-major-appliances-ranges-ovens",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/major-appliances/ranges---ovens",
+        "noFollow": false,
+        "tagTitle": "Ranges & Ovens",
+        "text": "Ranges & Ovens"
+      }
+    }
+  },
+  "menu-item#category-major-appliances-washers-dryers": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-major-appliances-washers-dryers",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/major-appliances/washers---dryers",
+        "noFollow": false,
+        "tagTitle": "Washers & Dryers",
+        "text": "Washers & Dryers"
+      }
+    }
+  },
+
+  "menu-item#static-category-small-appliances": {
+    "props": {
+      "id": "menu-item-category-small-appliances",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/small-appliances",
+        "noFollow": false,
+        "tagTitle": "Small Appliances",
+        "text": "Small Appliances"
+      },
+      "blockClass": "megaMenu-header"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#static-category-small-appliances"]
+  },
+  "vtex.menu@2.x:submenu#static-category-small-appliances": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#static-category-small-appliances"]
+  },
+  "vtex.menu@2.x:menu#static-category-small-appliances": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-small-appliances-mixers-blenders",
+      "menu-item#category-small-appliances-toasters-grills",
+      "menu-item#category-small-appliances-coffee-makers",
+      "menu-item#category-small-appliances-test-category"
+    ]
+  },
+  "menu-item#category-small-appliances-mixers-blenders": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-small-appliances-mixers-blenders",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/small-appliances/mixers---blenders",
+        "noFollow": false,
+        "tagTitle": "Mixers & Blenders",
+        "text": "Mixers & Blenders"
+      }
+    }
+  },
+  "menu-item#category-small-appliances-toasters-grills": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-small-appliances-toasters-grills",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/small-appliances/toasters---grills",
+        "noFollow": false,
+        "tagTitle": "Toasters & Grills",
+        "text": "Toasters & Grills"
+      }
+    }
+  },
+  "menu-item#category-small-appliances-coffee-makers": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-small-appliances-coffee-makers",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/small-appliances/coffee-makers",
+        "noFollow": false,
+        "tagTitle": "Coffee Makers",
+        "text": "Coffee Makers"
+      }
+    }
+  },
+  "menu-item#category-small-appliances-test-category": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-category-small-appliances-test-category",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/small-appliances/test-category",
+        "noFollow": false,
+        "tagTitle": "Test Category",
+        "text": "Test Category"
+      }
+    }
+  },
+
+  "menu-item#static-category-test": {
+    "props": {
+      "id": "menu-item-category-test",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Test",
+        "text": "Test"
+      },
+      "blockClass": "megaMenu-header"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#static-category-test"]
+  },
+  "vtex.menu@2.x:submenu#static-category-test": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#static-category-test"]
+  },
+  "vtex.menu@2.x:menu#static-category-test": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": []
+  }
+}
