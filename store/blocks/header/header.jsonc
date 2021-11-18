@@ -37,7 +37,7 @@
       "flex-layout.col#spacer",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      // "overlay-trigger#search-icon", 
+      // "overlay-trigger#search-icon",
       "disclosure-layout#header-search",
       "minicart.v2"
     ]
@@ -106,7 +106,7 @@
       "drawer",
       "logo#mobile",
       "flex-layout.col#spacer",
-      //  "overlay-trigger#search-icon", 
+      //  "overlay-trigger#search-icon",
       "disclosure-layout#header-search",
       "minicart.v2"
     ],
@@ -123,17 +123,17 @@
   "menu#drawer": {
     "children": [
       "menu-item#category-account",
-      "menu-item#category-electronics-mobile",
-      "menu-item#category-small-appliances-mobile",
-      "menu-item#category-major-appliances-mobile",
-      "menu-item#category-test-mobile",
-      "menu-item#sales-mobile"
+      "menu-item#static-category-electronics-mobile",
+      "menu-item#static-category-small-appliances-mobile",
+      "menu-item#static-category-major-appliances-mobile",
+      "menu-item#static-category-test-mobile",
+      "menu-item#sales"
     ],
     "props": {
       "orientation": "vertical"
     }
   },
-  "menu-item#category-electronics-mobile": {
+  "menu-item#static-category-electronics-mobile": {
     "props": {
       "id": "menu-item-category-electronics-mobile",
       "type": "custom",
@@ -147,18 +147,18 @@
         "text": "Electronics"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#category-electronics-mobile"]
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#static-category-electronics-mobile"
+    ]
   },
-  "vtex.menu@2.x:submenu.accordion#category-electronics-mobile": {
-    "children": ["vtex.menu@2.x:menu#category-electronics-mobile-accordion"]
-  },
-  "vtex.menu@2.x:menu#category-electronics-mobile-accordion": {
+  "vtex.menu@2.x:submenu.accordion#static-category-electronics-mobile": {
     "props": {
-      "orientation": "vertical"
+      "width": "auto"
     },
-    "children": ["electronics-menu"]
+    "children": ["vtex.menu@2.x:menu#static-category-electronics"]
   },
-  "menu-item#category-major-appliances-mobile": {
+
+  "menu-item#static-category-major-appliances-mobile": {
     "props": {
       "id": "menu-item-category-major-appliances-mobile",
       "type": "custom",
@@ -173,23 +173,17 @@
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#category-major-appliances-mobile"
+      "vtex.menu@2.x:submenu.accordion#static-category-major-appliances-mobile"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#category-major-appliances-mobile": {
-    "children": [
-      "vtex.menu@2.x:menu#category-major-appliances-mobile-accordion"
-    ]
-  },
-  "vtex.menu@2.x:menu#category-major-appliances-mobile-accordion": {
+  "vtex.menu@2.x:submenu.accordion#static-category-major-appliances-mobile": {
     "props": {
-      "orientation": "vertical"
+      "width": "auto"
     },
-    "children": [
-      "majorApp-menu"
-    ]
+    "children": ["vtex.menu@2.x:menu#static-category-major-appliances"]
   },
-  "menu-item#category-small-appliances-mobile": {
+
+  "menu-item#static-category-small-appliances-mobile": {
     "props": {
       "id": "menu-item-category-small-appliances-mobile",
       "type": "custom",
@@ -204,23 +198,16 @@
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#category-small-appliances-mobile"
+      "vtex.menu@2.x:submenu.accordion#static-category-small-appliances-mobile"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#category-small-appliances-mobile": {
-    "children": [
-      "vtex.menu@2.x:menu#category-small-appliances-mobile-accordion"
-    ]
-  },
-  "vtex.menu@2.x:menu#category-small-appliances-mobile-accordion": {
+  "vtex.menu@2.x:submenu.accordion#static-category-small-appliances-mobile": {
     "props": {
-      "orientation": "vertical"
+      "width": "auto"
     },
-    "children": [
-      "smallApp-menu"
-    ]
+    "children": ["vtex.menu@2.x:menu#static-category-small-appliances"]
   },
-  "menu-item#category-test-mobile": {
+  "menu-item#static-category-test-mobile": {
     "props": {
       "id": "menu-item-category-test-mobile",
       "type": "custom",
@@ -234,41 +221,15 @@
         "text": "Test"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#category-test-mobile"]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#static-category-test-mobile"]
   },
-  "vtex.menu@2.x:submenu.accordion#category-test-mobile": {
-    "children": ["vtex.menu@2.x:menu#category-test-mobile-accordion"]
-  },
-  "vtex.menu@2.x:menu#category-test-mobile-accordion": {
+  "vtex.menu@2.x:submenu.accordion#static-category-test-mobile": {
     "props": {
-      "orientation": "vertical"
+      "width": "auto"
     },
-    "children": []
+    "children": ["vtex.menu@2.x:menu#static-category-test"]
   },
-  "menu-item#sales-mobile": {
-    "props": {
-      "id": "menu-item-category-sales-mobile",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "blockClass": "megaMenu-header",
-      "itemProps": {
-        "type": "internal",
-        "noFollow": true,
-        "tagTitle": "Sale",
-        "text": "Sale"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#category-sales-mobile"]
-  },
-  "vtex.menu@2.x:submenu.accordion#category-sales-mobile": {
-    "children": ["vtex.menu@2.x:menu#category-sales-mobile-accordion"]
-  },
-  "vtex.menu@2.x:menu#category-sales-mobile-accordion": {
-    "props": {
-      "orientation": "vertical"
-    }
-  },
+
   "logo#mobile": {
     "props": {
       "title": "Logo",
@@ -281,20 +242,20 @@
   //----------------------main-header-menu----------------------------------------------------------
   "flex-layout.row#4-desktop": {
     "props": {
-      "blockClass": "main-menu",
+      "blockClass": "main-menu-static",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
-    "children": ["flex-layout.col#main-menu"]
+    "children": ["flex-layout.col#main-menu-static"]
   },
-  "flex-layout.col#main-menu": {
+  "flex-layout.col#main-menu-static": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["vtex.menu@2.x:menu#main-menu"]
+    "children": ["vtex.menu@2.x:menu#main-menu-static"]
   },
   "overlay-trigger#search-icon": {
     "props": {
