@@ -327,11 +327,15 @@
   "flex-layout.row#buy-wish-button": {
     "props": {
       "marginTop": 4,
-      "marginBottom": 8
+      "marginBottom": 8,
+      "blockClass":"buttonpdp"
     },
     "children": ["flex-layout.col#buy-button", "flex-layout.col#wish-button"]
   },
   "flex-layout.col#buy-button": {
+    "props":{
+      "blockClass":"button-mobile"
+    },
     "children": ["add-to-cart-button"]
   },
   "flex-layout.col#wish-button": {
