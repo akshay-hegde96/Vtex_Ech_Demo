@@ -220,8 +220,11 @@
   align-items: center;
 }
 
-.flexRowContent--testIconsRow{
+.flexRowContent--testIconsRow {
   justify-content: center;
-    margin: 20px 0px;
-;
+  margin: 20px 0px;
+}
+
+.flexRowContent--main-menu-static {
+  box-shadow: 0px 1px 8px 0px #808080f5;
 }
