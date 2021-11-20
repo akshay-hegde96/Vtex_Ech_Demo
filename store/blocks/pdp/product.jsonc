@@ -295,10 +295,11 @@
       "sku-selector",
       "product-quantity",
       "product-assembly-options",
-      
+
       "flex-layout.row#buy-wish-button",
-      // "availability-subscriber",
-      "shipping-simulator",     
+      "availability-subscriber",
+      // "availability-notify",
+      "shipping-simulator",
       "flex-layout.row#social-networks-pdp",
       "product-gifts"
     ]

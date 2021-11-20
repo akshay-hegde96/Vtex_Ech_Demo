@@ -152,18 +152,19 @@
   justify-content: left;
   align-items: center;
 }
-.flexRow--customSearchTitle {
+/* .flexRow--customSearchTitle {
   position: relative;
-}
+} */
 .flexRowContent--customSearchTitle {
-  position: absolute;
+  /* position: absolute;
   top: -47px;
-  left: 0;
+  left: 0; */
   background-color: #fff;
   width: auto;
   min-width: 280px;
   border-bottom: 1px solid #d1d5c7;
   border-radius: 5px 5px 0 0;
+  margin-bottom: 1rem;
 }
 
 /*.flexColChild:global(.vtex-flex-layout-0-x-flexRow){
@@ -220,8 +221,7 @@
   align-items: center;
 }
 
-.flexRowContent--testIconsRow{
+.flexRowContent--testIconsRow {
   justify-content: center;
-    margin: 20px 0px;
-;
+  margin: 20px 0px;
 }
