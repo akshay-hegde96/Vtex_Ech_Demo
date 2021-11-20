@@ -23,7 +23,7 @@
   },
 
   "store.search#department": {
-    "blocks": ["search-result-layout","back-to-top-button"],
+    "blocks": ["search-result-layout", "back-to-top-button"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -33,7 +33,7 @@
   },
 
   "store.search#category": {
-    "blocks": ["search-result-layout","back-to-top-button"],
+    "blocks": ["search-result-layout", "back-to-top-button"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -43,7 +43,7 @@
   },
 
   "store.search#subcategory": {
-    "blocks": ["search-result-layout","back-to-top-button"],
+    "blocks": ["search-result-layout", "back-to-top-button"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -135,7 +135,8 @@
       "updateOnFilterSelectionOnMobile": true,
       "priceRangeLayout": "inputAndSlider",
       "initiallyCollapsed": true,
-      "openFiltersMode": "one"
+      "openFiltersMode": "one",
+      "blockClass": "filter"
     }
   },
 
@@ -232,6 +233,7 @@
     "children": [
       // "image#landingbanner",
       "flex-layout.row#banner-one",
+      "flex-layout.row#searchtitle",
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#searchbread",
       "flex-layout.row#productCountMobile",
