@@ -331,7 +331,10 @@
     "children": ["flex-layout.col#buy-button", "flex-layout.col#wish-button"]
   },
   "flex-layout.col#buy-button": {
-    "children": ["add-to-cart-button"]
+    "children": ["add-to-cart-button"],
+    "props":{
+      "blockClass":"wshlist-style"
+    }
   },
   "flex-layout.col#wish-button": {
     "children": ["add-to-list-btn"]

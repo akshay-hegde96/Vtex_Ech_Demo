@@ -51,6 +51,9 @@
 .flexRow--deals .stretchChildrenWidth {
   align-items: center;
 }
+.stretchChildrenWidth{
+  padding-right: 0 !important;
+}
 
 .flexRow--deals .flexCol {
   align-items: center;
@@ -219,3 +222,4 @@
   justify-content: center;
   align-items: center;
 }
+

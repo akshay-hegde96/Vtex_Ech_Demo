@@ -32,6 +32,10 @@
   }
 }
 
+.socialNetworksContainer{
+  justify-content: center;
+}
+
 /* @media only screen and (max-width:480px){
   .socialNetworksContainer--social-networks{
     display: flex;

@@ -347,9 +347,130 @@
     "children": [
       "menu-item#account-mobile",
       "menu-item#about-mobile",
-      "menu-item#customer-service-mobile"
+      "menu-item#customer-service-mobile",
+      "menu-item#Shop-mobile"
     ]
   },
+    
+  "menu-item#Shop-mobile": {
+    "props": {
+      "id": "menu-item-category-account",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "my-account-mobile",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#shop"]
+  },
+  "vtex.menu@2.x:submenu.accordion#shop": {
+    "children": ["vtex.menu@2.x:menu#shop-accordion"]
+  },
+  "vtex.menu@2.x:menu#shop-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#men-mobile",
+      "menu-item#women-mobile",
+      "menu-item#shoes-mobile",
+      "menu-item#accessories-mobile",
+      "menu-item#new-mobile"
+    ]
+  },
+
+  "menu-item#men-mobile": {
+    "props": {
+      "id": "menu-item-quick-orders",
+      "blockClass": "quick-orders",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my-account/quick-orders",
+        "noFollow": false,
+        "tagTitle": "Men",
+        "text": "Men"
+      }
+    }
+  },
+
+  "menu-item#women-mobile": {
+    "props": {
+      "id": "menu-item-quick-orders",
+      "blockClass": "quick-orders",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my-account/quick-orders",
+        "noFollow": false,
+        "tagTitle": "Women",
+        "text": "Women"
+      }
+    }
+  },
+
+  "menu-item#shoes-mobile": {
+    "props": {
+      "id": "menu-item-quick-orders",
+      "blockClass": "quick-orders",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my-account/quick-orders",
+        "noFollow": false,
+        "tagTitle": "Shoes",
+        "text": "Shoes"
+      }
+    }
+  },
+  
+
+  "menu-item#accessories-mobile": {
+    "props": {
+      "id": "menu-item-quick-orders",
+      "blockClass": "quick-orders",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my-account/quick-orders",
+        "noFollow": false,
+        "tagTitle": "Accessories",
+        "text": "Accessories"
+      }
+    }
+  },
+
+  "menu-item#new-mobile": {
+    "props": {
+      "id": "menu-item-quick-orders",
+      "blockClass": "quick-orders",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my-account/quick-orders",
+        "noFollow": false,
+        "tagTitle": "New",
+        "text": "New"
+      }
+    }
+  },
+
+
   "menu-item#account-mobile": {
     "props": {
       "id": "menu-item-category-account",

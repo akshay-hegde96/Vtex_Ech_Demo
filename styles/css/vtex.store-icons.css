@@ -13,3 +13,8 @@
   color: white;
   padding: 10px 7px;
 }
+
+.caretIcon,
+.caretIcon--disclosure-pdp{
+  margin-top: 21px!important;
+}
