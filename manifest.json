@@ -76,8 +76,7 @@
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x",
     "vtex.wish-list": "1.x",
-    "vtex.quickorder": "3.x",
-    "vtex.availability-notify": "0.x"
+    "vtex.quickorder": "3.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
