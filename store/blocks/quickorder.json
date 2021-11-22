@@ -1,0 +1,131 @@
+{
+    "store.quickorder": {
+        "blocks": [
+            "flex-layout.row#titleQuickorder",
+            "flex-layout.row#categories",
+            "flex-layout.row#textarea",
+            "flex-layout.row#upload",
+            "flex-layout.row#autocomplete"
+        ]
+    },
+    "flex-layout.row#titleQuickorder": {
+        "children": [
+            "flex-layout.col#titleQuickorder"
+        ],
+        "props":{
+            "blockClass":"quickorder-titleQuickorderRow"
+        }
+    },
+    "flex-layout.col#titleQuickorder": {
+        "children": [
+            "rich-text#titleQuickorder"
+        ],
+        "props": {
+            "blockClass": "quickorder-titleQuickorderCol",
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#titleQuickorder": {
+        "props": {
+            "text": "## Quick Order",
+            "blockClass":"quickorder-titleQuickorder"
+        }
+    },
+    "flex-layout.row#textarea": {
+        "children": [
+            "flex-layout.col#textarea"
+        ],
+        "props":{
+            "blockClass":"quickorder-textareaCol"
+        }
+    },
+    "flex-layout.col#textarea": {
+        "children": [
+            "quickorder-textarea"
+        ],
+        "props":{
+            "blockClass":"quickorder-textareaRow"
+        }
+    },
+    "quickorder-textarea": {
+        "props": {
+            "componentOnly": false,
+            "text": "Copy/Paste Skus",
+            "description": "[Sku's Code],[Quantity]",
+            "blockClass":"quickorder-textarea"
+        }
+    },
+    "flex-layout.row#upload": {
+        "children": [
+            "flex-layout.col#upload"
+        ],
+        "props":{
+            "blockClass":"quickorder-uploadRow"
+        }
+    },
+    "flex-layout.col#upload": {
+        "children": [
+            "quickorder-upload"
+        ],
+        "props":{
+            "blockClass":"quickorder-uploadCol"
+        }
+    },
+    "quickorder-upload": {
+        "props": {
+            "componentOnly": false,
+            "text": "Upload",
+            "description": "Upload a Spreadsheet with two columns (SKU, Quantity) to bulk order",
+            "downloadText": "Click here to download a spreadsheet model",
+            "blockClass":"quickorder-upload"
+        }
+    },
+    "flex-layout.row#autocomplete": {
+        "children": [
+            "flex-layout.col#autocomplete"
+        ],
+        "props":{
+            "blockClass":"quickorder-autoCompleteRow"
+        }
+    },
+    "flex-layout.col#autocomplete": {
+        "children": [
+            "quickorder-autocomplete"
+        ],
+        "props":{
+            "blockClass":"quickorder-autoCompleteCol"
+        }
+    },
+    "quickorder-autocomplete": {
+        "props": {
+            "componentOnly": false,
+            "text": "One by One",
+            "description": "Type the product name, select, enter quantity, add to the cart",
+            "blockClass":"quickorder-autoComplete"
+        }
+    },
+    "flex-layout.row#categories": {
+        "children": [
+            "flex-layout.col#categories"
+        ],
+        "props":{
+            "blockClass":"quickorder-categoriesRow"
+        }
+    },
+    "flex-layout.col#categories": {
+        "children": [
+            "quickorder-categories"
+        ],
+        "props":{
+            "blockClass":"quickorder-categoriesCol"
+        }
+    },
+    "quickorder-categories": {
+        "props": {
+            "componentOnly": false,
+            "text": "Categories",
+            "description": "Add products directly from their categories",
+            "blockClass":"quickorder-categories"
+        }
+    }
+}

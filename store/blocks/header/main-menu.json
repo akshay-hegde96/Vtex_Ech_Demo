@@ -4,258 +4,100 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-women",
-      "menu-item#category-men",
-      "menu-item#category-accessories",
-      "menu-item#category-home-decor",
+      "menu-item#category-electronics",
+      "menu-item#category-major-appliances",
+      "menu-item#category-small-appliances",
+      "menu-item#category-test",
       "menu-item#sales"
     ]
   },
-  "menu-item#category-women": {
+  "menu-item#category-electronics": {
     "props": {
-      "id": "menu-item-category-women",
+      "id": "menu-item-category-electronics",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/electronics",
         "noFollow": false,
-        "tagTitle": "Women",
-        "text": "Women"
+        "tagTitle": "Electronics",
+        "text": "Electronics"
       },
       "blockClass": "megaMenu-header"
     },
-    "blocks": ["vtex.menu@2.x:submenu#category-women"]
+    "blocks": ["vtex.menu@2.x:submenu#category-electronics"]
   },
-  "vtex.menu@2.x:submenu#category-women": {
+  "vtex.menu@2.x:submenu#category-electronics": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#category-women"]
+    "children": ["vtex.menu@2.x:menu#category-electronics"]
   },
-  "vtex.menu@2.x:menu#category-women": {
+  "vtex.menu@2.x:menu#category-electronics": {
     "props": {
       "orientation": "vertical"
     },
-    "children": ["women-menu"]
-  },
-  "menu-item#category-women-clothing": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-women-clothing",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
-    }
-  },
-  "menu-item#category-women-accessories": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-women-accessories",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
-      }
-    }
-  },
-  "menu-item#category-women-eyeglasses": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-women-eyeglasses",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
-      }
-    }
+    "children": ["electronics-menu"]
   },
 
-  "menu-item#category-men": {
+  "menu-item#category-major-appliances": {
     "props": {
-      "id": "menu-item-category-men",
+      "id": "menu-item-category-major-appliances",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/major-appliances",
         "noFollow": false,
-        "tagTitle": "Men",
-        "text": "Men"
+        "tagTitle": "Major Appliances",
+        "text": "Major Appliances"
       },
       "blockClass": "megaMenu-header"
     },
-    "blocks": ["vtex.menu@2.x:submenu#category-men"]
+    "blocks": ["vtex.menu@2.x:submenu#category-major-appliances"]
   },
-  "vtex.menu@2.x:submenu#category-men": {
+  "vtex.menu@2.x:submenu#category-major-appliances": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#category-men"]
-  },
-  "vtex.menu@2.x:menu#category-men": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#category-men-clothing",
-      "menu-item#category-men-accessories",
-      "menu-item#category-men-eyeglasses"
-    ]
-  },
-  "menu-item#category-men-clothing": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-men-clothing",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
-    }
-  },
-  "menu-item#category-men-accessories": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-men-accessories",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
-      }
-    }
-  },
-  "menu-item#category-men-eyeglasses": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-men-eyeglasses",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
-      }
-    }
+    "children": ["majorApp-menu"]
   },
 
-  "menu-item#category-accessories": {
+  "menu-item#category-small-appliances": {
     "props": {
-      "id": "menu-item-category-accessories",
+      "id": "menu-item-category-small-appliances",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/small-appliances",
         "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
+        "tagTitle": "Small-Appliances",
+        "text": "Small-Appliances"
       },
       "blockClass": "megaMenu-header"
     },
-    "blocks": ["vtex.menu@2.x:submenu#category-accessories"]
+    "blocks": ["vtex.menu@2.x:submenu#category-small-appliances"]
   },
-  "vtex.menu@2.x:submenu#category-accessories": {
+  "vtex.menu@2.x:submenu#category-small-appliances": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#category-accessories"]
+    "children": ["vtex.menu@2.x:menu#category-small-appliances"]
   },
-  "vtex.menu@2.x:menu#category-accessories": {
+  "vtex.menu@2.x:menu#category-small-appliances": {
     "props": {
       "orientation": "vertical"
     },
-    "children": [
-      "menu-item#category-accessories-watch",
-      "menu-item#category-accessories-shoes",
-      "menu-item#category-accessories-eyeglasses"
-    ]
-  },
-  "menu-item#category-accessories-watch": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-accessories-watch",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Watch",
-        "text": "Watch"
-      }
-    }
-  },
-  "menu-item#category-accessories-shoes": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-accessories-shoes",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Shoes",
-        "text": "Shoes"
-      }
-    }
-  },
-  "menu-item#category-accessories-eyeglasses": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-accessories-eyeglasses",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
-      }
-    }
+    "children": ["smallApp-menu"]
   },
 
-  "menu-item#category-home-decor": {
+  "menu-item#category-test": {
     "props": {
-      "id": "menu-item-category-home-decor",
+      "id": "menu-item-category-test",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -263,76 +105,24 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "tagTitle": "Test",
+        "text": "Test"
       },
       "blockClass": "megaMenu-header"
     },
-    "blocks": ["vtex.menu@2.x:submenu#category-home-decor"]
+    "blocks": ["vtex.menu@2.x:submenu#category-test"]
   },
-  "vtex.menu@2.x:submenu#category-home-decor": {
+  "vtex.menu@2.x:submenu#category-test": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#category-home-decor"]
+    "children": ["vtex.menu@2.x:menu#category-test"]
   },
-  "vtex.menu@2.x:menu#category-home-decor": {
+  "vtex.menu@2.x:menu#category-test": {
     "props": {
       "orientation": "vertical"
     },
-    "children": [
-      "menu-item#category-home-furniture",
-      "menu-item#category-home-artifacts",
-      "menu-item#category-home-appliances"
-    ]
-  },
-  "menu-item#category-home-furniture": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-home-furniture",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Furniture",
-        "text": "Furniture"
-      }
-    }
-  },
-  "menu-item#category-home-artifacts": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-home-artifacts",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Artifacts",
-        "text": "Artifacts"
-      }
-    }
-  },
-  "menu-item#category-home-appliances": {
-    "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-home-appliances",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Appliances",
-        "text": "Appliances"
-      }
-    }
+    "children": []
   },
 
   "menu-item#sales": {

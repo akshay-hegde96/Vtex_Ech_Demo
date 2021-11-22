@@ -12,7 +12,16 @@
       // "newsletter" // view all shelf
       "back-to-top-button",
       "modal-trigger#sale"
-    ]
+    ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
+  },
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/login",
+      "defaultContentVisibility": "hidden"
+    }
   },
 
   // Notification-bar
@@ -34,23 +43,29 @@
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel",
-      "fullWidth": true
+      "fullWidth": true,
+      "autoplay": {
+        "timeout": 4000,
+        "stopOnHover": true
+      }
     },
     "children": [
       "info-card#slide1",
       "info-card#slide2",
+      "info-card#slide3",
       "video#banner-homepage"
     ]
   },
 
   "info-card#slide1": {
     "props": {
-      "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "imageUrl": "assets/slider0.jpg",
       "isFullModeStyle": true,
-      "headline": "Design Your attitude",
+      "headline": "Welcome to Zirtuen!",
+      "subhead": "stay home & shop online",
       "callToActionMode": "button",
       "callToActionText": "See Collection",
-      "callToActionUrl": "/see collections",
+      "callToActionUrl": "/sales",
       "textPosition": "center",
       "blockClass": "info-card-slide"
     }
@@ -58,13 +73,23 @@
 
   "info-card#slide2": {
     "props": {
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      "imageUrl": "assets/slider2.jpg",
 
       "isFullModeStyle": true,
-      //"headline": "Black Friday",
       "callToActionMode": "button",
       "callToActionText": "Subscribe",
-      "callToActionUrl": "#",
+      "callToActionUrl": "/sales",
+      "textPosition": "center",
+      "blockClass": "info-card-slide"
+    }
+  },
+  "info-card#slide3": {
+    "props": {
+      "imageUrl": "assets/slider1.jpg",
+      "callToActionMode": "button",
+      "callToActionText": "Shop Now",
+      "callToActionUrl": "/sales",
+      "isFullModeStyle": true,
       "textPosition": "center",
       "blockClass": "info-card-slide"
     }
@@ -96,9 +121,9 @@
   },
   "image#clothing": {
     "props": {
-      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",
+      "src": "https://pbs.twimg.com/media/D44WTXgUUAEoYRF.jpg",
       "width": "100%",
-      "height": "220px"
+      "height": "260px"
     }
   },
 
@@ -132,7 +157,7 @@
 
   "image#sale": {
     "props": {
-      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
+      "src": "https://extendmax.vn/profiles/extendmaxvn/uploads/attach/post/images/home-appliance-approvals.jpg",
       "width": "100%",
       "height": "350px"
     }
@@ -165,7 +190,7 @@
   },
   "image#shoes": {
     "props": {
-      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",
+      "src": "https://media.istockphoto.com/photos/red-kitchen-appliances-on-black-background-picture-id990894774?k=20&m=990894774&s=170667a&w=0&h=eok6rPSUAhFErqMmfci8be0R6Lkcm2J8vbThdfMsCeg=",
       "width": "100%",
       "height": "350px"
     }
@@ -196,9 +221,9 @@
 
   "image#racing": {
     "props": {
-      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
+      "src": "https://us.123rf.com/450wm/blinkblink1/blinkblink11911/blinkblink1191100071/134085324-black-friday-sale-black-friday-horizontal-banner-gift-boxes-and-confetti-over-dark-background-.jpg?ver=6",
       "width": "100%",
-      "height": "220px"
+      "height": "260px"
     }
   },
   "link#cta-racing": {
@@ -209,8 +234,8 @@
         "variant": "secondary",
         "size": "medium"
       },
-      "href": "#",
-      "label": "TEST"
+      "href": "/sales",
+      "label": "SALES"
     },
     "children": ["icon-caret#right"]
   },

@@ -1,15 +1,9 @@
 {
   "header": {
-    "blocks": [
-      "header-layout.desktop",
-      "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header.full": {
-    "blocks": [
-      "header-layout.desktop",
-      "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
     "children": [
@@ -25,9 +19,7 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": [
-      "flex-layout.row#2-desktop"
-    ]
+    "children": ["flex-layout.row#2-desktop"]
   },
   "flex-layout.row#2-desktop": {
     "props": {
@@ -45,7 +37,7 @@
       "flex-layout.col#spacer",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      /* "overlay-trigger#search-icon", */
+      // "overlay-trigger#search-icon",
       "disclosure-layout#header-search",
       "minicart.v2"
     ]
@@ -54,17 +46,27 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": [
-      "logo#desktop"
-    ]
+    "children": ["logo#desktop"]
   },
   "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": [
-      "myaccount-menu"
-    ]
+    "children": ["myaccount-menu"],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
+  },
+  "myaccount-menu": {
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
+  },
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/login",
+      "defaultContentVisibility": "hidden"
+    }
   },
   "logo#desktop": {
     "props": {
@@ -84,10 +86,7 @@
       "preventVerticalStretch": true,
       "fullWidth": true
     },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer"
-    ]
+    "children": ["vtex.menu@2.x:menu#websites", "flex-layout.col#spacer"]
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -97,21 +96,17 @@
   //"sticky-layout#2-desktop" -- End
   // "header-layout.mobile" -- Start
   "header-layout.mobile": {
-    "children": [
-      "sticky-layout#1-mobile"
-    ]
+    "children": ["sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
-    "children": [
-      "flex-layout.row#1-mobile"
-    ]
+    "children": ["flex-layout.row#1-mobile"]
   },
   "flex-layout.row#1-mobile": {
     "children": [
       "drawer",
       "logo#mobile",
       "flex-layout.col#spacer",
-      /* "overlay-trigger#search-icon", */
+      //  "overlay-trigger#search-icon",
       "disclosure-layout#header-search",
       "minicart.v2"
     ],
@@ -123,18 +118,16 @@
     }
   },
   "drawer": {
-    "children": [
-      "menu#drawer"
-    ]
+    "children": ["menu#drawer"]
   },
   "menu#drawer": {
     "children": [
-      "menu-item#category-account-mobile",
-      "menu-item#category-women-mobile",
-      "menu-item#category-men-mobile",
-      "menu-item#category-accessories-mobile",
-      "menu-item#category-home-decor-mobile",
-      "menu-item#sales-mobile"
+      "menu-item#category-account",
+      "menu-item#static-category-electronics-mobile",
+      "menu-item#static-category-small-appliances-mobile",
+      "menu-item#static-category-major-appliances-mobile",
+      "menu-item#static-category-test-mobile",
+      "menu-item#sales"
     ],
     "props": {
       "orientation": "vertical"
@@ -260,8 +253,9 @@
   },
   
   "menu-item#category-women-mobile": {
+  "menu-item#static-category-electronics-mobile": {
     "props": {
-      "id": "menu-item-category-women-mobile",
+      "id": "menu-item-category-electronics-mobile",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -269,30 +263,24 @@
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Women",
-        "text": "Women"
+        "tagTitle": "Electronics",
+        "text": "Electronics"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#category-women-mobile"
+      "vtex.menu@2.x:submenu.accordion#static-category-electronics-mobile"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#category-women-mobile": {
-    "children": [
-      "vtex.menu@2.x:menu#category-women-mobile-accordion"
-    ]
-  },
-  "vtex.menu@2.x:menu#category-women-mobile-accordion": {
+  "vtex.menu@2.x:submenu.accordion#static-category-electronics-mobile": {
     "props": {
-      "orientation": "vertical"
+      "width": "auto"
     },
-    "children": [
-      "women-menu"
-    ]
+    "children": ["vtex.menu@2.x:menu#static-category-electronics"]
   },
-  "menu-item#category-men-mobile": {
+
+  "menu-item#static-category-major-appliances-mobile": {
     "props": {
-      "id": "menu-item-category-men-mobile",
+      "id": "menu-item-category-major-appliances-mobile",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -300,32 +288,24 @@
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Men",
-        "text": "Men"
+        "tagTitle": "Major-appliances",
+        "text": "Major-appliances"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#category-men-mobile"
+      "vtex.menu@2.x:submenu.accordion#static-category-major-appliances-mobile"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#category-men-mobile": {
-    "children": [
-      "vtex.menu@2.x:menu#category-men-mobile-accordion"
-    ]
-  },
-  "vtex.menu@2.x:menu#category-men-mobile-accordion": {
+  "vtex.menu@2.x:submenu.accordion#static-category-major-appliances-mobile": {
     "props": {
-      "orientation": "vertical"
+      "width": "auto"
     },
-    "children": [
-      "menu-item#category-men-clothing",
-      "menu-item#category-men-accessories",
-      "menu-item#category-men-eyeglasses"
-    ]
+    "children": ["vtex.menu@2.x:menu#static-category-major-appliances"]
   },
-  "menu-item#category-accessories-mobile": {
+
+  "menu-item#static-category-small-appliances-mobile": {
     "props": {
-      "id": "menu-item-category-accessories-mobile",
+      "id": "menu-item-category-small-appliances-mobile",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -333,32 +313,23 @@
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
+        "tagTitle": "Small-Appliances",
+        "text": "Small-Appliances"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#category-accessories-mobile"
+      "vtex.menu@2.x:submenu.accordion#static-category-small-appliances-mobile"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#category-accessories-mobile": {
-    "children": [
-      "vtex.menu@2.x:menu#category-accessories-mobile-accordion"
-    ]
-  },
-  "vtex.menu@2.x:menu#category-accessories-mobile-accordion": {
+  "vtex.menu@2.x:submenu.accordion#static-category-small-appliances-mobile": {
     "props": {
-      "orientation": "vertical"
+      "width": "auto"
     },
-    "children": [
-      "menu-item#category-accessories-watch",
-      "menu-item#category-accessories-shoes",
-      "menu-item#category-accessories-eyeglasses"
-    ]
+    "children": ["vtex.menu@2.x:menu#static-category-small-appliances"]
   },
-  "menu-item#category-home-decor-mobile": {
+  "menu-item#static-category-test-mobile": {
     "props": {
-      "id": "menu-item-category-home-decor-mobile",
+      "id": "menu-item-category-test-mobile",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -366,57 +337,19 @@
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "tagTitle": "Test",
+        "text": "Test"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#category-home-decor-mobile"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#static-category-test-mobile"]
   },
-  "vtex.menu@2.x:submenu.accordion#category-home-decor-mobile": {
-    "children": [
-      "vtex.menu@2.x:menu#category-home-decor-mobile-accordion"
-    ]
-  },
-  "vtex.menu@2.x:menu#category-home-decor-mobile-accordion": {
+  "vtex.menu@2.x:submenu.accordion#static-category-test-mobile": {
     "props": {
-      "orientation": "vertical"
+      "width": "auto"
     },
-    "children": [
-      "menu-item#category-home-furniture",
-      "menu-item#category-home-artifacts",
-      "menu-item#category-home-appliances"
-    ]
+    "children": ["vtex.menu@2.x:menu#static-category-test"]
   },
-  "menu-item#sales-mobile": {
-    "props": {
-      "id": "menu-item-category-sales-mobile",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "blockClass": "megaMenu-header",
-      "itemProps": {
-        "type": "internal",
-        "noFollow": true,
-        "tagTitle": "Sale",
-        "text": "Sale"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#category-sales-mobile"
-    ]
-  },
-  "vtex.menu@2.x:submenu.accordion#category-sales-mobile": {
-    "children": [
-      "vtex.menu@2.x:menu#category-sales-mobile-accordion"
-    ]
-  },
-  "vtex.menu@2.x:menu#category-sales-mobile-accordion": {
-    "props": {
-      "orientation": "vertical"
-    }
-  },
+
   "logo#mobile": {
     "props": {
       "title": "Logo",
@@ -429,38 +362,29 @@
   //----------------------main-header-menu----------------------------------------------------------
   "flex-layout.row#4-desktop": {
     "props": {
-      "blockClass": "main-menu",
+      "blockClass": "main-menu-static",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
-    "children": [
-      "flex-layout.col#main-menu"
-    ]
+    "children": ["flex-layout.col#main-menu-static"]
   },
-  "flex-layout.col#main-menu": {
+  "flex-layout.col#main-menu-static": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": [
-      "vtex.menu@2.x:menu#main-menu"
-    ]
+    "children": ["vtex.menu@2.x:menu#main-menu-static"]
   },
   "overlay-trigger#search-icon": {
     "props": {
       "blockClass": "custom-search-overlay-trigger"
     },
-    "children": [
-      "search-icon-button",
-      "overlay-layout#search-bar"
-    ]
+    "children": ["search-icon-button", "overlay-layout#search-bar"]
   },
   "overlay-layout#search-bar": {
-    "children": [
-      "search-bar"
-    ],
+    "children": ["search-bar"],
     "props": {
       "blockClass": "custom-search-overlay"
     }
@@ -475,14 +399,10 @@
     "props": {
       "blockClass": "searchBarIcon"
     },
-    "children": [
-      "disclosure-state-indicator#header-icons"
-    ]
+    "children": ["disclosure-state-indicator#header-icons"]
   },
   "disclosure-content#header-content": {
-    "children": [
-      "search-bar"
-    ]
+    "children": ["search-bar"]
   },
   "disclosure-state-indicator#header-icons": {
     "props": {
@@ -491,9 +411,7 @@
     }
   },
   "search-bar": {
-    "blocks": [
-      "autocomplete-result-list.v2"
-    ],
+    "blocks": ["autocomplete-result-list.v2"],
     "props": {
       "placeholder": "Enter Your Keyword",
       "displayMode": "search-and-clear-buttons",
@@ -505,9 +423,7 @@
     }
   },
   "autocomplete-result-list.v2": {
-    "blocks": [
-      "product-summary"
-    ],
+    "blocks": ["product-summary"],
     "props": {
       "data": {
         "One": "1",

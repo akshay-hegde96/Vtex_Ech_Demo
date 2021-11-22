@@ -295,11 +295,13 @@
       "sku-selector",
       "product-quantity",
       "product-assembly-options",
-      // "product-gifts",
+
       "flex-layout.row#buy-wish-button",
-      // "availability-subscriber",
+      "availability-subscriber",
+      // "availability-notify",
       "shipping-simulator",
-      "flex-layout.row#social-networks-pdp"
+      "flex-layout.row#social-networks-pdp",
+      "product-gifts"
     ]
   },
   "flex-layout.row#product-name": {
@@ -326,7 +328,8 @@
   "flex-layout.row#buy-wish-button": {
     "props": {
       "marginTop": 4,
-      "marginBottom": 8
+      "marginBottom": 8,
+      "blockClass":"buttonpdp"
     },
     "children": ["flex-layout.col#buy-button", "flex-layout.col#wish-button"]
   },

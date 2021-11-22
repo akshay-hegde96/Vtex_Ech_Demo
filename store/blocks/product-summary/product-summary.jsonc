@@ -10,9 +10,11 @@
       // "product-summary-space",
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
+      "product-rating-inline",
       // "product-installments#summary",
       "product-summary-space",
       "product-summary-sku-selector",
+
       "add-to-cart-button"
     ]
   },
