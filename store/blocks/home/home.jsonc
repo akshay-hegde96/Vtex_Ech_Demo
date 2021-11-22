@@ -105,7 +105,10 @@
   //------------------category--------------------------------------------------------
 
   "flex-layout.row#demo": {
-    "children": ["flex-layout.col#left", "flex-layout.col#right"]
+    "children": ["flex-layout.col#left", "flex-layout.col#right"],
+    "props": {
+      "blockClass": "categories-row"
+    }
   },
 
   "flex-layout.col#left": {

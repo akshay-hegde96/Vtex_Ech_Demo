@@ -122,17 +122,157 @@
   },
   "menu#drawer": {
     "children": [
-      "menu-item#category-account",
+      "menu-item#static-account-mobile",
       "menu-item#static-category-electronics-mobile",
       "menu-item#static-category-small-appliances-mobile",
       "menu-item#static-category-major-appliances-mobile",
-      "menu-item#static-category-test-mobile",
+      // "menu-item#static-category-test-mobile",
       "menu-item#sales"
     ],
     "props": {
       "orientation": "vertical"
     }
   },
+  //----My----Account-mobile---accordion---------------------------
+
+  "menu-item#static-account-mobile": {
+    "props": {
+      "id": "menu-item-account-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "megaMenu-header",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Account",
+        "text": "Account"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#account-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#account-mobile": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#account-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#account-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "submenu-container"
+    },
+    "children": [
+      "menu-item#account-my-account",
+      "menu-item#account-my-wishlist",
+      "menu-item#account-my-cart",
+      "menu-item#account-checkout",
+      "menu-item#account-register",
+      "menu-item#account-login"
+    ]
+  },
+
+  "menu-item#account-my-account": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-account-my-account",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/account",
+        "noFollow": false,
+        "tagTitle": "My Account",
+        "text": "My Account"
+      }
+    }
+  },
+  "menu-item#account-my-wishlist": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-account-my-wishlist",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/wishlist",
+        "noFollow": false,
+        "tagTitle": "My Wishlist",
+        "text": "My Wishlist"
+      }
+    }
+  },
+
+  "menu-item#account-my-cart": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-account-my-cart",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/checkout",
+        "noFollow": false,
+        "tagTitle": "My Cart",
+        "text": "My Cart"
+      }
+    }
+  },
+  "menu-item#account-checkout": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-account-checkout",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/checkout",
+        "noFollow": false,
+        "tagTitle": "Checkout",
+        "text": "Checkout"
+      }
+    }
+  },
+
+  "menu-item#account-register": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-account-register",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/login",
+        "noFollow": false,
+        "tagTitle": "Register",
+        "text": "Register"
+      }
+    }
+  },
+  "menu-item#account-login": {
+    "props": {
+      "blockClass": "sub-header",
+      "id": "menu-item-account-login",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/login",
+        "noFollow": false,
+        "tagTitle": "Login",
+        "text": "Login"
+      }
+    }
+  },
+  //----------------------
+
   "menu-item#static-category-electronics-mobile": {
     "props": {
       "id": "menu-item-category-electronics-mobile",
@@ -168,8 +308,8 @@
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Major-appliances",
-        "text": "Major-appliances"
+        "tagTitle": "Major-Appliances",
+        "text": "Major-Appliances"
       }
     },
     "blocks": [

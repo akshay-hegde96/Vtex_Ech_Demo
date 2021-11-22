@@ -61,7 +61,7 @@ const Electronics = () => {
                       )}
                       {i === 3 && (
                         <img
-                          src="https://static6.depositphotos.com/1103953/594/i/600/depositphotos_5941364-stock-photo-power-finger-is-charging-corcuit.jpg"
+                          src="https://alexnld.com/wp-content/uploads/2017/09/PC0702.jpg"
                           className={styles.imgSize}
                         />
                       )}
