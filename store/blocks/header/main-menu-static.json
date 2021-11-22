@@ -43,8 +43,7 @@
       "menu-item#category-electronics-tvs",
       "menu-item#category-electronics-laptops",
       "menu-item#category-electronics-cameras",
-      "menu-item#category-electronics-ele",
-      "menu-item#category-electronics-ele"
+      "menu-item#category-electronics-headphones"
     ]
   },
   "menu-item#category-electronics-tvs": {
@@ -95,19 +94,19 @@
       }
     }
   },
-  "menu-item#category-electronics-ele": {
+  "menu-item#category-electronics-headphones": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-electronics-ele",
+      "id": "menu-item-category-electronics-headphones",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/electronics/ele",
+        "href": "/electronics/headphones",
         "noFollow": false,
-        "tagTitle": "Ele",
-        "text": "Ele"
+        "tagTitle": "Headphones",
+        "text": "Headphones"
       }
     }
   },

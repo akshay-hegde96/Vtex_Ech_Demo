@@ -53,8 +53,8 @@
         "type": "internal",
         "href": "/major-appliances",
         "noFollow": false,
-        "tagTitle": "MajorAppliances",
-        "text": "MajorAppliances"
+        "tagTitle": "Major Appliances",
+        "text": "Major Appliances"
       }
     }
   },
@@ -69,8 +69,8 @@
         "type": "internal",
         "href": "/small-appliances",
         "noFollow": false,
-        "tagTitle": "SmallAppliances",
-        "text": "SmallAppliances"
+        "tagTitle": "Small Appliances",
+        "text": "Small Appliances"
       }
     }
   },
@@ -301,9 +301,7 @@
       "menu-item#my-account",
       "menu-item#my-profile",
       "menu-item#quick-orders",
-      "menu-item#my-orders",
-      "menu-item#returns",
-      "menu-item#gift-credit"
+      "menu-item#my-orders"
     ]
   },
   "vtex.menu@2.x:menu#footer-mobile": {
@@ -311,20 +309,19 @@
       "orientation": "vertical"
     },
     "children": [
+      "menu-item#shop-mobile",
       "menu-item#account-mobile",
-      "menu-item#about-mobile",
       "menu-item#customer-service-mobile",
-      "menu-item#Shop-mobile"
+      "menu-item#about-mobile"
     ]
   },
-    
-  "menu-item#Shop-mobile": {
+  "menu-item#shop-mobile": {
     "props": {
-      "id": "menu-item-category-account",
+      "id": "menu-item-category-shop",
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "my-account-mobile",
+      "blockClass": "shop-mobile",
       "itemProps": {
         "type": "internal",
         "noFollow": true,
@@ -342,100 +339,11 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#men-mobile",
-      "menu-item#women-mobile",
-      "menu-item#shoes-mobile",
-      "menu-item#accessories-mobile",
-      "menu-item#new-mobile"
+      "menu-item#electronics",
+      "menu-item#majorAppliances",
+      "menu-item#smallAppliances"
     ]
   },
-
-  "menu-item#men-mobile": {
-    "props": {
-      "id": "menu-item-quick-orders",
-      "blockClass": "quick-orders",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/my-account/quick-orders",
-        "noFollow": false,
-        "tagTitle": "Men",
-        "text": "Men"
-      }
-    }
-  },
-
-  "menu-item#women-mobile": {
-    "props": {
-      "id": "menu-item-quick-orders",
-      "blockClass": "quick-orders",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/my-account/quick-orders",
-        "noFollow": false,
-        "tagTitle": "Women",
-        "text": "Women"
-      }
-    }
-  },
-
-  "menu-item#shoes-mobile": {
-    "props": {
-      "id": "menu-item-quick-orders",
-      "blockClass": "quick-orders",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/my-account/quick-orders",
-        "noFollow": false,
-        "tagTitle": "Shoes",
-        "text": "Shoes"
-      }
-    }
-  },
-  
-
-  "menu-item#accessories-mobile": {
-    "props": {
-      "id": "menu-item-quick-orders",
-      "blockClass": "quick-orders",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/my-account/quick-orders",
-        "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
-      }
-    }
-  },
-
-  "menu-item#new-mobile": {
-    "props": {
-      "id": "menu-item-quick-orders",
-      "blockClass": "quick-orders",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/my-account/quick-orders",
-        "noFollow": false,
-        "tagTitle": "New",
-        "text": "New"
-      }
-    }
-  },
-
 
   "menu-item#account-mobile": {
     "props": {
@@ -463,9 +371,7 @@
     "children": [
       "menu-item#my-profile",
       "menu-item#quick-orders",
-      "menu-item#my-orders",
-      "menu-item#returns",
-      "menu-item#gift-credit"
+      "menu-item#my-orders"
     ]
   },
   "menu-item#about-mobile": {

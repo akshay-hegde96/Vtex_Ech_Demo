@@ -74,11 +74,12 @@
   "info-card#slide2": {
     "props": {
       "imageUrl": "assets/slider2.jpg",
-
+      "headline": "Electronics Appliances",
+      "subhead": "Quality Products with Reliability",
       "isFullModeStyle": true,
-      "callToActionMode": "button",
-      "callToActionText": "Subscribe",
-      "callToActionUrl": "/sales",
+      "callToActionMode": "link",
+      "callToActionText": "Shop Now",
+      "callToActionUrl": "/electronics",
       "textPosition": "center",
       "blockClass": "info-card-slide"
     }
@@ -86,9 +87,9 @@
   "info-card#slide3": {
     "props": {
       "imageUrl": "assets/slider1.jpg",
-      "callToActionMode": "button",
+      "callToActionMode": "link",
       "callToActionText": "Shop Now",
-      "callToActionUrl": "/sales",
+      "callToActionUrl": "/major-appliances",
       "isFullModeStyle": true,
       "textPosition": "center",
       "blockClass": "info-card-slide"
@@ -104,7 +105,10 @@
   //------------------category--------------------------------------------------------
 
   "flex-layout.row#demo": {
-    "children": ["flex-layout.col#left", "flex-layout.col#right"]
+    "children": ["flex-layout.col#left", "flex-layout.col#right"],
+    "props": {
+      "blockClass": "categories-row"
+    }
   },
 
   "flex-layout.col#left": {
