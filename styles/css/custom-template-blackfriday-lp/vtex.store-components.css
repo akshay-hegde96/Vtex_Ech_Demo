@@ -30,6 +30,8 @@
 
   .infoCardTextContainer--home-banner-cat {
     margin-top: 15rem;
+    position: relative;
+    bottom: 105px;
   }
 }
 

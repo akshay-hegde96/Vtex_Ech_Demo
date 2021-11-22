@@ -37,10 +37,17 @@
   .flexCol--customer-service {
     margin: 0 0 1rem;
   }
+  .flexRowContent--categories-box {
+    flex-direction: column;
+  }
+  .stretchChildrenWidth{
+    width: 100% !important;
+    margin: 15px 0px !important;
+  }
 }
 
 /* horizontal scrolling boxes */
-.flexRow--categories-box :global(.vtex-store-components-3-x-container) {
+/* .flexRow--categories-box :global(.vtex-store-components-3-x-container) {
   height: 200px;
   width: 100%;
   overflow-x: scroll;
@@ -53,7 +60,7 @@
   height: 250px;
   width: max-content;
   margin-bottom: 1rem;
-}
+} */
 
 .flexRowContent--categories-box .stretchChildrenWidth {
   float: left;
