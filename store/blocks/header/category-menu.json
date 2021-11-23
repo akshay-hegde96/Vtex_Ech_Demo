@@ -38,6 +38,8 @@
       "menu-item#category-account-checkout",
       "menu-item#category-account-register",
       "menu-item#category-account-login"
+      
+
     ]
   },
   "menu-item#category-account-my-account": {

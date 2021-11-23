@@ -6,6 +6,7 @@
             "flex-layout.row#corporate-blog2",
             "flex-layout.row#corporate-blog3",
             "flex-layout.row#corporate-blog4",
+            "iframe",
             "back-to-top-button"
         ] 
     },
@@ -64,6 +65,16 @@
         "props": {
           "text": "\n **Multi-currency and language** \n Go international with multiple storefronts to support different languages and easily manage local currencies and payment conditions. \n **Serverless development platform** \n Reduce loading time, improve usability, and make the best out of SEO. Developing scalable components with a comprehensive, easy-to-use toolset, you can build stores faster than ever.",
           "blockClass": "about"
+        }
+      },
+//added standard Iframe
+      "iframe": {
+        "props":{
+          "src":"https://www.youtube.com/embed/JgkrlaF52WQ",
+          "height": "100%",
+          "width":"100%",
+          "allow": "Iframe Test",
+          "blockClass": "iframe-about"
         }
       }
    
