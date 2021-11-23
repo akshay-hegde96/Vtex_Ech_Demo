@@ -248,3 +248,14 @@
 .paragraph--header-top-sales{
   color: white;
 }
+.paragraph--sku-spec{
+  background-color:#ad2697;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px){
+  .paragraph--sku-spec{
+    width: fit-content;
+    background-color:#ad2697;
+    color: #ffffff;
+  }
+}

@@ -71,7 +71,8 @@
     "vtex.my-account-commons": "1.x",
     "vtex.my-orders-app": "3.x",
     "vtex.challenge-tp-condition": "0.x",
-    "vtex.safedata": "0.x"
+    "vtex.safedata": "0.x",
+    "vtex.sku-list": "1.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x",

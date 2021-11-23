@@ -33,3 +33,12 @@
     height: 50px;
   }
 }
+
+.trigger--specifications{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+.content--specifications{
+    width: auto;
+}
