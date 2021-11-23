@@ -322,18 +322,17 @@
 .notificationBarInner{
   margin-top: 5px;
 }
-
-/* ========= */
-/* .skuSelectorName{
-  display: flex;
-  flex-direction: column;
-  width: 100px;
+.confirmationText--newsletter{
+  color: white;
 }
-
-.skuSelectorOptionsList {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-} */
+.confirmationTitle--newsletter{
+  color: white;
+}
+/* ========= */
+.skuSelectorName{
+  display: inline-block;
+  min-width: 100px;
+}
+.skuSelectorOptionsList{
+justify-content: center;
+}

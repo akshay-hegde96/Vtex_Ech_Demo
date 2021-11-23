@@ -253,7 +253,7 @@
       "textPosition": "center",
       "headline": "New Arrivals",
       "callToActionText": "View All",
-      "callToActionUrl": "/view all",
+      "callToActionUrl": "/sales",
       "blockClass": "shelfTitle",
       "textAlignment": "center"
     }
