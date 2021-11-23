@@ -292,7 +292,7 @@
   "modal-trigger#sale": {
     "children": ["modal-layout#sale"],
     "props": {
-      "trigger": "load-session"
+      "trigger": "load"
     }
   },
 
