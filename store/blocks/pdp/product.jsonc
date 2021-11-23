@@ -284,6 +284,7 @@
     },
     "children": [
       "flex-layout.row#product-name",
+      "flex-layout.row#product-brand",
       //"product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
@@ -311,6 +312,18 @@
     },
     "children": ["vtex.store-components:product-name"]
   },
+
+  // added product-brand
+  "flex-layout.row#product-brand":{
+    "props":{
+      "displayMode": "text",
+      "marginBottom": 3,
+      "blockClass": "product"
+    },
+
+    "children": ["vtex.store-components:product-brand"]
+  },
+  
   "product-description": {
     "props": {
       "title": "Details",
