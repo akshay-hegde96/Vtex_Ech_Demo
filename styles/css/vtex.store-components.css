@@ -322,3 +322,18 @@
 .notificationBarInner{
   margin-top: 5px;
 }
+
+/* ========= */
+/* .skuSelectorName{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.skuSelectorOptionsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+} */
