@@ -17,7 +17,7 @@ const ContactFormData = () => {
   useEffect(() => {
     const contactDataCall = async () => {
       const responseData = await makeAPICall(contactUsURL, "GET");
-      //console.log({ responseData });
+      // console.log({ responseData });
       setList(responseData);
     };
 
@@ -43,28 +43,77 @@ const ContactFormData = () => {
     </div>
   );
 
+  const stylesInline = {
+    display: "block",
+    textDecorationLine: "none",
+    textAlign: "start",
+    marginTop: "2rem",
+    marginLeft: "3.5rem",
+    fontSize: "0.97rem",
+  };
+
   return (
-    <div style={{ marginBottom: "1rem" }}>
+    <div style={{ marginBottom: "11rem" }}>
+      <a style={stylesInline} href="/contact-us">
+        ⬅ Back
+      </a>
+
       <div className={styles.fd_title}>
-        <h3>Contact-Us History</h3>
+        <h3>Contact Us History</h3>
       </div>
-      <div>
-        {list.map((user, i) => {
-          let userData = user;
-          return (
-            <div key={user.id} className={styles.container}>
-              <div
-                className={styles.card}
-                onClick={() => showDetailsHandler(userData)}
-              >
-                <p style={{ margin: "13px" }}>{`${i + 1}. ${user.firstName} ${
-                  user.lastName
-                }`}</p>
-              </div>
-              {showdetails && user.id === data.id && details}
-            </div>
-          );
-        })}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "start",
+          flexWrap: "wrap",
+        }}
+      >
+        <div className={styles.container2}>
+          {list
+            .filter((user, i) => {
+              return i <= list.length / 2 === true;
+            })
+            .map((user, i) => {
+              let userData = user;
+              return (
+                <div key={user.id} className={styles.cardContainer}>
+                  <div
+                    className={styles.card}
+                    onClick={() => showDetailsHandler(userData)}
+                  >
+                    <p
+                      style={{ margin: "13px" }}
+                    >{`${user.firstName} ${user.lastName}`}</p>
+                  </div>
+                  {showdetails && user.id === data.id && details}
+                </div>
+              );
+            })}
+        </div>
+
+        <div className={styles.container2}>
+          {list
+            .filter((user, i) => {
+              return i > list.length / 2 === true;
+            })
+            .map((user, i) => {
+              let userData = user;
+              return (
+                <div key={user.id} className={styles.cardContainer}>
+                  <div
+                    className={styles.card}
+                    onClick={() => showDetailsHandler(userData)}
+                  >
+                    <p
+                      style={{ margin: "13px" }}
+                    >{`${user.firstName} ${user.lastName}`}</p>
+                  </div>
+                  {showdetails && user.id === data.id && details}
+                </div>
+              );
+            })}
+        </div>
       </div>
     </div>
   );

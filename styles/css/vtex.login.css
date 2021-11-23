@@ -1,7 +1,8 @@
 .formTitle {
   color: rgba(15, 15, 15, 0.986);
   font-weight: 600;
-  font-variant-caps: small-caps;
+  font-variant-caps: normal;
+  margin-top: 0;
 }
 
 .optionsList {
@@ -21,7 +22,7 @@
 }
 
 .emailAndPasswordForm {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -44,5 +45,10 @@
 }
 
 .content--emailAndPassword {
+  margin-top: 1.1rem;
+}
+
+.content,
+.emailVerification {
   margin-top: 1rem;
 }

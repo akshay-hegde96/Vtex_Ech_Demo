@@ -322,3 +322,17 @@
 .notificationBarInner{
   margin-top: 5px;
 }
+.confirmationText--newsletter{
+  color: white;
+}
+.confirmationTitle--newsletter{
+  color: white;
+}
+/* ========= */
+.skuSelectorName{
+  display: inline-block;
+  min-width: 100px;
+}
+/* .skuSelectorOptionsList{
+justify-content: center;
+} */
