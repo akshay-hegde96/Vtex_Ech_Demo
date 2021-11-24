@@ -31,7 +31,8 @@
   "disclosure-state-indicator": {
     "props": {
       "Show": "icon-caret#down",
-      "Hide": "icon-caret#up"
+      "Hide": "icon-caret#up",
+      "blockClass": "state-indicator"
     }
   },
   "icon-caret#down": {
