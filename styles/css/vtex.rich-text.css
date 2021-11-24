@@ -174,11 +174,13 @@
 .container--term-handle {
   color: green;
   font-size: large;
+  justify-content: center;
 }
 
 .container--term-points {
   color: grey;
   font-size: large;
+  justify-content: center;
 }
 
 .wrapper--term-askUs {
