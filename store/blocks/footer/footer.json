@@ -4,11 +4,17 @@
   },
   "footer-layout.desktop": {
     "children": [
-      "newsletter",
+      "flex-layout.row#newsletter",
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop",
       "flex-layout.row#footer-3-desktop"
     ]
+  },
+  "flex-layout.row#newsletter":{
+    "children":[ "newsletter"],
+    "props": {
+      "blockClass": "footer-link"
+    }
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
