@@ -363,8 +363,8 @@
     "children": [
       "info-card#new-release-01",
       "info-card#new-release-02",
-      "info-card#new-release-01",
-      "info-card#new-release-02"
+      "info-card#new-release-03",
+      "info-card#new-release-04"
     ],
     "props": {
       "blockClass": "new-releases"
@@ -399,6 +399,38 @@
       "callToActionMode": "link",
       "callToActionUrl": "/electronics/cameras",
       "imageActionUrl": "/electronics/cameras",
+      "callToActionText": "SHOP NOW"
+    }
+  },
+  "info-card#new-release-03": {
+    "title": "NEW RELEASE 02",
+    "props": {
+      "id": "new-release-02",
+      "isFullModeStyle": false,
+      "imageUrl": "assets/new-release4.jpg",
+      // "mobileImageUrl": "assets/banner-200_200-b.png",
+      "blockClass": ["new-release", "new-release-02"],
+      "headline": "",
+      "subhead": "",
+      "callToActionMode": "link",
+      "callToActionUrl": "/major-appliances/washers---dryers",
+      "imageActionUrl": "/major-appliances/washers---dryers",
+      "callToActionText": "SHOP NOW"
+    }
+  },
+  "info-card#new-release-04": {
+    "title": "NEW RELEASE 02",
+    "props": {
+      "id": "new-release-02",
+      "isFullModeStyle": false,
+      "imageUrl": "assets/new-releases3.png",
+      // "mobileImageUrl": "assets/banner-200_200-b.png",
+      "blockClass": ["new-release", "new-release-02"],
+      "headline": "",
+      "subhead": "",
+      "callToActionMode": "link",
+      "callToActionUrl": "/small-appliances/mixers---blenders",
+      "imageActionUrl": "/small-appliances/mixers---blenders",
       "callToActionText": "SHOP NOW"
     }
   },

@@ -281,7 +281,9 @@
 .galleryItem--list {
   border: none;
 }
-
+.skuSelectorOptionsList {
+  margin-left: 10px;
+}
 
 .discountInsideContainer {
   border-radius: 50%;
@@ -320,18 +322,17 @@
 .notificationBarInner{
   margin-top: 5px;
 }
-
+.confirmationText--newsletter{
+  color: white;
+}
+.confirmationTitle--newsletter{
+  color: white;
+}
+/* ========= */
 .skuSelectorName{
-  display: flex;
-  flex-direction: column;
-  width: 100px;
+  display: inline-block;
+  min-width: 100px;
 }
-
-.skuSelectorOptionsList {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
+.skuSelectorOptionsList{
+justify-content: center;
 }
-

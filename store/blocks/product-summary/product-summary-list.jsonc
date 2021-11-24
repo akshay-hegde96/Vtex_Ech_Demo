@@ -60,7 +60,7 @@
     "children": [
       // "vtex.store-components:product-brand#summaryListDesktop",
       "product-summary-name#summaryListDesktop",
-      "product-summary-sku-selector",
+       "product-summary-sku-selector",
       // "flex-layout.col#productRating",
       "flex-layout.row#productSpecifications"
     ]

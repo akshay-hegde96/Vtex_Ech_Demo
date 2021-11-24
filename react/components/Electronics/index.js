@@ -4,6 +4,7 @@ import homeIcon from "../../../assets/breadcrumb.png";
 import { storeURL, deparmentURL } from "../../Config/url";
 import { makeAPICall } from "../../Utils/httpCall";
 
+
 const Electronics = () => {
   const [elect, setElect] = useState([]);
   let data;
@@ -31,7 +32,7 @@ const Electronics = () => {
         </a>
       </div>
 
-      <h2 className={styles.textAlignment}> Department Electronics</h2>
+      <h2 className={styles.textAlignment}> Department Electronics </h2>
       {elect
         .filter((elect) => elect.id === 103)
         .map((electronic) => {
