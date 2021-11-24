@@ -29,9 +29,10 @@ a{
 }
 /* ================= Mobile ====================== */
 @media only screen and (max-width: 480px) {
-    .imgSize{
-        height: 100px;
-    }
+    /* .imgSize{
+        width: 200px;
+        height: 170px;
+    } */
     .imgPadding{
         padding: 10px;
     }
