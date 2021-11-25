@@ -132,3 +132,9 @@
 .orderByOptionsContainer{
   z-index: 5;
 }
+/* =============== mobile-landscape ====================== */
+@media (max-width: 640px) and (orientation: landscape) {
+.galleryItem--grid{
+  padding:10px !important;
+}
+}
