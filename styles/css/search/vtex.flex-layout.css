@@ -80,16 +80,17 @@
 }
 @media screen and (max-width: 768px) {
 .stretchChildrenWidth{
-  /* display: flex; */
   flex-direction: column;
 }
 }
   .stretchChildrenWidth{
     flex-direction: column;
-    /* margin-left: auto;
-    margin-right: 0px; */
   }
-
+  @media only screen and (min-width : 992px) {
+  .flexRow--sku-desc{
+    margin-top: -40px;
+  }
+  }
 .flexRowContent--sku-desc{
   display: flex;
   flex-direction: column;
@@ -98,11 +99,30 @@
 .flexColChild--sku-specifications{
   display: flex;
   justify-content: center;
-  /* width: fit-content; */
 }
-@media screen and (min-device-width : 768px) and (max-device-width : 1024px){
-  .flexColChild--sku-specifications{
-    width: 20%;
-  }   
+.flexRowContent--disclosure-spec{
+  margin-bottom: 20px;
+  padding-left: 160px;
 }
-
+@media screen and (max-width: 768px) {
+  .flexRowContent--disclosure-spec{
+    margin-bottom: 20px;
+    padding-left: 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .flexRowContent--disclosure-spec{
+    margin-bottom: 20px;
+    padding-left: 80px;
+  }
+  .stretchChildrenWidth{
+    flex-direction: column;
+  }
+  .flexColChild--sku-name{
+    display: flex;
+    justify-content: center;
+  }
+  .flexColChild--sku-spec{
+    margin-left: -60px;
+  }
+}

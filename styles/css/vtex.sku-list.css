@@ -9,15 +9,22 @@
     .specificationsTableContainer{
         width:min-content;
         text-align: center;
+        margin-top: 20px;
     }
 }
 
 @media screen and (min-device-width : 768px) and (max-device-width : 1024px){
     .skuContentWrapper{
-        width: 800px;
+        width: 500px;
     }    
     .specificationsTableContainer{
-        margin-top: 5px;
+        margin-top: 15px;
+    }
+    .skuImage{
+        width: 60px !important;
+    }
+    .skuName{
+        width: 100px;
     }
 }
 .skuImage{
@@ -47,11 +54,11 @@
 
 .inventoryContainer{
     width: fit-content;
-margin-top: 0px;
-padding-top: 0px;
-margin-bottom: 0px;
-padding-bottom: 0px;
-display: flex;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    display: flex;
 }
 
 .priceContainer{
@@ -63,7 +70,6 @@ display: flex;
     display: flex;
 
 }
-
-/* .specificationsTablePropertyHeading{
-    width: 50px;
-} */
+.quantitySelectorContainer{
+    margin-top: 5px;
+}
