@@ -1,5 +1,5 @@
 {
-  "product-summary.shelf": {
+  "product-summary.shelf.product-comparison": {
     "children": [
       "stack-layout#prodsum",
       //"experimental__visibility-layout#productsummary",
@@ -15,6 +15,20 @@
       "product-summary-space",
       "product-summary-sku-selector",
 
+      "add-to-cart-button",
+      "product-comparison-drawer",	
+      "product-comparison-block.selector"
+    ]
+  },
+  "product-summary.shelf#without-comparison": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-list-price#summary",
+      "flex-layout.row#selling-price-savings",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-sku-selector",
       "add-to-cart-button"
     ]
   },
