@@ -288,11 +288,11 @@
       "display": "caret-icon"
     }
   },
-  // modal
+  // modal on home page set to appear for every reload.
   "modal-trigger#sale": {
     "children": ["modal-layout#sale"],
     "props": {
-      "trigger": "load-session"
+      "trigger": "load"
     }
   },
 

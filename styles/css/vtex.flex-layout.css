@@ -193,6 +193,10 @@
   .flexColChild--product-name {
     padding-left: 25px;
   }
+  .flexRowContent--testIconsRow{
+    justify-content: center;
+    display: flex;
+  }
 }
 
 .flexRowContent--productListPricing {
