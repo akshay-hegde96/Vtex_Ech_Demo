@@ -136,3 +136,11 @@
   height: 250px;
   width: 100%;
 }
+
+/* ========== mobile-landscape ============ */
+@media (max-width: 640px) and (orientation: landscape) {
+.infoCardHeadline--home-banner-cat,
+.infoCardSubhead--home-banner-cat{
+  text-align: center;
+}
+}

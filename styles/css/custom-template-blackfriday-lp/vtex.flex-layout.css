@@ -40,7 +40,7 @@
   .flexRowContent--categories-box {
     flex-direction: column;
   }
-  .stretchChildrenWidth{
+  .stretchChildrenWidth {
     width: 100% !important;
     margin: 15px 0px !important;
   }
@@ -65,12 +65,12 @@
 .flexRowContent--categories-box .stretchChildrenWidth {
   float: left;
   /* margin: 0 36px 0 0; */
-  margin:0px 15px;
+  margin: 0px 15px;
   box-shadow: 0 2px 3px rgb(15 17 17 / 15%);
   overflow: hidden;
   background-color: #f8f9f9;
   padding: 2px;
-  height: max-content;
+  /* height: max-content; */
 }
 
 @media screen and (min-width: 640px) {
@@ -78,7 +78,16 @@
     overflow: unset;
   }
   .flexRowContent--categories-box {
-    padding-right: 1rem;
+    /* padding-right: 1rem; */
     margin: 0 auto;
+  }
+}
+/* =============== mobile-landscape ====================== */
+@media (max-width: 640px) and (orientation: landscape) {
+  .flexRowContent--categories-box {
+    flex-direction: unset;
+  }
+  .stretchChildrenWidth {
+    margin: 15px 5px !important;
   }
 }
