@@ -143,4 +143,8 @@
 .infoCardSubhead--home-banner-cat{
   text-align: center;
 }
+.imageElement--category-box {
+  height: 180px;
+  width: 100%;
+}
 }
