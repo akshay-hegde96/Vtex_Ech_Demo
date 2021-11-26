@@ -9,7 +9,7 @@ const ContactFormData = () => {
 
   useEffect(() => {
     const contactDataCall = async () => {
-      const responseData = await makeAPICall(contactUsURL, "GET");
+      const responseData = await makeAPICall(contactUsURL, "GET", "0-100");
       // console.log({ responseData });
       setData(responseData);
     };
