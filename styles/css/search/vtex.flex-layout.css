@@ -88,7 +88,11 @@
   }
   @media only screen and (min-width : 992px) {
   .flexRow--sku-desc{
-    margin-top: -40px;
+    display: flex;
+    align-content: flex-start;
+  }
+  .stretchChildrenWidth{
+    justify-content: flex-start;
   }
   }
 .flexRowContent--sku-desc{
@@ -123,6 +127,6 @@
     justify-content: center;
   }
   .flexColChild--sku-spec{
-    margin-left: -60px;
+    margin-left: -50px;
   }
 }
