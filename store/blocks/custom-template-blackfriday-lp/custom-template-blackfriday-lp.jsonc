@@ -439,7 +439,7 @@
     "children": ["list-context.product-list#new-release"]
   },
   "list-context.product-list#new-release": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#without-comparison"],
     "children": ["slider-layout#new-release-products"],
     "props": {
       "orderBy": "OrderByReleaseDateDESC"
@@ -448,7 +448,7 @@
   "slider-layout#new-release-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
         "phone": 1
       },
@@ -463,7 +463,7 @@
     "children": ["list-context.product-list#discount"]
   },
   "list-context.product-list#discount": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#without-comparison"],
     "children": ["slider-layout#discount-products"],
     "props": {
       "orderBy": "OrderByBestDiscountDESC"
@@ -472,7 +472,7 @@
   "slider-layout#discount-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
         "phone": 1
       },

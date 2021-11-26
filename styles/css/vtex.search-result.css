@@ -54,6 +54,7 @@
   font-variant: small-caps;
   display: flex;
   justify-content: center;
+  width: auto !important;
 }
 .filtersWrapper {
   padding: 10px;

@@ -34,3 +34,11 @@
 .slideChildrenContainer--carousel-top{
   background-color: #141223f2;
 }
+@media screen and (max-width: 767px) {
+  .sliderLayoutContainer--comparison-page {
+    width: auto;
+  }
+  .sliderLayoutContainer--comparison-page {
+    margin: auto;
+  }
+}
