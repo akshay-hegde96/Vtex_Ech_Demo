@@ -15,6 +15,7 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
+      "seller-table",
       "flex-layout.row#specifications",
       "tab-layout#product"
     ]
@@ -23,6 +24,7 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
+      "seller-table",
       "flex-layout.row#specifications",
       "disclosure-layout-group#tablayout"
     ]
@@ -126,6 +128,7 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
+      "seller-table",
       "flex-layout.row#specifications",
       "tab-layout#product",
       "shelf#related"
@@ -564,6 +567,7 @@
       "flex-layout.row#product-image",
       "product-bookmark",
       "product-specification-badges"
+    
     ]
   },
   "product-specification-badges": {
@@ -621,6 +625,8 @@
       "shipping-simulator",
       "flex-layout.row#social-networks-pdp",
       "product-gifts"
+      // "link-seller"
+      // "seller-table"
     ]
   },
   "flex-layout.row#product-name": {
