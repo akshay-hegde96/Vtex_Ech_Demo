@@ -52,4 +52,11 @@
   .tableCell {
     font-size: 12px;
   }
+  .tableHeader:first-child {
+    border-top-left-radius: 0;
+  }
+
+  .tableHeader:last-child {
+    border-top-right-radius: 0;
+  }
 }
