@@ -1,8 +1,19 @@
 .support {
   margin-left: 3rem;
   padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .support h1 {
   color: #3f3f40;
+}
+
+.back_link {
+  position: relative;
+  top: 1.5rem;
+  text-decoration-line: none;
+  text-align: start;
+  margin-left: 2rem;
+  font-size: 0.97rem;
 }
