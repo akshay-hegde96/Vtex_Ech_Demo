@@ -5,6 +5,25 @@
   outline: none;
 }
 
+/* =============== mobile-landscape ====================== */
+@media (max-width: 640px) and (orientation: landscape) {
+  .trigger--question {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .content--answer {
+    transition: opacity 250ms ease-in-out, height 250ms ease-in-out, transform 250ms ease-in-out;
+    opacity: 0;
+    height: 0;
+    transform: translate3d(0, -10%, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .trigger--question :global(.vtex-rich-text-0-x-paragraph) {
   font-weight: bold;
 }

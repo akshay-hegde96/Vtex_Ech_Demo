@@ -72,7 +72,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "../image/logo.png",
+      "url": "assets/logo.png",
       "width": "180"
     }
   },
@@ -374,7 +374,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "../image/logo.png",
+      "url": "assets/logo.png",
       "width": "70"
     }
   },

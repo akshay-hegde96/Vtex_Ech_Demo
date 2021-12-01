@@ -20,7 +20,10 @@
       },
 
       "flex-layout.col#terms&cond":{
-        "children":["rich-text#termsIntro","rich-text#termsIntro1","rich-text#termsIntro2","rich-text#termsIntro3","rich-text#termsIntro4","rich-text#termsIntro5"]
+        "children":["rich-text#termsIntro","rich-text#termsIntro1","rich-text#termsIntro2","rich-text#termsIntro3","rich-text#termsIntro4","rich-text#termsIntro5"],
+        "props": {
+          "blockClass": "terms-condition"
+        }
       },
       "rich-text#termsIntro":{
         "props": {

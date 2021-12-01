@@ -333,6 +333,35 @@
   display: inline-block;
   min-width: 100px;
 }
-.skuSelectorOptionsList{
+/* .skuSelectorOptionsList{
 justify-content: center;
+} */
+
+/* =============== mobile-landscape ====================== */
+@media (max-width: 640px) and (orientation: landscape) {
+.skuSelectorName{
+  min-width: 60px;
+}
+.skuSelectorItemTextValue{
+  font-size: 10px !important;
+}
+.infoCardHeadline--info-card-slide{
+  font-size: 20px;
+  font-weight: normal;
+}
+.imageElement--store-features-img{
+  max-height: 280px !important;
+
+}
+}
+
+/* ======== iphoneX landscape ========= */
+@media (max-width: 812px) and (orientation: landscape) {
+  .infoCardHeadline--info-card-slide{
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .skuSelectorItemTextValue{
+    font-size: 10px !important;
+  }
 }

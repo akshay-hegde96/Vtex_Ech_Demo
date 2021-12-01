@@ -1,72 +1,40 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+import styles from "./ContactFormData.css";
+import Table from "./Table/Table";
 import { makeAPICall } from "../../Utils/httpCall";
 import { contactUsURL } from "../.././Config/url";
-import styles from "./ContactFormData.css";
 
 const ContactFormData = () => {
-  const [list, setList] = useState([]);
-  const [data, setData] = useState({
-    id: "",
-    firstName: "",
-    lastName: "",
-    address: { streetNumber: 0, streetAddress: "", streetType: "" },
-    createdBy_USER: { Login: "" },
-    agreement: false,
-  });
-  const [showdetails, setShowdetails] = useState(false);
+  const [data, setData] = useState([]);
+
   useEffect(() => {
     const contactDataCall = async () => {
-      const responseData = await makeAPICall(contactUsURL, "GET");
-      //console.log({ responseData });
-      setList(responseData);
+      const responseData = await makeAPICall(contactUsURL, "GET", "0-100");
+      // console.log({ responseData });
+      setData(responseData);
     };
 
     contactDataCall();
   }, []);
 
-  const showDetailsHandler = (userData) => {
-    //console.log(userData);
-    setData(userData);
-    setShowdetails(!showdetails);
-  };
-
-  const details = (
-    <div className={styles.detail}>
-      <p> Name : {`${data.firstName} ${data.lastName}`}</p>
-      <p>
-        Address :{" "}
-        {`street no. ${data.address.streetNumber}, ${data.address.streetAddress}, ${data.address.streetType} `}
-      </p>
-      <p>UserId : {data.id}</p>
-      <p>Email : {data.createdBy_USER.Login}</p>
-      <p>Agreement : {data.agreement ? "Yes" : "No"}</p>
-    </div>
-  );
-
   return (
-    <div style={{ marginBottom: "1rem" }}>
-      <div className={styles.fd_title}>
-        <h3>Contact-Us History</h3>
-      </div>
+    <React.Fragment>
       <div>
-        {list.map((user, i) => {
-          let userData = user;
-          return (
-            <div key={user.id} className={styles.container}>
-              <div
-                className={styles.card}
-                onClick={() => showDetailsHandler(userData)}
-              >
-                <p style={{ margin: "13px" }}>{`${i + 1}. ${user.firstName} ${
-                  user.lastName
-                }`}</p>
-              </div>
-              {showdetails && user.id === data.id && details}
-            </div>
-          );
-        })}
+        <a className={styles.back_link} href="/contact-us">
+          ⬅ Back
+        </a>
       </div>
-    </div>
+
+      <div className={styles.fd_title}>
+        <h3>Contact Us History</h3>
+      </div>
+
+      <main className={styles.container}>
+        <div className={styles.wrapper}>
+          <Table data={data} rowsPerPage={6} />
+        </div>
+      </main>
+    </React.Fragment>
   );
 };
 

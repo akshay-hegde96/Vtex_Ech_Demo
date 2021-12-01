@@ -1,5 +1,5 @@
 {
-  "product-summary.shelf#listLayout": {
+  "product-summary.shelf.product-comparison#listLayout": {
     "props": {
       "blockClass": "listLayout"
     },

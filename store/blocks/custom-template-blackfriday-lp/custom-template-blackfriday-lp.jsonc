@@ -132,15 +132,15 @@
       "flex-layout.col#categories-box-5"
     ],
     "props": {
-      "preserveLayoutOnMobile": "true",
-      "blockClass": "categories-box"
+      "preserveLayoutOnMobile": false,
+      "blockClass": "categories-box-row"
     }
   },
   "flex-layout.col#categories-box-1": {
     "title": "CATEGORIES BOX",
     "children": ["image#category1", "link#category1"],
     "props": {
-      "blockClass": "categories-box"
+      "blockClass": "categories-box-col"
     }
   },
   "image#category1": {
@@ -149,8 +149,8 @@
       "title": "Refrigerators",
       "link": "/major-appliances/refrigerators",
       "src": "assets/refrigator-e.jpg",
-      "blockClass": "category-box",
-      "maxWidth": "100%"
+      "blockClass": "category-box"
+      // "maxWidth": "100%"
       //"imageUrl": "/major-appliances/refrigerators"
     }
   },
@@ -167,7 +167,7 @@
     "title": "CATEGORIES BOX",
     "children": ["image#category2", "link#category2"],
     "props": {
-      "blockClass": "categories-box"
+      "blockClass": "categories-box-col"
     }
   },
   "image#category2": {
@@ -176,8 +176,8 @@
       "title": "Mixers & Blenders",
       "link": "/small-appliances/mixers---blenders",
       "src": "assets/mixers.jpg",
-      "blockClass": "category-box",
-      "maxWidth": "100%"
+      "blockClass": "category-box"
+      // "maxWidth": "100%"
     }
   },
   "link#category2": {
@@ -192,7 +192,7 @@
     "title": "CATEGORIES BOX",
     "children": ["image#category3", "link#category3"],
     "props": {
-      "blockClass": "categories-box"
+      "blockClass": "categories-box-col"
     }
   },
   "image#category3": {
@@ -201,8 +201,8 @@
       "title": "Toasters",
       "link": "/small-appliances/toasters---grills",
       "src": "assets/toaster.jpg",
-      "blockClass": "category-box",
-      "maxWidth": "100%"
+      "blockClass": "category-box"
+      // "maxWidth": "100%"
     }
   },
   "link#category3": {
@@ -218,7 +218,7 @@
     "title": "CATEGORIES BOX",
     "children": ["image#category4", "link#category4"],
     "props": {
-      "blockClass": "categories-box"
+      "blockClass": "categories-box-col"
     }
   },
   "image#category4": {
@@ -227,8 +227,8 @@
       "title": "Ovens",
       "link": "/major-appliances/ranges---ovens",
       "src": "assets/oven.jpg",
-      "blockClass": "category-box",
-      "maxWidth": "100%"
+      "blockClass": "category-box"
+      // "maxWidth": "100%"
     }
   },
   "link#category4": {
@@ -244,7 +244,7 @@
     "title": "CATEGORIES BOX",
     "children": ["image#category5", "link#category5"],
     "props": {
-      "blockClass": "categories-box"
+      "blockClass": "categories-box-col"
     }
   },
   "image#category5": {
@@ -253,8 +253,8 @@
       "title": "Coffee-Makers",
       "link": "/small-appliances/coffee-makers",
       "src": "assets/coffee-maker.jpg",
-      "blockClass": "category-box",
-      "maxWidth": "100%"
+      "blockClass": "category-box"
+      // "maxWidth": "100%"
     }
   },
   "link#category5": {
@@ -265,7 +265,6 @@
       "blockClass": "link-category"
     }
   },
-
   "rich-text#top-deals-title": {
     "title": "TOP DEALS TITLE",
     "props": {
@@ -440,7 +439,7 @@
     "children": ["list-context.product-list#new-release"]
   },
   "list-context.product-list#new-release": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#without-comparison"],
     "children": ["slider-layout#new-release-products"],
     "props": {
       "orderBy": "OrderByReleaseDateDESC"
@@ -449,7 +448,7 @@
   "slider-layout#new-release-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
         "phone": 1
       },
@@ -464,7 +463,7 @@
     "children": ["list-context.product-list#discount"]
   },
   "list-context.product-list#discount": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#without-comparison"],
     "children": ["slider-layout#discount-products"],
     "props": {
       "orderBy": "OrderByBestDiscountDESC"
@@ -473,7 +472,7 @@
   "slider-layout#discount-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
         "phone": 1
       },

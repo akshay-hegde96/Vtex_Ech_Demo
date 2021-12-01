@@ -33,3 +33,11 @@
     height: 50px;
   }
 }
+
+.trigger--specifications{
+    display: flex;
+    flex-direction: row;
+}
+.content--specifications{
+    width: auto;
+}
