@@ -120,9 +120,38 @@
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       "tab-layout#product",
+      "shelf.relatedProducts",
       "shelf#related"
     ]
   },
+  
+  
+  //added related product shelf
+  "shelf.relatedProducts":{
+    "blocks":["product-summary.shelf"],
+    "props":{
+      "recommendation": "similars",
+      "hideOutOfStockItems": false,
+      "productList":{
+        "arrows":true,
+        "gap": "ph3",
+        "titleText": "Related Products"
+      }
+    }
+  },
+
+  "product-summary.shelf":{
+    "children":[ 
+      "product-summary-image",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+
+
   "tab-layout#product": {
     "children": ["tab-list#product", "tab-content#product"]
   },
