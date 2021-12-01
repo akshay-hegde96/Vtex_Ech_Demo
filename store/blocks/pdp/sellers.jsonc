@@ -48,7 +48,8 @@
     },
     "seller-body": {
       "children": [
-        "seller-row"
+        "seller-row",
+        "sellers-site"
       ]
     },
     "seller-row": {

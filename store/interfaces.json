@@ -65,5 +65,8 @@
   "store.product.product-comparison": {
     "around": ["comparison-context-wrapper"],
     "allowed": ["product-comparison-drawer"]
+  },
+  "sellers-site": {
+    "component": "SellersSite"
   }
 }
