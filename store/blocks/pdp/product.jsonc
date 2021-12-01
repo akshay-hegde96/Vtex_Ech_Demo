@@ -128,7 +128,7 @@
   
   //added related product shelf
   "shelf.relatedProducts":{
-    "blocks":["product-summary.shelf"],
+    "blocks":["product-summary.shelf#relatedProd"],
     "props":{
       "recommendation": "similars",
       "hideOutOfStockItems": false,
@@ -140,7 +140,7 @@
     }
   },
 
-  "product-summary.shelf":{
+  "product-summary.shelf#relatedProd":{
     "children":[ 
       "product-summary-image",
       "product-summary-name",
