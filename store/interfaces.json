@@ -71,5 +71,8 @@
   },
   "dealers-list": {
     "component": "DealerListWrapper"
+  },
+  "sellers-site": {
+    "component": "SellersSite"
   }
 }

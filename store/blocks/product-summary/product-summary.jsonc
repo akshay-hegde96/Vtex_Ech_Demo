@@ -20,6 +20,22 @@
       "product-comparison-block.selector"
     ]
   },
+  // ========== For sku changes in shelves, we can alter it here ============
+
+  //   "product-summary-sku-selector": {
+  //   "props":{
+  //     "hideImpossibleCombinations": false,
+  //     "showVariationsLabels": ["false"],
+  //     "visibleVariations":[  "color","colour","power rating","capacity"],
+  //     "imageHeight":35,
+  //     "imageWidth":35,
+  //   "visibility":"always",
+  //      "displayMode":"default",
+  //   "initialSelection":"complete"
+  //   }
+  // },
+  
+  // ================
   "product-summary.shelf#without-comparison": {
     "children": [
       "stack-layout#prodsum",
