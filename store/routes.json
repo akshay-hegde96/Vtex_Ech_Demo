@@ -47,5 +47,8 @@
   },
   "store.custom#product-comparison": {
     "path": "/product-comparison"
+  },
+  "store.custom#dealers-list": {
+    "path": "/dealers"
   }
 }

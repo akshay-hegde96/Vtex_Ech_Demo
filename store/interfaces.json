@@ -17,13 +17,13 @@
   "women-menu": {
     "component": "Womenmenu"
   },
-  "electronics-menu":{
+  "electronics-menu": {
     "component": "ElectronicsMenu"
   },
-  "smallApp-menu":{
+  "smallApp-menu": {
     "component": "SmallAppMenu"
   },
-  "majorApp-menu":{
+  "majorApp-menu": {
     "component": "MajorAppMenu"
   },
   "my-account-page.test-page": {
@@ -65,5 +65,11 @@
   "store.product.product-comparison": {
     "around": ["comparison-context-wrapper"],
     "allowed": ["product-comparison-drawer"]
+  },
+  "profile-input.preferences-input": {
+    "component": "PreferencesWrapper"
+  },
+  "dealers-list": {
+    "component": "DealerListWrapper"
   }
 }

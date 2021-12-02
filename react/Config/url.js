@@ -16,3 +16,7 @@ export const contactUsURL =
 //Sub Item API with schema approach
 // export const subItemURL =
 // "api/dataentities/subItem/search?_schema=subItems&_fields=item,menuId";
+
+//Dealers List  API
+export const dealersListURL =
+  "api/dataentities/DealerList/search?_schema=dealer&_fields=name,address,phone";
