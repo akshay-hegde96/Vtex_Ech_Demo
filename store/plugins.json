@@ -8,5 +8,8 @@
     "my-account-link.wishlist-link"
   ],
   "profile-display-container > profile-display": "profile-display.test-display",
-  "profile-input-container > profile-input": "profile-input.test-input"
+  "profile-input-container > profile-input": [
+    "profile-input.test-input",
+    "profile-input.preferences-input"
+  ]
 }
