@@ -1,0 +1,21 @@
+.productSummaryButton {
+    position: absolute;
+    top: 89%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#productButton{
+    width: 82%;
+    border-radius: 1px !important;
+    background-color: #eee !important;
+    justify-content: center;
+    color: black;
+    background-image: url('../../../assets/view-full-diagram.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 30px center;
+    border: 1px solid #eee;
+
+}

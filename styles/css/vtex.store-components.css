@@ -19,6 +19,15 @@
   margin: auto 10px;
 }
 
+.infoCardContainer--nissan{
+  border:1px solid red !important;
+}
+
+.infoCardCallActionContainer--nissan{
+  width: 100%;
+  margin-left: 1rem;
+  justify-content: center;
+}
 /* .infoCardContainer--info-card-slide {
   width: 100%;
   height: 350px;
@@ -360,6 +369,7 @@
 justify-content: center;
 } */
 
+
 /* =============== mobile-landscape ====================== */
 @media (max-width: 640px) and (orientation: landscape) {
 .skuSelectorName{
@@ -406,4 +416,29 @@ justify-content: center;
   position: relative;
   top: 10px;
   left: 55px;
+}
+.imageElement--fb, .imageElement--youtube, .imageElement--twitter, .imageElement--insta, .imageElement--pinterest{
+  margin-right: 10px;
+}
+.container--socialIcons{
+  background-color: black;
+}
+
+.infoCardHeadline--nissan-accessories{
+font-size: 1rem;
+font-weight: 400;
+}
+
+.infoCardCallActionContainer--nissan-accessories{
+  display: none;
+}
+
+.imageElement--image-container{
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.container{
+  padding-left: 50px;
+  padding-right: 50px;
 }

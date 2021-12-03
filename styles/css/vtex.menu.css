@@ -30,15 +30,15 @@
 
 /* ------------------------------------------------------------ */
 
-.styledLinkContent--shop,
-.styledLinkContent--my-account,
-.styledLinkContent--customer-service,
-.styledLinkContent--about {
-  font-size: 20px;
+.styledLinkContent--buying,
+.styledLinkContent--forOwners,
+.styledLinkContent--legal {
+  font-size: 14px;
   padding-bottom: 5px;
   color: rgb(255, 255, 255);
   cursor: default;
   font-weight: bold;
+  font-family: inherit;
 }
 
 .styledLinkContent--megaMenu-header {
@@ -51,26 +51,25 @@
 .styledLinkContent--megaMenu-header:active {
   color: rgb(14, 151, 14);
 }
-.styledLinkContent--electronics,
-.styledLinkContent--majorAppliances,
-.styledLinkContent--smallAppliances,
-.styledLinkContent--my-profile,
-.styledLinkContent--quick-orders,
-.styledLinkContent--my-orders,
-.styledLinkContent--returns,
-.styledLinkContent--gift-credit,
-.styledLinkContent--contact,
-.styledLinkContent--help,
-.styledLinkContent--shipping-policy,
-.styledLinkContent--privacy-policy,
-.styledLinkContent--term-of-use,
-.styledLinkContent--careers,
-.styledLinkContent--corporate-blog,
-.styledLinkContent--store-features,
-.styledLinkContent--upcoming-features,
-.styledLinkContent--about-us {
-  font-size: 15px;
+.styledLinkContent--buildYourNissan,
+.styledLinkContent--viewNismoCatalog,
+.styledLinkContent--nismoJapanPartsAndAccessories,
+.styledLinkContent--jdmNismoMerchandise,
+.styledLinkContent--nissanVipProgram,
+.styledLinkContent--omniParts,
+.styledLinkContent--manualsandguides,
+.styledLinkContent--recallInformation,
+.styledLinkContent--ownerPortal,
+.styledLinkContent--nissanService,
+.styledLinkContent--nissanVisaCreditCard,
+.styledLinkContent--nissanTireStore,
+.styledLinkContent--privacyPolicy,
+.styledLinkContent--doNotSellMyPersonalInformation,
+.styledLinkContent--warranty {
+  font-size: 12px;
   color: white;
+  margin-bottom: 5px !important;
+  font-family: 'Nissan Brand Regular_master', sans-serif !important;
 }
 
 /* =========== Tablet ================*/
