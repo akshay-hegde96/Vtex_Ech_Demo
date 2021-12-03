@@ -337,6 +337,7 @@
 justify-content: center;
 } */
 
+
 /* =============== mobile-landscape ====================== */
 @media (max-width: 640px) and (orientation: landscape) {
 .skuSelectorName{
@@ -364,4 +365,29 @@ justify-content: center;
   .skuSelectorItemTextValue{
     font-size: 10px !important;
   }
+}
+.imageElement--fb, .imageElement--youtube, .imageElement--twitter, .imageElement--insta, .imageElement--pinterest{
+  margin-right: 10px;
+}
+.container--socialIcons{
+  background-color: black;
+}
+
+.infoCardHeadline--nissan-accessories{
+font-size: 1rem;
+font-weight: 400;
+}
+
+.infoCardCallActionContainer--nissan-accessories{
+  display: none;
+}
+
+.imageElement--image-container{
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.container{
+  padding-left: 50px;
+  padding-right: 50px;
 }
