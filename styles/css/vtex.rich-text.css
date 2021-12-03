@@ -5,9 +5,14 @@
 }
 
 .container--shelfTitle {
-  color: #727273;
-  justify-content: center;
-  text-align: center;
+  max-width: 93%;
+  justify-content: left;
+  text-align: left;
+  margin-left: 25px;
+  padding-left: 30px;
+  font-size: 18px;
+  font-weight: bold !important;
+  border-bottom: 1px dashed #d8d8d8;
 }
 
 .headingLevel2--shelfTitle {

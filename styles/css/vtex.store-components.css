@@ -13,6 +13,15 @@
   margin: auto 10px;
 }
 
+.infoCardContainer--nissan{
+  border:1px solid red !important;
+}
+
+.infoCardCallActionContainer--nissan{
+  width: 100%;
+  margin-left: 1rem;
+  justify-content: center;
+}
 /* .infoCardContainer--info-card-slide {
   width: 100%;
   height: 350px;

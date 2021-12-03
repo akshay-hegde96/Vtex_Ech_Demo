@@ -38,14 +38,15 @@
   // ================
   "product-summary.shelf#without-comparison": {
     "children": [
-      "stack-layout#prodsum",
+      "stack-layout#nissan",
       "product-summary-name",
-      "product-list-price#summary",
-      "flex-layout.row#selling-price-savings",
-      "product-rating-inline",
+      //"product-list-price#summary",
+      "product-selling-price#summary",
+      //"flex-layout.row#selling-price-savings",
+      //"product-rating-inline",
       "product-summary-space",
-      "product-summary-sku-selector",
-      "add-to-cart-button"
+      //"product-summary-sku-selector"
+      "productsummary-button"
     ]
   },
   "product-summary-name": {
@@ -53,12 +54,47 @@
       "blockClass": "productNameGrid"
     }
   },
-  "flex-layout.col#productRating": {
+  "stack-layout#nissan":{
+    "children":["product-summary-image"]
+  },
+
+  "product-summary-image":{
+    "props": {
+      "showBadge": false,
+      "aspectRatio": "1:1",
+      "maxHeight": 300
+    }
+  },
+
+  "add-to-cart-button":{
+    "props":{
+      "text": "40300-9HP9A",
+      "isOneClickBuy":"false",
+      "blockClass":"button",
+      "customOneClickBuyLink": "https://parts.nissanusa.com/p/Nissan__Altima/16-Gunmetal-Alloy-Wheel/79577776/40300-9HP9A.html"
+    }
+  },
+
+  
+  /*"info-card#nissan":{
+    "props": {
+      "id": "info-card-nissan",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "callToActionText": "40300-9HP9A",	
+      "callToActionUrl": "https://parts.nissanusa.com/p/Nissan__Altima/16-Gunmetal-Alloy-Wheel/79577776/40300-9HP9A.html",
+      "blockClass": "nissan",
+      "textAlignment": "center"
+
+    }
+  },*/
+
+  /*"flex-layout.col#productRating": {
     "props": {
       "blockClass": "productRating"
     },
     "children": ["product-rating-inline"]
-  },
+  },/*
 
   /* "experimental__visibility-layout#productsummary":{
     "title":"Product Summary Banner",
