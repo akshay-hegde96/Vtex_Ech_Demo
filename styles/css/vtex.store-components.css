@@ -417,7 +417,7 @@ justify-content: center;
   top: 10px;
   left: 55px;
 }
-.imageElement--fb, .imageElement--youtube, .imageElement--twitter, .imageElement--insta, .imageElement--pinterest{
+/* .imageElement--fb, .imageElement--youtube, .imageElement--twitter, .imageElement--insta, .imageElement--pinterest{
   margin-right: 10px;
 }
 .container--socialIcons{
@@ -436,9 +436,9 @@ font-weight: 400;
 .imageElement--image-container{
   padding-left: 20px;
   margin-top: 10px;
-}
+} */
 
-.container{
+/* .container{
   padding-left: 50px;
   padding-right: 50px;
-}
+} */
