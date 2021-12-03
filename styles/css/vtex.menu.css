@@ -124,3 +124,24 @@
   color: green !important;
   padding-left: 1rem;
 }
+/* ========Nissan======= */
+.styledLinkContent--nissan-menu-item,.menuItem--nissan-menu-item--isOpen,.menuItem--nissan-menu-item--isClosed,.styledLinkContainer--nissan-menu-item{
+color: #3f3f40;
+margin-left: 5px !important;
+margin-right: 5px !important;
+font-weight: bold;
+}
+.submenuWrapper--isOpen{
+  background-color: #dedede;
+  width: 375px;
+}
+.menuItem--nissan-sub-header{
+  text-align: center;
+}
+.menuItem--nissan-sub-header:hover{
+  background-color: white;
+}
+.menuItem--nissan-sub-header{
+  padding: 10px 80px;
+  overflow: hidden;
+}

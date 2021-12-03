@@ -1,11 +1,17 @@
 .notificationBarContainer {
-  background-color: #e6f1e6;
-  color: #03034e;
-  font-weight: 700;
+  background-color: #eee;
+  color: #000;
+  font-weight: normal;
   font-size: 12px;
-  text-decoration: underline;
 }
-
+.notificationContent{
+  text-align: left;
+}
+.notificationBarInner{
+  justify-content: start;
+  min-height: unset;
+  padding: 6px 0;
+}
 .infoCardContainer--info-card-slide {
   object-fit: cover;
   width: 100%;
@@ -171,14 +177,14 @@
   font-size: 30px;
 }
 
-.searchBarContainer {
+/* .searchBarContainer {
   background-color: #d1d5c7;
   position: absolute;
   left: 0;
   top: 60px;
   z-index: 99999;
-}
-@media screen and (min-width: 1025px) {
+} */
+/* @media screen and (min-width: 1025px) {
   .searchBarContainer {
     padding: 0.75em 3em;
   }
@@ -187,7 +193,7 @@
   .searchBarContainer {
     padding: 0.4em;
   }
-}
+} */
 
 .productBrand--quickview {
   font-size: 30px;
@@ -260,6 +266,26 @@
   .notificationContent{
     text-align: center;
   }
+  .searchBarContainer {
+    background-color: #d1d5c7;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 99999;
+  }
+  .searchBarContainer {
+    padding: 0.75em 3em;
+  }
+  .searchBarContainer {
+    padding: 0.4em;
+  }
+  .searchBarInnerContainer--nissan-searchbar-one{
+  border: 1px solid gray;
+  border-radius: 0px;
+  position: unset !important;
+  left: 0px !important;
+  top: 0px !important;
+}
 }
 
 .skuSelectorSubcontainer,
@@ -319,9 +345,6 @@
 .imageElement--testIcons{
   padding: 0px 5px;
 }
-.notificationBarInner{
-  margin-top: 5px;
-}
 .confirmationText--newsletter{
   color: white;
 }
@@ -364,4 +387,23 @@ justify-content: center;
   .skuSelectorItemTextValue{
     font-size: 10px !important;
   }
+}
+
+/* ========== Nissan ================= */
+.imageElement--nissan-header-image{
+  border: 1px #e2e2e2 solid;
+  margin-right: 42px;
+  margin-top: 20px;
+}
+.searchBarInnerContainer--nissan-searchbar-one{
+  border: 1px solid gray;
+  border-radius: 0px;
+  position: relative;
+  left: 83px;
+  top: 4px;
+}
+.logoImage--nissan-logo{
+  position: relative;
+  top: 10px;
+  left: 55px;
 }

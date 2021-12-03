@@ -256,3 +256,40 @@
   color: transparent;
   margin-top: 1rem;
 }
+
+/* =========== Nissan ========== */
+.paragraph--nissan-header-text{
+  font-weight: bold !important;
+  font-size: 18px !important;
+  
+}
+.wrapper--nissan-header-text-second{
+  font-weight: 600 !important;
+  padding: 0px 20px 0 20px;
+  color: #fff !important;
+  font-size: 16px !important;
+  /* line-height: 18px !important; */
+  background-color: #c32323;
+
+}
+.paragraph--nissan-header-text-second{
+ line-height: 18px;
+ padding: 10px;
+ margin: 0px;
+}
+.paragraph--bar-label{
+  position: relative;
+  left: 225px;
+  border: 1px solid gray;
+  text-align: start;
+  padding: 7px 15px;
+  padding-right: 170px;
+}
+.container--bar-label2{
+  background-color: #c32323;
+  color: white;
+  font-size: small;
+  font-weight: 800;
+  padding: 0px 35px;
+  height: 35px;
+}
