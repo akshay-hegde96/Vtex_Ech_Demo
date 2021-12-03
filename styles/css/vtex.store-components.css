@@ -366,7 +366,12 @@ justify-content: center;
     font-size: 10px !important;
   }
 }
-
+.imageElement--fb, .imageElement--youtube, .imageElement--twitter, .imageElement--insta, .imageElement--pinterest{
+  margin-right: 10px;
+}
+.container--socialIcons{
+  background-color: black;
+}
 
 .infoCardHeadline--nissan-accessories{
 font-size: 1rem;

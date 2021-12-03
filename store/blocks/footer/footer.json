@@ -4,10 +4,11 @@
   },
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#newsletter",
       "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#social-icons",
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#footer-4-desktop",
+      "flex-layout.row#footer-5-desktop"
     ]
   },
   "flex-layout.row#newsletter":{
@@ -18,10 +19,9 @@
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#shops",
-      "vtex.menu@2.x:menu#footer-account",
-      "vtex.menu@2.x:menu#footer-customer-service",
-      "vtex.menu@2.x:menu#footer-about-company"
+      "vtex.menu@2.x:menu#buying",
+      "vtex.menu@2.x:menu#footer-forOwners",
+      "vtex.menu@2.x:menu#footer-legal"
     ],
     "props": {
       "blockClass": "footer-link",
@@ -36,57 +36,122 @@
       "blockClass": "newsletter"
     }
   },
-  "social-networks": {
-    "props": {
-      "showInColor": true,
-      "socialNetworks": [
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/Echidna/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/echidna/"
-        },
-        {
-          "name": "youtube",
-          "url": "https://www.youtube.com/channel/UCRb6sTiZi34CD7-kolwZMow"
-        },
-        {
-          "name": "twitter",
-          "url": "https://twitter.com/echidnainc"
-        },
-        {
-          "name": "Linkedin",
-          "url": "https://www.linkedin.com/company/echidna"
-        }
-      ]
+  "flex-layout.row#social-icons": {
+    "children": ["image#test1","image#test2","image#test3","image#test4","image#test5"],
+ "props":{
+    "preventHorizontalStretch":true,
+    "blockClass":"socialIcons"
+ }
+},
+
+"image#test1":{
+    "props":{
+        "src":"https://parts.nissanusa.com/images/nissan-oem-assets/icons/social-faceboook-white.png",
+        "maxHeight":45,
+        "blockClass":"fb",
+        "link": {
+            "attributeNofollow": false,
+            "attributeTitle": "",
+            "newTab": true,
+            "url": "/"
+          }
     }
-  },
-  "flex-layout.row#footer-2-desktop": {
-    "children": ["social-networks"],
-    "props": {
-      "blockClass": "social-networks"
+},
+"image#test2":{
+    "props":{
+        "src":"https://parts.nissanusa.com/images/nissan-oem-assets/icons/social-youtube-white.png",
+        "maxHeight":45,
+        "blockClass":"youtube",
+        "link": {
+            "attributeNofollow": false,
+            "attributeTitle": "",
+            "newTab": true,
+            "url": "/"
+          }
     }
-  },
+},
+"image#test3":{
+    "props":{
+        "src":"https://parts.nissanusa.com/images/nissan-oem-assets/icons/social-twitter-white.png",
+        "maxHeight":45,
+        "blockClass":"twitter",
+        "link": {
+            "attributeNofollow": false,
+            "attributeTitle": "",
+            "newTab": true,
+            "url": "/"
+          }
+    }
+},
+"image#test4":{
+    "props":{
+        "src":"https://parts.nissanusa.com/images/nissan-oem-assets/icons/social-instagram-white.png",
+        "maxHeight":45,
+        "blockClass":"insta",
+        "link": {
+            "attributeNofollow": false,
+            "attributeTitle": "",
+            "newTab": true,
+            "url": "/"
+          }
+    }
+},
+"image#test5":{
+    "props":{
+        "src":"https://parts.nissanusa.com/images/nissan-oem-assets/icons/social-pinterest-white.png",
+        "maxHeight":45,
+        "blockClass":"pinterest",
+        "link": {
+            "attributeNofollow": false,
+            "attributeTitle": "",
+            "newTab": true,
+            "url": "/"
+          }
+    }
+},
   "accepted-payment-methods": {
     "props": {
       "showInColor": true,
       "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
     }
   },
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#credits"],
-    "props": {
-      "blockClass": "credits"
+"flex-layout.row#footer-3-desktop": {
+    "children": ["rich-text#disclaimer"],
+     "props": {
+      "blockClass": "disclaimer"
     }
   },
-  "rich-text#credits": {
+  "rich-text#disclaimer": {
     "props": {
-      "text": "© Echidnainc, All rights reserved. Site built with VTEX. SSL CERTIFIED SECURE SITE.",
-      "blockClass": "credits"
+      "text": "*All prices are Manufacturers Suggested Retail Prices and do not include [tax and] installation charges. Dealer sets actual price.",
+      "blockClass": "disclaimer"
     }
   },
+  "flex-layout.row#footer-4-desktop":{
+    "children": ["rich-text#copy-right"],
+     "props": {
+      "blockClass": "copy-right"
+    }
+  },
+  "rich-text#copy-right": {
+    "props": {
+      "text": "© 2021 Nissan North America, Inc.",
+      "blockClass": "copy-right"
+    }
+  },
+  "flex-layout.row#footer-5-desktop":{
+    "children": ["rich-text#server-name"],
+     "props": {
+      "blockClass": "server-name"
+    }
+  },
+  "rich-text#server-name": {
+    "props": {
+      "text": "SPWEB37",
+      "blockClass": "server-name"
+    }
+  },
+
   "footer-layout.mobile": {
     "children": [
       "newsletter",
@@ -116,12 +181,16 @@
     }
   },
   "flex-layout.row#1-footer-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#buying",
+      "vtex.menu@2.x:menu#footer-forOwners",
+      "vtex.menu@2.x:menu#footer-legal"
+    ],
     "props": {
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "blockClass": "accordion"
-    },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+      "blockClass": "footer-link",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
   },
   "rich-text#footer-mobile": {
     "props": {
