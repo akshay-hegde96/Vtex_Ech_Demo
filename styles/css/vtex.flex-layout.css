@@ -215,6 +215,10 @@
     justify-content: center;
     display: flex;
   }
+
+  .flexRowContent--productSummaryMobile{
+    display: block !important;
+  }
 }
 
 .flexRowContent--productListPricing {

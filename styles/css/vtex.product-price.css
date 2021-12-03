@@ -28,7 +28,7 @@
   font-size: 1.25rem;
   font-weight: 600;
   color: #2e2e2e;
-}
+  }
 
 .savings--summary {
   background: #8bc34a;
@@ -82,9 +82,17 @@
   display: flex;
 }
 
+.currencyContainer--summary{
+  color: #c32323;
+  display: flex;
+  text-align: right;
+  justify-content: right;
+}
+
 .currencyCode, .currencyInteger, .currencyFraction, .currencyDecimal, .currencyGroup {
   font-size: 20px;
   padding: 0px 0px;
   margin: 0px 0px;
 }
+
 
