@@ -106,15 +106,32 @@
   display:none;
 }*/
 .flexRow--footer-link,
-.flexRow--social-networks,
 .flexRow--credits {
-  background: darkolivegreen;
+  background-color: black;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   color: white;
+  line-height: 1.42857143;
+  width: 100%;
 }
+.flexRow--socialIcons{
+  width: 100%;
+  line-height: 1.42857143;
+  background-color: black;
 
+}
+.flexRow--disclaimer{
+  width: 100%;
+  line-height: 1.42857143;
+  background-color: black;
+
+}
+.flexRowContent--socialIcons{
+  display: flex;
+  justify-content: end;
+  width: webkit-fill-available;
+  padding-right: 60px;
+  background-color: black;
+}
 .flexRowContent--menu-row :global(.vtex-menu-2-x-styledLink) {
   color: white;
 }
@@ -144,6 +161,7 @@
 
 .flexRowContent--footer-link {
   min-width: 900px;
+  padding-right: 500px;
 }
 
 .flexRow--social-networks-pdp {
@@ -197,6 +215,10 @@
     justify-content: center;
     display: flex;
   }
+
+  .flexRowContent--productSummaryMobile{
+    display: block !important;
+  }
 }
 
 .flexRowContent--productListPricing {
@@ -238,4 +260,46 @@
 {
   display: flex;
   height: auto;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--nissan-dealer-col1) {
+  border: 1px solid #ccc;
+  margin: 10px;
+background-color: #fafafa;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--dealer-row-container) {
+margin-bottom: 30px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--nissan-value-container){
+  background-image: url(https://parts.nissanusa.com/images/uploads/Assets/tile-link-advantage-mar2021.jpg);
+height: 200px;
+width: 100%;
+margin-left: 5px;
+display: block;
+background-repeat: no-repeat;
+position: relative;
+width: 100%;
+height: 200px;
+background-size: 100%;
+margin-bottom:30px;
+margin-top: 20px;
+border: 1px solid #ccc;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--nissan-event-container){
+  background-image: url(https://parts.nissanusa.com/images/uploads/Assets/tile-link-sxm-nissan.jpg);
+height: 200px;
+width: 100%;
+margin-left: 5px;
+display: block;
+background-repeat: no-repeat;
+position: relative;
+width: 100%;
+height: 200px;
+background-size: 100%;
+margin-bottom:30px;
+margin-top: 20px;
+border: 1px solid #ccc;
 }
