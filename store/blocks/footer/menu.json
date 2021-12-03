@@ -1,464 +1,294 @@
 {
-  "vtex.menu@2.x:menu#shops": {
+  "vtex.menu@2.x:menu#buying": {
     "props": {
       "orientation": "vertical",
-      "blockClass": "shop"
+      "blockClass": "buying"
     },
     "children": [
-      "menu-item#Shop",
-      "menu-item#electronics",
-      "menu-item#majorAppliances",
-      "menu-item#smallAppliances"
+      "menu-item#buying",
+      "menu-item#buildYourNissan",
+      "menu-item#viewNismoCatalog",
+      "menu-item#nismoJapanPartsAndAccessories",
+      "menu-item#jdmNismoMerchandise",
+      "menu-item#nissanVipProgram",
+      "menu-item#omniParts"
+
     ]
   },
-  "menu-item#Shop": {
+  "menu-item#buying": {
     "props": {
-      "id": "menu-item-shop",
-      "blockClass": "shop",
+      "id": "menu-item-buying",
+      "blockClass": "buying",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
+        "tagTitle": "buying",
+        "text": "BUYING"
       }
     }
   },
-  "menu-item#electronics": {
+  "menu-item#buildYourNissan": {
     "props": {
-      "id": "menu-item-electronics",
-      "blockClass": "electronics",
+      "id": "menu-item-buildYourNissan",
+      "blockClass": "buildYourNissan",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/electronics",
         "noFollow": false,
-        "tagTitle": "Electronics",
-        "text": "Electronics"
+        "tagTitle": "Build Your Nissan",
+        "text": "Build Your Nissan"
       }
     }
   },
-  "menu-item#majorAppliances": {
+  "menu-item#viewNismoCatalog": {
     "props": {
-      "id": "menu-item-majorAppliances",
-      "blockClass": "majorAppliances",
+      "id": "menu-item-viewNismoCatalog",
+      "blockClass": "viewNismoCatalog",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/major-appliances",
         "noFollow": false,
-        "tagTitle": "Major Appliances",
-        "text": "Major Appliances"
+        "tagTitle": "View NISMO Catalog",
+        "text": "View NISMO Catalog"
       }
     }
   },
-  "menu-item#smallAppliances": {
+  "menu-item#nismoJapanPartsAndAccessories": {
     "props": {
-      "id": "menu-item-smallAppliances",
-      "blockClass": "smallAppliances",
+      "id": "menu-item-nismoJapanPartsAndAccessories",
+      "blockClass": "nismoJapanPartsAndAccessories",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/small-appliances",
         "noFollow": false,
-        "tagTitle": "Small Appliances",
-        "text": "Small Appliances"
+        "tagTitle": "NISMO Japan Parts And Accessories",
+        "text": "NISMO Japan Parts \n And Accessories"
       }
     }
   },
-  "vtex.menu@2.x:menu#footer-customer-service": {
+  "menu-item#jdmNismoMerchandise": {
+    "props": {
+      "id": "menu-item-jdmNismoMerchandise",
+      "blockClass": "jdmNismoMerchandise",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "JDM NISMO Merchandise",
+        "text": "JDM NISMO Merchandise"
+      }
+    }
+  },
+  "menu-item#nissanVipProgram": {
+    "props": {
+      "id": "menu-item-nissanVipProgram",
+      "blockClass": "nissanVipProgram",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Nissan VIP Program",
+        "text": "Nissan VIP Program"
+      }
+    }
+  },
+  "menu-item#omniParts": {
+    "props": {
+      "id": "menu-item-omniParts",
+      "blockClass": "omniParts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "OMNIPARTS",
+        "text": "OMNIPARTS"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-forOwners": {
     "props": {
       "orientation": "vertical",
-      "blockClass": "footer-customer-service"
+      "blockClass": "footer-forOwners"
     },
     "children": [
-      "menu-item#customer-service",
-      "menu-item#contact-us",
-      "menu-item#help",
-      "menu-item#shipping-policy",
-      "menu-item#privacy-policy",
-      "menu-item#term-of-use"
+      "menu-item#forOwners",
+      "menu-item#manualsandguides",
+      "menu-item#recallInformation",
+      "menu-item#ownerPortal",
+      "menu-item#nissanService",
+      "menu-item#nissanVisaCreditCard",
+      "menu-item#nissanTireStore"
     ]
   },
-  "menu-item#customer-service": {
+  "menu-item#forOwners": {
     "props": {
-      "id": "menu-item-customer-service",
-      "blockClass": "customer-service",
+      "id": "menu-item-forOwners",
+      "blockClass": "forOwners",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Customer Service",
-        "text": "Customer Service"
+        "tagTitle": "FOR OWNERS",
+        "text": "FOR OWNERS"
       }
     }
   },
-  "menu-item#contact-us": {
+  "menu-item#manualsandguides": {
     "props": {
-      "id": "menu-item-contact",
-      "blockClass": "contact",
+      "id": "menu-item-manualsandguides",
+      "blockClass": "manualsandguides",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/contact-us",
         "noFollow": true,
-        "tagTitle": "Contact Us",
-        "text": "Contact Us"
+        "tagTitle": "Manuals & Guides",
+        "text": "Manuals & Guides"
       }
     }
   },
-  "menu-item#help": {
+  "menu-item#recallInformation": {
     "props": {
-      "id": "menu-item-help",
-      "blockClass": "help",
+      "id": "menu-item-recallInformation",
+      "blockClass": "recallInformation",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/faq",
         "noFollow": true,
-        "tagTitle": "Help/FAQ's",
-        "text": "Help/FAQ's"
+        "tagTitle": "Recall Information",
+        "text": "Recall Information"
       }
     }
   },
-  "menu-item#shipping-policy": {
+  "menu-item#ownerPortal": {
     "props": {
-      "id": "menu-item-shipping-policy",
-      "blockClass": "shipping-policy",
+      "id": "menu-item-ownerPortal",
+      "blockClass": "ownerPortal",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/shipping-policy",
         "noFollow": true,
-        "tagTitle": "Shipping Policy",
-        "text": "Shipping Policy"
+        "tagTitle": "Owner Portal",
+        "text": "Owner Portal"
       }
     }
   },
-  "menu-item#privacy-policy": {
+  "menu-item#nissanService": {
     "props": {
-      "id": "menu-item-privacy-policy",
-      "blockClass": "privacy-policy",
+      "id": "menu-item-nissanService",
+      "blockClass": "nissanService",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/sample-privacy",
         "noFollow": true,
+        "tagTitle": "Nissan Service",
+        "text": "Nissan Service"
+      }
+    }
+  },
+  "menu-item#nissanVisaCreditCard": {
+    "props": {
+      "id": "menu-item-nissanVisaCreditCard",
+      "blockClass": "nissanVisaCreditCard",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Nissan Visa Credit Card",
+        "text": "Nissan Visa Credit Card"
+      }
+    }
+  },
+  "menu-item#nissanTireStore": {
+    "props": {
+      "id": "menu-item-nissanTireStore",
+      "blockClass": "nissanTireStore",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Nissan Tire Store",
+        "text": "Nissan Tire Store"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-legal": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-legal"
+    },
+    "children": [
+      "menu-item#legal",
+      "menu-item#privacyPolicy",
+      "menu-item#doNotSellMyPersonalInformation",
+      "menu-item#warranty"
+    ]
+  },
+  
+
+  
+  "menu-item#legal": {
+    "props": {
+      "id": "menu-item-category-legal",
+      "blockClass": "legal",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Legal",
+        "text": "LEGAL"
+      }
+    }
+  },
+  "menu-item#privacyPolicy": {
+    "props": {
+      "id": "menu-item-privacyPolicy",
+      "blockClass": "privacyPolicy",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
         "tagTitle": "Privacy Policy",
         "text": "Privacy Policy"
       }
     }
   },
-  "menu-item#term-of-use": {
+  "menu-item#doNotSellMyPersonalInformation": {
     "props": {
-      "id": "menu-item-term-of-use",
-      "blockClass": "term-of-use",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/sample-terms",
-        "noFollow": true,
-        "tagTitle": "Term of use",
-        "text": "Term of use"
-      }
-    }
-  },
-  "vtex.menu@2.x:menu#footer-about-company": {
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "footer-about-company"
-    },
-    "children": [
-      "menu-item#about",
-      "menu-item#about-us",
-      "menu-item#careers",
-      "menu-item#corporate-blog",
-      "menu-item#store-features",
-      "menu-item#upcoming-features"
-    ]
-  },
-  "menu-item#about": {
-    "props": {
-      "id": "menu-item-about",
-      "blockClass": "about",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "noFollow": true,
-        "tagTitle": "About",
-        "text": "About"
-      }
-    }
-  },
-  "menu-item#about-us": {
-    "props": {
-      "id": "menu-item-about-us",
-      "blockClass": "about-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about-us",
-        "noFollow": true,
-        "tagTitle": "About Us",
-        "text": "About Us"
-      }
-    }
-  },
-  "menu-item#careers": {
-    "props": {
-      "id": "menu-item-careers",
-      "blockClass": "careers",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/careers",
-        "noFollow": true,
-        "tagTitle": "Careers",
-        "text": "Careers"
-      }
-    }
-  },
-  "menu-item#corporate-blog": {
-    "props": {
-      "id": "menu-item-corporate-blog",
-      "blockClass": "corporate-blog",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/corporate-blog",
-        "noFollow": true,
-        "tagTitle": "Corporate Blog",
-        "text": "Corporate Blog"
-      }
-    }
-  },
-  "menu-item#store-features": {
-    "props": {
-      "id": "menu-item-store-features",
-      "blockClass": "store-features",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/store-features",
-        "noFollow": true,
-        "tagTitle": "Store Features",
-        "text": "Store Features"
-      }
-    }
-  },
-  "menu-item#upcoming-features": {
-    "props": {
-      "id": "menu-item-upcoming-features",
-      "blockClass": "upcoming-features",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/upcoming-features",
-        "noFollow": true,
-        "tagTitle": "Upcoming Features",
-        "text": "Upcoming Features"
-      }
-    }
-  },
-  "vtex.menu@2.x:menu#footer-account": {
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "footer-account"
-    },
-    "children": [
-      "menu-item#my-account",
-      "menu-item#my-profile",
-      "menu-item#quick-orders",
-      "menu-item#my-orders"
-    ]
-  },
-  "vtex.menu@2.x:menu#footer-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#shop-mobile",
-      "menu-item#account-mobile",
-      "menu-item#customer-service-mobile",
-      "menu-item#about-mobile"
-    ]
-  },
-  "menu-item#shop-mobile": {
-    "props": {
-      "id": "menu-item-category-shop",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "blockClass": "shop-mobile",
-      "itemProps": {
-        "type": "internal",
-        "noFollow": true,
-        "tagTitle": "Shop",
-        "text": "Shop"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#shop"]
-  },
-  "vtex.menu@2.x:submenu.accordion#shop": {
-    "children": ["vtex.menu@2.x:menu#shop-accordion"]
-  },
-  "vtex.menu@2.x:menu#shop-accordion": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#electronics",
-      "menu-item#majorAppliances",
-      "menu-item#smallAppliances"
-    ]
-  },
-
-  "menu-item#account-mobile": {
-    "props": {
-      "id": "menu-item-category-account",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "blockClass": "my-account-mobile",
-      "itemProps": {
-        "type": "internal",
-        "noFollow": true,
-        "tagTitle": "My Account",
-        "text": "My Account"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#account"]
-  },
-  "vtex.menu@2.x:submenu.accordion#account": {
-    "children": ["vtex.menu@2.x:menu#account-accordion"]
-  },
-  "vtex.menu@2.x:menu#account-accordion": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#my-profile",
-      "menu-item#quick-orders",
-      "menu-item#my-orders"
-    ]
-  },
-  "menu-item#about-mobile": {
-    "props": {
-      "blockClass": "about-mobile",
-      "itemProps": {
-        "tagTitle": "About",
-        "text": "About"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#about"]
-  },
-  "vtex.menu@2.x:submenu.accordion#about": {
-    "children": ["vtex.menu@2.x:menu#about-mobile"]
-  },
-  "vtex.menu@2.x:menu#about-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#about-us",
-      "menu-item#careers",
-      "menu-item#corporate-blog",
-      "menu-item#store-features",
-      "menu-item#upcoming-features"
-    ]
-  },
-  "menu-item#customer-service-mobile": {
-    "props": {
-      "blockClass": "customer-service-mobile",
-      "itemProps": {
-        "tagTitle": "Customer Service",
-        "text": "Customer Service"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#customer-service-mobile"]
-  },
-  "vtex.menu@2.x:submenu.accordion#customer-service-mobile": {
-    "children": ["vtex.menu@2.x:menu#footer-customer-service-mobile"]
-  },
-  "vtex.menu@2.x:menu#footer-customer-service-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#contact-us",
-      "menu-item#help",
-      "menu-item#shipping-policy",
-      "menu-item#privacy-policy",
-      "menu-item#term-of-use"
-    ]
-  },
-  "menu-item#my-account": {
-    "props": {
-      "id": "menu-item-category-my-account",
-      "blockClass": "my-account",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "noFollow": true,
-        "tagTitle": "My Account",
-        "text": "My Account"
-      }
-    }
-  },
-  "menu-item#my-profile": {
-    "props": {
-      "id": "menu-item-my-profile",
-      "blockClass": "my-profile",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/account#/profile",
-        "noFollow": false,
-        "tagTitle": "My Profile",
-        "text": "My Profile"
-      }
-    }
-  },
-  "menu-item#quick-orders": {
-    "props": {
-      "id": "menu-item-quick-orders",
-      "blockClass": "quick-orders",
+      "id": "menu-item-doNotSellMyPersonalInformation",
+      "blockClass": "doNotSellMyPersonalInformation",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -466,24 +296,23 @@
         "type": "internal",
         "href": "/quickorder",
         "noFollow": false,
-        "tagTitle": "Quick Orders",
-        "text": "Quick Orders"
+        "tagTitle": "Do Not Sell My Personal Information",
+        "text": "Do Not Sell My \n Personal Information"
       }
     }
   },
-  "menu-item#my-orders": {
+  "menu-item#warranty": {
     "props": {
-      "id": "menu-item-my-orders",
-      "blockClass": "my-orders",
+      "id": "menu-item-warranty",
+      "blockClass": "warranty",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/account#/orders",
         "noFollow": false,
-        "tagTitle": "My Orders",
-        "text": "My Orders"
+        "tagTitle": "Warranty",
+        "text": "Warranty"
       }
     }
   },
