@@ -2,6 +2,7 @@
   "store.home": {
     "blocks": [
       "notification.bar",
+      "flex-layout.row#home", // home
       "slider-layout#slides", //caraousal
       "flex-layout.row#demo", // categories
       /* You can make references to blocks defined in other files.
@@ -23,16 +24,13 @@
       "defaultContentVisibility": "hidden"
     }
   },
-
   // Notification-bar
   "notification.bar": {
     "props": {
       "content": "FREE SHIPPING: Applies to USA orders over $2000+ | excluding HI, PR, AK, and CAN"
     }
   },
-
   //-----------------------------caraousal------------------------------------------
-
   "slider-layout#slides": {
     "props": {
       "itemsPerPage": {
@@ -56,7 +54,6 @@
       "video#banner-homepage"
     ]
   },
-
   "info-card#slide1": {
     "props": {
       "imageUrl": "assets/slider0.jpg",
@@ -70,7 +67,6 @@
       "blockClass": "info-card-slide"
     }
   },
-
   "info-card#slide2": {
     "props": {
       "imageUrl": "assets/slider2.jpg",
@@ -102,21 +98,197 @@
       "blockClass": "slider-videoContainer"
     }
   },
-  //------------------category--------------------------------------------------------
+  //------------------ flex-layout.row#home --------------------------------------------------------
+  "flex-layout.row#home": {
+    "children": [
+      "flex-layout.col#Parts",
+      "flex-layout.col#Accessories",
+      "flex-layout.col#Offers"
+    ],
+    "props": {
+      "blockClass": "categories-row"
+    }
+  },
+  "flex-layout.col#Parts": {
+    "props" : {
+      "blockClass": "Parts"
+    },
+    "children": []
+  },
+  "flex-layout.col#Accessories": {
+    "props" : {
+      "blockClass": "Accessories"
+    },
+    "children": [
+      "rich-text#Accessories",
+      "flex-layout.col#AccessoriesCol1",
+      "flex-layout.row#AccessoriesRow2",
+      "flex-layout.row#AccessoriesRow3"
+    ]
+  },
+  "flex-layout.col#Offers": {
+    "props" : {
+      "blockClass": "Offers"
+    },
+    "children": [
+      "rich-text#Offers",
+      "info-card#Offers",
+      "rich-text#Promotions",
+      "info-card#Promotions"
+    ]
+  },
 
+  "rich-text#Accessories" : {
+    "props" : {
+      "text" : "Accessories",
+      "textColor": "red",
+      "font": "t-heading-25",
+      "blockClass": "Accessories",
+      "textAlignment" : "LEFT",
+      "textPosition" : "LEFT"
+    }
+  },
+  "flex-layout.col#AccessoriesCol1" : {
+    "props" : { "blockClass": "Accessories"},
+    "children": ["rich-text#Accessories1", "rich-text#Accessories2"]
+  },
+  "flex-layout.row#AccessoriesRow2" : {
+    "props" : { "blockClass": "Accessories"},
+    "children": ["info-card#Electronics", "info-card#Equipment", "info-card#Exterior"]
+  },
+  "flex-layout.row#AccessoriesRow3" : {
+    "props" : { "blockClass": "Accessories"},
+    "children": ["info-card#Interior", "info-card#NISMO", "info-card#TruckTowing"]
+  },
+  "rich-text#Accessories1" : {
+    "props" : {
+      "text" : "View All Accessories",
+      "textColor": "red",
+      "font": "t-heading-15",
+      "blockClass": "Accessories1"
+    }
+  },
+  "rich-text#Accessories2" : {
+    "props" : {
+      "text" : "Maintain the intelligent performance of your Nissan with Genuine Nissan Accessories.",
+      "textColor": "red",
+      "font": "t-heading-10",
+      "blockClass": "Accessories2"
+    }
+  },
+  "info-card#Electronics": {
+    "props": {
+      "blockClass" : "Electronics",
+      "imageUrl": "https://www.nissanusa.com/content/dam/Nissan/us/owners/ownership-redesign/2021-benefits-nissan-connect-redesign/bluetooth-audio-touchscreen-display.jpg",
+      "isFullModeStyle": true,
+      "headline": "Electronics",
+      "subhead": "Upgrade your Nissan with innovative technology additions.",
+      "textPosition": "center",
+      "callToActionMode" : "none"
+    }
+  },
+  "info-card#Equipment": {
+    "props": {
+      "blockClass" : "Equipment",
+      "imageUrl": "https://www.nissanusa.com/content/dam/Nissan/us/owners/ownership-redesign/2021-benefits-nissan-connect-redesign/touch-screen-showing-navigation.jpg",
+      "isFullModeStyle": true,
+      "headline": "Equipment",
+      "subhead":"Explore more with the right accesories for your Nissan.",
+      "textPosition": "center",
+      "callToActionMode" : "none"
+    }
+  },
+  "info-card#Exterior": {
+    "props": {
+      "blockClass" : "Exterior",
+      "imageUrl": "https://www.nissanusa.com/content/dam/Nissan/us/vehicles/discontinuedvehicles/juke/2017-nissan-juke-crossover-customized-exterior-pfa.jpg.ximg.l_full_m.smart.jpg",
+      "isFullModeStyle": true,
+      "headline": "Exterior",
+      "subhead": "Enhance and upgrade the aesthetic of your Nissan",
+      "textPosition": "center",
+      "callToActionMode" : "none"
+    }
+  },
+  "info-card#Interior": {
+    "props": {
+      "blockClass" : "Interior",
+      "imageUrl": "https://www.nissanusa.com/content/dam/Nissan/us/vehicles/preorder/Modal/Design/2022-ariya-interior-cockpit-uslhd-arypl033.jpg.ximg.l_12_m.smart.jpg",
+      "isFullModeStyle": true,
+      "headline": "Interior",
+      "subhead": "Bring more to your daily drive with interior accesories for your Nissan.",
+      "textPosition": "center",
+      "callToActionMode" : "none"
+    }
+  },
+  "info-card#NISMO": {
+    "props": {
+      "blockClass" : "NISMO",
+      "imageUrl": "https://www-europe.nissan-cdn.net/content/dam/Nissan/nissan_europe/shop-at-home/vs_new.jpg.ximg.l_12_m.smart.jpg",
+      "isFullModeStyle": true,
+      "headline": "NISMO",
+      "subhead":"Experiance ultimate Nissan performance inspired by the race track.",
+      "textPosition": "center",
+      "callToActionMode" : "none"
+    }
+  },
+  "info-card#TruckTowing": {
+    "props": {
+      "blockClass" : "TruckTowing",
+      "imageUrl": "https://di-uploads-pod26.dealerinspire.com/nissanofdowntownla/uploads/2020/03/nissan-frontier-towing-1.png",
+      "isFullModeStyle": true,
+      "headline": "Truck and Towing",
+      "subhead":"Genuine accesories for whatever you're hauling, building or moving",
+      "textPosition": "center",
+      "callToActionMode" : "none"
+    }
+  },
+ "rich-text#Offers" : {
+    "props" : {
+      "text" : "Offers",
+      "textColor": "red",
+      "font": "t-heading-25",
+      "blockClass": "Offers"
+    }
+  },
+  "rich-text#Promotions" : {
+    "props" : {
+      "text" : "Promotions",
+      "textColor": "red",
+      "font": "t-heading-25",
+      "blockClass": "Promotions"
+    }
+  },
+  "info-card#Offers": {
+    "props": {
+      "imageUrl": "https://www.nissanusa.com/ngst-static/inventory/seo/NGST_NIS_SocialShareDefault.jpg",
+      "isFullModeStyle": true,
+      "headline": "Join the Nissan VIP Program",
+      "textPosition": "center",
+      "callToActionMode": "none",
+      "blockClass": "Offers"
+    }
+  },
+  "info-card#Promotions": {
+    "props": {
+      "imageUrl": "https://www.nissanusa.com/content/dam/Nissan/us/homepage/hero/ariya/2023-nissan-ariya-electric-crossover-suv.jpg",
+      "isFullModeStyle": true,
+      "headline": "Promotions",
+      "textPosition": "center",
+      "callToActionMode": "none",
+      "blockClass": "Promotions"
+    }
+  },
+  //------------------category--------------------------------------------------------
   "flex-layout.row#demo": {
     "children": ["flex-layout.col#left", "flex-layout.col#right"],
     "props": {
       "blockClass": "categories-row"
     }
   },
-
   "flex-layout.col#left": {
     "children": ["stack-layout#cta-clothing", "stack-layout#cta-sale"]
   },
-
   //-----------------category 1-------------------------------------------
-
   "stack-layout#cta-clothing": {
     "props": {
       "blockClass": "category"
@@ -130,7 +302,6 @@
       "height": "260px"
     }
   },
-
   "link#cta-clothing": {
     "props": {
       "blockClass": "cta-button",
@@ -151,14 +322,12 @@
     }
   },
   //--------------------------category 2--------------------------------------------
-
   "stack-layout#cta-sale": {
     "props": {
       "blockClass": "category"
     },
     "children": ["image#sale", "link#cta-sale"]
   },
-
   "image#sale": {
     "props": {
       "src": "assets/category2.jpg",
@@ -179,13 +348,10 @@
     },
     "children": ["icon-caret#right"]
   },
-
   "flex-layout.col#right": {
     "children": ["stack-layout#cta-shoes", "stack-layout#cta-racing"]
   },
-
   //-----------------category 3-------------------------------------------
-
   "stack-layout#cta-shoes": {
     "props": {
       "blockClass": "category"
@@ -199,7 +365,6 @@
       "height": "350px"
     }
   },
-
   "link#cta-shoes": {
     "props": {
       "blockClass": "cta-button",
@@ -213,16 +378,13 @@
     },
     "children": ["icon-caret#right"]
   },
-
   //-----------------category 4-------------------------------------------
-
   "stack-layout#cta-racing": {
     "props": {
       "blockClass": "category"
     },
     "children": ["image#racing", "link#cta-racing"]
   },
-
   "image#racing": {
     "props": {
       "src": "assets/category4.webp",
@@ -243,9 +405,7 @@
     },
     "children": ["icon-caret#right"]
   },
-
   //--------------------------------View All Collections---------------------------
-
   "info-card#shelf": {
     "props": {
       "id": "info-card-shelf",
@@ -258,7 +418,6 @@
       "textAlignment": "center"
     }
   },
-
   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
   },
@@ -295,7 +454,6 @@
       "trigger": "load"
     }
   },
-
   "modal-layout#sale": {
     "children": ["modal-header#sale", "info-card#modal-content"]
   },

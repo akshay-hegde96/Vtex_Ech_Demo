@@ -233,3 +233,9 @@
 .flexRowContent--main-menu-static {
   box-shadow: 0px 1px 8px 0px #808080f5;
 }
+
+.flexRowContent--categories-row
+{
+  display: flex;
+  height: auto;
+}

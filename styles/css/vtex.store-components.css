@@ -365,3 +365,74 @@ justify-content: center;
     font-size: 10px !important;
   }
 }
+
+.infoCardContainer--Electronics,
+.infoCardContainer--Equipment,
+.infoCardContainer--Exterior,
+.infoCardContainer--Interior,
+.infoCardContainer--NISMO,
+.infoCardContainer--TruckTowing
+{
+  height: 30vh;
+  vertical-align: top;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+.infoCardContainer--Offers,
+.infoCardContainer--Promotions
+{
+  height: 30vh;
+  vertical-align: top;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+.infoCardTextContainer--Electronics,
+.infoCardTextContainer--Equipment,
+.infoCardTextContainer--Exterior,
+.infoCardTextContainer--Interior,
+.infoCardTextContainer--NISMO,
+.infoCardTextContainer--TruckTowing,
+.infoCardTextContainer--Offers,
+.infoCardTextContainer--Promotions
+{
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  position: relative;
+  top: -30px;
+}
+
+.infoCardHeadline--Electronics,
+.infoCardHeadline--Equipment,
+.infoCardHeadline--Exterior,
+.infoCardHeadline--Interior,
+.infoCardHeadline--NISMO,
+.infoCardHeadline--TruckTowing,
+.infoCardHeadline--Offers,
+.infoCardHeadline--Promotions
+{
+  font-size: 10px;
+  color: red;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.infoCardSubhead--Electronics,
+.infoCardSubhead--Equipment,
+.infoCardSubhead--Exterior,
+.infoCardSubhead--Interior,
+.infoCardSubhead--NISMO,
+.infoCardSubhead--TruckTowing,
+.infoCardSubhead--Offers,
+.infoCardSubhead--Promotions
+{
+  font-size: 7px;
+  color: black;
+  margin: 0px;
+  vertical-align: text-top;
+}

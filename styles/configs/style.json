@@ -57,7 +57,7 @@
         "background": {
           "base": "#ffffff",
           "base--inverted": "#03044e",
-          "action-primary": "#ad2697",
+          "action-primary": "#eeeeee !important",
           "action-secondary": "#eef3f7",
           "emphasis": "#f71963",
           "disabled": "#f2f4f5",
@@ -74,7 +74,7 @@
           "muted-5": "#f2f4f5"
         },
         "hover-background": {
-          "action-primary": "#942281",
+          "action-primary": "red",
           "action-secondary": "#dbe9fd",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
@@ -90,7 +90,7 @@
           "muted-5": "#f2f4f5"
         },
         "active-background": {
-          "action-primary": "#942281",
+          "action-primary": "red",
           "action-secondary": "#d2defc",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
@@ -139,6 +139,7 @@
           "warning--faded": "#fff6e0"
         },
         "active-text": {
+          "action-primary": "black",
           "link": "#0c389f",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
@@ -149,7 +150,7 @@
           "warning--faded": "#fff6e0"
         },
         "border": {
-          "action-primary": "#ad2697",
+          "action-primary": "#eeeeee",
           "action-secondary": "#eef3f7",
           "emphasis": "#f71963",
           "disabled": "#e3e4e6",
@@ -166,7 +167,7 @@
           "muted-5": "#f2f4f5"
         },
         "hover-border": {
-          "action-primary": "#ad2697",
+          "action-primary": "red",
           "action-secondary": "#dbe9fd",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
@@ -182,7 +183,7 @@
           "muted-5": "#f2f4f5"
         },
         "active-border": {
-          "action-primary": "#0c389f",
+          "action-primary": "red",
           "action-secondary": "#d2defc",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
@@ -200,7 +201,7 @@
         "on": {
           "base": "#3f3f40",
           "base--inverted": "#ffffff",
-          "action-primary": "#ffffff",
+          "action-primary": "black",
           "action-secondary": "#0F3E99",
           "emphasis": "#ffffff",
           "disabled": "#979899",
@@ -253,84 +254,84 @@
         "measure": [30, 34, 20],
         "styles": {
           "heading-1": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Nissan Brand Regular_master,sans-serif !important;",
             "fontWeight": "700",
-            "fontSize": "3rem",
+            "fontSize": "2rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-2": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Nissan Brand Regular_master, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "700",
-            "fontSize": "2.25rem",
+            "fontSize": "1.25rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-3": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Nissan Brand Regular_master, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "700",
-            "fontSize": "1.75rem",
+            "fontSize": "0.75rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-4": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Nissan Brand Regular_master, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "normal",
-            "fontSize": "1.5rem",
+            "fontSize": "0.5rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-5": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Nissan Brand Regular_master, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "normal",
-            "fontSize": "1.25rem",
+            "fontSize": "0.25rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-6": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Nissan Brand Regular_master, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "normal",
-            "fontSize": "1.25rem",
+            "fontSize": "0.25rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "body": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Nissan Brand Regular_master, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "1rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "small": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Nissan Brand Regular_master, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "0.875rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "mini": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Nissan Brand Regular_master, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "0.75rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "action": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Nissan Brand Regular_master, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "500",
             "fontSize": "1rem",
             "textTransform": "uppercase",
             "letterSpacing": "0"
           },
           "action--small": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Nissan Brand Regular_master, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "500",
             "fontSize": "0.875rem",
             "textTransform": "uppercase",
             "letterSpacing": "0"
           },
           "action--large": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Nissan Brand Regular_master, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "500",
             "fontSize": "1.25rem",
             "textTransform": "uppercase",
