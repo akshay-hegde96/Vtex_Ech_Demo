@@ -1,0 +1,49 @@
+{
+    "store.custom#event-infocard": {
+      "blocks": [
+        "flex-layout.row#nissan-event"
+      ]
+    },
+  
+    "flex-layout.row#nissan-event": {
+      "children": [
+        "image#nissan-Event",
+        "flex-layout.col#text-event"
+      ]
+    },
+  
+    "flex-layout.col#text-event": {
+      "children": [
+        "rich-text#event-title",
+        "rich-text#event-content"
+      ],
+      "props": {
+        "blockclass": "info-card2",
+        "preventVerticalStretch": true
+      }
+    },
+  
+    "rich-text#event-title": {
+      "props": {
+        "text":"The siriusXm Listen Free Event is on now.",
+        "blockClass": "nissanEvent"
+      }
+    },
+  
+    "rich-text#event-content": {
+        "props": {
+          "text": "We've turned 100+ SXM channels on in your car and on the SXM App.Enjoy experty curated ad-free music,sports,comedy talk and news for free thru Dec 6",
+          "blockClass": "event-content"
+        }
+      },
+
+      "image#nissan-Event": {
+      "props": {
+        "src": "assets/nissanInfo3.jpg",
+        "maxHeight": "",
+        "maxWidth": "",
+        "blockClass": "nissan-info2"
+      }
+    }
+  }
+  
