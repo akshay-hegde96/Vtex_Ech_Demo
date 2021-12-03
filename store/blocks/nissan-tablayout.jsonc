@@ -1,0 +1,126 @@
+{
+    "store.custom#nissan": {
+    "blocks": [
+      "tab-layout#home"
+    ]
+  },
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home",
+      "tab-content#home"
+    ],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "home1"
+    }
+  },
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#home1",
+      "tab-list.item#home2",
+      "tab-list.item#home3"
+    ]
+  },
+  "tab-list.item#home1": {
+    "props": {
+      "tabId": "home1",
+      "label": "Tony Nissan"
+     // "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#home2": {
+    "props": {
+      "tabId": "home2",
+      "label": "New City Nissan 2"
+    }
+  },
+
+  "tab-list.item#home3": {
+    "props": {
+      "tabId": "home3",
+      "label": "King Windard Nissan"
+    }
+  },
+
+"tab-content#home": {
+   "children": [
+     "tab-content.item#home1",
+     "tab-content.item#home2",
+     "tab-content.item#home3"
+   ]
+ },
+ "tab-content.item#home1": {
+   "children": [
+     //"carousel#home"
+     "rich-text#question-home1",
+     "rich-text#link-home1"
+   ],
+   "props": {
+     "tabId": "home1"
+   }
+ },
+ "tab-content.item#home2": {
+   "children": [
+     //"shelf#home",
+     //"info-card#home",
+     "rich-text#question-home2",
+     "rich-text#link-home2"
+     //"newsletter"
+   ],
+   "props": {
+     "tabId": "home2"
+   }
+ },
+
+ "tab-content.item#home3": {
+    "children": [
+      //"shelf#home",
+      //"info-card#home",
+      "rich-text#question-home3",
+      "rich-text#link-home3"
+      //"newsletter"
+    ],
+    "props": {
+      "tabId": "home3"
+    }
+  },
+
+ "rich-text#question-home1": {
+    "props": {
+      "text": "Tony Nissan.",
+      "blockClass": "question-home1"
+    }
+  },
+  "rich-text#link-home1": {
+    "props": {
+      "text": "Distance:7822.03 ml",
+      "blockClass": "link-home1"
+    }
+  },
+  "rich-text#question-home2": {
+    "props": {
+      "text": "New City Nissan",
+      "blockClass": "question-home2"
+    }
+  },
+  "rich-text#link-home2": {
+    "props": {
+      "text": "Distance: 7830.77 ml",
+      "blockClass": "link-home2"
+    }
+  },
+
+  "rich-text#question-home3": {
+    "props": {
+      "text": "King Windard Nissan",
+      "blockClass": "question-home3"
+    }
+  },
+  "rich-text#link-home3": {
+    "props": {
+      "text": "Distance: 7833.31 ml",
+      "blockClass": "link-home3"
+    }
+  }
+
+}
