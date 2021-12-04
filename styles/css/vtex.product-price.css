@@ -84,12 +84,19 @@
   flex-flow: row;
 }
 
+.currencyContainer--summary {
+  color: #c32323;
+  display: flex;
+  text-align: right;
+  justify-content: right;
+}
+
 .currencyCode,
 .currencyInteger,
 .currencyFraction,
 .currencyDecimal,
 .currencyGroup {
-  font-size: 16px;
+  font-size: 20px;
   padding: 0px 0px;
   margin: 0px 0px;
 }

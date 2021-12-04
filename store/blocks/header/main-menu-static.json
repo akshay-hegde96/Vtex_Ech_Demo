@@ -1,30 +1,38 @@
 {
+  "flex-layout.row#menu-row":{
+"props":{
+  "blockClass":"nissan-menu-row"
+},
+"children":[
+  "vtex.menu@2.x:menu#main-menu-static"
+]
+  },
   "vtex.menu@2.x:menu#main-menu-static": {
     "props": {
-      "experimentalOptimizeRendering": true
+      "experimentalOptimizeRendering": true   
     },
     "children": [
-      "menu-item#static-category-electronics",
-      "menu-item#static-category-major-appliances",
-      "menu-item#static-category-small-appliances",
-
-      "menu-item#sales"
+      "menu-item#static-category-parts",
+      "menu-item#static-category-accessories",
+      "menu-item#static-category-marchandise",
+      "menu-item#static-category-nismo",
+      "menu-item#static-category-blog"
     ]
   },
-  "menu-item#static-category-electronics": {
+  "menu-item#static-category-parts": {
     "props": {
-      "id": "menu-item-category-electronics",
+      "id": "menu-item-category-parts",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/electronics",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "Electronics",
-        "text": "Electronics"
+        "tagTitle": "PARTS",
+        "text": "PARTS"
       },
-      "blockClass": "megaMenu-header"
+      "blockClass": "nissan-menu-item"
     },
     "blocks": ["vtex.menu@2.x:submenu#static-category-electronics"]
   },
@@ -37,96 +45,274 @@
   "vtex.menu@2.x:menu#static-category-electronics": {
     "props": {
       "orientation": "vertical",
-      "blockClass": "submenu-container"
+      "blockClass": "nissan-submenu-container"
     },
     "children": [
-      "menu-item#category-electronics-tvs",
-      "menu-item#category-electronics-laptops",
-      "menu-item#category-electronics-cameras",
-      "menu-item#category-electronics-headphones"
+      "menu-item#category-parts-accessories",
+      "menu-item#category-parts-body",
+      "menu-item#category-parts-brakes",
+      "menu-item#category-parts-cooling",
+      "menu-item#category-parts-electrical",
+      "menu-item#category-parts-engine",
+      "menu-item#category-parts-evsystem",
+      "menu-item#category-parts-exhaust",
+      "menu-item#category-parts-fuel",
+      "menu-item#category-parts-hvac",
+      "menu-item#category-parts-merchandise",
+      "menu-item#category-parts-other",
+      "menu-item#category-parts-suspension",
+      "menu-item#category-parts-transmission"
     ]
   },
-  "menu-item#category-electronics-tvs": {
+  "menu-item#category-parts-accessories": {
     "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-electronics-tvs",
+      "blockClass": "nissan-sub-header",
+      "id": "menu-item-category-parts-accessories",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/electronics/tvs",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "TVs",
-        "text": "TVs"
+        "tagTitle": "Accessories",
+        "text": "Accessories"
       }
     }
   },
-  "menu-item#category-electronics-laptops": {
+  "menu-item#category-parts-body": {
     "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-electronics-laptops",
+      "blockClass": "nissan-sub-header",
+      "id": "menu-item-category-parts-body",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/electronics/laptops",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "Laptops",
-        "text": "Laptops"
+        "tagTitle": "Body,Interior and Trim",
+        "text": "Body,Interior and Trim"
       }
     }
   },
-  "menu-item#category-electronics-cameras": {
+  "menu-item#category-parts-brakes": {
     "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-electronics-cameras",
+      "blockClass": "nissan-sub-header",
+      "id": "menu-item-category-parts-brakes",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/electronics/cameras",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "Cameras",
-        "text": "Cameras"
+        "tagTitle": "Brakes",
+        "text": "Brakes"
       }
     }
   },
-  "menu-item#category-electronics-headphones": {
+  "menu-item#category-parts-cooling": {
     "props": {
-      "blockClass": "sub-header",
-      "id": "menu-item-category-electronics-headphones",
+      "blockClass": "nissan-sub-header",
+      "id": "menu-item-category-parts-cooling",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/electronics/headphones",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "Headphones",
-        "text": "Headphones"
+        "tagTitle": "Cooling System",
+        "text": "Cooling System"
+      }
+    }
+  },
+  "menu-item#category-parts-electrical": {
+    "props": {
+      "blockClass": "nissan-sub-header",
+      "id": "menu-item-category-parts-electrical",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Electrical System",
+        "text": "Electrical System"
+      }
+    }
+  },
+  "menu-item#category-parts-engine": {
+    "props": {
+      "blockClass": "nissan-sub-header",
+      "id": "menu-item-category-parts-engine",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Engine",
+        "text": "Engine"
+      }
+    }
+  },
+  "menu-item#category-parts-evsystem": {
+    "props": {
+      "blockClass": "nissan-sub-header",
+      "id": "menu-item-category-parts-evsystem",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "EV System",
+        "text": "EV System"
+      }
+    }
+  },
+  "menu-item#category-parts-exhaust": {
+    "props": {
+      "blockClass": "nissan-sub-header",
+      "id": "menu-item-category-parts-exhaust",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Exhaust System",
+        "text": "Exhaust System"
+      }
+    }
+  },
+  "menu-item#category-parts-fuel": {
+    "props": {
+      "blockClass": "nissan-sub-header",
+      "id": "menu-item-category-parts-fuel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Fuel System",
+        "text": "Fuel System"
+      }
+    }
+  },
+  "menu-item#category-parts-hvac": {
+    "props": {
+      "blockClass": "nissan-sub-header",
+      "id": "menu-item-category-parts-hvac",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "HV AC",
+        "text": "HV AC"
+      }
+    }
+  },
+  "menu-item#category-parts-merchandise": {
+    "props": {
+      "blockClass": "nissan-sub-header",
+      "id": "menu-item-category-parts-merchandise",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Nissan Merchandise",
+        "text": "Nissan Merchandise"
+      }
+    }
+  },
+  "menu-item#category-parts-other": {
+    "props": {
+      "blockClass": "nissan-sub-header",
+      "id": "menu-item-category-parts-other",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Other",
+        "text": "Other"
+      }
+    }
+  },
+  "menu-item#category-parts-suspension": {
+    "props": {
+      "blockClass": "nissan-sub-header",
+      "id": "menu-item-category-parts-suspension",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Suspension and Steering",
+        "text": "Suspension and Steering"
+      }
+    }
+  },
+  "menu-item#category-parts-transmission": {
+    "props": {
+      "blockClass": "nissan-sub-header",
+      "id": "menu-item-category-parts-transmission",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Transmission and Driveline",
+        "text": "Transmission and Driveline"
       }
     }
   },
 
-  "menu-item#static-category-major-appliances": {
+
+
+
+
+
+
+
+
+
+  "menu-item#static-category-accessories": {
     "props": {
-      "id": "menu-item-category-major-appliances",
+      "id": "menu-item-category-accessories",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/major-appliances",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "Major Appliances",
-        "text": "Major Appliances"
+        "tagTitle": "ACCESSORIES",
+        "text": "ACCESSORIES"
       },
-      "blockClass": "megaMenu-header"
-    },
-    "blocks": ["vtex.menu@2.x:submenu#static-category-major-appliances"]
+      "blockClass": "nissan-menu-item"
+    }
   },
   "vtex.menu@2.x:submenu#static-category-major-appliances": {
     "props": {
@@ -193,22 +379,53 @@
     }
   },
 
-  "menu-item#static-category-small-appliances": {
+  "menu-item#static-category-marchandise": {
     "props": {
-      "id": "menu-item-category-small-appliances",
+      "id": "menu-item-category-marchandise",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/small-appliances",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "Small Appliances",
-        "text": "Small Appliances"
+        "tagTitle": "MARCHANDISE",
+        "text": "MARCHANDISE"
       },
-      "blockClass": "megaMenu-header"
-    },
-    "blocks": ["vtex.menu@2.x:submenu#static-category-small-appliances"]
+      "blockClass": "nissan-menu-item"
+    }
+  },
+  "menu-item#static-category-nismo": {
+    "props": {
+      "id": "menu-item-category-nismo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "NISMO",
+        "text": "NISMO"
+      },
+      "blockClass": "nissan-menu-item"
+    }
+  },
+  "menu-item#static-category-blog": {
+    "props": {
+      "id": "menu-item-category-blog",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "BLOG",
+        "text": "BLOG"
+      },
+      "blockClass": "nissan-menu-item"
+    }
   },
   "vtex.menu@2.x:submenu#static-category-small-appliances": {
     "props": {
@@ -305,7 +522,7 @@
         "tagTitle": "Test",
         "text": "Test"
       },
-      "blockClass": "megaMenu-header"
+      "blockClass": "nissan-menu-item"
     },
     "blocks": ["vtex.menu@2.x:submenu#static-category-test"]
   },

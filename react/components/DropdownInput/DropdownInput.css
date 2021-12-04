@@ -1,0 +1,55 @@
+/* .inputBox{
+    width: 360px;
+    height: 40px;
+    margin: 10px 40px 10px 0px;
+    float: right;
+}
+.bar{
+    border: 1px solid black;
+    padding: 10px 10px;
+    width: calc(100% - 320px);
+}
+
+.buttonBox{
+    width: 50px;
+    height: 40px;
+    position: relative;
+    top: 16px;
+    background-color: white;
+}
+.barRow{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    right: 45px;
+} */
+
+.layoutWidth{
+width: 535px !important;
+padding: 35px;
+background-color: #fafafa;
+}
+.selectMargin{
+    margin: 20px 0px;
+}
+.buttonBox{
+    width: 50px;
+    height: 40px;
+    background-color: transparent;
+    border:1px solid rgb(110, 110, 110);
+}
+/* .modalheader{
+    background-color: #c32323;
+    position: relative;
+    bottom: 60px;
+    color: white !important;
+    padding: 5px 0px;
+
+} */
+.modalFooterText{
+    font-size: 12px;
+    color: #a19c9c;
+    position: relative;
+    top: 22px;
+    text-decoration: none;
+}
