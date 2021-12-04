@@ -28,3 +28,7 @@
 .itemListSubItemLink {
     margin-right: 0;
 }
+
+.biggy-autocomplete{
+    z-index: 10;
+}

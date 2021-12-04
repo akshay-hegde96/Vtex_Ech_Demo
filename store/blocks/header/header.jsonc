@@ -7,23 +7,26 @@
   },
   "header-layout.desktop": {
     "children": [
-      //"flex-layout.row#1-desktop", // Telemarketing-- definition removed
-      "sticky-layout#2-desktop", // Launguage selector, My account, Logo, Search bar, Minicart.
-      //"flex-layout.row#3-desktop", // Main menu shop and about us-- definition removed
-      //-----------------//main header menu-------------------------------------------------
-      "flex-layout.row#4-desktop"
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#2-desktop",
+      "flex-layout.row#4-desktop",
+      // "search-bar",
+      "flex-layout.row#3-desktop"
     ]
   },
-  // "sticky-layout#2-desktop" -- Start
-  "sticky-layout#2-desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
-    "children": ["flex-layout.row#2-desktop"]
+  "flex-layout.row#1-desktop": {
+    "children": ["notification.bar"]
   },
+  // Notification-bar
+  "notification.bar": {
+    "props": {
+      "content": "Shop the Genuine Nissan Parts and Accessories Online Catalog."
+    }
+  },
+  //============ header row 2 =================
   "flex-layout.row#2-desktop": {
     "props": {
-      "blockClass": "main-header",
+      "blockClass": "nissan-main-header",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
@@ -31,15 +34,15 @@
       "fullWidth": true
     },
     "children": [
-      "locale-switcher",
-      //"login",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
+      // "locale-switcher",
       "flex-layout.col#logo-desktop",
+      // "flex-layout.col#spacer",
+      "header-force-center#header-menu",
+      // "flex-layout.col#header-menu",
       "flex-layout.col#spacer",
-      // "overlay-trigger#search-icon",
-      "disclosure-layout#header-search",
-      "minicart.v2"
+      "flex-layout.col#header-image"
+      // "disclosure-layout#header-search",
+      // "minicart.v2"
     ]
   },
   "flex-layout.col#logo-desktop": {
@@ -48,35 +51,49 @@
     },
     "children": ["logo#desktop"]
   },
-  "flex-layout.col#category-menu": {
+  "flex-layout.col#header-menu": {
     "props": {
-      "verticalAlign": "middle"
+      "blockClass": "nissan-header-menu"
     },
-    "children": ["myaccount-menu"],
-    "parent": {
-      "challenge": "challenge.trade-policy-condition"
-    }
+    "children": ["rich-text#header-menu", "flex-layout.row#menu-row"]
   },
-  "myaccount-menu": {
-    "parent": {
-      "challenge": "challenge.trade-policy-condition"
-    }
+  "header-force-center#header-menu": {
+    "children": ["flex-layout.col#header-menu"]
   },
-  "challenge.trade-policy-condition": {
+  "rich-text#header-menu": {
     "props": {
-      "redirectPath": "/login",
-      "defaultContentVisibility": "hidden"
+      "text": "Nissan Parts & Accessories Online",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "nissan-header-text"
+    }
+  },
+  "flex-layout.col#header-image": {
+    "children": ["image#header"]
+  },
+  "image#header": {
+    "props": {
+      "src": "assets/nissan-header-img.jpg",
+      "maxHeight": 50,
+      "blockClass": "nissan-header-image",
+      "link": {
+        "attributeNofollow": false,
+        "attributeTitle": "",
+        "newTab": false,
+        "url": "/"
+      }
     }
   },
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/logo.png",
-      "width": "180"
+      "url": "assets/nissan-logo.png",
+      "blockClass": "nissan-logo",
+      "width": "100"
     }
   },
-  // "sticky-layout#2-desktop" -- End
+  //========== "header row 2-desktop" -- End==============
   // "flex-layout.row#3-desktop" -- Start
   "flex-layout.row#3-desktop": {
     "props": {
@@ -86,14 +103,23 @@
       "preventVerticalStretch": true,
       "fullWidth": true
     },
-    "children": ["vtex.menu@2.x:menu#websites", "flex-layout.col#spacer"]
+    "children": ["rich-text#header-menu-second"]
+  },
+  "rich-text#header-menu-second": {
+    "props": {
+      "text": "Your holiday shopping just got easier! Through 12/21, were giving you 15% off select parts and accessories* from Nissan Parts & Accessories Online! Online only. Restrictions apply.",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "nissan-header-text-second"
+    }
   },
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
     }
   },
-  //"sticky-layout#2-desktop" -- End
+  //=============="header row 3" -- End==================
+
   // "header-layout.mobile" -- Start
   "header-layout.mobile": {
     "children": ["sticky-layout#1-mobile"]
@@ -374,7 +400,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/logo.png",
+      "url": "assets/nissan-logo.png",
       "width": "70"
     }
   },
@@ -382,21 +408,25 @@
   //----------------------main-header-menu----------------------------------------------------------
   "flex-layout.row#4-desktop": {
     "props": {
-      "blockClass": "main-menu-static",
-      "horizontalAlign": "center",
+      "blockClass": "nissan-main-menu-static",
+      // "horizontalAlign": "center",
       "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
+      // "preventHorizontalStretch": true,
+      // "preventVerticalStretch": true,
       "fullWidth": true
     },
-    "children": ["flex-layout.col#main-menu-static"]
+    "children": ["flex-layout.col#searchbar", "flex-layout.col#bar"]
   },
-  "flex-layout.col#main-menu-static": {
+  "flex-layout.col#searchbar": {
+    "children": ["search-bar"],
     "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#main-menu-static"]
+      "blockClass": "searchBarCol"
+    }
   },
+  "flex-layout.col#bar": {
+    "children": ["overlay-trigger#bar"]
+  },
+
   "overlay-trigger#search-icon": {
     "props": {
       "blockClass": "custom-search-overlay-trigger"
@@ -433,13 +463,13 @@
   "search-bar": {
     "blocks": ["autocomplete-result-list.v2"],
     "props": {
-      "placeholder": "Enter Your Keyword",
+      "placeholder": "Search by Keywords,Part Number or Full VIN",
       "displayMode": "search-and-clear-buttons",
       "openAutocompleteOnFocus": true,
       "autocompleteFullWidth": true,
       "containerMode": "container",
-      "maxWidth": "100%",
-      "blockClass": "custom-overlay-search-bar"
+      "blockClass": "nissan-searchbar-one",
+      "hasIconLeft": true
     }
   },
   "autocomplete-result-list.v2": {
@@ -451,6 +481,34 @@
         "Three": "3"
       },
       "maxTopSearches": 5
+    }
+  },
+  // ==================Search Vehicle Bar=============
+  "overlay-trigger#bar": {
+    "children": ["rich-text#barlabel", "overlay-layout"]
+  },
+  "rich-text#barlabel": {
+    "props": {
+      "text": "Select Your Vehicle",
+      "blockClass": "bar-label"
+    }
+  },
+  "overlay-layout": {
+    "props": {
+      // "placement": "bottom"
+      "showArrow": true,
+      "offsets": { "skidding": 160, "distance": 0 },
+      "blockClass": "bar-label-container"
+    },
+    "children": [
+      "rich-text#barlabel2",
+      "dropdown-inputbox" //React comp
+    ]
+  },
+  "rich-text#barlabel2": {
+    "props": {
+      "text": "ADD VEHICLE TO GARAGE",
+      "blockClass": "bar-label2"
     }
   }
 }

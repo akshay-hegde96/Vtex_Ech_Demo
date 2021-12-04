@@ -78,5 +78,8 @@
   },
   "sellers-site": {
     "component": "SellersSite"
+  },
+  "dropdown-inputbox": {
+    "component": "DropdownInputBox"
   }
 }

@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "notification.bar",
+
       "slider-layout#slides", //caraousal
       "flex-layout.row#demo", // categories
       "__fold__.experimentalLazyAssets",
@@ -29,12 +29,8 @@
       "defaultContentVisibility": "hidden"
     }
   },
-  // Notification-bar
-  "notification.bar": {
-    "props": {
-      "content": "FREE SHIPPING: Applies to USA orders over $2000+ | excluding HI, PR, AK, and CAN"
-    }
-  },
+
+
   //-----------------------------caraousal------------------------------------------
   "slider-layout#slides": {
     "props": {

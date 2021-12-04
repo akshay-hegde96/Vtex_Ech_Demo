@@ -13,3 +13,11 @@
     margin-top: 10px;
     margin-right: 10px;
 }
+/* =============Nissan============== */
+.arrow{
+    color: #c32323;
+    left: 415px !important;
+}
+.container--bar-label-container{
+    padding-top: 0px !important;
+}
