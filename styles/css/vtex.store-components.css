@@ -18,18 +18,18 @@
   height: 350px;
   margin-top: 5px;
 } */
-.infoCardHeadline--info-card-slide{
+.infoCardHeadline--info-card-slide {
   color: #fdfdfd;
   /* background: #adb5bbbd; */
   /* padding: 10px; */
   font-weight: 900;
   font-variant: petite-caps;
 }
-.infoCardSubhead--info-card-slide{
+.infoCardSubhead--info-card-slide {
   color: #ffffff;
   font-variant: unicase;
-    font-weight: bold;
-    padding: 5px;
+  font-weight: bold;
+  padding: 5px;
 }
 
 /* .infoCardCallActionContainer--info-card-slide {
@@ -147,7 +147,7 @@
   }
 }
 
-.productImagesContainer--quickview .carouselContainer {
+/* .productImagesContainer--quickview .carouselContainer {
   justify-content: flex-start;
 }
 
@@ -163,12 +163,12 @@
   margin: 0;
   padding: 0;
   width: 100%;
-}
+} */
 
 .productNameContainer {
-  color: #3f3f40;
+  color: #2a2a2b;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px !important;
 }
 
 .searchBarContainer {
@@ -257,7 +257,7 @@
   .newsletter .container--newsletter {
     padding: 10px 10px;
   }
-  .notificationContent{
+  .notificationContent {
     text-align: center;
   }
 }
@@ -316,20 +316,20 @@
   font-variant: petite-caps;
 }
 
-.imageElement--testIcons{
+.imageElement--testIcons {
   padding: 0px 5px;
 }
-.notificationBarInner{
+.notificationBarInner {
   margin-top: 5px;
 }
-.confirmationText--newsletter{
+.confirmationText--newsletter {
   color: white;
 }
-.confirmationTitle--newsletter{
+.confirmationTitle--newsletter {
   color: white;
 }
 /* ========= */
-.skuSelectorName{
+.skuSelectorName {
   display: inline-block;
   min-width: 100px;
 }
@@ -339,29 +339,99 @@ justify-content: center;
 
 /* =============== mobile-landscape ====================== */
 @media (max-width: 640px) and (orientation: landscape) {
-.skuSelectorName{
-  min-width: 60px;
-}
-.skuSelectorItemTextValue{
-  font-size: 10px !important;
-}
-.infoCardHeadline--info-card-slide{
-  font-size: 20px;
-  font-weight: normal;
-}
-.imageElement--store-features-img{
-  max-height: 280px !important;
-
-}
+  .skuSelectorName {
+    min-width: 60px;
+  }
+  .skuSelectorItemTextValue {
+    font-size: 10px !important;
+  }
+  .infoCardHeadline--info-card-slide {
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .imageElement--store-features-img {
+    max-height: 280px !important;
+  }
 }
 
 /* ======== iphoneX landscape ========= */
 @media (max-width: 812px) and (orientation: landscape) {
-  .infoCardHeadline--info-card-slide{
+  .infoCardHeadline--info-card-slide {
     font-size: 20px;
     font-weight: normal;
   }
-  .skuSelectorItemTextValue{
+  .skuSelectorItemTextValue {
     font-size: 10px !important;
   }
+}
+
+/* -----------------nissan pdp page ----------------------*/
+
+.container--availibility {
+  margin: auto;
+}
+
+.productImage--pdp-img {
+  border: 2px solid rgb(235, 234, 234);
+  border-radius: 4px;
+}
+
+.carouselGaleryThumbs--pdp-img {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.carouselThumbBorder--pdp-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(235, 234, 234);
+  border-right: 1px;
+  border-radius: 4px;
+  /* margin-right: 2px; */
+  object-fit: contain;
+}
+
+.productimagesgalleryswipercontainer--pdp-img {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.productImagesGallerySlide--pdp-img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.thumbImg--pdp-img {
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+  padding-top: 5px;
+}
+
+.imageElement--car {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid rgb(235, 234, 234);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.productDescriptionTitle--product-desc {
+  margin-top: 10px;
+  font-size: 16px !important;
+  font-weight: 700;
+  color: black !important;
+}
+
+.content--product-desc {
+  font-weight: normal !important;
+  color: black !important;
+  line-height: 1.4;
+}
+
+.productBrand--quickview {
+  color: #2a2a2b;
+  font-weight: bold;
+  font-size: 20px !important;
 }

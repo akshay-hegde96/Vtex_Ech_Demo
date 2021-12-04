@@ -193,7 +193,7 @@
   .flexColChild--product-name {
     padding-left: 25px;
   }
-  .flexRowContent--testIconsRow{
+  .flexRowContent--testIconsRow {
     justify-content: center;
     display: flex;
   }
@@ -232,4 +232,96 @@
 
 .flexRowContent--main-menu-static {
   box-shadow: 0px 1px 8px 0px #808080f5;
+}
+
+/* ---------------nissan pdp page --------------- */
+
+.flexRow--pdp-container {
+  padding: 20px;
+  background-color: rgb(250, 250, 250);
+}
+
+.flexCol--product-details {
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(235, 234, 234);
+  border-radius: 2px;
+}
+.flexCol--product_pricing {
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(235, 234, 234);
+  border-radius: 2px;
+  width: 400px !important;
+}
+
+.flexColChild--product-details {
+  color: black !important;
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.flexColChild--product_pricing {
+  width: 100%;
+}
+
+.flexCol--product_image {
+  padding-bottom: 0;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.flexColChild--product-details {
+  margin: 0;
+}
+
+.flexCol--pdp-tab-layout {
+  background-color: white;
+  box-sizing: border-box;
+  border: 2px solid rgb(235, 234, 234);
+  border-radius: 4px;
+}
+
+.flexRowContent--product_description .stretchChildrenWidth {
+  justify-content: center;
+  width: 60%;
+}
+
+.flexRow--relatedProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(250, 250, 250);
+}
+
+.flexCol--shelf-relatedProducts {
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(235, 234, 234);
+  border-radius: 2px;
+}
+
+.flexColChild--PDP-main {
+  width: 100%;
+  justify-content: center;
+}
+
+.flexRowContent--pdp-main .stretchChildrenWidth {
+  justify-content: flex-end !important;
+}
+
+.flexColChild--product_desc {
+  color: black !important;
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.flexColChild--name-discount {
+  font-weight: 12px;
+  color: black;
 }
