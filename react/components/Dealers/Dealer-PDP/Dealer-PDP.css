@@ -1,0 +1,108 @@
+.list {
+  font-family: sans-serif;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  padding-top: 20px;
+  box-sizing: border-box;
+  border-top: 2px solid #eee;
+  margin-top: 12px;
+  border-radius: 2px;
+}
+.list_name {
+  padding: 0;
+  color: rgb(12, 12, 12);
+  text-align: center !important;
+}
+.list_name h2 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.card {
+  box-sizing: border-box;
+  color: rgb(31, 30, 30);
+  display: flex;
+  flex-flow: row;
+  text-align: left;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 4px;
+  border: 2px solid #eee;
+  padding: 5px;
+}
+
+.card:hover {
+  text-decoration-line: underline;
+}
+
+.details {
+  color: rgb(27, 27, 27);
+}
+.details h3 {
+  font-weight: 800;
+  font-size: 12px !important;
+  margin-bottom: 2px;
+}
+.details p {
+  font-weight: normal;
+  font-size: 11px !important;
+  margin-top: 0;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+  background-color: #c32323;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.links :hover,
+.links:active {
+  background-color: #b62525;
+  text-decoration-line: none;
+}
+
+.search_link {
+  margin: 1rem auto;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between !important;
+}
+
+.search {
+  height: 35px;
+  width: 90px;
+  margin-right: 1rem;
+  padding: 6px 12px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: inherit !important;
+  text-align: center;
+  font-size: 14px;
+}
+
+.link {
+  width: 90%;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 2px solid #eee !important;
+  background-color: #eee !important;
+  color: #000 !important;
+  border-radius: 0 !important;
+  text-decoration-line: none;
+  text-transform: capitalize !important;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.link:hover {
+  border: 2px solid rgb(224, 224, 224) !important;
+  background-color: rgb(224, 224, 224) !important;
+}
