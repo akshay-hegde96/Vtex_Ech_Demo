@@ -4,12 +4,16 @@
       "notification.bar",
       "slider-layout#slides", //caraousal
       "flex-layout.row#demo", // categories
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-      "info-card#shelf", // view all collections
+    //  "info-card#shelf", // view all collections
+     "flex-layout.row#nissan-value",
+     "flex-layout.row#nissan-event",
       "flex-layout.row#shelf",
-      // "newsletter" // view all shelf
+      "rich-text#accessories-header",
+      //"info-card#nissan-accessories",
+      "flex-layout.row#accessories",
+      "flex-layout.row#nissan-dealer",
+      "flex-layout.row#nissan-dealer-block",
       "back-to-top-button",
       "modal-trigger#sale"
     ],
@@ -246,7 +250,7 @@
 
   //--------------------------------View All Collections---------------------------
 
-  "info-card#shelf": {
+ /* "info-card#shelf": {
     "props": {
       "id": "info-card-shelf",
       "isFullModeStyle": true,
@@ -257,7 +261,105 @@
       "blockClass": "shelfTitle",
       "textAlignment": "center"
     }
+  },*/
+
+ /*"info-card#nissan-infocard": {
+    "props": {
+      "id": "info-card-nissan",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "assets/.jpg",
+      "headline": "Nissan Advantage Value",
+      "subhead":"shop value advantage parts:value advantage parts offer nissan-validated fit and performance at affordable prices.",
+     // "callToActionText": "DISCOVER",
+      //"callToActionUrl": "/sale/d",
+      "blockClass": "nissan-info",
+      "textAlignment": "left"
+    }
+  },*/
+
+  "flex-layout.row#nissan-value":{
+    "children":[
+      "flex-layout.col#nissan-value-1"
+    ],
+    "props":{
+      "blockClass":"nissan-value-container"
+    }
   },
+
+  "flex-layout.col#nissan-value-1":{
+    "children":[
+      "link#nissan-value-redirect1",
+      "link#nissan-value-redirect2"
+    ]
+  },
+
+  "link#nissan-value-redirect1": {
+    "props": {
+      "label": "Nissan Value Advantage®",
+      "href": "/major-appliances/refrigerators",
+      "blockClass": "redirect-nissan-value"
+
+    }
+  },
+  "link#nissan-value-redirect2": {
+    "props": {
+      "label": " Shop Value Advantage® Parts: Value Advantage® parts offer Nissan-validated fit and performance at affordable prices.",
+      "href": "/major-appliances/refrigerators",
+      "blockClass": "redirect-nissan-value"
+
+    }
+  },
+
+  "flex-layout.row#nissan-event":{
+    "children":[
+      "flex-layout.col#nissan-event-1"
+    ],
+    "props":{
+      "blockClass":"nissan-event-container"
+    }
+  },
+
+  "flex-layout.col#nissan-event-1":{
+    "children":[
+      "link#nissan-event-redirect1",
+      "link#nissan-event-redirect2"
+    ]
+  },
+
+  "link#nissan-event-redirect1": {
+    "props": {
+      "label": "The SiriusXM Listen Free Event is on now.",
+      "href": "/major-appliances/refrigerators",
+      "blockClass": "redirect-nissan-event"
+
+    }
+  },
+  "link#nissan-event-redirect2": {
+    "props": {
+      "label": "We’ve turned 100+ SXM channels on in your car and on the SXM App. Enjoy expertly curated ad-free music, sports, comedy talk and news for free thru Dec. 6.",
+      "href": "/major-appliances/refrigerators",
+      "blockClass": "redirect-nissan-event"
+
+    }
+  },  
+
+  /*"info-card#nissan-event": {
+    "props": {
+      "id": "info-card-event",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "assets/nissanInfo3.jpg",
+      "headline": "The siriusXm Listen Free Event is on now.",
+      "subhead":"We've turned 100+ SXM channels on in your car and on the SXM App.Enjoy experty curated ad-free music,sports,comedy talk and news for free thru Dec 6",
+     // "callToActionText": "DISCOVER",
+      //"callToActionUrl": "/sale/d",
+      "blockClass": "nissan-event",
+      "textAlignment": "left"
+    }
+  },*/
+
+  
 
   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
@@ -281,6 +383,278 @@
       "blockClass": "shelf"
     }
   },
+
+  "rich-text#accessories-header": {
+    "props": {
+      "text": "**Genuine Nissan parts and accessories.**",
+      "blockClass": "accessories-header"
+    }
+  },
+
+  
+
+ /* "info-card#nissan-accessories": {
+    "props": {
+      "id": "info-card-accessories",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "assets/nissanInfo5.png",
+      "htmlid":"nissan-accessories",
+      "headline": "Nissan Parts & Accessories Online is your official online source for Nissan OEM parts designed to perfectly complement your Nissan.",
+      "subhead":"Maintain the exceptional level of innovation and excitement you’ve enjoyed since the day you purchased your Nissan. Find all the original parts and accessories your Nissan requires in the Nissan Parts & Accessories Online official online catalog, plus branded merchandise to show off the passion you have for your Nissan.",
+     // "callToActionText": "DISCOVER",
+      //"callToActionUrl": "/sale/d",
+      "blockClass": "nissan-accessories",
+      "textAlignment": "left"
+    }
+  },*/
+  "flex-layout.row#accessories":{
+    "children":[
+      "flex-layout.col#nissan-image",
+      "flex-layout.col#nissan-text"
+    ],
+    "props":{
+      "colSizing":"auto",
+      "blockClass":"accessories-container"
+    }
+  },
+
+  "flex-layout.col#nissan-image":{
+    "children":[
+      "image#nissan-accessories"
+    ]
+  },
+
+  "image#nissan-accessories": {
+    "props": {
+      "src": "assets/nissaninfo4.jpg",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "image-container"
+    }
+  },
+
+  "flex-layout.col#nissan-text":{
+   "children":[
+    "rich-text#nissan-content1",
+    "rich-text#nissan-content2"
+   ],
+   "props":{
+     "blockClass":"content-container"
+   }
+  },
+ 
+  "rich-text#nissan-content1": {
+    "props": {
+      "text": "Nissan Parts & Accessories Online is your official online source for Nissan OEM parts designed to perfectly complement your Nissan. Maintain the exceptional level of innovation and excitement you’ve enjoyed since the day you purchased your Nissan.",
+      "blockClass": "nissan-content1"
+    }
+  }, 
+
+  "rich-text#nissan-content2": {
+    "props": {
+      "text": "Find all the original parts and accessories your Nissan requires in the Nissan Parts & Accessories Online official online catalog, plus branded merchandise to show off the passion you have for your Nissan.",
+      "blockClass": "nissan-content2"
+    }
+  },
+
+"flex-layout.row#nissan-dealer":{
+  "children":[
+    "flex-layout.col#header-text",
+    "flex-layout.col#link-block"
+  ]
+},
+
+"flex-layout.col#header-text":{
+  "children":[
+    "rich-text#tab-header"
+  ]
+},
+
+"flex-layout.col#link-block":{
+  /*"children":[
+    "link#shop-pincode",
+    "link#shop-moreDetails"
+  ]*/
+},
+
+/*"link#shop-pincode":{
+  "props": {
+    "blockClass": "tony-button",
+    "displayMode": "button",
+    "buttonProps": {
+      "variant": "primary",
+      "size": "medium"
+    },
+    "href": "https://www.tonynissanparts.com/",
+    "label": "6000"
+  }
+},
+
+"link#shop-moreDetails":{
+  "props": {
+    "blockClass": "tony-button",
+    "displayMode": "button",
+    "buttonProps": {
+      "variant": "primary",
+      "size": "medium"
+    },
+    "href": "https://www.tonynissanparts.com/",
+    "label": "VIEW MORE DETAILS"
+  }
+},*/
+
+
+  "rich-text#tab-header": {
+    "props": {
+      "text": "**Your Nearest Participating Dealers**",
+      "blockClass": "tab-header"
+    }
+  },
+
+  "flex-layout.row#nissan-dealer-block":{
+    "children":[
+      "flex-layout.col#nissan-dealer-col1",
+      "flex-layout.col#nissan-dealer-col2",
+      "flex-layout.col#nissan-dealer-col3"
+    ],
+    "props":{
+      "blockClass":"dealer-row-container"
+    }
+  },
+
+  "flex-layout.col#nissan-dealer-col1":{
+    "children":[
+      "link#redirect-tonyNissan1",
+      "link#redirect-tonyNissan2",
+      "link#shop-tonyNissan"
+    ],
+    "props": {
+      "label": "Refrigerators",
+      "blockClass": "nissan-dealer-col1"
+    }
+  },
+
+  "link#redirect-tonyNissan1": {
+    "props": {
+      "label": "Tony Nissan",
+      "href": "https://www.tonynissanparts.com/",
+      "blockClass": "redirect-tonyNissan"
+
+    }
+  },
+
+  "link#redirect-tonyNissan2": {
+    "props": {
+      "label": "Distance:7822.03 mi",
+      "href": "https://www.tonynissanparts.com/",
+      "blockClass": "redirect-tonyNissan"
+
+    }
+  },
+
+  "link#shop-tonyNissan":{
+    "props": {
+      "blockClass": "tony-button",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "medium"
+      },
+      "href": "https://www.tonynissanparts.com/",
+      "label": "SHOP NOW"
+    }
+  },
+
+
+  "flex-layout.col#nissan-dealer-col2":{
+    "children":[
+      "link#redirect-newcityNissan1",
+      "link#redirect-newcityNissan2",
+      "link#shop-newcityNissan"
+    ],
+    "props": {
+      "label": "Refrigerators",
+      "blockClass": "nissan-dealer-col1"
+    }
+  },
+
+  "link#redirect-newcityNissan1": {
+    "props": {
+      "label": "New City Nissan",
+      "href": "https://www.newcitynissanparts.com/?referer=parts.nissanusa.com&machineIDT1=o15fd4ei3owyg0gip0a3c4pk",
+      "blockClass": "redirect-tonyNissan"
+
+    }
+  },
+
+  "link#redirect-newcityNissan2": {
+    "props": {
+      "label": "Distance:7830.77 mi",
+      "href": "https://www.newcitynissanparts.com/?referer=parts.nissanusa.com&machineIDT1=o15fd4ei3owyg0gip0a3c4pk",
+      "blockClass": "redirect-tonyNissan"
+
+    }
+  },
+
+  "link#shop-newcityNissan":{
+    "props": {
+      "blockClass": "tony-button",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "medium"
+      },
+      "href": "https://www.newcitynissanparts.com/?referer=parts.nissanusa.com&machineIDT1=o15fd4ei3owyg0gip0a3c4pk",
+      "label": "SHOP NOW"
+    }
+  },
+
+  
+  "flex-layout.col#nissan-dealer-col3":{
+    "children":[
+      "link#redirect-kingNissan1",
+      "link#redirect-kingNissan2",
+      "link#shop-kingNissan"
+    ],
+    "props": {
+      "label": "Refrigerators",
+      "blockClass": "nissan-dealer-col1"
+    }
+  },
+
+  "link#redirect-kingNissan1": {
+    "props": {
+      "label": "KING WINDWARD NISSAN",
+      "href": "https://parts.kingwindwardnissan.com/?referer=parts.nissanusa.com&machineIDT1=o15fd4ei3owyg0gip0a3c4pk",
+      "blockClass": "redirect-tonyNissan"
+
+    }
+  },
+
+  "link#redirect-kingNissan2": {
+    "props": {
+      "label": "Distance:7822.03 mi",
+      "href": "https://parts.kingwindwardnissan.com/?referer=parts.nissanusa.com&machineIDT1=o15fd4ei3owyg0gip0a3c4pk",
+      "blockClass": "redirect-tonyNissan"
+
+    }
+  },
+
+  "link#shop-kingNissan":{
+    "props": {
+      "blockClass":  "tony-button",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "medium"
+      },
+      "href": "https://parts.kingwindwardnissan.com/?referer=parts.nissanusa.com&machineIDT1=o15fd4ei3owyg0gip0a3c4pk",
+      "label": "SHOP NOW"
+    }
+  },
+
+
   // back to top button
   "back-to-top-button": {
     "props": {
