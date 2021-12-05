@@ -143,6 +143,10 @@
     display: flex;
     justify-content: center;
   }
+  .paragraph--bar-label{
+    left: 0px !important;
+    padding-right: 145px !important;
+  }
 }
 
 .paragraph--faq-Heading {
@@ -313,6 +317,8 @@
   padding: 7px 15px;
   padding-right: 170px;
 }
+
+
 .container--bar-label2{
   background-color: #c32323;
   color: white;
