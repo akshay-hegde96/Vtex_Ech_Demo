@@ -96,18 +96,18 @@
     padding-left: 65px;
   }
 
-  .paragraph--copy-right{
+  .paragraph--copy-right {
     color: #666;
     font-size: 12px;
     font-weight: bold;
     font-family: sans-serif !important;
   }
-  .paragraph--server-name{
+  .paragraph--server-name {
     line-height: 0px;
     font-size: 12px;
   }
 
-  .container--copy-right{
+  .container--copy-right {
     display: flex;
     justify-content: flex-end;
     margin-right: 60px;
@@ -118,7 +118,7 @@
   }
 }
 
-.container--disclaimer{
+.container--disclaimer {
   background-color: black;
   padding: 20px 0px 20px 0px;
 }
@@ -267,14 +267,14 @@
 .paragraph--header-top-sales {
   color: white;
 }
-.paragraph--sku-spec{
-  background-color:#ad2697;
+.paragraph--sku-spec {
+  background-color: #ad2697;
   color: #ffffff;
 }
-@media screen and (max-width: 768px){
-  .paragraph--sku-spec{
+@media screen and (max-width: 768px) {
+  .paragraph--sku-spec {
     width: fit-content;
-    background-color:#ad2697;
+    background-color: #ad2697;
     color: #ffffff;
   }
 }
@@ -318,4 +318,65 @@
 
 .wrapper--accessories-header{
 padding-left: 50px;
+}
+
+/* ---------------nissan pdp page --------------- */
+
+.heading--name {
+  margin: 0;
+}
+/* =========== Nissan ========== */
+.paragraph--nissan-header-text {
+  font-weight: bold !important;
+  font-size: 18px !important;
+}
+.wrapper--nissan-header-text-second {
+  font-weight: 600 !important;
+  padding: 0px 20px 0 20px;
+  color: #fff !important;
+  font-size: 16px !important;
+  /* line-height: 18px !important; */
+  background-color: #c32323;
+}
+.paragraph--nissan-header-text-second {
+  line-height: 18px;
+  padding: 10px;
+  margin: 0px;
+}
+.paragraph--bar-label {
+  position: relative;
+  left: 225px;
+  border: 1px solid gray;
+  text-align: start;
+  padding: 7px 15px;
+  padding-right: 170px;
+}
+.container--bar-label2 {
+  background-color: #c32323;
+  color: white;
+  font-size: small;
+  font-weight: 800;
+  padding: 0px 35px;
+  height: 35px;
+}
+.wrapper--nissan-content1,
+.wrapper--nissan-content2 {
+  padding-left: 50px;
+}
+
+.paragraph--name {
+  font-size: 12px;
+}
+
+.heading--name {
+  font-size: 16px;
+  font-weight: 600;
+}
+.wrapper--nissan-content1,
+.wrapper--nissan-content2 {
+  padding-left: 50px;
+}
+
+.wrapper--accessories-header {
+  padding-left: 50px;
 }

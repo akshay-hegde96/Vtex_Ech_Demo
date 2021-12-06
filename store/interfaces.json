@@ -9,8 +9,8 @@
     "component": "ViewdetailButtonWrapper"
   },
 
-  "productsummary-button":{
-    "component":"ProductSummaryBtnNissanWrapper"
+  "productsummary-button": {
+    "component": "ProductSummaryBtnNissanWrapper"
   },
   "dropdown-button": {
     "component": "DropdownButtonWrapper"
@@ -78,5 +78,11 @@
   },
   "sellers-site": {
     "component": "SellersSite"
+  },
+  "dealers-list-PDP": {
+    "component": "DealerListPDPWrapper"
+  },
+  "dropdown-inputbox": {
+    "component": "DropdownInputBox"
   }
 }

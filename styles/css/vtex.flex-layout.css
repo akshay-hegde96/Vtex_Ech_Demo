@@ -1,21 +1,21 @@
-.flexRowContent--menu-link,
+/* .flexRowContent--menu-link,
 .flexRowContent--main-header {
   padding: 0 0.5rem;
-}
+} */
 
-@media screen and (min-width: 40em) {
+/* @media screen and (min-width: 40em) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 1rem;
   }
-}
+} */
 
-@media screen and (min-width: 80rem) {
+/* @media screen and (min-width: 80rem) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 0.25rem;
   }
-}
+} */
 
 /* .flexRowContent--menu-link {
   background-color: white;
@@ -48,9 +48,9 @@
   padding: 14px 0px;
 }
 
-.flexRow--deals .stretchChildrenWidth {
+/* .flexRow--deals .stretchChildrenWidth {
   align-items: center;
-}
+} */
 
 .flexRow--deals .flexCol {
   align-items: center;
@@ -113,19 +113,17 @@
   line-height: 1.42857143;
   width: 100%;
 }
-.flexRow--socialIcons{
+.flexRow--socialIcons {
   width: 100%;
   line-height: 1.42857143;
   background-color: black;
-
 }
-.flexRow--disclaimer{
+.flexRow--disclaimer {
   width: 100%;
   line-height: 1.42857143;
   background-color: black;
-
 }
-.flexRowContent--socialIcons{
+.flexRowContent--socialIcons {
   display: flex;
   justify-content: end;
   width: webkit-fill-available;
@@ -211,12 +209,12 @@
   .flexColChild--product-name {
     padding-left: 25px;
   }
-  .flexRowContent--testIconsRow{
+  .flexRowContent--testIconsRow {
     justify-content: center;
     display: flex;
   }
 
-  .flexRowContent--productSummaryMobile{
+  .flexRowContent--productSummaryMobile {
     display: block !important;
   }
 }
@@ -261,34 +259,141 @@
   display: flex;
   height: auto;
 }
+/* ---------------nissan pdp page --------------- */
 
-:global(.vtex-flex-layout-0-x-flexCol--nissan-dealer-col1) {
+.flexRow--pdp-container {
+  padding: 20px;
+  background-color: rgb(250, 250, 250);
+}
+
+.flexCol--product-details {
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(235, 234, 234);
+  border-radius: 2px;
+}
+.flexCol--product_pricing {
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(235, 234, 234);
+  border-radius: 2px;
+  width: 400px !important;
+}
+
+.flexColChild--product-details {
+  color: black !important;
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.flexColChild--product_pricing {
+  width: 100%;
+}
+/* =======Nissan====== */
+.flexRow--nissan-menu-row {
+  position: relative;
+  bottom: 25px;
+}
+
+.flexRow--nissan-main-header {
+  border: 1px solid #3f3f404d;
+  padding: 0px 0px 10px 0px;
+}
+/* .stretchChildrenWidth{
+  width: 100% !important;
+} */
+.flexColChild--searchBarCol {
+  width: 150% !important;
+}
+
+.flexCol--product_image {
+  padding-bottom: 0;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.flexColChild--product-details {
+  margin: 0;
+}
+
+.flexCol--pdp-tab-layout {
+  background-color: white;
+  box-sizing: border-box;
+  border: 2px solid rgb(235, 234, 234);
+  border-radius: 4px;
+}
+
+.flexRowContent--product_description .stretchChildrenWidth {
+  justify-content: center;
+  width: 60%;
+}
+
+.flexRow--relatedProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(250, 250, 250);
+}
+
+.flexCol--shelf-relatedProducts {
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(235, 234, 234);
+  border-radius: 2px;
+}
+
+.flexColChild--PDP-main {
+  width: 100%;
+  justify-content: center;
+}
+
+.flexRowContent--pdp-main .stretchChildrenWidth {
+  justify-content: flex-end !important;
+}
+
+.flexColChild--product_desc {
+  color: black !important;
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.flexColChild--name-discount {
+  font-weight: 12px;
+  color: black;
+}
+
+/* :global(.vtex-flex-layout-0-x-flexCol--nissan-dealer-col1) {
   border: 1px solid #ccc;
   margin: 10px;
-background-color: #fafafa;
+  background-color: #fafafa;
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--dealer-row-container) {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-:global(.vtex-flex-layout-0-x-flexRowContent--nissan-value-container){
+:global(.vtex-flex-layout-0-x-flexRowContent--nissan-value-container) {
   background-image: url(https://parts.nissanusa.com/images/uploads/Assets/tile-link-advantage-mar2021.jpg);
-height: 200px;
-width: 100%;
-margin-left: 5px;
-display: block;
-background-repeat: no-repeat;
-position: relative;
-width: 100%;
-height: 200px;
-background-size: 100%;
-margin-bottom:30px;
-margin-top: 20px;
-border: 1px solid #ccc;
+  height: 200px;
+  width: 100%;
+  margin-left: 5px;
+  display: block;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-size: 100%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
 }
 
-:global(.vtex-flex-layout-0-x-flexRowContent--nissan-event-container){
+:global(.vtex-flex-layout-0-x-flexRowContent--nissan-event-container) {
   background-image: url(https://parts.nissanusa.com/images/uploads/Assets/tile-link-sxm-nissan.jpg);
 height: 200px;
 width: 100%;
@@ -302,4 +407,4 @@ background-size: 100%;
 margin-bottom:30px;
 margin-top: 20px;
 border: 1px solid #ccc;
-}
+} */

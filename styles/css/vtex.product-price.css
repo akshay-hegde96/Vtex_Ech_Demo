@@ -1,12 +1,12 @@
 .listPrice {
   color: #727273;
   margin-bottom: 0.25rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .sellingPrice {
   color: #3f3f40;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .sellingPriceValue {
@@ -21,14 +21,15 @@
 
 .savings {
   font-weight: 500;
-  color: #79b03a;
+  font-size: 12px;
+  color: #232422;
 }
 
 .sellingPriceValue--summary {
   font-size: 1.25rem;
   font-weight: 600;
   color: #2e2e2e;
-  }
+}
 
 .savings--summary {
   background: #8bc34a;
@@ -80,19 +81,22 @@
 
 .currencyContainer {
   display: flex;
+  flex-flow: row;
 }
 
-.currencyContainer--summary{
+.currencyContainer--summary {
   color: #c32323;
   display: flex;
   text-align: right;
   justify-content: right;
 }
 
-.currencyCode, .currencyInteger, .currencyFraction, .currencyDecimal, .currencyGroup {
+.currencyCode,
+.currencyInteger,
+.currencyFraction,
+.currencyDecimal,
+.currencyGroup {
   font-size: 20px;
   padding: 0px 0px;
   margin: 0px 0px;
 }
-
-
