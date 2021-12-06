@@ -144,8 +144,14 @@
     justify-content: center;
   }
   .paragraph--bar-label{
-    left: 0px !important;
+    left: 11px !important;
     padding-right: 145px !important;
+  }
+  .paragraph--nissan-header-text {
+    font-size: 16px !important;
+    position: relative;
+    right: 20px;
+    top: 15px;
   }
 }
 
@@ -332,7 +338,7 @@ padding-left: 50px;
 /* =========== Nissan ========== */
 .paragraph--nissan-header-text {
   font-weight: bold !important;
-  font-size: 18px !important;
+  font-size: 18px;
 }
 .wrapper--nissan-header-text-second {
   font-weight: 600 !important;
