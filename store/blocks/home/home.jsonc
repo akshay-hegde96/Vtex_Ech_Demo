@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-
+      "flex-layout.row#home", // home
       "slider-layout#slides", //caraousal
       "flex-layout.row#demo", // categories
       "__fold__.experimentalLazyAssets",
@@ -97,6 +97,186 @@
       "src": "https://www.youtube.com/watch?v=8-KpLN57wOc",
       "width": "100%",
       "blockClass": "slider-videoContainer"
+    }
+  },
+  //------------------ flex-layout.row#home --------------------------------------------------------
+  "flex-layout.row#home": {
+    "children": [
+      "flex-layout.col#Parts",
+      "flex-layout.col#Accessories",
+      "flex-layout.col#Offers"
+    ],
+    "props": {
+      "blockClass": "categories-row"
+    }
+  },
+  "flex-layout.col#Parts": {
+    "props" : {
+      "blockClass": "Parts"
+    },
+    "children": []
+  },
+  "flex-layout.col#Accessories": {
+    "props" : {
+      "blockClass": "Accessories"
+    },
+    "children": [
+      "rich-text#Accessories",
+      "flex-layout.col#AccessoriesCol1",
+      "flex-layout.row#AccessoriesRow2",
+      "flex-layout.row#AccessoriesRow3"
+    ]
+  },
+  "flex-layout.col#Offers": {
+    "props" : {
+      "blockClass": "Offers"
+    },
+    "children": [
+      "rich-text#Offers",
+      "info-card#Offers",
+      "rich-text#Promotions",
+      "info-card#Promotions"
+    ]
+  },
+
+  "rich-text#Accessories" : {
+    "props" : {
+      "text" : "Accessories",
+      "textColor": "red",
+      "font": "t-heading-25",
+      "blockClass": "Accessories",
+      "textAlignment" : "LEFT",
+      "textPosition" : "LEFT"
+    }
+  },
+  "flex-layout.col#AccessoriesCol1" : {
+    "props" : { "blockClass": "Accessories"},
+    "children": ["rich-text#Accessories1", "rich-text#Accessories2"]
+  },
+  "flex-layout.row#AccessoriesRow2" : {
+    "props" : { "blockClass": "Accessories"},
+    "children": ["info-card#Electronics", "info-card#Equipment", "info-card#Exterior"]
+  },
+  "flex-layout.row#AccessoriesRow3" : {
+    "props" : { "blockClass": "Accessories"},
+    "children": ["info-card#Interior", "info-card#NISMO", "info-card#TruckTowing"]
+  },
+  "rich-text#Accessories1" : {
+    "props" : {
+      "text" : "View All Accessories",
+      "textColor": "red",
+      "font": "t-heading-15",
+      "blockClass": "Accessories1"
+    }
+  },
+  "rich-text#Accessories2" : {
+    "props" : {
+      "text" : "Maintain the intelligent performance of your Nissan with Genuine Nissan Accessories.",
+      "textColor": "red",
+      "font": "t-heading-10",
+      "blockClass": "Accessories2"
+    }
+  },
+  "info-card#Electronics": {
+    "props": {
+      "blockClass" : "Electronics",
+      "imageUrl": "https://www.nissanusa.com/content/dam/Nissan/us/owners/ownership-redesign/2021-benefits-nissan-connect-redesign/bluetooth-audio-touchscreen-display.jpg",
+      "isFullModeStyle": true,
+      "headline": "Electronics",
+      "subhead": "Upgrade your Nissan with innovative technology additions.",
+      "textPosition": "center",
+      "callToActionMode" : "none"
+    }
+  },
+  "info-card#Equipment": {
+    "props": {
+      "blockClass" : "Equipment",
+      "imageUrl": "https://www.nissanusa.com/content/dam/Nissan/us/owners/ownership-redesign/2021-benefits-nissan-connect-redesign/touch-screen-showing-navigation.jpg",
+      "isFullModeStyle": true,
+      "headline": "Equipment",
+      "subhead":"Explore more with the right accesories for your Nissan.",
+      "textPosition": "center",
+      "callToActionMode" : "none"
+    }
+  },
+  "info-card#Exterior": {
+    "props": {
+      "blockClass" : "Exterior",
+      "imageUrl": "https://www.nissanusa.com/content/dam/Nissan/us/vehicles/discontinuedvehicles/juke/2017-nissan-juke-crossover-customized-exterior-pfa.jpg.ximg.l_full_m.smart.jpg",
+      "isFullModeStyle": true,
+      "headline": "Exterior",
+      "subhead": "Enhance and upgrade the aesthetic of your Nissan",
+      "textPosition": "center",
+      "callToActionMode" : "none"
+    }
+  },
+  "info-card#Interior": {
+    "props": {
+      "blockClass" : "Interior",
+      "imageUrl": "https://www.nissanusa.com/content/dam/Nissan/us/vehicles/preorder/Modal/Design/2022-ariya-interior-cockpit-uslhd-arypl033.jpg.ximg.l_12_m.smart.jpg",
+      "isFullModeStyle": true,
+      "headline": "Interior",
+      "subhead": "Bring more to your daily drive with interior accesories for your Nissan.",
+      "textPosition": "center",
+      "callToActionMode" : "none"
+    }
+  },
+  "info-card#NISMO": {
+    "props": {
+      "blockClass" : "NISMO",
+      "imageUrl": "https://www-europe.nissan-cdn.net/content/dam/Nissan/nissan_europe/shop-at-home/vs_new.jpg.ximg.l_12_m.smart.jpg",
+      "isFullModeStyle": true,
+      "headline": "NISMO",
+      "subhead":"Experiance ultimate Nissan performance inspired by the race track.",
+      "textPosition": "center",
+      "callToActionMode" : "none"
+    }
+  },
+  "info-card#TruckTowing": {
+    "props": {
+      "blockClass" : "TruckTowing",
+      "imageUrl": "https://di-uploads-pod26.dealerinspire.com/nissanofdowntownla/uploads/2020/03/nissan-frontier-towing-1.png",
+      "isFullModeStyle": true,
+      "headline": "Truck and Towing",
+      "subhead":"Genuine accesories for whatever you're hauling, building or moving",
+      "textPosition": "center",
+      "callToActionMode" : "none"
+    }
+  },
+ "rich-text#Offers" : {
+    "props" : {
+      "text" : "Offers",
+      "textColor": "red",
+      "font": "t-heading-25",
+      "blockClass": "Offers"
+    }
+  },
+  "rich-text#Promotions" : {
+    "props" : {
+      "text" : "Promotions",
+      "textColor": "red",
+      "font": "t-heading-25",
+      "blockClass": "Promotions"
+    }
+  },
+  "info-card#Offers": {
+    "props": {
+      "imageUrl": "https://www.nissanusa.com/ngst-static/inventory/seo/NGST_NIS_SocialShareDefault.jpg",
+      "isFullModeStyle": true,
+      "headline": "Join the Nissan VIP Program",
+      "textPosition": "center",
+      "callToActionMode": "none",
+      "blockClass": "Offers"
+    }
+  },
+  "info-card#Promotions": {
+    "props": {
+      "imageUrl": "https://www.nissanusa.com/content/dam/Nissan/us/homepage/hero/ariya/2023-nissan-ariya-electric-crossover-suv.jpg",
+      "isFullModeStyle": true,
+      "headline": "Promotions",
+      "textPosition": "center",
+      "callToActionMode": "none",
+      "blockClass": "Promotions"
     }
   },
   //------------------category--------------------------------------------------------
@@ -290,7 +470,7 @@
       "blockClass": "nissan-value-container"
     }
   },
-  "flex-layout.col#nissan-value-1": {
+  "flex-layout.col#nissan-value-1":{
     "children": [
       "link#nissan-value-redirect1",
       "link#nissan-value-redirect2"
