@@ -1,8 +1,10 @@
 {
   "store.home": {
     "blocks": [
+      "info-card#homepage-main-banner", //a-spot banner
+      "responsive-layout.desktop#home",
+      "responsive-layout.mobile#home",
       "flex-layout.row#home", // home
-      "slider-layout#slides", //caraousal
       "flex-layout.row#demo", // categories
       "__fold__.experimentalLazyAssets",
       //  "info-card#shelf", // view all collections
@@ -31,74 +33,145 @@
   },
 
 
-  //-----------------------------caraousal------------------------------------------
-  "slider-layout#slides": {
+  //----------------------------- A-spot Banner ------------------------------------------
+  "info-card#homepage-main-banner": {
     "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel",
-      "fullWidth": true,
-      "autoplay": {
-        "timeout": 4000,
-        "stopOnHover": true
-      }
-    },
+      "id": "homepage-main-banner",
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "textMode": "'rich-text'",
+      "imageUrl": "assets/hero-mothership.jpg",
+      "headline": "##### NISSAN PARTS & ACCESSORIES ONLINE \n ### GENUINE NISSAN PARTS, ACCESSORIES, AND MERCHANDISE ONLINE",
+      "subhead":  "Nissan promises innovation that’s guaranteed to excite. Maintain your Nissan with Genuine Nissan Parts from Nissan Parts & Accessories Online and ensure a smarter and more thrilling ride.",
+      "blockClass": "homepage-spot-banner",
+      "textAlignment": "left",
+      "callToActionMode": "none"
+    }
+  },
+
+  // ------------------- Car Model -----------------------------------------------
+  "responsive-layout.desktop#home": {
     "children": [
-      "info-card#slide1",
-      "info-card#slide2",
-      "info-card#slide3",
-      "video#banner-homepage"
+      "flex-layout.row#homepage-car-model",
+      "car-model-tabs"
     ]
   },
-  "info-card#slide1": {
+  "responsive-layout.mobile#home": {
+    "children": [
+      "flex-layout.row#homepage-car-model",
+      "car-model-accordion"
+    ]
+  },
+  "flex-layout.row#homepage-car-model": {
     "props": {
-      "imageUrl": "assets/slider0.jpg",
-      "isFullModeStyle": true,
-      "headline": "Welcome to Zirtuen!",
-      "subhead": "stay home & shop online",
-      "callToActionMode": "button",
-      "callToActionText": "See Collection",
-      "callToActionUrl": "/sales",
-      "textPosition": "center",
-      "blockClass": "info-card-slide"
+      "blockClass": "homePageModelFlex",
+      "colSizing": "auto",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#homepage-model-left",
+      "flex-layout.col#homepage-model-right"
+    ]
+  },
+  "flex-layout.col#homepage-model-left": {
+    "children": ["rich-text#homePageModel"],
+    "props": {
+      "blockClass": "richTextColLeft"
     }
   },
-  "info-card#slide2": {
+  "flex-layout.col#homepage-model-right": {
+    "children": ["modal-trigger#vin-number"],
     "props": {
-      "imageUrl": "assets/slider2.jpg",
-      "headline": "Electronics Appliances",
-      "subhead": "Quality Products with Reliability",
-      "isFullModeStyle": true,
-      "callToActionMode": "link",
-      "callToActionText": "Shop Now",
-      "callToActionUrl": "/electronics",
-      "textPosition": "center",
-      "blockClass": "info-card-slide"
+      "blockClass": "richTextColRight"
     }
   },
-  "info-card#slide3": {
+  "rich-text#homePageModel": {
     "props": {
-      "imageUrl": "assets/slider1.jpg",
-      "callToActionMode": "link",
-      "callToActionText": "Shop Now",
-      "callToActionUrl": "/major-appliances",
-      "isFullModeStyle": true,
-      "textPosition": "center",
-      "blockClass": "info-card-slide"
+      "text": "### Select a Model"
     }
   },
-  "video#banner-homepage": {
+  "modal-trigger#vin-number": {
+    "children": [
+      "rich-text#homePageVin",
+      "modal-layout#homePageVin"
+    ]
+  },
+  "rich-text#homePageVin": {
     "props": {
-      "src": "https://www.youtube.com/watch?v=8-KpLN57wOc",
-      "width": "100%",
-      "blockClass": "slider-videoContainer"
+      "text": "##### Search by VIN"
     }
   },
+  "modal-layout#homePageVin": {
+    "children": [
+      "modal-header",
+      "flex-layout.row#vin-form"
+    ]
+  },
+  "flex-layout.row#vin-form": {
+    "children": [
+      "flex-layout.col#form"
+    ]
+  },
+  "flex-layout.col#vin-form": {
+    "children": [
+      // "rich-text#vinText",
+      "form#vin-number"
+    ]
+  },
+  "form#vin-number": {
+    "props": {
+      "entity": "clients",
+      "schema": "person"
+    },
+    "children": [
+      "rich-text#formTitle",
+      "form-input.text#firstName",
+      "form-input.text#lastName",
+      "form-field-group#address",
+      "form-input.checkbox#agreement",
+      "form-submit"
+    ],
+    "blocks": ["form-success"]
+  },
+  "form-success": {
+    "children": [
+      "rich-text#successSubmit"
+    ]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Succesfully submitted the data!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "form-input.text#firstName": {
+    "props": {
+      "pointer": "#/properties/firstName"
+    }
+  },
+  "form-input.text#lastName": {
+    "props": {
+      "pointer": "#/properties/lastName"
+    }
+  },
+  "form-input.checkbox#agreement": {
+    "props": {
+      "pointer": "#/properties/agreement",
+      "label": "Do you agree that this is the best form component in the whole wide world?"
+    }
+  },
+  "form-field-group#address": {
+    "props": {
+      "pointer": "#/properties/address"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "Submit"
+    }
+  },
+  
   //------------------ flex-layout.row#home --------------------------------------------------------
   "flex-layout.row#home": {
     "children": [

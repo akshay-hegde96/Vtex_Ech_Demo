@@ -85,6 +85,12 @@
   "dropdown-inputbox": {
     "component": "DropdownInputBox"
   },
+  "car-model-tabs": {
+    "component": "ModelTabWrapper"
+  },
+  "car-model-accordion": {
+    "component": "CarModelAccordion"
+  },
   "sale-price": {
     "component": "SalePriceWrapper"
   }
