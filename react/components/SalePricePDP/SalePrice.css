@@ -1,0 +1,314 @@
+.salePrice{
+    font-size: 20px !important;
+    color: #000 !important;
+    font-weight : bold;
+    }
+    .priceText{
+    font-size: 20px !important;
+    color: #c32323 !important;
+    font-weight : bold;
+    }
+    .text-right {
+    text-align : right;
+    }
+    
+    .limitedImg{
+    vertical-align : middle;
+    height : 13px;
+    width : 13pxl
+    }
+    .limitedBlock{
+    margin-top : 10px;
+    flex: 0 0 auto;
+    width: 100%;
+    }
+    
+    .discountBlock{
+    flex: 0 0 auto;
+    width: 66.66%;
+    margin-top : 10px;
+    }
+    
+    .discountPriceBlock{
+    flex: 0 0 auto;
+    width: 33.33%;
+    margin-top : 10px;
+    text-align : right;
+    }
+    .ffBlock {
+    margin-top : 10px;
+    flex: 0 0 auto;
+    width: 100%;
+    }
+    .limitedText {
+    color: #268000;
+    padding: 2px 0 0 0;
+    font-size: 12px;
+    font-weight: bold;
+    }
+    .discountText {
+    color: #777 !important;
+    font-size: 12px !important;
+    text-decoration: none !important;
+    font-weight : bold;
+    }
+    .discountPriceText {
+    text-decoration: line-through !important;
+    font-weight: bold !important;
+    color: #777 !important;
+    font-size: 12px !important;
+    }
+    .shippingInfoBlock {
+    margin-bottom: 15px;
+    border-top: solid 2px #eee;
+    width : 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+    .saleRow{
+    margin-bottom : 12px;
+    width : 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    .ffText {
+    font-size: 12px;
+    padding: 0;
+    font-weight: bold;
+    }
+    
+    .cestimateShipping{
+    padding: 0 6px 0 6px;
+    font-size: 10px !important;
+    text-transform: none !important;
+    height: inherit;
+    border-radius: 5px !important;
+    position: relative;
+    bottom: 1px;
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 1px solid #d6d6d6 !important;
+    white-space: normal;
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: bold;
+    }
+    
+    .shippingOptionBlock{
+    background: #fafafa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    width : 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    
+    .pickupInfoBlock {
+    
+    background: #fafafa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    width : 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    
+    .pd_installText {
+    font-size: 13px;
+    font-weight: bold;
+    }
+    
+    .addressTony {
+    font-size: 12px;
+    margin-left: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+    }
+    
+    .pickupPadding {
+    padding-bottom : 10px;
+    border-bottom: 1px solid #ccc;
+    flex: 0 0 auto;
+    width: 100%;
+
+    }
+    .pickupRadioBlock {
+    flex: 0 0 auto;
+    width: 100%;
+    }
+    
+    .decBtn{
+    padding : 0;
+    flex: 0 0 auto;
+    width: 25%;
+    }
+    .incBtn{
+    padding : 0;
+    flex: 0 0 auto;
+    width: 25%;
+    text-align : right;
+    }
+    
+    .decBtn .btn, .incBtn .btn{
+    border : 1px solid #ccc;
+    width : 40px;
+    }
+    
+    .cartBtnBlock {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+    padding : 0;
+    text-align : right;
+    }
+    
+    .ratingBlock {
+    margin-top: 10px;
+    border-top: 2px solid #dddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    width : 100%;
+    flex-wrap: wrap;
+    }
+    .btnestimateShippingWrapper {
+    padding-right : 10px;
+    }
+    .ratingIcon {
+    font-weight: 900;
+    color: #f8ce0b;
+    }
+    
+    .seeReviewBlock {
+    padding: 0;
+    text-align: right;
+    flex: 0 0 auto;
+    width: 33.33333%;
+    }
+    .seeReviews {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    }
+    .ratingText {
+    font-size: 12px;
+    font-weight: 500;
+    }
+    .reviews {
+    font-size: 12;
+    font-weight: bold;
+    }
+    .nissanSaleBlock {
+    border-width: 2px !important;
+    border-color: #eee !important;
+    border-style: solid !important;
+    padding: 25px;
+    flex: 0 0 auto;
+    width:100%;
+    background-color: #fff;
+    }
+    .rowPDP,.qtySelectorBlock {
+    width : 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    }
+    .colRight6{
+    flex: 0 0 auto;
+    width: 50%;
+    text-align : right;
+    }
+    .shippingRadioBlock{
+    flex: 0 0 auto;
+    width: 50%;
+    padding-left:5px;
+    }
+    .col6PDP {
+    flex: 0 0 auto;
+    width: 50%;
+    }
+    .col8PDP {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+    }
+    .qtyInputBlock{
+    flex: 0 0 auto;
+    width: 41.66666667%;
+    }
+
+    .ratingIcon img{
+		width: 13px;
+		height: 13px;
+	}
+    
+    .formControl{
+        text-align: center;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    .btn {
+    display: inline-block;
+    align-self: center;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    
+    .PrimaryBtn {
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    align-self: center;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    }
+    

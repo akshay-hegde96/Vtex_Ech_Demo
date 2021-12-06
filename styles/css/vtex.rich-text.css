@@ -343,5 +343,8 @@
 }
 
 .wrapper--accessories-header {
-  padding-left: 50px;
+  padding-left: 20px;
+}
+.container--tab-header-dealer{
+  padding-left: 20px;
 }
