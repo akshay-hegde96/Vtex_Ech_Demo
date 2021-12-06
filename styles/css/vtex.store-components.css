@@ -291,12 +291,17 @@
   .searchBarInnerContainer--nissan-searchbar-one{
   border: 1px solid gray;
   border-radius: 0px;
-  position: unset !important;
-  left: 0px !important;
+  position: relative !important;
+  left: 12px !important;
   top: 0px !important;
 }
 .imageElement--bar-caret-icon{
- left: 0px !important;
+ left: 11px !important;
+}
+.logoContainer--mobile-logo{
+  position: relative;
+    top: 23px;
+    right: 15px;
 }
 }
 
@@ -474,7 +479,9 @@ justify-content: center;
 .imageElement--youtube,
 .imageElement--twitter,
 .imageElement--insta,
-.imageElement--pinterest 
+.imageElement--pinterest {
+  margin-right: 10px;
+}
 /* ========== Nissan ================= */
 .imageElement--nissan-header-image {
   border: 1px #e2e2e2 solid;

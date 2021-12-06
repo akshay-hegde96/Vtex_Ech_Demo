@@ -445,7 +445,8 @@
       "title": "Logo",
       "href": "/",
       "url": "assets/nissan-logo.png",
-      "width": "70"
+      "width": "70",
+      "blockClass":"mobile-logo"
     }
   },
   // "header-layout.mobile" -- End
