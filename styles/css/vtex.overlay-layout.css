@@ -16,8 +16,15 @@
 /* =============Nissan============== */
 .arrow{
     color: #c32323;
-    left: 415px !important;
+    left: 388px !important;
 }
 .container--bar-label-container{
     padding-top: 0px !important;
+}
+
+/* =======Mobile=========== */
+@media screen and (max-width:480px){
+    .arrow{
+        left: 155px !important;
+    }
 }

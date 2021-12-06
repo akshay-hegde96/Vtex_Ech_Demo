@@ -16,16 +16,16 @@ const DropdownInputBox = () => {
           {/* <h5 className={styles.modalheader}>ADD VEHICLE TO GARAGE</h5> */}
         <h3>Select Your Vehicle Below:</h3>
         <div className={styles.selectMargin}>
-          <EXPERIMENTAL_Select options={models} multi={false} />
+          <EXPERIMENTAL_Select options={models} multi={false} placeholder="Select a Model"/>
         </div>
         <div className={styles.selectMargin}>
-          <EXPERIMENTAL_Select options={years} multi={false} />
+          <EXPERIMENTAL_Select options={years} multi={false} placeholder="Select a Year"/>
         </div>
         <div className={styles.selectMargin}>
-          <EXPERIMENTAL_Select options={TrimLevels} multi={false} />
+          <EXPERIMENTAL_Select options={TrimLevels} multi={false} placeholder="Select a Trim Level"/>
         </div>
         <div className={styles.selectMargin}>
-          <EXPERIMENTAL_Select options={driveline} multi={false} />
+          <EXPERIMENTAL_Select options={driveline} multi={false} placeholder="Select a Driveline"/>
         </div>
         <hr />
         <div style={{ display: "flex" }}>

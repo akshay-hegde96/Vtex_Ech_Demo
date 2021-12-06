@@ -10,7 +10,7 @@
 .notificationBarInner {
   justify-content: start;
   min-height: unset;
-  padding: 6px 0;
+  padding: 6px 85px;
 }
 .infoCardContainer--info-card-slide {
   object-fit: cover;
@@ -275,7 +275,7 @@
   .notificationContent {
     text-align: center;
   }
-  .searchBarContainer {
+  /* .searchBarContainer {
     background-color: #d1d5c7;
     position: absolute;
     left: 0;
@@ -287,14 +287,17 @@
   }
   .searchBarContainer {
     padding: 0.4em;
-  }
-  .searchBarInnerContainer--nissan-searchbar-one {
-    border: 1px solid gray;
-    border-radius: 0px;
-    position: unset !important;
-    left: 0px !important;
-    top: 0px !important;
-  }
+  } */
+  .searchBarInnerContainer--nissan-searchbar-one{
+  border: 1px solid gray;
+  border-radius: 0px;
+  position: unset !important;
+  left: 0px !important;
+  top: 0px !important;
+}
+.imageElement--bar-caret-icon{
+ left: 0px !important;
+}
 }
 
 .skuSelectorSubcontainer,
@@ -397,6 +400,77 @@ justify-content: center;
   }
 }
 
+.infoCardContainer--Electronics,
+.infoCardContainer--Equipment,
+.infoCardContainer--Exterior,
+.infoCardContainer--Interior,
+.infoCardContainer--NISMO,
+.infoCardContainer--TruckTowing
+{
+  height: 30vh;
+  vertical-align: top;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+.infoCardContainer--Offers,
+.infoCardContainer--Promotions
+{
+  height: 30vh;
+  vertical-align: top;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+.infoCardTextContainer--Electronics,
+.infoCardTextContainer--Equipment,
+.infoCardTextContainer--Exterior,
+.infoCardTextContainer--Interior,
+.infoCardTextContainer--NISMO,
+.infoCardTextContainer--TruckTowing,
+.infoCardTextContainer--Offers,
+.infoCardTextContainer--Promotions
+{
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  position: relative;
+  top: -30px;
+}
+
+.infoCardHeadline--Electronics,
+.infoCardHeadline--Equipment,
+.infoCardHeadline--Exterior,
+.infoCardHeadline--Interior,
+.infoCardHeadline--NISMO,
+.infoCardHeadline--TruckTowing,
+.infoCardHeadline--Offers,
+.infoCardHeadline--Promotions
+{
+  font-size: 10px;
+  color: red;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.infoCardSubhead--Electronics,
+.infoCardSubhead--Equipment,
+.infoCardSubhead--Exterior,
+.infoCardSubhead--Interior,
+.infoCardSubhead--NISMO,
+.infoCardSubhead--TruckTowing,
+.infoCardSubhead--Offers,
+.infoCardSubhead--Promotions
+{
+  font-size: 7px;
+  color: black;
+  margin: 0px;
+  vertical-align: text-top;
+}
+
 /* -----------------nissan pdp page ----------------------*/
 
 .container--availibility {
@@ -489,6 +563,14 @@ justify-content: center;
   position: relative;
   top: 10px;
   left: 55px;
+}
+.imageElement--bar-caret-icon{
+  width: 35px;
+  height: 38px;
+  position: relative;
+  top: 16px;
+  left: 224px;
+  border: 1px solid gray;
 }
 /* .imageElement--fb, .imageElement--youtube, .imageElement--twitter, .imageElement--insta, .imageElement--pinterest{
   margin-right: 10px;

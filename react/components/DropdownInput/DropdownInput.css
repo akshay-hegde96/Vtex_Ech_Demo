@@ -53,3 +53,9 @@ background-color: #fafafa;
     top: 22px;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 480px) {
+    .layoutWidth{
+        width: 320px !important;
+    }
+}

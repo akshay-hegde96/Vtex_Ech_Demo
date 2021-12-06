@@ -14,7 +14,7 @@
     "children": [
       "menu-item#static-category-parts",
       "menu-item#static-category-accessories",
-      "menu-item#static-category-marchandise",
+      "menu-item#static-category-merchandise",
       "menu-item#static-category-nismo",
       "menu-item#static-category-blog"
     ]
@@ -32,6 +32,14 @@
         "tagTitle": "PARTS",
         "text": "PARTS"
       },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 12,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "red",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconPosition": "right",
       "blockClass": "nissan-menu-item"
     },
     "blocks": ["vtex.menu@2.x:submenu#static-category-electronics"]
@@ -311,6 +319,14 @@
         "tagTitle": "ACCESSORIES",
         "text": "ACCESSORIES"
       },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 12,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "red",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconPosition": "right",
       "blockClass": "nissan-menu-item"
     }
   },
@@ -379,9 +395,9 @@
     }
   },
 
-  "menu-item#static-category-marchandise": {
+  "menu-item#static-category-merchandise": {
     "props": {
-      "id": "menu-item-category-marchandise",
+      "id": "menu-item-category-merchandise",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -389,9 +405,17 @@
         "type": "internal",
         "href": "/",
         "noFollow": false,
-        "tagTitle": "MARCHANDISE",
-        "text": "MARCHANDISE"
+        "tagTitle": "MERCHANDISE",
+        "text": "MERCHANDISE"
       },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 12,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "red",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconPosition": "right",
       "blockClass": "nissan-menu-item"
     }
   },
@@ -408,6 +432,14 @@
         "tagTitle": "NISMO",
         "text": "NISMO"
       },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 12,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "red",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconPosition": "right",
       "blockClass": "nissan-menu-item"
     }
   },
@@ -424,6 +456,14 @@
         "tagTitle": "BLOG",
         "text": "BLOG"
       },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 12,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "red",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconPosition": "right",
       "blockClass": "nissan-menu-item"
     }
   },

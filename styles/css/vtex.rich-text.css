@@ -143,6 +143,10 @@
     display: flex;
     justify-content: center;
   }
+  .paragraph--bar-label{
+    left: 0px !important;
+    padding-right: 145px !important;
+  }
 }
 
 .paragraph--faq-Heading {
@@ -285,6 +289,41 @@
   margin-top: 1rem;
 }
 
+.container--Accessories,
+.container--Offers,
+.container--Promotions
+{
+  font-size: 12px;
+  color: black;
+  align-content: center;
+  font-weight: bolder;
+  padding-left: 5px;
+  height: 100%;
+}
+
+.container--Accessories1,
+.container--Accessories2
+{
+  background-color: whitesmoke;
+  font-size: 8px;
+  color: black;
+  align-content: center;
+  padding: 0%;
+  margin-top: 0%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+}
+.wrapper--nissan-content1,.wrapper--nissan-content2{
+  padding-left: 50px;
+}
+
+.wrapper--accessories-header{
+padding-left: 50px;
+}
+
 /* ---------------nissan pdp page --------------- */
 
 .heading--name {
@@ -316,7 +355,9 @@
   padding: 7px 15px;
   padding-right: 170px;
 }
-.container--bar-label2 {
+
+
+.container--bar-label2{
   background-color: #c32323;
   color: white;
   font-size: small;
@@ -347,4 +388,5 @@
 }
 .container--tab-header-dealer{
   padding-left: 20px;
+  /* padding-left: 50px; */
 }
