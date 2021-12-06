@@ -90,5 +90,9 @@
   },
   "car-model-accordion": {
     "component": "CarModelAccordion"
+  },
+  "sale-price": {
+    "component": "SalePriceWrapper"
   }
+
 }
