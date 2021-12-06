@@ -126,8 +126,8 @@
 /* ========Nissan======= */
 .styledLinkContent--nissan-menu-item,.menuItem--nissan-menu-item--isOpen,.menuItem--nissan-menu-item--isClosed,.styledLinkContainer--nissan-menu-item{
 color: #3f3f40;
-margin-left: 5px !important;
-margin-right: 5px !important;
+margin-left: 0px!important;
+margin-right: 1px!important;
 font-weight: bold;
 }
 .submenuWrapper--isOpen{

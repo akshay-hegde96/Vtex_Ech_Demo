@@ -10,7 +10,7 @@
 .notificationBarInner {
   justify-content: start;
   min-height: unset;
-  padding: 6px 0;
+  padding: 6px 85px;
 }
 .infoCardContainer--info-card-slide {
   object-fit: cover;
@@ -275,7 +275,7 @@
   .notificationContent {
     text-align: center;
   }
-  .searchBarContainer {
+  /* .searchBarContainer {
     background-color: #d1d5c7;
     position: absolute;
     left: 0;
@@ -287,14 +287,17 @@
   }
   .searchBarContainer {
     padding: 0.4em;
-  }
-  .searchBarInnerContainer--nissan-searchbar-one {
-    border: 1px solid gray;
-    border-radius: 0px;
-    position: unset !important;
-    left: 0px !important;
-    top: 0px !important;
-  }
+  } */
+  .searchBarInnerContainer--nissan-searchbar-one{
+  border: 1px solid gray;
+  border-radius: 0px;
+  position: unset !important;
+  left: 0px !important;
+  top: 0px !important;
+}
+.imageElement--bar-caret-icon{
+ left: 0px !important;
+}
 }
 
 .skuSelectorSubcontainer,
@@ -560,6 +563,14 @@ justify-content: center;
   position: relative;
   top: 10px;
   left: 55px;
+}
+.imageElement--bar-caret-icon{
+  width: 35px;
+  height: 38px;
+  position: relative;
+  top: 16px;
+  left: 224px;
+  border: 1px solid gray;
 }
 /* .imageElement--fb, .imageElement--youtube, .imageElement--twitter, .imageElement--insta, .imageElement--pinterest{
   margin-right: 10px;

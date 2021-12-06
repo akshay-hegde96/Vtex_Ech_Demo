@@ -122,27 +122,71 @@
 
   // "header-layout.mobile" -- Start
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": [
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#2-mobile",
+      "flex-layout.row#3-mobile",
+      "flex-layout.row#4-mobile",
+      "flex-layout.row#5-mobile"
+    ]
   },
-  "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
-  },
+  // "sticky-layout#1-mobile": {
+  //   "children": ["flex-layout.row#1-mobile"]
+  // },
   "flex-layout.row#1-mobile": {
     "children": [
-      "drawer",
-      "logo#mobile",
-      "flex-layout.col#spacer",
+      // "drawer",
+      "notification.bar"
+      // "logo#mobile"
+      // "flex-layout.col#spacer",
       //  "overlay-trigger#search-icon",
-      "disclosure-layout#header-search",
-      "minicart.v2"
+      // "disclosure-layout#header-search",
+      // "minicart.v2"
     ],
     "props": {
-      "blockClass": "main-header-mobile",
+      "blockClass": "nissan-main-header-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
   },
+  "flex-layout.row#2-mobile": {
+    "children": ["logo#mobile", "rich-text#header-menu", "drawer"],
+    "props": {
+      "blockClass": "nissan-main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#3-mobile": {
+    "children": ["search-bar"],
+    "props": {
+      "blockClass": "nissan-main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#4-mobile": {
+    "children": ["overlay-trigger#bar"],
+    "props": {
+      "blockClass": "nissan-main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#5-mobile": {
+    "children": ["rich-text#header-menu-second"],
+    "props": {
+      "blockClass": "nissan-main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
   "drawer": {
     "children": ["menu#drawer"]
   },
@@ -424,7 +468,10 @@
     }
   },
   "flex-layout.col#bar": {
-    "children": ["overlay-trigger#bar"]
+    "children": ["overlay-trigger#bar"],
+    "props": {
+      "blockClass": "nissan-bar"
+    }
   },
 
   "overlay-trigger#search-icon": {
@@ -485,7 +532,16 @@
   },
   // ==================Search Vehicle Bar=============
   "overlay-trigger#bar": {
-    "children": ["rich-text#barlabel", "overlay-layout"]
+    "children": ["flex-layout.row#nissan-bar", "overlay-layout"]
+  },
+  "flex-layout.row#nissan-bar": {
+    "children": ["rich-text#barlabel", "image#caret-bar"],
+    "props": {
+      "blockClass": "nissan-bar-trigger",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
   },
   "rich-text#barlabel": {
     "props": {
@@ -497,13 +553,19 @@
     "props": {
       // "placement": "bottom"
       "showArrow": true,
-      "offsets": { "skidding": 160, "distance": 0 },
+      "offsets": { "skidding": 140, "distance": 0 },
       "blockClass": "bar-label-container"
     },
     "children": [
       "rich-text#barlabel2",
       "dropdown-inputbox" //React comp
     ]
+  },
+  "image#caret-bar": {
+    "props": {
+      "src": "assets/down-caret-red.png",
+      "blockClass": "bar-caret-icon"
+    }
   },
   "rich-text#barlabel2": {
     "props": {
