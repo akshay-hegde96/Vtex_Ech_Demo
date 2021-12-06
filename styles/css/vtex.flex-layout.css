@@ -408,3 +408,20 @@ margin-bottom:30px;
 margin-top: 20px;
 border: 1px solid #ccc;
 } */
+
+.flexRow--homePageModelFlex {
+  position: relative;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.flexRowContent--homePageModelFlex {
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .flexColChild--richTextColRight {
+    position: absolute;
+    right: 1rem;
+  }
+}
