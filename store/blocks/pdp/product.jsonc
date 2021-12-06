@@ -62,6 +62,7 @@
     },
     "children": [
       "flex-layout.col#product-details",
+      "sale-price",
       "flex-layout.col#product-pricing"
     ]
   },
