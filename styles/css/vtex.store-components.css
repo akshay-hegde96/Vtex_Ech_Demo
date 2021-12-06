@@ -405,6 +405,77 @@ justify-content: center;
   }
 }
 
+.infoCardContainer--Electronics,
+.infoCardContainer--Equipment,
+.infoCardContainer--Exterior,
+.infoCardContainer--Interior,
+.infoCardContainer--NISMO,
+.infoCardContainer--TruckTowing
+{
+  height: 30vh;
+  vertical-align: top;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+.infoCardContainer--Offers,
+.infoCardContainer--Promotions
+{
+  height: 30vh;
+  vertical-align: top;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+.infoCardTextContainer--Electronics,
+.infoCardTextContainer--Equipment,
+.infoCardTextContainer--Exterior,
+.infoCardTextContainer--Interior,
+.infoCardTextContainer--NISMO,
+.infoCardTextContainer--TruckTowing,
+.infoCardTextContainer--Offers,
+.infoCardTextContainer--Promotions
+{
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  position: relative;
+  top: -30px;
+}
+
+.infoCardHeadline--Electronics,
+.infoCardHeadline--Equipment,
+.infoCardHeadline--Exterior,
+.infoCardHeadline--Interior,
+.infoCardHeadline--NISMO,
+.infoCardHeadline--TruckTowing,
+.infoCardHeadline--Offers,
+.infoCardHeadline--Promotions
+{
+  font-size: 10px;
+  color: red;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.infoCardSubhead--Electronics,
+.infoCardSubhead--Equipment,
+.infoCardSubhead--Exterior,
+.infoCardSubhead--Interior,
+.infoCardSubhead--NISMO,
+.infoCardSubhead--TruckTowing,
+.infoCardSubhead--Offers,
+.infoCardSubhead--Promotions
+{
+  font-size: 7px;
+  color: black;
+  margin: 0px;
+  vertical-align: text-top;
+}
+
 /* -----------------nissan pdp page ----------------------*/
 
 .container--availibility {
@@ -533,3 +604,42 @@ justify-content: center;
   padding-left: 50px;
   padding-right: 50px;
 } */
+
+.wrapper--homepage-spot-banner {
+  color: #fff;
+}
+.infoCardTextContainer--homepage-spot-banner {
+  margin: 0;
+  padding: 1rem;
+}
+.headingLevel5--homepage-spot-banner {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  font-size: 15px;
+}
+.headingLevel3--homepage-spot-banner {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+  font-size: 23px;
+}
+.paragraph--homepage-spot-banner {
+  font-weight: normal;
+  font-size: 15px;
+  display: inline-block;
+  line-height: 16px;
+  margin: 10px 0 10px;
+}
+@media only screen and (min-width: 768px) {
+  .infoCardTextContainer--homepage-spot-banner {
+    padding: 1rem 2rem 1rem 1rem;
+    width: 50%;
+    background-color: #000;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .headingLevel5--homepage-spot-banner {
+    margin-top: 150px;
+  }
+}

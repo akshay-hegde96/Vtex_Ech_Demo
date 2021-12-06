@@ -10,31 +10,58 @@
 }
 
 
-:global(.vtex-store-link-0-x-link--redirect-tonyNissan) {
+.link--redirect-tonyNissan {
   display: block;
   padding: 10px 10px 0 10px;
   color: #000;
 }
 
-:global(.vtex-store-link-0-x-buttonLink--tony-button) {
+.buttonLink--tony-button {
   float: right;
     /* padding: 9px; */
     margin: 10px;
 }
 
-:global(.vtex-store-link-0-x-link--redirect-nissan-value){
+/*:global(.vtex-store-link-0-x-link--redirect-nissan-value){
 	width: 40%;
     float: right;
     margin: 18px 0;
     color: #000;
     word-break: break-word;
-}
+}*/
 
-:global(.vtex-store-link-0-x-link--redirect-nissan-event){
+.link--redirect-nissan-event{
 	width: 40%;
     float: right;
-    margin: 18px 0;
+    /* margin: 18px 0; */
+    margin-top: 50px;
     color: #000;
     word-break: break-word;
 }
 
+.link--redirect-nissan-event-sub{
+	width: 40%;
+    float: right;
+    /* margin: 18px 0; */
+    /* margin-top: 50px; */
+    color: #000;
+    word-break: break-word;
+}
+
+.link--redirect-nissan-value{
+  width: 40%;
+  float: right;
+  margin-top: 50px;
+  /* margin: 18px 0; */
+  color: #000;
+  word-break: break-word;
+}
+
+.link--redirect-nissan-value-sub{
+  width: 40%;
+  float: right;
+  /* margin-top: 50px; */
+  /* margin: 18px 0; */
+  color: #000;
+  word-break: break-word;
+}
