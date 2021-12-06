@@ -16,3 +16,7 @@
   align-items: end;
   padding: 5px;
 }
+
+.stackContainer--product-img-stack {
+  width: 320px !important;
+}

@@ -113,7 +113,7 @@
   },
   "product-images#pdp": {
     "props": {
-      // "width": 200,
+      "width": 320,
       // "height": 300,
       "aspectRatio": "16:9",
       "displayThumbnailsArrows": false,
@@ -142,17 +142,22 @@
       "rowGap": 5
     },
     "children": [
-      "product-identifier.product",
-      "product-identifier.product",
+      "product-identifier.product#pdp",
+      "product-identifier.product#pdp",
       "product-description"
     ]
+  },
+  "product-identifier.product#pdp": {
+    "props": {
+      "blockClass": "pdp-ident"
+    }
   },
 
   "product-description": {
     "props": {
       "title": "Details",
       "collapseContent": true,
-      "blockClass": "product-desc"
+      "blockClass": "product-description"
     }
   },
 
@@ -261,17 +266,23 @@
       "preventVerticalStretch": true,
       "rowGap": 2
     },
-    "children": [
-      "flex-layout.col#name-discount",
-      "flex-layout.col#cost-savings"
-    ]
+
+    "children": ["rich-text#name", "product-selling-price#pdp"]
   },
-  "flex-layout.col#name-discount": {
-    "props": {
-      "blockClass": "name-discount"
-    },
-    "children": ["rich-text#name", "product-price-savings"]
-  },
+  //   "children": [
+  //     "flex-layout.col#name-discount",
+  //     "flex-layout.col#cost-savings"
+  //   ]
+  // },
+  // "flex-layout.col#name-discount": {
+  //   "props": {
+  //     "blockClass": "name-discount"
+  //   },
+  //   "children": [
+  //     "rich-text#name"
+  //     // ,       "product-price-savings"
+  //   ]
+  // },
   "rich-text#name": {
     "props": {
       "blockClass": "name",
@@ -279,12 +290,21 @@
     }
   },
 
-  "flex-layout.col#cost-savings": {
+  "product-selling-price#pdp": {
     "props": {
-      "blockClass": "cost-savings"
-    },
-    "children": ["product-selling-price", "product-list-price"]
+      "blockClass": "pdp-sp"
+    }
   },
+
+  // "flex-layout.col#cost-savings": {
+  //   "props": {
+  //     "blockClass": "cost-savings"
+  //   },
+  //   "children": [
+  //     "product-selling-price"
+  //     //, "product-list-price"
+  //   ]
+  // },
 
   "flex-layout.row#pricing-desc": {
     "props": {

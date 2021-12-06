@@ -257,7 +257,7 @@
 /* ---------------nissan pdp page --------------- */
 
 .flexRow--pdp-container {
-  padding: 20px;
+  padding: 20px 80px;
   background-color: rgb(250, 250, 250);
 }
 
@@ -274,7 +274,7 @@
   box-sizing: border-box;
   border: 2px solid rgb(235, 234, 234);
   border-radius: 2px;
-  width: 400px !important;
+  width: 350px !important;
 }
 
 .flexColChild--product-details {
@@ -302,7 +302,7 @@
 .flexColChild--searchBarCol {
   width: 150% !important;
 }
-
+/* -------------------------Nissan PDP page----------------------- */
 .flexCol--product_image {
   padding-bottom: 0;
   background-color: white;
@@ -316,13 +316,13 @@
 .flexCol--pdp-tab-layout {
   background-color: white;
   box-sizing: border-box;
-  border: 2px solid rgb(235, 234, 234);
-  border-radius: 4px;
+  border: 1px solid rgb(235, 234, 234);
+  border-radius: 6px;
 }
 
 .flexRowContent--product_description .stretchChildrenWidth {
   justify-content: center;
-  width: 60%;
+  width: auto;
 }
 
 .flexRow--relatedProducts {
@@ -347,6 +347,7 @@
 }
 
 .flexRowContent--pdp-main .stretchChildrenWidth {
+  width: auto !important;
   justify-content: flex-end !important;
 }
 
@@ -362,6 +363,13 @@
   color: black;
 }
 
+.flexCol--product_description {
+  width: 450px !important;
+}
+
+.flexRowContent--pricing {
+  justify-content: space-between;
+}
 /* :global(.vtex-flex-layout-0-x-flexCol--nissan-dealer-col1) {
   border: 1px solid #ccc;
   margin: 10px;

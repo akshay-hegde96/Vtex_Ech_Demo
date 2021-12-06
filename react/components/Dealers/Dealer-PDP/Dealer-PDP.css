@@ -2,7 +2,7 @@
   font-family: sans-serif;
   align-items: center;
   text-align: center;
-  width: 80%;
+  width: 100%;
   padding-top: 20px;
   box-sizing: border-box;
   border-top: 2px solid #eee;
@@ -26,10 +26,10 @@
   flex-flow: row;
   text-align: left;
   align-items: center;
-  justify-content: space-around;
-  margin-bottom: 4px;
-  border: 2px solid #eee;
-  padding: 5px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  padding: 5px 25px;
 }
 
 .card:hover {
@@ -75,9 +75,9 @@
 
 .search {
   height: 35px;
-  width: 90px;
+  width: 80px;
   margin-right: 1rem;
-  padding: 6px 12px;
+  padding: 6px 10px;
   color: #000;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -90,15 +90,15 @@
 .link {
   width: 90%;
   cursor: pointer;
-  padding: 6px 12px;
-  font-size: 14px;
+  padding: 6px 14px;
+  font-size: 13px;
   border: 2px solid #eee !important;
   background-color: #eee !important;
   color: #000 !important;
   border-radius: 0 !important;
   text-decoration-line: none;
   text-transform: capitalize !important;
-  font-weight: 700;
+  font-weight: 800;
   border-radius: 3px;
 }
 

@@ -1,7 +1,7 @@
 .container {
   max-width: 96rem;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .inlineContainer {
@@ -9,9 +9,18 @@
 }
 
 .star--filled {
-  color: #FFB100;
+  color: #ffb100;
 }
 
 .star--empty {
-  color: #FFB100;
+  color: #ffb100;
+}
+.reviewsHeading {
+  font-size: 16px;
+  margin: 5px auto;
+  font-variant: small-caps;
+}
+.reviewCommentsContainer {
+  margin: 5px auto;
+  font-size: 14px;
 }

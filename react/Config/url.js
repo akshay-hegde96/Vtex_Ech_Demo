@@ -26,7 +26,10 @@ export const sellerList =
 
 // seller site redirecting urls
 
-export const sellerSiteUrl = ["https://www.nissanusa.com/", "https://echidna.co/"]
+export const sellerSiteUrl = [
+  "https://www.nissanusa.com/",
+  "https://echidna.co/",
+];
 
 // Nissan Header Select bar options
 export const models = [
@@ -189,7 +192,6 @@ export const years = [
     value: "2021",
     label: "2021",
   },
-
 ];
 
 export const TrimLevels = [
@@ -230,7 +232,7 @@ export const TrimLevels = [
     label: "TECH",
   },
 ];
-export const  driveline = [
+export const driveline = [
   {
     value: "Base Coupe",
     label: "Base Coupe",
@@ -267,4 +269,11 @@ export const  driveline = [
     value: "2016 Nissan Altima SR 3.5L V6 CVT parts",
     label: "2016 Nissan Altima SR 3.5L V6 CVT parts",
   },
-]
+];
+
+//Nissan seller site redirecting urls
+
+export const nissanSellerSiteUrl = [
+  "https://www.nissanusa.com/",
+  "https://parts.nissanusa.com/",
+];

@@ -1,34 +1,29 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Dealer-PDP.css";
-
 import { makeAPICall } from "../../../Utils/httpCall";
-import { dealersListURL } from "../../../Config/url";
+import { sellerList } from "../../../Config/url";
+import { nissanSellerSiteUrl } from "../../../Config/url";
 
 const DealerList_PDP = () => {
-  const [data, setData] = useState([
-    { name: "TONY NISSAN", phone: "889298397" },
-    { name: "NEW NISSAN", phone: "889298397" },
-    { name: "GATE NISSAN", phone: "889298397" },
-  ]);
+  const [sellers, setSellers] = useState([]);
+  useEffect(() => {
+    const getSellerAPICall = async () => {
+      const data = await makeAPICall(sellerList, "GET");
+      console.log({ data });
+      setSellers([...data]);
+    };
+    getSellerAPICall();
+  }, []);
 
-  // useEffect(() => {
-  //   const getdealers = () => {
-  //     const responseData = makeAPICall(dealersListURL, "GET", "0-100");
-  //     setData(responseData);
-  //   };
-  //   getdealers();
-  // }, []);
-  // console.log(data);
-
-  const list = data.map((dealer, i) => {
+  const list = sellers.map((seller, i) => {
     return (
       <div key={i} className={styles.card}>
         <div className={styles.details}>
-          <h3>{dealer.name}</h3>
-          <p>{dealer.phone}</p>
+          <h3>{seller.Name}</h3>
+          <p>8892556743</p>
         </div>
 
-        <a className={styles.links} href="/">
+        <a className={styles.links} href={nissanSellerSiteUrl[i]}>
           SHOP NOW
         </a>
       </div>

@@ -99,4 +99,18 @@
   font-size: 20px;
   padding: 0px 0px;
   margin: 0px 0px;
+  color: #c32323;
+}
+
+.currencyCode--pdp-sp,
+.currencyInteger--pdp-sp,
+.currencyFraction--pdp-sp,
+.currencyDecimal--pdp-sp,
+.currencyGroup--pdp-sp {
+  font-size: 18px;
+  color: #c32323;
+}
+
+.sellingPrice--pdp-sp {
+  padding-right: 1rem;
 }
