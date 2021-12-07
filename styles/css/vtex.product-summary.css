@@ -24,6 +24,18 @@
   padding-bottom: 1rem;
 }
 
+.nameContainer--productNameGrid {
+  width: 260px;
+  height: 22px;
+}
+
+.brandName--productNameGrid {
+  color: #000 !important;
+  font-size: 16px !important;
+  margin-bottom: 5px;
+}
+
+
 .brandName {
   font-weight: 600;
   font-size: 18px;
@@ -32,10 +44,19 @@
 
 .container {
   text-align: start;
+  height: 390px;
+}
+
+.container--summary {
+  border-radius: 0 !important;
+
 }
 
 .imageContainer {
   text-align: center;
+  width: 240px;
+  height: 220px;
+  object-fit: contain;
 }
 
 .image {

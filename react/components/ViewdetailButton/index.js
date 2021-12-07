@@ -16,7 +16,7 @@ const ViewdetailButton=({ AddListenBtn }) => {
             <Button 
              variation="primary" size="small"
             >
-              View Details
+             VIEW DETAILS
             </Button>
           </div>
         </div>
