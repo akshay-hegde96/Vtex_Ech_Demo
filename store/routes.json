@@ -44,5 +44,8 @@
   },
   "store.custom#contact-form-data": {
     "path": "/form-data"
+  },
+  "store.custom#dealers-list": {
+    "path": "/dealers"
   }
 }
