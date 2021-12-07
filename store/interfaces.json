@@ -55,5 +55,11 @@
   },
   "ContactUsHistory": {
     "component": "ContactUsHistory"
+  },
+  "car-model-tabs": {
+    "component": "ModelTabWrapper"
+  },
+  "car-model-accordion": {
+    "component": "CarModelAccordion"
   }
 }

@@ -9,7 +9,6 @@
 }
 
 .caretIcon--caret-home {
-  background-color: green;
-  color: white;
-  padding: 10px 7px;
+  color: #c32323;
+  margin: 5px;
 }

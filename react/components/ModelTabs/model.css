@@ -1,0 +1,87 @@
+.modelTabWrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+.modelTabWrapper .tabList {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px dashed #d8d8d8;
+    border-top: 1px dashed #d8d8d8;
+    flex-wrap: wrap;
+}
+.tabContent {
+    text-align: center;
+}
+.tabListItem {
+    padding: 14px 20px 10px;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+}
+.tabListItem a {
+    color: #000;
+    text-decoration: none;
+}
+.tabListItem a:hover {
+    color: #c32323;
+}
+.tabListActive {
+    border-bottom: 4px solid #c32323;
+}
+.tabListActive::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid #c32323;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    right: 0;
+    bottom: -12px;
+    left: -2px;
+    margin: 0 auto;
+}
+.tabContentContainer {
+    padding: 1.5rem;
+}
+.modelRange {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.modelList {
+    list-style: none;
+}
+.carImage {
+    width: 175px;
+    height: auto;
+}
+.modelTitle {
+    font-size: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+}
+.modelAnchor {
+    text-decoration: none;
+    color: #000;
+}
+.modelAnchor:hover {
+    color: #c32323;
+    text-decoration: underline;
+}
+.car {
+    background-color: #fff;
+}
+.date {
+    background-color: #cecece;
+}

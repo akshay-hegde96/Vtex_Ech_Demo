@@ -1,0 +1,53 @@
+.modelAccordonWrapper {
+    padding: 1rem;
+}
+.accordionTitle {
+    padding: 10px;
+    background-color: #eee;
+    margin-bottom: 10px;
+}
+.titleLink {
+    font-size: 14px !important;
+    line-height: 19px !important;
+    font-weight: 400 !important;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+.modelRange {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+    .modelList {
+        list-style: none;
+        width: 32%;
+    }
+    .modelAccordonWrapper .carImage {
+        width: 100%;
+        height: auto;
+    }
+}
+.modelAnchor {
+    text-decoration: none;
+    color: #000;
+}
+.modelAnchor:hover {
+    color: #c32323;
+    text-decoration: underline;
+}
+.modelTitle {
+    font-size: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0;
+}
