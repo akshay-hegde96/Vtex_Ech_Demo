@@ -106,13 +106,11 @@
   display:none;
 }*/
 .flexRow--footer-link{
-  width: 1440px;
   height: 350px;
   padding: 10px 0 0;
   background-color: #000;
 }
 .flexRow--credits{
-  width: 1440px;
   height: 52px;
   background-color: #323437;
   justify-content: center;
