@@ -1,8 +1,11 @@
 {
   "store.home": {
     "blocks": [
-      "notification.bar",
-      "slider-layout#slides", //caraousal
+      // "notification.bar",
+      "info-card#homepage-main-banner",
+      "responsive-layout.desktop#home",
+      "responsive-layout.mobile#home",
+      // "slider-layout#slides", //caraousal
       "flex-layout.row#demo", // categories
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
@@ -24,10 +27,174 @@
     }
   },
 
-  // Notification-bar
-  "notification.bar": {
+
+  //----------------------------- A-spot Banner ------------------------------------------
+  "info-card#homepage-main-banner": {
     "props": {
-      "content": "FREE SHIPPING: Applies to USA orders over $2000+ | excluding HI, PR, AK, and CAN"
+      "id": "homepage-main-banner",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "textMode": "'rich-text'",
+      "imageUrl": "assets/home/nissan-aspot.jpg",
+      "headline": "##### NISSAN PARTS & ACCESSORIES ONLINE \n ### GENUINE NISSAN PARTS, ACCESSORIES, AND MERCHANDISE ONLINE",
+      "subhead":  "Nissan promises innovation that’s guaranteed to excite. Maintain your Nissan with Genuine Nissan Parts from Nissan Parts & Accessories Online and ensure a smarter and more thrilling ride.",
+      "blockClass": "homepage-spot-banner",
+      "textAlignment": "left",
+      "callToActionMode": "none"
+    }
+  },
+
+  //------------------------------ Tab and accordion structure -------------------------
+  "responsive-layout.desktop#home": {
+    "children": [
+      "flex-layout.row#homepage-car-model",
+      "car-model-tabs"
+    ]
+  },
+  "responsive-layout.mobile#home": {
+    "children": [
+      "flex-layout.row#homepage-car-model",
+      "car-model-accordion"
+    ]
+  },
+  "flex-layout.row#homepage-car-model": {
+    "props": {
+      "blockClass": "homePageModelFlex",
+      "colSizing": "auto",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#homepage-model-left",
+      "flex-layout.col#homepage-model-right"
+    ]
+  },
+  "flex-layout.col#homepage-model-left": {
+    "children": ["rich-text#homePageModel"],
+    "props": {
+      "blockClass": "richTextColLeft"
+    }
+  },
+  "flex-layout.col#homepage-model-right": {
+    "children": ["modal-trigger#vin-number"],
+    "props": {
+      "blockClass": "richTextColRight"
+    }
+  },
+  "rich-text#homePageModel": {
+    "props": {
+      "text": "### Select a Model"
+    }
+  },
+  "modal-trigger#vin-number": {
+    "children": [
+      "flex-layout.row#vinNumberRow",
+      "modal-layout#homePageVin"
+    ]
+  },
+  "flex-layout.row#vinNumberRow": {
+    "children": [
+      "flex-layout.col#vinIcon",
+      "flex-layout.col#vinText"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "fullWidth": false,
+      "blockClass": "vinNumberTextContainer"
+    }
+  },
+  "flex-layout.col#vinIcon": {
+    "children": ["image#vinIcon"],
+    "props": {
+      "blockClass": "iconColumn"
+    }
+  },
+  "image#vinIcon": {
+    "props": {
+      "src": "assets/home/search-by-vin.png",
+      "width": "28px",
+      "height": "28px"
+    }
+  },
+  "flex-layout.col#vinText": {
+    "children": ["rich-text#homePageVin","icon-caret#rightHome"],
+    "props": {
+      "blockClass": "vinTextCol"
+    }
+  },
+  "rich-text#homePageVin": {
+    "props": {
+      "text": "##### Search by VIN",
+      "blockClass": "vinText"
+    }
+  },
+  "modal-layout#homePageVin": {
+    "children": [
+      "modal-header",
+      "flex-layout.row#vin-form"
+    ]
+  },
+  "flex-layout.row#vin-form": {
+    "children": [
+      "flex-layout.col#form"
+    ]
+  },
+  "flex-layout.col#vin-form": {
+    "children": [
+      // "rich-text#vinText",
+      "form#vin-number"
+    ]
+  },
+  "form#vin-number": {
+    "props": {
+      "entity": "clients",
+      "schema": "person"
+    },
+    "children": [
+      "rich-text#formTitle",
+      "form-input.text#firstName",
+      "form-input.text#lastName",
+      "form-field-group#address",
+      "form-input.checkbox#agreement",
+      "form-submit"
+    ],
+    "blocks": ["form-success"]
+  },
+  "form-success": {
+    "children": [
+      "rich-text#successSubmit"
+    ]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Succesfully submitted the data!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "form-input.text#firstName": {
+    "props": {
+      "pointer": "#/properties/firstName"
+    }
+  },
+  "form-input.text#lastName": {
+    "props": {
+      "pointer": "#/properties/lastName"
+    }
+  },
+  "form-input.checkbox#agreement": {
+    "props": {
+      "pointer": "#/properties/agreement",
+      "label": "Do you agree that this is the best form component in the whole wide world?"
+    }
+  },
+  "form-field-group#address": {
+    "props": {
+      "pointer": "#/properties/address"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "Submit"
     }
   },
 
@@ -112,39 +279,39 @@
   },
 
   "flex-layout.col#left": {
-    "children": ["stack-layout#cta-clothing", "stack-layout#cta-sale"]
+    "children": ["stack-layout#nissanCat1", "stack-layout#nissanCat2"]
   },
 
   //-----------------category 1-------------------------------------------
 
-  "stack-layout#cta-clothing": {
+  "stack-layout#nissanCat1": {
     "props": {
       "blockClass": "category"
     },
-    "children": ["image#clothing", "link#cta-clothing"]
+    "children": ["image#nissanCat1", "link#cta-nissanCat1"]
   },
-  "image#clothing": {
+  "image#nissanCat1": {
     "props": {
-      "src": "assets/category1.jpg",
+      "src": "assets/home/home-categoy-tile-1.jpg",
       "width": "100%",
       "height": "260px"
     }
   },
 
-  "link#cta-clothing": {
+  "link#cta-nissanCat1": {
     "props": {
       "blockClass": "cta-button",
       "displayMode": "button",
       "buttonProps": {
-        "variant": "secondary",
+        "variant": "primary",
         "size": "medium"
       },
       "href": "/electronics",
-      "label": "ELECTRONICS"
+      "label": "ENGINE ACCESSORIES"
     },
-    "children": ["icon-caret#right"]
+    "children": ["icon-caret#rightHome"]
   },
-  "icon-caret#right": {
+  "icon-caret#rightHome": {
     "props": {
       "orientation": "right",
       "blockClass": "caret-home"
@@ -152,96 +319,96 @@
   },
   //--------------------------category 2--------------------------------------------
 
-  "stack-layout#cta-sale": {
+  "stack-layout#nissanCat2": {
     "props": {
       "blockClass": "category"
     },
-    "children": ["image#sale", "link#cta-sale"]
+    "children": ["image#nissanCat2", "link#cta-nissanCat2"]
   },
 
-  "image#sale": {
+  "image#nissanCat2": {
     "props": {
-      "src": "assets/category2.jpg",
+      "src": "assets/home/home-categoy-tile-3.jpg",
       "width": "100%",
       "height": "350px"
     }
   },
-  "link#cta-sale": {
+  "link#cta-nissanCat2": {
     "props": {
       "blockClass": "cta-button",
       "displayMode": "button",
       "buttonProps": {
-        "variant": "secondary",
+        "variant": "primary",
         "size": "medium"
       },
       "href": "/major-appliances",
-      "label": "MAJOR APPLIANCES"
+      "label": "AC/Electronics Accessories"
     },
-    "children": ["icon-caret#right"]
+    "children": ["icon-caret#rightHome"]
   },
 
   "flex-layout.col#right": {
-    "children": ["stack-layout#cta-shoes", "stack-layout#cta-racing"]
+    "children": ["stack-layout#nissanCat3", "stack-layout#nissanCat4"]
   },
 
   //-----------------category 3-------------------------------------------
 
-  "stack-layout#cta-shoes": {
+  "stack-layout#nissanCat3": {
     "props": {
       "blockClass": "category"
     },
-    "children": ["image#shoes", "link#cta-shoes"]
+    "children": ["image#nissanCat3", "link#cta-nissanCat3"]
   },
-  "image#shoes": {
+  "image#nissanCat3": {
     "props": {
-      "src": "assets/category3.jpg",
+      "src": "assets/home/home-categoy-tile-2.jpg",
       "width": "100%",
       "height": "350px"
     }
   },
 
-  "link#cta-shoes": {
+  "link#cta-nissanCat3": {
     "props": {
       "blockClass": "cta-button",
       "displayMode": "button",
       "buttonProps": {
-        "variant": "secondary",
+        "variant": "primay",
         "size": "medium"
       },
       "href": "/small-appliances",
-      "label": "SMALL APPLIANCES"
+      "label": "BIKE RACK Accessories"
     },
-    "children": ["icon-caret#right"]
+    "children": ["icon-caret#rightHome"]
   },
 
   //-----------------category 4-------------------------------------------
 
-  "stack-layout#cta-racing": {
+  "stack-layout#nissanCat4": {
     "props": {
       "blockClass": "category"
     },
-    "children": ["image#racing", "link#cta-racing"]
+    "children": ["image#nissanCat4", "link#cta-nissanCat4"]
   },
 
-  "image#racing": {
+  "image#nissanCat4": {
     "props": {
-      "src": "assets/category4.webp",
+      "src": "assets/home/home-categoy-tile-4.jpg",
       "width": "100%",
       "height": "260px"
     }
   },
-  "link#cta-racing": {
+  "link#cta-nissanCat4": {
     "props": {
       "blockClass": "cta-button",
       "displayMode": "button",
       "buttonProps": {
-        "variant": "secondary",
+        "variant": "primary",
         "size": "medium"
       },
       "href": "/sales",
-      "label": "SALES"
+      "label": "Interior Accessories"
     },
-    "children": ["icon-caret#right"]
+    "children": ["icon-caret#rightHome"]
   },
 
   //--------------------------------View All Collections---------------------------

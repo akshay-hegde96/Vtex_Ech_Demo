@@ -4,27 +4,37 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#static-category-electronics",
-      "menu-item#static-category-major-appliances",
-      "menu-item#static-category-small-appliances",
+      "menu-item#static-category-parts",
+      "menu-item#static-category-accessories",
+      "menu-item#static-category-merchandise",
+      "menu-item#static-category-nismo"
 
-      "menu-item#sales"
+     
     ]
   },
-  "menu-item#static-category-electronics": {
+  "menu-item#static-category-parts": {
     "props": {
-      "id": "menu-item-category-electronics",
+      "id": "menu-item-category-parts",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/electronics",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "Electronics",
-        "text": "Electronics"
+        "tagTitle": "Parts",
+        "text": "PARTS"
       },
-      "blockClass": "megaMenu-header"
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 12,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "white",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconPosition": "right",
+
+      "blockClass": "nissan-megaMenu-header"
     },
     "blocks": ["vtex.menu@2.x:submenu#static-category-electronics"]
   },
@@ -111,22 +121,23 @@
     }
   },
 
-  "menu-item#static-category-major-appliances": {
+
+
+  "menu-item#static-category-accessories": {
     "props": {
-      "id": "menu-item-category-major-appliances",
+      "id": "menu-item-category-accessories",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/major-appliances",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "Major Appliances",
-        "text": "Major Appliances"
+        "tagTitle": "accessories",
+        "text": "ACCESSORIES"
       },
-      "blockClass": "megaMenu-header"
-    },
-    "blocks": ["vtex.menu@2.x:submenu#static-category-major-appliances"]
+      "blockClass": "nissan-megaMenu-header"
+    }
   },
   "vtex.menu@2.x:submenu#static-category-major-appliances": {
     "props": {
@@ -193,22 +204,21 @@
     }
   },
 
-  "menu-item#static-category-small-appliances": {
+  "menu-item#static-category-merchandise": {
     "props": {
-      "id": "menu-item-category-small-appliances",
+      "id": "menu-item-category-merchandise",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/small-appliances",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "Small Appliances",
-        "text": "Small Appliances"
+        "tagTitle": "merchandise",
+        "text": "MERCHANDISE"
       },
-      "blockClass": "megaMenu-header"
-    },
-    "blocks": ["vtex.menu@2.x:submenu#static-category-small-appliances"]
+      "blockClass": "nissan-megaMenu-header"
+    }
   },
   "vtex.menu@2.x:submenu#static-category-small-appliances": {
     "props": {
@@ -305,7 +315,7 @@
         "tagTitle": "Test",
         "text": "Test"
       },
-      "blockClass": "megaMenu-header"
+      "blockClass": "nissan-megaMenu-header"
     },
     "blocks": ["vtex.menu@2.x:submenu#static-category-test"]
   },
@@ -314,6 +324,22 @@
       "width": "auto"
     },
     "children": ["vtex.menu@2.x:menu#static-category-test"]
+  },
+  "menu-item#static-category-nismo": {
+    "props": {
+      "id": "menu-item-category-nismo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "nismo",
+        "text": "NISMO"
+      },
+      "blockClass": "nissan-megaMenu-header"
+    }
   },
   "vtex.menu@2.x:menu#static-category-test": {
     "props": {
