@@ -10,6 +10,8 @@
   text-align: center;
 }
 
+
+
 .headingLevel2--shelfTitle {
   font-weight: 200;
 }
@@ -48,6 +50,11 @@
   color: #03034e;
 }
 
+.paragraph--nissanModel {
+  color: #4e4e50 !important;
+}
+
+
 .container--link .strong {
   font-size: 16px;
   font-weight: 700;
@@ -83,6 +90,7 @@
   }
   .container--title .paragraph {
     line-height: 1.3em;
+    font-weight: bold;
   }
   .paragraph--credits,
   .paragraph--social {

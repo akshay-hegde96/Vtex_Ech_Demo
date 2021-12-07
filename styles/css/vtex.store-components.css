@@ -128,7 +128,6 @@
     padding: 140px;
   } */
   .newsletter .container--newsletter {
-    width: 1440px;
     height: 80px;
     padding: 17px 368px 15px 393px;
     background-color: #323437;
@@ -291,6 +290,7 @@
   border-radius: 50%;
   padding-top: 8px;
   padding-bottom: 8px;
+  display: none;
 }
 
 .shippingContainer,

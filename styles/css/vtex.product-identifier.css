@@ -7,4 +7,17 @@
   line-height: normal;
   letter-spacing: normal;
   color: #171c20;
+  margin-top: 1rem;
+}
+.product-identifier__label {
+  display: none !important;
+}
+
+.product-identifier__separator {
+  display: none;
+}
+
+.product-identifier__value {
+  font-size: 13px !important;
+  color: #4e4e50 !important;
 }

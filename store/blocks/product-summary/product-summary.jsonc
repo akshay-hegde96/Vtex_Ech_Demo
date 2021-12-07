@@ -5,18 +5,23 @@
       //"experimental__visibility-layout#productsummary",
       // "stack-layout#prodsum",
       "product-summary-name",
+      "product-selling-price#summary",
+      "flex-layout.row#nissanModelNo",
       // "product-customName",
       // "flex-layout.col#productRating",
       // "product-summary-space",
-      "product-list-price#summary",
-      "flex-layout.row#selling-price-savings",
-      "product-rating-inline",
+     // "product-list-price#summary",
+     // "flex-layout.row#selling-price-savings",
+      //"product-rating-inline",
       // "product-installments#summary",
-      "product-summary-space",
-      "product-summary-sku-selector",
-
-      "add-to-cart-button"
-    ]
+     // "product-summary-space",
+      //"product-summary-sku-selector",
+      //"add-to-cart-button"
+     "viewdetails-button"
+    ],
+    "props":{
+      "blockClass":"summary"
+    }
   },
   "product-summary-name": {
     "props": {
@@ -38,9 +43,9 @@
   },*/
   "stack-layout#prodsum": {
     "children": [
-      "product-summary-image#shelf",
-      "vtex.product-highlights@2.x:product-highlights#collection",
-      "modal-trigger#quickview" // Check quickview.jsonc
+      "product-summary-image#shelf"
+      //"vtex.product-highlights@2.x:product-highlights#collection",
+      //"modal-trigger#quickview" // Check quickview.jsonc
     ]
   },
 
@@ -111,5 +116,10 @@
       "markers": ["discount"],
       "blockClass": "summary"
     }
+  },
+
+  "flex-layout.row#nissanModelNo":{
+    "children":[ "product-identifier.product"]
   }
+  
 }
