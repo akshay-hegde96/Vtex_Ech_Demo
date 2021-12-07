@@ -337,3 +337,43 @@ justify-content: center;
 .logoImage--nissan-desktop-logo{
   padding: 10px 25px;
 }
+.infoCardContainer--homepage-spot-banner {
+  color:#fff;
+}
+
+.headingLevel5--homepage-spot-banner,
+.headingLevel3--homepage-spot-banner,
+.paragraph--homepage-spot-banner {
+  color: #ffffff;
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.headingLevel5--homepage-spot-banner {
+  margin: 1rem 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.headingLevel3--homepage-spot-banner {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 28px;
+  font-weight: bold;
+}
+.paragraph--homepage-spot-banner {
+  font-size: 16px;
+  font-weight: normal;
+}
+@media only screen and (min-width: 768px) {
+  .infoCardTextContainer--homepage-spot-banner {
+    width: 45%;
+    padding-top: 115px;
+    padding-bottom: 130px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .infoCardTextContainer--homepage-spot-banner {
+    width: 100%;
+    padding: 150px 0 20px;
+  }
+}

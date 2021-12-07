@@ -238,3 +238,27 @@
 .flexRowContent--nissan-main-menu-static{
   background-color: #000;
 }
+ /* Homepage Model Section */
+ .flexRowContent--homePageModelFlex {
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .flexColChild--richTextColRight {
+    position: absolute;
+    right: 1rem;
+  }
+}
+.flexRowContent--vinNumberTextContainer {
+  justify-content: center;
+  align-items: center;
+}
+.flexCol--vinTextCol {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
