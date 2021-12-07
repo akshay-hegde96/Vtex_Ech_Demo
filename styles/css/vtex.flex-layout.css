@@ -113,19 +113,17 @@
   line-height: 1.42857143;
   width: 100%;
 }
-.flexRow--socialIcons{
+.flexRow--socialIcons {
   width: 100%;
   line-height: 1.42857143;
   background-color: black;
-
 }
-.flexRow--disclaimer{
+.flexRow--disclaimer {
   width: 100%;
   line-height: 1.42857143;
   background-color: black;
-
 }
-.flexRowContent--socialIcons{
+.flexRowContent--socialIcons {
   display: flex;
   justify-content: end;
   width: webkit-fill-available;
@@ -211,7 +209,7 @@
   .flexColChild--product-name {
     padding-left: 25px;
   }
-  .flexRowContent--testIconsRow{
+  .flexRowContent--testIconsRow {
     justify-content: center;
     display: flex;
   }
@@ -252,8 +250,7 @@
   box-shadow: 0px 1px 8px 0px #808080f5;
 }
 
-
-
+/* 
 
 :global(.vtex-flex-layout-0-x-flexCol--nissan-dealer-col1) {
   border: 1px solid #ccc;
@@ -295,4 +292,13 @@ background-size: 100%;
 margin-bottom:30px;
 margin-top: 20px;
 border: 1px solid #ccc;
+} */
+/* ------------------PDP Page----------------------------- */
+.flexColChild--product-name {
+  margin-bottom: 20px;
+}
+
+.flexRow--car {
+  justify-content: center;
+  align-items: center;
 }

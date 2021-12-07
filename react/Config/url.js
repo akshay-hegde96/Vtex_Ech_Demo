@@ -30,3 +30,10 @@ export const sellerSiteUrl = [
   "https://www.nissanusa.com/",
   "https://echidna.co/",
 ];
+
+//Nissan seller site redirecting urls
+
+export const nissanSellerSiteUrl = [
+  "https://www.nissanusa.com/",
+  "https://parts.nissanusa.com/",
+];

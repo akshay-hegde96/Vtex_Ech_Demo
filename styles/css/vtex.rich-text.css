@@ -91,18 +91,18 @@
     padding-left: 65px;
   }
 
-  .paragraph--copy-right{
+  .paragraph--copy-right {
     color: #666;
     font-size: 12px;
     font-weight: bold;
     font-family: sans-serif !important;
   }
-  .paragraph--server-name{
+  .paragraph--server-name {
     line-height: 0px;
     font-size: 12px;
   }
 
-  .container--copy-right{
+  .container--copy-right {
     display: flex;
     justify-content: flex-end;
     margin-right: 60px;
@@ -113,7 +113,7 @@
   }
 }
 
-.container--disclaimer{
+.container--disclaimer {
   background-color: black;
   padding: 20px 0px 20px 0px;
 }
@@ -262,14 +262,14 @@
 .paragraph--header-top-sales {
   color: white;
 }
-.paragraph--sku-spec{
-  background-color:#ad2697;
+.paragraph--sku-spec {
+  background-color: #ad2697;
   color: #ffffff;
 }
-@media screen and (max-width: 768px){
-  .paragraph--sku-spec{
+@media screen and (max-width: 768px) {
+  .paragraph--sku-spec {
     width: fit-content;
-    background-color:#ad2697;
+    background-color: #ad2697;
     color: #ffffff;
   }
 }
@@ -280,12 +280,25 @@
   margin-top: 1rem;
 }
 
-.wrapper--nissan-content1,.wrapper--nissan-content2{
+.wrapper--nissan-content1,
+.wrapper--nissan-content2 {
   padding-left: 50px;
 }
 
-.wrapper--accessories-header{
-padding-left: 50px;
+.wrapper--accessories-header {
+  padding-left: 50px;
 }
 
-
+/*----------------PDP Page---------------------- */
+.paragraph--name {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  color: #171c20;
+  padding-top: 0;
+}

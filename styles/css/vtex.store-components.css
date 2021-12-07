@@ -18,18 +18,18 @@
   height: 350px;
   margin-top: 5px;
 } */
-.infoCardHeadline--info-card-slide{
+.infoCardHeadline--info-card-slide {
   color: #fdfdfd;
   /* background: #adb5bbbd; */
   /* padding: 10px; */
   font-weight: 900;
   font-variant: petite-caps;
 }
-.infoCardSubhead--info-card-slide{
+.infoCardSubhead--info-card-slide {
   color: #ffffff;
   font-variant: unicase;
-    font-weight: bold;
-    padding: 5px;
+  font-weight: bold;
+  padding: 5px;
 }
 
 /* .infoCardCallActionContainer--info-card-slide {
@@ -257,7 +257,7 @@
   .newsletter .container--newsletter {
     padding: 10px 10px;
   }
-  .notificationContent{
+  .notificationContent {
     text-align: center;
   }
 }
@@ -316,20 +316,20 @@
   font-variant: petite-caps;
 }
 
-.imageElement--testIcons{
+.imageElement--testIcons {
   padding: 0px 5px;
 }
-.notificationBarInner{
+.notificationBarInner {
   margin-top: 5px;
 }
-.confirmationText--newsletter{
+.confirmationText--newsletter {
   color: white;
 }
-.confirmationTitle--newsletter{
+.confirmationTitle--newsletter {
   color: white;
 }
 /* ========= */
-.skuSelectorName{
+.skuSelectorName {
   display: inline-block;
   min-width: 100px;
 }
@@ -337,57 +337,120 @@
 justify-content: center;
 } */
 
-
 /* =============== mobile-landscape ====================== */
 @media (max-width: 640px) and (orientation: landscape) {
-.skuSelectorName{
-  min-width: 60px;
-}
-.skuSelectorItemTextValue{
-  font-size: 10px !important;
-}
-.infoCardHeadline--info-card-slide{
-  font-size: 20px;
-  font-weight: normal;
-}
-.imageElement--store-features-img{
-  max-height: 280px !important;
-
-}
+  .skuSelectorName {
+    min-width: 60px;
+  }
+  .skuSelectorItemTextValue {
+    font-size: 10px !important;
+  }
+  .infoCardHeadline--info-card-slide {
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .imageElement--store-features-img {
+    max-height: 280px !important;
+  }
 }
 
 /* ======== iphoneX landscape ========= */
 @media (max-width: 812px) and (orientation: landscape) {
-  .infoCardHeadline--info-card-slide{
+  .infoCardHeadline--info-card-slide {
     font-size: 20px;
     font-weight: normal;
   }
-  .skuSelectorItemTextValue{
+  .skuSelectorItemTextValue {
     font-size: 10px !important;
   }
 }
-.imageElement--fb, .imageElement--youtube, .imageElement--twitter, .imageElement--insta, .imageElement--pinterest{
+.imageElement--fb,
+.imageElement--youtube,
+.imageElement--twitter,
+.imageElement--insta,
+.imageElement--pinterest {
   margin-right: 10px;
 }
-.container--socialIcons{
+.container--socialIcons {
   background-color: black;
 }
 
-.infoCardHeadline--nissan-accessories{
-font-size: 1rem;
-font-weight: 400;
+.infoCardHeadline--nissan-accessories {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-.infoCardCallActionContainer--nissan-accessories{
+.infoCardCallActionContainer--nissan-accessories {
   display: none;
 }
 
-.imageElement--image-container{
+.imageElement--image-container {
   padding-left: 20px;
   margin-top: 10px;
 }
 
-.container{
+.container {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+/*----------------- PDP NISSAN ------------------------------*/
+
+.productImagesThumb--pdp-img {
+  margin-bottom: 3px;
+}
+
+.productBrand--pdp-product-name {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #171c20;
+}
+
+.price_listPriceLabel--product-price {
+  font-size: 12px !important;
+  color: #777;
+}
+.price_listPrice--product-price {
+  font-size: 14px !important;
+  color: #777;
+}
+
+.price_sellingPriceLabel--product-price {
+  font-size: 14px !important;
+  color: #c32323;
+}
+.price_sellingPrice--product-price {
+  font-size: 24px !important;
+  color: #c32323;
+}
+
+.container--product-desc {
+  margin: 0;
+  padding-left: 0;
+}
+
+.content--product-desc {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  color: #171c20;
+  padding-top: 0;
+}
+
+.productDescriptionTitle--product-desc {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.imageElement--car {
+  margin-left: 31px;
+  margin-top: 80px;
 }
