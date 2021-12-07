@@ -230,6 +230,14 @@
   box-shadow: 0px 1px 8px 0px #808080f5;
 }
 
+/* ============== Nissan New ================ */
+.flexRowContent--nissan-main-header{
+  background-color: rgb(50, 52, 55);
+  height: 40px;
+}
+.flexRowContent--nissan-main-menu-static{
+  background-color: #000;
+}
  /* Homepage Model Section */
  .flexRowContent--homePageModelFlex {
   justify-content: center;

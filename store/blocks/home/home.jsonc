@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "notification.bar",
+      // "notification.bar",
       "info-card#homepage-main-banner",
       "responsive-layout.desktop#home",
       "responsive-layout.mobile#home",
@@ -27,12 +27,6 @@
     }
   },
 
-  // Notification-bar
-  "notification.bar": {
-    "props": {
-      "content": "FREE SHIPPING: Applies to USA orders over $2000+ | excluding HI, PR, AK, and CAN"
-    }
-  },
 
   //----------------------------- A-spot Banner ------------------------------------------
   "info-card#homepage-main-banner": {

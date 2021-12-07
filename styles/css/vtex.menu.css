@@ -124,3 +124,18 @@
   color: green !important;
   padding-left: 1rem;
 }
+
+
+/* =======Nissan============ */
+.styledLinkContent--nissan-megaMenu-header {
+  height: 22px;
+  font-family: NissanBrand;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
