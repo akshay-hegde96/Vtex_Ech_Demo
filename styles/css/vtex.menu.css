@@ -30,15 +30,29 @@
 
 /* ------------------------------------------------------------ */
 
-.styledLinkContent--shop,
-.styledLinkContent--my-account,
-.styledLinkContent--customer-service,
-.styledLinkContent--about {
+.menuContainerNav--footer-products,
+.menuContainerNav--footer-buying,
+.menuContainerNav--footer-for-owners,
+.menuContainerNav--footer-legal
+{
+  max-width: 300px;
+  justify-content: left;
+  margin: 0px 0px 0px 0px;
+}
+
+.styledLinkContent--Products,
+.styledLinkContent--buying,
+.styledLinkContent--for-owners,
+.styledLinkContent--legal
+{
   font-size: 20px;
-  padding-bottom: 5px;
-  color: rgb(255, 255, 255);
-  cursor: default;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .styledLinkContent--megaMenu-header {
@@ -51,29 +65,35 @@
 .styledLinkContent--megaMenu-header:active {
   color: rgb(14, 151, 14);
 }
-.styledLinkContent--electronics,
-.styledLinkContent--majorAppliances,
-.styledLinkContent--smallAppliances,
-.styledLinkContent--my-profile,
-.styledLinkContent--quick-orders,
-.styledLinkContent--my-orders,
-.styledLinkContent--returns,
-.styledLinkContent--gift-credit,
-.styledLinkContent--contact,
-.styledLinkContent--help,
-.styledLinkContent--shipping-policy,
-.styledLinkContent--privacy-policy,
-.styledLinkContent--term-of-use,
-.styledLinkContent--careers,
-.styledLinkContent--corporate-blog,
-.styledLinkContent--store-features,
-.styledLinkContent--upcoming-features,
-.styledLinkContent--about-us {
-  font-size: 15px;
-  color: white;
-}
 
-/* =========== Tablet ================*/
+.styledLinkContent--Parts,
+.styledLinkContent--Accessories,
+.styledLinkContent--Merchandise,
+.styledLinkContent--NISMO,
+.styledLinkContent--build-your-nissan,
+.styledLinkContent--view-NISMO-catalog,
+.styledLinkContent--NISMO-japan-parts,
+.styledLinkContent--jdm-nismo,
+.styledLinkContent--nissan-vip,
+.styledLinkContent--manual-guides,
+.styledLinkContent--recall-information,
+.styledLinkContent--owner-portal,
+.styledLinkContent--nissan-services,
+.styledLinkContent--nissan-visa-credit-card,
+.styledLinkContent--nissan-true-store,
+.styledLinkContent--omniparts,
+.styledLinkContent--privacy-policy,
+.styledLinkContent--sell-personal-information,
+.styledLinkContent--warranty {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #c0bfc0;
+  word-wrap: break-word!important;
+  max-width: 100px!important;
+  text-align: left;
+}
+ 
+  /* =========== Tablet ================*/
 @media only screen and (min-width: 481px) and (max-width: 1026px) {
   .styledLinkContent--my-account-mobile,
   .styledLinkContent--about-mobile,

@@ -6,16 +6,16 @@
     "children": [
       "newsletter",
       "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
       "flex-layout.row#footer-3-desktop"
     ]
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#shops",
-      "vtex.menu@2.x:menu#footer-account",
-      "vtex.menu@2.x:menu#footer-customer-service",
-      "vtex.menu@2.x:menu#footer-about-company"
+      "vtex.menu@2.x:menu#footer-products",
+      "vtex.menu@2.x:menu#footer-buying",
+      "vtex.menu@2.x:menu#footer-for-owners",
+      "vtex.menu@2.x:menu#footer-legal",
+      "flex-layout.col#social-network"
     ],
     "props": {
       "blockClass": "footer-link",
@@ -23,16 +23,31 @@
       "paddingBottom": 3
     }
   },
+  "flex-layout.col#social-network": {
+    "children":[
+      "social-networks",
+      "rich-text#social"
+    ],
+    "props": {
+      "blockClass": "social-network-col"
+    }
+  },
+  "rich-text#social": {
+    "props": {
+      "text": "All prices are Manufacturers Suggested Retail Prices and do not include [tax and] installation charges. Dealer sets actual price.",
+      "blockClass": "social"
+    }
+  },
   "newsletter": {
     "props": {
-      "label": "Newsletter Subscription",
-      "placeholder": "Enter Your Email",
+      "label": "Newsletter Subscription \n Nissan OEM Parts",
+      "placeholder": "Enter Your Email Address",
       "blockClass": "newsletter"
     }
   },
   "social-networks": {
     "props": {
-      "showInColor": true,
+      "showInColor": false,
       "socialNetworks": [
         {
           "name": "Facebook",
@@ -77,7 +92,7 @@
   },
   "rich-text#credits": {
     "props": {
-      "text": "© Echidnainc, All rights reserved. Site built with VTEX. SSL CERTIFIED SECURE SITE.",
+      "text": "© 2021 Nissan North America,Inc.",
       "blockClass": "credits"
     }
   },
