@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styles from './Myaccount.css'
-
+// import myAcIcon from '../../../assets/my-account.svg'
 const Menu = ({ children }) => {
     const [isOpen, setIsOpen] = React.useState(false);
     const [head, ...tail] = React.Children.toArray(children);
@@ -26,7 +26,7 @@ export class Myaccount extends Component {
         return (
             <div>
                 <Menu>
-                    <Item link="/account">My Account</Item>
+                    <Item link="/account"><img src="https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/561DC964-C331-436E-A1E8-D45C286AB76D.svg" style={{paddingRight:"6px"}}/>My Account</Item>
                     <Item link="/wishlist">My Wishlist</Item>
                     <Item link="/checkout">My Cart</Item>
                     <Item link="/checkout">Checkout</Item>

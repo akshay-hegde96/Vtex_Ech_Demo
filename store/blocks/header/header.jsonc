@@ -6,15 +6,9 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": [
-      //"flex-layout.row#1-desktop", // Telemarketing-- definition removed
-      "sticky-layout#2-desktop", // Launguage selector, My account, Logo, Search bar, Minicart.
-      //"flex-layout.row#3-desktop", // Main menu shop and about us-- definition removed
-      //-----------------//main header menu-------------------------------------------------
-      "flex-layout.row#4-desktop"
-    ]
+    "children": ["sticky-layout#2-desktop", "flex-layout.row#4-desktop"]
   },
-  // "sticky-layout#2-desktop" -- Start
+  //============== Top-bar starts =====================
   "sticky-layout#2-desktop": {
     "props": {
       "blockClass": "sticky-header"
@@ -23,7 +17,7 @@
   },
   "flex-layout.row#2-desktop": {
     "props": {
-      "blockClass": "main-header",
+      "blockClass": "nissan-main-header",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
@@ -31,70 +25,133 @@
       "fullWidth": true
     },
     "children": [
+      "notification.bar",
+      "flex-layout.col#spacer",
       "locale-switcher",
-      //"login",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
-      "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
-      // "overlay-trigger#search-icon",
-      "disclosure-layout#header-search",
-      "minicart.v2"
+      "flex-layout.col#category-menu"
     ]
   },
-  "flex-layout.col#logo-desktop": {
+  "notification.bar": {
     "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["logo#desktop"]
-  },
-  "flex-layout.col#category-menu": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["myaccount-menu"],
-    "parent": {
-      "challenge": "challenge.trade-policy-condition"
+      "content": "Promo section Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     }
-  },
-  "myaccount-menu": {
-    "parent": {
-      "challenge": "challenge.trade-policy-condition"
-    }
-  },
-  "challenge.trade-policy-condition": {
-    "props": {
-      "redirectPath": "/login",
-      "defaultContentVisibility": "hidden"
-    }
-  },
-  "logo#desktop": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "../image/logo.png",
-      "width": "180"
-    }
-  },
-  // "sticky-layout#2-desktop" -- End
-  // "flex-layout.row#3-desktop" -- Start
-  "flex-layout.row#3-desktop": {
-    "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": ["vtex.menu@2.x:menu#websites", "flex-layout.col#spacer"]
   },
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
     }
   },
-  //"sticky-layout#2-desktop" -- End
-  // "header-layout.mobile" -- Start
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["myaccount-menu"] //React component
+  },
+  //====================== Top-bar -- Ends=======================
+  // ====================== Header--second-row- Starts==============
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "nissan-main-menu-static",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      // "flex-layout.col#logo-desktop",
+      "logo#desktop",
+      "flex-layout.col#spacer",
+      "flex-layout.col#main-menu-static",
+      "flex-layout.col#spacer",
+      // "overlay-trigger#search-icon",
+      "disclosure-layout#header-search",
+      "minicart.v2"
+    ]
+  },
+// "flex-layout.col#logo-desktop":{
+// "children":[
+//   "logo#desktop"
+// ],
+// "props":{
+//   "blockClass"
+// }
+// },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/nissan-logo.png",
+      "width": "96",
+      "height": "80",
+      "blockClass":"nissan-desktop-logo"
+    }
+  },
+  "flex-layout.col#main-menu-static": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#main-menu-static"]
+  },
+  "overlay-trigger#search-icon": {
+    "props": {
+      "blockClass": "custom-search-overlay-trigger"
+    },
+    "children": ["search-icon-button", "overlay-layout#search-bar"]
+  },
+  "overlay-layout#search-bar": {
+    "children": ["search-bar"],
+    "props": {
+      "blockClass": "custom-search-overlay"
+    }
+  },
+  "disclosure-layout#header-search": {
+    "children": [
+      "disclosure-trigger#header-trigger",
+      "disclosure-content#header-content"
+    ]
+  },
+  "disclosure-trigger#header-trigger": {
+    "props": {
+      "blockClass": "searchBarIcon"
+    },
+    "children": ["disclosure-state-indicator#header-icons"]
+  },
+  "disclosure-content#header-content": {
+    "children": ["search-bar"]
+  },
+  "disclosure-state-indicator#header-icons": {
+    "props": {
+      "Show": "search-icon-button",
+      "Hide": "remove-icon-button"
+    }
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "placeholder": "Enter Your Keyword",
+      "displayMode": "search-and-clear-buttons",
+      "openAutocompleteOnFocus": true,
+      "autocompleteFullWidth": true,
+      "containerMode": "container",
+      "maxWidth": "100%",
+      "blockClass": "custom-overlay-search-bar"
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary"],
+    "props": {
+      "data": {
+        "One": "1",
+        "Two": "2",
+        "Three": "3"
+      },
+      "maxTopSearches": 5
+    }
+  },
+  //  ================= Header second row ENDS==================
+
+  //  =================== Header layout Mobile starts ===============
   "header-layout.mobile": {
     "children": ["sticky-layout#1-mobile"]
   },
@@ -374,83 +431,9 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "../image/logo.png",
+      "url": "assets/logo.png",
       "width": "70"
     }
-  },
-  // "header-layout.mobile" -- End
-  //----------------------main-header-menu----------------------------------------------------------
-  "flex-layout.row#4-desktop": {
-    "props": {
-      "blockClass": "main-menu-static",
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": ["flex-layout.col#main-menu-static"]
-  },
-  "flex-layout.col#main-menu-static": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#main-menu-static"]
-  },
-  "overlay-trigger#search-icon": {
-    "props": {
-      "blockClass": "custom-search-overlay-trigger"
-    },
-    "children": ["search-icon-button", "overlay-layout#search-bar"]
-  },
-  "overlay-layout#search-bar": {
-    "children": ["search-bar"],
-    "props": {
-      "blockClass": "custom-search-overlay"
-    }
-  },
-  "disclosure-layout#header-search": {
-    "children": [
-      "disclosure-trigger#header-trigger",
-      "disclosure-content#header-content"
-    ]
-  },
-  "disclosure-trigger#header-trigger": {
-    "props": {
-      "blockClass": "searchBarIcon"
-    },
-    "children": ["disclosure-state-indicator#header-icons"]
-  },
-  "disclosure-content#header-content": {
-    "children": ["search-bar"]
-  },
-  "disclosure-state-indicator#header-icons": {
-    "props": {
-      "Show": "search-icon-button",
-      "Hide": "remove-icon-button"
-    }
-  },
-  "search-bar": {
-    "blocks": ["autocomplete-result-list.v2"],
-    "props": {
-      "placeholder": "Enter Your Keyword",
-      "displayMode": "search-and-clear-buttons",
-      "openAutocompleteOnFocus": true,
-      "autocompleteFullWidth": true,
-      "containerMode": "container",
-      "maxWidth": "100%",
-      "blockClass": "custom-overlay-search-bar"
-    }
-  },
-  "autocomplete-result-list.v2": {
-    "blocks": ["product-summary"],
-    "props": {
-      "data": {
-        "One": "1",
-        "Two": "2",
-        "Three": "3"
-      },
-      "maxTopSearches": 5
-    }
   }
+  // "header-layout.mobile" -- End
 }

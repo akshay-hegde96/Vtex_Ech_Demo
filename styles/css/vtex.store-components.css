@@ -1,9 +1,5 @@
 .notificationBarContainer {
-  background-color: #e6f1e6;
-  color: #03034e;
-  font-weight: 700;
-  font-size: 12px;
-  text-decoration: underline;
+  background-color:rgba(50, 52, 55, 0) !important;
 }
 
 .infoCardContainer--info-card-slide {
@@ -172,10 +168,10 @@
 }
 
 .searchBarContainer {
-  background-color: #d1d5c7;
+  background-color: #a5c377;
   position: absolute;
   left: 0;
-  top: 60px;
+  top: 131px;
   z-index: 99999;
 }
 @media screen and (min-width: 1025px) {
@@ -320,7 +316,7 @@
   padding: 0px 5px;
 }
 .notificationBarInner{
-  margin-top: 5px;
+  padding-left: 50px;
 }
 .confirmationText--newsletter{
   color: white;
@@ -336,3 +332,8 @@
 /* .skuSelectorOptionsList{
 justify-content: center;
 } */
+
+/* ================= New Nissan ============= */
+.logoImage--nissan-desktop-logo{
+  padding: 10px 25px;
+}

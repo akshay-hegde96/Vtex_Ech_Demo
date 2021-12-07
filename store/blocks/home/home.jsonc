@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "notification.bar",
+      // "notification.bar",
       "slider-layout#slides", //caraousal
       "flex-layout.row#demo", // categories
       /* You can make references to blocks defined in other files.
@@ -24,12 +24,6 @@
     }
   },
 
-  // Notification-bar
-  "notification.bar": {
-    "props": {
-      "content": "FREE SHIPPING: Applies to USA orders over $2000+ | excluding HI, PR, AK, and CAN"
-    }
-  },
 
   //-----------------------------caraousal------------------------------------------
 

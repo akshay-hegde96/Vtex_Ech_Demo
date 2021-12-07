@@ -13,7 +13,7 @@
   min-height: 50px;
   margin-left: 10px;
 }
-.trigger--searchBarIcon {
+/* .trigger--searchBarIcon {
   padding: 15px;
   border: none;
   background-color: #d1d5c7;
@@ -25,6 +25,12 @@
   justify-content: center;
   align-content: center;
   margin-top: 10px;
+} */
+.trigger--searchBarIcon {
+ background-color: transparent;
+ color: white;
+ border: none;
+
 }
 
 @media only screen and (max-width: 480px) {
