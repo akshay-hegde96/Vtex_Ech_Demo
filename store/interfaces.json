@@ -12,6 +12,10 @@
   "productsummary-button":{
     "component":"ProductSummaryBtnNissanWrapper"
   },
+
+  "productAlsoBoughtNissan":{
+    "component": "ProductAlsoBoughtWrapper"
+  },
   "dropdown-button": {
     "component": "DropdownButtonWrapper"
   },

@@ -11,6 +11,377 @@
       // "product-comparison-block.selector"
     ]
   },
+<<<<<<< Updated upstream
+=======
+
+  "responsive-layout.desktop": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      //"condition-layout.product#availability",
+
+      "flex-layout.row#product-main",
+
+      //  "flex-layout.row#products-row",
+      "shelf.relatedProducts",
+      "productAlsoBoughtNissan"
+      //"shelf#related"
+    ]
+  },
+  // "flex-layout.row#products-row": {
+  //   "children": ["shelf.relatedProducts", "image#car"]
+  // },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4
+    },
+    "children": ["breadcrumb"]
+  },
+
+  //----------------------PDP-NISSAN MAIN-----------------------------------------------
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 4,
+      "rowGap": 4,
+      "marginTop": 4,
+      "marginBottom": 4,
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "blockClass": "pdp-container",
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    },
+    "children": ["flex-layout.col#PDP-main"]
+  },
+
+  "flex-layout.col#PDP-main": {
+    "props": {
+      "blockClass": "PDP-main"
+    },
+    "children": ["flex-layout.row#pdp-main"]
+  },
+  "flex-layout.row#pdp-main": {
+    "props": {
+      "blockClass": "pdp-main"
+    },
+    "children": [
+      "flex-layout.col#product-details",
+      "sale-price",
+      "flex-layout.col#product-pricing"
+    ]
+  },
+
+  "flex-layout.col#product-details": {
+    "props": {
+      "blockClass": "product-details",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#product_name",
+      "flex-layout.row#product_description",
+      "flex-layout.row#product-tab-layout"
+    ]
+  },
+
+  "flex-layout.row#product_name": {
+    "props": {
+      "marginBottom": 3,
+      "blockClass": "product_name",
+      "preventVerticalStretch": true
+    },
+    "children": ["vtex.store-components:product-name"]
+  },
+
+  "flex-layout.row#product_description": {
+    "props": {
+      "blockClass": "product_description"
+    },
+    "children": [
+      "flex-layout.col#product_image",
+      "flex-layout.col#product_desc"
+    ]
+  },
+  "flex-layout.col#product_image": {
+    "props": {
+      "blockClass": "product_image",
+      "preventVerticalStretch": true,
+      "width": "60%",
+      "rowGap": 0
+    },
+    "children": ["stack-layout"]
+  },
+  "stack-layout": {
+    "props": {
+      "blockClass": "product-img-stack"
+    },
+    "children": ["product-images#pdp", "product-specification-badges"]
+  },
+  "product-images#pdp": {
+    "props": {
+      // "width": 200,
+      // "height": 300,
+      "aspectRatio": "16:9",
+      "displayThumbnailsArrows": false,
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "thumbnailsOrientation": "horizontal",
+      "thumbnailAspectRatio": "1:1",
+      "thumbnailMaxHeight": 100,
+      "blockClass": "pdp-img"
+    }
+  },
+
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "Group",
+      "specificationName": "On Sale",
+      "visibleWhen": "True",
+      "displayValue": "SPECIFICATION_NAME"
+    }
+  },
+
+  "flex-layout.col#product_desc": {
+    "props": {
+      "blockClass": "product_desc",
+      "preventVerticalStretch": true,
+      "rowGap": 5
+    },
+    "children": [
+      "product-identifier.product",
+      "product-identifier.product",
+      "product-description"
+    ]
+  },
+
+  "product-description": {
+    "props": {
+      "title": "Details",
+      "collapseContent": true,
+      "blockClass": "product-desc"
+    }
+  },
+
+  "flex-layout.row#product-tab-layout": {
+    "props": {
+      "blockClass": "product-tab-layout"
+    },
+    "children": ["flex-layout.col#pdp-tab-layout"]
+  },
+
+  "flex-layout.col#pdp-tab-layout": {
+    "props": {
+      "blockClass": "pdp-tab-layout"
+    },
+    "children": ["tab-layout#product"]
+  },
+  "tab-layout#product": {
+    "children": ["tab-list#product", "tab-content#product"]
+  },
+  "tab-list#product": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "tab-list.item#details",
+      "tab-list.item#info",
+      "tab-list.item#reviews"
+    ]
+  },
+  "tab-list.item#details": {
+    "props": {
+      "blockClass": "details",
+      "tabId": "Details",
+      "label": "Details",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#info": {
+    "props": {
+      "blockClass": "info",
+      "label": "Additional Info",
+      "tabId": "Additional Info"
+    }
+  },
+  "tab-list.item#reviews": {
+    "props": {
+      "blockClass": "reviews",
+      "label": "Reviews",
+      "tabId": "Reviews"
+    }
+  },
+  "tab-content#product": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "tab-content.item#details",
+      "tab-content.item#info",
+      "tab-content.item#reviews"
+    ]
+  },
+  "tab-content.item#details": {
+    "props": {
+      "blockClass": "details",
+      "tabId": "Details"
+    },
+    "children": ["product-description#tab"]
+  },
+  "product-description#tab": {
+    "props": {
+      "showTitle": false,
+      "collapseContent": false
+    }
+  },
+  "tab-content.item#info": {
+    "children": ["product-specifications"],
+    "props": {
+      "blockClass": "info",
+      "tabId": "Additional Info"
+    }
+  },
+  "tab-content.item#reviews": {
+    "children": ["product-reviews"],
+    "props": {
+      "blockClass": "reviews",
+      "tabId": "Reviews"
+    }
+  },
+
+  "flex-layout.col#product-pricing": {
+    "props": {
+      "blockClass": "product_pricing",
+      "preventVerticalStretch": true,
+      "rowGap": 2
+    },
+    "children": [
+      "flex-layout.row#pricing",
+      "flex-layout.row#pricing-desc",
+      "flex-layout.row#dealers-PDP",
+      "image#car"
+    ]
+  },
+  "flex-layout.row#pricing": {
+    "props": {
+      "blockClass": "pricing",
+      "preventVerticalStretch": true,
+      "rowGap": 2
+    },
+    "children": [
+      "flex-layout.col#name-discount",
+      "flex-layout.col#cost-savings"
+    ]
+  },
+  "flex-layout.col#name-discount": {
+    "props": {
+      "blockClass": "name-discount"
+    },
+    "children": ["rich-text#name", "product-price-savings"]
+  },
+  "rich-text#name": {
+    "props": {
+      "blockClass": "name",
+      "text": "#### Your Price"
+    }
+  },
+
+  "flex-layout.col#cost-savings": {
+    "props": {
+      "blockClass": "cost-savings"
+    },
+    "children": ["product-selling-price", "product-list-price"]
+  },
+
+  "flex-layout.row#pricing-desc": {
+    "props": {
+      "blockClass": "pricing-desc",
+      "width": "60%"
+    },
+    "children": ["rich-text#pricing-desc"]
+  },
+  "rich-text#pricing-desc": {
+    "props": {
+      "blockClass": "name",
+      "text": "*All retail prices listed herein are suggested prices.All dealers are free to sell at whatever price, mark-up, or margin of profit they may choose. Prices do not include installations. Pictures are for informational purposes only. Prices subject to change."
+    }
+  },
+  "flex-layout.row#dealers-PDP": {
+    "props": {
+      "blockClass": "dealers-PDP",
+      "rowGap": 2
+    },
+    "children": ["dealers-list-PDP"]
+  },
+
+  //--------------image---------------------
+  // "flex-layout.col#pdp-img": {
+  //   "props": {
+  //     "blockClass": "pdp-img"
+  //   },
+  //   "children": ["image#car"]
+  // },
+
+  "image#car": {
+    "props": {
+      "src": "assets/PDP_card.png",
+      "width": "320px",
+      "height": "200px",
+      "link": "/",
+      "blockClass": "car"
+    }
+  },
+
+  //-----------------------Related product shelf---------------------------
+
+  "shelf.relatedProducts": {
+    "blocks": ["product-summary.shelf#relatedProd"],
+    "props": {
+      "recommendation": "similars",
+      "hideOutOfStockItems": false,
+      "productList": {
+        "arrows": true,
+        "gap": "ph5",
+        "titleText": "Related Products",
+        "ItemsPerPage": 4,
+        "scroll": "BY_PAGE"
+      },
+      "blockClass": "relatedProds"
+    }
+  },
+  "product-summary.shelf#relatedProd": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ],
+    "props": {
+      "blockClass": "relatedProd"
+    }
+  },
+
+  //-------------------------------More Options ( shelf related)----------------------
+
+  "shelf#related": {
+    "blocks": ["product-summary.shelf#without-comparison"],
+    "props": {
+      "recomendation": "editor.relatedProducts.view",
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1.5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "More options for this style"
+      }
+    }
+  },
+
+  //------------------------------------Desktop view end-----------------------------------
+  //----------------------------------------------------------------------------------------
+
+>>>>>>> Stashed changes
   "responsive-layout.tablet": {
     "children": [
       "flex-layout.row#product-breadcrumb",
