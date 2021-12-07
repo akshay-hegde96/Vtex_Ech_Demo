@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "notification.bar",
+      // "notification.bar",
       "info-card#homepage-main-banner",
       "responsive-layout.desktop#home",
       "responsive-layout.mobile#home",
