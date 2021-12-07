@@ -39,7 +39,7 @@
 }
 
 .newsletter .container {
-  background: darkolivegreen;
+  background: #323437;;
 }
 
 .label {
@@ -50,9 +50,11 @@
 .label--newsletter {
   display: flex;
   color: #fff;
-  font-size: 26px;
-  justify-content: center;
-  align-items: center;
+  font-size: 16px;
+  font-weight: 200;
+  word-wrap: break-word;
+  max-width: 200px;
+  text-align: right;
 }
 
 .inputGroup {
@@ -64,10 +66,10 @@
 .inputGroup--newsletter {
   display: flex;
   color: #fff;
-  min-width: 400px;
   margin-left: 30px;
   justify-content: center;
   align-items: center;
+  padding-top: 0px;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
@@ -98,9 +100,9 @@
   font-size: 6px;
   justify-content: center;
   align-items: center;
-  background-color: #ad2697;
+  background-color: #c32323;
   padding-right: 25px;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 .imageElement--storePrint {
@@ -126,7 +128,11 @@
     padding: 140px;
   } */
   .newsletter .container--newsletter {
-    padding: 10px 10px;
+    width: 1440px;
+    height: 80px;
+    padding: 17px 368px 15px 393px;
+    background-color: #323437;
+    justify-content: center;
   }
   .label--link {
     font-size: 25px;
