@@ -82,8 +82,13 @@
   display: flex;
 }
 
+.currencyContainer--summary{
+  margin-top: 16px;
+  color: #c32323;
+}
+
 .currencyCode, .currencyInteger, .currencyFraction, .currencyDecimal, .currencyGroup {
-  font-size: 20px;
+  font-size: 16px;
   padding: 0px 0px;
   margin: 0px 0px;
 }

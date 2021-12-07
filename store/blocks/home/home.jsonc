@@ -10,7 +10,8 @@
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-      "info-card#shelf", // view all collections
+      "rich-text#nissan",
+      //"info-card#shelf", // view all collections
       "flex-layout.row#shelf",
       // "newsletter" // view all shelf
       "back-to-top-button",
@@ -426,6 +427,16 @@
     }
   },
 
+  "rich-text#nissan":{
+    "props":{
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER",
+    "text": "Featured Parts And Accessories",
+    "font": "t-heading-5",
+    "blockClass": "summarySelfHeader"
+    }
+  },
+
   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
   },
@@ -439,7 +450,7 @@
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
         "phone": 1
       },
