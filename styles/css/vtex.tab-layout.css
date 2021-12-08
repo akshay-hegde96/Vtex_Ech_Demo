@@ -58,6 +58,40 @@
     background-color: #fafafa;
     padding: 50px 0;
   }
+    .listContainer--product {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .listItem--details, .listItem--info, .listItem--reviews {
+        background: white;
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        border: 1px solid #ad2697;
+        max-width: 25%;
+        flex-grow: 1;
+    }
+    .listItemActive--details, .listItemActive--info, .listItemActive--reviews {
+        font-size: larger;
+    }
+    .listItem--details, .listItem--info, .listItem--reviews {
+        flex-direction: column;
+    }
+    .contentContainer--product {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+    }
+    .contentItem--details, .contentItem--info, .contentItem--reviews {
+        justify-content: center;
+        padding: 10px 30px;
+        max-width: 75%;
+        min-height: 300px;
+        margin: 30px 30px;
+    }
 }
 
 @media only screen and (max-width: 640px) {

@@ -1,5 +1,14 @@
 .buttonLink--cta-button {
-  color: grey;
   font-size: 14px;
   font-weight: 600;
+}
+.buttonLink--cta-button {
+  background-color: #c32323;
+  border-color: #c32323;
+  color: #fff;
+}
+.buttonLink--cta-button:hover {
+  background-color: #8b1a1a;
+  border-color: #8b1a1a;
+  color: #fff;
 }
