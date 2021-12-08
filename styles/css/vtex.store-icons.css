@@ -10,6 +10,10 @@
 }
 
 .caretIcon--caret-home {
+  color: #ffffff;
+  margin: 5px;
+}
+.caretIcon--caret-vin-num {
   color: #c32323;
   margin: 5px;
 }

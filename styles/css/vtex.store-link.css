@@ -1,40 +1,14 @@
 .buttonLink--cta-button {
-  color: grey;
   font-size: 14px;
   font-weight: 600;
 }
-
-.buttonLink--tony-button{
-  float: right;
-  text-decoration: underline;
+.buttonLink--cta-button {
+  background-color: #c32323;
+  border-color: #c32323;
+  color: #fff;
 }
-
-
-:global(.vtex-store-link-0-x-link--redirect-tonyNissan) {
-  display: block;
-  padding: 10px 10px 0 10px;
-  color: #000;
+.buttonLink--cta-button:hover {
+  background-color: #8b1a1a;
+  border-color: #8b1a1a;
+  color: #fff;
 }
-
-:global(.vtex-store-link-0-x-buttonLink--tony-button) {
-  float: right;
-    /* padding: 9px; */
-    margin: 10px;
-}
-
-:global(.vtex-store-link-0-x-link--redirect-nissan-value){
-	width: 40%;
-    float: right;
-    margin: 18px 0;
-    color: #000;
-    word-break: break-word;
-}
-
-:global(.vtex-store-link-0-x-link--redirect-nissan-event){
-	width: 40%;
-    float: right;
-    margin: 18px 0;
-    color: #000;
-    word-break: break-word;
-}
-
