@@ -397,8 +397,9 @@
         "itemsPerPage": 4,
         "minItemsPerPage": 1.5,
         "scroll": "BY_PAGE",
+        "marginBotton": 3,
         "arrows": true,
-        "titleText": "More options for this style"
+        "titleText": "Featured Parts And Accessories"
       }
     }
   }
