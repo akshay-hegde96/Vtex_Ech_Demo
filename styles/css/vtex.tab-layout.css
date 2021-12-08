@@ -16,8 +16,10 @@
         flex-grow: 1;
     }
     .listItemActive--details, .listItemActive--info, .listItemActive--reviews {
-        background: #ad2697;
         font-size: larger;
+    }
+    .listItem--details, .listItem--info, .listItem--reviews {
+        flex-direction: column;
     }
     .contentContainer--product {
         display: flex;
