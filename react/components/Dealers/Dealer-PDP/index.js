@@ -3,8 +3,13 @@ import styles from "./Dealer-PDP.css";
 import { makeAPICall } from "../../../Utils/httpCall";
 import { sellerList } from "../../../Config/url";
 import { nissanSellerSiteUrl } from "../../../Config/url";
+//import useProduct from "vtex.product-context/useProduct";
+import { useProduct } from "vtex.product-context";
 
 const DealerList_PDP = () => {
+  const productContextValue = useProduct();
+  console.log(productContextValue.product.cacheId);
+
   const [sellers, setSellers] = useState([]);
   useEffect(() => {
     const getSellerAPICall = async () => {
@@ -23,7 +28,10 @@ const DealerList_PDP = () => {
           <p>8892556743</p>
         </div>
 
-        <a className={styles.links} href={nissanSellerSiteUrl[i]}>
+        <a
+          className={styles.links}
+          href={`https://tonydemo--nissan.myvtex.com/${productContextValue?.product?.cacheId}/p`}
+        >
           SHOP NOW
         </a>
       </div>
@@ -56,3 +64,17 @@ const DealerList_PDP = () => {
 };
 
 export default DealerList_PDP;
+
+// import useProduct from 'vtex.product-context/useProduct'
+
+// import productReleaseDate from '../../queries/productReleaseDate.graphql'
+
+// const CountdownCustom = () => {
+//    const { product } = useProduct();
+//    console.log("Product context ---",product);
+//  const { data, loading, error } = useQuery(productReleaseDate, {
+//    variables: {
+//      slug: product?.linkText
+//    },
+//    ssr: false
+//  });
