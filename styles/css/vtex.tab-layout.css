@@ -25,7 +25,7 @@
   .listItemActive--info,
   .listItemActive--reviews,
   .listItemActive--services {
-    background: #323437;
+    background: #8b1a1a;
     font-size: larger;
   }
   .contentContainer--product {
@@ -51,6 +51,7 @@
     justify-content: center;
     padding: 30px;
     height: 320px;
+    width: 1240px;
     border: solid 1px #949395;
     border-top: none;
   }
@@ -58,40 +59,49 @@
     background-color: #fafafa;
     padding: 50px 0;
   }
-    .listContainer--product {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .listItem--details, .listItem--info, .listItem--reviews {
-        background: white;
-        font-size: larger;
-        display: flex;
-        justify-content: center;
-        padding: 0px 0px;
-        margin: 0px 0px;
-        border: 1px solid #ad2697;
-        max-width: 25%;
-        flex-grow: 1;
-    }
-    .listItemActive--details, .listItemActive--info, .listItemActive--reviews {
-        font-size: larger;
-    }
-    .listItem--details, .listItem--info, .listItem--reviews {
-        flex-direction: column;
-    }
-    .contentContainer--product {
-        display: flex;
-        justify-content: center;
-        align-items: top;
-    }
-    .contentItem--details, .contentItem--info, .contentItem--reviews {
-        justify-content: center;
-        padding: 10px 30px;
-        max-width: 75%;
-        min-height: 300px;
-        margin: 30px 30px;
-    }
+  .listContainer--product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .listItem--details,
+  .listItem--info,
+  .listItem--reviews {
+    background: white;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    border: 1px solid #ad2697;
+    max-width: 25%;
+    flex-grow: 1;
+  }
+  .listItemActive--details,
+  .listItemActive--info,
+  .listItemActive--reviews {
+    font-size: larger;
+  }
+  .listItem--details,
+  .listItem--info,
+  .listItem--reviews {
+    flex-direction: column;
+  }
+  .contentContainer--product {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+  }
+  /* .contentItem--details,
+  .contentItem--info,
+  .contentItem--reviews {
+    justify-content: center;
+    padding: 10px 30px;
+    max-width: 75%;
+    min-height: 300px;
+    margin: 30px 30px;
+  }
+} */
 }
 
 @media only screen and (max-width: 640px) {
@@ -116,7 +126,7 @@
   .listItemActive--info,
   .listItemActive--reviews,
   .listItemActive--services {
-    background: #949395;
+    background: #c32323;
   }
   .contentContainer--product {
     display: flex;
