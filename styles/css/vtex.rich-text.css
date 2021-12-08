@@ -283,3 +283,92 @@
   color: #171c20;
   padding-top: 0;
 }
+
+.wrapper--nissan-content1,.wrapper--nissan-content2{
+  padding-left: 50px;
+}
+
+.wrapper--accessories-header{
+padding-left: 50px;
+}
+
+.paragraph--banner-title{
+  font-weight: bold;
+  font-size: larger;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.paragraph--banner-location{
+  font-weight: bold;
+    font-size: 12px;
+    /* margin-top: 0px; */
+    margin-bottom: 0px;
+    
+}
+.container--banner-contact{
+  border: 1px solid #ddd;
+  margin-right: 5px;
+  font-weight: bold;
+  background: #fafafa;
+}
+
+.container--banner-email{
+  border: 1px solid #ddd;
+  font-weight: bold;
+  margin-left: 5px;
+  background: #fafafa;
+}
+.paragraph--nissan-policy{
+  font-weight: bold;
+}
+.container--return-policy{
+  border: 1px solid #ddd;
+    padding-left: 10px;
+    font-weight: bold;
+    background: #fafafa;
+    margin-bottom: 10px;
+}
+.container--payment-1{
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  font-weight: bold;
+  background: #fafafa;
+
+}
+
+.paragraph--installation-title{
+  margin: 12px 347px 12px 14px;
+  font-family: NissanBrand;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000;
+}
+.paragraph--installation-main-cotent{
+  margin: 12px 19px 0 14px;
+  font-family: NissanBrand;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4e4e50;
+}
+
+.paragraph--installation-content{
+  margin: 12px 15px 12px 0px;
+  font-family: NissanBrand;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #c32323;
+}
+

@@ -128,7 +128,8 @@
       "condition-layout.product#availability",
       // "flex-layout.row#specifications",
       "tab-layout#product",
-      "flex-layout.row#banner-car",
+      // "flex-layout.row#banner-car",
+      "flex-layout.row#nissan-banner-container",
       "shelf#related"
     ]
   },
@@ -250,7 +251,14 @@
       "flex-layout.row#pricing-desc",
       "product-separator",
       "product-description",
-      "flex-layout.row#dealers-PDP"
+      "flex-layout.row#shipping-title",
+      "flex-layout.row#pickup-title",
+      //"flex-layout.row#installation-title",
+      "flex-layout.row#installation-1",
+      "flex-layout.row#installation-2",
+      "flex-layout.row#add-to-cart"
+     // "add-to-cart-button"
+     // "flex-layout.row#dealers-PDP"
       // "sku-selector",
       // "product-quantity",
       // "product-assembly-options",
@@ -324,12 +332,12 @@
     }
   },
 
-  "flex-layout.row#dealers-PDP": {
+ /* "flex-layout.row#dealers-PDP": {
     "props": {
       "blockClass": "dealers-PDP"
     },
     "children": ["dealers-list-PDP"]
-  },
+  },*/
 
   // added product-brand
   // "flex-layout.row#product-brand": {
@@ -442,7 +450,7 @@
     }
   },
 
-  "flex-layout.row#banner-car": {
+  /*"flex-layout.row#banner-car": {
     "props": {
       "blockClass": "car"
     },
@@ -458,7 +466,9 @@
       "link": "/",
       "blockClass": "car"
     }
-  },
+  },*/
+
+  
 
   //----------------------------
 

@@ -1,8 +1,9 @@
 
 .caretIcon--disclosure-pdp {
- 
   margin-left: 6px;
-  margin-top: 2px;
+  margin-top: 8px;
+  position: absolute;
+  right: 0;
 }
 .caretIcon--caretPlpIcon {
   margin: 0 10px;
@@ -15,4 +16,14 @@
 .caretIcon--caret-vin-num {
   color: #c32323;
   margin: 5px;
+}
+.caretIcon--spec{
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.caretIcon--caret-nissan{
+  position: absolute;
+  right: 70px;
+  margin-top: -45px;
 }

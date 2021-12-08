@@ -67,5 +67,17 @@
   },
   "dealers-list-PDP": {
     "component": "DealerListPDPWrapper"
-  }
+  },
+  "shipping-component": {
+    "component": "ShippingPDPWrapper"
+  },
+  "estimate-btn": {
+    "component": "EstimateBtnWrapper"
+  },
+  "pickup-block": {
+    "component": "PickupWrapper"
+  },
+  "qty-selector": {
+    "component": "QtySelectorWrapper"
+}
 }

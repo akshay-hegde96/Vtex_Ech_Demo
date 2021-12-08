@@ -1,0 +1,299 @@
+{
+    "store.custom#nissan-banner":{
+        "blocks":[
+            "flex-layout.row#nissan-banner-container"
+        ]
+    },
+    "flex-layout.row#nissan-banner-container":{
+        "children":[
+            // "flex-layout.col#nissan-container-block"
+             "flex-layout.col#nissan-image",
+             "flex-layout.col#nissan-detail"
+        ],
+        "props":{
+          "blockClass":"banner-container-row"
+        }
+    },
+
+    /*"flex-layout.col#nissan-container-block":{
+        "children":[
+            "flex-layout.col#nissan-image",
+             "flex-layout.col#nissan-detail"
+        ],
+        "props":{
+            "blockClass":"nissan-container-block"
+        }
+    },*/
+
+    "flex-layout.col#nissan-image":{
+        "children":[
+            "image#nissan-banner"
+        ],
+        "props":{
+          "blockClass":"nissan-image-col"
+        }
+       /* "props": {
+            "src": "assets/nissanJuke.jpg",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "blockClass": "nissan-image"
+          }*/
+    },
+
+    "image#nissan-banner":{
+        "props": {
+            "src": "assets/nissanVip.jpg",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "blockClass": "nissan-image"
+          }
+    },
+
+    "flex-layout.col#nissan-detail":{
+        "children":[
+          //  "flex-layout.col#nissan-detail-container",
+            "flex-layout.row#nissan-banner-title",
+            "flex-layout.row#nissan-banner-address",
+            "flex-layout.row#nissan-tabs",
+            "flex-layout.row#nissan-policy",
+            "flex-layout.row#return-policy",
+            "flex-layout.row#nissan-payment-block-1",
+            "flex-layout.row#nissan-payment-block-2"
+        ],
+        "props":{
+          "blockClass":"nissan-detail-container"
+        }
+    },
+    "flex-layout.row#nissan-banner-title":{
+        "children":[
+            "rich-text#banner-title"
+           // "rich-text#banner-location"
+        ],
+        "props":{
+            "blockClass":"banner-title"
+        }
+    },
+
+    "flex-layout.row#nissan-banner-address":{
+        "children":[
+           // "rich-text#banner-title"
+            "rich-text#banner-location"
+        ],
+        "props":{ 
+            "blockClass": "banner-location"
+        }
+    },
+
+    "rich-text#banner-title": {
+        "props": {
+          "text": "Tony Nissan",
+          "textAlignment": "LEFT",
+          "textPosition": "LEFT",
+          "blockClass": "banner-title"
+        }
+      },
+      "rich-text#banner-location": {
+        "props": {
+          "text": "94-1299 KA UKA BLVD, WAIPAHU, HI 96797",
+          "textAlignment": "LEFT",
+          "textPosition": "LEFT",
+          "blockClass": "banner-location"
+        }
+      },
+      "flex-layout.row#nissan-tabs":{
+          "children":[
+            "flex-layout.col#nissan-contact",
+            "flex-layout.col#nissan-email"
+          ]
+      },
+      "flex-layout.col#nissan-contact":{
+          "children":[
+            "rich-text#banner-contact"
+          ]
+      },
+      "flex-layout.col#nissan-email":{
+        "children":[
+            "rich-text#banner-email"
+          ]
+      },
+      "rich-text#banner-contact": {
+        "props": {
+          "text": "(808)680-7140",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": "banner-contact"
+        }
+      },
+      "rich-text#banner-email": {
+        "props": {
+          "text": "EMAIL-US",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": "banner-email"
+        }
+      },
+      "flex-layout.row#nissan-policy":{
+        "children":[
+            "rich-text#nissan-policy"
+          ]
+      },
+      "rich-text#nissan-policy": {
+        "props": {
+          "text": "POLICY & INFORMATION",
+          "textAlignment": "LEFT",
+          "textPosition": "LEFT",
+          "blockClass": "nissan-policy"
+        }
+      },
+      "flex-layout.row#return-policy":{
+        "children":[
+            // "rich-text#return-policy",
+            "flex-layout.col#return-policy-block"
+          ]
+      },
+      "flex-layout.col#return-policy-block":{
+        "children":[
+          "rich-text#return-policy",
+          "icon-caret#right"
+        ],
+        "props":{
+          "blockClass":"return-policy-block"
+        }
+      },
+
+      "rich-text#return-policy": {
+        "props": {
+          "text": "RETURN  POLICY",
+          "textAlignment": "LEFT",
+          "textPosition": "LEFT",
+          "blockClass": "return-policy"
+        }
+      },
+
+      "icon-caret#right": {
+        "props": {
+          "orientation": "right",
+          "blockClass": "caret-nissan"
+        }
+      },
+
+      "flex-layout.row#nissan-payment-block-1":{
+          "children":[
+            "flex-layout.row#nissan-payment-1"
+          //  "flex-layout.row#nissan-payment-2"
+          ]
+      },
+      "flex-layout.row#nissan-payment-1":{
+          "children":[
+              "rich-text#payment-1"
+          ]
+      },
+      "rich-text#payment-1": {
+        "props": {
+          "text": "ACCEPTED PAYMENTS",
+          "textAlignment": "LEFT",
+          "textPosition": "LEFT",
+          "blockClass": "payment-1"
+        }
+      },
+
+      "flex-layout.row#nissan-payment-block-2":{
+        "children":[
+         // "flex-layout.row#nissan-payment-1"
+          "flex-layout.col#nissan-payment-2"
+        ],
+        "props":{
+          "blockClass":"payment-card-block"
+        }
+    },
+
+      
+    "flex-layout.col#nissan-payment-2":{
+          "children":[
+            "image#nissan-visa",
+            "image#nissan-mastercard",
+            "image#nissan-discover",
+            "image#nissan-expresscard",
+            "image#nissan-paypal"
+          ],
+          "props":{
+              "blockClass":"nissan-payment-block"
+          }
+      },
+    /*  "flex-layout.col#pay-1":{
+          "children":[
+            "image#nissan-pay-1"
+          ],
+          "props":{
+              "blockClass":"nissan-pay"
+          }
+      },*/
+      "image#nissan-visa": {
+        "props": {
+          "label": "1",
+          "src": "https://www.tonynissanparts.com/images/default-assets/icons/en-us/cc-visa.png",
+          "blockClass": "nissan-pay-img"
+        }
+      },
+     /* "flex-layout.col#pay-2":{
+        "children":[
+          "image#nissan-mastercard"
+        ],
+        "props":{
+          "blockClass":"nissan-pay"
+        }
+    },*/
+    "image#nissan-mastercard": {
+      "props": {
+        "label": "2",
+        "src": "https://www.tonynissanparts.com/images/default-assets/icons/en-us/cc-mastercard.png",
+        "blockClass":"nissan-pay-img"
+      }
+    },
+   /* "flex-layout.col#pay-3":{
+        "children":[
+          "image#nissan-discover"
+        ],
+        "props":{
+          "blockClass":"nissan-pay"
+        }
+    },*/
+    "image#nissan-discover": {
+      "props": {
+        "label": "3",
+        "src": "https://www.tonynissanparts.com/images/default-assets/icons/en-us/cc-discover.png",
+        "blockClass":"nissan-pay-img"
+      }
+    },
+    /*"flex-layout.col#pay-4":{
+        "children":[
+          "image#nissan-expresscard"
+        ],
+        "props":{
+            "blockClass":"nissan-pay"
+        }
+    },*/
+    "image#nissan-expresscard": {
+      "props": {
+        "label": "4",
+        "src": "https://www.tonynissanparts.com/images/default-assets/icons/en-us/cc-amex.png",
+        "blockClass":"nissan-pay-img"
+      }
+    },
+   /* "flex-layout.col#pay-5":{
+        "children":[
+          "image#nissan-paypal"
+        ],
+        "props":{
+            "blockClass":"nissan-pay"
+        }
+    },*/
+    "image#nissan-paypal": {
+      "props": {
+        "label": "5",
+        "src": "https://www.tonynissanparts.com/images/default-assets/icons/en-us/cc-paypal.png",
+        "blockClass":"nissan-pay-img"
+      }
+    }
+
+}
