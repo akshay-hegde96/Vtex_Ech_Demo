@@ -122,7 +122,8 @@
       },
       "flex-layout.row#add-to-cart":{
           "children":[
-              "flex-layout.col#qty-slctr"
+              "flex-layout.col#qty-slctr",
+              "flex-layout.col#addto-cart"
           ],
           "props":{
               "blockClass":"qty-selctr-block"
@@ -135,8 +136,11 @@
       },
       "flex-layout.col#addto-cart":{
         "children": [
-          //"add-to-cart-button"
-          ]
+          "add-to-cart-button"
+          ],
+          "props":{
+              "blockClass":"cartButton-pdp"
+          }
       }
 }
 
