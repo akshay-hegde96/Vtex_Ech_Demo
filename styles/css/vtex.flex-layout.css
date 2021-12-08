@@ -105,12 +105,15 @@
 /*.flexCol*  {
   display:none;
 }*/
-.flexRow--footer-link{
+
+.flexRow--footer-link {
+  width: 1440px;
   height: 350px;
   padding: 10px 0 0;
   background-color: #000;
 }
-.flexRow--credits{
+.flexRow--credits {
+  width: 1440px;
   height: 52px;
   background-color: #323437;
   justify-content: center;
@@ -177,7 +180,6 @@
   max-height: 50px;
 }
 
-
 /* =========== Tablet ================*/
 @media only screen and (min-width: 481px) and (max-width: 1026px) {
   .flexRowContent--payment-methods {
@@ -237,15 +239,15 @@
 }
 
 /* ============== Nissan New ================ */
-.flexRowContent--nissan-main-header{
+.flexRowContent--nissan-main-header {
   background-color: rgb(50, 52, 55);
   height: 40px;
 }
-.flexRowContent--nissan-main-menu-static{
+.flexRowContent--nissan-main-menu-static {
   background-color: #000;
 }
- /* Homepage Model Section */
- .flexRowContent--homePageModelFlex {
+/* Homepage Model Section */
+.flexRowContent--homePageModelFlex {
   justify-content: center;
   position: relative;
   text-align: center;
@@ -265,6 +267,23 @@
 }
 .flexCol--vinTextCol {
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------PDP Page----------------------------- */
+
+.flexRowContent--breadcrumb,
+.flexRowContent--product-main {
+  padding-left: 40px !important;
+  padding-right: 50px !important;
+}
+
+.flexColChild--product-name {
+  margin-bottom: 20px;
+}
+
+.flexRow--car {
   justify-content: center;
   align-items: center;
 }

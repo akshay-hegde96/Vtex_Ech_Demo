@@ -1,13 +1,19 @@
 .product-identifier--productReference {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #171c20;
   margin-top: 1rem;
-  
 }
-.product-identifier__label{
+.product-identifier__label {
   display: none !important;
-
 }
 
-.product-identifier__separator{
+.product-identifier__separator {
   display: none;
 }
 

@@ -1,0 +1,109 @@
+.list {
+  font-family: sans-serif;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  box-sizing: border-box;
+  border-top: 1px solid #c5c4c3;
+  margin-top: 12px;
+  border-radius: 2px;
+}
+.list_name {
+  padding: 0;
+  color: rgb(12, 12, 12);
+  text-align: left !important;
+}
+.list_name h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.card {
+  width: 100%;
+  box-sizing: border-box;
+  color: rgb(31, 30, 30);
+  display: flex;
+  flex-flow: row;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  border: 1px solid #c5c4c3;
+  padding: 2px 50px;
+}
+
+.card:hover {
+  text-decoration-line: underline;
+}
+
+.details {
+  color: rgb(27, 27, 27);
+}
+.details h3 {
+  font-weight: 800;
+  font-size: 16px !important;
+  margin-bottom: 2px;
+}
+.details p {
+  font-weight: normal;
+  font-size: 12px !important;
+  color: #4e4e50;
+  margin-top: 0;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+  background-color: #c32323;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 12px 45px;
+  cursor: pointer;
+}
+
+.links :hover,
+.links:active {
+  background-color: #b62525;
+  text-decoration-line: none;
+}
+
+.search_link {
+  margin: 1rem auto;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between !important;
+}
+
+.search {
+  height: 48px;
+  width: 180px;
+  margin-right: 1rem;
+  padding: 13px 10px;
+  color: #4e4e50;
+  background-color: #fff;
+  border: 1px solid #4e4e50;
+  font-family: inherit !important;
+  text-align: center;
+  font-size: 16px;
+}
+
+.link {
+  height: 48px;
+  width: 430px;
+  cursor: pointer;
+  padding: 13px 14px;
+  font-size: 13px;
+  border: 1px solid #323437 !important;
+  background-color: #fff !important;
+  color: #323437;
+  text-decoration-line: none;
+  text-transform: capitalize !important;
+  font-weight: 800;
+  margin: 0 0 0 18px;
+}
+
+.link:hover {
+  border: 1px solid #1a1b1d !important;
+  background-color: #eee !important;
+}

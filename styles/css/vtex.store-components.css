@@ -1,5 +1,5 @@
 .notificationBarContainer {
-  background-color:rgba(50, 52, 55, 0) !important;
+  background-color: rgba(50, 52, 55, 0) !important;
 }
 
 .infoCardContainer--info-card-slide {
@@ -14,18 +14,18 @@
   height: 350px;
   margin-top: 5px;
 } */
-.infoCardHeadline--info-card-slide{
+.infoCardHeadline--info-card-slide {
   color: #fdfdfd;
   /* background: #adb5bbbd; */
   /* padding: 10px; */
   font-weight: 900;
   font-variant: petite-caps;
 }
-.infoCardSubhead--info-card-slide{
+.infoCardSubhead--info-card-slide {
   color: #ffffff;
   font-variant: unicase;
-    font-weight: bold;
-    padding: 5px;
+  font-weight: bold;
+  padding: 5px;
 }
 
 /* .infoCardCallActionContainer--info-card-slide {
@@ -39,7 +39,7 @@
 }
 
 .newsletter .container {
-  background: #323437;;
+  background: #323437;
 }
 
 .label {
@@ -258,7 +258,7 @@
   .newsletter .container--newsletter {
     padding: 10px 10px;
   }
-  .notificationContent{
+  .notificationContent {
     text-align: center;
   }
 }
@@ -318,20 +318,20 @@
   font-variant: petite-caps;
 }
 
-.imageElement--testIcons{
+.imageElement--testIcons {
   padding: 0px 5px;
 }
-.notificationBarInner{
+.notificationBarInner {
   padding-left: 50px;
 }
-.confirmationText--newsletter{
+.confirmationText--newsletter {
   color: white;
 }
-.confirmationTitle--newsletter{
+.confirmationTitle--newsletter {
   color: white;
 }
 /* ========= */
-.skuSelectorName{
+.skuSelectorName {
   display: inline-block;
   min-width: 100px;
 }
@@ -340,11 +340,11 @@ justify-content: center;
 } */
 
 /* ================= New Nissan ============= */
-.logoImage--nissan-desktop-logo{
+.logoImage--nissan-desktop-logo {
   padding: 10px 25px;
 }
 .infoCardContainer--homepage-spot-banner {
-  color:#fff;
+  color: #fff;
 }
 
 .headingLevel5--homepage-spot-banner,
@@ -382,4 +382,75 @@ justify-content: center;
     width: 100%;
     padding: 150px 0 20px;
   }
+}
+/*----------------- PDP NISSAN ------------------------------*/
+
+.imageElement--image-container {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.productImagesThumb--pdp-img {
+  margin-bottom: 3px;
+}
+
+.productBrand--pdp-product-name {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #171c20;
+}
+
+.price_listPriceLabel--product-price {
+  font-size: 12px !important;
+  color: #777;
+}
+.price_listPrice--product-price {
+  font-size: 14px !important;
+  color: #777;
+}
+
+.price_sellingPriceLabel--product-price {
+  font-size: 14px !important;
+  color: #c32323;
+}
+.price_sellingPrice--product-price {
+  font-size: 24px !important;
+  color: #c32323;
+}
+
+.container--product-desc {
+  margin: 0;
+  padding-left: 0;
+}
+
+.content--product-desc {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  color: #171c20;
+  padding-top: 0;
+}
+
+.productDescriptionTitle--product-desc {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.imageElement--car {
+  margin-left: 8px;
+  margin-top: 80px;
+}
+
+.thumbImg--pdp-img {
+  object-fit: contain;
+  width: 140px;
+  height: 120px;
 }
