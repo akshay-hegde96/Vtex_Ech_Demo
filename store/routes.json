@@ -47,5 +47,11 @@
   },
   "store.custom#dealers-list": {
     "path": "/dealers"
+  },
+  "store.custom#nissan-banner": {
+    "path": "/nissan-banner"
+  },
+  "store.custom#pdp-dealersite": {
+    "path": "/pdp-dealersite"
   }
 }

@@ -1,0 +1,43 @@
+.shippingRadioBlock{
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.pd_installText {    
+    margin: 0px 12px 8px 12px;
+    font-family: NissanBrand;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    }
+
+        .colRight6{
+            flex: 0 0 auto;
+            width: 50%;
+            text-align : right;
+            }
+
+            .btnestimateShippingWrapper {
+                padding-right : 10px;
+                }
+
+                .cestimateShipping{
+                    padding: 0 6px 0 6px;
+                    font-size: 10px !important;
+                    text-transform: none !important;
+                    height: inherit;
+                    border-radius: 5px !important;
+                    position: relative;
+                    bottom: 1px;
+                    color: #000 !important;
+                    background-color: #fff !important;
+                    border: 1px solid #d6d6d6 !important;
+                    white-space: normal;
+                    line-height: 22px;
+                    font-size: 12px;
+                    font-weight: bold;
+                    }
