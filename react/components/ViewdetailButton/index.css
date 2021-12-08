@@ -9,3 +9,9 @@
     right: 0;
     text-align: center;
 }
+
+#viewButton{
+    width: 92%;
+    border-radius: 0;
+}
+

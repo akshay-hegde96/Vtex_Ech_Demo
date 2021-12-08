@@ -13,9 +13,7 @@ const ViewdetailButton=({ AddListenBtn }) => {
        
         <div className={styles.imageOverPosition}>
           <div className="mt4" >
-            <Button 
-             variation="primary" size="small"
-            >
+            <Button id={styles.viewButton}>
              VIEW DETAILS
             </Button>
           </div>
