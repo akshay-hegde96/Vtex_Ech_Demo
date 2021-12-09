@@ -30,7 +30,7 @@ const DealerList_PDP = () => {
 
         <a
           className={styles.links}
-          href={`https://tonydemo--nissan.myvtex.com/${productContextValue?.product?.cacheId}/p`}
+          href={`https://demo--tonynissan.myvtex.com/${productContextValue?.product?.cacheId}/p`}
         >
           SHOP NOW
         </a>
