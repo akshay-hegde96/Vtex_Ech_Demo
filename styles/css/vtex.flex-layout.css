@@ -129,9 +129,15 @@
 }
 
 .flexRow--sub-content-desktop{
-  display: flex;
+  /* display: flex;
   justify-content: space-evenly;
-  margin-bottom: 10px;
+  margin-bottom: 10px; */
+  border-bottom: 1px solid gray;
+  padding-bottom: 8px;
+  border-bottom: inset;
+  margin-right: 10px;
+  position: relative;
+  bottom: 20px;
 }
 .flexRow--cart-image-desktop{
   height: auto;
@@ -148,13 +154,17 @@
   border: 1px solid #d8d8d8;
 }
 .flexRowContent--viewcart :hover{
-  background-color: red;
+  background-color: #c32323;
+  color: white !important;
+  cursor: pointer;
 }
 .flexRowContent--shopping :hover{
-  background-color: red;
+  background-color: #c32323;
+  color: white !important;
+  cursor: pointer;
 }
 .flexColChild--priceWrapper{
-  color: red;
+  color: #c32323;
 }
 
 /* specific styling main header */

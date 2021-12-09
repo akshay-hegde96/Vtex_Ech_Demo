@@ -1,18 +1,18 @@
 .productName {
-    font-size: 15px;
+    /* font-size: 15px;
     overflow: hidden;
-    line-height: 1.2;
+    line-height: 1.2; */
     font-weight: 600;
-    display: -webkit-box;
+    /* display: -webkit-box;
     -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical; */
 }
 .productBrandName {
     display: none;
 }
-.removeButtonContainer {
+/* .removeButtonContainer {
     display: none;
-}
+} */
 .productVariationsContainer {
     line-height: 1.2;
 }
@@ -31,4 +31,14 @@
 }
 .productPriceCurrency {
     display: none;
+}
+.deleteIcon{
+    color: rgb(247, 7, 7);
+}
+.quantitySelectorContainer{
+    position: relative;
+    left: 125px;
+}
+.quantityInputContainer{
+    width: 75px;
 }
