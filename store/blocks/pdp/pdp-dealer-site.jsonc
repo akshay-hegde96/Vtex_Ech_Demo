@@ -131,8 +131,13 @@
       },
       "flex-layout.col#qty-slctr":{
           "children":[
-            "qty-selector"
-          ]
+          //  "qty-selector"
+          "product-quantity"
+          ],
+          "props":{
+            "warningQuantityThreshold": 9999999,
+            "showUnit": true
+          }
       },
       "flex-layout.col#addto-cart":{
         "children": [

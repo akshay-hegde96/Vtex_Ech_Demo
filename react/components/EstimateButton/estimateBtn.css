@@ -2,6 +2,17 @@
     padding-right : 10px;
     }
 
+    .text{
+        color:red;
+        font-family: NissanBrand;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+    }
+
     .cestimateShipping{
         font-family: NissanBrand;
   font-size: 14px;
@@ -11,4 +22,19 @@
   line-height: normal;
   letter-spacing: normal;
   color: #000;
+  cursor: pointer;
+        }
+
+        .spinner {
+            background-image: url(https://www.tonynissanparts.com/images/zoomloader.gif) !important;
+            background-blend-mode: multiply;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: 16px;
+            width: 17px;
+            height: 17px;
+            margin-left: -10px;
+            margin-bottom: -5px;
+            margin-right: 5px;
+            display: inline-block;
         }
