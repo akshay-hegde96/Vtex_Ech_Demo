@@ -173,11 +173,10 @@
 }
 
 .searchBarContainer {
-  background-color: #a5c377;
+  background-color: #070707;
   position: absolute;
   left: 0;
   top: 131px;
-  z-index: 99999;
 }
 @media screen and (min-width: 1025px) {
   .searchBarContainer {
