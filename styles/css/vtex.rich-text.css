@@ -116,6 +116,21 @@
   max-height: 16px;
   margin-top: 0px;
 }
+.container--shopping, .container--viewcart{
+  display: flex;
+  justify-content: center;
+}
+.paragraph--shopping, .paragraph--viewcart{
+  color: black;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+.paragraph--shopping:hover{
+  color: white !important;
+}
+.paragraph--viewcart:hover{
+  color: white !important;
+}
 
 /* =========== Tablet ================*/
 @media only screen and (min-width: 481px) and (max-width: 1026px) {

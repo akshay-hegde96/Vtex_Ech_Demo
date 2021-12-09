@@ -9,7 +9,7 @@
   "minicart.v2": {
     "props": {
       "customPixelEventId": "add-to-cart-button",
-      "variation": "popup",
+      "variation": "popupWithLink",
       "blockClass": "minicart"
     },
     "children": ["minicart-base-content"]
@@ -26,17 +26,107 @@
     "children": ["flex-layout.col#minicart-footer"]
   },
   "flex-layout.col#minicart-footer": {
-    "children": ["minicart-summary", "minicart-checkout-button"]
+    "children": ["minicart-summary", "flex-layout.row#shopping", "flex-layout.row#viewcart", "flex-layout.row#checkout"]
   },
   "minicart-product-list": {
+    "props":{
+      "blockClass":"cart-product-list"
+    },
     "blocks": ["product-list#minicart"]
   },
   "product-list#minicart": {
-    "blocks": ["product-list-content-mobile"],
+    "blocks": [
+      "product-list-content-desktop"
+      // "product-list-content-mobile"
+    ],
     "props": {
       "blockClass": "product-list-items"
     }
   },
+  "product-list-content-desktop": {
+    "props":{
+      "blockClass":"cart-content-desktop"
+    },
+    "children": ["flex-layout.row#list-row.desktop","flex-layout.row#sub-container.desktop"]
+  },
+  "flex-layout.row#list-row.desktop": {
+    "children": [
+      "flex-layout.col#image.desktop",
+      "flex-layout.col#product-description",
+      "flex-layout.col#remove-button.desktop"
+    ],
+    "props": {
+      "fullWidth": true,
+      "paddingBottom": "7",
+      "paddingTop": "6",
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": "true",
+      "blockClass":"cart-image-desktop"
+    }
+  },
+  "product-reference":{
+    "props":{
+      "identifierOption":"productReferenceId"
+    }
+  },
+  "flex-layout.col#image.desktop": {
+    "children": ["product-list-image"],
+    "props": {
+      "marginRight": "6",
+      "blockClass":"image-desk"
+    }
+  },
+
+  "flex-layout.row#sub-container.desktop": {
+    "children": [
+      "flex-layout.col#quantity-selector.desktop",
+      "flex-layout.col#price.desktop"
+    ],
+    "props": { 
+      "preserveLayoutOnMobile": "true",
+      "colSizing": "auto",
+      "blockClass":"sub-content-desktop"
+    }
+  },
+  "flex-layout.col#quantity-selector.desktop": {
+    "children": ["quantity-selector"],
+    "props": {
+      "preventHorizontalStretch": "true",
+      "blockClass": "cart-quantity-desktop"
+    }
+  },
+  "flex-layout.col#price.desktop": {
+    "children": ["price#desktop"],
+    "props": {
+      "blockClass": "priceWrapper",
+      "marginLeft": "6",
+      "preventHorizontalStretch": "true",
+      "verticalAlign": "middle"
+    }
+  },
+  "price#desktop": {
+    "props": {
+      "textAlign": "center"
+    }
+  },
+  "flex-layout.col#remove-button.desktop": {
+    "children": ["remove-button"],
+    "props": {
+    
+      "preventHorizontalStretch":"true",
+      "blockClass":"close-button"
+    }
+  },
+  "remove-button":{
+    "props":{
+      "preventHorizontalStretch":"true",
+      "variation":"secondary",
+      // if we want remove button as icon add "icon-button" instead "text-button"
+      "displayMode":"text-button",
+      "blockClass":"close-button"
+    }
+  },
+  
   "minicart-summary": {
     "blocks": ["checkout-summary.compact#minicart"]
   },
@@ -49,8 +139,46 @@
   },
   "summary-totalizers#minicart": {
     "props": {
-      "showTotal": false,
+      "showTotal": true,
       "showDeliveryTotal": false
+    }
+  },
+  "flex-layout.row#shopping":{
+    "children":["rich-text#shopping"],
+    "props":{
+      "blockClass":"shopping"
+    }
+  },
+  "flex-layout.row#viewcart":{
+    "children":["rich-text#viewcart"],
+    "props":{
+      "blockClass":"viewcart"
+    }
+  },
+  "rich-text#shopping":{
+    "props":{
+      "blockClass":"shopping",
+      "text":"CONTINUE SHOPPING"
+
+    }
+  },
+  "rich-text#viewcart":{
+    "props":{
+      "blockClass":"viewcart",
+      "text":"VIEW CART"
+    }
+  },
+  "flex-layout.row#checkout":{
+    "props":{
+      "blockClass":"check-out"
+    },
+    "children":[
+      "minicart-checkout-button"
+    ]
+  },
+  "minicart-checkout-button":{
+    "props":{
+      "blockClass":"check-out"
     }
   },
   "minicart-empty-state": {
