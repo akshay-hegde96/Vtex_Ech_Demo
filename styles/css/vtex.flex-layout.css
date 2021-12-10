@@ -128,6 +128,45 @@
   box-shadow: none;
 }
 
+.flexRow--sub-content-desktop{
+  /* display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px; */
+  border-bottom: 1px solid gray;
+  padding-bottom: 8px;
+  border-bottom: inset;
+  margin-right: 10px;
+  position: relative;
+  bottom: 20px;
+}
+.flexRow--cart-image-desktop{
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.flexRowContent--cart-image-desktop{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.flexRow--shopping, .flexRow--viewcart{
+  background-color: #f2f5f4;
+  margin-top: 5px;
+  border: 1px solid #d8d8d8;
+}
+.flexRowContent--viewcart :hover{
+  background-color: #c32323;
+  color: white !important;
+  cursor: pointer;
+}
+.flexRowContent--shopping :hover{
+  background-color: #c32323;
+  color: white !important;
+  cursor: pointer;
+}
+.flexColChild--priceWrapper{
+  color: #c32323;
+}
+
 /* specific styling main header */
 
 .flexRowContent--main-menu {
