@@ -107,3 +107,75 @@
   border: 1px solid #1a1b1d !important;
   background-color: #eee !important;
 }
+
+.formShipping,
+.pickup {
+  box-sizing: border-box;
+  border: 1px solid #c5c4c3;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.address_dealer {
+  box-sizing: border-box;
+  border: 1px solid #c5c4c3;
+  border-top: none;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.insta {
+  box-sizing: border-box;
+  border: 1px solid #c5c4c3;
+  padding: 5px 10px 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.instaDet {
+  box-sizing: border-box;
+  border: 1px solid #c5c4c3;
+  border-top: none;
+  padding: 5px 10px 5px 27px;
+  color: #4e4e50;
+  font-size: 14px;
+}
+
+.formShipping input,
+.pickup input {
+  margin-right: 8px;
+  color: #a9a9aa;
+}
+.formShipping input[type="radio"]:checked,
+.pickup input[type="radio"]:checked {
+  color: #c32323;
+}
+
+.formShipping label,
+.pickup label {
+  font-weight: bold;
+}
+.formShipping {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.address_dealer p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 4px 20px;
+  color: #4e4e50;
+  font-size: 14px;
+}
+
+.estimatebtn {
+  position: relative;
+  left: 200px;
+  font-size: 14px;
+  font-weight: bold;
+  box-sizing: border-box;
+  border: 1px solid #c5c4c3;
+  border-radius: 2px;
+  padding: 3px 10px;
+}

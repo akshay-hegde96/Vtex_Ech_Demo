@@ -79,5 +79,8 @@
   },
   "qty-selector": {
     "component": "QtySelectorWrapper"
-}
+},
+  "address-banner-tony": {
+    "component": "AdressBannerWrapper"
+  }
 }

@@ -107,13 +107,13 @@
 }*/
 
 .flexRow--footer-link {
-  width: 1440px;
+  /* width: 1440px; */
   height: 350px;
   padding: 10px 0 0;
   background-color: #000;
 }
 .flexRow--credits {
-  width: 1440px;
+  /* width: 1440px; */
   height: 52px;
   background-color: #323437;
   justify-content: center;
@@ -129,9 +129,15 @@
 }
 
 .flexRow--sub-content-desktop{
-  display: flex;
+  /* display: flex;
   justify-content: space-evenly;
-  margin-bottom: 10px;
+  margin-bottom: 10px; */
+  border-bottom: 1px solid gray;
+  padding-bottom: 8px;
+  border-bottom: inset;
+  margin-right: 10px;
+  position: relative;
+  bottom: 20px;
 }
 .flexRow--cart-image-desktop{
   height: auto;
@@ -148,13 +154,17 @@
   border: 1px solid #d8d8d8;
 }
 .flexRowContent--viewcart :hover{
-  background-color: red;
+  background-color: #c32323;
+  color: white !important;
+  cursor: pointer;
 }
 .flexRowContent--shopping :hover{
-  background-color: red;
+  background-color: #c32323;
+  color: white !important;
+  cursor: pointer;
 }
 .flexColChild--priceWrapper{
-  color: red;
+  color: #c32323;
 }
 
 /* specific styling main header */
@@ -400,3 +410,6 @@ border: 1px solid #ccc;
       .flexColChild--cartButton-pdp{
         padding-top: 10px;
       }
+.flexRowContent--PDP-cart {
+  height: 60px;
+}

@@ -55,6 +55,8 @@
   word-wrap: break-word;
   max-width: 200px;
   text-align: right;
+  position: relative;
+  left: 20px;
 }
 
 .inputGroup {
@@ -119,7 +121,7 @@
   .form--newsletter {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     min-width: 800px;
     font-size: 30px;
@@ -173,11 +175,10 @@
 }
 
 .searchBarContainer {
-  background-color: #a5c377;
+  background-color: #070707;
   position: absolute;
   left: 0;
   top: 131px;
-  z-index: 99999;
 }
 @media screen and (min-width: 1025px) {
   .searchBarContainer {
@@ -445,7 +446,7 @@ justify-content: center;
 }
 
 .imageElement--car {
-  margin-left: 8px;
+  margin-left: 60px;
   margin-top: 80px;
 }
 
