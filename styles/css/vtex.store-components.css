@@ -55,6 +55,8 @@
   word-wrap: break-word;
   max-width: 200px;
   text-align: right;
+  position: relative;
+  left: 20px;
 }
 
 .inputGroup {
@@ -119,7 +121,7 @@
   .form--newsletter {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     min-width: 800px;
     font-size: 30px;
