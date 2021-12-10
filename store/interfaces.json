@@ -67,5 +67,8 @@
   },
   "dealers-list-PDP": {
     "component": "DealerListPDPWrapper"
+  },
+  "address-banner-tony": {
+    "component": "AdressBannerWrapper"
   }
 }
