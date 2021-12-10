@@ -184,7 +184,7 @@
   },
 
   "flex-layout.col#stack": {
-    "children": ["stack-layout"],
+    "children": ["stack-layout"], /////////////////////////"image#Bannercar"
     "props": {
       "width": 600,
       "height": 570,
@@ -328,7 +328,22 @@
     "props": {
       "blockClass": "dealers-PDP"
     },
-    "children": ["dealers-list-PDP"]
+    "children": ["dealers-list-PDP#dealer"]
+  },
+
+  "flex-layout.row#PDP": {
+    "props": {
+      "blockClass": "PDP-cart",
+      "height": 80
+    },
+    "children": ["product-quantity", "add-to-cart-button"]
+  },
+  "dealers-list-PDP#dealer": {
+    "props": {
+      "VtexComp": "flex-layout.row#PDP",
+      "Shipping": "shipping-simulator",
+      "BannerCar": "address-banner-tony"
+    }
   },
 
   // added product-brand
@@ -444,7 +459,8 @@
 
   "flex-layout.row#banner-car": {
     "props": {
-      "blockClass": "car"
+      "blockClass": "car",
+      "preventHorizontalStretch": true
     },
     "children": ["image#car"]
   },
@@ -453,6 +469,17 @@
     "props": {
       "horizontalAlign": "center",
       "src": "assets/pdpCar.png",
+      "width": 1240,
+      "height": 460,
+      "link": "/",
+      "blockClass": "car"
+    }
+  },
+
+  "image#Bannercar": {
+    "props": {
+      "horizontalAlign": "center",
+      "src": " https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/D65287B2-E276-4715-97D4-49C7ABAD845A.png",
       "width": 1240,
       "height": 460,
       "link": "/",

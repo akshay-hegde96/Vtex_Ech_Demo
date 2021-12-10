@@ -287,3 +287,7 @@
   justify-content: center;
   align-items: center;
 }
+
+.flexRowContent--PDP-cart {
+  height: 60px;
+}
