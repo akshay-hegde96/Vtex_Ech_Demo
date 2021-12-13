@@ -1,5 +1,4 @@
 .pickupInfoBlock {
-
     background: #fafafa;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -12,29 +11,30 @@
     display: flex;
     flex-wrap: wrap;
     }
-    .pickupPadding {
-        padding-bottom : 10px;
-        border-bottom: 1px solid #ccc;
-        flex: 0 0 auto;
-        width: 100%;
-        padding-left: 5px;
+.pickupPadding {
+    padding-bottom : 10px;
+    border-bottom: 1px solid #ccc;
+    flex: 0 0 auto;
+    width: 100%;
+    padding-left: 5px;
         }
-        .pickupRadioBlock {
-        flex: 0 0 auto;
-        width: 100%;
-        margin: 5px 207px 0 10px;
-  font-family: NissanBrand;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.07;
-  letter-spacing: normal;
-  color: #4e4e50;
-        }    
+        
+.pickupRadioBlock {
+    flex: 0 0 auto;
+    width: 100%;
+    margin: 5px 207px 0 10px;
+    font-family: NissanBrand;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.07;
+    letter-spacing: normal;
+    color: #4e4e50;
+ }    
 
-        .pd_installText {
-            margin: 0px 12px 8px 12px;
+    .pd_installText {
+    margin: 0px 12px 8px 12px;
   font-family: NissanBrand;
   font-size: 14px;
   font-weight: bold;
@@ -43,12 +43,11 @@
   line-height: normal;
   letter-spacing: normal;
   color: #000;
+ }
 
-            }
-
-            .addressTony {
-                font-size: 12px;
-                margin-left: 16px;
-                font-weight: 500;
-                margin-top: 5px;
-                }
+ .addressTony {
+    font-size: 12px;
+    margin-left: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+    }
