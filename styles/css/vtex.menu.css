@@ -95,10 +95,10 @@
  
   /* =========== Tablet ================*/
 @media only screen and (min-width: 481px) and (max-width: 1026px) {
-  .styledLinkContent--my-account-mobile,
-  .styledLinkContent--about-mobile,
-  .styledLinkContent--customer-service-mobile,
-  .styledLinkContent--shop-mobile {
+  .styledLinkContent--Products-mobile,
+  .styledLinkContent--buying-mobile,
+  .styledLinkContent--for-owners-mobile,
+  .styledLinkContent--legal-mobile {
     color: white !important;
   }
   .styledLinkContent--megaMenu-header {
@@ -114,10 +114,10 @@
 }
 /*============ Mobile ============== */
 @media only screen and (max-width: 480px) {
-  .styledLinkContent--my-account-mobile,
-  .styledLinkContent--about-mobile,
-  .styledLinkContent--customer-service-mobile,
-  .styledLinkContent--shop-mobile {
+  .styledLinkContent--Products-mobile,
+  .styledLinkContent--buying-mobile,
+  .styledLinkContent--for-owners-mobile,
+  .styledLinkContent--legal-mobile {
     color: white !important;
   }
 
