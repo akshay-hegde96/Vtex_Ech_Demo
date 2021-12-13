@@ -47,5 +47,8 @@
   },
   "store.custom#dealers-list": {
     "path": "/dealers"
+  },
+  "store.custom#category-landing-page": {
+    "path": "/clp/:clp_id"
   }
 }
