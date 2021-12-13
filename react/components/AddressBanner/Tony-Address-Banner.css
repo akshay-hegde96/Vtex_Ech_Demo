@@ -90,3 +90,66 @@ a {
   margin-right: 10px;
   border: 1px solid gray;
 }
+
+
+@media only screen and (max-width:640px) {
+  .address {
+    font-size: 15px;
+    color: black;
+    margin: 8px auto;
+  }
+
+  .rightContainer{
+    padding: 10px 10px;
+  }
+
+  .inputBox {
+    width: max-content;
+    height: 45px;
+    background-color: #f4f4f4;
+    border: 1px solid #999595;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .acceptedPaymentsIcons{
+    width: 15px;
+    margin-right: 5px;
+    border: 1px solid gray;
+  }
+}
+
+@media only screen and (max-width:1240px) {
+  .address {
+    font-size: 17px;
+    color: black;
+    margin: 8px 0px;
+  }
+
+  .rightContainer{
+    padding: 10px 10px;
+  }
+
+  .inputBox {
+    width: max-content;
+    height: 45px;
+    background-color: #f4f4f4;
+    border: 1px solid #999595;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .acceptedPaymentsIcons{
+    width: 29px;
+    margin-right: 5px;
+    border: 1px solid gray;
+  }
+}
