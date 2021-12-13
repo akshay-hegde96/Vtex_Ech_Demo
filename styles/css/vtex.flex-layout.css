@@ -29,7 +29,7 @@
 .flexRowContent--main-header-mobile {
   align-items: center;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #000000;
 }
 
 .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
@@ -222,20 +222,20 @@
 /* =========== Tablet ================*/
 @media only screen and (min-width: 481px) and (max-width: 1026px) {
   .flexRowContent--payment-methods {
-    background-color: darkolivegreen;
+    background-color: rgb(0, 0, 0);
   }
   .flexRowContent--accordion {
-    background-color: darkolivegreen;
+    background-color: rgb(0, 0, 0);
   }
 }
 
 /*============ Mobile ============== */
 @media only screen and (max-width: 480px) {
   .flexRowContent--payment-methods {
-    background-color: darkolivegreen;
+    background-color: rgb(0, 0, 0);
   }
   .flexRowContent--accordion {
-    background-color: darkolivegreen;
+    background-color: rgb(0, 0, 0);
   }
   .flexColChild--product-name {
     padding-left: 25px;
