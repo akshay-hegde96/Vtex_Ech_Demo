@@ -237,7 +237,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/privacy-policy",
+        "href": "/privacyPolicy",
         "noFollow": true,
         "tagTitle": "Privacy Policy",
         "text": "Privacy Policy"
@@ -470,7 +470,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/buying#/profile",
+        "href": "/build-your-nissan",
         "noFollow": false,
         "tagTitle": "Build Your Nissan",
         "text": "Build Your Nissan"
@@ -486,7 +486,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/quickorder",
+        "href": "/nismo-catalog",
         "noFollow": false,
         "tagTitle": "View NISMO Catalog",
         "text": "View NISMO Catalog"
@@ -502,7 +502,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/buying#/orders",
+        "href": "/nismo-japan-parts",
         "noFollow": false,
         "tagTitle": "NISMO Japan Parts and Accessories",
         "text": "NISMO Japan Parts and Accessories"
@@ -518,7 +518,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/buying#/jdm-nismo",
+        "href": "/nismo-merchandise",
         "noFollow": false,
         "tagTitle": "JDM NISMO Merchandise",
         "text": "JDM NISMO Merchandise"
@@ -534,7 +534,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/buying#/nissan-vip",
+        "href": "/vip-program",
         "noFollow": false,
         "tagTitle": "Nissan VIP Program",
         "text": "Nissan VIP Program"
