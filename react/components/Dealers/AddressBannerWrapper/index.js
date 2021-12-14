@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { makeAPICall } from "../../../Utils/httpCall";
-import { dealersListURL } from "../../../Config/url";
+import { storeURL,dealersListURL } from "../../../Config/url";
 import AddressBanner  from "../../AddressBanner";
 
 
@@ -12,7 +12,7 @@ function index() {
       const search = window.location.search;
         const seller = new URLSearchParams(search).get('seller');
         console.log("seller",seller);
-      const responseData = await makeAPICall("https://tonynissanworkspace--tonynissan.myvtex.com/api/dataentities/DealerList/search?_schema=dealer&_fields=name,address,phone", "GET", "0-100");
+      const responseData = await makeAPICall(dealersListURL, "GET", "0-100");
       console.log("responseData",responseData);
       var selectedDealer = responseData.filter((dealer)=>{
         return( dealer.name == seller);
