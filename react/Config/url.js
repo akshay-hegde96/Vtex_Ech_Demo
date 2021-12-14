@@ -1,6 +1,6 @@
 //Update your store URL here.
 
-export const storeURL = "https://mansiworkspace--nissan.myvtex.com/";
+export const storeURL = "https://nissan.myvtex.com";
 
 // category tree API
 export const deparmentURL = "/api/catalog_system/pub/category/tree/10";
@@ -36,3 +36,5 @@ export const nissanSellerSiteUrl = [
   "https://www.nissanusa.com/",
   "https://parts.nissanusa.com/",
 ];
+
+export const dealerstoreURL = "https://tonynissan.myvtex.com";

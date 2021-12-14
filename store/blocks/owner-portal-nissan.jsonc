@@ -1,0 +1,18 @@
+{
+    "store.custom#owner-portal":{
+        "blocks":[
+            "flex-layout.row#owner-portal"
+        ]
+    },
+    "flex-layout.row#owner-portal":{
+        "children":[
+            "rich-text#owner-portal"
+        ]
+    },
+    "rich-text#owner-portal": {
+        "props": {
+          "text":"# Enhance your ownership experience.",
+          "blockClass": ""
+        }
+      }
+}
