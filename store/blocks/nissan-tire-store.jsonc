@@ -1,0 +1,18 @@
+{
+    "store.custom#nissan-tire-store":{
+        "blocks":[
+            "flex-layout.row#nissan-tire-store"
+        ]
+    },
+    "flex-layout.row#nissan-tire-store":{
+        "children":[
+            "rich-text#nissan-tire-store"
+        ]
+    },
+    "rich-text#nissan-tire-store": {
+        "props": {
+          "text":"# Nissan Tire Price Match",
+          "blockClass": ""
+        }
+      }
+}
