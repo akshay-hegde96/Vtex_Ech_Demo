@@ -1,0 +1,18 @@
+{
+    "store.custom#nissan-visa":{
+        "blocks":[
+            "flex-layout.row#nissan-visa"
+        ]
+    },
+    "flex-layout.row#nissan-visa":{
+        "children":[
+            "rich-text#nissan-visa"
+        ]
+    },
+    "rich-text#nissan-visa": {
+        "props": {
+          "text":"# APPLY REWARD POINTS TO FUTURE PURCHASES",
+          "blockClass": ""
+        }
+      }
+}

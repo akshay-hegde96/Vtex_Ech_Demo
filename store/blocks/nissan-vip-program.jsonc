@@ -1,0 +1,14 @@
+{
+    "store.custom#nissan-vip-program": {
+      "blocks": ["rich-text#nissan-vip-program"
+  
+          ]
+    },
+    "rich-text#nissan-vip-program": {
+      "props": {
+        "text": "## Nissan VIP Program",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+      }
+    }
+  }

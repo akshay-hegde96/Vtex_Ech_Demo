@@ -1,0 +1,14 @@
+{
+    "store.custom#omniparts": {
+      "blocks": ["rich-text#omniparts"
+  
+          ]
+    },
+    "rich-text#omniparts": {
+      "props": {
+        "text": "## OmniParts",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+      }
+    }
+  }

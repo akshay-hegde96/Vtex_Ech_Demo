@@ -1,0 +1,35 @@
+// {
+//     "store.custom#build-your-nissan": {
+//         "blocks": [
+//           "flex-layout.row#build-your-nissan"
+//         ]
+//       },
+//       "flex-layout.row#build-your-nissan":{
+//           "children":[
+//             "rich-text#build-your-nissan"
+//           ]
+//       },
+
+//       "rich-text#build-your-nissan":{
+//           "props":{
+//               "text":"## Build Your Nissan",
+//               "textPosition":"center",
+//               "font": "t-heading-5"
+//           }
+//       }
+// }
+
+{
+  "store.custom#build-your-nissan": {
+    "blocks": ["rich-text#build-your-nissan"
+
+        ]
+  },
+  "rich-text#build-your-nissan": {
+    "props": {
+      "text": "## Build Your Nissan",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  }
+}
