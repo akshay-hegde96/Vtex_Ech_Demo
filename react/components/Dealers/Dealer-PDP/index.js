@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Dealer-PDP.css";
 import { makeAPICall } from "../../../Utils/httpCall";
-import { sellerList } from "../../../Config/url";
+import { sellerList,dealerstoreURL } from "../../../Config/url";
 import { nissanSellerSiteUrl } from "../../../Config/url";
 //import useProduct from "vtex.product-context/useProduct";
 import { useProduct } from "vtex.product-context";
@@ -36,7 +36,7 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
         <a
           className={styles.links}
           //onClick={() => showDealer(i)}
-           href={`https://demo--tonynissan.myvtex.com/${productContextValue?.product?.cacheId}/p`}
+           href={`${dealerstoreURL}/${productContextValue?.product?.cacheId}/p?seller=${seller.Name}`}
         >
           SHOP NOW
         </a>

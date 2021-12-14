@@ -36,3 +36,5 @@ export const nissanSellerSiteUrl = [
   "https://www.nissanusa.com/",
   "https://parts.nissanusa.com/",
 ];
+
+export const dealerstoreURL = "https://demo--tonynissan.myvtex.com";
