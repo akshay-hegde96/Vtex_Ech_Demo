@@ -1,0 +1,18 @@
+{
+    "store.custom#nissan-service":{
+        "blocks":[
+            "flex-layout.row#nissan-service"
+        ]
+    },
+    "flex-layout.row#nissan-service":{
+        "children":[
+            "rich-text#nissan-service"
+        ]
+    },
+    "rich-text#nissan-service": {
+        "props": {
+          "text":"# WHAT MAKES THE NISSAN EXPERIENCE DIFFERENT?",
+          "blockClass": ""
+        }
+      }
+}

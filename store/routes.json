@@ -47,5 +47,26 @@
   },
   "store.custom#dealers-list": {
     "path": "/dealers"
+  },
+  "store.custom#manual-guide": {
+    "path": "/manual-guide"
+  },
+  "store.custom#recall-info": {
+    "path": "/recall-info"
+  },
+  "store.custom#owner-portal": {
+    "path": "/owner-portal"
+  },
+  "store.custom#nissan-service": {
+    "path": "/nissan-service"
+  },
+  "store.custom#nissan-visa": {
+    "path": "/nissan-visa"
+  },
+  "store.custom#nissan-tire-store": {
+    "path": "/nissan-tire-store"
+  },
+  "store.custom#data-privacy": {
+    "path": "/nissan-data-privacy"
   }
 }

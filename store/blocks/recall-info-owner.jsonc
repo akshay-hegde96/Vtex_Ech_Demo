@@ -1,0 +1,18 @@
+{
+    "store.custom#recall-info":{
+        "blocks":[
+            "flex-layout.row#recall-info"
+        ]
+    },
+    "flex-layout.row#recall-info":{
+        "children":[
+            "rich-text#recall-info"
+        ]
+    },
+    "rich-text#recall-info": {
+        "props": {
+          "text":"# NISSAN RECALL LOOKUP.",
+          "blockClass": ""
+        }
+      }
+}

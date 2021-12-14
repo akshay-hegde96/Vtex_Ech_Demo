@@ -130,7 +130,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/manual-guides",
+        "href": "/manual-guide",
         "noFollow": true,
         "tagTitle": "Manual & Guides",
         "text": "Manual & Guides"
@@ -146,7 +146,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/recall-information",
+        "href": "/recall-info",
         "noFollow": true,
         "tagTitle": "Recall information",
         "text": "Recall information"
@@ -178,7 +178,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/sample-nissan-services",
+        "href": "/nissan-service",
         "noFollow": true,
         "tagTitle": "Nissan Services",
         "text": "Nissan Services"
@@ -194,13 +194,31 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/sample-terms",
+        "href": "/nissan-visa",
         "noFollow": true,
         "tagTitle": "Nissan Visa Credit Card",
         "text": "Nissan Visa Credit Card"
       }
     }
   },
+
+  "menu-item#nissan-true-store": {
+    "props": {
+      "id": "menu-item-nissan-true-store",
+      "blockClass": "nissan-true-store",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nissan-tire-store",
+        "noFollow": true,
+        "tagTitle": "Nissan True Store",
+        "text": "Nissan True Store"
+      }
+    }
+  },
+
   "vtex.menu@2.x:menu#footer-legal": {
     "props": {
       "orientation": "vertical",
@@ -253,7 +271,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/sell-personal-information",
+        "href": "/nissan-data-privacy",
         "noFollow": true,
         "tagTitle": "Do Not Sell My Personal Information",
         "text": "Do Not Sell My Personal Information"
@@ -276,22 +294,7 @@
       }
     }
   },
-  "menu-item#nissan-true-store": {
-    "props": {
-      "id": "menu-item-nissan-true-store",
-      "blockClass": "nissan-true-store",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/nissan-true-store",
-        "noFollow": true,
-        "tagTitle": "Nissan True Store",
-        "text": "Nissan True Store"
-      }
-    }
-  },
+  
   "menu-item#omniparts": {
     "props": {
       "id": "menu-item-omniparts",

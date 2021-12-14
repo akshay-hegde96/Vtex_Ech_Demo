@@ -298,3 +298,8 @@
   color: #171c20;
   padding-top: 0;
 }
+
+.heading--data-content-title{
+  font-size: x-large;
+    font-weight: 700;
+}

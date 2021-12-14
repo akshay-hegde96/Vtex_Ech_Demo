@@ -1,0 +1,18 @@
+{
+    "store.custom#manual-guide":{
+        "blocks":[
+            "flex-layout.row#Manual&Guide"
+        ]
+    },
+    "flex-layout.row#Manual&Guide":{
+        "children":[
+            "rich-text#Manual&Guide"
+        ]
+    },
+    "rich-text#Manual&Guide": {
+        "props": {
+          "text":"# Create meaningful and relevant experiences.",
+          "blockClass": ""
+        }
+      }
+}
