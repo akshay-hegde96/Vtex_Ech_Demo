@@ -33,25 +33,25 @@ const Department = (props) => {
                     <a href={category.url}>
                       {i === 0 && (
                         <img
-                          src="https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/4183CF74-EC66-4EEB-BC8E-C38F0E16A44B.png"
+                          src = {category.MetaTagDescription}
                           className={styles.imgSize}
                         />
                       )}
                       {i === 1 && (
                         <img
-                          src="https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/93AC9544-006D-4097-AC09-8C9DB66D0EC5.png"
+                          src = {category.MetaTagDescription}
                           className={styles.imgSize}
                         />
                       )}
                       {i === 2 && (
                         <img
-                          src="https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/C97E7601-86BC-4AD0-9AFD-5926FA61F269.png"
+                          src = {category.MetaTagDescription}
                           className={styles.imgSize}
                         />
                       )}
                       {i === 3 && (
                         <img
-                          src="https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/475473F1-F996-4D5D-87F7-CA8A51D74848.png"
+                          src = {category.MetaTagDescription}
                           className={styles.imgSize}
                         />
                       )}
