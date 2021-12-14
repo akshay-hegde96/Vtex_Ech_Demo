@@ -1,0 +1,23 @@
+{
+  "store.custom#category-landing-page": {
+    "blocks": [
+      "info-card#category-landing-page-main-banner",
+      "nissan-department",
+      "back-to-top-button"
+    ]
+  },
+  "info-card#category-landing-page-main-banner": {
+    "props": {
+      "id": "category-landing-page-main-banner",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "textMode": "'rich-text'",
+      "imageUrl": "assets/home/plp-banner.png",
+      "headline": "##### NISSAN PARTS & ACCESSORIES ONLINE \n ### Genuine 2020 Nissan Maxima 3.5L V6 CVT trimlevel* Parts",
+      "subhead": "A 2020 Nissan Maxima 3.5L V6 CVT SV combines innovation and efficiency with uncompromised driving enjoyment. Repairing or updating your 2020 Nissan Maxima 3.5L V6 CVT SV with OEM parts ensures that same excitement for the full life of your Nissan.",
+      "blockClass": "category-landing-page-spot-banner",
+      "textAlignment": "left",
+      "callToActionMode": "none"
+    }
+  }
+}

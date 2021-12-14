@@ -512,4 +512,40 @@ border: 1px solid grey;
   margin-top: 10px;
   border-top: 1px solid #ddd;
 
-
+}
+.headingLevel5--category-landing-page-spot-banner
+{
+  color: #ffffff;
+  padding-top: 40px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.headingLevel3--category-landing-page-spot-banner
+{
+  color: #ffffff;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: sans-serif;
+  margin-top: 5px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.paragraph--category-landing-page-spot-banner
+{
+  color: #ffffff;
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: sans-serif;
+  padding-top: 30px;
+  font-size: 12px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+}

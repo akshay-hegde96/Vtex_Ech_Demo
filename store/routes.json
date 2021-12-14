@@ -56,5 +56,8 @@
   },
   "store.custom#api-testing": {
     "path": "/api-testing"
+  },
+  "store.custom#category-landing-page": {
+    "path": "/clp/:clp_id"
   }
 }
