@@ -180,11 +180,11 @@
   "menu#drawer": {
     "children": [
       "menu-item#static-account-mobile",
-      "menu-item#static-category-electronics-mobile",
-      "menu-item#static-category-small-appliances-mobile",
-      "menu-item#static-category-major-appliances-mobile",
-      // "menu-item#static-category-test-mobile",
-      "menu-item#sales"
+      "menu-item#static-category-parts-mobile",
+      "menu-item#static-category-merchandise-mobile",
+      "menu-item#static-category-accessories-mobile",
+      "menu-item#static-category-nismo-mobile"
+      // "menu-item#sales"
     ],
     "props": {
       "orientation": "vertical"
@@ -330,9 +330,9 @@
   },
   //----------------------
 
-  "menu-item#static-category-electronics-mobile": {
+  "menu-item#static-category-parts-mobile": {
     "props": {
-      "id": "menu-item-category-electronics-mobile",
+      "id": "menu-item-category-parts-mobile",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -340,24 +340,24 @@
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Electronics",
-        "text": "Electronics"
+        "tagTitle": "Parts",
+        "text": "Parts"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#static-category-electronics-mobile"
+      "vtex.menu@2.x:submenu.accordion#static-category-parts-mobile"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#static-category-electronics-mobile": {
+  "vtex.menu@2.x:submenu.accordion#static-category-parts-mobile": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#static-category-electronics"]
+    "children": ["vtex.menu@2.x:menu#static-category-parts"]
   },
 
-  "menu-item#static-category-major-appliances-mobile": {
+  "menu-item#static-category-accessories-mobile": {
     "props": {
-      "id": "menu-item-category-major-appliances-mobile",
+      "id": "menu-item-category-accessories-mobile",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -365,24 +365,24 @@
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Major-Appliances",
-        "text": "Major-Appliances"
+        "tagTitle": "Accessories",
+        "text": "Accessories"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#static-category-major-appliances-mobile"
+      "vtex.menu@2.x:submenu.accordion#static-category-accessories-mobile"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#static-category-major-appliances-mobile": {
+  "vtex.menu@2.x:submenu.accordion#static-category-accessories-mobile": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#static-category-major-appliances"]
+    "children": ["vtex.menu@2.x:menu#static-category-accessories"]
   },
 
-  "menu-item#static-category-small-appliances-mobile": {
+  "menu-item#static-category-merchandise-mobile": {
     "props": {
-      "id": "menu-item-category-small-appliances-mobile",
+      "id": "menu-item-category-merchandise-mobile",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -390,23 +390,23 @@
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Small-Appliances",
-        "text": "Small-Appliances"
+        "tagTitle": "Merchandise",
+        "text": "Merchandise"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#static-category-small-appliances-mobile"
+      "vtex.menu@2.x:submenu.accordion#static-category-merchandise-mobile"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#static-category-small-appliances-mobile": {
+  "vtex.menu@2.x:submenu.accordion#static-category-merchandise-mobile": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#static-category-small-appliances"]
+    "children": ["vtex.menu@2.x:menu#static-category-merchandise"]
   },
-  "menu-item#static-category-test-mobile": {
+  "menu-item#static-category-nismo-mobile": {
     "props": {
-      "id": "menu-item-category-test-mobile",
+      "id": "menu-item-category-nismo-mobile",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -414,24 +414,24 @@
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Test",
-        "text": "Test"
+        "tagTitle": "NISMO",
+        "text": "NISMO"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#static-category-test-mobile"]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#static-category-nismo-mobile"]
   },
-  "vtex.menu@2.x:submenu.accordion#static-category-test-mobile": {
+  "vtex.menu@2.x:submenu.accordion#static-category-nismo-mobile": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#static-category-test"]
+    "children": ["vtex.menu@2.x:menu#static-category-nismo"]
   },
 
   "logo#mobile": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/logo.png",
+      "url": "assets/nissan-logo.png",
       "width": "70"
     }
   }

@@ -33,6 +33,9 @@
   .acceptedPaymentMethodContainer{
     justify-content: center;
   }
+  .socialNetworksContainer{
+    justify-content: center;
+  }
 }
 
 /* @media only screen and (max-width:480px){
