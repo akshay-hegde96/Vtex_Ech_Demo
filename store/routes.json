@@ -68,5 +68,8 @@
   },
   "store.custom#data-privacy": {
     "path": "/nissan-data-privacy"
+  },
+  "store.custom#category-landing-page": {
+    "path": "/clp/:clp_id"
   }
 }

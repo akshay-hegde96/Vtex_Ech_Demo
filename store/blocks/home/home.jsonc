@@ -83,7 +83,9 @@
   },
   "rich-text#homePageModel": {
     "props": {
-      "text": "### Select a Model"
+      "text": "### Select a Model",
+      "textPosition":"CENTER",
+      "textAlignment":"CENTER"
     }
   },
   "modal-trigger#vin-number": {

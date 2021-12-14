@@ -1,5 +1,9 @@
 .notificationBarContainer {
   background-color: rgba(50, 52, 55, 0) !important;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .infoCardContainer--info-card-slide {
@@ -131,7 +135,8 @@
   } */
   .newsletter .container--newsletter {
     height: 80px;
-    padding: 17px 368px 15px 393px;
+    /* padding: 17px 368px 15px 393px; */
+    padding: 10px;
     background-color: #323437;
     justify-content: center;
   }
@@ -185,11 +190,11 @@
     padding: 0.75em 3em;
   }
 }
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .searchBarContainer {
     padding: 0.4em;
   }
-}
+} */
 
 .productBrand--quickview {
   font-size: 30px;
@@ -232,6 +237,9 @@
   .form--newsletter {
     min-width: auto !important;
   }
+  .searchBarContainer{
+    top: 60px;
+  }
 }
 
 /* ================= Mobile ====================== */
@@ -244,7 +252,8 @@
     align-items: center;
   }
   .label--newsletter {
-    font-size: 15px;
+    text-align: center;
+    left: 40px;
   }
   .buttonContainer--newsletter {
     font-size: 2px !important;
@@ -261,6 +270,9 @@
   }
   .notificationContent {
     text-align: center;
+  }
+  .searchBarContainer {
+    top: 60px;
   }
 }
 
@@ -457,4 +469,41 @@ justify-content: center;
 }
 .imageElement--home-tile-image {
   object-fit: cover;
+}
+
+.headingLevel5--category-landing-page-spot-banner
+{
+  color: #ffffff;
+  padding-top: 40px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.headingLevel3--category-landing-page-spot-banner
+{
+  color: #ffffff;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: sans-serif;
+  margin-top: 5px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.paragraph--category-landing-page-spot-banner
+{
+  color: #ffffff;
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: sans-serif;
+  padding-top: 30px;
+  font-size: 12px;
+  padding-bottom: 50px;
+  padding-left: 30px;
 }
