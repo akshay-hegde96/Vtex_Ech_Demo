@@ -31,30 +31,10 @@ const Department = (props) => {
                 return (
                   <div key={category.id} className={styles.column}>
                     <a href={category.url}>
-                      {i === 0 && (
                         <img
                           src = {category.MetaTagDescription}
                           className={styles.imgSize}
                         />
-                      )}
-                      {i === 1 && (
-                        <img
-                          src = {category.MetaTagDescription}
-                          className={styles.imgSize}
-                        />
-                      )}
-                      {i === 2 && (
-                        <img
-                          src = {category.MetaTagDescription}
-                          className={styles.imgSize}
-                        />
-                      )}
-                      {i === 3 && (
-                        <img
-                          src = {category.MetaTagDescription}
-                          className={styles.imgSize}
-                        />
-                      )}
                       <h3 className={styles.imgName}>{category.name}</h3>
                     </a>
                   </div>
