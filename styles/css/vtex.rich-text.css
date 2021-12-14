@@ -303,3 +303,21 @@
   font-size: x-large;
     font-weight: 700;
 }
+
+.paragraph--warranty-title, .paragraph--promotion-title, .paragraph--disclaimer-title, .paragraph--yakima-title{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: inherit;
+  padding-left: 50px;
+  color: black;
+  margin-bottom: 5px;
+}
+.paragraph--warranty-text, .paragraph--promotion-content, .paragraph--disclaimer-text, .paragraph--yakima-text, .paragraph--privacy-content{
+  padding-left: 50px;
+}
+.heading--privacy-policy-title{
+  padding-left: 50px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 5px;
+}
