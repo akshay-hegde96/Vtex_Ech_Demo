@@ -8,7 +8,8 @@
         "children":[
             // "flex-layout.col#nissan-container-block"
              "flex-layout.col#nissan-image",
-             "flex-layout.col#nissan-detail"
+             "address-wrapper"
+            //  "flex-layout.col#nissan-detail"
         ],
         "props":{
           "blockClass":"banner-container-row"

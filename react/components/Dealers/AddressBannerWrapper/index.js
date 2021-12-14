@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { makeAPICall } from "../../Utils/httpCall";
-import { dealersListURL } from "../../Config/url";
-// import AddressBanner  from "../../AddressBanner";
-import styles from "./pickup.css";
+import { makeAPICall } from "../../../Utils/httpCall";
+import { dealersListURL } from "../../../Config/url";
+import AddressBanner  from "../../AddressBanner";
 
 
 function index() {
@@ -14,7 +13,7 @@ function index() {
         const seller = new URLSearchParams(search).get('seller');
         console.log("seller",seller);
       const responseData = await makeAPICall("https://tonynissanworkspace--tonynissan.myvtex.com/api/dataentities/DealerList/search?_schema=dealer&_fields=name,address,phone", "GET", "0-100");
-    //   console.log("responseData",responseData);
+      console.log("responseData",responseData);
       var selectedDealer = responseData.filter((dealer)=>{
         return( dealer.name == seller);
         
@@ -32,18 +31,13 @@ function index() {
     getdealers();
   }, []);
     return (
-        <div className={styles.pickupInfoBlock} >
-<div className={styles.pickupPadding} >
-<span className={styles.pd_radioButton} >
-<input id="radio_pickup" type="radio" name="radio_shipping" value="cb_pickup" />
-</span>
-<span className={styles.pd_installText} >Local Pickup</span>
-</div>
-<div className={styles.pickupRadioBlock} >
-<div className={styles.addressTony} >{data.name}</div>
-<div className={styles.addressTony} >{data.address}</div>
-</div>
-</div>
+        <div>
+            <AddressBanner 
+            name={data.name}
+            address={data.address}
+            phone={data.phone}
+            />
+        </div>
     )
 }
 

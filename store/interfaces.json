@@ -82,5 +82,8 @@
 },
   "address-banner-tony": {
     "component": "AdressBannerWrapper"
+  },
+  "address-wrapper":{
+    "component": "AddressWrapper"
   }
 }

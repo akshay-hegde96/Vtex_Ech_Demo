@@ -1,0 +1,13 @@
+{
+    "store.custom#api-testing": {
+        "blocks": [ 
+         // "rich-text#upcoming-features-heading",
+          "flex-layout.row#upcoming-features"
+        ]
+     },
+     "flex-layout.row#upcoming-features":{
+         "children":[
+            "address-wrapper"
+         ]
+     }
+    }

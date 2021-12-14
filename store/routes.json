@@ -53,5 +53,8 @@
   },
   "store.custom#pdp-dealersite": {
     "path": "/pdp-dealersite"
+  },
+  "store.custom#api-testing": {
+    "path": "/api-testing"
   }
 }

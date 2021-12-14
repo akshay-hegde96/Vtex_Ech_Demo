@@ -379,11 +379,12 @@ border: 1px solid #ccc;
 
  :global(.vtex-flex-layout-0-x-flexCol--nissan-image-col){
     margin-right : 10px;
+    margin-top: 1.5rem;
     }
 
     :global(.vtex-flex-layout-0-x-flexRow--banner-container-row ){
       margin-bottom : 10px;
-      margin-top : 10px;
+      /* margin-top : 10px; */
       }
      :global(.vtex-flex-layout-0-x-flexColChild--nissan-payment-block)  {
         width: 55px;
