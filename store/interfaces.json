@@ -70,5 +70,8 @@
   },
   "address-banner-tony": {
     "component": "AdressBannerWrapper"
+  },
+  "nissan-department": {
+    "component": "Department"
   }
 }
