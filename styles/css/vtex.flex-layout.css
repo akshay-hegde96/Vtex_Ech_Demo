@@ -330,3 +330,15 @@
 .flexRowContent--PDP-cart {
   height: 60px;
 }
+
+.flexCol--vip-content{
+  display: flex;
+  background-color: #fafafa;
+  margin-right: 20px;
+  margin-left: 20px;
+  justify-content: flex-start;
+}
+.flexCol--vip-form{   
+  display: flex;
+  background-color: #fafafa;
+}

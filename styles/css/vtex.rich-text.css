@@ -321,3 +321,20 @@
   color: black;
   margin-bottom: 5px;
 }
+
+.paragraph--vip-title, .paragraph--vip-vehicle-info, .paragraph--create-password{
+  color: black !important;
+  font-weight: bold;
+}
+.paragraph--vip-heading{
+  font-size: 20px;
+  color:black !important;
+  font-weight: bold;
+  font-family: 'Nissan Brand Bold_master',sans-serif;
+}
+  .paragraph--vip-content-title {
+  color: black !important;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Nissan Brand Bold_master',sans-serif;
+}
