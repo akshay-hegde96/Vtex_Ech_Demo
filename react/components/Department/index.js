@@ -1,68 +1,101 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Department.css";
-import { storeURL, deparmentURL } from "../../Config/url";
+import { deparmentURL, categoryURL } from "../../Config/url";
 import { makeAPICall } from "../../Utils/httpCall";
+//import img from "../../../assets/CLPassets/engine_135.png";
 
 const Department = (props) => {
+  const Shelf = props.FeaturedShelf;
   const id = parseInt(props.params.clp_id);
   const [depart, setDepart] = useState([]);
-  let data;
+  const [catg, setCatg] = useState([]);
   useEffect(() => {
     const makeDepartmentAPICall = async () => {
-      data = await makeAPICall(deparmentURL, "GET");
+      const data = await makeAPICall(deparmentURL, "GET");
       console.log({ data });
       setDepart([...data]);
     };
 
-    makeDepartmentAPICall();
-  }, []);
+    const makeCategoryAPICall = async () => {
+      const res = await makeAPICall(categoryURL, "GET");
+      console.log(res);
+      setCatg(res);
+    };
 
+    makeDepartmentAPICall();
+    makeCategoryAPICall();
+  }, []);
+  //---------------------------------------------
+  const deptName =
+    depart &&
+    depart.filter((depart) => depart.id === id).map((ele) => ele.name);
+  const bannerText = deptName && deptName[0];
+  const catArray = catg && catg.filter((arr) => arr.category_id === id);
+  const banner_Link = catArray && catArray.map((ele) => ele.banner_link);
+  console.log(banner_Link[0]);
+  const sub_category = catArray && catArray.map((ele) => ele.sub_category);
+  const sub_catImgArr = sub_category[0] && sub_category[0].split(",");
+  console.log(sub_catImgArr);
   // ===================================
 
   return (
     <React.Fragment>
-      <h2 className={styles.textAlignment}> Select a 2020 Nissan Maxima SV 3.5L V6 CVT Category </h2>
-      {depart
-        .filter((depart) => depart.id === id)
-        .map((CarDepart) => {
-          return (
-            <div key={CarDepart.id} className={styles.row}>
-              {CarDepart.children.map((category, i) => {
-                return (
-                  <div key={category.id} className={styles.column}>
-                    <a href={category.url}>
-                      {i === 0 && (
-                        <img
-                          src="https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/4183CF74-EC66-4EEB-BC8E-C38F0E16A44B.png"
-                          className={styles.imgSize}
-                        />
-                      )}
-                      {i === 1 && (
-                        <img
-                          src="https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/93AC9544-006D-4097-AC09-8C9DB66D0EC5.png"
-                          className={styles.imgSize}
-                        />
-                      )}
-                      {i === 2 && (
-                        <img
-                          src="https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/C97E7601-86BC-4AD0-9AFD-5926FA61F269.png"
-                          className={styles.imgSize}
-                        />
-                      )}
-                      {i === 3 && (
-                        <img
-                          src="https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/475473F1-F996-4D5D-87F7-CA8A51D74848.png"
-                          className={styles.imgSize}
-                        />
-                      )}
-                      <h3 className={styles.imgName}>{category.name}</h3>
-                    </a>
-                  </div>
-                );
-              })}
-            </div>
-          );
-        })}
+      <div className={styles.banner}>
+        {banner_Link[0] && (
+          <img
+            src={require(`../../../assets/CLPassets/${banner_Link[0]}.png`)}
+            alt="Banner_img"
+            className={styles.banner}
+          />
+        )}
+        <div className={styles.bannerText}>
+          <h4>NISSAN PARTS & ACCESSORIES ONLINE</h4>
+          <h2>GENUINE 2020 NISSAN {bannerText}* PARTS</h2>
+          <p>
+            A 2020 Nissan {bannerText} combines innovation and efficiency with
+            uncompromised driving enjoyment. Repairing or updating your 2020
+            Nissan {bannerText} with OEM parts ensures that same excitement for
+            the full life of your Nissan.
+          </p>
+        </div>
+      </div>
+
+      <h2 className={styles.textAlignment}>
+        Select a 2020 Nissan {bannerText}
+      </h2>
+      {depart &&
+        depart
+          .filter((depart) => depart.id === id)
+          .map((CarDepart) => {
+            return (
+              <div key={CarDepart.id} className={styles.row}>
+                {CarDepart &&
+                  CarDepart.children.map((category, i) => {
+                    return (
+                      i < 4 && (
+                        <div key={category.id} className={styles.column}>
+                          <a href={category.url}>
+                            {sub_catImgArr && (
+                              <img
+                                src={require(`../../../assets/CLPassets/${sub_catImgArr[i]}.png`)}
+                                alt="img"
+                                //className={styles.imgCont}
+                                className={styles.imgSize}
+                              />
+                            )}
+                            <h3 className={styles.imgName}>{category.name}</h3>
+                          </a>
+                        </div>
+                      )
+                    );
+                  })}
+              </div>
+            );
+          })}
+      <div>
+        <h3 className={styles.shelfName}>Features Parts & Accessories</h3>
+        <Shelf />
+      </div>
     </React.Fragment>
   );
 };

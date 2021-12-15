@@ -38,3 +38,7 @@ export const nissanSellerSiteUrl = [
 ];
 
 export const dealerstoreURL = "https://demo--tonynissan.myvtex.com";
+
+// export const categoryURL ="api/dataentities/CA/search?_schema=category&_fields=category_id,banner_link,sub_category";
+export const categoryURL =
+  "/api/dataentities/CA/search?_schema=category&_fields=category_id,banner_link,sub_category";

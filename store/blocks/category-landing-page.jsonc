@@ -1,7 +1,7 @@
 {
   "store.custom#category-landing-page": {
     "blocks": [
-      "info-card#category-landing-page-main-banner",
+      // "info-card#category-landing-page-main-banner",
       "nissan-department",
       "back-to-top-button"
     ]
@@ -18,6 +18,12 @@
       "blockClass": "category-landing-page-spot-banner",
       "textAlignment": "left",
       "callToActionMode": "none"
+    }
+  },
+
+  "nissan-department": {
+    "props": {
+      "FeaturedShelf": "flex-layout.row#shelf"
     }
   }
 }
