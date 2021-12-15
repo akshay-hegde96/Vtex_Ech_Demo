@@ -1,0 +1,22 @@
+{
+  "store.custom#privacyPolicy": {
+    "blocks":[
+        "rich-text#privacyPolicy-title",
+        "rich-text#privacyPolicy-content"
+    ]
+},
+"rich-text#privacyPolicy-title":{
+    "props":{
+    "text":"#### PRIVACY POLICY",
+    "textPosition":"left",
+    "blockClass":"privacy-policy-title"
+    }
+},
+"rich-text#privacyPolicy-content":{
+    "props":{
+        "text":"Nissan North America, Inc. (“Nissan” or “we”) values your privacy. This Privacy Policy discusses the information that we collect, use and share through our websites, mobile apps, connected vehicles, social media networks, interactive features and other services (collectively, “Platforms”). Our financial services subsidiary, Nissan Motor Acceptance Company, maintains additional privacy terms related to credit and financing customers, which can be found at Finance Privacy Notice.  This Privacy Policy does not apply to Personal Information we receive or use in our capacity as an employer or prospective employer.",
+        "textPosition":"left",
+        "blockClass":"privacy-content"
+    }
+}
+}

@@ -1,0 +1,14 @@
+{
+    "store.custom#nismo-merchandise": {
+      "blocks": ["rich-text#nismo-merchandise"
+  
+          ]
+    },
+    "rich-text#nismo-merchandise": {
+      "props": {
+        "text": "## JDM NISMO Merchandise",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+      }
+    }
+  }

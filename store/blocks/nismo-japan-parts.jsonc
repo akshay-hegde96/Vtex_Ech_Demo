@@ -1,0 +1,14 @@
+{
+    "store.custom#nismo-japan-parts": {
+      "blocks": ["rich-text#nismo-japan-parts"
+  
+          ]
+    },
+    "rich-text#nismo-japan-parts": {
+      "props": {
+        "text": "## NISMO Japan Parts",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+      }
+    }
+  }

@@ -1,7 +1,7 @@
 {
-  "vendor": "echidna",
+  "vendor": "nissan",
   "name": "store-theme",
-  "version": "4.4.3",
+  "version": "4.4.5",
   "builders": {
     "assets": "0.x",
     "styles": "2.x",
@@ -78,7 +78,8 @@
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x",
     "vtex.wish-list": "1.x",
-    "vtex.quickorder": "3.x"
+    "vtex.quickorder": "3.x",
+    "vtex.orderquote": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
