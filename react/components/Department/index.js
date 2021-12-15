@@ -5,7 +5,10 @@ import { makeAPICall } from "../../Utils/httpCall";
 //import img from "../../../assets/CLPassets/engine_135.png";
 
 const Department = (props) => {
-  const Shelf = props.FeaturedShelf;
+  const AccessoriesShelf = props.AccessoriesShelf;
+  const CarPartsShelf = props.CarPartsShelf;
+  const MerchandiseShelf = props.MerchandiseShelf;
+  const NismoShelf = props.NismoShelf;
   const id = parseInt(props.params.clp_id);
   const [depart, setDepart] = useState([]);
   const [catg, setCatg] = useState([]);
@@ -32,10 +35,11 @@ const Department = (props) => {
   const bannerText = deptName && deptName[0];
   const catArray = catg && catg.filter((arr) => arr.category_id === id);
   const banner_Link = catArray && catArray.map((ele) => ele.banner_link);
-  console.log(banner_Link[0]);
+  // console.log(banner_Link[0]);
   const sub_category = catArray && catArray.map((ele) => ele.sub_category);
   const sub_catImgArr = sub_category[0] && sub_category[0].split(",");
-  console.log(sub_catImgArr);
+  // console.log(sub_catImgArr);
+  const sub_catImgArrlength = sub_catImgArr && sub_catImgArr.length;
   // ===================================
 
   return (
@@ -72,7 +76,7 @@ const Department = (props) => {
                 {CarDepart &&
                   CarDepart.children.map((category, i) => {
                     return (
-                      i < 4 && (
+                      (i < sub_catImgArrlength && (
                         <div key={category.id} className={styles.column}>
                           <a href={category.url}>
                             {sub_catImgArr && (
@@ -86,15 +90,32 @@ const Department = (props) => {
                             <h3 className={styles.imgName}>{category.name}</h3>
                           </a>
                         </div>
-                      )
+                      )) ||
+                      (i >= sub_catImgArrlength && (
+                        <div key={category.id} className={styles.column}>
+                          <a href={category.url}>
+                            <img
+                              src={require(`../../../assets/CLPassets/engine_167.png`)}
+                              alt="img"
+                              //className={styles.imgCont}
+                              className={styles.imgSize}
+                            />
+
+                            <h3 className={styles.imgName}>{category.name}</h3>
+                          </a>
+                        </div>
+                      ))
                     );
                   })}
               </div>
             );
           })}
       <div>
-        <h3 className={styles.shelfName}>Features Parts & Accessories</h3>
-        <Shelf />
+        <h3 className={styles.shelfName}>Featured Parts & Accessories</h3>
+        {(id === 167 && <AccessoriesShelf />) ||
+          (id === 135 && <CarPartsShelf />) ||
+          (id === 128 && <NismoShelf />) ||
+          (id === 175 && <MerchandiseShelf />)}
       </div>
     </React.Fragment>
   );
