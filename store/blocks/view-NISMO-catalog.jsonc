@@ -1,0 +1,14 @@
+{
+    "store.custom#view-NISMO-catalog": {
+      "blocks": ["rich-text#view-NISMO-catalog"
+  
+          ]
+    },
+    "rich-text#view-NISMO-catalog": {
+      "props": {
+        "text": "## View NISMO Catalog",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+      }
+    }
+  }

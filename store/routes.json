@@ -47,5 +47,53 @@
   },
   "store.custom#dealers-list": {
     "path": "/dealers"
+  },
+  "store.custom#manual-guide": {
+    "path": "/manual-guide"
+  },
+  "store.custom#recall-info": {
+    "path": "/recall-info"
+  },
+  "store.custom#owner-portal": {
+    "path": "/owner-portal"
+  },
+  "store.custom#nissan-service": {
+    "path": "/nissan-service"
+  },
+  "store.custom#nissan-visa": {
+    "path": "/nissan-visa"
+  },
+  "store.custom#nissan-tire-store": {
+    "path": "/nissan-tire-store"
+  },
+  "store.custom#data-privacy": {
+    "path": "/nissan-data-privacy"
+  },
+  "store.custom#category-landing-page": {
+    "path": "/clp/:clp_id"
+  },
+  "store.custom#build-your-nissan":{
+    "path": "/build-your-nissan"
+  },
+  "store.custom#view-NISMO-catalog":{
+    "path": "/nismo-catalog"
+  },
+  "store.custom#nismo-japan-parts": {
+    "path": "/nismo-japan-parts"
+  },
+  "store.custom#nismo-merchandise": {
+    "path":"/nismo-merchandise"
+  },
+  "store.custom#omniparts": {
+    "path": "/omniparts"
+  },
+  "store.custom#privacyPolicy": {
+    "path": "/privacyPolicy"
+  },
+  "store.custom#warranty": {
+    "path": "/warranty"
+  },
+  "store.custom#nissan-vip-program": {
+    "path": "/vip-program"
   }
 }

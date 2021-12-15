@@ -1,9 +1,9 @@
 //Update your store URL here.
 
-export const storeURL = "https://reena--echidna.myvtex.com";
+export const storeURL = "https://nissan.myvtex.com";
 
 // category tree API
-export const deparmentURL = "api/catalog_system/pub/category/tree/10";
+export const deparmentURL = "/api/catalog_system/pub/category/tree/10";
 
 // contact Us form data API
 export const contactUsURL =
@@ -36,3 +36,9 @@ export const nissanSellerSiteUrl = [
   "https://www.nissanusa.com/",
   "https://parts.nissanusa.com/",
 ];
+
+export const dealerstoreURL = "https://tonynissan.myvtex.com";
+
+// export const categoryURL ="api/dataentities/CA/search?_schema=category&_fields=category_id,banner_link,sub_category";
+export const categoryURL =
+  "/api/dataentities/CA/search?_schema=category&_fields=category_id,banner_link,sub_category";

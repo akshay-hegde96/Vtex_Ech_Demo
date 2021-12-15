@@ -1,0 +1,70 @@
+{
+  "store.custom#warranty": {
+  "blocks":[
+        "rich-text#warranty-title",
+        "rich-text#warranty-content",
+        "rich-text#promotion-details-title",
+        "rich-text#promotion-details-content",
+        "rich-text#website-disclaimer",
+        "rich-text#disclaimer-text",
+        "rich-text#yakima-disclaimers",
+        "rich-text#yakima-text"
+    ]
+},
+"rich-text#warranty-title":{
+    "props":{
+        "text":"Warranty",
+        "textPosition":"left",
+        "blockClass":"warranty-title"
+    }
+},
+"rich-text#warranty-content":{
+    "props":{
+        "text":"All Genuine Nissan Parts are custom-fitted, custom-designed, and durability-tested for your Nissan, and come with a Nissan-backed 12 month/12,000 mile (whichever occurs first) limited warranty (if installed by dealer at the time of purchase).\n \n Genuine Nissan Accessories are covered by Nissan’s Limited Warranty on Genuine Nissan Replacement Parts, Genuine Nismo S-Tune Parts, and Genuine Nissan Accessories for the longer of 12 months/12,000 miles (whichever occurs first) or the remaining period under the 3-year/36,000-mile (whichever occurs first) Nissan New Vehicle Limited Warranty. Terms and conditions apply. See Warranty Information Booklet for details.",
+        "textPosition":"left",
+        "blockClass":"warranty-text"
+    }
+},
+"rich-text#promotion-details-title":{
+    "props":{
+        "text":"Promotion Details",
+        "textPosition":"left",
+        "blockClass":"promotion-title"
+    }
+},
+"rich-text#promotion-details-content":{
+    "props":{
+        "text":"Valid online through 12/31/21 at 11:59 p.m. CT at participating US NISSAN retailers only. Qualifying amount applies to Genuine NISSAN Accessories only. Does not apply to applicable taxes, installation or shipping and handling charges. Not valid on NISSAN replacement parts, Genuine Branded Merchandise, ICON Lift Kits, Yakima Accessories, or Japan Domestic Market (JDM) parts, accessories, merchandise and Motorsports parts. May not be combined with any other offers. Use coupon codes at online checkout. Discount will be reflected in shopping cart at online checkout. Coupon has no cash value. Other restrictions may apply.",
+        "textPosition":"left",
+        "blockClass":"promotion-content"
+    }
+},
+"rich-text#website-disclaimer":{
+    "props":{
+        "text":"Website Disclaimer",
+        "textPosition":"left",
+        "blockClass":"disclaimer-title"
+    }
+},
+"rich-text#yakima-disclaimers":{
+    "props":{
+        "text":"Yakima Disclaimers",
+        "textPosition":"left",
+        "blockClass":"yakima-title"
+    }
+},
+"rich-text#yakima-text":{
+    "props":{
+        "text":"1.Yakima Accessories shown are not genuine Nissan accessories. Not warranted by Nissan. Refer to product manufacturer for warranty details. Nissan limited warranty does not cover damages or failures to the vehicle caused by improper installation or alterations of any Nissan approved accessory or component. Contact your dealer for details.\n 2.Cargo and load capacity limited by weight and distribution. Always secure cargo.\n 3.Towing capability varies by configuration. See Nissan Towing Guide and Owner's Manual for additional information.\n 4.All retail prices listed herein are suggested prices. All dealers are free to sell at whatever price, mark-up, or margin of profit they may choose. Prices do not include installations. Pictures are for informational purposes only. Prices subject to change.",
+        "textPosition":"left",
+        "blockClass":"yakima-text"
+    }
+},
+"rich-text#disclaimer-text":{
+    "props":{
+        "text":"This website is intended for general descriptive and informational purposes only. It is subject to change and does not constitute an offer, representation or warranty (express or implied) by Nissan North America, Inc. Interested parties should confirm the accuracy of any information in this website with their Nissan dealer before relying on it to make a purchase decision. Nissan North America, Inc. reserves the right to make changes, at any time, without prior notice, in prices, colors, materials, fabrics, equipment, and specifications, and to discontinue parts or accessories. Due to continuous product development and other pre- and post-production factors, actual parts, materials and specifications may vary from this website. Availability and delivery times may vary. For additional information, see your Nissan dealer or contact Nissan North America,",
+        "textPosition":"left",
+        "blockClass":"disclaimer-text"
+    }
+}
+}
