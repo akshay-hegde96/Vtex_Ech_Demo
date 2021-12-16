@@ -345,14 +345,14 @@
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#static-category-parts-mobile"
+      "vtex.menu@2.x:submenu.accordion#static-category-Car-parts-mobile"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#static-category-parts-mobile": {
+  "vtex.menu@2.x:submenu.accordion#static-category-Car-parts-mobile": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#static-category-parts"]
+    "children": ["vtex.menu@2.x:menu#static-category-Car-parts"]
   },
 
   "menu-item#static-category-accessories-mobile": {

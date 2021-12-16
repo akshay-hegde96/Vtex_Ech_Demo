@@ -296,7 +296,7 @@
         "variant": "primary",
         "size": "medium"
       },
-      "href": "/electronics",
+      "href": "/accessories/engine-accessories",
       "label": "ENGINE ACCESSORIES"
     },
     "children": ["icon-caret#rightHome"]
@@ -332,7 +332,7 @@
         "variant": "primary",
         "size": "medium"
       },
-      "href": "/major-appliances",
+      "href": "/accessories/ac-electronics-accessories",
       "label": "AC/Electronics Accessories"
     },
     "children": ["icon-caret#rightHome"]
@@ -367,7 +367,7 @@
         "variant": "primay",
         "size": "medium"
       },
-      "href": "/small-appliances",
+      "href": "/accessories/truck-and-towing",
       "label": "BIKE RACK Accessories"
     },
     "children": ["icon-caret#rightHome"]
@@ -398,7 +398,7 @@
         "variant": "primary",
         "size": "medium"
       },
-      "href": "/sales",
+      "href": "/accessories/interior-accessories",
       "label": "Interior Accessories"
     },
     "children": ["icon-caret#rightHome"]
