@@ -321,6 +321,18 @@
   color: black;
   margin-bottom: 5px;
 }
+.paragraph--right-col-manual{
+  margin-top: 20px;
+  padding-top: 48px;
+}
+.heading--nissan-tire-store{
+  background: url(https://www.nissantireadvantage.com/content/articles/D5C712DA-CFC6-4DEE-AA93-736DAF8679F3/images/NIS_2021_169_%2470InstantRebate_OTSHeroA_EXLARGE_2800x800_VAR1.jpg) no-repeat;
+    height: 400px;
+    background-size: auto 400px;
+    background-color: white;
+    background-position: center bottom;
+    width: 192%;
+}
 
 .paragraph--vip-title, .paragraph--vip-vehicle-info, .paragraph--create-password{
   color: black !important;
