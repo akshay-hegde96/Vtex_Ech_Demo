@@ -57,8 +57,8 @@
 }
 
 .flexCol--filterCol {
-  max-width: 500px;
-  min-width: 230px;
+  min-width: 280px;
+  max-width: 300px;
 }
 
 .flexCol--productCountCol {
@@ -250,10 +250,10 @@
   margin-bottom: 0;
 }
 
-.flexCol--filterCol {
+/* .flexCol--filterCol {
   min-width: 280px;
   max-width: 350px;
-}
+} */
 
 .flexColChild--titleWishlist {
   margin-left: 3rem;
