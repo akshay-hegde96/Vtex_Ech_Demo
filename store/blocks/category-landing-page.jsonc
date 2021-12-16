@@ -1,7 +1,7 @@
 {
   "store.custom#category-landing-page": {
     "blocks": [
-      "info-card#category-landing-page-main-banner",
+      // "info-card#category-landing-page-main-banner",
       "nissan-department",
       "back-to-top-button"
     ]
@@ -18,6 +18,74 @@
       "blockClass": "category-landing-page-spot-banner",
       "textAlignment": "left",
       "callToActionMode": "none"
+    }
+  },
+
+  "nissan-department": {
+    "props": {
+      "AccessoriesShelf": "flex-layout.row#accesories",
+      "CarPartsShelf": "flex-layout.row#carParts",
+      "MerchandiseShelf": "flex-layout.row#merchandise",
+      "NismoShelf": "flex-layout.row#nismo"
+    }
+  },
+
+  "flex-layout.row#accesories": {
+    "children": ["list-context.product-list#accesories"]
+  },
+  "list-context.product-list#accesories": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#products"],
+    "props": {
+      // "orderBy": "OrderByTopSaleDESC",
+      "collection": "143"
+    }
+  },
+  "flex-layout.row#carParts": {
+    "children": ["list-context.product-list#carParts"]
+  },
+  "list-context.product-list#carParts": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      // "orderBy": "OrderByTopSaleDESC",
+      "collection": "144"
+    }
+  },
+
+  "flex-layout.row#merchandise": {
+    "children": ["list-context.product-list#merchandise"]
+  },
+  "list-context.product-list#merchandise": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      // "orderBy": "OrderByTopSaleDESC",
+      "collection": "145"
+    }
+  },
+
+  "flex-layout.row#nismo": {
+    "children": ["list-context.product-list#nismo"]
+  },
+  "list-context.product-list#nismo": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      // "orderBy": "OrderByTopSaleDESC",
+      "collection": "146"
+    }
+  },
+  "slider-layout#products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
     }
   }
 }
