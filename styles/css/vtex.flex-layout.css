@@ -330,3 +330,12 @@
 .flexRowContent--PDP-cart {
   height: 60px;
 }
+.flexColChild--tire-prop-details-1{
+  background-color: gray;
+
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--tire-prop-details){
+background-color: gray;
+font-weight: bold;
+margin-top: 53px;
+}

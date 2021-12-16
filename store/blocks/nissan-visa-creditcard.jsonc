@@ -1,18 +1,52 @@
 {
     "store.custom#nissan-visa":{
         "blocks":[
-            "flex-layout.row#nissan-visa"
+            "flex-layout.row#nissan-visa",
+            "flex-layout.row#visa-card"
         ]
     },
     "flex-layout.row#nissan-visa":{
         "children":[
-            "rich-text#nissan-visa"
+            "image#nissan-visa"
         ]
     },
-    "rich-text#nissan-visa": {
+    "image#nissan-visa":{
         "props": {
-          "text":"# APPLY REWARD POINTS TO FUTURE PURCHASES",
-          "blockClass": ""
-        }
-      }
+            "src": "https://credit.syf.com/nissan/images/nissan-bonus.jpg",
+            "maxHeight": "",
+            "blockClass": "left-col-manual"
+          }  
+      },
+      "flex-layout.row#visa-card":{
+        "children":[
+            "flex-layout.col#visa-card"
+        ]
+      },
+      "flex-layout.col#visa-card":{
+          "children":[
+              "rich-text#visa-card-title",
+              "link#visa-card-button"
+          ]
+      },
+      "link#visa-card-button": {
+        "props": {
+          "blockClass": "visa-card-button",
+          "displayMode": "button",
+          "buttonProps": {
+            "variant": "primary",
+            "size": "medium"
+          },
+          "href": "https://nissancreditcard.syf.com/NissanDealer/",
+          "label": "SEARCH"
+        },
+        "children": ["icon-caret#rightHome"]
+      },
+       "rich-text#visa-card-title":{
+           "props":{
+               "text":"# FIND A PARTICIPATING DEALERSHIP NEAR YOU",
+               "textPosition":"LEFT",
+               "textAlignment":"LEFT"
+           }
+       }
+
 }

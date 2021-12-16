@@ -9,7 +9,10 @@
       "menu-item#Parts",
       "menu-item#Accessories",
       "menu-item#Merchandise",
-      "menu-item#NISMO"
+      "menu-item#NISMO",
+      "menu-item#QuickOrder",
+      "menu-item#orderQuote"
+      
     ]
   },
   "menu-item#Products": {
@@ -91,6 +94,42 @@
       }
     }
   },
+
+  "menu-item#QuickOrder": {
+    "props": {
+      "id": "menu-item-QuickOrder",
+      "blockClass": "QuickOrder",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/quickorder",
+        "noFollow": false,
+        "tagTitle": "QuickOrder",
+        "text": "QuickOrder"
+      }
+    }
+  },
+
+  "menu-item#orderQuote": {
+    "props": {
+      "id": "menu-item-orderQuote",
+      "blockClass": "orderQuote",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/orderquote",
+        "noFollow": false,
+        "tagTitle": "orderQuote",
+        "text": "OrderQuote"
+      }
+    }
+  },
+
+
   "vtex.menu@2.x:menu#footer-for-owners": {
     "props": {
       "orientation": "vertical",
