@@ -40,8 +40,7 @@
       "image#nissan-vip":{
         "props":{
             "src":"https://parts.nissanusa.com/images/nissan-oem-assets/vip/vip-join-requestaccount.jpg",
-            "maxHeight":1000,
-            "maxWidth":600
+            "maxHeight":1000
         }
     },
     "rich-text#vip-content1":{
@@ -82,13 +81,14 @@
           "form-input.text#vin",
           "rich-text#password",
           "flex-layout.row#password",
+          "rich-text#spacer",
           "flex-layout.row#agreement",
           "form-submit"
-          // "form-input.checkbox#nissanAgreement"
-          // "form-field-group#address",
-          // "form-input.checkbox#agreement",
-          // "form-submit"
-        ]
+        ],
+        "blocks": ["form-success"]
+      },
+      "form-success": {
+        "children": ["rich-text#vip-successSubmit"]
       },
       "rich-text#vip-header":{
         "props":{
@@ -196,14 +196,22 @@
       },
       "form-input.text#password":{
         "props": {
+          "inputType":"password",
           "pointer": "#/properties/password",
           "blockClass":"password"
         }
       },
       "form-input.text#confirmPassword":{
         "props": {
+          "inputType":"password",
           "pointer": "#/properties/confirmPassword",
           "blockClass":"confirmPassword"
+        }
+      },
+      "rich-text#spacer": {
+        "props":{
+          "height": "15px",
+          "blockClass": "contact-us-spacer"
         }
       },
       "flex-layout.row#agreement":{
@@ -220,6 +228,13 @@
         "props": {
           "label": "Create VIP Account",
           "blockClass":"vip-submit"
+        }
+      },
+      "rich-text#vip-successSubmit": {
+        "props": {
+          "text": "ThankYou, You have succesfully submitted the data!",
+          "textAlignment": "CENTER",
+          "textPosition": "center"
         }
       }
   }

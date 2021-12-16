@@ -36,7 +36,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/Parts",
+        "href": "/clp/135",
         "noFollow": false,
         "tagTitle": "Parts",
         "text": "Parts"
@@ -52,7 +52,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/accessories",
+        "href": "/clp/167",
         "noFollow": false,
         "tagTitle": "Accessories",
         "text": "Accessories"
@@ -68,7 +68,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/merchandise",
+        "href": "/clp/175",
         "noFollow": false,
         "tagTitle": "Merchandise",
         "text": "Merchandise"
@@ -84,7 +84,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/NISMO",
+        "href": "/clp/128",
         "noFollow": false,
         "tagTitle": "NISMO",
         "text": "NISMO"

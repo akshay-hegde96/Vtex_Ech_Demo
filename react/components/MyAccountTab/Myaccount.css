@@ -2,10 +2,15 @@
   position: relative;
   width: 150px;
   z-index: 0;
+  padding: 3px;
+  margin-right: 6px;
+  margin-top: 2px;
+
 }
 
 .item {
   background-color: transparent;
+  font-family: Helvetica, Tahoma, sans-serif;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 15px;
@@ -15,12 +20,12 @@
   text-align: left;
   transition: background-color 0.05s ease-in-out;
   z-index: 1;
-  color: lightgray;
+  color: rgb(97, 96, 96);
 }
 
 .item:hover {
-  background-color: lightgray;
-  color: darkolivegreen;
+  background-color: darkgreen;
+  color: white;
 }
 
 .open {

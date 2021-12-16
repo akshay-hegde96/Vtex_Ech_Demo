@@ -436,8 +436,8 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      // "orderBy": "OrderByTopSaleDESC",
-      "collection": "142"
+      "orderBy": "OrderByTopSaleDESC"
+      //"collection": "142"
     }
   },
   "slider-layout#demo-products": {

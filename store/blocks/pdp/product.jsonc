@@ -129,8 +129,8 @@
       // "flex-layout.row#specifications",
       "tab-layout#product",
       "flex-layout.row#banner-car",
-      "shelf.relatedProducts",
-      "shelf#related"
+      "shelf.relatedProducts"
+     // "shelf#related"
     ]
   },
 
@@ -138,6 +138,7 @@
   "shelf.relatedProducts":{
     "blocks":["product-summary.shelf"],
     "props":{
+      "blockClass": "related",
       "recommendation": "similars",
       "hideOutOfStockItems": false,
       "productList":{
@@ -147,9 +148,6 @@
       }
     }
   },
-
- 
-
   "flex-layout.row#product-breadcrumb": {
     "props": {
       "marginTop": 4,
@@ -567,7 +565,7 @@
     "props": {
       "blockClass": "social-networks-pdp"
     }
-  },
+  }
   //,
 
   // "product-specifications": {
@@ -576,20 +574,20 @@
   //     "collapseContent": false
   //   }
   // }
-  "shelf#related": {
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "recomendation": "editor.relatedProducts.view",
-      "orderBy": "OrderByTopSaleDESC",
-      "productList": {
-        "maxItems": 10,
-        "itemsPerPage": 4,
-        "minItemsPerPage": 1.5,
-        "scroll": "BY_PAGE",
-        "marginBotton": 3,
-        "arrows": true,
-        "titleText": "Featured Parts And Accessories"
-      }
-    }
-  }
+  // "shelf#related": {
+  //   "blocks": ["product-summary.shelf"],
+  //   "props": {
+  //     "recomendation": "editor.relatedProducts.view",
+  //     "orderBy": "OrderByTopSaleDESC",
+  //     "productList": {
+  //       "maxItems": 10,
+  //       "itemsPerPage": 4,
+  //       "minItemsPerPage": 1.5,
+  //       "scroll": "BY_PAGE",
+  //       "marginBotton": 3,
+  //       "arrows": true,
+  //       "titleText": "Featured Parts And Accessories"
+  //     }
+  //   }
+  // }
 }
