@@ -6,7 +6,8 @@
           "product-selling-price#summary",
           "flex-layout.row#nissanModelNo",
           "product-summary-space",
-          "add-to-cart-button"
+          // "add-to-cart-button"
+          "viewdetails-button"
         ],
         "props":{
           "blockClass":"searchSummaryCard"

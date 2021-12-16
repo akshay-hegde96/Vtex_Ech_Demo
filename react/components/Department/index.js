@@ -72,12 +72,12 @@ const Department = (props) => {
           .filter((depart) => depart.id === id)
           .map((CarDepart) => {
             return (
-              <div key={CarDepart.id} className={styles.row}>
+              <div key={CarDepart.id} className={styles.catrow}>
                 {CarDepart &&
                   CarDepart.children.map((category, i) => {
                     return (
                       (i < sub_catImgArrlength && (
-                        <div key={category.id} className={styles.column}>
+                        <div key={category.id} className={styles.catcolumn}>
                           <a href={category.url}>
                             {sub_catImgArr && (
                               <img
@@ -92,7 +92,7 @@ const Department = (props) => {
                         </div>
                       )) ||
                       (i >= sub_catImgArrlength && (
-                        <div key={category.id} className={styles.column}>
+                        <div key={category.id} className={styles.catcolumn}>
                           <a href={category.url}>
                             <img
                               src={require(`../../../assets/CLPassets/engine_167.png`)}
