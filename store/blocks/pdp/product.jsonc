@@ -129,9 +129,27 @@
       // "flex-layout.row#specifications",
       "tab-layout#product",
       "flex-layout.row#banner-car",
+      "shelf.relatedProducts",
       "shelf#related"
     ]
   },
+
+  //Added related products--------
+  "shelf.relatedProducts":{
+    "blocks":["product-summary.shelf"],
+    "props":{
+      "recommendation": "similars",
+      "hideOutOfStockItems": false,
+      "productList":{
+        "arrows":true,
+        "gap": "ph3",
+        "titleText": "Related Products"
+      }
+    }
+  },
+
+ 
+
   "flex-layout.row#product-breadcrumb": {
     "props": {
       "marginTop": 4,
