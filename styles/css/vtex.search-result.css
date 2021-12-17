@@ -116,10 +116,10 @@
   color: white !important;
 }
 
-.searchResultContainer {
-/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+/* .searchResultContainer {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 padding-top: 45px !important;
-}
+} */
 
 @media only screen and (max-width: 480px) {
   .galleryTitle--layout {

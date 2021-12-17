@@ -28,12 +28,12 @@ const AddressBanner = (props) => {
               {props.phone}
             </h5>
 
-            <a href="">
+            <a href="mailto:nissanparts@tonygroup.com">
               <h5 className={styles.inputBox}>EMAIL US</h5>
             </a>
           </div>
           <h4 className={styles.headings}>Policies & Information</h4>
-          <a href="">
+          <a href="/privacyPolicy">
             <h4 className={styles.returnPolicy}>
               RETURN POLICY
               <img
