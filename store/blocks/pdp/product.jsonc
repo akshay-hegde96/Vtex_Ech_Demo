@@ -485,8 +485,8 @@
     "props": {
       "horizontalAlign": "center",
       "src": "assets/pdpCar.png",
-      "width": 1160,
-      "height": 460,
+      // "width": 1160,
+      // "height": 460,
       "link": "/",
       "blockClass": "car"
     }
@@ -496,8 +496,8 @@
     "props": {
       "horizontalAlign": "center",
       "src": " https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/D65287B2-E276-4715-97D4-49C7ABAD845A.png",
-      "width": 1160,
-      "height": 460,
+      // "width": 1160,
+      // "height": 460,
       "link": "/",
       "blockClass": "car"
     }

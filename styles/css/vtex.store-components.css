@@ -459,8 +459,10 @@ justify-content: center;
 }
 
 .imageElement--car {
-  margin-left: 60px;
+  margin-left: 2rem;
   margin-top: 80px;
+  width: 95% !important;
+  /* height: auto !important; */
 }
 
 .thumbImg--pdp-img {
