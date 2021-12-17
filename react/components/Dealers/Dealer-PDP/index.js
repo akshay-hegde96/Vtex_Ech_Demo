@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Dealer-PDP.css";
 import { makeAPICall } from "../../../Utils/httpCall";
-import { sellerList,dealerstoreURL } from "../../../Config/url";
+import {
+  // sellerList,
+  // dealerstoreURL,
+  dealersListURL,
+} from "../../../Config/url";
 import { nissanSellerSiteUrl } from "../../../Config/url";
 //import useProduct from "vtex.product-context/useProduct";
 import { useProduct } from "vtex.product-context";
@@ -18,53 +22,56 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
 
   useEffect(() => {
     const getSellerAPICall = async () => {
-      const data = await makeAPICall(sellerList, "GET");
+      const data = await makeAPICall(dealersListURL, "GET");
       console.log({ data });
       setSellers([...data]);
     };
     getSellerAPICall();
   }, []);
 
-  const list = sellers.map((seller, i) => {
-    return (
-      <div key={i} className={styles.card}>
-        <div className={styles.details}>
-          <h3>{seller.Name}</h3>
-          <p>8892556743</p>
+  const list = sellers.slice(0,3)
+    // filter the store dealer with index to show on pdp
+    
+    .map((seller, i) => {
+      return (
+        <div key={i} className={styles.card}>
+          <div className={styles.details}>
+            <h3>{seller.name}</h3>
+            <p>{seller.phone}</p>
+          </div>
+
+          <a
+            className={styles.links}
+            onClick={() => showDealer(i)}
+            // href={`https://tonydemo--nissan.myvtex.com/${productContextValue?.product?.cacheId}/p?seller=${seller.Name}`}
+            //onClick={() => showDealer(i)}
+            // href={`${dealerstoreURL}/${productContextValue?.product?.cacheId}/p?seller=${seller.name}`}
+          >
+            SHOP NOW
+          </a>
         </div>
+      );
+    });
 
-        <a
-          className={styles.links}
-          onClick={() => showDealer(i)}
-          // href={`https://tonydemo--nissan.myvtex.com/${productContextValue?.product?.cacheId}/p?seller=${seller.Name}`}
-          //onClick={() => showDealer(i)}
-           href={`${dealerstoreURL}/${productContextValue?.product?.cacheId}/p?seller=${seller.Name}`}
-        >
-          SHOP NOW
-        </a>
-      </div>
-    );
-  });
+  // const Calculate = () => {
+  //   setEstimate(!estimate);
+  //   console.log(estimate);
+  //   //doubt ---------------
+  //   const simulator = document.querySelector(
+  //     "shipping .vtex-store-components-3-x-shippingContainer"
+  //   );
+  //   console.log(simulator);
 
-  const Calculate = () => {
-    setEstimate(!estimate);
-    console.log(estimate);
-    //doubt ---------------
-    const simulator = document.querySelector(
-      "shipping .vtex-store-components-3-x-shippingContainer"
-    );
-    console.log(simulator);
-
-    setEle(<Shipping />);
-    // console.log(ele);
-  };
+  //   setEle(<Shipping />);
+  //   // console.log(ele);
+  // };
 
   //---------------------------
   const showDealer = (i) => {
     setShow(!show);
 
-    const dealers = [
-      //dealer 1-------------------------
+    const dealer = (
+      //---------------selected dealer-------------------------
       <div>
         <div className={styles.formShipping}>
           <span>
@@ -86,78 +93,36 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
           <label>Local Pickup</label>
         </div>
         <div className={styles.address_dealer}>
-          <p>ECHNissan</p>
-          <p>95-1899 KA UKA BLVD, WAIPAHU, HI 96797</p>
+          <p>{sellers[i].name}</p>
+          <p>{sellers[i].phone}</p>
         </div>
         <div className={styles.insta}>
           <span>Installation</span>
         </div>
         <div className={styles.instaDet}>
           <p>
-            Installation at ECHNissan by a certified Nissan Technician at a time
-            of your choosing. Installed price does not include local taxes. Due
-            to different vehicle options avtend configurations, installation may
-            require additional labor. Please contact your dealer to verify
-            installation charges.
+            Installation at {sellers[i].name} by a certified Nissan Technician
+            at a time of your choosing. Installed price does not include local
+            taxes. Due to different vehicle options avtend configurations,
+            installation may require additional labor. Please contact your
+            dealer to verify installation charges.
           </p>
         </div>
         <hr style={{ marginTop: "15px", marginBottom: "15px" }} />
-      </div>,
+      </div>
+    );
 
-      //dealer 2-------------------------
+    setDealer(dealer);
 
-      <div>
-        <div className={styles.formShipping}>
-          <span>
-            <input type="radio" value="Shipping" name="shipping_method" />
-            <label>Shipping</label>
-          </span>
-
-          <button className={styles.estimatebtn} onClick={Calculate}>
-            Estimated Cost
-          </button>
-
-          <div className="shipping">{ele}</div>
-        </div>
-        <div className={styles.pickup}>
-          <input type="radio" value="Pickup" name="shipping_method" />
-          <label>Local Pickup</label>
-        </div>
-        <div className={styles.address_dealer}>
-          <p>Nissan</p>
-          <p>55-1899 KA UKA BLVD, WAIPAHU, HI 96797</p>
-        </div>
-        <div className={styles.insta}>
-          <span>Installation</span>
-        </div>
-        <div className={styles.instaDet}>
-          <p>
-            Installation at Nissan by a certified Nissan Technician at a time of
-            your choosing. Installed price does not include local taxes. Due to
-            different vehicle options avtend configurations, installation may
-            require additional labor. Please contact your dealer to verify
-            installation charges.
-          </p>
-        </div>
-        <hr style={{ marginTop: "15px", marginBottom: "15px" }} />
-      </div>,
-    ];
-    setDealer(dealers[i]);
-
-    const DealerDetails = [
+    const DealerDetails = (
       <AddressBanner
-        name="ECHNissan"
-        address="95-1899 KA UKA BLVD, WAIPAHU, HI 96797"
-        phone="735782973"
-      />,
-      <AddressBanner
-        name="Nissan"
-        address="55-1899 KA UKA BLVD, WAIPAHU, HI 96797<"
-        phone="786782973"
-      />,
-    ];
+        name={sellers[i].name}
+        address={sellers[i].address}
+        phone={sellers[i].phone}
+      />
+    );
 
-    setSelectedDealer(DealerDetails[i]);
+    setSelectedDealer(DealerDetails);
   };
 
   return (
