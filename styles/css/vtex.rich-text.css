@@ -347,6 +347,19 @@
   font-size: 20px;
   font-family: 'Nissan Brand Bold_master',sans-serif;
 }
+.wrapper--part-service-1-title,
+.container--part-service-2-title,
+.wrapper--part-service-3-title,
+.container--nissan-para-1
+{
+  font-weight: 600;
+}
+
+.paragraph--nissan-tire-store{
+  padding: 25px;
+  font-size: 20px;
+  color: #fff;
+}
 .link--shopping{
   text-decoration: none;
 }
