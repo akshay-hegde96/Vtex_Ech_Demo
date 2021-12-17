@@ -101,3 +101,9 @@ body {
   margin: 1rem auto;
   text-align: center;
 }
+
+@media screen and (max-width:480px){
+  .bannerText {
+    width: fit-content;
+  }
+}

@@ -84,7 +84,9 @@
 .styledLinkContent--omniparts,
 .styledLinkContent--privacy-policy,
 .styledLinkContent--sell-personal-information,
-.styledLinkContent--warranty {
+.styledLinkContent--warranty,
+.styledLinkContent--QuickOrder,
+.styledLinkContent--orderQuote {
   font-size: 14px;
   margin-top: 5px;
   color: #c0bfc0;
