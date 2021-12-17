@@ -177,7 +177,7 @@
 
 .flexRowContent--main-menu :hover,
 :active {
-  color: rgb(126, 123, 123);
+  color: rgb(235, 235, 235);
 }
 
 .flexRowContent--main-menu :global(.vtex-menu-2-x-styledLink) {
@@ -350,4 +350,11 @@ margin-top: 53px;
 .flexCol--vip-form{   
   display: flex;
   background-color: #fafafa;
+}
+.flexRowContent--summaryListDesktop{
+border-bottom: 1px solid gray;
+}
+.flexCol--summaryDetailsListMobile{
+  justify-content: inherit !important;
+  align-items: baseline !important;
 }
