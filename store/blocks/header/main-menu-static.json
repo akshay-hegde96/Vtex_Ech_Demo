@@ -4,7 +4,7 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#static-category-parts",
+      "menu-item#static-category-Car-parts",
       "menu-item#static-category-accessories",
       "menu-item#static-category-merchandise",
       "menu-item#static-category-nismo"
@@ -12,9 +12,9 @@
      
     ]
   },
-  "menu-item#static-category-parts": {
+  "menu-item#static-category-Car-parts": {
     "props": {
-      "id": "menu-item-category-parts",
+      "id": "menu-item-category-Car-parts",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -36,254 +36,254 @@
 
       "blockClass": "nissan-megaMenu-header"
     },
-    "blocks": ["vtex.menu@2.x:submenu#static-category-parts"]
+    "blocks": ["vtex.menu@2.x:submenu#static-category-Car-parts"]
   },
-  "vtex.menu@2.x:submenu#static-category-parts": {
+  "vtex.menu@2.x:submenu#static-category-Car-parts": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#static-category-parts"]
+    "children": ["vtex.menu@2.x:menu#static-category-Car-parts"]
   },
-  "vtex.menu@2.x:menu#static-category-parts": {
+  "vtex.menu@2.x:menu#static-category-Car-parts": {
     "props": {
       "orientation": "vertical",
       "blockClass": "submenu-container"
     },
     "children": [
-      "menu-item#category-parts-accessories",
-      "menu-item#category-parts-body",
-      "menu-item#category-parts-brakes",
-      "menu-item#category-parts-cooling-system",
-      "menu-item#category-parts-electrical-system",
-      "menu-item#category-parts-engine",
-      "menu-item#category-parts-ev-system",
-      "menu-item#category-parts-exhaust-system",
-      "menu-item#category-parts-fuel-system",
-      "menu-item#category-parts-hvac",
-      "menu-item#category-parts-nissanMerchandise",
-      "menu-item#category-parts-other",
-      "menu-item#category-parts-suspension-steering",
-      "menu-item#category-parts-transmission-driveline" 
+      "menu-item#category-Car-parts-accessories",
+      "menu-item#category-Car-parts-body",
+      "menu-item#category-Car-parts-brakes",
+      "menu-item#category-Car-parts-cooling-system",
+      "menu-item#category-Car-parts-electrical-system",
+      "menu-item#category-Car-parts-engine",
+      "menu-item#category-Car-parts-ev-system",
+      "menu-item#category-Car-parts-exhaust-system",
+      "menu-item#category-Car-parts-fuel-system",
+      "menu-item#category-Car-parts-hvac",
+      "menu-item#category-Car-parts-nissanMerchandise",
+      "menu-item#category-Car-parts-other",
+      "menu-item#category-Car-parts-suspension-steering",
+      "menu-item#category-Car-parts-transmission-driveline"
     ]
   },
-  "menu-item#category-parts-accessories": {
+  "menu-item#category-Car-parts-accessories": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-parts-accessories",
+      "id": "menu-item-category-Car-parts-accessories",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/parts/accessories",
+        "href": "/car-parts/car-part-accessories",
         "noFollow": false,
         "tagTitle": "Accessories",
         "text": "Accessories"
       }
     }
   },
-  "menu-item#category-parts-body": {
+  "menu-item#category-Car-parts-body": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-parts-body",
+      "id": "menu-item-category-Car-parts-body",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/parts/body",
+        "href": "/car-parts/body-interior-and-trim",
         "noFollow": false,
         "tagTitle": "Body,Interior and Trim",
         "text": "Body,Interior and Trim"
       }
     }
   },
-  "menu-item#category-parts-brakes": {
+  "menu-item#category-Car-parts-brakes": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-parts-brakes",
+      "id": "menu-item-category-Car-parts-brakes",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/parts/brakes",
+        "href": "/car-parts/brakes",
         "noFollow": false,
         "tagTitle": "Brakes",
         "text": "Brakes"
       }
     }
   },
-  "menu-item#category-parts-cooling-system": {
+  "menu-item#category-Car-parts-cooling-system": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-parts-cooling-system",
+      "id": "menu-item-category-Car-parts-cooling-system",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/parts/cooling-system",
+        "href": "/car-parts/cooling-system",
         "noFollow": false,
         "tagTitle": "Cooling System",
         "text": "Cooling System"
       }
     }
   },
-  "menu-item#category-parts-electrical-system": {
+  "menu-item#category-Car-parts-electrical-system": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-parts-electrical-system",
+      "id": "menu-item-category-Car-parts-electrical-system",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/parts/electrical-system",
+        "href": "/car-parts/electrical-system",
         "noFollow": false,
         "tagTitle": "Electrical System",
         "text": "Electrical System"
       }
     }
   },
-  "menu-item#category-parts-engine": {
+  "menu-item#category-Car-parts-engine": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-parts-engine",
+      "id": "menu-item-category-Car-parts-engine",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/parts/engine",
+        "href": "/car-parts/engine",
         "noFollow": false,
         "tagTitle": "Engine",
         "text": "Engine"
       }
     }
   },
-  "menu-item#category-parts-ev-system": {
+  "menu-item#category-Car-parts-ev-system": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-parts-ev-system",
+      "id": "menu-item-category-Car-parts-ev-system",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/parts/ev-system",
+        "href": "/car-parts/ev-system",
         "noFollow": false,
         "tagTitle": "EV System",
         "text": "EV system"
       }
     }
   },
-  "menu-item#category-parts-exhaust-system": {
+  "menu-item#category-Car-parts-exhaust-system": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-parts-exhaust-system",
+      "id": "menu-item-category-Car-parts-exhaust-system",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/parts/exhaust-system",
+        "href": "/car-parts/exhaust-system",
         "noFollow": false,
         "tagTitle": "Exhaust System",
         "text": "Exhaust system"
       }
     }
   },
-  "menu-item#category-parts-fuel-system": {
+  "menu-item#category-Car-parts-fuel-system": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-parts-fuel-system",
+      "id": "menu-item-category-Car-parts-fuel-system",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/parts/fuel-system",
+        "href": "/car-parts/fuel-system",
         "noFollow": false,
         "tagTitle": "Fuel System",
         "text": "Fuel system"
       }
     }
   },
-  "menu-item#category-parts-nissanMerchandise": {
+  "menu-item#category-Car-parts-nissanMerchandise": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-parts-nissanMerchandise",
+      "id": "menu-item-category-Car-parts-nissanMerchandise",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/parts/nissan-merchandise",
+        "href": "/car-parts/nissan-merchandise",
         "noFollow": false,
         "tagTitle": "Nissan Merchandise",
         "text": "Nissan Merchandise"
       }
     }
   },
-  "menu-item#category-parts-hvac": {
+  "menu-item#category-Car-parts-hvac": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-parts-hvac",
+      "id": "menu-item-category-Car-parts-hvac",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/parts/hvac",
+        "href": "/car-parts/hvac",
         "noFollow": false,
         "tagTitle": "HVAC",
         "text": "HVAC"
       }
     }
   },
-  "menu-item#category-parts-other": {
+  "menu-item#category-Car-parts-other": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-parts-other",
+      "id": "menu-item-category-Car-parts-other",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/parts/other",
+        "href": "/car-parts/other",
         "noFollow": false,
         "tagTitle": "Other",
         "text": "Other"
       }
     }
   },
-  "menu-item#category-parts-suspension-steering": {
+  "menu-item#category-Car-parts-suspension-steering": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-parts-suspension-steering",
+      "id": "menu-item-category-Car-parts-suspension-steering",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/parts/suspension-steering",
+        "href": "/car-parts/suspension-and-steering",
         "noFollow": false,
         "tagTitle": "Suspension And Steering",
         "text": "Suspension And Steering"
       }
     }
   },
-  "menu-item#category-parts-transmission-driveline": {
+  "menu-item#category-Car-parts-transmission-driveline": {
     "props": {
       "blockClass": "sub-header",
-      "id": "menu-item-category-parts-transmission-driveline",
+      "id": "menu-item-category-Car-parts-transmission-driveline",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/parts/transmission-driveline",
+        "href": "/car-parts/transmission-and-driveline",
         "noFollow": false,
         "tagTitle": "Transmission And Driveline",
         "text": "Transmission And Driveline"
@@ -331,8 +331,8 @@
       "blockClass":"submenu-container"
     },
     "children": [
-      "menu-item#category-accessories-electronics",
       "menu-item#category-accessories-equipment",
+      "menu-item#category-accessories-electronics",
       "menu-item#category-accessories-exterior",
       "menu-item#category-accessories-interior",
       "menu-item#category-accessories-NISMO",
@@ -348,10 +348,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/accessories/electronics",
+        "href": "/accessories/ac-electronics-accessories",
         "noFollow": false,
-        "tagTitle": "Electronics",
-        "text": "Electronics"
+        "tagTitle": "AC/Electronics Accessories",
+        "text": "AC/Electronics Accessories"
       }
     }
   },
@@ -364,10 +364,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/accessories/equipment",
+        "href": "/accessories/engine-accessories",
         "noFollow": false,
-        "tagTitle": "Equipment",
-        "text": "Equipment"
+        "tagTitle": "Engine Accessories",
+        "text": "Engine Accessories"
       }
     }
   },
@@ -380,7 +380,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/accessories/exterior",
+        "href": "/accessories/exterior-accessories",
         "noFollow": false,
         "tagTitle": "Exterior",
         "text": "Exterior"
@@ -396,7 +396,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/accessories/interior",
+        "href": "/accessories/interior-accessories",
         "noFollow": false,
         "tagTitle": "Interior",
         "text": "Interior"
@@ -412,7 +412,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/accessories/NISMO",
+        "href": "/accessories/nismo",
         "noFollow": false,
         "tagTitle": "NISMO",
         "text": "NISMO"
@@ -428,7 +428,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/accessories/truck-towing",
+        "href": "/accessories/truck-and-towing",
         "noFollow": false,
         "tagTitle": "Truck And Towing",
         "text": "Truck And Towing"
@@ -511,7 +511,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/merchandise/autoAccessories",
+        "href": "/merchandise/auto-accessories",
         "noFollow": false,
         "tagTitle": "Auto Accessories",
         "text": "Auto Accessories"
@@ -527,7 +527,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/merchandise/businessAccessories",
+        "href": "/merchandise/business-accessories",
         "noFollow": false,
         "tagTitle": "Business Accessories",
         "text": "Business Accessories"
@@ -591,7 +591,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/merchandise/outerWear",
+        "href": "/merchandise/outerwear",
         "noFollow": false,
         "tagTitle": "Outerwear",
         "text": "Outerwear"
@@ -607,7 +607,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/merchandise/sports-leisure",
+        "href": "/merchandise/sports-and-leisure",
         "noFollow": false,
         "tagTitle": "Sports And Leisure",
         "text": "Sports And Leisure "
@@ -853,7 +853,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/nismo/nismo-accesoories",
+        "href": "/nismo/nismo-accessories",
         "noFollow": false,
         "tagTitle": "Nismo Accessories",
         "text": "Nismo Accessories"
@@ -869,7 +869,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/nismo/powerTrain-finalDrive",
+        "href": "/nismo/power-train-final-drive",
         "noFollow": false,
         "tagTitle": "PowerTrain-FinalDrive",
         "text": "PowerTrain-FinalDrive"

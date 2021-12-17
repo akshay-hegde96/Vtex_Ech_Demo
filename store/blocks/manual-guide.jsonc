@@ -1,18 +1,80 @@
 {
     "store.custom#manual-guide":{
         "blocks":[
+            "flex-layout.row#Manual&GuideBanner",
+            // "rich-text#banner-text",
+            // "flex-layout.row#dropdown-content",
             "flex-layout.row#Manual&Guide"
         ]
     },
-    "flex-layout.row#Manual&Guide":{
+    
+    "flex-layout.row#Manual&GuideBanner":{
         "children":[
-            "rich-text#Manual&Guide"
+            "image#Manual&GuideBanner"
         ]
     },
-    "rich-text#Manual&Guide": {
+
+    "image#Manual&GuideBanner":{
         "props": {
-          "text":"# Create meaningful and relevant experiences.",
-          "blockClass": ""
-        }
+            "src": "https://www.nissanusa.com/content/dam/Nissan/us/owners/ownership-redesign/manuals-and-guides/two-people-viewing-owners-manual-and-guides-on-tablet.jpg",
+            "maxHeight": "",
+            "blockClass": "left-col-manual"
+          }  
+      },
+
+
+     /* "rich-text#banner-text":{
+          "props":{
+              "text":"Owners manuals and guides",
+              "textAlignment":"LEFT",
+              "textPosition":"LEFT",
+              "blockClass":"banner-text"
+          }
+      },*/
+
+    "flex-layout.row#Manual&Guide":{
+        "children":[
+           "flex-layout.col#left-col-manual",
+           "flex-layout.col#right-col-manual"
+        ]
+    },
+    "flex-layout.col#left-col-manual":{
+        "children":[
+            "image#left-col-manual"
+        ]
+    },
+    "image#left-col-manual":{
+        "props": {
+            "src": "https://www.nissanusa.com/content/dam/Nissan/us/owners/ownership-redesign/manuals-and-guides/towing-capacity-and-guides.jpg",
+            "maxHeight": "",
+            "blockClass": "left-col-manual"
+          }  
+      },
+      "flex-layout.col#right-col-manual":{
+          "children":[
+              "rich-text#right-col-manual",
+              "link#right-col-manual-button"
+          ]
+      },
+      "rich-text#right-col-manual":{
+          "props":{
+              "text":"Select your model and year above to find the specific towing guide for your Nissan, and get the right advice before deciding to hitch up heavy items to the rear of your vehicle.",
+              "textAlignment":"LEFT",
+              "textPosition":"LEFT",
+              "blockClass":"right-col-manual"
+          }
+      },
+      "link#right-col-manual-button": {
+        "props": {
+          "blockClass": "cta-button",
+          "displayMode": "button",
+          "buttonProps": {
+            "variant": "primary",
+            "size": "medium"
+          },
+          "href": "https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/shared/2022/2022-nissan-towing-guide.pdf",
+          "label": "2022 NISSAN TOWING GUIDE"
+        },
+        "children": ["icon-caret#rightHome"]
       }
 }

@@ -9,7 +9,10 @@
       "menu-item#Parts",
       "menu-item#Accessories",
       "menu-item#Merchandise",
-      "menu-item#NISMO"
+      "menu-item#NISMO",
+      "menu-item#QuickOrder",
+      "menu-item#orderQuote"
+      
     ]
   },
   "menu-item#Products": {
@@ -36,7 +39,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/Parts",
+        "href": "/clp/135",
         "noFollow": false,
         "tagTitle": "Parts",
         "text": "Parts"
@@ -52,7 +55,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/accessories",
+        "href": "/clp/167",
         "noFollow": false,
         "tagTitle": "Accessories",
         "text": "Accessories"
@@ -68,7 +71,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/merchandise",
+        "href": "/clp/175",
         "noFollow": false,
         "tagTitle": "Merchandise",
         "text": "Merchandise"
@@ -84,13 +87,49 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/NISMO",
+        "href": "/clp/128",
         "noFollow": false,
         "tagTitle": "NISMO",
         "text": "NISMO"
       }
     }
   },
+
+  "menu-item#QuickOrder": {
+    "props": {
+      "id": "menu-item-QuickOrder",
+      "blockClass": "QuickOrder",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/quickorder",
+        "noFollow": false,
+        "tagTitle": "QuickOrder",
+        "text": "QuickOrder"
+      }
+    }
+  },
+
+  "menu-item#orderQuote": {
+    "props": {
+      "id": "menu-item-orderQuote",
+      "blockClass": "orderQuote",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/orderquote",
+        "noFollow": false,
+        "tagTitle": "orderQuote",
+        "text": "OrderQuote"
+      }
+    }
+  },
+
+
   "vtex.menu@2.x:menu#footer-for-owners": {
     "props": {
       "orientation": "vertical",

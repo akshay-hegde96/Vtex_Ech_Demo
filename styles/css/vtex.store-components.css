@@ -549,3 +549,7 @@ border: 1px solid grey;
   padding-bottom: 50px;
   padding-left: 30px;
 }
+
+.imageElement--tire-prop-details-2{
+  background-color: gray;
+}

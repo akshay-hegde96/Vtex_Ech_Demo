@@ -130,8 +130,23 @@
       "tab-layout#product",
       // "flex-layout.row#banner-car",
       "flex-layout.row#nissan-banner-container",
-      "shelf#related"
+      "shelf.relatedProducts"
     ]
+  },
+
+  //Added related products--------
+  "shelf.relatedProducts":{
+    "blocks":["product-summary.shelf"],
+    "props":{
+      "blockClass": "related",
+      "recommendation": "similars",
+      "hideOutOfStockItems": false,
+      "productList":{
+        "arrows":true,
+        "gap": "ph3",
+        "titleText": "Related Products"
+      }
+    }
   },
   "flex-layout.row#product-breadcrumb": {
     "props": {
@@ -544,7 +559,7 @@
     "props": {
       "blockClass": "social-networks-pdp"
     }
-  },
+  }
   //,
 
   // "product-specifications": {
@@ -553,20 +568,20 @@
   //     "collapseContent": false
   //   }
   // }
-  "shelf#related": {
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "recomendation": "editor.relatedProducts.view",
-      "orderBy": "OrderByTopSaleDESC",
-      "productList": {
-        "maxItems": 10,
-        "itemsPerPage": 4,
-        "minItemsPerPage": 1.5,
-        "scroll": "BY_PAGE",
-        "marginBotton": 3,
-        "arrows": true,
-        "titleText": "Featured Parts And Accessories"
-      }
-    }
-  }
+  // "shelf#related": {
+  //   "blocks": ["product-summary.shelf"],
+  //   "props": {
+  //     "recomendation": "editor.relatedProducts.view",
+  //     "orderBy": "OrderByTopSaleDESC",
+  //     "productList": {
+  //       "maxItems": 10,
+  //       "itemsPerPage": 4,
+  //       "minItemsPerPage": 1.5,
+  //       "scroll": "BY_PAGE",
+  //       "marginBotton": 3,
+  //       "arrows": true,
+  //       "titleText": "Featured Parts And Accessories"
+  //     }
+  //   }
+  // }
 }
