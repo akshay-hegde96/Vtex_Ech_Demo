@@ -357,6 +357,7 @@ border-bottom: 1px solid gray;
 .flexCol--summaryDetailsListMobile{
   justify-content: inherit !important;
   align-items: baseline !important;
+  
 }
 
 .flexCol--part-service-1,.flexCol--part-service-2,.flexCol--part-service-3{
