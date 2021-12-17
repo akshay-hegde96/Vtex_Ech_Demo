@@ -120,16 +120,13 @@
   display: flex;
   justify-content: center;
 }
-.paragraph--shopping, .paragraph--viewcart{
-  color: black;
+.paragraph--shopping{
+  color: black !important;
   font-weight: bolder;
   /* font-family: sans-serif; */
 }
 .paragraph--shopping{
      padding: 0px 80px;
-}
-.paragraph--viewcart{
-     padding: 0px 120px;
 }
 
 /* =========== Tablet ================*/
@@ -349,4 +346,20 @@
   font-weight: bold;
   font-size: 20px;
   font-family: 'Nissan Brand Bold_master',sans-serif;
+}
+.wrapper--part-service-1-title,
+.container--part-service-2-title,
+.wrapper--part-service-3-title,
+.container--nissan-para-1
+{
+  font-weight: 600;
+}
+
+.paragraph--nissan-tire-store{
+  padding: 25px;
+  font-size: 20px;
+  color: #fff;
+}
+.link--shopping{
+  text-decoration: none;
 }

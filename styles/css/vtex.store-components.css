@@ -512,3 +512,6 @@ justify-content: center;
 .imageElement--tire-prop-details-2{
   background-color: gray;
 }
+.imageElement--left-col-manual{
+  min-height: 320px;
+}
