@@ -50,8 +50,8 @@
         //   "displayMode": "button",
           "href": "https://www.nissantireadvantage.com/landing/price-match-terms",
           "label": "Click here to learn more."
-        },
-        "children": ["icon-caret#rightHome"]
+        }
+        // "children": ["icon-caret#rightHome"]
       },
       "image#tire-prop-details-1":{
         "props": {
