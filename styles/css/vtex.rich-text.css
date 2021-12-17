@@ -120,16 +120,13 @@
   display: flex;
   justify-content: center;
 }
-.paragraph--shopping, .paragraph--viewcart{
-  color: black;
+.paragraph--shopping{
+  color: black !important;
   font-weight: bolder;
   /* font-family: sans-serif; */
 }
 .paragraph--shopping{
      padding: 0px 80px;
-}
-.paragraph--viewcart{
-     padding: 0px 120px;
 }
 
 /* =========== Tablet ================*/
@@ -362,4 +359,7 @@
   padding: 25px;
   font-size: 20px;
   color: #fff;
+}
+.link--shopping{
+  text-decoration: none;
 }
