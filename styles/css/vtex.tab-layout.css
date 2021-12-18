@@ -33,7 +33,7 @@
     justify-content: center;
     align-items: top;
     background-color: white;
-    margin-left: 64px;
+    margin-left: 4rem;
     width: 1160px;
     font-size: 16px;
     font-weight: normal;
@@ -50,7 +50,7 @@
     background-color: white;
     justify-content: center;
     padding: 30px;
-    height: 320px;
+    /* height: 320px; */
     width: 1240px;
     border: solid 1px #949395;
     border-top: none;

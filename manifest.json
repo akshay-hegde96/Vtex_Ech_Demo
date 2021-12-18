@@ -1,7 +1,7 @@
 {
   "vendor": "echidna",
   "name": "store-theme",
-  "version": "4.4.5",
+  "version": "6.0.0",
   "builders": {
     "assets": "0.x",
     "styles": "2.x",
