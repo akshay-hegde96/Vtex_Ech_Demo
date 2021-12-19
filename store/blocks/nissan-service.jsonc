@@ -30,7 +30,10 @@
               "rich-text#part-service-1-title",
               "rich-text#part-service-1-context",
               "link#part-service-1-button"
-          ]
+          ],
+          "props":{
+            "blockClass":"part-service-1"
+          }
       },
       "link#part-service-1-button": {
         "props": {
@@ -47,7 +50,7 @@
           "text":" $70 INSTANT REBATE ON THE PURCHASE OF 4 ELIGIBLE TIRES*",
           "textPosition":"LEFT",
           "textAlignment":"LEFT",
-          "blockClass": ""
+          "blockClass": "part-service-1-title"
         }
       },
 
@@ -67,7 +70,10 @@
             "rich-text#part-service-2-title",
             "rich-text#part-service-2-context",
             "link#part-service-2-button"
-        ]
+        ],
+        "props":{
+          "blockClass":"part-service-2"
+        }
     },
     "link#part-service-2-button": {
         "props": {
@@ -84,7 +90,7 @@
         "text":"NISSAN TIRE PRICE MATCH* \n Buy from the one you trust.",
         "textPosition":"LEFT",
         "textAlignment":"LEFT",
-        "blockClass": ""
+        "blockClass": "part-service-2-title"
       }
     },
 
@@ -103,7 +109,10 @@
             "rich-text#part-service-3-title",
             "rich-text#part-service-3-context",
             "link#part-service-3-button"
-        ]
+        ],
+        "props":{
+          "blockClass":"part-service-3"
+        }
     },
     "link#part-service-3-button": {
         "props": {
@@ -126,7 +135,7 @@
         "text":" COMPLIMENTARY MULTI-POINT INSPECTION*",
         "textPosition":"LEFT",
         "textAlignment":"LEFT",
-        "blockClass": ""
+        "blockClass": "part-service-3-title"
       }
     },
 
@@ -142,7 +151,10 @@
     "flex-layout.row#nissan-para":{
         "children":[
             "flex-layout.col#nissan-para-1"
-        ]
+        ],
+        "props":{
+          "blockClass":"nissan-para-1"
+        }
     },
 
     "flex-layout.col#nissan-para-1":{
@@ -156,7 +168,8 @@
         "props":{
             "text":"WHAT MAKES THE NISSAN EXPERIENCE DIFFERENT?",
             "textPosition":"LEFT",
-            "textAlignment":"LEFT"
+            "textAlignment":"LEFT",
+            "blockClass":"nissan-para-1"
         }
     },
     "rich-text#nissan-para-2":{
@@ -177,7 +190,10 @@
             "image#service-card-1",
             "rich-text#service-card-1",
             "link#service-card-1"
-        ]
+        ],
+        "props":{
+          "blockClass":"service-card-1"
+        }
     },
     "image#service-card-1":{
         "props": {
@@ -209,7 +225,10 @@
             "image#service-card-2",
             "rich-text#service-card-2",
             "link#service-card-2"
-        ]
+        ],
+        "props":{
+          "blockClass":"service-card-2"
+        }
     },
     "image#service-card-2":{
         "props": {

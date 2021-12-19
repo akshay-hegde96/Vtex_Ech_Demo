@@ -252,8 +252,8 @@
         "type": "internal",
         "href": "/nissan-tire-store",
         "noFollow": true,
-        "tagTitle": "Nissan True Store",
-        "text": "Nissan True Store"
+        "tagTitle": "Nissan Tire Store",
+        "text": "Nissan Tire Store"
       }
     }
   },
@@ -403,7 +403,9 @@
       "menu-item#Parts",
       "menu-item#Accessories",
       "menu-item#Merchandise",
-      "menu-item#NISMO"
+      "menu-item#NISMO",
+      "menu-item#QuickOrder",
+      "menu-item#orderQuote"
     ]
   },
 

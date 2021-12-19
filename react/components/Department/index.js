@@ -33,12 +33,13 @@ const Department = (props) => {
     depart &&
     depart.filter((depart) => depart.id === id).map((ele) => ele.name);
   const bannerText = deptName && deptName[0];
+  console.log(bannerText);
   const catArray = catg && catg.filter((arr) => arr.category_id === id);
   const banner_Link = catArray && catArray.map((ele) => ele.banner_link);
-  // console.log(banner_Link[0]);
+  console.log(banner_Link[0]);
   const sub_category = catArray && catArray.map((ele) => ele.sub_category);
   const sub_catImgArr = sub_category[0] && sub_category[0].split(",");
-  // console.log(sub_catImgArr);
+  console.log(sub_catImgArr);
   const sub_catImgArrlength = sub_catImgArr && sub_catImgArr.length;
   // ===================================
 
@@ -47,7 +48,7 @@ const Department = (props) => {
       <div className={styles.banner}>
         {banner_Link[0] && (
           <img
-            src={require(`../../../assets/CLPassets/${banner_Link[0]}.png`)}
+            src={`${banner_Link[0]}`}
             alt="Banner_img"
             className={styles.banner}
           />
@@ -81,7 +82,7 @@ const Department = (props) => {
                           <a href={category.url}>
                             {sub_catImgArr && (
                               <img
-                                src={require(`../../../assets/CLPassets/${sub_catImgArr[i]}.png`)}
+                                src={`${sub_catImgArr[i]}`}
                                 alt="img"
                                 //className={styles.imgCont}
                                 className={styles.imgSize}
@@ -95,7 +96,7 @@ const Department = (props) => {
                         <div key={category.id} className={styles.catcolumn}>
                           <a href={category.url}>
                             <img
-                              src={require(`../../../assets/CLPassets/engine_167.png`)}
+                              src={`${sub_catImgArr[0]}`}
                               alt="img"
                               //className={styles.imgCont}
                               className={styles.imgSize}

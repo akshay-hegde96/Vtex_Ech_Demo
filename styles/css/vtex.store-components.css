@@ -184,6 +184,7 @@
   position: absolute;
   left: 0;
   top: 131px;
+  z-index: 1;
 }
 @media screen and (min-width: 1025px) {
   .searchBarContainer {
@@ -458,8 +459,10 @@ justify-content: center;
 }
 
 .imageElement--car {
-  margin-left: 60px;
+  margin-left: 2rem;
   margin-top: 80px;
+  width: 95% !important;
+  /* height: auto !important; */
 }
 
 .thumbImg--pdp-img {
@@ -510,4 +513,7 @@ justify-content: center;
 
 .imageElement--tire-prop-details-2{
   background-color: gray;
+}
+.imageElement--left-col-manual{
+  min-height: 320px;
 }
