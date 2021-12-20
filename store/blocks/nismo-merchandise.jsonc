@@ -1,14 +1,41 @@
 {
     "store.custom#nismo-merchandise": {
-      "blocks": ["rich-text#nismo-merchandise"
-  
+      "blocks": [
+        "flex-layout.row#nismo-merchandise"
           ]
     },
-    "rich-text#nismo-merchandise": {
-      "props": {
-        "text": "## JDM NISMO Merchandise",
-        "textPosition": "CENTER",
-        "textAlignment": "CENTER"
+    "flex-layout.row#nismo-merchandise":{
+      "props":{
+        "blockClass":"nismo-merchandise"
+      },
+      "children":[
+    "flex-layout.col#left-col-nismo-merchandise",
+    "flex-layout.col#right-col-nismo-merchandise"
+      ]
+    },
+    "flex-layout.col#left-col-nismo-merchandise":{
+      "children":[
+        "image#left-nismo-merchandise"
+      ]
+    },
+    "image#left-nismo-merchandise":{
+      "props":{
+        "src":"https://media.karousell.com/media/photos/products/2018/11/26/tomica_nismo_model_car_collection_fairlady_z_nismo_brilliant_pearl_white_gtr_nismo_vibrant_red_1543163473_54fb39e9.jpg",
+        "maxHeight":"300",
+        "maxWidth":"1000"
+      }
+    },
+    "flex-layout.col#right-col-nismo-merchandise":{
+      "children":[
+        "image#right-nismo-merchandise"
+      ]
+    },
+    "image#right-nismo-merchandise":{
+      "props":{
+        "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE80RCpGxk0KiNGqq5ZQ-Iu3V6Pzs49zYupg&usqp=CAU",
+        "maxHeight":"300",
+        "maxWidth":"1000",
+        "blockClass":"right-nismo-merchandise"
       }
     }
   }

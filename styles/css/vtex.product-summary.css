@@ -78,12 +78,14 @@
  background-color: #2E2E2E;
 } */
 
-.element--listLayout{
+/* .element--listLayout{
   border-bottom: 1px solid black;
     height: 275px;
+} */
+
+.containerNormal--listLayout{
+  height: 250px !important;
 }
-
-
 
 
 
