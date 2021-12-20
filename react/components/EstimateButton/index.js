@@ -16,27 +16,36 @@ import styles from "./estimateBtn.css";
         </div>
     )
 }*/
-const Toggle = () => {
-    const [show, setShow] = useState(false);
-    const [hidebtn , setHidebtn] = useState(true);
-    const [loader , setLoader] = useState(false);
+const Toggle = ({Shipping}) => {
 
-    const toggleShow=()=>{
-        setLoader(true);
-        setTimeout(()=>{
-            setShow(true);
-            setHidebtn(false);
-            setLoader(false);
-        },2000) 
-    }
 
-    return (
-      <div>
-          {hidebtn && !loader && <button className={styles.cestimateShipping} onClick={toggleShow }>ESTIMATE COST</button> }
+    // const [show, setShow] = useState(false);
+    // const [hidebtn , setHidebtn] = useState(true);
+    // const [loader , setLoader] = useState(false);
+
+    // const toggleShow=()=>{
+    //     setLoader(true);
+    //     setTimeout(()=>{
+    //         setShow(true);
+    //         setHidebtn(false);
+    //         setLoader(false);
+    //     },2000) 
+    // }
+
+    // return (
+    //   <div>
+    //       {hidebtn && !loader && <button className={styles.cestimateShipping} onClick={toggleShow }>ESTIMATE COST</button> }
            
-        {show &&  !loader &&  <div className={styles.text}>Free</div>}
-        {loader &&  <div className={styles.spinner}></div>}
-      </div>
+    //     {show &&  !loader &&  <div className={styles.text}>Free</div>}
+    //     {loader &&  <div className={styles.spinner}></div>}
+    //   </div>
+    // )
+
+    return(
+<React.Fragment>
+  <Shipping/>
+
+</React.Fragment>
     )
   }
   

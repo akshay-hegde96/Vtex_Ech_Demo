@@ -32,7 +32,11 @@
  border: none;
 
 }
-
+.trigger--shipping-trigger{
+  position: relative;
+  left: 315px;
+  bottom: 10px;
+}
 /* ======Mobile========== */
 @media only screen and (max-width: 480px) {
   .trigger--searchBarIcon {

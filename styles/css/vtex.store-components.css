@@ -559,3 +559,7 @@ border: 1px solid grey;
 .imageElement--left-col-manual{
   min-height: 320px;
 }
+/* //////////need to check as its accepting only global css handle ///////// */
+.shippingTableRadioBtn{
+  display: none;
+}

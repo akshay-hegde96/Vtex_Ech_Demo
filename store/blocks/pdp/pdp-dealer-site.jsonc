@@ -1,151 +1,158 @@
 {
-    "store.custom#pdp-dealersite":{
-        "blocks":[
-            "flex-layout.row#shipping-title",
-            "flex-layout.row#pickup-title",
-            //"flex-layout.row#installation-title",
-            "flex-layout.row#installation-1",
-            "flex-layout.row#installation-2",
-            "flex-layout.row#add-to-cart"
-           // "add-to-cart-button"
-        ]
-    },
-    "flex-layout.row#shipping-title":{
-        "children":[
-           // "flex-layout.col#shipping-title-block"
-           "flex-layout.col#shipping-radio",
-            "flex-layout.col#estimate-btn"
-        ],
-        "props":{
-            "blockClass":"shipping-block-container"
-        }
-    },
-    "flex-layout.col#shipping-title-block":{
-      "children":[
-        "flex-layout.col#shipping-radio",
-        "flex-layout.col#estimate-btn"
-      ],
-      "props":{
-          "blockClass":"shipping-title-block"
+  "store.custom#pdp-dealersite": {
+    "blocks": [
+      "flex-layout.row#shipping-title",
+      "flex-layout.row#pickup-title",
+      //"flex-layout.row#installation-title",
+      "flex-layout.row#installation-1",
+      "flex-layout.row#installation-2",
+      "flex-layout.row#add-to-cart"
+      // "add-to-cart-button"
+    ]
+  },
+  "flex-layout.row#shipping-title": {
+    "children": [
+      "flex-layout.col#shipping-title-block"
+      //    "flex-layout.col#shipping-radio",
+      //     "flex-layout.col#estimate-btn"
+    ],
+    "props": {
+      "blockClass": "shipping-block-container"
+    }
+  },
+  "flex-layout.col#shipping-title-block": {
+    "children": [
+      "flex-layout.col#shipping-radio",
+      "flex-layout.col#estimate-btn"
+    ],
+    "props": {
+      "blockClass": "shipping-title-block"
+    }
+  },
+  "flex-layout.col#shipping-radio": {
+    "children": ["shipping-component"],
+    "props": {
+      "blockClass": "shipping-radio-block"
+      // "width":"50%"
+    }
+  },
 
-      }
-    },
-    "flex-layout.col#shipping-radio":{
-        "children":["shipping-component"],
-        "props":{
-            "blockClass":"shipping-radio-block"
-           // "width":"50%"
-            
-        }
-    },
-    
-    "flex-layout.col#estimate-btn":{
-        "children":["estimate-btn"],
-        "props":{
-            "blockClass":"estn-block",
-            "horizontalAlign":"right"
-          //  "width":"50%"
-        }
-    },
-    "flex-layout.row#pickup-title":{
-        "children":[
-            "flex-layout.col#pickup-block"
-        ]
-    },
-    "flex-layout.col#pickup-block":{
-        "children":[
-            "pickup-block"
-        ]
-    },
-    "flex-layout.row#installation-title":{
-        "children":[
-            "flex-layout.row#installation-1",
-            "flex-layout.row#installation-2"
-        ]
-    },
+  "flex-layout.col#estimate-btn": {
+    "children": ["disclosure-layout#shipping"],
+    "props": {
+      // "blockClass":"estn-block",
+      // "horizontalAlign":"right"
+      //  "width":"50%"
+    }
+  },
+  // estimate-cost button disclosure
+  "disclosure-layout#shipping": {
+    "children": ["disclosure-trigger#shipping", "disclosure-content#shipping"]
+  },
+  "disclosure-trigger#shipping": {
+    "children": ["rich-text#shipping"],
+    "props": {
+      "blockClass": "shipping-trigger"
+    }
+  },
+  "disclosure-content#shipping": {
+    "children": ["estimate-btn#test"]
+  },
 
-    "flex-layout.row#installation-1":{
-        "children":[
-            "flex-layout.col#installation-title-block-1",
-            "flex-layout.col#installation-title-block-2"
-        ],
-        "props":{
-            "blockClass":"installation-1"
-        }
-    },
+  // estimate cost-seller table
+  "estimate-btn#test": {
+    "props": {
+      "Shipping": "shipping-simulator"
+    }
+  },
+  "rich-text#shipping": {
+    "props": {
+      "text": "Estimate Cost",
+      "blockClass": "installation-content"
+    }
+  },
+  "flex-layout.row#pickup-title": {
+    "children": ["flex-layout.col#pickup-block"]
+  },
+  "flex-layout.col#pickup-block": {
+    "children": ["pickup-block"]
+  },
+  "flex-layout.row#installation-title": {
+    "children": [
+      "flex-layout.row#installation-1",
+      "flex-layout.row#installation-2"
+    ]
+  },
 
-    "flex-layout.row#installation-2":{
-        "children":[
-            "flex-layout.col#installation-content-block"
-        //    "flex-layout.col#installation-title-block-2"
-        ],
-        "props":{
-            "blockClass":"installation-2"
-        }
-    },
+  "flex-layout.row#installation-1": {
+    "children": [
+      "flex-layout.col#installation-title-block-1",
+      "flex-layout.col#installation-title-block-2"
+    ],
+    "props": {
+      "blockClass": "installation-1"
+    }
+  },
 
-    "flex-layout.col#installation-content-block":{
-        "children":[
-            "rich-text#installation-main-cotent"
-        ]
-    },
+  "flex-layout.row#installation-2": {
+    "children": [
+      "flex-layout.col#installation-content-block"
+      //    "flex-layout.col#installation-title-block-2"
+    ],
+    "props": {
+      "blockClass": "installation-2"
+    }
+  },
 
-    "rich-text#installation-main-cotent": {
-        "props": {
-          "text":"Installation at Tony Nissan by a certified Nissan Technician at a time of your choosing. Installed price does not include local taxes. Due to different vehicle options and configurations, installation may require additional labor. Please contact your dealer to verify installation charges.",
-          "blockClass": "installation-main-cotent"
-        }
-      },
+  "flex-layout.col#installation-content-block": {
+    "children": ["rich-text#installation-main-cotent"]
+  },
 
-    "flex-layout.col#installation-title-block-1":{
-        "children":[
-            "rich-text#installation-title"
-        ]
-    },
-    "rich-text#installation-title": {
-        "props": {
-          "text":
-          "Installation",
-          "blockClass": "installation-title"
-        }
-      },
-      "flex-layout.col#installation-title-block-2":{
-        "children":[
-            "rich-text#installation-content"
-        ]
-    },
-    "rich-text#installation-content": {
-        "props": {
-          "text":"+$ 140.00",
-          "blockClass": "installation-content"
-        }
-      },
-      "flex-layout.row#add-to-cart":{
-          "children":[
-              "flex-layout.col#qty-slctr",
-              "flex-layout.col#addto-cart"
-          ],
-          "props":{
-              "blockClass":"qty-selctr-block"
-          }
-      },
-      "flex-layout.col#qty-slctr":{
-          "children":[
-          //  "qty-selector"
-          "product-quantity"
-          ],
-          "props":{
-            "warningQuantityThreshold": 9999999,
-            "showUnit": true
-          }
-      },
-      "flex-layout.col#addto-cart":{
-        "children": [
-          "add-to-cart-button"
-          ],
-          "props":{
-              "blockClass":"cartButton-pdp"
-          }
-      }
+  "rich-text#installation-main-cotent": {
+    "props": {
+      "text": "Installation at Tony Nissan by a certified Nissan Technician at a time of your choosing. Installed price does not include local taxes. Due to different vehicle options and configurations, installation may require additional labor. Please contact your dealer to verify installation charges.",
+      "blockClass": "installation-main-cotent"
+    }
+  },
+
+  "flex-layout.col#installation-title-block-1": {
+    "children": ["rich-text#installation-title"]
+  },
+  "rich-text#installation-title": {
+    "props": {
+      "text": "Installation",
+      "blockClass": "installation-title"
+    }
+  },
+  "flex-layout.col#installation-title-block-2": {
+    "children": ["rich-text#installation-content"]
+  },
+  "rich-text#installation-content": {
+    "props": {
+      "text": "+$ 140.00",
+      "blockClass": "installation-content"
+    }
+  },
+  "flex-layout.row#add-to-cart": {
+    "children": ["flex-layout.col#qty-slctr", "flex-layout.col#addto-cart"],
+    "props": {
+      "blockClass": "qty-selctr-block"
+    }
+  },
+  "flex-layout.col#qty-slctr": {
+    "children": [
+      //  "qty-selector"
+      "product-quantity"
+    ],
+    "props": {
+      "warningQuantityThreshold": 9999999,
+      "showUnit": true
+    }
+  },
+  "flex-layout.col#addto-cart": {
+    "children": ["add-to-cart-button"],
+    "props": {
+      "blockClass": "cartButton-pdp"
+    }
+  }
 }
-
