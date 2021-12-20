@@ -1,14 +1,50 @@
 {
     "store.custom#omniparts": {
-      "blocks": ["rich-text#omniparts"
-  
+      "blocks": [
+        "flex-layout.row#omniparts"
           ]
     },
-    "rich-text#omniparts": {
-      "props": {
-        "text": "## OmniParts",
-        "textPosition": "CENTER",
-        "textAlignment": "CENTER"
+    "flex-layout.row#omniparts":{
+      "props":{
+        "blockClass":"omniparts"
+      },
+      "children":[
+        "flex-layout.col#left-col-omniparts",
+        "flex-layout.col#right-col-omniparts"
+      ]
+    },
+    "flex-layout.col#left-col-omniparts":{
+      "children":[
+        "image#omniparts"
+      ]
+    },
+    "image#omniparts":{
+      "props":{
+        "src":"https://trademarks.justia.com/media/og_image.php?serial=86948047",
+        "blockClass":"omniparts-img"
+      }
+    },
+    "flex-layout.col#right-col-omniparts":{
+      "props":{
+        "blockClass":"omniparts-content"
+      },
+      "children":[
+        "rich-text#omniparts-head",
+        "rich-text#omniparts-text"
+      ]
+    },
+    "rich-text#omniparts-head":{
+      "props":{
+        "text":"shop OMNIPARTS online",
+        "textPosition":"left",
+        "blockClass":"omniparts-head"
+      }
+    },
+    "rich-text#omniparts-text":{
+      "props":{
+        "text":"Repairing and maintaining every vehicle in your garage just got easier. At OMNIPARTS Online, you can shop for thousands of quality aftermarket parts for all makes and models, all backed and warrantied by Nissan. From oil filters to alternators, OMNIPARTS carries a huge selection of parts for your vehicle. Shop our complete online catalog of parts and get your vehicle back where it belongs: on the road.",
+        "textPosition":"left",
+        "blockClass":"omniparts-text"
       }
     }
   }

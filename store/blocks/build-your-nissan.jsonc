@@ -1,35 +1,59 @@
-// {
-//     "store.custom#build-your-nissan": {
-//         "blocks": [
-//           "flex-layout.row#build-your-nissan"
-//         ]
-//       },
-//       "flex-layout.row#build-your-nissan":{
-//           "children":[
-//             "rich-text#build-your-nissan"
-//           ]
-//       },
-
-//       "rich-text#build-your-nissan":{
-//           "props":{
-//               "text":"## Build Your Nissan",
-//               "textPosition":"center",
-//               "font": "t-heading-5"
-//           }
-//       }
-// }
-
 {
   "store.custom#build-your-nissan": {
-    "blocks": ["rich-text#build-your-nissan"
-
+    "blocks": [
+      // "rich-text#build-your-nissan",
+      "flex-layout.row#build-your-nissan",
+      "flex-layout.row#frontier"
         ]
   },
-  "rich-text#build-your-nissan": {
-    "props": {
-      "text": "## Build Your Nissan",
-      "textPosition": "CENTER",
-      "textAlignment": "CENTER"
+  "flex-layout.row#build-your-nissan":{
+    "children":[
+      "image#left-col-img"
+    ]
+    },
+    "image#left-col-img":{
+      "props":{
+      "src":"https://www.nissanusa.com/content/dam/Nissan/us/homepage/2021-newhp/pfa1/nissan-at-home.jpg",
+      "maxHeight":"40",
+      "blockClass":"build-your-nissan-img"
     }
-  }
+    },
+    "flex-layout.row#frontier":{
+      "props":{
+        "blockClass":"frontier"
+      },
+      "children":[
+        "flex-layout.col#left-col-text",
+        "flex-layout.col#right-col-img"
+      ]
+    },
+    "flex-layout.col#left-col-text":{
+      "props":{
+        "blockClass":"frontier-left"
+      },
+      "children":[
+        "rich-text#frontier"
+      ]
+    },
+    "rich-text#frontier":{
+      "props":{
+        "text":"All-New 2022 Nissan Frontier® [*] \n Find your Frontier",
+        "textPosition":"left",
+        "blockClass":"frontier-text"
+      }
+    },
+    "flex-layout.col#right-col-img":{
+      "props":{
+        "blockClass":"frontier-right"
+      },
+      "children":[
+        "image#right-col-frontier"
+      ]
+    },
+    "image#right-col-frontier":{
+      "props":{
+        "src":"https://www.nissanusa.com/content/dam/Nissan/us/homepage/secondary-pfa/frontier/2022-Nissan-Frontier-off-roading_D-T.jpg",
+        "blockClass":"frontier-img"
+      }
+    }
 }
