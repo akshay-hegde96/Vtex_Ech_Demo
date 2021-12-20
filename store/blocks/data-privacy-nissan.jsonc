@@ -53,7 +53,8 @@
       },
       "rich-text#data-content-1": {
         "props": {
-          "text": "This NOTICE OF RIGHT TO OPT-OUT OF SALE OF PERSONAL INFORMATION (“OPT-OUT NOTICE”) is provided to inform California residents of their right to direct Nissan North America, Inc. (“Nissan” or “we”) to stop selling their personal information now and in the future."
+          "text": "This NOTICE OF RIGHT TO OPT-OUT OF SALE OF PERSONAL INFORMATION (“OPT-OUT NOTICE”) is provided to inform California residents of their right to direct Nissan North America, Inc. (“Nissan” or “we”) to stop selling their personal information now and in the future.",
+          "blockClass":"data-content-1"
         //   "textPosition":"LEFT",
         //   "textAlignment":"LEFT"
         }
@@ -78,12 +79,13 @@
           "rich-text#data-1-text"
         ],
         "props":{
-            "blockClass":"data-context"
+            "blockClass":"data-content-1"
         }
     },
     "rich-text#data-1-text": {
         "props": {
-          "text": "Under the CCPA, California residents have the right to direct businesses not to sell their personal information if the businesses otherwise would. This is known as the “right to opt out.”"
+          "text": "Under the CCPA, California residents have the right to direct businesses not to sell their personal information if the businesses otherwise would. This is known as the “right to opt out.”",
+          "blockClass":"data-content-1"
         //   "textPosition":"LEFT",
         //   "textAlignment":"LEFT"
         }
@@ -113,7 +115,8 @@
    },
    "rich-text#data-2-text": {
        "props": {
-         "text": "You may opt out of the sale of personal information by contacting Nissan’s Data Privacy line at 1-877-NIS-CCPA or by completing this web form.”"
+         "text": "You may opt out of the sale of personal information by contacting Nissan’s Data Privacy line at 1-877-NIS-CCPA or by completing this web form.”",
+         "blockClass":"data-content-1"
        //   "textPosition":"LEFT",
        //   "textAlignment":"LEFT"
        }
@@ -143,7 +146,8 @@
    },
    "rich-text#data-3-text": {
        "props": {
-         "text": "If you would like to opt back in to the sale of your personal information, you may do so by contacting Nissans Data Privacy line at 1-877-NIS-CCPA.”"
+         "text": "If you would like to opt back in to the sale of your personal information, you may do so by contacting Nissans Data Privacy line at 1-877-NIS-CCPA.”",
+         "blockClass":"data-content-1"
        //   "textPosition":"LEFT",
        //   "textAlignment":"LEFT"
        }

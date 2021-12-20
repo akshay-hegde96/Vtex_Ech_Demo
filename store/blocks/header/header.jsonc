@@ -248,7 +248,7 @@
   },
   "menu-item#account-my-wishlist": {
     "props": {
-      "blockClass": "sub-header",
+      "blockClass": "sub-header-wishlist",
       "id": "menu-item-account-my-wishlist",
       "type": "custom",
       "iconId": null,
