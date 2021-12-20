@@ -1,7 +1,7 @@
 {
     "store.custom#view-NISMO-catalog": {
-      "blocks": ["rich-text#view-NISMO-catalog"
-  
+      "blocks": [
+        "flex-layout.row#nismo-catalog"
           ]
     },
     "rich-text#view-NISMO-catalog": {
@@ -9,6 +9,17 @@
         "text": "## View NISMO Catalog",
         "textPosition": "CENTER",
         "textAlignment": "CENTER"
+      }
+    },
+    "flex-layout.row#nismo-catalog":{
+      "children":[
+        "image#nismo-catalog"
+      ]
+    },
+    "image#nismo-catalog":{
+      "props":{
+        "src":"https://i.pinimg.com/736x/a1/0d/98/a10d98b8f28af8ddf7edf30998768a26.jpg",
+        "blockClass":"img-nismo-catalog"
       }
     }
   }

@@ -1,14 +1,22 @@
 {
     "store.custom#nismo-japan-parts": {
-      "blocks": ["rich-text#nismo-japan-parts"
-  
+      "blocks": [
+        "flex-layout.row#japan-parts-img"
           ]
     },
-    "rich-text#nismo-japan-parts": {
-      "props": {
-        "text": "## NISMO Japan Parts",
-        "textPosition": "CENTER",
-        "textAlignment": "CENTER"
+    "flex-layout.row#japan-parts-img":{
+      "props":{
+        "blockClass":"japan-parts-img"
+      },
+      "children":[
+        "image#japan-parts-img"
+      ]
+    },
+    "image#japan-parts-img":{
+      "props":{
+        "src":"https://www.nismo.co.jp/products/nismo_parts/img/main2021.jpg",
+        "maxHeight":"30",
+        "blockClass":"japan-parts-img"
       }
     }
   }
