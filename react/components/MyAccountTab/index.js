@@ -27,10 +27,10 @@ export class Myaccount extends Component {
             <div>
                 <Menu>
                     <Item link="/account"><img src="https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/561DC964-C331-436E-A1E8-D45C286AB76D.svg" style={{paddingRight:"6px"}}/>My Account</Item>
-                    <Item link="/wishlist">My Wishlist</Item>
+                    {/* <Item link="/wishlist">My Wishlist</Item> */}
                     <Item link="/checkout">My Cart</Item>
                     <Item link="/checkout">Checkout</Item>
-                    <Item link="/login">Register</Item>
+                    {/* <Item link="/login">Register</Item> */}
                     <Item link="/login">Login</Item>
                 </Menu>
             </div>

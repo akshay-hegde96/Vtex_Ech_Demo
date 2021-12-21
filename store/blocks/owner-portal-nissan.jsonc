@@ -29,7 +29,10 @@
               "rich-text#MyNISSAN App-title",
               "rich-text#MyNISSAN App-content",
               "flex-layout.row#nissan-buy-store"
-          ]
+          ],
+          "props":{
+            "blockClass":"MyNISSAN-App"
+          }
       },
 
       "flex-layout.row#nissan-buy-store":{
@@ -46,7 +49,8 @@
           "props":{
               "text":"## Access Your Car On the Go",
               "textPosition":"LEFT",
-              "textAlignment":"LEFT"
+              "textAlignment":"LEFT",
+              "blockClass":"MyNISSAN-App-title"
           }
       },
 
@@ -54,7 +58,8 @@
         "props":{
             "text":"The MyNISSAN App gives you convenient access to important information about your vehicle from a smart device. Locate your nearest Nissan dealer, schedule your next service, find vehicle-specific quick guide videos, and view your vehicle service history",
             "textPosition":"LEFT",
-            "textAlignment":"LEFT"
+            "textAlignment":"LEFT",
+            "blockClass":"App-content"
         }
     },
 
@@ -66,7 +71,7 @@
             "variant": "primary",
             "size": "medium"
           },
-          "href": "https://apps.apple.com/us/app/mynissan-app/id1436634482",
+        //   "href": "https://apps.apple.com/us/app/mynissan-app/id1436634482",
           "label": "GO TO APPSTORE"
         },
         "children": ["icon-caret#rightHome"]
@@ -80,7 +85,7 @@
             "variant": "primary",
             "size": "medium"
           },
-          "href": "https://play.google.com/store/apps/details?id=com.nissan.mynissan&hl=en_US",
+        //   "href": "https://play.google.com/store/apps/details?id=com.nissan.mynissan&hl=en_US",
           "label": "GO TO GOOGLE PLAY"
         },
         "children": ["icon-caret#rightHome"]
@@ -110,7 +115,10 @@
               "rich-text#NissanConnect-title",
               "rich-text#NissanConnect-content",
               "link#MyNISSAN-connect"
-          ]
+          ],
+          "props":{
+            "blockClass":"nissan-connect"
+          }
       },
 
       "rich-text#NissanConnect-title":{
@@ -137,7 +145,7 @@
             "variant": "primary",
             "size": "medium"
           },
-          "href": "https://www.nissanusa.com/connect.html",
+        //   "href": "https://www.nissanusa.com/connect.html",
           "label": "VIEW NISSAN CONNECT"
         },
         "children": ["icon-caret#rightHome"]
