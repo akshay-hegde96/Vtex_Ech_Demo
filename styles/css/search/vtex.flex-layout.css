@@ -46,6 +46,9 @@
  .flexRowContent--plpToolBarMobile {
    align-items: center;
  }
+ .flexColChild--nissan-connect{
+   margin-left: 20px;
+ }
 
  /* .flexRowContent :global(.vtex-flex-layout-0-x-flexRowContent){
   padding-bottom: 21px;
