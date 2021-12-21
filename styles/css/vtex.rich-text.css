@@ -465,3 +465,8 @@ padding-left: 50px;
 .paragraph--omniparts-text{
   color:black
 }
+
+.paragraph--estimate-cost{
+  margin: 0px;
+  color: #c32323;
+}

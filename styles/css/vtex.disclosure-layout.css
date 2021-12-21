@@ -34,7 +34,7 @@
 }
 .trigger--shipping-trigger{
   position: relative;
-  left: 315px;
+  left: 29em;
   bottom: 10px;
 }
 /* ======Mobile========== */
@@ -42,5 +42,10 @@
   .trigger--searchBarIcon {
    position: relative;
    left: 50px;
+  }
+  .trigger--shipping-trigger{
+    position: relative;
+    left: 7em;
+    bottom: 10px;
   }
 }

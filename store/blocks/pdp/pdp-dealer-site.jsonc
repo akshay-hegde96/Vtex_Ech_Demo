@@ -68,7 +68,7 @@
   "rich-text#shipping": {
     "props": {
       "text": "Estimate Cost",
-      "blockClass": "installation-content"
+      "blockClass": "estimate-cost"
     }
   },
   "flex-layout.row#pickup-title": {
