@@ -29,19 +29,24 @@
           "children":[
               "rich-text#part-service-1-title",
               "rich-text#part-service-1-context",
-              "rich-text#part-service-1-button"
+              "link#part-service-1-button"
           ],
           "props":{
             "blockClass":"part-service-1"
           }
       },
-      "rich-text#part-service-1-button": {
+      "link#part-service-1-button": {
         "props": {
-          "text":" FIND DEALERS",
-          "textPosition":"LEFT",
-          "textAlignment":"LEFT",
-          "blockClass": "part-service-1-title"
-        }
+          "blockClass": "part-service-1-button",
+          "displayMode": "button",
+          "buttonProps": {
+            "variant": "primary",
+            "size": "medium"
+          },
+          "href": "/dealers",
+          "label": "VIEW DEALERS"
+        },
+        "children": ["icon-caret#rightHome"]
       },
 
       "rich-text#part-service-1-title": {
@@ -55,7 +60,7 @@
 
       "rich-text#part-service-1-context": {
         "props": {
-            "text":"ORDER DETAILS",
+            "text":"OFFER DETAILS",
             "textPosition":"LEFT",
             "textAlignment":"LEFT",
             "blockClass": ""
@@ -68,19 +73,24 @@
         "children":[
             "rich-text#part-service-2-title",
             "rich-text#part-service-2-context",
-            "rich-text#part-service-2-button"
+            "link#part-service-2-button"
         ],
         "props":{
           "blockClass":"part-service-2"
         }
     },
-    "rich-text#part-service-2-button": {
+    "link#part-service-2-button": {
       "props": {
-        "text":"FIND DEALERS",
-        "textPosition":"LEFT",
-        "textAlignment":"LEFT",
-        "blockClass": "part-service-2-title"
-      }
+        "blockClass": "part-service-2-button",
+        "displayMode": "button",
+        "buttonProps": {
+          "variant": "primary",
+          "size": "medium"
+        },
+        "href": "/dealers",
+        "label": "VIEW DEALERS"
+      },
+      "children": ["icon-caret#rightHome"]
     },
 
 
@@ -107,20 +117,26 @@
         "children":[
             "rich-text#part-service-3-title",
             "rich-text#part-service-3-context",
-            "rich-text#part-service-3-button"
+            "link#part-service-3-button"
         ],
         "props":{
           "blockClass":"part-service-3"
         }
     },
-    "rich-text#part-service-3-button": {
+    "link#part-service-3-button": {
       "props": {
-        "text":" FIND DEALERS",
-        "textPosition":"LEFT",
-        "textAlignment":"LEFT",
-        "blockClass": "part-service-3-title"
-      }
+        "blockClass": "part-service-3-button",
+        "displayMode": "button",
+        "buttonProps": {
+          "variant": "primary",
+          "size": "medium"
+        },
+        "href": "/dealers",
+        "label": "VIEW DEALERS"
+      },
+      "children": ["icon-caret#rightHome"]
     },
+
 
 
     "rich-text#part-service-3-title": {
