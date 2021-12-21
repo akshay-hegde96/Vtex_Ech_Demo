@@ -21,3 +21,11 @@
   font-size: 13px !important;
   color: #4e4e50 !important;
 }
+
+/*============ Mobile ============== */
+@media only screen and (max-width: 480px) {
+  .product-identifier__value  {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+}
