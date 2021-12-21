@@ -30,7 +30,7 @@ export class Myaccount extends Component {
                     {/* <Item link="/wishlist">My Wishlist</Item> */}
                     <Item link="/checkout">My Cart</Item>
                     <Item link="/checkout">Checkout</Item>
-                    <Item link="/login">Register</Item>
+                    {/* <Item link="/login">Register</Item> */}
                     <Item link="/login">Login</Item>
                 </Menu>
             </div>
