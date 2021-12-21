@@ -481,3 +481,7 @@ border-bottom: 1px solid gray;
 .flexCol--omniparts-content{
   margin-top: -150px;
 }
+.flexColChild--shipping-radio-block{
+  position: relative;
+  top: 15px;
+}
