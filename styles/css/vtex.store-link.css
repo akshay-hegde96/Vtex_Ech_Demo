@@ -19,3 +19,11 @@
   /* padding-right: 13px; */
   margin-left: 20px;
 }
+
+.buttonLink--details-1-link,
+.buttonLink--details-2-link,
+.buttonLink--details-3-link,
+.buttonLink--visa-card-button
+{
+  margin-left: 20px;
+}

@@ -12,14 +12,14 @@
     "rich-text#recall-info": {
         "props": {
           "text":"# NISSAN RECALL LOOKUP.",
-          "blockClass": ""
+          "blockClass": "recall-info"
         }
       },
 
       "rich-text#VIN-info": {
         "props": {
           "text":"Using your Vehicle Identification Number (VIN), you can quickly establish if there are any recalls specific to your Nissan.",
-          "blockClass": ""
+          "blockClass": "VIN-info"
         }
       },
 
@@ -35,20 +35,24 @@
           "children":[
             "rich-text#details-1",
              "link#details-1"
-          ]
+          ],
+          "props":{
+            "blockClass":"details-container-1"
+          }
       },
 
       "rich-text#details-1":{
           "props":{
               "text":"Important Rear Visibility System Recall Information",
               "textPosition":"LEFT",
-              "textAlignment":"LEFT"
+              "textAlignment":"LEFT",
+              "blockClass":"details-1-text"
           }
       },
 
       "link#details-1": {
         "props": {
-          "blockClass": "",
+          "blockClass": "details-1-link",
           "displayMode": "button",
           "buttonProps": {
             "variant": "primary",
@@ -72,26 +76,30 @@
     "children":[
       "rich-text#details-2",
        "link#details-2"
-    ]
+    ],
+    "props":{
+      "blockClass":"details-container-2"
+    }
 },
 
 "rich-text#details-2":{
     "props":{
         "text":"Important Takata Air Bag Safety Recall Information",
         "textPosition":"LEFT",
-        "textAlignment":"LEFT"
+        "textAlignment":"LEFT",
+        "blockClass":"details-2-text"
     }
 },
 
 "link#details-2": {
   "props": {
-    "blockClass": "",
+    "blockClass": "details-2-link",
     "displayMode": "button",
     "buttonProps": {
       "variant": "primary",
       "size": "medium"
     },
-    "href": "https://www.nissanusa.com/takata-airbag-recall.html",
+    // "href": "https://www.nissanusa.com/takata-airbag-recall.html",
     "label": "VIEW TAKATA RECALL DETAILS"
   },
   "children": ["icon-caret#rightHome"]
@@ -109,20 +117,24 @@
     "children":[
       "rich-text#details-1",
        "link#details-1"
-    ]
+    ],
+    "props":{
+      "blockClass":"details-container-3"
+    }
 },
 
 "rich-text#details-3":{
     "props":{
         "text":"Update November 2018: Important Anti-Lock Brake (ABS) Actuator Safety Recall Information",
         "textPosition":"LEFT",
-        "textAlignment":"LEFT"
+        "textAlignment":"LEFT",
+        "blockClass":"details-3-text"
     }
 },
 
 "link#details-3": {
   "props": {
-    "blockClass": "",
+    "blockClass": "details-3-link",
     "displayMode": "button",
     "buttonProps": {
       "variant": "primary",

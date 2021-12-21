@@ -46,7 +46,7 @@
     "path": "/form-data"
   },
   "store.custom#dealers-list": {
-    "path": "/dealers"
+    "path": "/dealers/:zip"
   },
   "store.custom#nissan-banner": {
     "path": "/nissan-banner"

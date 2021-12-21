@@ -5,22 +5,24 @@
       //"experimental__visibility-layout#productsummary",
       // "stack-layout#prodsum",
       "product-summary-name",
+      "product-rating-inline",
       "product-selling-price#summary",
       "flex-layout.row#nissanModelNo",
       // "product-customName",
       // "flex-layout.col#productRating",
-      // "product-summary-space",
-     // "product-list-price#summary",
-     // "flex-layout.row#selling-price-savings",
-      //"product-rating-inline",
+
+      "product-summary-space",
+      // "product-list-price#summary",
+      // "flex-layout.row#selling-price-savings",
+
       // "product-installments#summary",
-     // "product-summary-space",
+      "product-summary-space",
       //"product-summary-sku-selector",
       //"add-to-cart-button"
-     "viewdetails-button"
+      "viewdetails-button"
     ],
-    "props":{
-      "blockClass":"summary"
+    "props": {
+      "blockClass": "summary"
     }
   },
   "product-summary-name": {
@@ -118,8 +120,7 @@
     }
   },
 
-  "flex-layout.row#nissanModelNo":{
-    "children":[ "product-identifier.product"]
+  "flex-layout.row#nissanModelNo": {
+    "children": ["product-identifier.product"]
   }
-  
 }
