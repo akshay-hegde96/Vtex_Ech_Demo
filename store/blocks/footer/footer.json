@@ -134,7 +134,7 @@
   },
   "rich-text#footer-mobile": {
     "props": {
-      "text": "© Echidnainc, All rights reserved. Site built with VTEX. SSL CERTIFIED SECURE SITE.",
+      "text": "© 2021 Nissan North America,Inc.",
       "blockClass": "credits"
     }
   }
