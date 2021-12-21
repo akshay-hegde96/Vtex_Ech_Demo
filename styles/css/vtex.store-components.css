@@ -275,6 +275,10 @@
   .searchBarContainer {
     top: 60px;
   }
+  .productNameContainer--pdp-product-name {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 .skuSelectorSubcontainer,
