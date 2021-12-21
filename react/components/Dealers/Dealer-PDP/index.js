@@ -14,6 +14,7 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
   const [show, setShow] = useState(true);
   const [dealer, setDealer] = useState(null);
   const [sellers, setSellers] = useState([]);
+  const [zip, setZip] = useState('');
   const [estimate, setEstimate] = useState(false);
   const [ele, setEle] = useState(null);
   const [selectedDealer, setSelectedDealer] = useState(null);
@@ -25,6 +26,7 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
       const data = await makeAPICall(dealersListURL, "GET");
       console.log({ data });
       setSellers([...data]);
+    //  setZip([...data]);
     };
     getSellerAPICall();
   }, []);
@@ -38,6 +40,7 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
           <div className={styles.details}>
             <h3>{seller.name}</h3>
             <p>{seller.phone}</p>
+            <p>{seller.zipNo}</p>
           </div>
 
           <a
@@ -67,6 +70,7 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
   // };
 
   //---------------------------
+  
   const showDealer = (i) => {
     setShow(!show);
 
@@ -119,11 +123,13 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
         name={sellers[i].name}
         address={sellers[i].address}
         phone={sellers[i].phone}
+        zipCode={sellers[i].zipNo}
       />
     );
 
     setSelectedDealer(DealerDetails);
   };
+
 
   return (
     <React.Fragment>
@@ -139,12 +145,13 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
               <input
                 className={styles.search}
                 type="text"
-                title="Enter Your Zip Code"
-                placeholder="52211"
+               // title="Enter Your Zip Code"
+                onChange={(e) => setZip(e.target.value)}
+                placeholder="Enter your zip code"
               />
               <a
                 className={styles.link}
-                href="/dealers"
+                href={`/dealers?zip=${zip} `}
                 title="Shop your Local 2018 Nissan Altima Parts Dealer"
               >
                 VIEW MORE DEALERS

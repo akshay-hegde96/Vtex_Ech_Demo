@@ -19,7 +19,7 @@ export const contactUsURL =
 //Dealers List  API
 export const dealersListURL =
 storeURL +
-"/api/dataentities/DealerList/search?_schema=dealer&_fields=name,address,phone";
+"/api/dataentities/DealerList/search?_schema=dealer&_fields=name,address,phone,zipNo,id";
 // For getting seller list
 export const sellerList =
   "/api/catalog_system/pvt/seller/list?sc=1&sellerType=1&isBetterScope=false";
