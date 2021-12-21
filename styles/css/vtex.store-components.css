@@ -563,3 +563,40 @@ border: 1px solid grey;
 .shippingTableRadioBtn{
   display: none;
 }
+.imageElement--right-nismo-merchandise{
+  height: 500px;
+  margin-left: 50px;
+}
+.imageElement--build-your-nissan-img{
+  margin-top: 20px;
+}
+.imageElement--img-nismo-catalog{
+  margin: 20px;
+}
+@media only screen and (max-width: 768px) {
+.imageElement--omniparts-img{
+  width: fit-content;
+  height: 20px;
+  margin-bottom: -200px;
+}
+.imageElement--right-nismo-merchandise{
+  height: 200px;
+  width:300px;
+  margin-left: 20px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .imageElement--right-nismo-merchandise{
+    height: 300px;
+    margin-left: 50px;
+  }
+}
+
+.imageElement--omniparts-img{
+  width: 500px;
+  height: 300px;
+  margin-bottom: -200px;
+}
+.imageElement--japan-parts-img{
+  margin-top: 10px;
+}

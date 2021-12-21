@@ -112,7 +112,7 @@ const Department = (props) => {
             );
           })}
       <div>
-        <h3 className={styles.shelfName}>Featured Parts & Accessories</h3>
+        <h2 className={styles.shelfName}>Featured Parts & Accessories</h2>
         {(id === 167 && <AccessoriesShelf />) ||
           (id === 135 && <CarPartsShelf />) ||
           (id === 128 && <NismoShelf />) ||
