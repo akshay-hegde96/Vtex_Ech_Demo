@@ -30,4 +30,5 @@
 }
 .biggy-autocomplete{
     z-index: 1000;
+    max-height: 380px !important;
 }

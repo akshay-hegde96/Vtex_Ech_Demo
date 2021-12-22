@@ -93,6 +93,8 @@
   "rich-text#credits": {
     "props": {
       "text": "© 2021 Nissan North America,Inc.",
+      "textPosition":"center",
+      "textAlignment":"center",
       "blockClass": "credits"
     }
   },

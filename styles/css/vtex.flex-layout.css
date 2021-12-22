@@ -510,3 +510,6 @@ border-bottom: 1px solid gray;
   position: relative;
   top: 15px;
 }
+.flexRow--tire-prop-details{
+  margin-bottom: 20px;
+}

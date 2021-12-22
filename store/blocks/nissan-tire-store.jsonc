@@ -6,16 +6,17 @@
         ]
     },
     "flex-layout.row#nissan-tire-store":{
+        "props":{
+            "preventHorizantalStretch":"true"
+        },
         "children":[
-            "rich-text#nissan-tire-store"
+            "image#nissan-tire-store"
         ]
     },
-    "rich-text#nissan-tire-store":{
+    "image#nissan-tire-store":{
         "props":{
-            "text":"# ROAD HAZARD COVERAGE",
-            "textAlignment":"LEFT",
-            "textPosition":"LEFT",
-            "blockClass":"nissan-tire-store"
+            "src":"https://www.nissantireadvantage.com/content/articles/D5C712DA-CFC6-4DEE-AA93-736DAF8679F3/images/NIS_2021_169_%2470InstantRebate_OTSHeroA_EXLARGE_2800x800_VAR1.jpg",
+            "blockClass":"nissan-tire-store-img"
         }
     },
     "flex-layout.row#tire-prop-details":{

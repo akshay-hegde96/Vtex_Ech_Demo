@@ -16,3 +16,7 @@
   align-items: end;
   padding: 5px;
 }
+.stackItem--first{
+  display: flex;
+  justify-content: center;
+}

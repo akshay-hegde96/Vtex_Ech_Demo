@@ -40,7 +40,8 @@
   },
   "vtex.menu@2.x:submenu#static-category-Car-parts": {
     "props": {
-      "width": "auto"
+      "width": "auto",
+      "blockClass":"sub-menu-wrapper"
     },
     "children": ["vtex.menu@2.x:menu#static-category-Car-parts"]
   },
@@ -676,7 +677,8 @@
     },
     "vtex.menu@2.x:submenu#static-category-nismo": {
       "props": {
-        "width": "auto"
+        "width": "auto",
+        "blockClass":"sub-menu-wrapper"
       },
       "children": ["vtex.menu@2.x:menu#static-category-nismo"]
     },
