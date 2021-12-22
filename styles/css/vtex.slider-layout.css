@@ -35,3 +35,9 @@
 .slideChildrenContainer--carousel-top {
   background-color: #141223f2;
 }
+/*============ Mobile ============== */
+@media only screen and (max-width: 480px) {
+  .sliderLayoutContainer--shelf {
+    min-height: 450px;
+  }
+}

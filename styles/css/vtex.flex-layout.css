@@ -26,7 +26,7 @@
   background-color: white;
 }
 
-.flexRowContent--main-header-mobile {
+.flexRowContent--nissan-main-header-mobile {
   align-items: center;
   padding: 0;
   background-color: #000000;
@@ -233,12 +233,37 @@
 @media only screen and (max-width: 480px) {
   .flexRowContent--payment-methods {
     background-color: rgb(0, 0, 0);
+    max-height: 150px;
   }
   .flexRowContent--accordion {
     background-color: rgb(0, 0, 0);
   }
   .flexColChild--product-name {
     padding-left: 25px;
+  }
+  .flexRow--credits {
+    background-color: #323437;
+  }
+  .flexRow--shopping{
+    max-height: 50px;
+    margin: 10px 10px;
+    font-size: 12px;
+  }
+  .flexRowContent--breadcrumb {
+    padding: 0px 0px;
+    margin: 0px 0px;
+  }
+  .flexRowContent--product-main {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+  .flexColChild--product-name {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .flexCol--product-name {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
 
@@ -387,4 +412,13 @@ border-bottom: 1px solid gray;
 }
 .flexColChild--tire-prop-details-1{
   padding-left: 25px;
+}
+.flexRow--frontier{
+  margin-top: 50px;
+}
+.flexRow--nismo-merchandise{
+  margin-top: 50px;
+}
+.flexCol--omniparts-content{
+  margin-top: -150px;
 }

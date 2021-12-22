@@ -16,6 +16,12 @@
   .container :global(.vtex-modal-layout-0-x-triggerContainer) {
     display: none;
   }
+  .container--summary {
+    min-height: 450px;
+  }
+  .container--searchSummaryCard {
+    min-height: 500px;
+  }
 }
 
 .nameContainer {

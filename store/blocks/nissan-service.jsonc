@@ -37,10 +37,14 @@
       },
       "link#part-service-1-button": {
         "props": {
-          "blockClass": "",
-        //   "displayMode": "button",
-          "href": "https://www.nissantireadvantage.com/",
-          "label": "FIND DEALERS"
+          "blockClass": "part-service-1-button",
+          "displayMode": "button",
+          "buttonProps": {
+            "variant": "primary",
+            "size": "medium"
+          },
+          "href": "/dealers",
+          "label": "VIEW DEALERS"
         },
         "children": ["icon-caret#rightHome"]
       },
@@ -56,7 +60,7 @@
 
       "rich-text#part-service-1-context": {
         "props": {
-            "text":"ORDER DETAILS",
+            "text":"OFFER DETAILS",
             "textPosition":"LEFT",
             "textAlignment":"LEFT",
             "blockClass": ""
@@ -76,14 +80,19 @@
         }
     },
     "link#part-service-2-button": {
-        "props": {
-          "blockClass": "",
-        //   "displayMode": "button",
-          "href": "https://www.nissanusa.com/parts-service/en/dealer/Search",
-          "label": "FIND DEALERS"
+      "props": {
+        "blockClass": "part-service-2-button",
+        "displayMode": "button",
+        "buttonProps": {
+          "variant": "primary",
+          "size": "medium"
         },
-        "children": ["icon-caret#rightHome"]
+        "href": "/dealers",
+        "label": "VIEW DEALERS"
       },
+      "children": ["icon-caret#rightHome"]
+    },
+
 
     "rich-text#part-service-2-title": {
       "props": {
@@ -115,20 +124,20 @@
         }
     },
     "link#part-service-3-button": {
-        "props": {
-          "blockClass": "",
-        //   "displayMode": "button",
-          "href": "https://www.nissanusa.com/parts-service/en/dealer/Search",
-          "label": "FIND DEALERS"
+      "props": {
+        "blockClass": "part-service-3-button",
+        "displayMode": "button",
+        "buttonProps": {
+          "variant": "primary",
+          "size": "medium"
         },
-        "children": ["icon-caret#rightHome"]
+        "href": "/dealers",
+        "label": "VIEW DEALERS"
       },
-      "icon-caret#rightHome": {
-        "props": {
-          "orientation": "right",
-          "blockClass": "caret-home"
-        }
-      },
+      "children": ["icon-caret#rightHome"]
+    },
+
+
 
     "rich-text#part-service-3-title": {
       "props": {
@@ -189,7 +198,7 @@
         "children":[
             "image#service-card-1",
             "rich-text#service-card-1",
-            "link#service-card-1"
+            "rich-text#service-card-1-text"
         ],
         "props":{
           "blockClass":"service-card-1"
@@ -209,22 +218,20 @@
               "textPosition":"LEFT"
           }
       },
-      "link#service-card-1": {
-        "props": {
-          "blockClass": "",
-        //   "displayMode": "button",
-          "href": "https://www.nissanusa.com/parts-service/en/service-maintenance/express-service",
-          "label": "LEARN MORE"
-        },
-        "children": ["icon-caret#rightHome"]
-      },
+      "rich-text#service-card-1-text":{
+        "props":{
+            "text":"LEARN MORE",
+            "textAlignment":"LEFT",
+            "textPosition":"LEFT"
+        }
+    },
       
 
       "flex-layout.col#service-card-2":{
         "children":[
             "image#service-card-2",
             "rich-text#service-card-2",
-            "link#service-card-2"
+            "rich-text#service-card-2-text"
         ],
         "props":{
           "blockClass":"service-card-2"
@@ -244,14 +251,12 @@
               "textPosition":"LEFT"
           }
       },
-      "link#service-card-2": {
-        "props": {
-          "blockClass": "",
-        //   "displayMode": "button",
-          "href": "https://www.nissanusa.com/parts-service/en/dealer/Search",
-          "label": "SCHEDULE SERVICE"
-        },
-        "children": ["icon-caret#rightHome"]
-      }
+      "rich-text#service-card-2-text":{
+        "props":{
+            "text":"SCHEDULE SERVICE",
+            "textAlignment":"LEFT",
+            "textPosition":"LEFT"
+        }
+    }
 
 }

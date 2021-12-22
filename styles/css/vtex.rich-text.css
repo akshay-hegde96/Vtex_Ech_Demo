@@ -143,11 +143,15 @@
 /*============ Mobile ============== */
 @media only screen and (max-width: 480px) {
   .container--credits {
-    color: white;
     text-align: center;
     font-size: smaller;
-    display: flex;
-    justify-content: center;
+    background-color: #323437;
+    min-height: 50px;
+    margin-bottom: 10px;
+  }
+  .paragraph--shopping{
+    padding: 0px 0px;
+    margin: 0px 0px;
   }
 }
 
@@ -362,4 +366,18 @@
 }
 .link--shopping{
   text-decoration: none;
+}
+.paragraph--frontier-text{
+  margin-left: 30px;
+  font-size: large;
+  color:black
+}
+.paragraph--omniparts-head{
+  margin-top: 200px;
+  font-weight: bolder;
+  font-size: 30px;
+  color: black;
+}
+.paragraph--omniparts-text{
+  color:black
 }

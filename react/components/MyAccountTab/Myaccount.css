@@ -1,8 +1,8 @@
 .menu {
   position: relative;
   width: 150px;
-  z-index: 0;
-  padding: 3px;
+  z-index: 1000;
+  /* padding: 3px; */
   margin-right: 6px;
   margin-top: 2px;
 
@@ -19,7 +19,7 @@
   position: relative;
   text-align: left;
   transition: background-color 0.05s ease-in-out;
-  z-index: 1;
+  /* z-index: 1; */
   color: rgb(97, 96, 96);
 }
 
@@ -33,7 +33,7 @@
   top: 100%;
   width: 100%;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-  z-index: 0;
+  /* z-index: 0; */
   background: white;
 }
 

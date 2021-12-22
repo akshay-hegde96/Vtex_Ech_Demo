@@ -30,7 +30,7 @@
     "flex-layout.col#tire-prop-details-1":{
         "children":[
             "rich-text#tire-prop-details",
-            "link#tire-prop-details"
+            "rich-text#tire-prop-details-1"
         ],
         "props":{
             "blockClass":"tire-prop-details-1"
@@ -44,15 +44,14 @@
             "blockClass":"nissan-tire-store"
         }
     },
-    "link#tire-prop-details": {
-        "props": {
-          "blockClass": "tire-prop-details",
-        //   "displayMode": "button",
-          "href": "https://www.nissantireadvantage.com/landing/price-match-terms",
-          "label": "Click here to learn more."
+    "rich-text#tire-prop-details-1":{
+        "props":{
+            "text":"CLICK HERE TO LEARN MORE",
+            "textAlignment":"LEFT",
+            "textPosition":"LEFT",
+            "blockClass":"nissan-tire-store"
         }
-        // "children": ["icon-caret#rightHome"]
-      },
+    },
       "image#tire-prop-details-1":{
         "props": {
             "src": "https://www.nissantireadvantage.com/content/globals/OTS-images/NIS/home/30-DayTirePriceAssurance_72dpi.png",
