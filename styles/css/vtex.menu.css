@@ -172,3 +172,7 @@
     max-width: 100px!important;
     text-align: left;
 }
+.submenuWrapper--sub-menu-wrapper {
+  overflow: scroll;
+  max-height: 450px;
+}
