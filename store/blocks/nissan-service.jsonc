@@ -43,7 +43,7 @@
             "variant": "primary",
             "size": "medium"
           },
-          "href": "/dealers",
+          "href": "/dealers?zip=",
           "label": "VIEW DEALERS"
         },
         "children": ["icon-caret#rightHome"]
@@ -87,7 +87,7 @@
           "variant": "primary",
           "size": "medium"
         },
-        "href": "/dealers",
+        "href": "/dealers?zip=",
         "label": "VIEW DEALERS"
       },
       "children": ["icon-caret#rightHome"]
@@ -131,7 +131,7 @@
           "variant": "primary",
           "size": "medium"
         },
-        "href": "/dealers",
+        "href": "/dealers?zip=",
         "label": "VIEW DEALERS"
       },
       "children": ["icon-caret#rightHome"]

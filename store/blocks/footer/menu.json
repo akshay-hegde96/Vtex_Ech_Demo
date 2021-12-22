@@ -142,7 +142,7 @@
       "menu-item#owner-portal",
       "menu-item#nissan-services",
       "menu-item#nissan-visa-credit-card",
-      "menu-item#nissan-true-store"
+      "menu-item#nissan-tire-store"
     ]
   },
   "menu-item#for-owners": {
@@ -241,10 +241,10 @@
     }
   },
 
-  "menu-item#nissan-true-store": {
+  "menu-item#nissan-tire-store": {
     "props": {
-      "id": "menu-item-nissan-true-store",
-      "blockClass": "nissan-true-store",
+      "id": "menu-item-nissan-tire-store",
+      "blockClass": "nissan-tire-store",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -485,9 +485,9 @@
       "menu-item#manual-guides",
       "menu-item#recall-information",
       "menu-item#owner-portal",
-      "menu-item#privacy-policy",
+      "menu-item#nissan-services",
       "menu-item#nissan-visa-credit-card",
-      "menu-item#nissan-true-store"
+      "menu-item#nissan-tire-store"
     ]
   },
   "menu-item#buying": {
