@@ -39,7 +39,7 @@
   "store.custom#major-appliances": {
     "path": "/major-appliances"
   },
-  "store.custom#blackfriday-lp": {
+  "store.custom#top-sales-page": {
     "path": "/sales"
   },
   "store.custom#contact-form-data": {
@@ -72,17 +72,17 @@
   "store.custom#category-landing-page": {
     "path": "/clp/:clp_id"
   },
-  "store.custom#build-your-nissan":{
+  "store.custom#build-your-nissan": {
     "path": "/build-your-nissan"
   },
-  "store.custom#view-NISMO-catalog":{
+  "store.custom#view-NISMO-catalog": {
     "path": "/nismo-catalog"
   },
   "store.custom#nismo-japan-parts": {
     "path": "/nismo-japan-parts"
   },
   "store.custom#nismo-merchandise": {
-    "path":"/nismo-merchandise"
+    "path": "/nismo-merchandise"
   },
   "store.custom#omniparts": {
     "path": "/omniparts"

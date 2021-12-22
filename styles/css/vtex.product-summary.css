@@ -92,3 +92,15 @@
 .containerNormal--listLayout {
   height: 250px !important;
 }
+
+/* ------------------Sales Page------------------------------- */
+.container--discountCard {
+  border: 1px solid rgb(204, 203, 203);
+  height: 490px !important ;
+  border-radius: 0;
+  width: 300px !important;
+}
+
+.containerNormal--discountCard {
+  height: 490px !important;
+}

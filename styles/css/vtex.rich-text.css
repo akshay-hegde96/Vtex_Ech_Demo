@@ -10,8 +10,6 @@
   text-align: center;
 }
 
-
-
 .headingLevel2--shelfTitle {
   font-weight: 200;
 }
@@ -53,7 +51,6 @@
 .paragraph--nissanModel {
   color: #4e4e50 !important;
 }
-
 
 .container--link .strong {
   font-size: 16px;
@@ -116,17 +113,18 @@
   max-height: 16px;
   margin-top: 0px;
 }
-.container--shopping, .container--viewcart{
+.container--shopping,
+.container--viewcart {
   display: flex;
   justify-content: center;
 }
-.paragraph--shopping{
+.paragraph--shopping {
   color: black !important;
   font-weight: bolder;
   /* font-family: sans-serif; */
 }
-.paragraph--shopping{
-     padding: 0px 80px;
+.paragraph--shopping {
+  padding: 0px 80px;
 }
 
 /* =========== Tablet ================*/
@@ -149,7 +147,7 @@
     min-height: 50px;
     margin-bottom: 10px;
   }
-  .paragraph--shopping{
+  .paragraph--shopping {
     padding: 0px 0px;
     margin: 0px 0px;
   }
@@ -300,12 +298,15 @@
   padding-top: 0;
 }
 
-.heading--data-content-title{
+.heading--data-content-title {
   font-size: x-large;
-    font-weight: 700;
+  font-weight: 700;
 }
 
-.paragraph--warranty-title, .paragraph--promotion-title, .paragraph--disclaimer-title, .paragraph--yakima-title{
+.paragraph--warranty-title,
+.paragraph--promotion-title,
+.paragraph--disclaimer-title,
+.paragraph--yakima-title {
   font-size: 20px;
   font-weight: 500;
   font-family: inherit;
@@ -313,77 +314,124 @@
   color: black;
   margin-bottom: 5px;
 }
-.paragraph--warranty-text, .paragraph--promotion-content, .paragraph--disclaimer-text, .paragraph--yakima-text, .paragraph--privacy-content{
+.paragraph--warranty-text,
+.paragraph--promotion-content,
+.paragraph--disclaimer-text,
+.paragraph--yakima-text,
+.paragraph--privacy-content {
   padding-left: 50px;
 }
-.heading--privacy-policy-title{
+.heading--privacy-policy-title {
   padding-left: 50px;
   font-weight: 700;
   color: black;
   margin-bottom: 5px;
 }
-.paragraph--right-col-manual{
+.paragraph--right-col-manual {
   margin-top: 20px;
   padding-top: 48px;
 }
-.heading--nissan-tire-store{
+.heading--nissan-tire-store {
   /* background: url(https://www.nissantireadvantage.com/content/articles/D5C712DA-CFC6-4DEE-AA93-736DAF8679F3/images/NIS_2021_169_%2470InstantRebate_OTSHeroA_EXLARGE_2800x800_VAR1.jpg) no-repeat; */
-    height: 400px;
-    background-size: auto 400px;
-    background-color: white;
-    background-position: center bottom;
-    width: 192%;
+  height: 400px;
+  background-size: auto 400px;
+  background-color: white;
+  background-position: center bottom;
+  width: 192%;
 }
 
-.paragraph--vip-title, .paragraph--vip-vehicle-info, .paragraph--create-password{
+.paragraph--vip-title,
+.paragraph--vip-vehicle-info,
+.paragraph--create-password {
   color: black !important;
   font-weight: bold;
 }
-.paragraph--vip-heading{
+.paragraph--vip-heading {
   font-size: 20px;
-  color:black !important;
+  color: black !important;
   font-weight: bold;
-  font-family: 'Nissan Brand Bold_master',sans-serif;
+  font-family: "Nissan Brand Bold_master", sans-serif;
 }
-  .paragraph--vip-content-title {
+.paragraph--vip-content-title {
   color: black !important;
   font-weight: bold;
   font-size: 20px;
-  font-family: 'Nissan Brand Bold_master',sans-serif;
+  font-family: "Nissan Brand Bold_master", sans-serif;
 }
 .wrapper--part-service-1-title,
 .container--part-service-2-title,
 .wrapper--part-service-3-title,
-.container--nissan-para-1
-{
+.container--nissan-para-1 {
   font-weight: 600;
 }
 
-.paragraph--nissan-tire-store{
+.paragraph--nissan-tire-store {
   padding: 25px;
   font-size: 20px;
   color: #fff;
 }
-.link--shopping{
+.link--shopping {
   text-decoration: none;
 }
-.paragraph--frontier-text{
+.paragraph--frontier-text {
   margin-left: 30px;
   font-size: large;
-  color:black
+  color: black;
 }
-.paragraph--omniparts-head{
+.paragraph--omniparts-head {
   margin-top: 200px;
   font-weight: bolder;
   font-size: 30px;
   color: black;
 }
-.paragraph--omniparts-text{
-  color:black
+.paragraph--omniparts-text {
+  color: black;
+}
+
+/*----------------------------------------- Sales Page ------------------------------*/
+
+/* discount */
+.paragraph--discount {
+  margin: 0 auto;
+  font-size: 14px;
+  font-variant: small-caps;
+  font-family: "NissanBrand", sans-serif;
+  border: 1px solid #c23232;
+  border-radius: 22px;
+  background-color: #c23232;
+  padding: 4px 7px;
+  color: white;
+}
+.container--discount {
+  margin-top: 0;
+  margin-bottom: 8px;
+  justify-content: flex-end;
+}
+
+.container--discount-title {
+  justify-content: center;
+  margin-top: 0;
+  font-variant: normal;
+}
+
+.heading--discount-title {
+  text-align: center;
+}
+.paragraph--discount-title {
+  text-align: center;
+}
+
+.paragraph--header-top-discount {
+  color: white;
+  font-variant: small-caps;
+  font-family: "NissanBrand", sans-serif;
+}
+.paragraph--omniparts-text {
+  color: black;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-.paragraph--credits{
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
+  .paragraph--credits {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
 }

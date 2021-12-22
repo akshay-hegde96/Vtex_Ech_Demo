@@ -41,3 +41,15 @@
     min-height: 450px;
   }
 }
+
+/* -----------------Sales Page---------------------------------- */
+.slide--discount {
+  margin-bottom: 25px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 490px !important;
+}
+
+.slideChildrenContainer--carousel-top-discount {
+  background-color: #c32323;
+}
