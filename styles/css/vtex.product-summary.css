@@ -42,21 +42,22 @@
   overflow: hidden !important;
 }
 
-
 .brandName {
   font-weight: 600;
   font-size: 18px;
   color: #2e2e2e;
 }
-
+/* 
 .container {
   text-align: start;
-  height: 390px;
-}
+  height: 440px;
+} */
 
 .container--summary {
   border-radius: 0 !important;
-
+  height: 440px !important;
+  border: 1px solid rgb(204, 203, 203);
+  width: 300px !important;
 }
 
 .imageContainer {
@@ -69,7 +70,6 @@
 .image {
   border-radius: 0.25rem;
 }
-
 
 /* .imageContainer:hover {
  opacity: 0.6;
@@ -89,9 +89,6 @@
     height: 275px;
 } */
 
-.containerNormal--listLayout{
+.containerNormal--listLayout {
   height: 250px !important;
 }
-
-
-

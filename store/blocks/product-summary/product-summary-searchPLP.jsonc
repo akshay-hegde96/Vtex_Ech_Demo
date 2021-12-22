@@ -11,7 +11,8 @@
       "viewdetails-button"
     ],
     "props": {
-      "blockClass": "searchSummaryCard"
+      "blockClass": "searchSummaryCard",
+      "showPaginationDots": "never"
     }
   },
 
@@ -29,7 +30,8 @@
     "props": {
       "showBadge": true,
       "aspectRatio": "1:1",
-      "maxHeight": 300,
+      "height": 250,
+      "width": 100,
       "blockClass": "productImage"
     }
   },
