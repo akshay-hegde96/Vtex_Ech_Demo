@@ -27,10 +27,11 @@
   margin-bottom: 25px;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  height: 440px !important;
 }
 .paginationDotsContainer--shelf {
   visibility: hidden;
 }
-.slideChildrenContainer--carousel-top{
+.slideChildrenContainer--carousel-top {
   background-color: #141223f2;
 }

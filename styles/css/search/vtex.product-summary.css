@@ -10,8 +10,8 @@
   justify-content: start;
 }
 .nameContainer {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .brandName--summaryListMobile {
   font-weight: 400;
@@ -33,8 +33,7 @@
   height: inherit !important;
 }
 
-
-.nameContainer--productNameGrid  :global(.vtex-product-summary-2-x-brandName ){
+.nameContainer--productNameGrid :global(.vtex-product-summary-2-x-brandName) {
   font-weight: 600;
   font-size: 18px;
   color: #2e2e2e;
@@ -49,13 +48,13 @@
 }
 
 .skuSelectorContainer {
-  margin: 0 0 .3rem;
+  margin: 0 0 0.3rem;
 }
 .skuSelectorItem {
   height: 20px;
   width: auto;
   min-width: 20px;
-  margin: .30rem;
+  margin: 0.3rem;
 }
 .skuSelectorInternalBox {
   border: none;
@@ -65,7 +64,7 @@
   font-size: 15px;
 }
 .containerNormal {
-   padding: .75rem;
+  padding: 0.75rem;
 }
 .element {
   padding: 0;
@@ -73,7 +72,7 @@
 
 .container--searchSummaryCard {
   border: 1px solid rgb(204, 203, 203);
-  height: 440px;
+  height: 440px !important ;
   border-radius: 0;
-  width: 275px !important;
+  width: 300px !important;
 }
