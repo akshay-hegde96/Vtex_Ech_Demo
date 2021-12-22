@@ -94,3 +94,19 @@ div.address-summary {
   margin-bottom: 3px;
   background-color: green;
 }
+
+/*============ Mobile ============== */
+@media only screen and (max-width: 480px) {
+  .dataEntryLabel {
+    color: #c32323;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .dataEntryChildren{
+    padding: 7px 5px;
+    font-size: 0.9rem;
+    background-color: rgb(241, 241, 241);
+    color: rgba(15, 15, 15, 0.986);
+    line-height: 1rem;
+  }
+}
