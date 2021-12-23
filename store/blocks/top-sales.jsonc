@@ -7,8 +7,12 @@
       "flex-layout.row#festival-discount",
       "rich-text#promotion-3-title",
       "flex-layout.row#more-for-less-discount",
+      "rich-text#promotion-4-title",
+      "flex-layout.row#progressive-discount",
       "rich-text#promotion-2-title",
       "flex-layout.row#regular-discount",
+      "rich-text#promotion-5-title",
+      "flex-layout.row#Combo-discount",
       "back-to-top-button"
     ]
   },
@@ -103,8 +107,8 @@
     "children": ["list-context.product-list#festival-discount"]
   },
   "list-context.product-list#festival-discount": {
-    "blocks": ["product-summary.shelf#festival-discount"],
-    "children": ["slider-layout#discount"],
+    "blocks": ["product-summary.shelf#summary"],
+    "children": ["slider-layout#products"],
     "props": {
       "collection": "147"
     }
@@ -121,8 +125,8 @@
     "children": ["list-context.product-list#regular-discount"]
   },
   "list-context.product-list#regular-discount": {
-    "blocks": ["product-summary.shelf#regular-discount"],
-    "children": ["slider-layout#discount"],
+    "blocks": ["product-summary.shelf#summary"],
+    "children": ["slider-layout#products"],
     "props": {
       "collection": "149"
     }
@@ -139,13 +143,106 @@
     "children": ["list-context.product-list#more-for-less-discount"]
   },
   "list-context.product-list#more-for-less-discount": {
-    "blocks": ["product-summary.shelf#more-for-less-discount"],
-    "children": ["slider-layout#discount"],
+    "blocks": ["product-summary.shelf#summary"],
+    "children": ["slider-layout#products"],
     "props": {
       "collection": "148"
     }
   },
 
+  "rich-text#promotion-4-title": {
+    "title": "Progressive Discount",
+    "props": {
+      "text": "## BUY 1 WITH 5% OFF, BUY 2 WITH 10% OFF",
+      "blockClass": "discount-title"
+    }
+  },
+
+  "flex-layout.row#progressive-discount": {
+    "children": ["list-context.product-list#progressive-discount"]
+  },
+  "list-context.product-list#progressive-discount": {
+    "blocks": ["product-summary.shelf#summary"],
+    "children": ["slider-layout#products"],
+    "props": {
+      "collection": "150"
+    }
+  },
+
+  "rich-text#promotion-5-title": {
+    "title": "Combo Discount",
+    "props": {
+      "text": "## COMBO DISCOUNT",
+      "blockClass": "discount-title"
+    }
+  },
+
+  "flex-layout.row#Combo-discount": {
+    "props": {
+      "blockClass": "combo-discount"
+    },
+    "children": ["flex-layout.col#list1", "flex-layout.col#list2"]
+  },
+  "flex-layout.col#list1": {
+    "children": ["list-context.product-list#combo-discount-list1"],
+    "props": {
+      "blockClass": "combo-discount-list1",
+      "preventHorizontalStretch": "true"
+    }
+  },
+  "list-context.product-list#combo-discount-list1": {
+    "blocks": ["product-summary.shelf#summary"],
+    "children": ["slider-layout#combo-discount-list1"],
+    "props": {
+      "collection": "151",
+      "blockClass": "combo-discount-list1"
+    }
+  },
+
+  "flex-layout.col#list2": {
+    "children": ["list-context.product-list#combo-discount-list2"],
+    "props": {
+      "blockClass": "combo-discount-list2",
+      "preventHorizontalStretch": "true"
+    }
+  },
+  "list-context.product-list#combo-discount-list2": {
+    "blocks": ["product-summary.shelf#summary"],
+    "children": ["slider-layout#combo-discount-list2"],
+    "props": {
+      "collection": "152",
+      "blockClass": "combo-discount-list2"
+    }
+  },
+
+  "slider-layout#combo-discount-list1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": false,
+      "showPaginationDots": "never",
+      "blockClass": "combo-discount-list1"
+    }
+  },
+  "slider-layout#combo-discount-list2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": false,
+      "showPaginationDots": "never",
+      "blockClass": "combo-discount-list2"
+    }
+  },
+
+  //---------------custom shelf to show offer badges-------------------------------
   "product-summary.shelf#festival-discount": {
     "children": [
       "flex-layout.row#promo1-name",
