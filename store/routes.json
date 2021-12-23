@@ -95,5 +95,8 @@
   },
   "store.custom#nissan-vip-program": {
     "path": "/vip-program"
+  },
+  "store.custom#product-comparison-list": {
+    "path": "/product-comparison"
   }
 }

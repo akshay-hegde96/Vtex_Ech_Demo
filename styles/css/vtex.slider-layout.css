@@ -53,3 +53,12 @@
 .slideChildrenContainer--carousel-top-discount {
   background-color: #c32323;
 }
+
+@media screen and (max-width: 767px) {
+  .sliderLayoutContainer--comparison-page {
+    width: auto;
+  }
+  .sliderLayoutContainer--comparison-page {
+    margin: auto;
+  }
+}

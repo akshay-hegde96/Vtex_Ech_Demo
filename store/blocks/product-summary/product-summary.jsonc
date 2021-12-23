@@ -1,5 +1,19 @@
 {
-  "product-summary.shelf": {
+  "product-summary.shelf.product-comparison": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-selling-price#summary",
+      "flex-layout.row#nissanModelNo",
+
+      "product-summary-space",
+      "product-summary-space",
+      "viewdetails-button",
+      "product-comparison-block.selector"
+    ]
+  },
+  "product-summary.shelf#without-compare": {
     "children": [
       "stack-layout#prodsum",
       //"experimental__visibility-layout#productsummary",
