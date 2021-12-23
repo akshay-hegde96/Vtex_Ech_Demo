@@ -41,3 +41,35 @@
     min-height: 450px;
   }
 }
+
+/* -----------------Sales Page---------------------------------- */
+.slide--discount {
+  margin-bottom: 25px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 490px !important;
+}
+
+.slideChildrenContainer--carousel-top-discount {
+  background-color: #c32323;
+}
+
+.slide--combo-discount-list1 {
+  margin-bottom: 25px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 490px !important;
+}
+.slide--combo-discount-list2 {
+  margin-bottom: 25px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 490px !important;
+}
+
+.sliderLayoutContainer--combo-discount-list1 {
+  width: 400px;
+}
+.sliderLayoutContainer--combo-discount-list2 {
+  width: 400px;
+}

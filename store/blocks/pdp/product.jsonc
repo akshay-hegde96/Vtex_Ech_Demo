@@ -23,6 +23,7 @@
       "disclosure-layout-group#tablayout",
       "flex-layout.row#nissan-banner-container",
       "shelf.relatedProducts"
+      //"flex-layout.row#banner-car"
     ]
   },
   "disclosure-layout-group#tablayout": {
