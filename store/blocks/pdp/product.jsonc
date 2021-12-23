@@ -18,7 +18,8 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "disclosure-layout-group#tablayout"
+      "disclosure-layout-group#tablayout",
+      "flex-layout.row#banner-car"
     ]
   },
   "disclosure-layout-group#tablayout": {
