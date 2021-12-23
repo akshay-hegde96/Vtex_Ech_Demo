@@ -513,3 +513,11 @@ border-bottom: 1px solid gray;
 .flexRow--tire-prop-details{
   margin-bottom: 20px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.flexRow--product-main{
+  overflow-x: hidden;
+}
+}
+.flexRow--product-main{
+  overflow-x: hidden;
+}

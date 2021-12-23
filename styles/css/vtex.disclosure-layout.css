@@ -49,3 +49,13 @@
     bottom: 10px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .trigger--searchBarIcon {
+   position: relative;
+  }
+  .trigger--shipping-trigger{
+    position: relative;
+    left: 12em;
+    bottom: 10px;
+  }
+}
