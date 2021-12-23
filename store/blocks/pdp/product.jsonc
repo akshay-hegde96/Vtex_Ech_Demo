@@ -11,14 +11,18 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "tab-layout#product"
+      "tab-layout#product",
+      "flex-layout.row#banner-car",
+      "shelf.relatedProducts"
     ]
   },
   "responsive-layout.phone": {
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "disclosure-layout-group#tablayout"
+      "disclosure-layout-group#tablayout",
+      "flex-layout.row#banner-car",
+      "shelf.relatedProducts"
     ]
   },
   "disclosure-layout-group#tablayout": {
