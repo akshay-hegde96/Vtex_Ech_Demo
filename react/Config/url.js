@@ -1,6 +1,6 @@
 //Update your store URL here.
 
-export const storeURL = "https://nissan--echidna.myvtex.com";
+export const storeURL =  "https://nissan--echidna.myvtex.com" ;
 
 // category tree API
 export const deparmentURL = "/api/catalog_system/pub/category/tree/10";
@@ -19,7 +19,7 @@ export const contactUsURL =
 //Dealers List  API
 export const dealersListURL =
 storeURL +
-"/api/dataentities/DealerList/search?_schema=dealer&_fields=name,address,phone,zipNo,id";
+"/api/dataentities/DealerList/search?_schema=dealer&_fields=name,address,phone,zipNo,hostUrl,id";
 // For getting seller list
 export const sellerList =
   "/api/catalog_system/pvt/seller/list?sc=1&sellerType=1&isBetterScope=false";

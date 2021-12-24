@@ -5,6 +5,7 @@ import {
   // sellerList,
   // dealerstoreURL,
   dealersListURL,
+  storeURL
 } from "../../../Config/url";
 import { nissanSellerSiteUrl } from "../../../Config/url";
 //import useProduct from "vtex.product-context/useProduct";
@@ -41,14 +42,15 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
             <h3>{seller.name}</h3>
             <p>{seller.phone}</p>
             <p>{seller.zipNo}</p>
+            <p>{seller.hostUrl}</p>
           </div>
 
           <a
             className={styles.links}
-            onClick={() => showDealer(i)}
+            //onClick={() => showDealer(i)}
             // href={`https://tonydemo--nissan.myvtex.com/${productContextValue?.product?.cacheId}/p?seller=${seller.Name}`}
             //onClick={() => showDealer(i)}
-            // href={`${dealerstoreURL}/${productContextValue?.product?.cacheId}/p?seller=${seller.name}`}
+             href={`${seller.hostUrl}/${productContextValue?.product?.cacheId}/p?seller=${seller.name}`}
           >
             SHOP NOW
           </a>
@@ -129,8 +131,7 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
 
     setSelectedDealer(DealerDetails);
   };
-
-
+  
   return (
     <React.Fragment>
       <div style={{ display: "flex", flexFlow: "column" }}>
@@ -149,13 +150,14 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
                 onChange={(e) => setZip(e.target.value)}
                 placeholder="Enter your zip code"
               />
+              
               <a
                 className={styles.link}
-                href={`/dealers?zip=${zip} `}
+                href={`/dealers?zip=${zip} `} 
                 title="Shop your Local 2018 Nissan Altima Parts Dealer"
-              >
+              >              
                 VIEW MORE DEALERS
-              </a>
+                </a>
             </div>
           </div>
         )}

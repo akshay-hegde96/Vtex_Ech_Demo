@@ -22,8 +22,13 @@ const Dealer = () => {
   useEffect(() => {
     const getZipCode = () => {
      var zipData = data && window.location.href;
+     var zipdataFirst;
       console.log(zipData);
-      const zipdataFirst = zipData.split('?')[1].split('=')[1];
+      if(zipData.includes("?")){
+         zipdataFirst = zipData.split('?')[1].split('=')[1];
+      }  
+      else 
+      zipdataFirst = "";    
       setzipUrl(zipdataFirst);
     };
     getZipCode();
@@ -50,12 +55,14 @@ const Dealer = () => {
             <h3>{`${i + 1}. ${dealer.name}`}</h3>
             <p>{dealer.address}</p>
             <p>{dealer.phone}</p>
+            <p>{dealer.hostUrl}</p>
             {/* <p>Zip code: {dealer.zipNo}</p> */}
           </div>
         </div>
 
         <div className={styles.link}>
-          <a href="#">SELECT THIS DEALER</a>
+        <a href={dealer.hostUrl}>SELECT THIS DEALER</a>
+        
         </div>
       </div>
     );
@@ -82,12 +89,13 @@ const Dealer = () => {
             <h3>{`${i + 1}. ${dealer.name}`}</h3>
             <p>{dealer.address}</p>
             <p>{dealer.phone}</p>
-            <p>{dealer.zipNo}</p>
+            {/* <p>{dealer.zipNo}</p> */}
+            <p>{dealer.hostUrl}</p>
           </div>
         </div>
 
         <div className={styles.link}>
-          <a href="#">SELECT THIS DEALER</a>
+          <a href={dealer.hostUrl}>SELECT THIS DEALER</a>
         </div>
       </div>
     );
@@ -95,11 +103,16 @@ const Dealer = () => {
 console.log(list)
 
 const renderData = () => {
-  if(zipUrl == "") {
+  if(zipUrl) {
+    return filterZipData
+  }
+  else if (zipUrl == "") {
     return list
   }
-  else  
-  return filterZipData
+  else if(zipUrl == undefined){
+    return list
+}
+
 }
   return (
     <div className={styles.list}>
