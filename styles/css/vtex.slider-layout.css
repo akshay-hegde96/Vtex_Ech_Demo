@@ -54,6 +54,14 @@
   background-color: #c32323;
 }
 
+@media screen and (max-width: 767px) {
+  .sliderLayoutContainer--comparison-page {
+    width: auto;
+  }
+  .sliderLayoutContainer--comparison-page {
+    margin: auto;
+  }
+}
 .slide--combo-discount-list1 {
   margin-bottom: 25px;
   padding-left: 0.5rem;

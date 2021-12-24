@@ -1,10 +1,14 @@
 {
-  "store.product": {
+  "store.product.product-comparison": {
     "blocks": [
       "responsive-layout.desktop",
       "responsive-layout.phone",
       "responsive-layout.tablet",
       "back-to-top-button"
+    ],		
+    "children": [		
+      "product-comparison-drawer"	
+      // "product-comparison-block.selector"
     ]
   },
   "responsive-layout.tablet": {
@@ -274,7 +278,8 @@
       "flex-layout.row#pricing-desc",
       "product-separator",
       "product-description",
-      "flex-layout.row#dealers-PDP"
+      "flex-layout.row#dealers-PDP",
+      "product-comparison-block.selector"
       // "sku-selector",
       // "product-quantity",
       // "product-assembly-options",
