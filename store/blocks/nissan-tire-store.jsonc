@@ -1,18 +1,64 @@
 {
     "store.custom#nissan-tire-store":{
         "blocks":[
-            "flex-layout.row#nissan-tire-store"
+            "flex-layout.row#nissan-tire-store",
+            "flex-layout.row#tire-prop-details"
         ]
     },
     "flex-layout.row#nissan-tire-store":{
+        "props":{
+            "preventHorizantalStretch":"true"
+        },
         "children":[
-            "rich-text#nissan-tire-store"
+            "image#nissan-tire-store"
         ]
     },
-    "rich-text#nissan-tire-store": {
-        "props": {
-          "text":"# Nissan Tire Price Match",
-          "blockClass": ""
+    "image#nissan-tire-store":{
+        "props":{
+            "src":"https://www.nissantireadvantage.com/content/articles/D5C712DA-CFC6-4DEE-AA93-736DAF8679F3/images/NIS_2021_169_%2470InstantRebate_OTSHeroA_EXLARGE_2800x800_VAR1.jpg",
+            "blockClass":"nissan-tire-store-img"
         }
+    },
+    "flex-layout.row#tire-prop-details":{
+        "children":[
+            "flex-layout.col#tire-prop-details-1",
+            "image#tire-prop-details-1"
+        ],
+        "props":{
+            "blockClass":"tire-prop-details"
+        }
+    },
+    "flex-layout.col#tire-prop-details-1":{
+        "children":[
+            "rich-text#tire-prop-details",
+            "rich-text#tire-prop-details-1"
+        ],
+        "props":{
+            "blockClass":"tire-prop-details-1"
+        }
+    },
+    "rich-text#tire-prop-details":{
+        "props":{
+            "text":"Nissan Tire Price Match Bring in an eligible competitor quote, and we will match the price and provide an additional 5% credit on select eligible tires.",
+            "textAlignment":"LEFT",
+            "textPosition":"LEFT",
+            "blockClass":"nissan-tire-store"
+        }
+    },
+    "rich-text#tire-prop-details-1":{
+        "props":{
+            "text":"CLICK HERE TO LEARN MORE",
+            "textAlignment":"LEFT",
+            "textPosition":"LEFT",
+            "blockClass":"nissan-tire-store"
+        }
+    },
+      "image#tire-prop-details-1":{
+        "props": {
+            "src": "https://www.nissantireadvantage.com/content/globals/OTS-images/NIS/home/30-DayTirePriceAssurance_72dpi.png",
+            "maxHeight": "",
+            "blockClass": "tire-prop-details-2"
+          }  
       }
+      
 }

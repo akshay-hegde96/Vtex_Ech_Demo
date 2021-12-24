@@ -34,7 +34,7 @@
     "children": ["list-context.product-list#accesories"]
   },
   "list-context.product-list#accesories": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#summary"],
     "children": ["slider-layout#products"],
     "props": {
       // "orderBy": "OrderByTopSaleDESC",
@@ -45,7 +45,7 @@
     "children": ["list-context.product-list#carParts"]
   },
   "list-context.product-list#carParts": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#summary"],
     "children": ["slider-layout#demo-products"],
     "props": {
       // "orderBy": "OrderByTopSaleDESC",
@@ -57,7 +57,7 @@
     "children": ["list-context.product-list#merchandise"]
   },
   "list-context.product-list#merchandise": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#summary"],
     "children": ["slider-layout#demo-products"],
     "props": {
       // "orderBy": "OrderByTopSaleDESC",
@@ -69,7 +69,7 @@
     "children": ["list-context.product-list#nismo"]
   },
   "list-context.product-list#nismo": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#summary"],
     "children": ["slider-layout#demo-products"],
     "props": {
       // "orderBy": "OrderByTopSaleDESC",

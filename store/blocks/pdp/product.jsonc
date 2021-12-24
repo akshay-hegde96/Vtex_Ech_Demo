@@ -1,24 +1,32 @@
 {
-  "store.product": {
+  "store.product.product-comparison": {
     "blocks": [
       "responsive-layout.desktop",
       "responsive-layout.phone",
       "responsive-layout.tablet",
       "back-to-top-button"
+    ],		
+    "children": [		
+      "product-comparison-drawer"	
+      // "product-comparison-block.selector"
     ]
   },
   "responsive-layout.tablet": {
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "tab-layout#product"
+      "tab-layout#product",
+      "flex-layout.row#banner-car",
+      "shelf.relatedProducts"
     ]
   },
   "responsive-layout.phone": {
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "disclosure-layout-group#tablayout"
+      "disclosure-layout-group#tablayout",
+      "flex-layout.row#banner-car",
+      "shelf.relatedProducts"
     ]
   },
   "disclosure-layout-group#tablayout": {
@@ -130,21 +138,25 @@
       "tab-layout#product",
       "flex-layout.row#banner-car",
       "shelf.relatedProducts"
-     // "shelf#related"
+      // "shelf#related"
     ]
   },
 
   //Added related products--------
-  "shelf.relatedProducts":{
-    "blocks":["product-summary.shelf"],
-    "props":{
+  "shelf.relatedProducts": {
+    "blocks": ["product-summary.shelf#summary"],
+    "props": {
       "blockClass": "related",
       "recommendation": "similars",
       "hideOutOfStockItems": false,
-      "productList":{
-        "arrows":true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly",
+      "productList": {
+        "arrows": true,
         "gap": "ph3",
-        "titleText": "Related Products"
+        "titleText": "Related Products",
+        "itemsPerPage": 4,
+        "scroll": "BY_PAGE"
       }
     }
   },
@@ -257,7 +269,7 @@
     "children": [
       "flex-layout.row#product-name",
       //"flex-layout.row#product-brand",
-      //"product-rating-summary",
+      "product-rating-inline",
       "product-identifier.product#pdp",
       "flex-layout.row#prodt-price",
       // "flex-layout.row#list-price",
@@ -266,7 +278,8 @@
       "flex-layout.row#pricing-desc",
       "product-separator",
       "product-description",
-      "flex-layout.row#dealers-PDP"
+      "flex-layout.row#dealers-PDP",
+      "product-comparison-block.selector"
       // "sku-selector",
       // "product-quantity",
       // "product-assembly-options",
@@ -485,8 +498,8 @@
     "props": {
       "horizontalAlign": "center",
       "src": "assets/pdpCar.png",
-      "width": 1240,
-      "height": 460,
+      // "width": 1160,
+      // "height": 460,
       "link": "/",
       "blockClass": "car"
     }
@@ -496,8 +509,8 @@
     "props": {
       "horizontalAlign": "center",
       "src": " https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/D65287B2-E276-4715-97D4-49C7ABAD845A.png",
-      "width": 1240,
-      "height": 460,
+      // "width": 1160,
+      // "height": 460,
       "link": "/",
       "blockClass": "car"
     }

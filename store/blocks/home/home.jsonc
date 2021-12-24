@@ -58,8 +58,8 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#homepage-model-left",
-      "flex-layout.col#homepage-model-right"
+      "flex-layout.col#homepage-model-left"
+      // "flex-layout.col#homepage-model-right"
     ]
   },
   "flex-layout.col#homepage-model-left": {
@@ -68,12 +68,12 @@
       "blockClass": "richTextColLeft"
     }
   },
-  "flex-layout.col#homepage-model-right": {
-    "children": ["modal-trigger#vin-number"],
-    "props": {
-      "blockClass": "richTextColRight"
-    }
-  },
+  // "flex-layout.col#homepage-model-right": {
+  //   "children": ["modal-trigger#vin-number"],
+  //   "props": {
+  //     "blockClass": "richTextColRight"
+  //   }
+  // },
   "rich-text#homePageModel": {
     "props": {
       "text": "### Select a Model",
@@ -81,112 +81,60 @@
       "textAlignment": "CENTER"
     }
   },
-  "modal-trigger#vin-number": {
-    "children": ["flex-layout.row#vinNumberRow", "modal-layout#homePageVin"]
-  },
-  "flex-layout.row#vinNumberRow": {
-    "children": ["flex-layout.col#vinIcon", "flex-layout.col#vinText"],
-    "props": {
-      "colSizing": "auto",
-      "fullWidth": false,
-      "blockClass": "vinNumberTextContainer"
-    }
-  },
-  "flex-layout.col#vinIcon": {
-    "children": ["image#vinIcon"],
-    "props": {
-      "blockClass": "iconColumn"
-    }
-  },
-  "image#vinIcon": {
-    "props": {
-      "src": "assets/home/search-by-vin.png",
-      "width": "28px",
-      "height": "28px"
-    }
-  },
-  "flex-layout.col#vinText": {
-    "children": ["rich-text#homePageVin", "icon-caret#vinText"],
-    "props": {
-      "blockClass": "vinTextCol"
-    }
-  },
-  "icon-caret#vinText": {
-    "props": {
-      "orientation": "right",
-      "blockClass": "caret-vin-num"
-    }
-  },
-  "rich-text#homePageVin": {
-    "props": {
-      "text": "##### Search by VIN",
-      "blockClass": "vinText"
-    }
-  },
-  "modal-layout#homePageVin": {
-    "children": ["modal-header", "flex-layout.row#vin-form"]
-  },
-  "flex-layout.row#vin-form": {
-    "children": ["flex-layout.col#form"]
-  },
-  "flex-layout.col#vin-form": {
-    "children": [
-      // "rich-text#vinText",
-      "form#vin-number"
-    ]
-  },
-  "form#vin-number": {
-    "props": {
-      "entity": "clients",
-      "schema": "person"
-    },
-    "children": [
-      "rich-text#formTitle",
-      "form-input.text#firstName",
-      "form-input.text#lastName",
-      "form-field-group#address",
-      "form-input.checkbox#agreement",
-      "form-submit"
-    ],
-    "blocks": ["form-success"]
-  },
-  "form-success": {
-    "children": ["rich-text#successSubmit"]
-  },
-  "rich-text#successSubmit": {
-    "props": {
-      "text": "Succesfully submitted the data!",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
-  },
-  "form-input.text#firstName": {
-    "props": {
-      "pointer": "#/properties/firstName"
-    }
-  },
-  "form-input.text#lastName": {
-    "props": {
-      "pointer": "#/properties/lastName"
-    }
-  },
-  "form-input.checkbox#agreement": {
-    "props": {
-      "pointer": "#/properties/agreement",
-      "label": "Do you agree that this is the best form component in the whole wide world?"
-    }
-  },
-  "form-field-group#address": {
-    "props": {
-      "pointer": "#/properties/address"
-    }
-  },
-  "form-submit": {
-    "props": {
-      "label": "Submit"
-    }
-  },
+  // "modal-trigger#vin-number": {
+  //   "children": ["flex-layout.row#vinNumberRow", "modal-layout#homePageVin"]
+  // },
+  // "flex-layout.row#vinNumberRow": {
+  //   "children": ["flex-layout.col#vinIcon", "flex-layout.col#vinText"],
+  //   "props": {
+  //     "colSizing": "auto",
+  //     "fullWidth": false,
+  //     "blockClass": "vinNumberTextContainer"
+  //   }
+  // },
+  // "flex-layout.col#vinIcon": {
+  //   "children": ["image#vinIcon"],
+  //   "props": {
+  //     "blockClass": "iconColumn"
+  //   }
+  // },
+  // "image#vinIcon": {
+  //   "props": {
+  //     "src": "assets/home/search-by-vin.png",
+  //     "width": "28px",
+  //     "height": "28px"
+  //   }
+  // },
+  // "flex-layout.col#vinText": {
+  //   "children": ["rich-text#homePageVin", "icon-caret#vinText"],
+  //   "props": {
+  //     "blockClass": "vinTextCol"
+  //   }
+  // },
+  // "icon-caret#vinText": {
+  //   "props": {
+  //     "orientation": "right",
+  //     "blockClass": "caret-vin-num"
+  //   }
+  // },
+  // "rich-text#homePageVin": {
+  //   "props": {
+  //     "text": "##### Search by VIN",
+  //     "blockClass": "vinText"
+  //   }
+  // },
+  // "modal-layout#homePageVin": {
+  //   "children": ["modal-header", "flex-layout.row#vin-form"]
+  // },
+  // "flex-layout.row#vin-form": {
+  //   "children": ["flex-layout.col#form"]
+  // },
+  // "flex-layout.col#vin-form": {
+  //   "children": [
+  //     // "rich-text#vinText",
 
+  //   ]
+  // },
   //-----------------------------caraousal------------------------------------------
 
   "slider-layout#slides": {
@@ -296,7 +244,7 @@
         "variant": "primary",
         "size": "medium"
       },
-      "href": "/electronics",
+      "href": "/accessories/engine-accessories",
       "label": "ENGINE ACCESSORIES"
     },
     "children": ["icon-caret#rightHome"]
@@ -332,7 +280,7 @@
         "variant": "primary",
         "size": "medium"
       },
-      "href": "/major-appliances",
+      "href": "/accessories/ac-electronics-accessories",
       "label": "AC/Electronics Accessories"
     },
     "children": ["icon-caret#rightHome"]
@@ -367,7 +315,7 @@
         "variant": "primay",
         "size": "medium"
       },
-      "href": "/small-appliances",
+      "href": "/accessories/truck-and-towing",
       "label": "BIKE RACK Accessories"
     },
     "children": ["icon-caret#rightHome"]
@@ -398,7 +346,7 @@
         "variant": "primary",
         "size": "medium"
       },
-      "href": "/sales",
+      "href": "/accessories/interior-accessories",
       "label": "Interior Accessories"
     },
     "children": ["icon-caret#rightHome"]
@@ -433,7 +381,7 @@
     "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#summary"],
     "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"

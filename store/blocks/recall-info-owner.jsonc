@@ -1,18 +1,148 @@
 {
     "store.custom#recall-info":{
         "blocks":[
-            "flex-layout.row#recall-info"
+            "rich-text#recall-info",
+            "rich-text#VIN-info",
+            "flex-layout.row#details-1",
+            "flex-layout.row#details-2",
+            "flex-layout.row#details-3"
         ]
     },
-    "flex-layout.row#recall-info":{
-        "children":[
-            "rich-text#recall-info"
-        ]
-    },
+    
     "rich-text#recall-info": {
         "props": {
           "text":"# NISSAN RECALL LOOKUP.",
-          "blockClass": ""
+          "blockClass": "recall-info"
         }
-      }
+      },
+
+      "rich-text#VIN-info": {
+        "props": {
+          "text":"Using your Vehicle Identification Number (VIN), you can quickly establish if there are any recalls specific to your Nissan.",
+          "blockClass": "VIN-info"
+        }
+      },
+
+      "flex-layout.row#details-1":{
+          "children":[
+              "flex-layout.col#details-1"
+            //   "rich-text#details-1",
+            //   "link#details-1"
+          ]
+      },
+
+      "flex-layout.col#details-1":{
+          "children":[
+            "rich-text#details-1",
+             "link#details-1"
+          ],
+          "props":{
+            "blockClass":"details-container-1"
+          }
+      },
+
+      "rich-text#details-1":{
+          "props":{
+              "text":"Important Rear Visibility System Recall Information",
+              "textPosition":"LEFT",
+              "textAlignment":"LEFT",
+              "blockClass":"details-1-text"
+          }
+      },
+
+      "link#details-1": {
+        "props": {
+          "blockClass": "details-1-link",
+          "displayMode": "button",
+          "buttonProps": {
+            "variant": "primary",
+            "size": "medium"
+          },
+          "href": "",
+          "label": "VIEW RECALL DETAILS"
+        },
+        "children": ["icon-caret#rightHome"]
+      },
+
+"flex-layout.row#details-2":{
+    "children":[
+        "flex-layout.col#details-2"
+      //   "rich-text#details-1",
+      //   "link#details-1"
+    ]
+},
+
+"flex-layout.col#details-2":{
+    "children":[
+      "rich-text#details-2",
+       "link#details-2"
+    ],
+    "props":{
+      "blockClass":"details-container-2"
+    }
+},
+
+"rich-text#details-2":{
+    "props":{
+        "text":"Important Takata Air Bag Safety Recall Information",
+        "textPosition":"LEFT",
+        "textAlignment":"LEFT",
+        "blockClass":"details-2-text"
+    }
+},
+
+"link#details-2": {
+  "props": {
+    "blockClass": "details-2-link",
+    "displayMode": "button",
+    "buttonProps": {
+      "variant": "primary",
+      "size": "medium"
+    },
+    // "href": "https://www.nissanusa.com/takata-airbag-recall.html",
+    "label": "VIEW TAKATA RECALL DETAILS"
+  },
+  "children": ["icon-caret#rightHome"]
+},
+
+"flex-layout.row#details-3":{
+    "children":[
+        "flex-layout.col#details-3"
+      //   "rich-text#details-1",
+      //   "link#details-1"
+    ]
+},
+
+"flex-layout.col#details-3":{
+    "children":[
+      "rich-text#details-1",
+       "link#details-1"
+    ],
+    "props":{
+      "blockClass":"details-container-3"
+    }
+},
+
+"rich-text#details-3":{
+    "props":{
+        "text":"Update November 2018: Important Anti-Lock Brake (ABS) Actuator Safety Recall Information",
+        "textPosition":"LEFT",
+        "textAlignment":"LEFT",
+        "blockClass":"details-3-text"
+    }
+},
+
+"link#details-3": {
+  "props": {
+    "blockClass": "details-3-link",
+    "displayMode": "button",
+    "buttonProps": {
+      "variant": "primary",
+      "size": "medium"
+    },
+    "href": "",
+    "label": "MORE INFORMATION"
+  },
+  "children": ["icon-caret#rightHome"]
+}
 }

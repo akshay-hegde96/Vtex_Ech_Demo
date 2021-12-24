@@ -3,7 +3,7 @@ import styles from "./Dealer-PDP.css";
 import { makeAPICall } from "../../../Utils/httpCall";
 import {
   // sellerList,
-  // dealerstoreURL,
+   dealerstoreURL,
   dealersListURL,
   storeURL
 } from "../../../Config/url";
@@ -51,7 +51,6 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
             // href={`https://tonydemo--nissan.myvtex.com/${productContextValue?.product?.cacheId}/p?seller=${seller.Name}`}
             //onClick={() => showDealer(i)}
              href={`${seller.hostUrl}/${productContextValue?.product?.cacheId}/p?seller=${seller.name}`}
-          >
             SHOP NOW
           </a>
         </div>

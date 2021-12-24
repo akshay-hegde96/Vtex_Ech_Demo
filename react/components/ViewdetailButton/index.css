@@ -3,7 +3,7 @@
     
 }
 .imageOverPosition {
-    position: absolute;
+    position: relative !important;
     bottom: 5px;
     left: 0;
     right: 0;
@@ -11,7 +11,7 @@
 }
 
 #viewButton{
-    width: 92%;
+    width: 100%;
     border-radius: 0;
 }
 

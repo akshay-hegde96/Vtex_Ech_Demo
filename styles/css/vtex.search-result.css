@@ -65,7 +65,7 @@
   padding: 0.75em 0;
 }
 .filterMessage {
-  color: rgb(105, 105, 112);
+  color: rgb(207, 207, 207);
   font-weight: 600;
   font-size: 1rem;
   font-variant: small-caps;
@@ -103,20 +103,23 @@
 }
 
 .filtersWrapper--filter {
-  background-color: #f5f5f8;
+  background-color: #000000;
   border-radius: 10px;
+  color: white !important;
 }
 
 .caretIcon--filter {
-  color: #3f3f40;
+  color: #cacacc;
 }
 .filterItem--filter {
   font-size: 0.96rem;
+  color: white !important;
 }
 
-.searchResultContainer {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+/* .searchResultContainer {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding-top: 45px !important;
+} */
 
 @media only screen and (max-width: 480px) {
   .galleryTitle--layout {

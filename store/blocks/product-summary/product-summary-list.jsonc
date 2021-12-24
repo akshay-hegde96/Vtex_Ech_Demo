@@ -1,5 +1,5 @@
 {
-  "product-summary.shelf#listLayout": {
+  "product-summary.shelf.product-comparison#listLayout": {
     "props": {
       "blockClass": "listLayout"
     },
@@ -38,8 +38,8 @@
       "blockClass": "summaryListDesktop"
     },
     "children": [
-      "flex-layout.row#summaryLeftListDesktop",
-      "flex-layout.col#summaryRightListDesktop"
+      "flex-layout.row#summaryLeftListDesktop"
+      // "flex-layout.col#summaryRightListDesktop"
     ]
   },
   "flex-layout.row#summaryLeftListDesktop": {
@@ -55,14 +55,18 @@
   },
   "flex-layout.col#summaryDetailsListDesktop": {
     "props": {
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "blockClass":"priceAndViewDetailsCol"
     },
     "children": [
       // "vtex.store-components:product-brand#summaryListDesktop",
       "product-summary-name#summaryListDesktop",
-      "product-summary-sku-selector",
+      "flex-layout.row#savingsSummaryListDesktop",
+      "flex-layout.col#priceSummaryListDesktop",
+      "flex-layout.row#buyButtonsSummaryListDesktop"
+      // "product-summary-sku-selector",
       // "flex-layout.col#productRating",
-      "flex-layout.row#productSpecifications"
+      // "flex-layout.row#productSpecifications"
     ]
   },
   "flex-layout.row#productSpecifications": {
@@ -96,7 +100,9 @@
       "colGap": 5
     },
     "children": [
-      "add-to-cart-button"
+      // "add-to-cart-button"
+      "viewdetails-button",
+      "product-comparison-block.selector"
       //"flex-layout.row#buyNowButton"
     ]
   },
@@ -121,8 +127,8 @@
   "stack-layout#summaryListDesktop": {
     "children": [
       "product-summary-image#summaryListDesktop",
-      "vtex.product-highlights@2.x:product-highlights#collection",
-      "modal-trigger#quickview" // Check quickview.jsonc
+      "vtex.product-highlights@2.x:product-highlights#collection"
+      // "modal-trigger#quickview" // Check quickview.jsonc
     ]
   },
   "product-summary-image#summaryListDesktop": {
@@ -148,8 +154,8 @@
   "stack-layout#summaryListMobile": {
     "children": [
       "product-summary-image#summaryListMobile",
-      "vtex.product-highlights@2.x:product-highlights#collection",
-      "modal-trigger#quickview" // Check quickview.jsonc
+      "vtex.product-highlights@2.x:product-highlights#collection"
+      // "modal-trigger#quickview" // Check quickview.jsonc
     ]
   },
   "product-summary-image#summaryListMobile": {
@@ -188,7 +194,8 @@
     },
     "children": [
       "product-selling-price#summary",
-      "add-to-cart-button"
+      // "add-to-cart-button"
+      "viewdetails-button"
       // "product-installments#summary"
     ]
   },

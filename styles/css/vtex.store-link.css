@@ -12,3 +12,18 @@
   border-color: #8b1a1a;
   color: #fff;
 }
+
+.buttonLink--App-store ,
+.buttonLink--App-googleplay{
+  margin-right: 48px;
+  /* padding-right: 13px; */
+  margin-left: 20px;
+}
+
+.buttonLink--details-1-link,
+.buttonLink--details-2-link,
+.buttonLink--details-3-link,
+.buttonLink--visa-card-button
+{
+  margin-left: 20px;
+}

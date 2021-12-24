@@ -1,50 +1,52 @@
 {
-    "product-summary.shelf#summary": {
-        "children": [
-          "stack-layout#prodsum",
-          "product-summary-name",
-          "product-selling-price#summary",
-          "flex-layout.row#nissanModelNo",
-          "product-summary-space",
-          "add-to-cart-button"
-        ],
-        "props":{
-          "blockClass":"searchSummaryCard"
-        }
-      },
+  "product-summary.shelf#summary": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-selling-price#summary",
+      "flex-layout.row#nissanModelNo",
+      "product-summary-space",
+      // "add-to-cart-button"
+      "viewdetails-button"
+    ],
+    "props": {
+      "blockClass": "searchSummaryCard",
+      "showPaginationDots": "never"
+    }
+  },
 
-      "product-summary-name": {
-        "props": {
-          "blockClass": "productSummaryName"
-        }
-      },
+  "product-summary-name": {
+    "props": {
+      "blockClass": "productSummaryName"
+    }
+  },
 
-      "stack-layout#prodsum": {
-        "children": [
-          "product-summary-image#shelf"
-        ]
-      },
+  "stack-layout#prodsum": {
+    "children": ["product-summary-image#shelf"]
+  },
 
-      "product-summary-image#shelf": {
-        "props": {
-          "showBadge": true,
-          "aspectRatio": "1:1",
-          "maxHeight": 300,
-          "blockClass": "productImage"
-        }
-      },
+  "product-summary-image#shelf": {
+    "props": {
+      "showBadge": true,
+      "aspectRatio": "1:1",
+      "height": 250,
+      "width": 100,
+      "blockClass": "productImage"
+    }
+  },
 
-      "product-price-savings#summary": {
-        "props": {
-          "markers": ["discount"],
-          "blockClass": "searchSummaryPrice"
-        }
-      },
-    
-      "flex-layout.row#nissanModelNo":{
-        "children":[ "product-identifier.product"],
-        "props":{
-            "blockClass": "productReference"
-        }
-      }
+  "product-price-savings#summary": {
+    "props": {
+      "markers": ["discount"],
+      "blockClass": "searchSummaryPrice"
+    }
+  },
+
+  "flex-layout.row#nissanModelNo": {
+    "children": ["product-identifier.product"],
+    "props": {
+      "blockClass": "productReference"
+    }
+  }
 }

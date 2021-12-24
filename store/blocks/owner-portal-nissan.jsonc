@@ -1,18 +1,154 @@
 {
     "store.custom#owner-portal":{
         "blocks":[
-            "flex-layout.row#owner-portal"
+            "flex-layout.row#owner-portal",
+            "flex-layout.row#myNissan-App",
+            "flex-layout.row#nissan-connect"
         ]
     },
     "flex-layout.row#owner-portal":{
         "children":[
-            "rich-text#owner-portal"
+            "image#owner-portal"
         ]
     },
-    "rich-text#owner-portal": {
+    "image#owner-portal":{
         "props": {
-          "text":"# Enhance your ownership experience.",
-          "blockClass": ""
+            "src": "https://www.nissanusa.com/content/dam/Nissan/us/owners/2021-owners-redesign/pfa/nissan-suv.jpg",
+            "maxHeight": "",
+            "blockClass": "left-col-manual"
+          }  
+      },
+      "flex-layout.row#myNissan-App":{
+          "children":[
+            "flex-layout.col#MyNISSAN App",
+            "flex-layout.col#mobile-pic"
+          ]
+      },
+      "flex-layout.col#MyNISSAN App":{
+          "children":[
+              "rich-text#MyNISSAN App-title",
+              "rich-text#MyNISSAN App-content",
+              "flex-layout.row#nissan-buy-store"
+          ],
+          "props":{
+            "blockClass":"MyNISSAN-App"
+          }
+      },
+
+      "flex-layout.row#nissan-buy-store":{
+          "children":[
+            "link#MyNISSAN App-store",
+            "link#MyNISSAN App-googleplay"
+          ],
+          "props":{
+              "blockClass":"nissan-buy-store"
+          }
+      },
+
+      "rich-text#MyNISSAN App-title":{
+          "props":{
+              "text":"## Access Your Car On the Go",
+              "textPosition":"LEFT",
+              "textAlignment":"LEFT",
+              "blockClass":"MyNISSAN-App-title"
+          }
+      },
+
+      "rich-text#MyNISSAN App-content":{
+        "props":{
+            "text":"The MyNISSAN App gives you convenient access to important information about your vehicle from a smart device. Locate your nearest Nissan dealer, schedule your next service, find vehicle-specific quick guide videos, and view your vehicle service history",
+            "textPosition":"LEFT",
+            "textAlignment":"LEFT",
+            "blockClass":"App-content"
         }
+    },
+
+    "link#MyNISSAN App-store": {
+        "props": {
+          "blockClass": "App-store",
+          "displayMode": "button",
+          "buttonProps": {
+            "variant": "primary",
+            "size": "medium"
+          },
+        //   "href": "https://apps.apple.com/us/app/mynissan-app/id1436634482",
+          "label": "GO TO APPSTORE"
+        },
+        "children": ["icon-caret#rightHome"]
+      },
+
+      "link#MyNISSAN App-googleplay": {
+        "props": {
+          "blockClass": "App-googleplay",
+          "displayMode": "button",
+          "buttonProps": {
+            "variant": "primary",
+            "size": "medium"
+          },
+        //   "href": "https://play.google.com/store/apps/details?id=com.nissan.mynissan&hl=en_US",
+          "label": "GO TO GOOGLE PLAY"
+        },
+        "children": ["icon-caret#rightHome"]
+      },
+
+    "flex-layout.col#mobile-pic":{
+        "children":[
+            "image#mobile-geo-pic"
+        ]
+    },
+    "image#mobile-geo-pic":{
+        "props": {
+            "src": "https://www.nissanusa.com/content/dam/Nissan/us/owners/2021-owners-redesign/mynissan-app-v2.jpg",
+            "maxHeight": "",
+            "blockClass": "left-col-manual"
+          }  
+      },
+      "flex-layout.row#nissan-connect":{
+          "children":[
+              "flex-layout.col#nissan-connect"
+            
+          ]
+      },
+
+      "flex-layout.col#nissan-connect":{
+          "children":[
+              "rich-text#NissanConnect-title",
+              "rich-text#NissanConnect-content",
+              "link#MyNISSAN-connect"
+          ],
+          "props":{
+            "blockClass":"nissan-connect"
+          }
+      },
+
+      "rich-text#NissanConnect-title":{
+        "props":{
+            "text":"## NissanConnect",
+            "textPosition":"LEFT",
+            "textAlignment":"LEFT"
+        }
+    },
+
+    "rich-text#NissanConnect-content":{
+        "props":{
+            "text":"Stay connected to the world from the comfort of your driver’s seat. With NissanConnect, you can keep tabs on your social media, get directions, stream your favorite music, and communicate, while staying focused on the road",
+            "textPosition":"LEFT",
+            "textAlignment":"LEFT"
+        }
+    },
+
+    "link#MyNISSAN-connect": {
+        "props": {
+          "blockClass": "MyNISSAN-connect",
+          "displayMode": "button",
+          "buttonProps": {
+            "variant": "primary",
+            "size": "medium"
+          },
+        //   "href": "https://www.nissanusa.com/connect.html",
+          "label": "VIEW NISSAN CONNECT"
+        },
+        "children": ["icon-caret#rightHome"]
       }
+
 }

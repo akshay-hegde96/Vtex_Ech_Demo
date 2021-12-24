@@ -183,7 +183,8 @@
   background-color: #070707;
   position: absolute;
   left: 0;
-  top: 131px;
+  top: 6em;
+  z-index: 1;
 }
 @media screen and (min-width: 1025px) {
   .searchBarContainer {
@@ -273,6 +274,14 @@
   }
   .searchBarContainer {
     top: 60px;
+  }
+  .productNameContainer--pdp-product-name {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .imageElement--car {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
 
@@ -458,8 +467,10 @@ justify-content: center;
 }
 
 .imageElement--car {
-  margin-left: 60px;
+  margin-left: 2rem;
   margin-top: 80px;
+  width: 95% !important;
+  /* height: auto !important; */
 }
 
 .thumbImg--pdp-img {
@@ -506,4 +517,51 @@ justify-content: center;
   font-size: 12px;
   padding-bottom: 50px;
   padding-left: 30px;
+}
+
+.imageElement--tire-prop-details-2{
+  background-color: gray;
+}
+.imageElement--left-col-manual{
+  min-height: 320px;
+}
+.imageElement--right-nismo-merchandise{
+  height: 500px;
+  margin-left: 50px;
+}
+.imageElement--build-your-nissan-img{
+  margin-top: 20px;
+}
+.imageElement--img-nismo-catalog{
+  margin: 20px;
+}
+@media only screen and (max-width: 768px) {
+.imageElement--omniparts-img{
+  width: fit-content;
+  height: 20px;
+  margin-bottom: -200px;
+}
+.imageElement--right-nismo-merchandise{
+  height: 200px;
+  width:300px;
+  margin-left: 20px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .imageElement--right-nismo-merchandise{
+    height: 300px;
+    margin-left: 50px;
+  }
+}
+
+.imageElement--omniparts-img{
+  width: 500px;
+  height: 300px;
+  margin-bottom: -200px;
+}
+.imageElement--japan-parts-img{
+  margin-top: 10px;
+}
+.imageElement--nissan-tire-store-img{
+  margin-top: 20px;
 }
