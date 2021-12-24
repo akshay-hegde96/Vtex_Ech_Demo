@@ -225,7 +225,7 @@
       "menu-item#account-my-wishlist",
       "menu-item#account-my-cart",
       "menu-item#account-checkout",
-      "menu-item#account-register",
+      // "menu-item#account-register",
       "menu-item#account-login"
     ]
   },
