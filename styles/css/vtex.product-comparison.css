@@ -1,0 +1,37 @@
+/* .productSummaryRowContainer {
+    flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+} */
+@media screen and (max-width: 767px) {
+    .productSummaryRowContainer {
+        flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+    }
+    .productSummaryRowContainer .fieldNameCol:first-child {
+        width: 100% !important;
+        min-width: 100px;
+    }
+    .fieldNameCol {
+        min-width: unset;
+        margin-right: 0;
+    }
+    .showDifferencesContainer {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    .drawerTitleInnerContainer {
+        font-size: 0.8rem;
+    }
+}
+.drawerContainer {
+    z-index: 9999999;
+}
+.containerNormal--drawer-summary.container--drawer-summary {
+    border: 1px solid #e3e4e6;
+}
+.productSelectorContainer {
+    margin: 0.5rem 0;
+}
+.hideOrShowText {
+    text-transform: uppercase;
+}

@@ -29,11 +29,11 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-
+/* 
 .nameContainer--productNameGrid {
   width: 260px;
   height: 22px;
-}
+} */
 
 .brandName--productNameGrid {
   color: #000 !important;
@@ -60,12 +60,12 @@
   width: 300px !important;
 }
 
-.imageContainer {
+/* .imageContainer {
   text-align: center;
   width: 240px;
   height: 220px;
   object-fit: contain;
-}
+} */
 
 .image {
   border-radius: 0.25rem;
@@ -104,3 +104,7 @@
 .containerNormal--discountCard {
   height: 490px !important;
 }
+
+/* .container--comparison-page-summary {
+  text-align: center;
+} */
