@@ -36,6 +36,9 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
     // filter the store dealer with index to show on pdp
     
     .map((seller, i) => {
+      let sellerHost = (seller.hostUrl) ? seller.hostUrl : dealerstoreURL;
+      let sellerUrl = `${sellerHost}/${productContextValue?.product?.cacheId}/p?seller=${seller.name}`;
+
       return (
         <div key={i} className={styles.card}>
           <div className={styles.details}>
@@ -50,7 +53,7 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
             //onClick={() => showDealer(i)}
             // href={`https://tonydemo--nissan.myvtex.com/${productContextValue?.product?.cacheId}/p?seller=${seller.Name}`}
             //onClick={() => showDealer(i)}
-             href={`${seller.hostUrl}/${productContextValue?.product?.cacheId}/p?seller=${seller.name}`}
+             href={`${sellerUrl}`}>
             SHOP NOW
           </a>
         </div>
