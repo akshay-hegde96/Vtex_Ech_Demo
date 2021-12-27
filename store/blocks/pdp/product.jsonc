@@ -17,7 +17,7 @@
       "condition-layout.product#availability",
       "tab-layout#product",
       "flex-layout.row#nissan-banner-container",
-      "flex-layout.row#banner-car",
+     // "flex-layout.row#banner-car",
       "shelf.relatedProducts"
     ]
   },
@@ -29,7 +29,7 @@
       "flex-layout.row#nissan-banner-container",
       "shelf.relatedProducts",
       //"flex-layout.row#banner-car"
-      "flex-layout.row#banner-car",
+     // "flex-layout.row#banner-car",
       "shelf.relatedProducts"
     ]
   },
