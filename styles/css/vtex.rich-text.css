@@ -257,7 +257,7 @@
   color: #ffffff;
   margin-bottom: 0px;
 }
-
+/* --------------------------------------Contact-Us page----------------------------- */
 .container--contact-us {
   font-weight: bold;
   font-size: 1.4rem;
@@ -266,9 +266,10 @@
 }
 
 .container--contact-us-submit {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #424244;
   margin: 3rem auto;
+  padding: 3rem 2rem;
 }
 .paragraph--header-top-sales {
   color: white;
@@ -282,6 +283,14 @@
 .headingLevel5--vinText {
   margin-left: 10px;
   margin-right: 15px;
+}
+.container--contact-us-input-spacer {
+  font-size: 2px;
+  color: transparent;
+  margin-top: 0.4rem;
+}
+.dropdown--contact-us {
+  margin: 5px auto;
 }
 
 /*----------------PDP Page---------------------- */

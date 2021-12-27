@@ -3,10 +3,11 @@ import styles from "./dealers.css";
 import Dealer from "./Dealer/Dealer";
 
 const DealersList = (props) => {
- const urlData = props.query.zip
- console.log(urlData)
- console.log(props)
-   return (
+  const urlData = props.query.zip;
+  const productName = props.query.product;
+  console.log(urlData);
+  console.log(props);
+  return (
     <div className={styles.container}>
       <div className={styles.container1}>
         <div className={styles.container_input}>
@@ -17,15 +18,19 @@ const DealersList = (props) => {
             <label>Enter Your Zip Code</label>
           </div>
           <div>
-            <input className={styles.search} type="text" value={urlData} placeholder={urlData} />
+            <input
+              className={styles.search}
+              type="text"
+              value={urlData}
+              placeholder={urlData}
+            />
             <input className={styles.buttn} type="submit" value="GO" />
           </div>
         </div>
       </div>
-      <Dealer />
+      <Dealer zipCode={urlData} productName={productName} />
     </div>
   );
-  
 };
 
 export default DealersList;

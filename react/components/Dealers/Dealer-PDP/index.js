@@ -3,9 +3,9 @@ import styles from "./Dealer-PDP.css";
 import { makeAPICall } from "../../../Utils/httpCall";
 import {
   // sellerList,
-   dealerstoreURL,
+  dealerstoreURL,
   dealersListURL,
-  storeURL
+  storeURL,
 } from "../../../Config/url";
 import { nissanSellerSiteUrl } from "../../../Config/url";
 //import useProduct from "vtex.product-context/useProduct";
@@ -15,7 +15,7 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
   const [show, setShow] = useState(true);
   const [dealer, setDealer] = useState(null);
   const [sellers, setSellers] = useState([]);
-  const [zip, setZip] = useState('');
+  const [zip, setZip] = useState("");
   const [estimate, setEstimate] = useState(false);
   const [ele, setEle] = useState(null);
   const [selectedDealer, setSelectedDealer] = useState(null);
@@ -27,17 +27,21 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
       const data = await makeAPICall(dealersListURL, "GET");
       console.log({ data });
       setSellers([...data]);
-    //  setZip([...data]);
+      //  setZip([...data]);
     };
     getSellerAPICall();
   }, []);
 
-  const list = sellers.slice(0,3)
+  const list = sellers
+    .slice(0, 3)
     // filter the store dealer with index to show on pdp
-    
+
     .map((seller, i) => {
-      let sellerHost = (seller.hostUrl) ? seller.hostUrl : dealerstoreURL;
-      let sellerUrl = `${sellerHost}/${productContextValue?.product?.cacheId}/p?seller=${seller.name}`;
+      let sellerHost =
+        seller && seller.hostURL ? seller.hostURL : dealerstoreURL;
+      let sellerUrl =
+        sellerHost &&
+        `${sellerHost}/${productContextValue?.product?.cacheId}/p?seller=${seller.name}`;
 
       return (
         <div key={i} className={styles.card}>
@@ -45,7 +49,7 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
             <h3>{seller.name}</h3>
             <p>{seller.phone}</p>
             <p>{seller.zipNo}</p>
-            <p>{seller.hostUrl}</p>
+            {/* <p>{seller.hostURL}</p> */}
           </div>
 
           <a
@@ -53,7 +57,8 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
             //onClick={() => showDealer(i)}
             // href={`https://tonydemo--nissan.myvtex.com/${productContextValue?.product?.cacheId}/p?seller=${seller.Name}`}
             //onClick={() => showDealer(i)}
-             href={`${sellerUrl}`}>
+            href={`${sellerUrl}`}
+          >
             SHOP NOW
           </a>
         </div>
@@ -74,7 +79,7 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
   // };
 
   //---------------------------
-  
+
   const showDealer = (i) => {
     setShow(!show);
 
@@ -133,7 +138,7 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
 
     setSelectedDealer(DealerDetails);
   };
-  
+
   return (
     <React.Fragment>
       <div style={{ display: "flex", flexFlow: "column" }}>
@@ -148,18 +153,18 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
               <input
                 className={styles.search}
                 type="text"
-               // title="Enter Your Zip Code"
+                // title="Enter Your Zip Code"
                 onChange={(e) => setZip(e.target.value)}
                 placeholder="Enter your zip code"
               />
-              
+
               <a
                 className={styles.link}
-                href={`/dealers?zip=${zip} `} 
+                href={`/dealers?zip=${zip}&product=${productContextValue?.product?.cacheId} `}
                 title="Shop your Local 2018 Nissan Altima Parts Dealer"
-              >              
+              >
                 VIEW MORE DEALERS
-                </a>
+              </a>
             </div>
           </div>
         )}
