@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./dealers.css";
 import Dealer from "./Dealer/Dealer";
 
 const DealersList = (props) => {
+  const [pinInput, setpinInput] = useState("");
+  const [pin, setPin] = useState("");
   const urlData = props.query.zip;
+
   const productName = props.query.product;
   console.log(urlData);
   console.log(props);
+
   return (
     <div className={styles.container}>
       <div className={styles.container1}>
@@ -21,14 +25,25 @@ const DealersList = (props) => {
             <input
               className={styles.search}
               type="text"
-              value={urlData}
-              placeholder={urlData}
+              placeholder={urlData ? urlData : pin}
+              onChange={(e) => {
+                setpinInput(e.target.value);
+              }}
             />
-            <input className={styles.buttn} type="submit" value="GO" />
+            <button
+              className={styles.buttn}
+              type="button"
+              onClick={() => {
+                setPin(pinInput);
+                pin && console.log(pin);
+              }}
+            >
+              GO
+            </button>
           </div>
         </div>
       </div>
-      <Dealer zipCode={urlData} productName={productName} />
+      <Dealer zipCode={urlData} productName={productName} pinCode={pin} />
     </div>
   );
 };

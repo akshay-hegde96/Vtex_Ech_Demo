@@ -1,262 +1,249 @@
 {
-    "store.custom#nissan-service":{
-        "blocks":[
-            "flex-layout.row#nissan-service",
-            "flex-layout.row#part-service",
-            "flex-layout.row#nissan-para",
-            "flex-layout.row#service-card"
-        ]
-    },
-    "flex-layout.row#nissan-service":{
-        "children":[
-            "rich-text#nissan-service"
-        ]
-    },
-    "rich-text#nissan-service": {
-        "props": {
-          "text":"# WHAT MAKES THE NISSAN EXPERIENCE DIFFERENT?",
-          "blockClass": ""
-        }
-      },
-      "flex-layout.row#part-service":{
-          "children":[
-            "flex-layout.col#part-service-1",
-             "flex-layout.col#part-service-2",
-             "flex-layout.col#part-service-3"
-          ]
-      },
-      "flex-layout.col#part-service-1":{
-          "children":[
-              "rich-text#part-service-1-title",
-              "rich-text#part-service-1-context",
-              "link#part-service-1-button"
-          ],
-          "props":{
-            "blockClass":"part-service-1"
-          }
-      },
-      "link#part-service-1-button": {
-        "props": {
-          "blockClass": "part-service-1-button",
-          "displayMode": "button",
-          "buttonProps": {
-            "variant": "primary",
-            "size": "medium"
-          },
-          "href": "/dealers?zip=",
-          "label": "VIEW DEALERS"
-        },
-        "children": ["icon-caret#rightHome"]
-      },
-
-      "rich-text#part-service-1-title": {
-        "props": {
-          "text":" $70 INSTANT REBATE ON THE PURCHASE OF 4 ELIGIBLE TIRES*",
-          "textPosition":"LEFT",
-          "textAlignment":"LEFT",
-          "blockClass": "part-service-1-title"
-        }
-      },
-
-      "rich-text#part-service-1-context": {
-        "props": {
-            "text":"OFFER DETAILS",
-            "textPosition":"LEFT",
-            "textAlignment":"LEFT",
-            "blockClass": ""
-            // "href": "https://www.nissantireadvantage.com"
-           
-          }
-      },
-      
-      "flex-layout.col#part-service-2":{
-        "children":[
-            "rich-text#part-service-2-title",
-            "rich-text#part-service-2-context",
-            "link#part-service-2-button"
-        ],
-        "props":{
-          "blockClass":"part-service-2"
-        }
-    },
-    "link#part-service-2-button": {
-      "props": {
-        "blockClass": "part-service-2-button",
-        "displayMode": "button",
-        "buttonProps": {
-          "variant": "primary",
-          "size": "medium"
-        },
-        "href": "/dealers?zip=",
-        "label": "VIEW DEALERS"
-      },
-      "children": ["icon-caret#rightHome"]
-    },
-
-
-    "rich-text#part-service-2-title": {
-      "props": {
-        "text":"NISSAN TIRE PRICE MATCH* \n Buy from the one you trust.",
-        "textPosition":"LEFT",
-        "textAlignment":"LEFT",
-        "blockClass": "part-service-2-title"
-      }
-    },
-
-    "rich-text#part-service-2-context": {
-      "props": {
-          "text":"Offer Details",
-          "textPosition":"LEFT",
-          "textAlignment":"LEFT",
-          "blockClass": ""
-        //   "href": "https://www.nissanusa.com/parts-service/en/dealer/Search"
-        }
-    },
-   
-    "flex-layout.col#part-service-3":{
-        "children":[
-            "rich-text#part-service-3-title",
-            "rich-text#part-service-3-context",
-            "link#part-service-3-button"
-        ],
-        "props":{
-          "blockClass":"part-service-3"
-        }
-    },
-    "link#part-service-3-button": {
-      "props": {
-        "blockClass": "part-service-3-button",
-        "displayMode": "button",
-        "buttonProps": {
-          "variant": "primary",
-          "size": "medium"
-        },
-        "href": "/dealers?zip=",
-        "label": "VIEW DEALERS"
-      },
-      "children": ["icon-caret#rightHome"]
-    },
-
-
-
-    "rich-text#part-service-3-title": {
-      "props": {
-        "text":" COMPLIMENTARY MULTI-POINT INSPECTION*",
-        "textPosition":"LEFT",
-        "textAlignment":"LEFT",
-        "blockClass": "part-service-3-title"
-      }
-    },
-
-    "rich-text#part-service-3-context": {
-      "props": {
-          "text":"OFFER DETAILS",
-          "textPosition":"LEFT",
-          "textAlignment":"LEFT",
-          "blockClass": ""
-        //   "href": "https://www.nissanusa.com/parts-service/en/dealer/Search"
-        }
-    },
-    "flex-layout.row#nissan-para":{
-        "children":[
-            "flex-layout.col#nissan-para-1"
-        ],
-        "props":{
-          "blockClass":"nissan-para-1"
-        }
-    },
-
-    "flex-layout.col#nissan-para-1":{
-        "children":[
-            "rich-text#nissan-para-1",
-            "rich-text#nissan-para-2"
-        ]
-    },
-
-    "rich-text#nissan-para-1":{
-        "props":{
-            "text":"WHAT MAKES THE NISSAN EXPERIENCE DIFFERENT?",
-            "textPosition":"LEFT",
-            "textAlignment":"LEFT",
-            "blockClass":"nissan-para-1"
-        }
-    },
-    "rich-text#nissan-para-2":{
-        "props":{
-            "text":"Because driving your Nissan vehicle should be as worry-free an experience as possible, which is why we provide you with a complimentary multi-point inspection every time you visit your participating Nissan dealer. Performed by factory-trained technicians, your vehicle will be thoroughly inspected from end to end. You will receive a detailed report of your vehicle’s condition outlining recommended maintenance items so you can take pride in knowing your vehicle is ready for the road ahead.",
-            "textPosition":"LEFT",
-            "textAlignment":"LEFT"
-        }
-    },
-    "flex-layout.row#service-card":{
-        "children":[
-            "flex-layout.col#service-card-1",
-            "flex-layout.col#service-card-2"
-        ]
-    },
-    "flex-layout.col#service-card-1":{
-        "children":[
-            "image#service-card-1",
-            "rich-text#service-card-1",
-            "rich-text#service-card-1-text"
-        ],
-        "props":{
-          "blockClass":"service-card-1"
-        }
-    },
-    "image#service-card-1":{
-        "props": {
-            "src": "https://www.nissanusa.com/parts-service/images/nissan/home/express-service-updated.png",
-            "maxHeight": "",
-            "blockClass": "left-col-manual"
-          }  
-      },
-      "rich-text#service-card-1":{
-          "props":{
-              "text":"We know your time is important, which is why we developed the Nissan Express Service experience. It takes the hassle out of vehicle maintenance by providing fast, convenient and expert service on your schedule.",
-              "textAlignment":"LEFT",
-              "textPosition":"LEFT"
-          }
-      },
-      "rich-text#service-card-1-text":{
-        "props":{
-            "text":"LEARN MORE",
-            "textAlignment":"LEFT",
-            "textPosition":"LEFT"
-        }
-    },
-      
-
-      "flex-layout.col#service-card-2":{
-        "children":[
-            "image#service-card-2",
-            "rich-text#service-card-2",
-            "rich-text#service-card-2-text"
-        ],
-        "props":{
-          "blockClass":"service-card-2"
-        }
-    },
-    "image#service-card-2":{
-        "props": {
-            "src": "https://www.nissanusa.com/parts-service/images/nissan/home/change-for-best-img.jpg",
-            "maxHeight": "",
-            "blockClass": "left-col-manual"
-          }  
-      },
-      "rich-text#service-card-2":{
-          "props":{
-              "text":"We know your time is important, which is why we developed the Nissan Express Service experience. It takes the hassle out of vehicle maintenance by providing fast, convenient and expert service on your schedule.",
-              "textAlignment":"LEFT",
-              "textPosition":"LEFT"
-          }
-      },
-      "rich-text#service-card-2-text":{
-        "props":{
-            "text":"SCHEDULE SERVICE",
-            "textAlignment":"LEFT",
-            "textPosition":"LEFT"
-        }
+  "store.custom#nissan-service": {
+    "blocks": [
+      "flex-layout.row#nissan-service",
+      "flex-layout.row#part-service",
+      "flex-layout.row#nissan-para",
+      "flex-layout.row#service-card"
+    ]
+  },
+  "flex-layout.row#nissan-service": {
+    "children": ["rich-text#nissan-service"]
+  },
+  "rich-text#nissan-service": {
+    "props": {
+      "text": "# WHAT MAKES THE NISSAN EXPERIENCE DIFFERENT?",
+      "blockClass": ""
     }
+  },
+  "flex-layout.row#part-service": {
+    "children": [
+      "flex-layout.col#part-service-1",
+      "flex-layout.col#part-service-2",
+      "flex-layout.col#part-service-3"
+    ]
+  },
+  "flex-layout.col#part-service-1": {
+    "children": [
+      "rich-text#part-service-1-title",
+      "rich-text#part-service-1-context",
+      "link#part-service-1-button"
+    ],
+    "props": {
+      "blockClass": "part-service-1"
+    }
+  },
+  "link#part-service-1-button": {
+    "props": {
+      "blockClass": "part-service-1-button",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "medium"
+      },
+      "href": "/dealers",
+      "label": "VIEW DEALERS"
+    },
+    "children": ["icon-caret#rightHome"]
+  },
 
+  "rich-text#part-service-1-title": {
+    "props": {
+      "text": " $70 INSTANT REBATE ON THE PURCHASE OF 4 ELIGIBLE TIRES*",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "part-service-1-title"
+    }
+  },
+
+  "rich-text#part-service-1-context": {
+    "props": {
+      "text": "OFFER DETAILS",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ""
+      // "href": "https://www.nissantireadvantage.com"
+    }
+  },
+
+  "flex-layout.col#part-service-2": {
+    "children": [
+      "rich-text#part-service-2-title",
+      "rich-text#part-service-2-context",
+      "link#part-service-2-button"
+    ],
+    "props": {
+      "blockClass": "part-service-2"
+    }
+  },
+  "link#part-service-2-button": {
+    "props": {
+      "blockClass": "part-service-2-button",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "medium"
+      },
+      "href": "/dealers",
+      "label": "VIEW DEALERS"
+    },
+    "children": ["icon-caret#rightHome"]
+  },
+
+  "rich-text#part-service-2-title": {
+    "props": {
+      "text": "NISSAN TIRE PRICE MATCH* \n Buy from the one you trust.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "part-service-2-title"
+    }
+  },
+
+  "rich-text#part-service-2-context": {
+    "props": {
+      "text": "Offer Details",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ""
+      //   "href": "https://www.nissanusa.com/parts-service/en/dealer/Search"
+    }
+  },
+
+  "flex-layout.col#part-service-3": {
+    "children": [
+      "rich-text#part-service-3-title",
+      "rich-text#part-service-3-context",
+      "link#part-service-3-button"
+    ],
+    "props": {
+      "blockClass": "part-service-3"
+    }
+  },
+  "link#part-service-3-button": {
+    "props": {
+      "blockClass": "part-service-3-button",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "medium"
+      },
+      "href": "/dealers",
+      "label": "VIEW DEALERS"
+    },
+    "children": ["icon-caret#rightHome"]
+  },
+
+  "rich-text#part-service-3-title": {
+    "props": {
+      "text": " COMPLIMENTARY MULTI-POINT INSPECTION*",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "part-service-3-title"
+    }
+  },
+
+  "rich-text#part-service-3-context": {
+    "props": {
+      "text": "OFFER DETAILS",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ""
+      //   "href": "https://www.nissanusa.com/parts-service/en/dealer/Search"
+    }
+  },
+  "flex-layout.row#nissan-para": {
+    "children": ["flex-layout.col#nissan-para-1"],
+    "props": {
+      "blockClass": "nissan-para-1"
+    }
+  },
+
+  "flex-layout.col#nissan-para-1": {
+    "children": ["rich-text#nissan-para-1", "rich-text#nissan-para-2"]
+  },
+
+  "rich-text#nissan-para-1": {
+    "props": {
+      "text": "WHAT MAKES THE NISSAN EXPERIENCE DIFFERENT?",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "nissan-para-1"
+    }
+  },
+  "rich-text#nissan-para-2": {
+    "props": {
+      "text": "Because driving your Nissan vehicle should be as worry-free an experience as possible, which is why we provide you with a complimentary multi-point inspection every time you visit your participating Nissan dealer. Performed by factory-trained technicians, your vehicle will be thoroughly inspected from end to end. You will receive a detailed report of your vehicle’s condition outlining recommended maintenance items so you can take pride in knowing your vehicle is ready for the road ahead.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "flex-layout.row#service-card": {
+    "children": [
+      "flex-layout.col#service-card-1",
+      "flex-layout.col#service-card-2"
+    ]
+  },
+  "flex-layout.col#service-card-1": {
+    "children": [
+      "image#service-card-1",
+      "rich-text#service-card-1",
+      "rich-text#service-card-1-text"
+    ],
+    "props": {
+      "blockClass": "service-card-1"
+    }
+  },
+  "image#service-card-1": {
+    "props": {
+      "src": "https://www.nissanusa.com/parts-service/images/nissan/home/express-service-updated.png",
+      "maxHeight": "",
+      "blockClass": "left-col-manual"
+    }
+  },
+  "rich-text#service-card-1": {
+    "props": {
+      "text": "We know your time is important, which is why we developed the Nissan Express Service experience. It takes the hassle out of vehicle maintenance by providing fast, convenient and expert service on your schedule.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#service-card-1-text": {
+    "props": {
+      "text": "LEARN MORE",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+
+  "flex-layout.col#service-card-2": {
+    "children": [
+      "image#service-card-2",
+      "rich-text#service-card-2",
+      "rich-text#service-card-2-text"
+    ],
+    "props": {
+      "blockClass": "service-card-2"
+    }
+  },
+  "image#service-card-2": {
+    "props": {
+      "src": "https://www.nissanusa.com/parts-service/images/nissan/home/change-for-best-img.jpg",
+      "maxHeight": "",
+      "blockClass": "left-col-manual"
+    }
+  },
+  "rich-text#service-card-2": {
+    "props": {
+      "text": "We know your time is important, which is why we developed the Nissan Express Service experience. It takes the hassle out of vehicle maintenance by providing fast, convenient and expert service on your schedule.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#service-card-2-text": {
+    "props": {
+      "text": "SCHEDULE SERVICE",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  }
 }

@@ -27,14 +27,20 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
       const data = await makeAPICall(dealersListURL, "GET");
       console.log({ data });
       setSellers([...data]);
-      //  setZip([...data]);
+      // setZip([...data]);
     };
     getSellerAPICall();
   }, []);
 
   const list = sellers
-    .slice(0, 3)
-    // filter the store dealer with index to show on pdp
+    .filter(
+      (seller) =>
+        seller &&
+        (seller.name === "Tony Nissan" ||
+          seller.name === "New City Nisaan" ||
+          seller.name === "Nissan")
+    )
+    // filter the store dealer with dealer name to show on pdp
 
     .map((seller, i) => {
       let sellerHost =
@@ -65,19 +71,6 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
       );
     });
 
-  // const Calculate = () => {
-  //   setEstimate(!estimate);
-  //   console.log(estimate);
-  //   //doubt ---------------
-  //   const simulator = document.querySelector(
-  //     "shipping .vtex-store-components-3-x-shippingContainer"
-  //   );
-  //   console.log(simulator);
-
-  //   setEle(<Shipping />);
-  //   // console.log(ele);
-  // };
-
   //---------------------------
 
   const showDealer = (i) => {
@@ -92,14 +85,7 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
             <label>Shipping</label>
           </span>
 
-          {/* <button className={styles.estimatebtn} onClick={Calculate}>
-            Estimated Cost
-          </button> */}
-
-          <div className="shipping">
-            {ele}
-            {/* {<Shipping />} */}
-          </div>
+          <div className="shipping">{ele}</div>
         </div>
         <div className={styles.pickup}>
           <input type="radio" value="Pickup" name="shipping_method" />

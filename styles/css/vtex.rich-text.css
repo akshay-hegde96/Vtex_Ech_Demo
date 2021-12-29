@@ -271,8 +271,9 @@
   margin: 3rem auto;
   padding: 3rem 2rem;
 }
-.paragraph--header-top-sales {
-  color: white;
+.paragraph--contact-us {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .container--contact-us-spacer {
@@ -291,6 +292,14 @@
 }
 .dropdown--contact-us {
   margin: 5px auto;
+}
+@media only screen and (max-width: 560px) {
+  .container--contact-us-submit {
+    font-size: 1.3rem;
+    color: #424244;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+  }
 }
 
 /*----------------PDP Page---------------------- */
