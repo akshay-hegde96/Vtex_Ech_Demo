@@ -1,21 +1,23 @@
 {
   "store.home": {
     "blocks": [
-      "notification.bar",
-      "slider-layout#slides", //caraousal
+      // "notification.bar",
+      "info-card#homepage-main-banner",
+      "responsive-layout.desktop#home",
+      "responsive-layout.mobile#home",
+      // "slider-layout#slides", //caraousal
       "flex-layout.row#demo", // categories
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-    //  "info-card#shelf", // view all collections
-     "flex-layout.row#nissan-value",
-     "flex-layout.row#nissan-event",
+      "rich-text#nissan",
+      //"info-card#shelf", // view all collections
       "flex-layout.row#shelf",
-      "rich-text#accessories-header",
-      //"info-card#nissan-accessories",
-      "flex-layout.row#accessories",
-      "flex-layout.row#nissan-dealer",
-      "flex-layout.row#nissan-dealer-block",
+      // "newsletter" // view all shelf
       "back-to-top-button",
+      "flex-image-card",
       "modal-trigger#sale"
+     
     ],
     "parent": {
       "challenge": "challenge.trade-policy-condition"
@@ -28,13 +30,113 @@
     }
   },
 
-  // Notification-bar
-  "notification.bar": {
+  //----------------------------- A-spot Banner ------------------------------------------
+  "info-card#homepage-main-banner": {
     "props": {
-      "content": "FREE SHIPPING: Applies to USA orders over $2000+ | excluding HI, PR, AK, and CAN"
+      "id": "homepage-main-banner",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "textMode": "'rich-text'",
+      "imageUrl": "assets/home/nissan-aspot.jpg",
+      "headline": "##### NISSAN PARTS & ACCESSORIES ONLINE \n ### GENUINE NISSAN PARTS, ACCESSORIES, AND MERCHANDISE ONLINE",
+      "subhead": "Nissan promises innovation that’s guaranteed to excite. Maintain your Nissan with Genuine Nissan Parts from Nissan Parts & Accessories Online and ensure a smarter and more thrilling ride.",
+      "blockClass": "homepage-spot-banner",
+      "textAlignment": "left",
+      "callToActionMode": "none"
     }
   },
 
+  //------------------------------ Tab and accordion structure -------------------------
+  "responsive-layout.desktop#home": {
+    "children": ["flex-layout.row#homepage-car-model","modal-tabs"]
+  },
+  "responsive-layout.mobile#home": {
+    "children": ["flex-layout.row#homepage-car-model", "car-model-accordion"]
+  },
+  "flex-layout.row#homepage-car-model": {
+    "props": {
+      "blockClass": "homePageModelFlex",
+      "colSizing": "auto",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#homepage-model-left"
+      // "flex-layout.col#homepage-model-right"
+    ]
+  },
+  "flex-layout.col#homepage-model-left": {
+    "children": ["rich-text#homePageModel"],
+    "props": {
+      "blockClass": "richTextColLeft"
+    }
+  },
+  // "flex-layout.col#homepage-model-right": {
+  //   "children": ["modal-trigger#vin-number"],
+  //   "props": {
+  //     "blockClass": "richTextColRight"
+  //   }
+  // },
+  "rich-text#homePageModel": {
+    "props": {
+      "text": "### Select a Model",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  // "modal-trigger#vin-number": {
+  //   "children": ["flex-layout.row#vinNumberRow", "modal-layout#homePageVin"]
+  // },
+  // "flex-layout.row#vinNumberRow": {
+  //   "children": ["flex-layout.col#vinIcon", "flex-layout.col#vinText"],
+  //   "props": {
+  //     "colSizing": "auto",
+  //     "fullWidth": false,
+  //     "blockClass": "vinNumberTextContainer"
+  //   }
+  // },
+  // "flex-layout.col#vinIcon": {
+  //   "children": ["image#vinIcon"],
+  //   "props": {
+  //     "blockClass": "iconColumn"
+  //   }
+  // },
+  // "image#vinIcon": {
+  //   "props": {
+  //     "src": "assets/home/search-by-vin.png",
+  //     "width": "28px",
+  //     "height": "28px"
+  //   }
+  // },
+  // "flex-layout.col#vinText": {
+  //   "children": ["rich-text#homePageVin", "icon-caret#vinText"],
+  //   "props": {
+  //     "blockClass": "vinTextCol"
+  //   }
+  // },
+  // "icon-caret#vinText": {
+  //   "props": {
+  //     "orientation": "right",
+  //     "blockClass": "caret-vin-num"
+  //   }
+  // },
+  // "rich-text#homePageVin": {
+  //   "props": {
+  //     "text": "##### Search by VIN",
+  //     "blockClass": "vinText"
+  //   }
+  // },
+  // "modal-layout#homePageVin": {
+  //   "children": ["modal-header", "flex-layout.row#vin-form"]
+  // },
+  // "flex-layout.row#vin-form": {
+  //   "children": ["flex-layout.col#form"]
+  // },
+  // "flex-layout.col#vin-form": {
+  //   "children": [
+  //     // "rich-text#vinText",
+
+  //   ]
+  // },
   //-----------------------------caraousal------------------------------------------
 
   "slider-layout#slides": {
@@ -116,39 +218,40 @@
   },
 
   "flex-layout.col#left": {
-    "children": ["stack-layout#cta-clothing", "stack-layout#cta-sale"]
+    "children": ["stack-layout#nissanCat1", "stack-layout#nissanCat2"]
   },
 
   //-----------------category 1-------------------------------------------
 
-  "stack-layout#cta-clothing": {
+  "stack-layout#nissanCat1": {
     "props": {
       "blockClass": "category"
     },
-    "children": ["image#clothing", "link#cta-clothing"]
+    "children": ["image#nissanCat1", "link#cta-nissanCat1"]
   },
-  "image#clothing": {
+  "image#nissanCat1": {
     "props": {
-      "src": "assets/category1.jpg",
+      "src": "assets/home/home-categoy-tile-1.jpg",
       "width": "100%",
-      "height": "260px"
+      "height": "260px",
+      "blockClass": "home-tile-image"
     }
   },
 
-  "link#cta-clothing": {
+  "link#cta-nissanCat1": {
     "props": {
       "blockClass": "cta-button",
       "displayMode": "button",
       "buttonProps": {
-        "variant": "secondary",
+        "variant": "primary",
         "size": "medium"
       },
-      "href": "/electronics",
-      "label": "ELECTRONICS"
+      "href": "/accessories/engine-accessories",
+      "label": "ENGINE ACCESSORIES"
     },
-    "children": ["icon-caret#right"]
+    "children": ["icon-caret#rightHome"]
   },
-  "icon-caret#right": {
+  "icon-caret#rightHome": {
     "props": {
       "orientation": "right",
       "blockClass": "caret-home"
@@ -156,101 +259,104 @@
   },
   //--------------------------category 2--------------------------------------------
 
-  "stack-layout#cta-sale": {
+  "stack-layout#nissanCat2": {
     "props": {
       "blockClass": "category"
     },
-    "children": ["image#sale", "link#cta-sale"]
+    "children": ["image#nissanCat2", "link#cta-nissanCat2"]
   },
 
-  "image#sale": {
+  "image#nissanCat2": {
     "props": {
-      "src": "assets/category2.jpg",
+      "src": "assets/home/home-categoy-tile-3.jpg",
       "width": "100%",
-      "height": "350px"
+      "height": "460px",
+      "blockClass": "home-tile-image"
     }
   },
-  "link#cta-sale": {
+  "link#cta-nissanCat2": {
     "props": {
       "blockClass": "cta-button",
       "displayMode": "button",
       "buttonProps": {
-        "variant": "secondary",
+        "variant": "primary",
         "size": "medium"
       },
-      "href": "/major-appliances",
-      "label": "MAJOR APPLIANCES"
+      "href": "/accessories/ac-electronics-accessories",
+      "label": "AC/Electronics Accessories"
     },
-    "children": ["icon-caret#right"]
+    "children": ["icon-caret#rightHome"]
   },
 
   "flex-layout.col#right": {
-    "children": ["stack-layout#cta-shoes", "stack-layout#cta-racing"]
+    "children": ["stack-layout#nissanCat3", "stack-layout#nissanCat4"]
   },
 
   //-----------------category 3-------------------------------------------
 
-  "stack-layout#cta-shoes": {
+  "stack-layout#nissanCat3": {
     "props": {
       "blockClass": "category"
     },
-    "children": ["image#shoes", "link#cta-shoes"]
+    "children": ["image#nissanCat3", "link#cta-nissanCat3"]
   },
-  "image#shoes": {
+  "image#nissanCat3": {
     "props": {
-      "src": "assets/category3.jpg",
+      "src": "assets/home/home-categoy-tile-2.jpg",
       "width": "100%",
-      "height": "350px"
+      "height": "460px",
+      "blockClass": "home-tile-image"
     }
   },
 
-  "link#cta-shoes": {
+  "link#cta-nissanCat3": {
     "props": {
       "blockClass": "cta-button",
       "displayMode": "button",
       "buttonProps": {
-        "variant": "secondary",
+        "variant": "primay",
         "size": "medium"
       },
-      "href": "/small-appliances",
-      "label": "SMALL APPLIANCES"
+      "href": "/accessories/truck-and-towing",
+      "label": "BIKE RACK Accessories"
     },
-    "children": ["icon-caret#right"]
+    "children": ["icon-caret#rightHome"]
   },
 
   //-----------------category 4-------------------------------------------
 
-  "stack-layout#cta-racing": {
+  "stack-layout#nissanCat4": {
     "props": {
       "blockClass": "category"
     },
-    "children": ["image#racing", "link#cta-racing"]
+    "children": ["image#nissanCat4", "link#cta-nissanCat4"]
   },
 
-  "image#racing": {
+  "image#nissanCat4": {
     "props": {
-      "src": "assets/category4.webp",
+      "src": "assets/home/home-categoy-tile-4.jpg",
       "width": "100%",
-      "height": "260px"
+      "height": "260px",
+      "blockClass": "home-tile-image"
     }
   },
-  "link#cta-racing": {
+  "link#cta-nissanCat4": {
     "props": {
       "blockClass": "cta-button",
       "displayMode": "button",
       "buttonProps": {
-        "variant": "secondary",
+        "variant": "primary",
         "size": "medium"
       },
-      "href": "/sales",
-      "label": "SALES"
+      "href": "/accessories/interior-accessories",
+      "label": "Interior Accessories"
     },
-    "children": ["icon-caret#right"]
+    "children": ["icon-caret#rightHome"]
   },
 
   //--------------------------------View All Collections---------------------------
 
- /* "info-card#shelf": {
+  "info-card#shelf": {
     "props": {
       "id": "info-card-shelf",
       "isFullModeStyle": true,
@@ -261,114 +367,27 @@
       "blockClass": "shelfTitle",
       "textAlignment": "center"
     }
-  },*/
+  },
 
- /*"info-card#nissan-infocard": {
+  "rich-text#nissan": {
     "props": {
-      "id": "info-card-nissan",
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "assets/.jpg",
-      "headline": "Nissan Advantage Value",
-      "subhead":"shop value advantage parts:value advantage parts offer nissan-validated fit and performance at affordable prices.",
-     // "callToActionText": "DISCOVER",
-      //"callToActionUrl": "/sale/d",
-      "blockClass": "nissan-info",
-      "textAlignment": "left"
-    }
-  },*/
-
-  "flex-layout.row#nissan-value":{
-    "children":[
-      "flex-layout.col#nissan-value-1"
-    ],
-    "props":{
-      "blockClass":"nissan-value-container"
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Featured Parts And Accessories",
+      "font": "t-heading-5",
+      "blockClass": "summarySelfHeader"
     }
   },
-
-  "flex-layout.col#nissan-value-1":{
-    "children":[
-      "link#nissan-value-redirect1",
-      "link#nissan-value-redirect2"
-    ]
-  },
-
-  "link#nissan-value-redirect1": {
-    "props": {
-      "label": "Nissan Value Advantage®",
-      "href": "/major-appliances/refrigerators",
-      "blockClass": "redirect-nissan-value"
-
-    }
-  },
-  "link#nissan-value-redirect2": {
-    "props": {
-      "label": " Shop Value Advantage® Parts: Value Advantage® parts offer Nissan-validated fit and performance at affordable prices.",
-      "href": "/major-appliances/refrigerators",
-      "blockClass": "redirect-nissan-value"
-
-    }
-  },
-
-  "flex-layout.row#nissan-event":{
-    "children":[
-      "flex-layout.col#nissan-event-1"
-    ],
-    "props":{
-      "blockClass":"nissan-event-container"
-    }
-  },
-
-  "flex-layout.col#nissan-event-1":{
-    "children":[
-      "link#nissan-event-redirect1",
-      "link#nissan-event-redirect2"
-    ]
-  },
-
-  "link#nissan-event-redirect1": {
-    "props": {
-      "label": "The SiriusXM Listen Free Event is on now.",
-      "href": "/major-appliances/refrigerators",
-      "blockClass": "redirect-nissan-event"
-
-    }
-  },
-  "link#nissan-event-redirect2": {
-    "props": {
-      "label": "We’ve turned 100+ SXM channels on in your car and on the SXM App. Enjoy expertly curated ad-free music, sports, comedy talk and news for free thru Dec. 6.",
-      "href": "/major-appliances/refrigerators",
-      "blockClass": "redirect-nissan-event"
-
-    }
-  },  
-
-  /*"info-card#nissan-event": {
-    "props": {
-      "id": "info-card-event",
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "assets/nissanInfo3.jpg",
-      "headline": "The siriusXm Listen Free Event is on now.",
-      "subhead":"We've turned 100+ SXM channels on in your car and on the SXM App.Enjoy experty curated ad-free music,sports,comedy talk and news for free thru Dec 6",
-     // "callToActionText": "DISCOVER",
-      //"callToActionUrl": "/sale/d",
-      "blockClass": "nissan-event",
-      "textAlignment": "left"
-    }
-  },*/
-
-  
 
   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf#without-comparison"],
+    "blocks": ["product-summary.shelf#summary"],
     "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
+      //"collection": "142"
     }
   },
   "slider-layout#demo-products": {
@@ -383,278 +402,6 @@
       "blockClass": "shelf"
     }
   },
-
-  "rich-text#accessories-header": {
-    "props": {
-      "text": "**Genuine Nissan parts and accessories.**",
-      "blockClass": "accessories-header"
-    }
-  },
-
-  
-
- /* "info-card#nissan-accessories": {
-    "props": {
-      "id": "info-card-accessories",
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "assets/nissanInfo5.png",
-      "htmlid":"nissan-accessories",
-      "headline": "Nissan Parts & Accessories Online is your official online source for Nissan OEM parts designed to perfectly complement your Nissan.",
-      "subhead":"Maintain the exceptional level of innovation and excitement you’ve enjoyed since the day you purchased your Nissan. Find all the original parts and accessories your Nissan requires in the Nissan Parts & Accessories Online official online catalog, plus branded merchandise to show off the passion you have for your Nissan.",
-     // "callToActionText": "DISCOVER",
-      //"callToActionUrl": "/sale/d",
-      "blockClass": "nissan-accessories",
-      "textAlignment": "left"
-    }
-  },*/
-  "flex-layout.row#accessories":{
-    "children":[
-      "flex-layout.col#nissan-image",
-      "flex-layout.col#nissan-text"
-    ],
-    "props":{
-      "colSizing":"auto",
-      "blockClass":"accessories-container"
-    }
-  },
-
-  "flex-layout.col#nissan-image":{
-    "children":[
-      "image#nissan-accessories"
-    ]
-  },
-
-  "image#nissan-accessories": {
-    "props": {
-      "src": "assets/nissaninfo4.jpg",
-      "maxHeight": "",
-      "maxWidth": "",
-      "blockClass": "image-container"
-    }
-  },
-
-  "flex-layout.col#nissan-text":{
-   "children":[
-    "rich-text#nissan-content1",
-    "rich-text#nissan-content2"
-   ],
-   "props":{
-     "blockClass":"content-container"
-   }
-  },
- 
-  "rich-text#nissan-content1": {
-    "props": {
-      "text": "Nissan Parts & Accessories Online is your official online source for Nissan OEM parts designed to perfectly complement your Nissan. Maintain the exceptional level of innovation and excitement you’ve enjoyed since the day you purchased your Nissan.",
-      "blockClass": "nissan-content1"
-    }
-  }, 
-
-  "rich-text#nissan-content2": {
-    "props": {
-      "text": "Find all the original parts and accessories your Nissan requires in the Nissan Parts & Accessories Online official online catalog, plus branded merchandise to show off the passion you have for your Nissan.",
-      "blockClass": "nissan-content2"
-    }
-  },
-
-"flex-layout.row#nissan-dealer":{
-  "children":[
-    "flex-layout.col#header-text",
-    "flex-layout.col#link-block"
-  ]
-},
-
-"flex-layout.col#header-text":{
-  "children":[
-    "rich-text#tab-header"
-  ]
-},
-
-"flex-layout.col#link-block":{
-  /*"children":[
-    "link#shop-pincode",
-    "link#shop-moreDetails"
-  ]*/
-},
-
-/*"link#shop-pincode":{
-  "props": {
-    "blockClass": "tony-button",
-    "displayMode": "button",
-    "buttonProps": {
-      "variant": "primary",
-      "size": "medium"
-    },
-    "href": "https://www.tonynissanparts.com/",
-    "label": "6000"
-  }
-},
-
-"link#shop-moreDetails":{
-  "props": {
-    "blockClass": "tony-button",
-    "displayMode": "button",
-    "buttonProps": {
-      "variant": "primary",
-      "size": "medium"
-    },
-    "href": "https://www.tonynissanparts.com/",
-    "label": "VIEW MORE DETAILS"
-  }
-},*/
-
-
-  "rich-text#tab-header": {
-    "props": {
-      "text": "**Your Nearest Participating Dealers**",
-      "blockClass": "tab-header"
-    }
-  },
-
-  "flex-layout.row#nissan-dealer-block":{
-    "children":[
-      "flex-layout.col#nissan-dealer-col1",
-      "flex-layout.col#nissan-dealer-col2",
-      "flex-layout.col#nissan-dealer-col3"
-    ],
-    "props":{
-      "blockClass":"dealer-row-container"
-    }
-  },
-
-  "flex-layout.col#nissan-dealer-col1":{
-    "children":[
-      "link#redirect-tonyNissan1",
-      "link#redirect-tonyNissan2",
-      "link#shop-tonyNissan"
-    ],
-    "props": {
-      "label": "Refrigerators",
-      "blockClass": "nissan-dealer-col1"
-    }
-  },
-
-  "link#redirect-tonyNissan1": {
-    "props": {
-      "label": "Tony Nissan",
-      "href": "https://www.tonynissanparts.com/",
-      "blockClass": "redirect-tonyNissan"
-
-    }
-  },
-
-  "link#redirect-tonyNissan2": {
-    "props": {
-      "label": "Distance:7822.03 mi",
-      "href": "https://www.tonynissanparts.com/",
-      "blockClass": "redirect-tonyNissan"
-
-    }
-  },
-
-  "link#shop-tonyNissan":{
-    "props": {
-      "blockClass": "tony-button",
-      "displayMode": "button",
-      "buttonProps": {
-        "variant": "primary",
-        "size": "medium"
-      },
-      "href": "https://www.tonynissanparts.com/",
-      "label": "SHOP NOW"
-    }
-  },
-
-
-  "flex-layout.col#nissan-dealer-col2":{
-    "children":[
-      "link#redirect-newcityNissan1",
-      "link#redirect-newcityNissan2",
-      "link#shop-newcityNissan"
-    ],
-    "props": {
-      "label": "Refrigerators",
-      "blockClass": "nissan-dealer-col1"
-    }
-  },
-
-  "link#redirect-newcityNissan1": {
-    "props": {
-      "label": "New City Nissan",
-      "href": "https://www.newcitynissanparts.com/?referer=parts.nissanusa.com&machineIDT1=o15fd4ei3owyg0gip0a3c4pk",
-      "blockClass": "redirect-tonyNissan"
-
-    }
-  },
-
-  "link#redirect-newcityNissan2": {
-    "props": {
-      "label": "Distance:7830.77 mi",
-      "href": "https://www.newcitynissanparts.com/?referer=parts.nissanusa.com&machineIDT1=o15fd4ei3owyg0gip0a3c4pk",
-      "blockClass": "redirect-tonyNissan"
-
-    }
-  },
-
-  "link#shop-newcityNissan":{
-    "props": {
-      "blockClass": "tony-button",
-      "displayMode": "button",
-      "buttonProps": {
-        "variant": "primary",
-        "size": "medium"
-      },
-      "href": "https://www.newcitynissanparts.com/?referer=parts.nissanusa.com&machineIDT1=o15fd4ei3owyg0gip0a3c4pk",
-      "label": "SHOP NOW"
-    }
-  },
-
-  
-  "flex-layout.col#nissan-dealer-col3":{
-    "children":[
-      "link#redirect-kingNissan1",
-      "link#redirect-kingNissan2",
-      "link#shop-kingNissan"
-    ],
-    "props": {
-      "label": "Refrigerators",
-      "blockClass": "nissan-dealer-col1"
-    }
-  },
-
-  "link#redirect-kingNissan1": {
-    "props": {
-      "label": "KING WINDWARD NISSAN",
-      "href": "https://parts.kingwindwardnissan.com/?referer=parts.nissanusa.com&machineIDT1=o15fd4ei3owyg0gip0a3c4pk",
-      "blockClass": "redirect-tonyNissan"
-
-    }
-  },
-
-  "link#redirect-kingNissan2": {
-    "props": {
-      "label": "Distance:7822.03 mi",
-      "href": "https://parts.kingwindwardnissan.com/?referer=parts.nissanusa.com&machineIDT1=o15fd4ei3owyg0gip0a3c4pk",
-      "blockClass": "redirect-tonyNissan"
-
-    }
-  },
-
-  "link#shop-kingNissan":{
-    "props": {
-      "blockClass":  "tony-button",
-      "displayMode": "button",
-      "buttonProps": {
-        "variant": "primary",
-        "size": "medium"
-      },
-      "href": "https://parts.kingwindwardnissan.com/?referer=parts.nissanusa.com&machineIDT1=o15fd4ei3owyg0gip0a3c4pk",
-      "label": "SHOP NOW"
-    }
-  },
-
-
   // back to top button
   "back-to-top-button": {
     "props": {
@@ -662,11 +409,11 @@
       "display": "caret-icon"
     }
   },
-  // modal on home page set to appear for every reload.
+  // modal
   "modal-trigger#sale": {
     "children": ["modal-layout#sale"],
     "props": {
-      "trigger": "load"
+      "trigger": "load-session"
     }
   },
 
@@ -691,6 +438,124 @@
       "callToActionUrl": "/sales",
       "blockClass": "info-card-sale",
       "textAlignment": "center"
+    }
+  },
+  "modal-tabs":{
+    "props":{
+       "modelData" :  [
+
+        {
+          "label": "POPULAR MODELS",
+          "contentType": "car",
+          "content": [
+            { "url": "javascript:void(0)", "modelName": "Altima", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-370zcoupe.png"},
+            { "url": "javascript:void(0)", "modelName": "Leaf", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-leaf.png"},
+            { "url": "javascript:void(0)", "modelName": "Maxima", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-maxima.png" },
+            { "url": "javascript:void(0)", "modelName": "Rogue", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-rogue.png" },
+            { "url": "javascript:void(0)", "modelName": "Sentra", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-sentra.png" },
+            { "url": "javascript:void(0)", "modelName": "Titan", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-titan.png" }
+          ]
+        },
+        {
+          "label": "CARS",
+          "contentType": "car",
+          "content": [
+            { "url": "javascript:void(0)", "modelName": "Altima", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-370zcoupe.png" },
+            { "url": "javascript:void(0)", "modelName": "Leaf", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-leaf.png"},
+            { "url": "javascript:void(0)", "modelName": "Maxima", "img":  "https://echidna.vteximg.com.br/arquivos/jellybean-maxima.png" },
+            { "url": "javascript:void(0)", "modelName": "Versa", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-rogue.png" },
+            { "url": "javascript:void(0)", "modelName": "Sentra", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-sentra.png" },
+            { "url": "javascript:void(0)", "modelName": "Versa Note", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-titan.png" }
+          ]
+        },
+        {
+          "label": "CLASSICS",
+          "contentType": "car",
+          "content": [
+            { "url": "javascript:void(0)", "modelName": "200SX", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "240SX", "img":  "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "240Z", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "260Z", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "280Z", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "280ZX", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "300ZX", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "310", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "310GX", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "350Z", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "410", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "411", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" }
+          ]
+        },
+        {
+          "label": "COMMERCIAL",
+          "contentType": "car",
+          "content": [
+            { "url": "javascript:void(0)", "modelName": "Frontier", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-xterra.png" },
+            { "url": "javascript:void(0)", "modelName": "NV1500", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-roguesport.png" },
+            { "url": "javascript:void(0)", "modelName": "NV200", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-nv.png" },
+            { "url": "javascript:void(0)", "modelName": "NV200 Taxi", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-nv-taxi.png" },
+            { "url": "javascript:void(0)", "modelName": "NV2500", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "NV3500", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "Titan", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-titan.png" }
+          ]
+        },
+        {
+          "label": "CROSSOVERS & SUVS",
+          "contentType": "car",
+          "content": [
+            { "url": "javascript:void(0)", "modelName": "Armada", "img":"https://echidna.vteximg.com.br/arquivos/jellybean-xterra.png"},
+            { "url": "javascript:void(0)", "modelName": "Juke", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-roguesport.png" },
+            { "url": "javascript:void(0)", "modelName": "Kicks", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-nv.png" },
+            { "url": "javascript:void(0)", "modelName": "Murano", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-nv-taxi.png" },
+            { "url": "javascript:void(0)", "modelName": "Path Finder", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "Quest", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-titan.png" },
+            { "url": "javascript:void(0)", "modelName": "Rogue", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-roguesport.png" },
+            { "url": "javascript:void(0)", "modelName": "Rogue Sport", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-rogue.png" },
+            { "url": "javascript:void(0)", "modelName": "Xterra", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-titan.png" }
+          ]
+        },
+        {
+          "label": "ELECTRIC",
+          "contentType": "date",
+          "content": [
+            { "url": "javascript:void(0)", "modelName": "2021", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "2020", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "2019", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "2018", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "2017", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "2016", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" }
+          ]
+        },
+        {
+          "label": "SPORTS CARS",
+          "contentType": "car",
+          "content": [
+            { "url": "javascript:void(0)", "modelName": "370Z", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-placeholder.png" },
+            { "url": "javascript:void(0)", "modelName": "GT-R", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-titan.png" }
+          ]
+        },
+        {
+          "label": "TRUCKS",
+          "contentType": "car",
+          "content": [
+            { "url": "javascript:void(0)", "modelName": "Frontier", "img": "https://echidna.vteximg.com.br/arquivos/jellybean-frontier.png" },
+            { "url": "javascript:void(0)", "modelName": "Titan", "img": ".https://echidna.vteximg.com.br/arquivos/jellybean-titan.png" }
+          ]
+        }
+      ]
+    }
+  },
+  "flex-image-card":{
+    "props":{
+      "imgWidth":"60",
+      "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfvoWt13YYjgo_KrFvaDXlFXeO-DY1dAskIQ&usqp=CAU",
+      "contentWidth":"40",
+      "heading":"Nissan",
+      "headerBlockClass":"content-header",
+      "subHeading":"What is Lorem Ipsum?",
+      "subHeaderBlockClass":"sub-header",
+      "paragraphBlockClass":"paragraph",
+      "paragraphs":["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.","The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."]
     }
   }
 }

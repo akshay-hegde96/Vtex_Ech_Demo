@@ -6,24 +6,18 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": [
-      //"flex-layout.row#1-desktop", // Telemarketing-- definition removed
-      "sticky-layout#2-desktop", // Launguage selector, My account, Logo, Search bar, Minicart.
-      //"flex-layout.row#3-desktop", // Main menu shop and about us-- definition removed
-      //-----------------//main header menu-------------------------------------------------
-      "flex-layout.row#4-desktop"
-    ]
+    "children": ["flex-layout.row#2-desktop","sticky-layout#2-desktop"]
   },
-  // "sticky-layout#2-desktop" -- Start
+  //============== Top-bar starts =====================
   "sticky-layout#2-desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#2-desktop"]
+    "children": [ "flex-layout.row#4-desktop"]
   },
   "flex-layout.row#2-desktop": {
     "props": {
-      "blockClass": "main-header",
+      "blockClass": "nissan-main-header",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
@@ -31,70 +25,133 @@
       "fullWidth": true
     },
     "children": [
+      "notification.bar",
+      "flex-layout.col#spacer",
       "locale-switcher",
-      //"login",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
-      "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
-      // "overlay-trigger#search-icon",
-      "disclosure-layout#header-search",
-      "minicart.v2"
+      "flex-layout.col#category-menu"
     ]
   },
-  "flex-layout.col#logo-desktop": {
+  "notification.bar": {
     "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["logo#desktop"]
-  },
-  "flex-layout.col#category-menu": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["myaccount-menu"],
-    "parent": {
-      "challenge": "challenge.trade-policy-condition"
+      "content": "Promo section Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     }
-  },
-  "myaccount-menu": {
-    "parent": {
-      "challenge": "challenge.trade-policy-condition"
-    }
-  },
-  "challenge.trade-policy-condition": {
-    "props": {
-      "redirectPath": "/login",
-      "defaultContentVisibility": "hidden"
-    }
-  },
-  "logo#desktop": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "assets/logo.png",
-      "width": "180"
-    }
-  },
-  // "sticky-layout#2-desktop" -- End
-  // "flex-layout.row#3-desktop" -- Start
-  "flex-layout.row#3-desktop": {
-    "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": ["vtex.menu@2.x:menu#websites", "flex-layout.col#spacer"]
   },
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
     }
   },
-  //"sticky-layout#2-desktop" -- End
-  // "header-layout.mobile" -- Start
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+     "children": ["sub-menu-account"] //React component
+  },
+  //====================== Top-bar -- Ends=======================
+  // ====================== Header--second-row- Starts==============
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "nissan-main-menu-static",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      // "flex-layout.col#logo-desktop",
+      "logo#desktop",
+      "flex-layout.col#spacer",
+      "flex-layout.col#main-menu-static",
+      "flex-layout.col#spacer",
+      // "overlay-trigger#search-icon",
+      "disclosure-layout#header-search",
+      "minicart.v2"
+    ]
+  },
+// "flex-layout.col#logo-desktop":{
+// "children":[
+//   "logo#desktop"
+// ],
+// "props":{
+//   "blockClass"
+// }
+// },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/nissan-logo.png",
+      "width": "96",
+      "height": "80",
+      "blockClass":"nissan-desktop-logo"
+    }
+  },
+  "flex-layout.col#main-menu-static": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#main-menu-static"]
+  },
+  "overlay-trigger#search-icon": {
+    "props": {
+      "blockClass": "custom-search-overlay-trigger"
+    },
+    "children": ["search-icon-button", "overlay-layout#search-bar"]
+  },
+  "overlay-layout#search-bar": {
+    "children": ["search-bar"],
+    "props": {
+      "blockClass": "custom-search-overlay"
+    }
+  },
+  "disclosure-layout#header-search": {
+    "children": [
+      "disclosure-trigger#header-trigger",
+      "disclosure-content#header-content"
+    ]
+  },
+  "disclosure-trigger#header-trigger": {
+    "props": {
+      "blockClass": "searchBarIcon"
+    },
+    "children": ["disclosure-state-indicator#header-icons"]
+  },
+  "disclosure-content#header-content": {
+    "children": ["search-bar"]
+  },
+  "disclosure-state-indicator#header-icons": {
+    "props": {
+      "Show": "search-icon-button",
+      "Hide": "remove-icon-button"
+    }
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "placeholder": "Enter Your Keyword / Search by VIN",
+      "displayMode": "search-and-clear-buttons",
+      "openAutocompleteOnFocus": true,
+      "autocompleteFullWidth": true,
+      "containerMode": "container",
+      "maxWidth": "100%",
+      "blockClass": "custom-overlay-search-bar"
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf#summary"],
+    "props": {
+      "data": {
+        "One": "1",
+        "Two": "2",
+        "Three": "3"
+      },
+      "maxTopSearches": 5
+    }
+  },
+  //  ================= Header second row ENDS==================
+
+  //  =================== Header layout Mobile starts ===============
   "header-layout.mobile": {
     "children": ["sticky-layout#1-mobile"]
   },
@@ -111,7 +168,7 @@
       "minicart.v2"
     ],
     "props": {
-      "blockClass": "main-header-mobile",
+      "blockClass": "nissan-main-header-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
@@ -123,11 +180,11 @@
   "menu#drawer": {
     "children": [
       "menu-item#static-account-mobile",
-      "menu-item#static-category-electronics-mobile",
-      "menu-item#static-category-small-appliances-mobile",
-      "menu-item#static-category-major-appliances-mobile",
-      // "menu-item#static-category-test-mobile",
-      "menu-item#sales"
+      "menu-item#static-category-parts-mobile",
+      "menu-item#static-category-merchandise-mobile",
+      "menu-item#static-category-accessories-mobile",
+      "menu-item#static-category-nismo-mobile"
+      // "menu-item#sales"
     ],
     "props": {
       "orientation": "vertical"
@@ -191,7 +248,7 @@
   },
   "menu-item#account-my-wishlist": {
     "props": {
-      "blockClass": "sub-header",
+      "blockClass": "sub-header-wishlist",
       "id": "menu-item-account-my-wishlist",
       "type": "custom",
       "iconId": null,
@@ -273,9 +330,9 @@
   },
   //----------------------
 
-  "menu-item#static-category-electronics-mobile": {
+  "menu-item#static-category-parts-mobile": {
     "props": {
-      "id": "menu-item-category-electronics-mobile",
+      "id": "menu-item-category-parts-mobile",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -283,24 +340,24 @@
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Electronics",
-        "text": "Electronics"
+        "tagTitle": "Parts",
+        "text": "Parts"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#static-category-electronics-mobile"
+      "vtex.menu@2.x:submenu.accordion#static-category-Car-parts-mobile"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#static-category-electronics-mobile": {
+  "vtex.menu@2.x:submenu.accordion#static-category-Car-parts-mobile": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#static-category-electronics"]
+    "children": ["vtex.menu@2.x:menu#static-category-Car-parts"]
   },
 
-  "menu-item#static-category-major-appliances-mobile": {
+  "menu-item#static-category-accessories-mobile": {
     "props": {
-      "id": "menu-item-category-major-appliances-mobile",
+      "id": "menu-item-category-accessories-mobile",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -308,24 +365,24 @@
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Major-Appliances",
-        "text": "Major-Appliances"
+        "tagTitle": "Accessories",
+        "text": "Accessories"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#static-category-major-appliances-mobile"
+      "vtex.menu@2.x:submenu.accordion#static-category-accessories-mobile"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#static-category-major-appliances-mobile": {
+  "vtex.menu@2.x:submenu.accordion#static-category-accessories-mobile": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#static-category-major-appliances"]
+    "children": ["vtex.menu@2.x:menu#static-category-accessories"]
   },
 
-  "menu-item#static-category-small-appliances-mobile": {
+  "menu-item#static-category-merchandise-mobile": {
     "props": {
-      "id": "menu-item-category-small-appliances-mobile",
+      "id": "menu-item-category-merchandise-mobile",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -333,23 +390,23 @@
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Small-Appliances",
-        "text": "Small-Appliances"
+        "tagTitle": "Merchandise",
+        "text": "Merchandise"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#static-category-small-appliances-mobile"
+      "vtex.menu@2.x:submenu.accordion#static-category-merchandise-mobile"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#static-category-small-appliances-mobile": {
+  "vtex.menu@2.x:submenu.accordion#static-category-merchandise-mobile": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#static-category-small-appliances"]
+    "children": ["vtex.menu@2.x:menu#static-category-merchandise"]
   },
-  "menu-item#static-category-test-mobile": {
+  "menu-item#static-category-nismo-mobile": {
     "props": {
-      "id": "menu-item-category-test-mobile",
+      "id": "menu-item-category-nismo-mobile",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -357,100 +414,103 @@
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Test",
-        "text": "Test"
+        "tagTitle": "NISMO",
+        "text": "NISMO"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#static-category-test-mobile"]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#static-category-nismo-mobile"]
   },
-  "vtex.menu@2.x:submenu.accordion#static-category-test-mobile": {
+  "vtex.menu@2.x:submenu.accordion#static-category-nismo-mobile": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#static-category-test"]
+    "children": ["vtex.menu@2.x:menu#static-category-nismo"]
   },
 
   "logo#mobile": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/logo.png",
+      "url": "assets/nissan-logo.png",
       "width": "70"
     }
   },
   // "header-layout.mobile" -- End
-  //----------------------main-header-menu----------------------------------------------------------
-  "flex-layout.row#4-desktop": {
-    "props": {
-      "blockClass": "main-menu-static",
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": ["flex-layout.col#main-menu-static"]
-  },
-  "flex-layout.col#main-menu-static": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#main-menu-static"]
-  },
-  "overlay-trigger#search-icon": {
-    "props": {
-      "blockClass": "custom-search-overlay-trigger"
-    },
-    "children": ["search-icon-button", "overlay-layout#search-bar"]
-  },
-  "overlay-layout#search-bar": {
-    "children": ["search-bar"],
-    "props": {
-      "blockClass": "custom-search-overlay"
-    }
-  },
-  "disclosure-layout#header-search": {
-    "children": [
-      "disclosure-trigger#header-trigger",
-      "disclosure-content#header-content"
-    ]
-  },
-  "disclosure-trigger#header-trigger": {
-    "props": {
-      "blockClass": "searchBarIcon"
-    },
-    "children": ["disclosure-state-indicator#header-icons"]
-  },
-  "disclosure-content#header-content": {
-    "children": ["search-bar"]
-  },
-  "disclosure-state-indicator#header-icons": {
-    "props": {
-      "Show": "search-icon-button",
-      "Hide": "remove-icon-button"
-    }
-  },
-  "search-bar": {
-    "blocks": ["autocomplete-result-list.v2"],
-    "props": {
-      "placeholder": "Enter Your Keyword",
-      "displayMode": "search-and-clear-buttons",
-      "openAutocompleteOnFocus": true,
-      "autocompleteFullWidth": true,
-      "containerMode": "container",
-      "maxWidth": "100%",
-      "blockClass": "custom-overlay-search-bar"
-    }
-  },
-  "autocomplete-result-list.v2": {
-    "blocks": ["product-summary"],
-    "props": {
-      "data": {
-        "One": "1",
-        "Two": "2",
-        "Three": "3"
+
+ "sub-menu-account":{
+    "props":{
+      "menus":[{
+        "name":"My Account",
+        "link":"/account",
+        "img":"https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/561DC964-C331-436E-A1E8-D45C286AB76D.svg"
+      },{
+        "name":"Checkout",
+        "link":"/checkout"
       },
-      "maxTopSearches": 5
+      {
+        "name":"MODELS",
+        "children":[
+          {
+            "name":"Altima",
+            "link":"/checkout"
+          },
+          {
+            "name":"Leaf",
+            "link":"/checkout"
+          },
+          {
+            "name":"Maxima",
+            "link":"/checkout"
+          },
+          {
+            "name":"Rogue",
+            "link":"/checkout"
+          },
+          {
+            "name":"Sentra",
+            "link":"/checkout"
+          }
+
+        ]
+      },
+      {
+        "name":"Register",
+        "link":"/login"
+      },
+      {
+        "name":"POPULAR",
+        "children":[
+          {
+            "name":"Altima",
+            "link":"/checkout"
+          },
+          {
+            "name":"Leaf",
+            "link":"/checkout"
+          },
+          {
+            "name":"Maxima",
+            "link":"/checkout"
+          },
+          {
+            "name":"Rogue",
+            "link":"/checkout"
+          },
+          {
+            "name":"Sentra",
+            "link":"/checkout"
+          }
+
+        ]
+      },
+
+      {
+        "name":"Login",
+        "link":"/login"
+      }
+    ]
     }
   }
 }
+
+
