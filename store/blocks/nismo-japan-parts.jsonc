@@ -1,22 +1,45 @@
 {
-    "store.custom#nismo-japan-parts": {
-      "blocks": [
-        "flex-layout.row#japan-parts-img"
-          ]
-    },
-    "flex-layout.row#japan-parts-img":{
-      "props":{
-        "blockClass":"japan-parts-img"
+  "store.custom#nismo-japan-parts": {
+    "blocks": [
+      // "flex-layout.row#japan-parts-img"
+      "layout-row"
+    ]
+  },
+  "layout-row": {
+    "props": {
+      "textBlock": "GENUINE 2020 NISSAN Car Parts* PARTS",
+      "textContent": "A 2020 Nissan Car Parts combines innovation and efficiency with uncompromised driving enjoyment. Repairing or updating your 2020 Nissan Car Parts with OEM parts ensures that same excitement for the full life of your Nissan.",
+      "textBlockProperties": {
+        "textImage": "https://echidna.vtexassets.com/arquivos/engine_135.png",
+        "textImageHeight": "200px",
+        "textImageWidth": "450px",
+        "textAlign": "center",
+        "textColor": "white",
+        "textBackground": "black"
       },
-      "children":[
-        "image#japan-parts-img"
-      ]
-    },
-    "image#japan-parts-img":{
-      "props":{
-        "src":"https://www.nismo.co.jp/products/nismo_parts/img/main2021.jpg",
-        "maxHeight":"30",
-        "blockClass":"japan-parts-img"
-      }
+      "imageBlockSrc": "https://echidna.vtexassets.com/arquivos/banner_135.png",
+      "imageBlockLink": "/",
+      "imageBlockProperties": {
+        "fullWidth": true,
+        "positionTop": true,
+        "imageHeight": "300px"
+      },
+      "blockClass": "layoutRow"
     }
   }
+  // "flex-layout.row#japan-parts-img":{
+  //   "props":{
+  //     "blockClass":"japan-parts-img"
+  //   },
+  //   "children":[
+  //     "image#japan-parts-img"
+  //   ]
+  // },
+  // "image#japan-parts-img":{
+  //   "props":{
+  //     "src":"https://www.nismo.co.jp/products/nismo_parts/img/main2021.jpg",
+  //     "maxHeight":"30",
+  //     "blockClass":"japan-parts-img"
+  //   }
+  // }
+}
