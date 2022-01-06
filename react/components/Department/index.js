@@ -54,7 +54,7 @@ const Department = (props) => {
                           sub_catImgArr.map((imgUrl, i)=>{
                             if( index === i) {
                               return (
-                                <props.CategoryTiles categoryObj={category} imgUrl={imgUrl} />
+                                <props.CategoryTiles categoryName={category.name} categoryUrl={category.url} imgUrl={imgUrl} />
                               );
                             }
                           })
