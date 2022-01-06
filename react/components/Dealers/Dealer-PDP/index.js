@@ -50,7 +50,7 @@ const DealerList_PDP = ({ VtexComp, Shipping }) => {
             //onClick={() => showDealer(i)}
             // href={`https://tonydemo--nissan.myvtex.com/${productContextValue?.product?.cacheId}/p?seller=${seller.Name}`}
             //onClick={() => showDealer(i)}
-             href={`${seller.hostUrl}/${productContextValue?.product?.cacheId}/p?seller=${seller.name}`}
+             href={`${seller.hostUrl}/${productContextValue?.product?.cacheId}/p?seller=${seller.name}`}>
             SHOP NOW
           </a>
         </div>
