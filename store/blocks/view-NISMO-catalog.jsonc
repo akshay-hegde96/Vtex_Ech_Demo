@@ -1,25 +1,34 @@
 {
     "store.custom#view-NISMO-catalog": {
       "blocks": [
-        "flex-layout.row#nismo-catalog"
+        "two-col-layout"
           ]
     },
-    "rich-text#view-NISMO-catalog": {
-      "props": {
-        "text": "## View NISMO Catalog",
-        "textPosition": "CENTER",
-        "textAlignment": "CENTER"
-      }
-    },
-    "flex-layout.row#nismo-catalog":{
-      "children":[
-        "image#nismo-catalog"
-      ]
-    },
-    "image#nismo-catalog":{
+    "two-col-layout":{
       "props":{
-        "src":"https://i.pinimg.com/736x/a1/0d/98/a10d98b8f28af8ddf7edf30998768a26.jpg",
-        "blockClass":"img-nismo-catalog"
+        "imageUrl1":"https://www-europe.nissan-cdn.net/content/dam/Nissan/global/experience_nissan/performance/18tdigb-helios301.jpg",
+        "heading":"NISMO Catalog",
+        "subHeading":"Nissan Motorsports International Co., Ltd.",
+        "secondColFirstParagraph":"With a name derived from NISsan MOtorsport, NISMO is the embodiment of ultimate Nissan performance. Who is NISMO? An elite group of engineers and test drivers who have worked, driven, and won on every level. Combining unmatched dedication, skill and passion, NISMO creates road cars that offer a uniquely thrilling and authentic experience.",
+        "secondColSecondParagraph":"As passionate as we are about performance, we are also dedicated to the idea that the joy of owning and driving a NISMO vehicle should be available to every enthusiast. So we are pleased to offer a wide range of vehicles, where everything from enhanced aerodynamics to competition-tuned suspensions to race-inspired cockpits put you in the sweet spot of track-inspired performance and a road car you feel comfortable driving on your daily commute."
       }
     }
+    // "rich-text#view-NISMO-catalog": {
+    //   "props": {
+    //     "text": "## View NISMO Catalog",
+    //     "textPosition": "CENTER",
+    //     "textAlignment": "CENTER"
+    //   }
+    // },
+    // "flex-layout.row#nismo-catalog":{
+    //   "children":[
+    //     "image#nismo-catalog"
+    //   ]
+    // },
+    // "image#nismo-catalog":{
+    //   "props":{
+    //     "src":"https://i.pinimg.com/736x/a1/0d/98/a10d98b8f28af8ddf7edf30998768a26.jpg",
+    //     "blockClass":"img-nismo-catalog"
+    //   }
+    // }
   }
