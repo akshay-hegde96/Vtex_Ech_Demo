@@ -9,7 +9,7 @@
 
       "product-summary-space",
       "product-summary-space",
-      "viewdetails-button",
+      "button",
       "product-comparison-block.selector"
     ]
   },
@@ -33,7 +33,7 @@
       "product-summary-space",
       //"product-summary-sku-selector",
       //"add-to-cart-button"
-      "viewdetails-button"
+      "button"
     ],
     "props": {
       "blockClass": "summary"

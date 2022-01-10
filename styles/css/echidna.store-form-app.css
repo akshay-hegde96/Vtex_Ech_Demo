@@ -1,0 +1,27 @@
+.formText_submit--form-text,
+.formText_reset--form-text,
+.formEmail_submit--form-email,
+.formEmail_reset--form-email,
+.formPassword_submit--form-password,
+.formPassword_reset--form-password,
+.formCheckbox_submit--form-checkbox,
+.formText_submit--form-vin,
+.formText_reset--form-vin{
+    display:none;
+}
+.formText_input--form-text,
+.formUsername_input--form-password
+{
+    width: 95%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.formEmail_input--form-email,
+.formText_input--form-vin{
+    width: 98%;
+    height: 40px;
+} 
+
+.formCheckbox_input--form-checkbox{
+    margin: 4px;
+}

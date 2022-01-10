@@ -74,12 +74,15 @@
           "rich-text#vip-header",
           "rich-text#formTitle",
           "flex-layout.row#name",
-          "form-input.text#email",
+          // "form-input.text#email",
+          "store-form#email",
           "rich-text#vehicle-info",
           "flex-layout.row#year-model",
           "flex-layout.row#drive-trim",
-          "form-input.text#vin",
+          // "form-input.text#vin",
+          "store-form#vin",
           "rich-text#password",
+
           "flex-layout.row#password",
           "rich-text#spacer",
           "flex-layout.row#agreement",
@@ -101,8 +104,9 @@
         "props":{
           "blockClass":"vip-name"
         },
-        "children":["form-input.text#firstName",
-          "form-input.text#lastName"]
+        "children":[
+          "store-form#firstname",
+          "store-form#lastname" ]
       },
 
       "rich-text#formTitle": {
@@ -126,12 +130,12 @@
 
         }
       },
-      "form-input.text#email":{
-        "props": {
-          "pointer": "#/properties/email",
-          "blockClass":"vip-email"
-        }
-      },
+      // "form-input.text#email":{
+      //   "props": {
+      //     "pointer": "#/properties/email",
+      //     "blockClass":"vip-email"
+      //   }
+      // },
       "rich-text#vehicle-info":{
         "props": {
           "text": "Vehicle Information",
@@ -141,44 +145,48 @@
         }
       },
       "flex-layout.row#year-model":{
-        "children":["form-input.text#year",
-          "form-input.text#model"]
+        "children":[
+          "store-form#year",
+          "store-form#model"
+         ]
       },
-      "form-input.text#year":{
-        "props": {
-          "pointer": "#/properties/year"
-        }
-      },
-      "form-input.text#model":{
-        "props": {
-          "pointer": "#/properties/model"
-        }
-      },
+      // "form-input.text#year":{
+      //   "props": {
+      //     "pointer": "#/properties/year"
+      //   }
+      // },
+      // "form-input.text#model":{
+      //   "props": {
+      //     "pointer": "#/properties/model"
+      //   }
+      // },
       "flex-layout.row#drive-trim":{
         "props":{
           "blockClass":"drive-trim"
         },
-        "children":["form-input.text#driveLine",
-          "form-input.text#trimLevel"]
+        "children":[
+          "store-form#drive",
+          "store-form#trim"
+          ]
       },
-      "form-input.text#driveLine":{
-        "props": {
-          "pointer": "#/properties/driveLine",
-          "blockClass":"driveLine"
-        }
-      },
-      "form-input.text#trimLevel":{
-        "props": {
-          "pointer": "#/properties/trimLevel",
-          "blockClass":"trimLevel"
-        }
-      },
-      "form-input.text#vin":{
-        "props": {
-          "pointer": "#/properties/vin",
-          "blockClass":"vin-num"
-        }
-      },
+      // "form-input.text#driveLine":{
+      //   "props": {
+      //     "pointer": "#/properties/driveLine",
+      //     "blockClass":"driveLine"
+      //   }
+      // },
+      // "form-input.text#trimLevel":{
+      //   "props": {
+      //     "pointer": "#/properties/trimLevel",
+      //     "blockClass":"trimLevel"
+      //   }
+      // },
+      // "form-input.text#vin":{
+      //   "props": {
+      //     "pointer": "#/properties/vin",
+      //     "blockClass":"vin-num"
+      //   }
+      // },
       "rich-text#password":{
         "props": {
           "text": "Create Password",
@@ -191,23 +199,24 @@
         "props":{
           "blockClass":"password-row"
         },
-        "children":["form-input.text#password",
-          "form-input.text#confirmPassword"]
+        "children":["store-form#password",
+          "store-form#password"
+          ]
       },
-      "form-input.text#password":{
-        "props": {
-          "inputType":"password",
-          "pointer": "#/properties/password",
-          "blockClass":"password"
-        }
-      },
-      "form-input.text#confirmPassword":{
-        "props": {
-          "inputType":"password",
-          "pointer": "#/properties/confirmPassword",
-          "blockClass":"confirmPassword"
-        }
-      },
+      // "form-input.text#password":{
+      //   "props": {
+      //     "inputType":"password",
+      //     "pointer": "#/properties/password",
+      //     "blockClass":"password"
+      //   }
+      // },
+      // "form-input.text#confirmPassword":{
+      //   "props": {
+      //     "inputType":"password",
+      //     "pointer": "#/properties/confirmPassword",
+      //     "blockClass":"confirmPassword"
+      //   }
+      // },
       "rich-text#spacer": {
         "props":{
           "height": "15px",
@@ -215,15 +224,15 @@
         }
       },
       "flex-layout.row#agreement":{
-        "children":["form-input.checkbox#nissanAgreement"
+        "children":["store-form#checkbox"
           ]
       },
-      "form-input.checkbox#nissanAgreement": {
-        "props": {
-          "pointer": "#/properties/nissanAgreement",
-          "label": "By clicking Submit below, I authorize Nissan, its affiliates, and its dealers to contact me by mail or email for marketing purposes. I understand that my consent is not a condition to purchase any product or service and that I may revoke my consent at any time. Please visit Nissans Privacy Policy for information about how we collect, use and protect your data."
-        }
-      },
+      // "form-input.checkbox#nissanAgreement": {
+      //   "props": {
+      //     "pointer": "#/properties/nissanAgreement",
+      //     "label": "By clicking Submit below, I authorize Nissan, its affiliates, and its dealers to contact me by mail or email for marketing purposes. I understand that my consent is not a condition to purchase any product or service and that I may revoke my consent at any time. Please visit Nissans Privacy Policy for information about how we collect, use and protect your data."
+      //   }
+      // },
       "form-submit": {
         "props": {
           "label": "Create VIP Account",
@@ -236,5 +245,110 @@
           "textAlignment": "CENTER",
           "textPosition": "center"
         }
+      },
+      // ==========================
+      "store-form#firstname": {
+        "props": {
+            "type": "input-text",
+            "label": [
+                "First Name :"
+                 ],
+            "button_name": "Submit",
+            "blockClass": "form-text"
+        }
+    },
+    "store-form#lastname": {
+      "props": {
+          "type": "input-text",
+          "label": [
+              "Last Name :"
+          ],
+          "button_name": "Submit",
+          "blockClass": "form-text"
       }
+  },
+  "store-form#email": {
+    "props": {
+        "type": "input-email",
+        "label": "Email",
+        "href": "",
+        "placeholder": "username@echidnainc.com",
+        "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$",
+        "button_name": "Submit",
+        "blockClass": "form-email"
+    }
+},
+"store-form#year": {
+  "props": {
+      "type": "input-text",
+      "label": [
+          "Year:"
+      ],
+      "button_name": "Submit",
+      "blockClass": "form-text"
+  }
+},
+"store-form#model": {
+  "props": {
+      "type": "input-text",
+      "label": [
+          "Model :"
+      ],
+      "button_name": "Submit",
+      "blockClass": "form-text"
+  }
+},
+"store-form#drive": {
+  "props": {
+      "type": "input-text",
+      "label": [
+          "Drive Line :"
+      ],
+      "button_name": "Submit",
+      "blockClass": "form-text"
+  }
+},
+"store-form#trim": {
+  "props": {
+      "type": "input-text",
+      "label": [
+          "Trim Level :"
+      ],
+      "button_name": "Submit",
+      "blockClass": "form-text"
+  }
+},
+"store-form#vin": {
+  "props": {
+      "type": "input-text",
+      "label": [
+          "VIN:"
+      ],
+      "button_name": "Submit",
+      "blockClass": "form-vin"
+  }
+},
+"store-form#password": {
+  "props": {
+      "type": "input-password",
+      "usernameLabel": "Please enter the user name :",
+      "passwordLabel": "Please enter the password :",
+      "usernameHoverLabel": "Only alphabets allowed. Special characters are not allowed",
+      "usernamePattern": "[A-Za-z0-9]{10}",
+      "passwordHoverLabel": "Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters",
+      "passwordPattern": "(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}",
+      "button_name": "Submit",
+      "blockClass": "form-password"
+  }
+},
+"store-form#checkbox": {
+  "props": {
+      "type": "input-checkbox",
+      "label": [
+        "By clicking Submit below, I authorize Nissan, its affiliates, and its dealers to contact me by mail or email for marketing purposes. I understand that my consent is not a condition to purchase any product or service and that I may revoke my consent at any time. Please visit Nissans Privacy Policy for information about how we collect, use and protect your data."
+      ],
+      "button_name": "Submit",
+      "blockClass": "form-checkbox"
+  }
+}
   }

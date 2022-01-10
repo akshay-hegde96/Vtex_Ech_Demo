@@ -2,7 +2,8 @@
   "store.home": {
     "blocks": [
       // "notification.bar",
-      "info-card#homepage-main-banner",
+      "vertical-slider",
+      // "info-card#homepage-main-banner",
       "responsive-layout.desktop#home",
       "responsive-layout.mobile#home",
       // "slider-layout#slides", //caraousal
@@ -29,7 +30,28 @@
       "defaultContentVisibility": "hidden"
     }
   },
-
+// =============vertical slider======================
+"vertical-slider":{ 
+  "props":{ 
+    "arrayOfImages":["assets/home/nissan-aspot.jpg",
+      "https://sydneywidecashforcars.com.au/wp-content/uploads/2015/05/Cash-for-Nissan-Cars-1024x430.jpg",
+      "https://www.nissan-cdn.net/content/dam/Nissan/nissan_latin_america/HB/next/x-gear/Home_Desktop_3840x1575.jpg.ximg.full.hero.jpg"], 
+    "imageHeight":"500px", 
+    "imageWidth":"100%", 
+    "blockClass":"verticalSlider", 
+    "settings" :{ 
+      "infinite": true, 
+      "speed": 1000, 
+      "slidesToShow": 1, 
+      "slidesToScroll":-1, 
+      "autoplay":true, 
+      "pauseOnHover":false,
+      "autoplaySpeed":3000,
+      "cssEase": "ease-in-out"
+    
+    }
+       } 
+      },
   //----------------------------- A-spot Banner ------------------------------------------
   "info-card#homepage-main-banner": {
     "props": {
@@ -413,17 +435,18 @@
   "modal-trigger#sale": {
     "children": ["modal-layout#sale"],
     "props": {
-      "trigger": "load-session"
+      "trigger": "load"
     }
   },
 
   "modal-layout#sale": {
-    "children": ["modal-header#sale", "info-card#modal-content"]
+    "children": ["modal-header#sale", "image-card#modal-content"]
   },
   "modal-header#sale": {
     "props": {
       "showCloseButton": true,
-      "iconCloseSize": 20
+      "iconCloseSize": 20,
+      "blockClass":"homeModal"
     }
   },
   "info-card#modal-content": {
@@ -557,5 +580,39 @@
       "paragraphBlockClass":"paragraph",
       "paragraphs":["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.","The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."]
     }
-  }
+  },
+  // "info-card#modal-content": {
+  //   "props": {
+  //     "id": "info-card-sale",
+  //     "isFullModeStyle": false,
+  //     "textPosition": "left",
+  //     "imageUrl": "https://img.freepik.com/free-vector/diwali-sale-banner-poster-design-festival-season_1017-15257.jpg?size=338&ext=jpg",
+  //     "headline": "Festival Offers",
+  //     "subhead": "HURRY! Limited time only",
+  //     "callToActionText": "SHOP NOW",
+  //     "callToActionUrl": "/sales",
+  //     "blockClass": "info-card-sale",
+  //     "textAlignment": "center"
+  //   }
+  // },
+  "image-card#modal-content": { 
+    "props": { 
+      "image": "https://img.etimg.com/thumb/msid-71971120,width-1200,height-900,imgsize-481322,overlay-etpanache/photo.jpg",
+       "alt": "test1", 
+      //  "cardHeight":"400px", 
+      //  "cardWidth":"400px", 
+       "heading": "Nissan GT-R ", 
+       "firstParagraph": "Nissan GT-R is a 4 seater Super Luxury available in a price range of Rs. 2.12 Cr*. It is available in 1 variants, a 3798 cc, BS6 and a single Automatic transmission.", 
+      //  "secondParagraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ", 
+      //  "footerText": "card footer",
+        "buttonLabel": "Shop Now", 
+        "blockClass": "blockTest", 
+        "backgroundColor": "rgb(31 26 25)", 
+        "buttonWidth": "200px", 
+        "buttonHeight": "40px", 
+        "buttonAlignment": "center", 
+        "buttonLink": "/sales", 
+        // "target": "_blank", 
+        "textAlignment": "center" } 
+      }
 }
