@@ -15,6 +15,9 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
+    "echidna.flexible-infocard": "0.x",
+    "echidna.modal-tab": "0.x",
+    "echidna.sub-menu": "0.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
