@@ -1,0 +1,22 @@
+.textBlockPara--layoutRow {
+  text-align: left;
+}
+
+.textBlockContainer--layoutRow {
+  height: 250px;
+}
+@media (max-width: 760px) {
+  .textBlockImage--layoutRow {
+    width: 400px !important;
+    height: 150px !important;
+  }
+  .bannerImage--layoutRow {
+    height: 250px !important;
+  }
+  .textBlockHeading--layoutRow {
+    font-size: 20px;
+  }
+  .textBlockPara--layoutRow {
+    font-size: 14px;
+  }
+}
