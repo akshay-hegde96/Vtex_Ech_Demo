@@ -1,0 +1,25 @@
+.prevButton{
+    position: relative;
+    left: 25px;
+    z-index: 2;
+    color: white;
+   
+}
+.nextButton{
+    position: relative;
+    right: 25px;
+    z-index: 2;
+    color: white;
+   
+}
+.sliderWrapper{
+    position: relative;
+    top: -1px;
+}
+
+.buttonContainer{
+    display: none;
+}
+@media only screen and (max-width:480px) {
+    
+}

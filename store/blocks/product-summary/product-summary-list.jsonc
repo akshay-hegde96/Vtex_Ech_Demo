@@ -101,7 +101,7 @@
     },
     "children": [
       // "add-to-cart-button"
-      "viewdetails-button",
+      "button",
       "product-comparison-block.selector"
       //"flex-layout.row#buyNowButton"
     ]
@@ -120,6 +120,11 @@
       "onClickEventPropagation": "enabled",
       "blockClass": "buyNow"
     }
+  },
+  "button":{
+"props":{
+  "buttonLabel":"View Product"
+}
   },
   "flex-layout.col#priceSummaryListDesktop": {
     "children": ["product-selling-price#summary", "product-list-price#summary"]
@@ -195,7 +200,7 @@
     "children": [
       "product-selling-price#summary",
       // "add-to-cart-button"
-      "viewdetails-button"
+      "button"
       // "product-installments#summary"
     ]
   },
