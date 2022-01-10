@@ -78,7 +78,8 @@
     "echidna.button": "0.x",
     "echidna.image-card": "0.x",
     "echidna.vertical-slider": "0.x",
-    "echidna.two-col-layout": "0.x"
+    "echidna.two-col-layout": "0.x",
+    "echidna.store-form-app":"0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x",
