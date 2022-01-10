@@ -3,7 +3,7 @@
     "children": [
       "add-to-list-btn#plp-btn",
       "modal-layout#quickview",
-      "viewdetails-button"
+      "button"
     ],
     "props": {
       "blockClass": "quickview"

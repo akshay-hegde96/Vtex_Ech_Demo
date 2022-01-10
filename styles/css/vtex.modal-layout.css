@@ -89,3 +89,12 @@
 .paper--product-gifts {
   padding: 1.5rem;
 }
+
+/* ------------ */
+.headerContainer--homeModal{
+  background-color: rgb(31 26 25);
+  border: none;
+}
+.closeIcon--homeModal{
+  color: white;
+}

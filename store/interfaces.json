@@ -83,5 +83,8 @@
   "store.product.product-comparison": {
     "around": ["comparison-context-wrapper"],
     "allowed": ["product-comparison-drawer"]
+  },
+  "department-product-shelf": {
+    "component": "DepartmentShelf"
   }
 }

@@ -28,15 +28,7 @@ body {
 .catcolumn {
   flex: 50%;
   max-width: 50%;
-  padding: 3px 5px;
-}
-
-.catcolumn .imgSize {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 670px;
-  height: 300px;
-  flex: auto;
+  padding: 5px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -53,25 +45,6 @@ body {
     flex: 100%;
     max-width: 100%;
   }
-}
-
-.imgName {
-  text-decoration: none;
-  text-align: center;
-  background-color: darkred;
-  color: whitesmoke;
-  font-size: small;
-  font-weight: bolder;
-  font-family: sans-serif;
-  width: 180px;
-  height: 40px;
-  margin-top: -42px;
-  position: absolute;
-  display: flex;
-  float: right;
-  justify-content: center;
-  align-items: center;
-  padding-top: 5px;
 }
 
 .banner {

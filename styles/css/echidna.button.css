@@ -1,0 +1,10 @@
+.buttonLabel{
+    width:200px;
+}
+
+@media only screen and (max-width:480px) {
+  
+    .buttonLabel{
+        width:150px;
+    }
+}

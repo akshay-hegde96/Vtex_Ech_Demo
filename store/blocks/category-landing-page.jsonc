@@ -3,6 +3,7 @@
     "blocks": [
       // "info-card#category-landing-page-main-banner",
       "nissan-department",
+      "department-product-shelf",
       "back-to-top-button"
     ]
   },
@@ -22,6 +23,11 @@
   },
 
   "nissan-department": {
+    "props": {
+      "CategoryTiles": "category-tiles"
+    }
+  },
+  "department-product-shelf": {
     "props": {
       "AccessoriesShelf": "flex-layout.row#accesories",
       "CarPartsShelf": "flex-layout.row#carParts",
