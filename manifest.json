@@ -74,7 +74,8 @@
     "vtex.safedata": "0.x",
     "vtex.product-context": "0.x",
     "vtex.seller-selector": "0.x",
-    "vtex.product-comparison": "0.x"
+    "vtex.product-comparison": "0.x",
+    "echidna.category-tiles": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x",
