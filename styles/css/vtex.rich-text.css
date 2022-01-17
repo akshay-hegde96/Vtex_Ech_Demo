@@ -413,7 +413,6 @@
   margin: 0 auto;
   font-size: 14px;
   font-variant: small-caps;
-  font-family: "NissanBrand", sans-serif;
   border: 1px solid #c23232;
   border-radius: 22px;
   background-color: #c23232;
@@ -442,7 +441,6 @@
 .paragraph--header-top-discount {
   color: white;
   font-variant: small-caps;
-  font-family: "NissanBrand", sans-serif;
 }
 .paragraph--omniparts-text {
   color: black;
