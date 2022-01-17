@@ -1,0 +1,11 @@
+.formRow{
+    display: flex;
+}
+.formColumn{
+    flex: 50%;
+}
+.formButton{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}

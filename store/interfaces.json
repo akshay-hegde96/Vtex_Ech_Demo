@@ -86,5 +86,12 @@
   },
   "department-product-shelf": {
     "component": "DepartmentShelf"
+  },
+  "custom-form": {
+    "component": "FormHandles",
+    "composition": "children"
+  },
+  "multi-step-form":{
+    "component": "MultiStepForm"
   }
 }

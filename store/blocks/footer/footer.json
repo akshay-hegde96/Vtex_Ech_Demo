@@ -5,8 +5,7 @@
   "footer-layout.desktop": {
     "children": [
       "newsletter",
-      "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "app-footer"
     ]
   },
   "flex-layout.row#footer-1-desktop": {
