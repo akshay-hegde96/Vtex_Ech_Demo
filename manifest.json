@@ -15,6 +15,9 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
+    "echidna.flexible-infocard": "0.x",
+    "echidna.modal-tab": "0.x",
+    "echidna.sub-menu": "0.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
@@ -75,6 +78,8 @@
     "vtex.product-context": "0.x",
     "vtex.seller-selector": "0.x",
     "vtex.product-comparison": "0.x",
+    "echidna.documents-list-mapper": "0.x",
+    "echidna.layout-row": "0.x",
     "echidna.button": "0.x",
     "echidna.image-card": "0.x",
     "echidna.vertical-slider": "0.x",

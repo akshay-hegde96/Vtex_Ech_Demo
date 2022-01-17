@@ -45,7 +45,7 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["myaccount-menu"] //React component
+     "children": ["sub-menu-account"] //React component
   },
   //====================== Top-bar -- Ends=======================
   // ====================== Header--second-row- Starts==============
@@ -225,7 +225,7 @@
       "menu-item#account-my-wishlist",
       "menu-item#account-my-cart",
       "menu-item#account-checkout",
-      // "menu-item#account-register",
+      "menu-item#account-register",
       "menu-item#account-login"
     ]
   },
@@ -434,6 +434,83 @@
       "url": "assets/nissan-logo.png",
       "width": "70"
     }
-  }
+  },
   // "header-layout.mobile" -- End
+
+ "sub-menu-account":{
+    "props":{
+      "menus":[{
+        "name":"My Account",
+        "link":"/account",
+        "img":"https://cdn.zeplin.io/5fbf567269bf8798be530f65/assets/561DC964-C331-436E-A1E8-D45C286AB76D.svg"
+      },{
+        "name":"Checkout",
+        "link":"/checkout"
+      },
+      {
+        "name":"MODELS",
+        "children":[
+          {
+            "name":"Altima",
+            "link":"/checkout"
+          },
+          {
+            "name":"Leaf",
+            "link":"/checkout"
+          },
+          {
+            "name":"Maxima",
+            "link":"/checkout"
+          },
+          {
+            "name":"Rogue",
+            "link":"/checkout"
+          },
+          {
+            "name":"Sentra",
+            "link":"/checkout"
+          }
+
+        ]
+      },
+      {
+        "name":"Register",
+        "link":"/login"
+      },
+      {
+        "name":"POPULAR",
+        "children":[
+          {
+            "name":"Altima",
+            "link":"/checkout"
+          },
+          {
+            "name":"Leaf",
+            "link":"/checkout"
+          },
+          {
+            "name":"Maxima",
+            "link":"/checkout"
+          },
+          {
+            "name":"Rogue",
+            "link":"/checkout"
+          },
+          {
+            "name":"Sentra",
+            "link":"/checkout"
+          }
+
+        ]
+      },
+
+      {
+        "name":"Login",
+        "link":"/login"
+      }
+    ]
+    }
+  }
 }
+
+

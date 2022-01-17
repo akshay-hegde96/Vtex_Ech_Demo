@@ -1,5 +1,18 @@
 {
   "store.custom#dealers-list": {
-    "blocks": ["dealers-list"]
+    "blocks": [
+      //"dealers-list"
+      "documents-list-mapper" //react interface replaced with app
+    ]
+  },
+  "documents-list-mapper": {
+    "props": {
+      "listName": "Dealer",
+      "schemaName": "dealersList",
+      "dataEntityName": "DealersList",
+      "cardShadow": false,
+      "buttonColor": "#c32323",
+      "blockClass": "dealers"
+    }
   }
 }

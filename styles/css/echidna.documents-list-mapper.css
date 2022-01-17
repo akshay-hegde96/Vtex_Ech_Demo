@@ -1,0 +1,21 @@
+.details--dealers {
+  padding-left: 10px;
+}
+
+@media (max-width: 760px) {
+  .buttonlink--dealers {
+    padding: 10px;
+  }
+  .card--dealers {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .list {
+    padding-left: 5px;
+  }
+  .locationMap--dealers {
+    width: 150px !important;
+  }
+}
