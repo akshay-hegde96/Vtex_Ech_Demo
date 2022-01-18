@@ -101,5 +101,11 @@
   },
   "store.custom#customlogin": {
     "path": "/customlogin"
+  },
+  "store.custom#sample-graphQl": {
+    "path": "/sample-graphQl"
+  },
+  "store.custom#getBanner-graphQl": {
+    "path": "/getBanner-graphQl"
   }
 }

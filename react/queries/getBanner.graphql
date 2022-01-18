@@ -1,0 +1,37 @@
+query getBannerList( $itemsPerPage:Int, $name: String, $o: String, $page:Int){
+  getBanners(pagination:{
+    page:$page,
+    itemsPerPage:$itemsPerPage,
+    orderBy:"name",
+    filters:{
+        name:$name
+    }
+  }){
+    status
+    data{
+    body{
+      page
+      totalPages
+      itemsPerPage
+      items
+      {
+        id
+        name
+        area
+        html
+        active
+        startDate
+        endDate
+        timeZone
+        queries
+        attributes{
+          key
+          value
+        }
+        locales
+      }
+    
+    }
+  }
+  }
+}

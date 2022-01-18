@@ -1,0 +1,7 @@
+{
+    "store.custom#getBanner-graphQl": {
+        "blocks": [ 
+            "getBanner-Wrapper"
+            ]
+      }
+}
