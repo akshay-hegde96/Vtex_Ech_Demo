@@ -18,7 +18,7 @@
       "back-to-top-button",
       "flex-image-card",
       "modal-trigger#sale"
-     
+      // "login-content#default"
     ],
     "parent": {
       "challenge": "challenge.trade-policy-condition"

@@ -15,6 +15,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
+    "vtex.admin-search": "1.50.6",
     "echidna.flexible-infocard": "0.x",
     "echidna.modal-tab": "0.x",
     "echidna.sub-menu": "0.x",
