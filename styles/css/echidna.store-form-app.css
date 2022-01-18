@@ -122,7 +122,8 @@
     display:none;
 }
 .formText_input--form-text,
-.formUsername_input--form-password
+.formPassword_input--form-password,
+.formConfirmpassword_input--form-confirmpassword
 {
     width: 95%;
     height: 40px;
@@ -130,10 +131,54 @@
 }
 .formEmail_input--form-email,
 .formText_input--form-vin{
-    width: 98%;
+    width: 97%;
     height: 40px;
-} 
+    margin-bottom: 10px;
+}
 
-.formCheckbox_input--form-checkbox{
+.formCheckbox_input{
     margin: 4px;
+} 
+.formSubmit_input--form-button{
+    background: red;
+    width: 200px;
+    height: 40px;
+    color: white;
+    border: none;
+}
+.formText--multi-firstname,
+.formText--multi-lastname,
+.formEmail--form-multiemail,
+.formText--multi-number
+{
+    margin: 15px 0px;
+}
+.formSubmit_input--prev-button,
+.formSubmit_input--next-button,
+.formSubmit_input--submit-button{
+    margin: 0px 10px;
+}
+
+.formSubmit_input--next-button
+{
+    background-color: #4fd34f;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 30px;
+}
+.formSubmit_input--prev-button{
+    background-color: #d43737;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 30px;
+}
+.formSubmit_input--submit-button
+{
+    background-color: #4fd34f;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 30px;
 }

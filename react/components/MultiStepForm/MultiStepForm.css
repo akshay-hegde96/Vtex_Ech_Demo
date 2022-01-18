@@ -1,0 +1,11 @@
+.multiFormContainer {
+  width: 250px;
+  margin: 50px auto;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 10px 0px #938992;
+}
+.buttonAlignments {
+  display: flex;
+  justify-content: center;
+}

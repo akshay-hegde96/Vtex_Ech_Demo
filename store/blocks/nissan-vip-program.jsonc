@@ -1,354 +1,175 @@
 {
-    "store.custom#nissan-vip-program": {
-      "blocks": [
-        "rich-text#nissan-vip-program",
-
-        "flex-layout.row#vip-form"
-          ]
-    },
-    "rich-text#nissan-vip-program": {
-      "props": {
-        "text": "## Nissan VIP Program",
-        "textPosition": "CENTER",
-        "textAlignment": "CENTER"
-      }
-    },
-      "flex-layout.row#vip-form": {
-        "children": [
-          "flex-layout.col#vip-content",
-          "flex-layout.col#vip-form"
-        ]
-      },
-      "flex-layout.col#vip-content":{
-        "props":{
-          "blockClass":"vip-content"
-        },
-      "children":[
-        "rich-text#vip-content-title",
-        "image#nissan-vip",
-        "rich-text#vip-content1",
-        "rich-text#vip-content2"
-      ]
-      },
-      "rich-text#vip-content-title":{
-        "props":{
-        "text":"Let Us Treat You Like the VIP You Are - Every Mile of the Way.",
-        "textPosition":"left",
-        "blockClass":"vip-content-title"
-      }
-    },
-      "image#nissan-vip":{
-        "props":{
-            "src":"https://parts.nissanusa.com/images/nissan-oem-assets/vip/vip-join-requestaccount.jpg",
-            "maxHeight":1000
-        }
-    },
-    "rich-text#vip-content1":{
-      "props":{
-        "text":"As a way to show gratitude to our most loyal customers, we're inviting you to join the Nissan Parts & Accessories Online VIP Program. Enjoy special perks, offers, and deals -including Free Shipping* on your first order of $50 or more.** \n \n Joining is simple: provide your name and email address along with a few details about your Nissan vehicle, and you'll be on your way to enjoying everything our VIP program has to offer.\n 1.Store your vehicles and VIN to find the right parts and accessories.\n 2.View order history \n 3.Receive special offers and discounts",
-        "textPosition":"left"
-      }
-    },
-    "rich-text#vip-content2":{
-      "props":{
-        "text":"*Free shipping within the U.S. only of up to $200 available only for new members of the Online VIP Program on first purchase order that meets the following requirements: (1) all items in purchase order are shippable; (2) oversized or overweight items (such as, windshields, bumpers, hoods, frames, etc.) are not included in the purchase order; (3) purchase order meets the $50 minimum order requirement (taxes, shipping, and other additional fees are not applied towards meeting this requirement); and (4) customer must apply above-stated code at time of online purchase. Free shipping promotion covers up to $200 maximum shipping fee; payment of remaining shipping fee balance is the sole responsibility of the customer. Other restrictions may apply. See participating U.S. NISSAN dealer for details. Program available only to U.S. residents. Price and offer availability may vary by model. May not be combined with any other offers. Nissan vehicles only. Void where prohibited. No cash value. One-time use only. Ends 2/1/22. \n \n **Free Shipping coupon code will be emailed to the email address provided.",
-        "textPosition":"left"
-      }
-    },
-      "flex-layout.col#vip-form": {
-        "props":{
-          "blockClass":"vip-form"
-        },
-        "children": [
-          "form#vip-program"
-        ]
-      },
-      "form#vip-program": {
-        "props": {
-          "entity": "NV",
-          "schema": "person",
-        "blockClass": "vip-program"
-
-        },
-        "children": [
-          "rich-text#vip-header",
-          "rich-text#formTitle",
-          "flex-layout.row#name",
-          // "form-input.text#email",
-          "store-form#vip-email",
-          "rich-text#vehicle-info",
-          "flex-layout.row#year-model",
-          "flex-layout.row#drive-trim",
-          // "form-input.text#vin",
-          "store-form#vin",
-          "rich-text#password",
-
-          "flex-layout.row#password",
-          "rich-text#spacer",
-          "flex-layout.row#agreement",
-          "form-submit"
-        ],
-        "blocks": ["form-success"]
-      },
-      "form-success": {
-        "children": ["rich-text#vip-successSubmit"]
-      },
-      "rich-text#vip-header":{
-        "props":{
-          "text":"Don't have an account? Sign Up Now",
-          "textPosition":"left",
-          "blockClass":"vip-heading"
-        }
-      },
-      "flex-layout.row#name":{
-        "props":{
-          "blockClass":"vip-name"
-        },
-        "children":[
-          "store-form#firstname",
-          "store-form#lastname" ]
-      },
-
-      "rich-text#formTitle": {
-        "props": {
-          "text": "User Information",
-          "textAlignment": "CENTER",
-          "textPosition": "left",
-          "blockClass":"vip-title"
-        }
-      },
-      "form-input.text#firstName":{
-        "props": {
-          "pointer": "#/properties/firstName",
-          "blockClass":"vip-firstName"
-        }
-      },
-      "form-input.text#lastName": {
-        "props": {
-          "pointer": "#/properties/lastName",
-          "blockClass":"vip-lastName"
-
-        }
-      },
-      // "form-input.text#email":{
-      //   "props": {
-      //     "pointer": "#/properties/email",
-      //     "blockClass":"vip-email"
-      //   }
-      // },
-      "rich-text#vehicle-info":{
-        "props": {
-          "text": "Vehicle Information",
-          "textAlignment": "CENTER",
-          "textPosition": "left",
-          "blockClass":"vip-vehicle-info"
-        }
-      },
-      "flex-layout.row#year-model":{
-        "children":[
-          "store-form#year",
-          "store-form#model"
-         ]
-      },
-      // "form-input.text#year":{
-      //   "props": {
-      //     "pointer": "#/properties/year"
-      //   }
-      // },
-      // "form-input.text#model":{
-      //   "props": {
-      //     "pointer": "#/properties/model"
-      //   }
-      // },
-      "flex-layout.row#drive-trim":{
-        "props":{
-          "blockClass":"drive-trim"
-        },
-        "children":[
-          "store-form#drive",
-          "store-form#trim"
-          ]
-      },
-      // "form-input.text#driveLine":{
-      //   "props": {
-      //     "pointer": "#/properties/driveLine",
-      //     "blockClass":"driveLine"
-      //   }
-      // },
-      // "form-input.text#trimLevel":{
-      //   "props": {
-      //     "pointer": "#/properties/trimLevel",
-      //     "blockClass":"trimLevel"
-      //   }
-      // },
-      // "form-input.text#vin":{
-      //   "props": {
-      //     "pointer": "#/properties/vin",
-      //     "blockClass":"vin-num"
-      //   }
-      // },
-      "rich-text#password":{
-        "props": {
-          "text": "Create Password",
-          "textAlignment": "CENTER",
-          "textPosition": "left",
-          "blockClass":"create-password"
-        }
-      },
-      "flex-layout.row#password":{
-        "props":{
-          "blockClass":"password-row"
-        },
-        "children":["store-form#password",
-          "store-form#password"
-          ]
-      },
-      // "form-input.text#password":{
-      //   "props": {
-      //     "inputType":"password",
-      //     "pointer": "#/properties/password",
-      //     "blockClass":"password"
-      //   }
-      // },
-      // "form-input.text#confirmPassword":{
-      //   "props": {
-      //     "inputType":"password",
-      //     "pointer": "#/properties/confirmPassword",
-      //     "blockClass":"confirmPassword"
-      //   }
-      // },
-      "rich-text#spacer": {
-        "props":{
-          "height": "15px",
-          "blockClass": "contact-us-spacer"
-        }
-      },
-      "flex-layout.row#agreement":{
-        "children":["store-form#vip-checkbox"
-          ]
-      },
-      // "form-input.checkbox#nissanAgreement": {
-      //   "props": {
-      //     "pointer": "#/properties/nissanAgreement",
-      //     "label": "By clicking Submit below, I authorize Nissan, its affiliates, and its dealers to contact me by mail or email for marketing purposes. I understand that my consent is not a condition to purchase any product or service and that I may revoke my consent at any time. Please visit Nissans Privacy Policy for information about how we collect, use and protect your data."
-      //   }
-      // },
-      "form-submit": {
-        "props": {
-          "label": "Create VIP Account",
-          "blockClass":"vip-submit"
-        }
-      },
-      "rich-text#vip-successSubmit": {
-        "props": {
-          "text": "ThankYou, You have succesfully submitted the data!",
-          "textAlignment": "CENTER",
-          "textPosition": "center"
-        }
-      },
-      // ==========================
-      "store-form#firstname": {
-        "props": {
-            "type": "input-text",
-            "label": [
-                "First Name :"
-                 ],
-            "button_name": "Submit",
-            "blockClass": "form-text"
-        }
-    },
-    "store-form#lastname": {
-      "props": {
-          "type": "input-text",
-          "label": [
-              "Last Name :"
-          ],
-          "button_name": "Submit",
-          "blockClass": "form-text"
-      }
+  "store.custom#nissan-vip-program": {
+    "blocks": ["rich-text#nissan-vip-program", "flex-layout.row#vip-form"]
   },
-  "store-form#vip-email": {
+  "rich-text#nissan-vip-program": {
     "props": {
-        "type": "input-email",
-        "label": "Email",
-        "href": "",
-        "placeholder": "username@echidnainc.com",
-        "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$",
-        "button_name": "Submit",
-        "blockClass": "form-email"
+      "text": "## Nissan VIP Program",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
     }
-},
-"store-form#year": {
-  "props": {
+  },
+  "flex-layout.row#vip-form": {
+    "children": ["flex-layout.col#vip-content", "flex-layout.col#vip-form"]
+  },
+  "flex-layout.col#vip-content": {
+    "props": {
+      "blockClass": "vip-content"
+    },
+    "children": [
+      "rich-text#vip-content-title",
+      "image#nissan-vip",
+      "rich-text#vip-content1",
+      "rich-text#vip-content2"
+    ]
+  },
+  "rich-text#vip-content-title": {
+    "props": {
+      "text": "Let Us Treat You Like the VIP You Are - Every Mile of the Way.",
+      "textPosition": "left",
+      "blockClass": "vip-content-title"
+    }
+  },
+  "image#nissan-vip": {
+    "props": {
+      "src": "https://parts.nissanusa.com/images/nissan-oem-assets/vip/vip-join-requestaccount.jpg",
+      "maxHeight": 1000
+    }
+  },
+  "rich-text#vip-content1": {
+    "props": {
+      "text": "As a way to show gratitude to our most loyal customers, we're inviting you to join the Nissan Parts & Accessories Online VIP Program. Enjoy special perks, offers, and deals -including Free Shipping* on your first order of $50 or more.** \n \n Joining is simple: provide your name and email address along with a few details about your Nissan vehicle, and you'll be on your way to enjoying everything our VIP program has to offer.\n 1.Store your vehicles and VIN to find the right parts and accessories.\n 2.View order history \n 3.Receive special offers and discounts",
+      "textPosition": "left"
+    }
+  },
+  "rich-text#vip-content2": {
+    "props": {
+      "text": "*Free shipping within the U.S. only of up to $200 available only for new members of the Online VIP Program on first purchase order that meets the following requirements: (1) all items in purchase order are shippable; (2) oversized or overweight items (such as, windshields, bumpers, hoods, frames, etc.) are not included in the purchase order; (3) purchase order meets the $50 minimum order requirement (taxes, shipping, and other additional fees are not applied towards meeting this requirement); and (4) customer must apply above-stated code at time of online purchase. Free shipping promotion covers up to $200 maximum shipping fee; payment of remaining shipping fee balance is the sole responsibility of the customer. Other restrictions may apply. See participating U.S. NISSAN dealer for details. Program available only to U.S. residents. Price and offer availability may vary by model. May not be combined with any other offers. Nissan vehicles only. Void where prohibited. No cash value. One-time use only. Ends 2/1/22. \n \n **Free Shipping coupon code will be emailed to the email address provided.",
+      "textPosition": "left"
+    }
+  },
+  "flex-layout.col#vip-form": {
+    "props": {
+      "blockClass": "vip-form"
+    },
+    "children": ["custom-form"]
+  },
+  "custom-form": {
+    "props": {
+      "FirstName": "store-form#firstname",
+      "LastName": "store-form#lastname",
+      "Email": "store-form#email-vin",
+      "Year": "store-form#year",
+      "Model": "store-form#model",
+      "Drive": "store-form#drive",
+      "Vin": "store-form#vin",
+      "Trim": "store-form#trim",
+      "Password": "store-form#password-vin",
+      "Confirmpw": "store-form#confirmpassword-vin",
+      "Vipcheckbox": "store-form#checkbox-vin",
+      "Formbutton": "store-form#button-vin"
+    }
+  },
+ 
+  // ==========================
+  "store-form#firstname": {
+    "props": {
       "type": "input-text",
-      "label": [
-          "Year:"
-      ],
+      "label": ["First Name :"],
       "button_name": "Submit",
       "blockClass": "form-text"
-  }
-},
-"store-form#model": {
-  "props": {
+    }
+  },
+  "store-form#lastname": {
+    "props": {
       "type": "input-text",
-      "label": [
-          "Model :"
-      ],
+      "label": ["Last Name :"],
       "button_name": "Submit",
       "blockClass": "form-text"
-  }
-},
-"store-form#drive": {
-  "props": {
+    }
+  },
+  "store-form#email-vin": {
+    "props": {
+      "type": "input-email",
+      "label": "Email",
+      "href": "",
+      "placeholder": "username@echidnainc.com",
+      "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$",
+      "blockClass": "form-email"
+    }
+  },
+  "store-form#year": {
+    "props": {
       "type": "input-text",
-      "label": [
-          "Drive Line :"
-      ],
+      "label": ["Year:"],
+      "blockClass": "form-text"
+    }
+  },
+  "store-form#model": {
+    "props": {
+      "type": "input-text",
+      "label": ["Model :"],
       "button_name": "Submit",
       "blockClass": "form-text"
-  }
-},
-"store-form#trim": {
-  "props": {
+    }
+  },
+  "store-form#drive": {
+    "props": {
       "type": "input-text",
-      "label": [
-          "Trim Level :"
-      ],
+      "label": ["Drive Line :"],
       "button_name": "Submit",
       "blockClass": "form-text"
-  }
-},
-"store-form#vin": {
-  "props": {
+    }
+  },
+  "store-form#trim": {
+    "props": {
       "type": "input-text",
-      "label": [
-          "VIN:"
-      ],
+      "label": ["Trim Level :"],
+      "button_name": "Submit",
+      "blockClass": "form-text"
+    }
+  },
+  "store-form#vin": {
+    "props": {
+      "type": "input-text",
+      "label": ["VIN:"],
       "button_name": "Submit",
       "blockClass": "form-vin"
-  }
-},
-"store-form#password": {
-  "props": {
+    }
+  },
+  "store-form#password-vin": {
+    "props": {
       "type": "input-password",
-      "usernameLabel": "Please enter the user name :",
-      "passwordLabel": "Please enter the password :",
-      "usernameHoverLabel": "Only alphabets allowed. Special characters are not allowed",
+      "passwordLabel": "Password :",
       "usernamePattern": "[A-Za-z0-9]{10}",
       "passwordHoverLabel": "Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters",
       "passwordPattern": "(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}",
-      "button_name": "Submit",
       "blockClass": "form-password"
-  }
-},
-"store-form#vip-checkbox": {
-  "props": {
+    }
+  },
+  "store-form#confirmpassword-vin": {
+    "props": {
+      "type": "input-confirmpassword",
+      "confirmPwdLabel": "Confirm Password :",
+      "blockClass": "form-confirmpassword"
+    }
+  },
+  "store-form#checkbox-vin": {
+    "props": {
       "type": "input-checkbox",
       "label": [
         "By clicking Submit below, I authorize Nissan, its affiliates, and its dealers to contact me by mail or email for marketing purposes. I understand that my consent is not a condition to purchase any product or service and that I may revoke my consent at any time. Please visit Nissans Privacy Policy for information about how we collect, use and protect your data."
       ],
       "button_name": "Submit",
       "blockClass": "form-checkbox"
+    }
+  },
+  "store-form#button-vin": {
+    "props": {
+      "type": "input-submit",
+      "href": "#",
+      "button_name": "REGISTER",
+      "blockClass": "form-button"
+    }
   }
 }
-  }

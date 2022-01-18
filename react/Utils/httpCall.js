@@ -33,8 +33,8 @@ export async function makeAPICall(appURL, method, reqData) {
       return data;
     } catch (e) {
       console.log(e);
-    }
-  } else {
+  } 
+}else {
     /* Do Nothing */
   }
 }

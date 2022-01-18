@@ -1,0 +1,79 @@
+{
+  "store.custom#multi-step-form": {
+    "blocks": [ "multi-step-form"]
+  },
+
+  "multi-step-form":{
+      "props":{
+          "MultiFirstName":"store-form#multi-firstname",
+          "MultiLastName": "store-form#multi-lastname",
+          "MultiNext":"store-form#nextbutton",
+          "MultiPrev": "store-form#previousbutton",
+          "MultiSubmit": "store-form#submitbutton",
+          "MultiEmail":"store-form#multi-email",
+          "MultiNumber": "store-form#multinumber",
+          "MultiPassword":"store-form#multi-password"
+      }
+  },
+  "store-form#multi-firstname": {
+    "props": {
+      "type": "input-text",
+      "label": ["First Name :"],
+      "blockClass": "multi-firstname"
+    }
+  },
+  "store-form#multi-lastname": {
+    "props": {
+      "type": "input-text",
+      "label": ["Last Name :"],
+      "blockClass": "multi-lastname"
+    }
+  },
+  "store-form#nextbutton": {
+    "props": {
+      "type": "input-submit",
+    
+      "button_name": "Next",
+      "blockClass": "next-button"
+    }
+  },
+  "store-form#previousbutton": {
+    "props": {
+      "type": "input-submit",
+    
+      "button_name": "Previous",
+      "blockClass": "prev-button"
+    }
+  },
+  "store-form#submitbutton": {
+    "props": {
+      "type": "input-submit",
+      
+      "button_name": "Submit",
+      "blockClass": "submit-button"
+    }
+  },
+  "store-form#multi-email": {
+    "props": {
+      "type": "input-email",
+      "label": "Email",
+      "placeholder": "username@echidnainc.com",
+      "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$",
+      "blockClass": "form-multiemail"
+    }
+  },
+  "store-form#multinumber": {
+    "props": {
+      "type": "input-text",
+      "label": ["Phone Number :"],
+      "blockClass": "multi-number"
+    }
+  },
+  "store-form#multi-password": {
+    "props": {
+      "type": "input-password",
+      "passwordLabel": "Password :",
+      "blockClass": "form-multipassword"
+    }
+  }
+}
