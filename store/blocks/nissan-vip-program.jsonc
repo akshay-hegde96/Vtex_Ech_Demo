@@ -75,7 +75,7 @@
           "rich-text#formTitle",
           "flex-layout.row#name",
           // "form-input.text#email",
-          "store-form#email",
+          "store-form#vip-email",
           "rich-text#vehicle-info",
           "flex-layout.row#year-model",
           "flex-layout.row#drive-trim",
@@ -224,7 +224,7 @@
         }
       },
       "flex-layout.row#agreement":{
-        "children":["store-form#checkbox"
+        "children":["store-form#vip-checkbox"
           ]
       },
       // "form-input.checkbox#nissanAgreement": {
@@ -267,7 +267,7 @@
           "blockClass": "form-text"
       }
   },
-  "store-form#email": {
+  "store-form#vip-email": {
     "props": {
         "type": "input-email",
         "label": "Email",
@@ -341,7 +341,7 @@
       "blockClass": "form-password"
   }
 },
-"store-form#checkbox": {
+"store-form#vip-checkbox": {
   "props": {
       "type": "input-checkbox",
       "label": [
