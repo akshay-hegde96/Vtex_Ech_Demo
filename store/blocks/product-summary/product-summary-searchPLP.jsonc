@@ -8,7 +8,7 @@
       "flex-layout.row#nissanModelNo",
       "product-summary-space",
       // "add-to-cart-button"
-      "viewdetails-button"
+      "button"
     ],
     "props": {
       "blockClass": "searchSummaryCard",
