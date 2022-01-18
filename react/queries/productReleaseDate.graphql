@@ -1,0 +1,9 @@
+query getAttributesList($rename:Boolean,$onlyVisible:Boolean){
+
+getAttributes(rename:$rename, onlyVisible:$onlyVisible){
+  status,
+  data{
+    body
+  }
+}
+}

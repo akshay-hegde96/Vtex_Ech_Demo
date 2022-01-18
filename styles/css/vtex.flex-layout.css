@@ -176,8 +176,8 @@
   border-bottom: 2px solid rgb(167, 165, 165);
 }
 
-.flexRowContent--main-menu :hover,
-:active {
+.flexRowContent--main-menu:hover,
+.flexRowContent--main-menu:active {
   color: rgb(235, 235, 235);
 }
 

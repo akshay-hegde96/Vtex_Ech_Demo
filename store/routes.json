@@ -101,5 +101,14 @@
   },
   "store.custom#multi-step-form": {
     "path": "/multi-step-form"
+  },
+  "store.custom#customlogin": {
+    "path": "/customlogin"
+  },
+  "store.custom#sample-graphQl": {
+    "path": "/sample-graphQl"
+  },
+  "store.custom#getBanner-graphQl": {
+    "path": "/getBanner-graphQl"
   }
 }

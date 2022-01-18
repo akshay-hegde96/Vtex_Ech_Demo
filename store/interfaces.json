@@ -84,6 +84,9 @@
     "around": ["comparison-context-wrapper"],
     "allowed": ["product-comparison-drawer"]
   },
+  "contactus-form": {
+    "component": "ContactUsFormWrapper"
+  },
   "department-product-shelf": {
     "component": "DepartmentShelf"
   },
@@ -93,5 +96,11 @@
   },
   "multi-step-form":{
     "component": "MultiStepForm"
-  }
+  },
+  "countdown-Wrapper":{
+    "component":"CountdownWrapper"
+},
+"getBanner-Wrapper":{
+  "component":"GetBannerWrapper"
+}
 }

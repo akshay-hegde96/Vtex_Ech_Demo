@@ -1,0 +1,6 @@
+{
+    "store.custom#sample-graphQl": {
+        "blocks": [ "countdown-Wrapper"
+            ]
+      }
+}

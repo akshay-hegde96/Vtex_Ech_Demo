@@ -4,6 +4,7 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
+      "side-mega-menu#nissan",
       "menu-item#static-category-Car-parts",
       "menu-item#static-category-accessories",
       "menu-item#static-category-merchandise",
@@ -12,6 +13,90 @@
      
     ]
   },
+
+  "side-mega-menu#nissan": {
+    "props": {
+      "id": "nissan",
+      "imgUrl": "https://echidna.vtexassets.com/arquivos/interior_167.png",
+      "itemProps": {
+        "href": "/clp/135",
+        "tagTitle": "Nissan",
+        "text": "Nissan"
+      }
+    },
+    "children": [
+      "sub-menu-level-two#Accesories",
+      "sub-menu-level-two#CarParts",
+      "sub-menu-level-two#Gears",
+      "sub-menu-level-two#Tyres"
+    ]
+  },
+  "sub-menu-level-two#Accesories": {
+    "props": {
+      "title": "Accessories",
+      "id": "accessories",
+      "content": [
+        {"name": "Body Parts", "url": "/car-parts/car-part-accessories"},
+        {"name": "Trim", "url": "/car-parts/body-interior-and-trim"},
+        {"name": "Brakes", "url": "/car-parts/brakes"},
+        {"name": "Cooling System", "url": "/car-parts/cooling-system"},
+        {"name": "Electrical System", "url": "/car-parts/brakes"},
+        {"name": "EV System", "url": "/car-parts/ev-system"},
+        {"name": "Exhaust System", "url": "/car-parts/exhaust-system"}
+      ]
+    }
+  },
+  "sub-menu-level-two#CarParts": {
+    "props": {
+      "title": "Car Parts",
+      "id": "car-parts",
+      "content": [
+        {"name": "Interior", "url": "/car-parts/body-interior-and-trim"},
+        {"name": "NISMO", "url": "/accessories/nismo"},
+        {"name": "Truck", "url": "/accessories/truck-and-towing"},
+        {"name": "Towing", "url": "/accessories/truck-and-towing"},
+        {"name": "Interior", "url": "/accessories/interior-accessories"},
+        {"name": "Exterior", "url": "/accessories/exterior-accessories"}
+      ]
+    }
+  },
+  "sub-menu-level-two#Gears": {
+    "props": {
+      "title": "Merchandise",
+      "id": "merchandise",
+      "content": [
+        {"name": "Apparel", "url": "/merchandise/apparel"},
+        {"name": "Auto Accessories", "url": "/merchandise/auto-accessories"},
+        {"name": "Hats", "url": "/merchandise/hats"},
+        {"name": "Outerwear", "url": "/merchandise/heritage-collection"},
+        {"name": "Heritage", "url": "/merchandise/heritage-collection"}
+      ]
+    }
+  },
+  "sub-menu-level-two#Tyres": {
+    "props": {
+      "title": "Tyres",
+      "id": "tyres",
+      "content": [
+        {"name": "Outerwear", "url": "/merchandise/heritage-collection"},
+        {"name": "Heritage", "url": "/merchandise/heritage-collection"},
+        {"name": "Body Parts", "url": "/car-parts/car-part-accessories"},
+        {"name": "Trim", "url": "/car-parts/body-interior-and-trim"},
+        {"name": "Brakes", "url": "/car-parts/brakes"},
+        {"name": "Cooling System", "url": "/car-parts/cooling-system"},
+        {"name": "Electrical System", "url": "/car-parts/brakes"},
+        {"name": "EV System", "url": "/car-parts/ev-system"},
+        {"name": "Exhaust System", "url": "/car-parts/exhaust-system"},
+        {"name": "Interior", "url": "/car-parts/body-interior-and-trim"},
+        {"name": "NISMO", "url": "/accessories/nismo"},
+        {"name": "Truck", "url": "/accessories/truck-and-towing"},
+        {"name": "Towing", "url": "/accessories/truck-and-towing"},
+        {"name": "Interior", "url": "/accessories/interior-accessories"},
+        {"name": "Exterior", "url": "/accessories/exterior-accessories"}
+      ]
+    }
+  },
+
   "menu-item#static-category-Car-parts": {
     "props": {
       "id": "menu-item-category-Car-parts",

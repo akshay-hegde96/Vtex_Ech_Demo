@@ -1,3 +1,115 @@
+.formLabel--heading {
+    margin: 30px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.formText_label,
+.formText_label--name,
+.formText_label--subject,
+.formEmail_label--email,
+.formTelnumber_label--telNumber,
+.formText_label--subject,
+.formText_label--checkbox,
+.formText_label--radio,
+.formText_label--question,
+.formDropdown_label--dropdown {
+    margin: 30px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(196, 35, 35);
+}
+
+.formText_input,
+.formText_input--name,
+.formText_input--subject,
+.formEmail_input--email,
+.formTelnumber_input--telNumber,
+.formText_input--subject,
+.formText_input--question {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    height: 40px;
+    min-width: 350px;
+    border-width: thin;
+    border-radius: 2px;
+    border-color: lightgray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formCheckbox--checkbox {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.formRadio--radio-us {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.formRadio_label--radio-us,
+.formRadio_input--radio-us,
+.formCheckbox_label--checkbox,
+.formCheckbox_input--checkbox,
+.formDropdown--dropdown {
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.formText_input--question {
+    min-height: 100px;
+}
+
+.formSubmit_input--submit {
+    margin: 5px 10px 5px 10px;
+    padding: 5px 5px 5px 5px;
+    color: white;
+    border-color: lightgray;
+    border-width: thin;
+    background-color: rgb(196, 35, 35);
+    display: block;
+    margin: auto;
+    width: auto;
+    min-width: 150px;
+    margin-top: 30px;
+}
+
+.formTelnumber_small--telNumber {
+    display: none;
+}
+
+.formEmail_input--email {
+    display: flex;
+    flex-direction: column;
+}
+
+.formText--name,
+.formTelnumber--telNumber,
+.formEmail--email,
+.formText--subject,
+.formText--question {
+    margin: 20px 10px 10px 10px;
+}
+
+.formTelnumber--telNumber {
+    max-height: 70px;
+}
+
+.formTelnumber_input--telNumber {
+    margin-top: -15px;
+}
 .formText_submit--form-text,
 .formText_reset--form-text,
 .formEmail_submit--form-email,

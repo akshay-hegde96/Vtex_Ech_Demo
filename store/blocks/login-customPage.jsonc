@@ -1,0 +1,9 @@
+{
+    "store.custom#customlogin": {
+      "blocks": [ "login-content#default"
+          ]
+    }
+    
+}
+  
+  
