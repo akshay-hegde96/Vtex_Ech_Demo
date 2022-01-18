@@ -64,7 +64,8 @@
     [" Privacy Policy","/privacyPolicy"],
     ["Do Not Sell My Personal Information","/nissan-data-privacy"],
     ["Warranty","/warranty"],
-    ["Multi-step-form","/multi-step-form"]
+    ["Multi-step-form","/multi-step-form"],
+    ["Contact Us","/contact-us"]
   ],
    "imagesURL":[
     "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/640px-2021_Facebook_icon.svg.png",
