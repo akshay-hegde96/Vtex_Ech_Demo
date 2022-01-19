@@ -1,0 +1,15 @@
+
+.bar--collapsible-test{
+    cursor: pointer;
+    display: flex;
+    margin: 10px;
+    background: transparent;
+    border: 1px dotted;
+}
+.barContainer--collapsible-test{
+    display: flex;
+    justify-content: center;
+}
+.contentsContainer--collapsible-test{
+    margin: 10px 30px;
+}

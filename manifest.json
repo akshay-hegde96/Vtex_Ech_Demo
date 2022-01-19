@@ -88,7 +88,8 @@
     "echidna.store-form-app": "0.x",
     "echidna.footer": "0.x",
     "echidna.category-tiles": "0.x",
-    "echidna.side-megamenu": "0.x"
+    "echidna.side-megamenu": "0.x",
+    "echidna.collapsible-bar":"0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x",
