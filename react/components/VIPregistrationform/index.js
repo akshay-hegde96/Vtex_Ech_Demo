@@ -28,19 +28,19 @@ const FormHandles = ({
   const [nissanAgreement, setNissanAgreement] = useState(false);
 
   // state for api
-  // const [data, setData] = useState({
-  //   firstName: "",
-  //   lastName: "",
-  //   email: "",
-  //   year: "",
-  //   model: "",
-  //   driveLine: "",
-  //   trimLevel: "",
-  //   vin: "",
-  //   password: "",
-  //   confirmPassword: "",
-  //   nissanAgreement: "",
-  // });
+  const [data, setData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    year: "",
+    model: "",
+    driveLine: "",
+    trimLevel: "",
+    vin: "",
+    password: "",
+    confirmPassword: "",
+    nissanAgreement: "",
+  });
   //   Error messages
   const [firstNameError, setfirstNameError] = useState("");
   const [emailError, setEmailError] = useState("");
@@ -84,47 +84,48 @@ const FormHandles = ({
     } else if (nissanAgreement == false) {
       setAgreementError("Please accept the agreement to continue");
     }
-    else {
-      console.log({
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        model: model,
-        year: year,
-        vin: vin,
-        driveLine: driveLine,
-        trimLevel: trimLevel,
-        password: password,
-        confirmPassword: confirmPassword,
-        nissanAgreement: nissanAgreement,
-      });
-    }
     // else {
-    //   data.firstName = firstName;
-    //   data.lastName = lastName;
-    //   data.email = email;
-    //   data.year = year;
-    //   data.model = model;
-    //   data.driveLine = driveLine;
-    //   data.trimLevel = trimLevel;
-    //   data.vin = vin;
-    //   data.password = password;
-    //   data.confirmPassword = confirmPassword;
-    //   data.nissanAgreement = nissanAgreement;
+    //   console.log({
+    //     firstName: firstName,
+    //     lastName: lastName,
+    //     email: email,
+    //     model: model,
+    //     year: year,
+    //     vin: vin,
+    //     driveLine: driveLine,
+    //     trimLevel: trimLevel,
+    //     password: password,
+    //     confirmPassword: confirmPassword,
+    //     nissanAgreement: nissanAgreement,
+    //   });
+    // }
+    else {
+      data.firstName = firstName;
+      data.lastName = lastName;
+      data.email = email;
+      data.year = year;
+      data.model = model;
+      data.driveLine = driveLine;
+      data.trimLevel = trimLevel;
+      data.vin = vin;
+      data.password = password;
+      data.confirmPassword = confirmPassword;
+      data.nissanAgreement = nissanAgreement;
 
-    //   const submittedData = await makeAPICall(
-    //     "api/dataentities/NV/schemas/person",
-    //     "PUT",
-    //     data
-    //   );
-    //   console.log({ submittedData });
+      const submittedData = await makeAPICall(
+        // "api/dataentities/NV/schemas/person",
+        "api/dataentities/NV/documents?_schema=person",
+        "PUT",
+        data
+      );
+      console.log({ submittedData });
 
       // const resData = await makeAPICall(
       //   "api/dataentities/NV/search?_fields=_all&_schema=person",
       //   "GET"
       // );
       // console.log({ resData });
-    // }
+    }
   };
 
   return (
