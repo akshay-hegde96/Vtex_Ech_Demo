@@ -110,5 +110,8 @@
   },
   "store.custom#getBanner-graphQl": {
     "path": "/getBanner-graphQl"
+  },
+  "store.custom#imgHotspot": {
+    "path": "/imgHotspot"
   }
 }

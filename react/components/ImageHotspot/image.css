@@ -1,0 +1,16 @@
+#imgHotspotContainer img+div {
+    width: 450px;
+    height: 350px;
+    top: 0;
+}
+
+.textContainer{
+    width:calc(100% - 450px);
+    float: left;
+    padding: 20px;
+}
+
+.mapContainer{
+    float: left;
+    padding: 20px;
+}
