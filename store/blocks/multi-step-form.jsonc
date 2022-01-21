@@ -1,6 +1,9 @@
 {
   "store.custom#multi-step-form": {
-    "blocks": [ "multi-step-form"]
+    "blocks": [ "multi-step-form",
+      "rich-text#collapsible-bar",
+      "collapsible-bar#test"
+    ]
   },
 
   "multi-step-form":{
@@ -74,6 +77,24 @@
       "type": "input-password",
       "passwordLabel": "Password :",
       "blockClass": "form-multipassword"
+    }
+  },
+  "rich-text#collapsible-bar":{
+"props":{
+  "text":"#### Collapsible Bar",
+  "textAlignment":"CENTER",
+  "textPosition":"CENTER"
+}
+  },
+  "collapsible-bar#test":{
+    "props":{
+  "iconRightOpen":"https://hotemoji.com/images/dl/3/pointing-up-emoji-by-google.png",
+  "iconRightClosed":"https://hotemoji.com/images/dl/u/finger-pointing-down-emoji-by-google.png",
+  "rightIconWidth":"20px",
+  "rightIconHeight":"20px",
+  "collapseHeader":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "collapseContent":"Lorem ipsum dolor s. Morbi mollis erat in porttitor scelerisque. Vivamus euismod, orci nec consectetur viverra, mauris diam ornare tortor, nec varius sem enim vel nunc. Curabitur vehicula at ipsum at imperdiet. Quisque iaculis vitae enim at viverra. Ut vehicula magna ut nulla fringilla iaculis. Integer tincidunt sem leo, nec maximus ligula tempus dignissim. Suspendisse pharetra turpis eu quam congue convallis. Fusce tincidunt dictum neque, eget consectetur dolor iaculis et.",
+  "blockClass":"collapsible-test"
     }
   }
 }

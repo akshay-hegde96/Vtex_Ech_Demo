@@ -113,7 +113,8 @@ const FormHandles = ({
       data.nissanAgreement = nissanAgreement;
 
       const submittedData = await makeAPICall(
-        "api/dataentities/NV/schemas/person",
+        // "api/dataentities/NV/schemas/person",
+        "api/dataentities/NV/documents?_schema=person",
         "PUT",
         data
       );

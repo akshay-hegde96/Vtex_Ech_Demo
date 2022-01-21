@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.formText_label,
+/* .formText_label, */
 .formText_label--name,
 .formText_label--subject,
 .formEmail_label--email,
@@ -24,7 +24,7 @@
     color: rgb(196, 35, 35);
 }
 
-.formText_input,
+/* .formText_input, */
 .formText_input--name,
 .formText_input--subject,
 .formEmail_input--email,
