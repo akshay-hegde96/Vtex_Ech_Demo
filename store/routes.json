@@ -99,6 +99,9 @@
   "store.custom#product-comparison-list": {
     "path": "/product-comparison"
   },
+  "store.custom#multi-step-form": {
+    "path": "/multi-step-form"
+  },
   "store.custom#customlogin": {
     "path": "/customlogin"
   },

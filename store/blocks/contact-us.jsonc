@@ -9,32 +9,53 @@
     }
   },
   "flex-layout.col#form": {
-    "children": ["form#contact-us"],
+    "children": ["contactus-form"],
     "props": {
       "blockClass": "contact-us-form"
     }
   },
-  "form#contact-us": {
+  /*"form#contact-us": {
     "props": {
       "entity": "ContactUs",
       "schema": "user",
       "blockClass": "contact-form"
     },
     "children": [
-      "rich-text#contactUsformTitle",
-      "form-input.text#userName",
-      "rich-text#input-spacer",
-      "form-input.text#userEmail",
-      "rich-text#input-spacer",
-      "form-input.text#userPhone",
-      "rich-text#input-spacer",
-      "form-input.text#subject",
-      "rich-text#input-spacer",
-      "form-input.textarea#question",
-      "rich-text#input-spacer",
-      "form-submit#contactUsform"
+      "contactus-form"
+      //"rich-text#contactUsformTitle",
+      //"store-form#name",
+      //"store-form#email",
+      //"store-form#telNumber",
+      //"store-form#subject",
+      //"store-form#question",
+      //"store-form#submit"
+      //"form-input.text#userName",
+      //"rich-text#input-spacer",
+      //"form-input.text#userEmail",
+      //"rich-text#input-spacer",
+      //"form-input.text#userPhone",
+      //"rich-text#input-spacer",
+      //"form-input.text#subject",
+      //"rich-text#input-spacer",
+      //"form-input.textarea#question",
+      //"rich-text#input-spacer",
+      //"form-submit#contactUsform"
     ],
     "blocks": ["form-success#contactUs"]
+  },*/
+  "contactus-form" : {
+    "props" : {
+      "Heading": "store-form#heading",
+      "Name": "store-form#name",
+      "Email": "store-form#email",
+      "PhoneNumber": "store-form#phonnumber",
+      "Question": "store-form#question",
+      "Subject": "store-form#subject",
+      "Checkbox": "store-form#checkbox",
+      "RadioUs": "store-form#USradio",
+      "Submit" : "store-form#submit",
+      "Dropdown" : "store-form#dropdown"
+    }
   },
   "form-success#contactUs": {
     "children": ["rich-text#successSubmit"]
@@ -47,7 +68,88 @@
       "blockClass": "contact-us-submit"
     }
   },
-
+  "store-form#heading": {
+    "props": {
+        "type": "input-label",
+        "label": ["Contact Us"],
+        "pattern": "[A-Za-z]{10}",
+        "blockClass": "heading"
+    }
+  },
+  "store-form#name": {
+    "props": {
+        "type": "input-text",
+        "label": ["Name :"],
+        "pattern": "[A-Za-z]{10}",
+        "blockClass": "name"
+    }
+  },
+  "store-form#email": {
+    "props": {
+        "type": "input-email",
+        "label": "Email :",
+        "href": "/account",
+        "placeholder": "username@echidna.com",
+        "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$",
+        "blockClass": "email"
+    }
+  },
+  "store-form#phonnumber": {
+    "props": {
+        "type": "input-telNumber",
+        "telnumberLabel": "Phone Number :",
+        "placeholder": "123-45-678",
+        "pattern": "[0-9]{3}-[0-9]{2}-[0-9]{3}",
+        "blockClass": "telNumber"
+    }
+  },
+  "store-form#subject": {
+    "props": {
+        "type": "input-text",
+        "label": ["Subject :"],
+        "pattern": "[A-Za-z]{10}",
+        "blockClass": "subject"
+    }
+  },
+  "store-form#question": {
+    "props": {
+        "type": "input-text",
+        "label": ["Question :"],
+        "pattern": "[A-Za-z]{10}",
+        "blockClass": "question"
+    }
+  },
+  "store-form#checkbox": {
+    "props": {
+        "type": "input-checkbox",
+        "label": ["Remember me"],
+        "blockClass": "checkbox"
+    }
+  },
+  "store-form#USradio": {
+    "props": {
+        "type": "input-radio",
+        "label": ["US citizen", "Non US citizen"],
+        "blockClass": "radio-us"
+    }
+  },
+  "store-form#submit": {
+    "props": {
+        "type": "input-submit",
+        "button_name": "Submit",
+        "blockClass": "submit"
+    }
+  },
+  "store-form#dropdown": {
+    "props": {
+        "type": "input-dropdown",
+        "id": "car",
+        "dropdownLabel": "Choose a car :",
+        "options": ["Nissan", "GTR", "Volvo", "BMW", "Audi", "Merc"],
+        "blockClass": "dropdown"
+    }
+  }
+/*,
   "flex-layout.row#ContactUsData": {
     "children": ["ContactUsData"],
     "props": {
@@ -122,5 +224,5 @@
       "height": "8px",
       "blockClass": "contact-us-input-spacer"
     }
-  }
+  }*/
 }
