@@ -4,15 +4,18 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@storybook/addon-knobs": "^6.4.0",
+    "@storybook/react": "^6.1.21",
     "exenv": "^1.2.2",
     "moment": "^2.22.2",
     "query-string": "^6.3.0",
-    "react": "^16.4.1",
+    "react": "^16.8.6",
     "react-apollo": "^2.3.2",
     "react-dropzone": "^5.0.1",
+    "react-image-hotspots": "^1.7.1",
     "react-intl": "^2.4.0",
     "react-media": "^1.8.0",
     "react-router-dom": "^4.3.1",
-    "recompose": "^0.27.1"
+    "recompose": "^0.17.0"
   }
 }

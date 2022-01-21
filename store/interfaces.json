@@ -105,5 +105,8 @@
 },
 "file-api":{
   "component":"Fileapi"
+},
+"image-hotspot":{
+  "component":"ImageHotspotWrapper"
 }
 }
