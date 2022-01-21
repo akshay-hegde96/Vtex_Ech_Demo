@@ -2,7 +2,8 @@
   "store.custom#multi-step-form": {
     "blocks": [ "multi-step-form",
       "rich-text#collapsible-bar",
-      "collapsible-bar#test"
+      "collapsible-bar#test",
+      "file-api"
     ]
   },
 

@@ -102,5 +102,8 @@
 },
 "getBanner-Wrapper":{
   "component":"GetBannerWrapper"
+},
+"file-api":{
+  "component":"Fileapi"
 }
 }
