@@ -92,5 +92,8 @@
 },
 "getBanner-Wrapper":{
   "component":"GetBannerWrapper"
+},
+"image-hotspot":{
+  "component":"ImageHotspotWrapper"
 }
 }
