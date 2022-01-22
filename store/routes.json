@@ -113,5 +113,8 @@
   },
   "store.custom#imgHotspot": {
     "path": "/imgHotspot"
+  },
+  "store.custom#attribute-graphql": {
+    "path": "/attribute-graphql"
   }
 }
