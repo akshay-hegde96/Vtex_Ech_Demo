@@ -1,0 +1,69 @@
+{
+    "store.sellers": {
+      "blocks": [
+        "seller-table"
+      ]
+    },
+    "seller-table": {
+      "children": [
+        "vtex.store-components:product-name",
+        "seller-simulate-shipping",
+        "seller-head",
+        "seller-body"
+      ]
+    },
+    "seller-head": {
+      "children": [
+        "seller-head-cell#Seller",
+        "seller-head-cell#Price",
+        "seller-head-cell#Shipping",
+        "seller-head-cell#PriceWithShipping",
+        "seller-head-cell#BuyButton"
+      ]
+    },
+    "seller-head-cell#Seller": {
+      "props": {
+        "title": "Seller"
+      }
+    },
+    "seller-head-cell#Price": {
+      "props": {
+        "title": "Price"
+      }
+    },
+    "seller-head-cell#Shipping": {
+      "props": {
+        "title": "Shipping"
+      }
+    },
+    "seller-head-cell#PriceWithShipping": {
+      "props": {
+        "title": "Price With Shipping"
+      }
+    },
+    "seller-head-cell#BuyButton": {
+      "props": {
+        "title": "Add To Cart"
+      }
+    },
+    "seller-body": {
+      "children": [
+        "seller-row",
+        "sellers-site"
+      ]
+    },
+    "seller-row": {
+      "children": [
+        "vtex.seller-selector:seller-name",
+        "vtex.seller-selector:seller-price",
+        "seller-shipping",
+        "seller-price-with-shipping",
+        "seller-add-to-cart"
+      ]
+    },
+    "seller-add-to-cart":{
+      "blocks":[
+        "add-to-cart-button"
+      ]
+    }
+  }

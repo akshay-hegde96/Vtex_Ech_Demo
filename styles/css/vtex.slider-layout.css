@@ -35,6 +35,7 @@
 .slideChildrenContainer--carousel-top {
   background-color: #141223f2;
 }
+<<<<<<< HEAD
 /*============ Mobile ============== */
 @media only screen and (max-width: 480px) {
   .sliderLayoutContainer--shelf {
@@ -54,6 +55,8 @@
   background-color: #c32323;
 }
 
+=======
+>>>>>>> origin
 @media screen and (max-width: 767px) {
   .sliderLayoutContainer--comparison-page {
     width: auto;
@@ -61,6 +64,7 @@
   .sliderLayoutContainer--comparison-page {
     margin: auto;
   }
+<<<<<<< HEAD
 }
 .slide--combo-discount-list1 {
   margin-bottom: 25px;
@@ -81,3 +85,6 @@
 .sliderLayoutContainer--combo-discount-list2 {
   width: 400px;
 }
+=======
+}
+>>>>>>> origin

@@ -1,5 +1,5 @@
 {
-    "store.custom#product-comparison-list": {
+    "store.custom#product-comparison": {
         "blocks": ["comparison-page"]
     },
     "comparison-page": {
@@ -24,9 +24,10 @@
             "flex-layout.row",
             "product-summary-image#comparison-page",
             "product-summary-name",
-            "product-summary-space",
+            "product-rating-inline",
             "product-summary-price#comparison",
-            "viewdetails-button"
+            "product-summary-space",
+            "product-summary-buy-button"
         ],
         "props": {
             "blockClass": "comparison-page-summary"

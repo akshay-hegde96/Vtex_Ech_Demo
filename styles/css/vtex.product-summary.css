@@ -84,10 +84,17 @@
  background-color: #2E2E2E;
 } */
 
+<<<<<<< HEAD
 /* .element--listLayout{
   border-bottom: 1px solid black;
     height: 275px;
 } */
+=======
+.container--comparison-page-summary {
+  text-align: center;
+}
+
+>>>>>>> origin
 
 .containerNormal--listLayout {
   height: 250px !important;

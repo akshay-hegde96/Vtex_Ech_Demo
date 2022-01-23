@@ -24,6 +24,7 @@
     }
 }
 .drawerContainer {
+<<<<<<< HEAD
     z-index: 9999999;
 }
 .containerNormal--drawer-summary.container--drawer-summary {
@@ -34,4 +35,10 @@
 }
 .hideOrShowText {
     text-transform: uppercase;
+=======
+    z-index: 99999;
+}
+.productSelectorContainer {
+    margin: 0.5rem 0;
+>>>>>>> origin
 }

@@ -20,6 +20,10 @@ export const contactUsURL =
 export const dealersListURL =
   storeURL +
   "/api/dataentities/DealerList/search?_schema=dealer&_fields=name,address,phone,zipNo,hostURL,id";
+
+//Dealers List  API
+export const dealersListURL =
+  "api/dataentities/DealerList/search?_schema=dealer&_fields=name,address,phone";
 // For getting seller list
 export const sellerList =
   "/api/catalog_system/pvt/seller/list?sc=1&sellerType=1&isBetterScope=false";
@@ -30,6 +34,7 @@ export const sellerSiteUrl = [
   "https://www.nissanusa.com/",
   "https://echidna.co/",
 ];
+<<<<<<< HEAD
 
 //Nissan seller site redirecting urls
 
@@ -43,3 +48,5 @@ export const dealerstoreURL = "https://tonynissan.myvtex.com";
 // export const categoryURL ="api/dataentities/CA/search?_schema=category&_fields=category_id,banner_link,sub_category";
 export const categoryURL =
   "/api/dataentities/CA/search?_schema=category&_fields=category_id,banner_link,sub_category";
+=======
+>>>>>>> origin

@@ -54,13 +54,13 @@
 
   "search-result-layout": {
     "blocks": [
-      "search-result-layout.desktop.product-comparison#search",
+      "search-result-layout.desktop.product-comparison",
       "search-result-layout.mobile",
       "search-not-found-layout"
     ]
   },
 
-  "search-result-layout.desktop.product-comparison#search": {
+  "search-result-layout.desktop.product-comparison": {
     "children": [
       "flex-layout.row#searchbread",
       // "image#landingbanner",

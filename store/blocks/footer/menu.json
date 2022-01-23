@@ -33,6 +33,15 @@
     "props": {
       "id": "menu-item-Parts",
       "blockClass": "Parts",
+        "tagTitle": "buying",
+        "text": "BUYING"
+      }
+    }
+  },
+  "menu-item#buildYourNissan": {
+    "props": {
+      "id": "menu-item-buildYourNissan",
+      "blockClass": "buildYourNissan",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -49,6 +58,16 @@
     "props": {
       "id": "menu-item-Accessories",
       "blockClass": "Accessories",
+        "noFollow": false,
+        "tagTitle": "Build Your Nissan",
+        "text": "Build Your Nissan"
+      }
+    }
+  },
+  "menu-item#viewNismoCatalog": {
+    "props": {
+      "id": "menu-item-viewNismoCatalog",
+      "blockClass": "viewNismoCatalog",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -65,6 +84,16 @@
     "props": {
       "id": "menu-item-Merchandise",
       "blockClass": "Merchandise",
+        "noFollow": false,
+        "tagTitle": "View NISMO Catalog",
+        "text": "View NISMO Catalog"
+      }
+    }
+  },
+  "menu-item#nismoJapanPartsAndAccessories": {
+    "props": {
+      "id": "menu-item-nismoJapanPartsAndAccessories",
+      "blockClass": "nismoJapanPartsAndAccessories",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -81,6 +110,16 @@
     "props": {
       "id": "menu-item-NISMO",
       "blockClass": "NISMO",
+        "noFollow": false,
+        "tagTitle": "NISMO Japan Parts And Accessories",
+        "text": "NISMO Japan Parts \n And Accessories"
+      }
+    }
+  },
+  "menu-item#jdmNismoMerchandise": {
+    "props": {
+      "id": "menu-item-jdmNismoMerchandise",
+      "blockClass": "jdmNismoMerchandise",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -98,6 +137,16 @@
     "props": {
       "id": "menu-item-QuickOrder",
       "blockClass": "QuickOrder",
+        "noFollow": false,
+        "tagTitle": "JDM NISMO Merchandise",
+        "text": "JDM NISMO Merchandise"
+      }
+    }
+  },
+  "menu-item#nissanVipProgram": {
+    "props": {
+      "id": "menu-item-nissanVipProgram",
+      "blockClass": "nissanVipProgram",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -115,6 +164,16 @@
     "props": {
       "id": "menu-item-orderQuote",
       "blockClass": "orderQuote",
+        "noFollow": false,
+        "tagTitle": "Nissan VIP Program",
+        "text": "Nissan VIP Program"
+      }
+    }
+  },
+  "menu-item#omniParts": {
+    "props": {
+      "id": "menu-item-omniParts",
+      "blockClass": "omniParts",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -147,6 +206,31 @@
     "props": {
       "id": "menu-item-for-owners",
       "blockClass": "for-owners",
+        "noFollow": false,
+        "tagTitle": "OMNIPARTS",
+        "text": "OMNIPARTS"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-forOwners": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-forOwners"
+    },
+    "children": [
+      "menu-item#forOwners",
+      "menu-item#manualsandguides",
+      "menu-item#recallInformation",
+      "menu-item#ownerPortal",
+      "menu-item#nissanService",
+      "menu-item#nissanVisaCreditCard",
+      "menu-item#nissanTireStore"
+    ]
+  },
+  "menu-item#forOwners": {
+    "props": {
+      "id": "menu-item-forOwners",
+      "blockClass": "forOwners",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -329,22 +413,23 @@
         "noFollow": true,
         "tagTitle": "Warranty",
         "text": "Warranty"
+        "tagTitle": "FOR OWNERS",
+        "text": "FOR OWNERS"
       }
     }
   },
-  "menu-item#contact-us": {
+  "menu-item#manualsandguides": {
     "props": {
-      "id": "menu-item-contact-us",
-      "blockClass": "contact",
+      "id": "menu-item-manualsandguides",
+      "blockClass": "manualsandguides",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/contact-us",
         "noFollow": true,
-        "tagTitle": "Contact Us",
-        "text": "Contact Us"
+        "tagTitle": "Manuals & Guides",
+        "text": "Manuals & Guides"
       }
     }
   },
@@ -353,6 +438,10 @@
     "props": {
       "id": "menu-item-omniparts",
       "blockClass": "omniparts",
+  "menu-item#recallInformation": {
+    "props": {
+      "id": "menu-item-recallInformation",
+      "blockClass": "recallInformation",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -525,6 +614,106 @@
     "props": {
       "id": "menu-item-build-your-nissan",
       "blockClass": "build-your-nissan",
+        "noFollow": true,
+        "tagTitle": "Recall Information",
+        "text": "Recall Information"
+      }
+    }
+  },
+  "menu-item#ownerPortal": {
+    "props": {
+      "id": "menu-item-ownerPortal",
+      "blockClass": "ownerPortal",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Owner Portal",
+        "text": "Owner Portal"
+      }
+    }
+  },
+  "menu-item#nissanService": {
+    "props": {
+      "id": "menu-item-nissanService",
+      "blockClass": "nissanService",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Nissan Service",
+        "text": "Nissan Service"
+      }
+    }
+  },
+  "menu-item#nissanVisaCreditCard": {
+    "props": {
+      "id": "menu-item-nissanVisaCreditCard",
+      "blockClass": "nissanVisaCreditCard",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Nissan Visa Credit Card",
+        "text": "Nissan Visa Credit Card"
+      }
+    }
+  },
+  "menu-item#nissanTireStore": {
+    "props": {
+      "id": "menu-item-nissanTireStore",
+      "blockClass": "nissanTireStore",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Nissan Tire Store",
+        "text": "Nissan Tire Store"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-legal": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-legal"
+    },
+    "children": [
+      "menu-item#legal",
+      "menu-item#privacyPolicy",
+      "menu-item#doNotSellMyPersonalInformation",
+      "menu-item#warranty"
+    ]
+  },
+  
+
+  
+  "menu-item#legal": {
+    "props": {
+      "id": "menu-item-category-legal",
+      "blockClass": "legal",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Legal",
+        "text": "LEGAL"
+      }
+    }
+  },
+  "menu-item#privacyPolicy": {
+    "props": {
+      "id": "menu-item-privacyPolicy",
+      "blockClass": "privacyPolicy",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -541,6 +730,16 @@
     "props": {
       "id": "menu-item-view-NISMO-catalog",
       "blockClass": "view-NISMO-catalog",
+        "noFollow": false,
+        "tagTitle": "Privacy Policy",
+        "text": "Privacy Policy"
+      }
+    }
+  },
+  "menu-item#doNotSellMyPersonalInformation": {
+    "props": {
+      "id": "menu-item-doNotSellMyPersonalInformation",
+      "blockClass": "doNotSellMyPersonalInformation",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -557,6 +756,15 @@
     "props": {
       "id": "menu-item-NISMO-japan-parts",
       "blockClass": "NISMO-japan-parts",
+        "tagTitle": "Do Not Sell My Personal Information",
+        "text": "Do Not Sell My \n Personal Information"
+      }
+    }
+  },
+  "menu-item#warranty": {
+    "props": {
+      "id": "menu-item-warranty",
+      "blockClass": "warranty",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -598,6 +806,9 @@
         "noFollow": false,
         "tagTitle": "Nissan VIP Program",
         "text": "Nissan VIP Program"
+        "noFollow": false,
+        "tagTitle": "Warranty",
+        "text": "Warranty"
       }
     }
   },

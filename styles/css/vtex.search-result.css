@@ -54,6 +54,7 @@
   font-variant: small-caps;
   display: flex;
   justify-content: center;
+  width: auto !important;
 }
 .filtersWrapper {
   padding: 10px;
@@ -130,4 +131,14 @@ padding-top: 45px !important;
   .totalProducts--layout {
     padding-top: 10px;
   }
+}
+
+.orderByOptionsContainer{
+  z-index: 5;
+}
+/* =============== mobile-landscape ====================== */
+@media (max-width: 640px) and (orientation: landscape) {
+.galleryItem--grid{
+  padding:10px !important;
+}
 }

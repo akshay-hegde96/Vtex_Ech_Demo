@@ -10,13 +10,29 @@
   padding-top: 16px;
 }
 
+/* .socialNetworksContainer{
+  display: flex;
+  justify-content: end;
+  padding-right: 70px;
+} */
 .socialNetworksContainer--social-networks {
   display: flex;
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-right: 70px;
   min-width: 800px;
-  justify-content: center;
+  justify-content: end;
+  /* color: white !importan; */
 }
+<<<<<<< HEAD
+=======
+
+.socialNetworkImage--social-networks--facebook ::before{
+  color: white !important;
+  background-color: black;
+  border: white !important;
+}
+>>>>>>> origin
 .socialNetworksContainer--social-networks-pdp {
   display: flex;
   justify-content: flex-start;

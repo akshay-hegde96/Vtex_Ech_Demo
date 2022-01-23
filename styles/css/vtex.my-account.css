@@ -95,6 +95,7 @@ div.address-summary {
   background-color: green;
 }
 
+<<<<<<< HEAD
 /*============ Mobile ============== */
 @media only screen and (max-width: 480px) {
   .dataEntryLabel {
@@ -108,5 +109,11 @@ div.address-summary {
     background-color: rgb(241, 241, 241);
     color: rgba(15, 15, 15, 0.986);
     line-height: 1rem;
+=======
+@media only screen and (max-width: 480px) {
+  .addressBox {
+    display: flex;
+    flex-direction: column;
+>>>>>>> origin
   }
 }

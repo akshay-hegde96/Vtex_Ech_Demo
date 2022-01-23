@@ -105,6 +105,7 @@
 /*.flexCol*  {
   display:none;
 }*/
+<<<<<<< HEAD
 
 .flexRow--footer-link {
   /* width: 1440px; */
@@ -118,8 +119,35 @@
   background-color: #323437;
   justify-content: center;
   align-content: center;
+=======
+.flexRow--footer-link,
+.flexRow--credits {
+  background-color: black;
+  display: flex;
+  color: white;
+  line-height: 1.42857143;
+  width: 100%;
+>>>>>>> origin
 }
+.flexRow--socialIcons{
+  width: 100%;
+  line-height: 1.42857143;
+  background-color: black;
 
+}
+.flexRow--disclaimer{
+  width: 100%;
+  line-height: 1.42857143;
+  background-color: black;
+
+}
+.flexRowContent--socialIcons{
+  display: flex;
+  justify-content: end;
+  width: webkit-fill-available;
+  padding-right: 60px;
+  background-color: black;
+}
 .flexRowContent--menu-row :global(.vtex-menu-2-x-styledLink) {
   color: white;
 }
@@ -187,6 +215,14 @@
   font-weight: 600;
 }
 
+<<<<<<< HEAD
+=======
+.flexRowContent--footer-link {
+  min-width: 900px;
+  padding-right: 500px;
+}
+
+>>>>>>> origin
 .flexRow--social-networks-pdp {
   background-color: white;
   display: flex;
@@ -242,6 +278,7 @@
   .flexColChild--product-name {
     padding-left: 25px;
   }
+<<<<<<< HEAD
   .flexRow--credits {
     background-color: #323437;
   }
@@ -273,6 +310,11 @@
     align-self: center;
     margin-left: -25px;
     margin-bottom: 10px;
+=======
+  .flexRowContent--testIconsRow{
+    justify-content: center;
+    display: flex;
+>>>>>>> origin
   }
 }
 
@@ -337,6 +379,7 @@
   box-shadow: 0px 1px 8px 0px #808080f5;
 }
 
+<<<<<<< HEAD
 /* ============== Nissan New ================ */
 .flexRowContent--nissan-main-header {
   background-color: rgb(50, 52, 55);
@@ -473,4 +516,49 @@
 .flexColChild--combo-discount-list1,
 .flexColChild--combo-discount-list2 {
   width: 330px !important;
+=======
+
+
+
+:global(.vtex-flex-layout-0-x-flexCol--nissan-dealer-col1) {
+  border: 1px solid #ccc;
+  margin: 10px;
+background-color: #fafafa;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--dealer-row-container) {
+margin-bottom: 30px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--nissan-value-container){
+  background-image: url(https://parts.nissanusa.com/images/uploads/Assets/tile-link-advantage-mar2021.jpg);
+height: 200px;
+width: 100%;
+margin-left: 5px;
+display: block;
+background-repeat: no-repeat;
+position: relative;
+width: 100%;
+height: 200px;
+background-size: 100%;
+margin-bottom:30px;
+margin-top: 20px;
+border: 1px solid #ccc;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--nissan-event-container){
+  background-image: url(https://parts.nissanusa.com/images/uploads/Assets/tile-link-sxm-nissan.jpg);
+height: 200px;
+width: 100%;
+margin-left: 5px;
+display: block;
+background-repeat: no-repeat;
+position: relative;
+width: 100%;
+height: 200px;
+background-size: 100%;
+margin-bottom:30px;
+margin-top: 20px;
+border: 1px solid #ccc;
+>>>>>>> origin
 }

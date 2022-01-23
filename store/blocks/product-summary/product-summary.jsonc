@@ -2,20 +2,6 @@
   "product-summary.shelf.product-comparison": {
     "children": [
       "stack-layout#prodsum",
-      "product-summary-name",
-      "product-rating-inline",
-      "product-selling-price#summary",
-      "flex-layout.row#nissanModelNo",
-
-      "product-summary-space",
-      "product-summary-space",
-      "button",
-      "product-comparison-block.selector"
-    ]
-  },
-  "product-summary.shelf#without-compare": {
-    "children": [
-      "stack-layout#prodsum",
       //"experimental__visibility-layout#productsummary",
       // "stack-layout#prodsum",
       "product-summary-name",
@@ -31,13 +17,40 @@
 
       // "product-installments#summary",
       "product-summary-space",
-      //"product-summary-sku-selector",
-      //"add-to-cart-button"
-      "button"
-    ],
-    "props": {
-      "blockClass": "summary"
-    }
+      "product-summary-sku-selector",
+
+      "add-to-cart-button",
+      "product-comparison-drawer",	
+      "product-comparison-block.selector"
+    ]
+  },
+  // ========== For sku changes in shelves, we can alter it here ============
+
+  //   "product-summary-sku-selector": {
+  //   "props":{
+  //     "hideImpossibleCombinations": false,
+  //     "showVariationsLabels": ["false"],
+  //     "visibleVariations":[  "color","colour","power rating","capacity"],
+  //     "imageHeight":35,
+  //     "imageWidth":35,
+  //   "visibility":"always",
+  //      "displayMode":"default",
+  //   "initialSelection":"complete"
+  //   }
+  // },
+  
+  // ================
+  "product-summary.shelf#without-comparison": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-list-price#summary",
+      "flex-layout.row#selling-price-savings",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-sku-selector",
+      "add-to-cart-button"
+    ]
   },
   "product-summary-name": {
     "props": {

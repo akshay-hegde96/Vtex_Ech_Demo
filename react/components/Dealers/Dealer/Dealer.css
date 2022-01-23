@@ -27,7 +27,7 @@
   flex-flow: row;
   text-align: left;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: start;
 }
 .cont1 {
   width: 25%;
@@ -75,7 +75,11 @@
 @media (max-width: 1024px) {
   .card {
     flex-flow: column;
+<<<<<<< HEAD
     justify-content: flex-start;
+=======
+    justify-content: start;
+>>>>>>> origin
     align-items: flex-start;
   }
   .cont1 {

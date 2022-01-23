@@ -76,26 +76,16 @@
     "vtex.my-orders-app": "3.x",
     "vtex.challenge-tp-condition": "0.x",
     "vtex.safedata": "0.x",
-    "vtex.product-context": "0.x",
-    "vtex.seller-selector": "0.x",
+    "vtex.sku-list": "1.x",
+    "vtex.iframe": "0.x",
     "vtex.product-comparison": "0.x",
-    "echidna.documents-list-mapper": "0.x",
-    "echidna.layout-row": "0.x",
-    "echidna.button": "0.x",
-    "echidna.image-card": "0.x",
-    "echidna.vertical-slider": "0.x",
-    "echidna.two-col-layout": "0.x",
-    "echidna.store-form-app": "0.x",
-    "echidna.footer": "0.x",
-    "echidna.category-tiles": "0.x",
-    "echidna.side-megamenu": "0.x",
-    "echidna.collapsible-bar":"0.x"
+    "vtex.seller-selector": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x",
     "vtex.wish-list": "1.x",
-    "vtex.orderquote": "1.x",
-    "vtex.quickorder": "3.x"
+    "vtex.quickorder": "3.x",
+    "vtex.orderquote": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

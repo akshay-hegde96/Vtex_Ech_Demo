@@ -62,9 +62,6 @@
   "car-model-accordion": {
     "component": "CarModelAccordion"
   },
-  "dealers-list": {
-    "component": "DealerListWrapper"
-  },
   "dealers-list-PDP": {
     "component": "DealerListPDPWrapper"
   },
@@ -108,5 +105,14 @@
 },
 "attribute-graphql":{
   "component":"AttributeValueWrapper"
-}
+},
+  "profile-input.preferences-input": {
+    "component": "PreferencesWrapper"
+  },
+  "dealers-list": {
+    "component": "DealerListWrapper"
+  },
+  "sellers-site": {
+    "component": "SellersSite"
+  }
 }
