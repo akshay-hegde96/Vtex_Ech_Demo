@@ -105,5 +105,8 @@
 },
 "image-hotspot":{
   "component":"ImageHotspotWrapper"
+},
+"attribute-graphql":{
+  "component":"AttributeValueWrapper"
 }
 }
