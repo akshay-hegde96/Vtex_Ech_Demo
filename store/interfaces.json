@@ -103,6 +103,9 @@
 "getBanner-Wrapper":{
   "component":"GetBannerWrapper"
 },
+"file-api":{
+  "component":"Fileapi"
+},
 "image-hotspot":{
   "component":"ImageHotspotWrapper"
 }

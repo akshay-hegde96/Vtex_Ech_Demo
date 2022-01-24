@@ -1,0 +1,21 @@
+.anchorTag{
+cursor: pointer;
+text-decoration: none;
+}
+.anchorContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 0px;
+    font-weight: 800;
+   
+}
+.imageContainer{
+  display: flex;
+  justify-content: center;  
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
