@@ -18,7 +18,7 @@ const AttributeValue = () => {
    ssr: false
  });
 
-//  console.log("data",JSON.stringify(data))
+  console.log("data",JSON.stringify(data))
 
 if (loading) {
   return (
