@@ -116,6 +116,11 @@
   },
   "store.custom#attribute-graphql":{
     "path": "/attribute-graphql"
-  }
+  },
+  "store.custom#orderform-graphql":{
+    "path": "/orderform-graphql"
+  },
+  "store.custom#docSchema-graphql":{
+    "path": "/docschema-graphql"}
  
 }
