@@ -1,0 +1,10 @@
+query getAttributesValue{
+ getAttributeValues(attribute:{
+  value:"category"
+}){
+  status
+  data{
+    body
+  }
+}
+}
