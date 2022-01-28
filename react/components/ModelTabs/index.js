@@ -108,16 +108,16 @@ function ModelTabs() {
   return (
     <div className={styles.modelTabWrapper}>
       <Tabs>
-      {modelData.map((child) => {
+      {modelData.map((child,i) => {
         const type = child.contentType;
         return (
-          <div label={child.label} className={styles.type}>
+          <div label={child.label} className={styles.type} key={i}>
             <div className={styles.tabContentContainer}>
               <div className={styles.carModelContainer}>
                 <ul className={styles.modelRange}>
-                {child.content.map((contents) => {
+                {child.content.map((contents,index) => {
                   return (
-                    <li className={styles.modelList}>
+                    <li className={styles.modelList} key={index}>
                       <a href={contents.url} className={styles.modelAnchor}>
                         <img className={styles.carImage} src={contents.img} alt={contents.modelName} />
                         <h4 className={styles.modelTitle}>{contents.modelName}</h4>
