@@ -1,0 +1,15 @@
+query documentSchemaDetails{
+  documentSchema(dataEntity:"DealersList",schema:"dealersList"){
+    name,
+    indexed,
+    security {
+      allowGetAll
+    },
+    cache,
+    properties{
+      name
+      type
+      optional
+    }
+  }
+}

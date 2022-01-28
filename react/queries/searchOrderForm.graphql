@@ -1,0 +1,18 @@
+query getOrderDetails{
+  searchOrderForm(orderFormId:""){
+    orderFormId,
+    cacheId,
+    value,
+    loggedIn,
+    isCheckedIn,
+    salesChannel,
+    checkedInPickupPointId,
+    customData{
+      customApps{
+        fields,
+        id,
+        major
+      }
+    }
+  }
+}

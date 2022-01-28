@@ -111,5 +111,11 @@
 },
 "attribute-graphql":{
   "component":"AttributeValueWrapper"
+},
+"orderDetails-graphql":{
+  "component":"OrderformDetailsWrapper"
+},
+"docSchema-graphql":{
+  "component":"DocumentSchemaWrapper"
 }
 }
