@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@apollo/react-testing": "3",
+    "@vtex/test-tools": "^3.4.3",
+    "react-intl": "3"
+  },
+  "scripts": {
+    "test": "vtex-test-tools test"
+  }
+}
