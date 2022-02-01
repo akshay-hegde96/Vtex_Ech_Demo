@@ -121,6 +121,12 @@
     "path": "/orderform-graphql"
   },
   "store.custom#docSchema-graphql":{
-    "path": "/docschema-graphql"}
- 
+    "path": "/docschema-graphql"
+  },
+  "store.custom#category-graphql":{
+    "path": "/category-graphql"
+  },
+  "store.custom#checkout-graphql":{
+    "path": "/checkout-graphql"
+  }
 }
