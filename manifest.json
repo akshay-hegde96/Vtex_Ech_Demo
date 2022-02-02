@@ -92,7 +92,8 @@
     "echidna.category-tiles": "0.x",
     "echidna.side-megamenu": "0.x",
     "echidna.collapsible-bar": "0.x",
-    "vtex.store-graphql": "2.149.2"
+    "vtex.store-graphql": "2.149.2",
+    "echidna.custom-blogs": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x",
