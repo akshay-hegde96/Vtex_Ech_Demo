@@ -128,5 +128,8 @@
   },
   "store.custom#checkout-graphql":{
     "path": "/checkout-graphql"
+  },
+  "store.custom#blog-listing-page": {
+    "path": "/blogs"
   }
 }

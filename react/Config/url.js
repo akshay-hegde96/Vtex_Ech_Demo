@@ -43,3 +43,6 @@ export const dealerstoreURL = "https://tonynissan.myvtex.com";
 // export const categoryURL ="api/dataentities/CA/search?_schema=category&_fields=category_id,banner_link,sub_category";
 export const categoryURL =
   "/api/dataentities/CA/search?_schema=category&_fields=category_id,banner_link,sub_category";
+
+// For getting the list of all the blogs
+export const blogsListUrl = "/api/dataentities/CB/search?_fields=_all&_schema=customBlog&_sort=createdIn%20DESC";
