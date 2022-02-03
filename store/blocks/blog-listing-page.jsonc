@@ -1,0 +1,12 @@
+{
+    "store.custom#blog-listing-page": {
+        "blocks": ["custom-blog-listing"]
+    },
+    "custom-blog-listing": {
+        "props": {
+            "accountName": "echidna",
+            "entityIdAcronym": "CB",
+            "schemaName": "customBlog"
+        }
+    }
+}
