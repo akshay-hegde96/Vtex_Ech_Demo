@@ -8,6 +8,8 @@ import AddressBanner from "../components/AddressBanner";
 // Configuration
 configure({ adapter: new Adapter() });
 
+
+
 // To check Tabs component is rendered properly inside ModelTabs component
 describe("ModelTabs", () => {
   test("Tabs component rendered properly", () => {
@@ -16,6 +18,9 @@ describe("ModelTabs", () => {
     expect(TabsExists).toBe(true);
   });
 });
+
+
+
 
 // AddressBanner Component
 describe("AddressBanner", () => {

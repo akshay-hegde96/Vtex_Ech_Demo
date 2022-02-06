@@ -38,8 +38,8 @@ else {
   return (
     <div>
     <ul>
-        {data.checkoutProfile.availableAccounts.map((item)=>{
-          return<li>{item.accountId} - {item.paymentSystemName} </li>
+        {data.checkoutProfile.availableAccounts.map((item,i)=>{
+          return<li key={i}>{item.accountId} - {item.paymentSystemName} </li>
           
         })}
         
