@@ -1,0 +1,17 @@
+query getCheckoutDetails{
+  checkoutProfile(email:"deepika.y@echidnainc.com"){
+    userProfileId,
+    profileProvider,
+    availableAccounts{
+      accountId,
+      cardNumber,
+      paymentSystemName,
+      paymentSystem
+    },
+    userProfile{
+      email,
+      firstName,
+      document
+    }
+  }
+}

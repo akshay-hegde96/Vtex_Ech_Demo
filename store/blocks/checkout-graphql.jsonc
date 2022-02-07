@@ -1,0 +1,7 @@
+{
+    "store.custom#checkout-graphql": {
+        "blocks": [ 
+            "checkout-graphql"
+            ]
+      }
+}

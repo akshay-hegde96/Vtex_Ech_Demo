@@ -1,5 +1,5 @@
 {
-    "store.custom#getBanner-graphQl": {
+    "store.custom#category-graphql": {
         "blocks": [ 
             "category-graphql"
             ]

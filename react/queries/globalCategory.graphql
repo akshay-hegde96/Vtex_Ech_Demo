@@ -1,0 +1,18 @@
+query getCatalog{
+ globalCategory(categoryId:135){
+  id,
+  name,
+  hasChildren,
+  url,
+  title,
+  children{
+    id,
+    name,
+    hasChildren,
+    title,
+    fatherCategoryId,
+    
+  }
+  
+}
+}

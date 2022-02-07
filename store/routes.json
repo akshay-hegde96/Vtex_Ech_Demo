@@ -116,6 +116,20 @@
   },
   "store.custom#attribute-graphql":{
     "path": "/attribute-graphql"
+  },
+  "store.custom#orderform-graphql":{
+    "path": "/orderform-graphql"
+  },
+  "store.custom#docSchema-graphql":{
+    "path": "/docschema-graphql"
+  },
+  "store.custom#category-graphql":{
+    "path": "/category-graphql"
+  },
+  "store.custom#checkout-graphql":{
+    "path": "/checkout-graphql"
+  },
+  "store.custom#blog-listing-page": {
+    "path": "/blogs"
   }
- 
 }

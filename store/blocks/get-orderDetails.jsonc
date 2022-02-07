@@ -1,0 +1,7 @@
+{
+    "store.custom#orderform-graphql":{
+        "blocks":[
+            "orderDetails-graphql"
+        ]
+     }
+}
