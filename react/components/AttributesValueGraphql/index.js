@@ -41,8 +41,8 @@ else {
     <div>
       <ul>
       {
-        data.getAttributeValues.data.body.map((attribute)=>{
-          return <li>{attribute}</li>
+        data.getAttributeValues.data.body.map((attribute,i)=>{
+          return <li key={i}>{attribute}</li>
         })
       }
       </ul>

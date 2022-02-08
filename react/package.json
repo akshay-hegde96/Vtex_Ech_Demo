@@ -9,6 +9,7 @@
   "dependencies": {
     "@storybook/addon-knobs": "^6.4.0",
     "@storybook/react": "^6.1.21",
+    "@vtex/styleguide": "^8.38.0",
     "exenv": "^1.2.2",
     "moment": "^2.22.2",
     "query-string": "^6.3.0",
@@ -22,10 +23,8 @@
     "recompose": "^0.17.0"
   },
   "devDependencies": {
-    "babel-jest": "^27.4.6",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
-    "enzyme-to-json": "^3.6.2",
-    "jest": "^27.4.7"
+    "enzyme-to-json": "^3.6.2"
   }
 }

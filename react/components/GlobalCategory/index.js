@@ -2,10 +2,32 @@
 import React from 'react'
 
 import { useQuery } from 'react-apollo'
+// import { graphql } from 'react-apollo'
 
 // import useProduct from 'vtex.product-context/useProduct'
 
 import getCatalog from '../../queries/globalCategory.graphql'
+
+/*function GlobalCatalog({ data }) {
+  return (
+    <div>
+      {data.loading
+        ? 'Loading'
+        : data.globalCategory.children.map((item)=>{
+          return <li>{item.name} - {item.id}
+          </li>
+          
+        })
+      }
+    </div>
+  )
+}
+export default graphql(getCatalog, {
+  variables: {
+   categoryId:135
+  },
+  ssr: false
+})(GlobalCatalog)*/
 
 const GlobalCatalog = () => {
    
@@ -40,7 +62,7 @@ else {
     <ul>
       
         {data.globalCategory.children.map((item)=>{
-          return <li>{item.name} - {item.id}
+          return <li key={item.id}>{item.name} - {item.id}
           </li>
           
         })}
@@ -52,4 +74,4 @@ else {
 
 }
 
-export default GlobalCatalog;
+ export default GlobalCatalog;
