@@ -6,6 +6,7 @@ import ContactUsData from "../components/ContactUsData";
 import AddressBanner from "../components/AddressBanner";
 import { makeAPICall } from "httpCall";
 import { expectedResponse } from "../__mocks__/response";
+import ModelAccordion from "../components/ModelAccordion/index";
 
 // Configuration
 configure({ adapter: new Adapter() });
@@ -69,4 +70,13 @@ describe("API test", () => {
     // console.warn(await response);
     expect(await response).toEqual(expectedResponse);
   });
+});
+
+// ModelAccordion Component
+describe("ModelAccordion", () => {
+  test("Accordion component should render properly", () => {
+    const component = shallow(<ModelAccordion />);
+    const accordionExists = component.find("Accordion").exists();
+    expect(accordionExists).toBe(true);
+  })
 });
