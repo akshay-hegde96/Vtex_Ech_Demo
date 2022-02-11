@@ -111,13 +111,13 @@ function ModelAccordion() {
       {modelData.map((child, i) => {
         const type = child.contentType;
         return (
-          <div label={child.label} className={styles.modelAccordion}>
+          <div key={i} label={child.label} className={styles.modelAccordion}>
             <div className={styles.tabContentContainer}>
               <div className={styles.carModelContainer}>
                 <ul className={styles.modelRange}>
-                {child.content.map((contents) => {
+                {child.content.map((contents, i) => {
                   return (
-                    <li className={styles.modelList}>
+                    <li className={styles.modelList} key={contents.modelName + i}>
                       <a href={contents.url} className={styles.modelAnchor}>
                         <img className={styles.carImage} src={contents.img} alt={contents.modelName} />
                         <h4 className={styles.modelTitle}>{contents.modelName}</h4>
