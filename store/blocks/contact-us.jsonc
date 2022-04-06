@@ -1,6 +1,6 @@
 {
   "store.custom#contact-us": {
-    "blocks": ["ContactUsHistory", "flex-layout.row#form"]
+    "blocks": ["flex-layout.row#form"]
   },
   "flex-layout.row#form": {
     "children": ["flex-layout.col#form"],
@@ -9,34 +9,39 @@
     }
   },
   "flex-layout.col#form": {
-    "children": ["form"],
+    "children": ["form#contact-us"],
     "props": {
       "blockClass": "contact-us-form"
     }
   },
-  "form": {
+  "form#contact-us": {
     "props": {
-      "entity": "client",
-      "schema": "person",
-      "blockClass": "contact-us-form"
+      "entity": "ContactUs",
+      "schema": "user",
+      "blockClass": "contact-form"
     },
     "children": [
-      "rich-text#formTitle",
-      "form-input.text#firstName",
-      "form-input.text#lastName",
-      "form-field-group#address",
-      "rich-text#spacer",
-      "form-input.checkbox#agreement",
-      "form-submit"
+      "rich-text#contactUsformTitle",
+      "form-input.text#userName",
+      "rich-text#input-spacer",
+      "form-input.text#userEmail",
+      "rich-text#input-spacer",
+      "form-input.text#userPhone",
+      "rich-text#input-spacer",
+      "form-input.text#subject",
+      "rich-text#input-spacer",
+      "form-input.textarea#question",
+      "rich-text#input-spacer",
+      "form-submit#contactUsform"
     ],
-    "blocks": ["form-success"]
+    "blocks": ["form-success#contactUs"]
   },
-  "form-success": {
+  "form-success#contactUs": {
     "children": ["rich-text#successSubmit"]
   },
   "rich-text#successSubmit": {
     "props": {
-      "text": "ThankYou, You have succesfully submitted the data!",
+      "text": "Thank You, we will reach you shortly!",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": "contact-us-submit"
@@ -49,7 +54,7 @@
       "blockClass": "contact-us-data"
     }
   },
-  "rich-text#formTitle": {
+  "rich-text#contactUsformTitle": {
     "props": {
       "text": "Contact Us",
       "textAlignment": "CENTER",
@@ -62,42 +67,60 @@
       "text": "Agree to continue ",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "height": "15px",
+      "height": "10px",
       "blockClass": "contact-us-spacer"
     }
   },
 
-  "form-input.text#firstName": {
+  "form-input.text#userName": {
     "props": {
-      "pointer": "#/properties/firstName",
-      "label": "First Name",
+      "pointer": "#/properties/name",
+      "label": "Name",
       "blockClass": "contact-us"
     }
   },
-  "form-input.text#lastName": {
+  "form-input.text#userEmail": {
     "props": {
-      "pointer": "#/properties/lastName",
-      "label": "Last Name",
+      "pointer": "#/properties/email",
+      "label": "Email",
       "blockClass": "contact-us"
     }
   },
-  "form-input.checkbox#agreement": {
+  "form-input.text#userPhone": {
     "props": {
-      "pointer": "#/properties/agreement",
-      "label": "Do you agree to receive notifications for any updates?",
+      "pointer": "#/properties/phone",
+      "label": "Phone No.",
       "blockClass": "contact-us"
     }
   },
-  "form-field-group#address": {
+
+  "form-input.text#subject": {
     "props": {
-      "pointer": "#/properties/address",
-      "label": "Address",
+      "pointer": "#/properties/subject",
+      "label": "Subject",
       "blockClass": "contact-us"
     }
   },
-  "form-submit": {
+  "form-input.textarea#question": {
+    "props": {
+      "pointer": "#/properties/question",
+      "label": "Question",
+      "blockClass": "contact-us"
+    }
+  },
+
+  "form-submit#contactUsform": {
     "props": {
       "label": "Submit"
+    }
+  },
+  "rich-text#input-spacer": {
+    "props": {
+      "text": "input spacer ",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "height": "8px",
+      "blockClass": "contact-us-input-spacer"
     }
   }
 }

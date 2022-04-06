@@ -12,7 +12,6 @@
       "menu-item#NISMO",
       "menu-item#QuickOrder",
       "menu-item#orderQuote"
-      
     ]
   },
   "menu-item#Products": {
@@ -128,7 +127,6 @@
       }
     }
   },
-
 
   "vtex.menu@2.x:menu#footer-for-owners": {
     "props": {
@@ -267,7 +265,8 @@
       "menu-item#legal",
       "menu-item#privacy-policy",
       "menu-item#sell-personal-information",
-      "menu-item#warranty"
+      "menu-item#warranty",
+      "menu-item#contact-us"
     ]
   },
   "menu-item#legal": {
@@ -333,7 +332,23 @@
       }
     }
   },
-  
+  "menu-item#contact-us": {
+    "props": {
+      "id": "menu-item-contact-us",
+      "blockClass": "contact",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Contact Us",
+        "text": "Contact Us"
+      }
+    }
+  },
+
   "menu-item#omniparts": {
     "props": {
       "id": "menu-item-omniparts",
@@ -461,7 +476,8 @@
     "children": [
       "menu-item#privacy-policy",
       "menu-item#sell-personal-information",
-      "menu-item#warranty"
+      "menu-item#warranty",
+      "menu-item#contact-us"
     ]
   },
   "menu-item#For-Owners-mobile": {

@@ -33,8 +33,7 @@
 .menuContainerNav--footer-products,
 .menuContainerNav--footer-buying,
 .menuContainerNav--footer-for-owners,
-.menuContainerNav--footer-legal
-{
+.menuContainerNav--footer-legal {
   max-width: 300px;
   justify-content: left;
   margin: 0px 0px 0px 0px;
@@ -43,8 +42,7 @@
 .styledLinkContent--Products,
 .styledLinkContent--buying,
 .styledLinkContent--for-owners,
-.styledLinkContent--legal
-{
+.styledLinkContent--legal {
   font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
@@ -86,16 +84,17 @@
 .styledLinkContent--sell-personal-information,
 .styledLinkContent--warranty,
 .styledLinkContent--QuickOrder,
-.styledLinkContent--orderQuote {
+.styledLinkContent--orderQuote,
+.styledLinkContent--contact {
   font-size: 14px;
   margin-top: 5px;
   color: #c0bfc0;
-  word-wrap: break-word!important;
-  max-width: 100px!important;
+  word-wrap: break-word !important;
+  max-width: 100px !important;
   text-align: left;
 }
- 
-  /* =========== Tablet ================*/
+
+/* =========== Tablet ================*/
 @media only screen and (min-width: 481px) and (max-width: 1026px) {
   .styledLinkContent--Products-mobile,
   .styledLinkContent--buying-mobile,
@@ -147,7 +146,6 @@
   padding-left: 1rem;
 }
 
-
 /* =======Nissan============ */
 .styledLinkContent--nissan-megaMenu-header {
   height: 22px;
@@ -163,14 +161,13 @@
 }
 
 .styledLinkContent--QuickOrder,
-.styledLinkContent--orderQuote
-{
+.styledLinkContent--orderQuote {
   font-size: 14px;
-    margin-top: 5px;
-    color: #c0bfc0;
-    word-wrap: break-word!important;
-    max-width: 100px!important;
-    text-align: left;
+  margin-top: 5px;
+  color: #c0bfc0;
+  word-wrap: break-word !important;
+  max-width: 100px !important;
+  text-align: left;
 }
 .submenuWrapper--sub-menu-wrapper {
   overflow: scroll;

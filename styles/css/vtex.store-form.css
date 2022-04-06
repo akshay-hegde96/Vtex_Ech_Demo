@@ -4,3 +4,7 @@
   align-items: center;
   margin: 1rem auto;
 }
+
+.form--contact-form {
+  width: 500px;
+}
