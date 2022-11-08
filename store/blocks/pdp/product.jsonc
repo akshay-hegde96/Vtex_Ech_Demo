@@ -11,6 +11,12 @@
       // "product-comparison-block.selector"
     ]
   },
+  "rich-text#title--releases": {
+    "props": {
+      "text": "## New Releases",
+      "blockClass": "title"
+    }
+  },
   "responsive-layout.tablet": {
     "children": [
       "flex-layout.row#product-breadcrumb",
@@ -129,6 +135,7 @@
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       "seller-table",
+      "rich-text#title--releases",
       "flex-layout.row#specifications",
       "tab-layout#product",
       "shelf.relatedProducts",
@@ -761,7 +768,7 @@
         "minItemsPerPage": 1.5,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "More options for this style"
+        "titleText": "silpa More options for this style"
       }
     }
   }
